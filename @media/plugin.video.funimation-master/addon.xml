@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.funimation" name="Funimation" version="1.1.2" provider-name="Aaron Frase">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <website>http://www.funimation.com</website>
+    <source>https://github.com/Sinap/plugin.video.funimation</source>
+    <email>afrase91@gmail.com</email>
+    <summary lang="en">FUNimation - Watch Anime Episodes Streaming Online</summary>
+    <description lang="en">You should be watching anime and Asian drama episodes on FUNimation.com available in English dubs and subtitles.</description>
+    <disclaimer lang="en">Some parts of this addon may not be legal in your country of residence - please check with your local laws before installing.</disclaimer>
+    <platform>all</platform>
+    <language />
+  </extension>
+</addon>

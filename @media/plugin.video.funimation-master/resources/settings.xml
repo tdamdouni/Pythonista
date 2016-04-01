@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings>
+  <!-- General -->
+  <category label="30200">
+    <setting id="username" type="text" label="30201" />
+    <setting id="password" type="text" label="30202" option="hidden" />
+  </category>
+
+  <!-- Advanced -->
+  <category label="30210">
+    <setting id="loglvl" type="enum" label="30211" lvalues="30219|30220|30221|30222|30223" default="0" />
+    <setting type="sep" />
+    <setting label="30218" type="action" action="RunScript($CWD/resources/lib/clear_cookies.py)"/>
+  </category>
+
+</settings>

@@ -1,0 +1,80 @@
+v1.1.2
+- Fixed module import error
+
+v1.1.1
+- Removed unused dependeny
+- Fixed addon ID
+
+v1.1.0
+- Almost a complete rewrite
+- Using the PS3 app API
+- More menus and better quality images
+- Now displays, episode and show details
+- Removed caching
+
+v1.0.3
+- Added a check to see if user is a subscriber
+- The clear cache option now properly clears the StorageServer cache
+
+v1.0.2
+- Removed some unused strings
+- Removed 'optional="true"' from addon.xml because it does nothing
+
+v1.0.1
+- Added check for addon userdata directory
+
+v1.0.0
+- Initial release
+
+v0.2.1
+- Changed error list item to be more generic
+
+v0.2.0
+- Fixed getting movies
+- Added setting streaming info
+- Cleaned up some code
+
+v0.1.2
+- Added caching
+- Made common plugin cache and optional import
+- Added option to disable caching
+
+v0.1.1
+- Rewrote almost everything
+- Removed model/controller classes
+
+v0.1.0
+- Rewrote api classes
+- Removed user model/controller
+- Cleaned up code
+
+v0.0.9
+- Added setting for adding shows to a black list
+- Added http_client param to user_controller
+
+v0.0.8
+- Added call to login when getting the list of shows
+
+v0.0.7
+- Moved UserController initialization to speed up addon start
+
+v0.0.6
+- Added asynchronous login when the addon is run
+
+v0.0.5
+- Added movies, trailers, and clips
+
+v0.0.4
+- Implemented search
+- Implemented caching
+- Added setting to select which genres to show
+
+v0.0.3
+- Rewrote the plugin to not use xbmcswift2
+
+v0.0.2
+- Created model/controllers
+- Added controls for caching.
+
+v0.0.1
+- Initial version
