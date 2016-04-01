@@ -1,0 +1,4 @@
+*.my.*
+*.csv
+
+sqlite3.exe

@@ -1,0 +1,10 @@
+Project:
+	note goes here
+	- task @tag @tagWithValue(100)
+	- task 2 @tag2
+	- task 3 @tag
+	- task 4 @tag2
+	- tesk 5
+	SubProject:
+		- task
+		- sub task @tag @tag2
