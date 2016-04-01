@@ -1,0 +1,66 @@
+{
+    "BaseNSudoku": {
+        "name": "Base-n Sudoku Solver",
+        "authors": ["dgelessus"],
+        "description": "A sudoku solver, originally written for a base 25 sudoku, but works with grids of any size. The number range can be adjusted freely, as well as the width and height of the number blocks to allow non-square blocks and grids. Technically it even works with uncertain (multiple solution) sudokus, however the result will then contain empty sets in place of unknown numbers.",
+        "version": [1,0,0,0],
+        "dependencies": [],
+        "files": [["https://raw.githubusercontent.com/dgelessus/pythonista-scripts/master/BaseNSudoku.py", "program-files", "BaseNSudoku.py"]]
+    },
+    "filenav": {
+        "name": "filenav",
+        "authors": ["dgelessus", "with thanks to ccc"],
+        "description": "A simple file navigator with support for accessing the entire directory structure, not just the Script Library. Additional features include automatic file icons depending on type, analysis of a few basic file attributes, and opening files directly in the default editor.",
+        "version": [1,5,1,1],
+        "dependencies": [],
+        "files": [["https://raw.githubusercontent.com/dgelessus/pythonista-scripts/master/filenav.py", "program-files", "filenav/filenav.py"]]
+    },
+    "filenav_plugin": {
+        "name": "filenav Shellista plugin",
+        "authors": ["dgelessus"],
+        "description": "Plugin for ShellistaExt by briarfox that adds a filenav command, which opens filenav in either the given or current directory.",
+        "version": [1,0,0,0],
+        "dependencies": ["filenav"],
+        "files": [["https://raw.githubusercontent.com/dgelessus/pythonista-scripts/master/filenav_plugin.py", "program-files", "ShellistaExt/plugins/extensions/filenav_plugin.py"]]
+    },
+    "KeyboardControl": {
+        "name": "Physical Keyboard Test",
+        "authors": ["dgelessus"],
+        "description": "A proof-of-concept for using an external keyboard to control a UI script.",
+        "version": [1,0,0,0],
+        "dependencies": [],
+        "files": [["https://raw.githubusercontent.com/dgelessus/pythonista-scripts/master/KeyboardControl.py", "program-files", "KeyboardControl.py"], ["https://raw.githubusercontent.com/dgelessus/pythonista-scripts/master/KeyboardControl.pyui", "program-files", "KeyboardControl.pyui"]]
+    },
+    "ohaiterra": {
+        "name": "Ohai, Terra!",
+        "authors": ["dgelessus"],
+        "description": "A Python implementation of the famous 'Hello World'.",
+        "version": [1,0,0,0],
+        "dependencies": [["terra", [1,0,0,0]]],
+        "files": [["https://raw.githubusercontent.com/dgelessus/pythonista-scripts/master/ohaiterra.py", "program-files", "ohaiterra.py"]]
+    },
+    "PackUI": {
+        "name": "PackUI",
+        "authors": ["dgelessus"],
+        "description": "A means of distribution for .py and .pyui files without requiring any other scripts. The main script packages the two files into a new script, which will extract the files again when run.",
+        "version": [1,0,0,0],
+        "dependencies": [],
+        "files": [["https://raw.githubusercontent.com/dgelessus/pythonista-scripts/master/PackUI.py", "program-files", "PackUI.py"]]
+    },
+    "reload_all": {
+        "name": "Module Reloader",
+        "authors": ["dgelessus"],
+        "description": "Reloads all user modules (i. e. those located in ~/Documents and subfolders) that are currently loaded. Due to Pythonista not being able to properly reset the Python environment, this includes all modules that have been imported since the last time the app was restarted, either manually or after being closed for being inactive for too long.",
+        "version": [1,0,0,0],
+        "dependencies": [],
+        "files": [["https://raw.githubusercontent.com/dgelessus/pythonista-scripts/master/reload_all.py", "program-files", "reload_all.py"]]
+    },
+    "terra": {
+        "name": "Terra",
+        "authors": ["dgelessus"],
+        "description": "A dummy dependency to test the dependency installation system.",
+        "version": [1,0,0,0],
+        "dependencies": [],
+        "files": [["https://raw.githubusercontent.com/dgelessus/pythonista-scripts/master/terra.py", "site-packages", "terra.py"]]
+    }
+}
