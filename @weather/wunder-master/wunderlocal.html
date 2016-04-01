@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+	"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+<head>
+<meta name="viewport" content = "width = device-width" />
+<title>Weather</title>
+<script>
+  function getWeather(location) {
+    var lat = location.coords.latitude;
+    var lon = location.coords.longitude;
+    wURL = "http://path/to/wunder.py?lat=" + lat + "&lon=" + lon;
+    document.location.href = wURL;
+  }
+</script>
+</head>
+<body onload="setTimeout(function() { window.top.scrollTo(0, 1) }, 100);">
+  <script>
+    navigator.geolocation.getCurrentPosition(getWeather);
+  </script>
+
+ <!-- <h1>Hello</h1> -->
+</body>
+</html>

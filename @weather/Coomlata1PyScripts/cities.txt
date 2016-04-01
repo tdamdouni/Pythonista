@@ -1,0 +1,22 @@
+Beaverton,OR,zmw:97005.1.99999
+Bend,OR,zmw:97701.1.99999
+Berlin,DL,zmw:00000.10.10389
+Boston,MA,zmw:02101.1.99999
+Cedar Mill,OR,zmw:97229.2.99999
+Gordon,NE,zmw:69343.1.99999
+Lakeside,OR,zmw:97449.1.99999
+Lincoln City,OR,zmw:97367.1.99999
+London,UK,zmw:00000.1.03772
+Los Angeles,OR,zmw:90001.1.99999
+Medford,OR,zmw:97501.1.99999
+Miramar,FL,zmw:33023.4.99999
+Moscow,RU,zmw:00000.1.27612
+New York,NY,zmw:10001.1.99999
+Newport,OR,zmw:97365.1.99999
+Paris,FR,zmw:00000.37.07156
+Portland,OR,zmw:97201.1.99999
+Redmond,OR,zmw:97756.1.99999
+San Francisco,CA,zmw:94101.1.99999
+Seaside,OR,zmw:97138.1.99999
+Seattle,WA,zmw:98101.1.99999
+West Richland,WA,zmw:99352.2.99999
