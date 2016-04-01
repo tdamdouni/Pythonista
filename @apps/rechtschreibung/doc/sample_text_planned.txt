@@ -1,0 +1,30 @@
+Casimir und Wendy sind zwei durchschnittlische Deutsche. Sie haben viel gemeinsam, unterscheiden sich aber durch eine sehr stark abweichende Sicht auf die deutsche Rechtschreibung. Casimir ist eher konservativ und möchte am liebsten den Status Quo wiederherstellen, wie er vor der Rechtschreibreform im Jahre 1996 gültig war. Wendy ist eher fortschrittlich und überlegt ständig, wie man die Rechtschreibung verbessern und vereinfachen kann. Diese unterschiedliche Sichtweisen führen ständig zu Diskussionen und Streitereien. 
+
+Der grundlegende Unterschied ist ganz einfach: Casimir hat in seiner Jugend die damals aktuelle Rechtschreibung kennengelernt und hat sich an sie gewöhnt. Er hat die Regeln verinnerlicht und denkt heute nicht mehr über ihre Sinnhaftigkeit nach. Zwar sind viele der Regeln durchaus logisch und nachvollziehbar. Es gibt jedoch Gegenbeispiele, die schon aus damaliger Sicht unlogisch waren. Besonders störend sind dabei die Fälle, bei denen sich die Aussprache von Worten nicht aus dem Schriftbild ableiten lässt. Casimir möchte dennoch diesen althergebrachten Regelsatz erhalten und damit das Schriftbild, das ihm aus fast der gesamten heute verfügbaren Literatur vertraut ist.
+
+Wendy hat einen anderen Ansatz. Sie möchte, dass die Rechtschreibung in erster Linie dem Lesenden und Schreibenden hilft, einen Text möglichst einfach zu lesen bzw. zu erstellen. Einfach bedeutet dabei mit möglichst einfachen, nachvollziehbaren Regeln. Auch möchte sie die Anzahl der Regeln so weit wie möglich reduzieren. Die Überarbeitung des Regelsatzes hätte offensichtlich die zum Teil drastische Änderung des Schriftbildes zur Folge. Kein Satz würde mehr so aussehen wie vorher. Alle Werke der Literatur müssten angepasst werden. Alle Menschen müssten umlernen. Andererseits könnten sich Kinder schneller das Lesen und Schreiben aneignen, weil sie weniger Zeit mit dem Lernen überflüssiger und inkonsistenter Regeln verschwenden würden. Auch Nichtmuttersprachler würden davon profitieren.
+
+Da Wendy sich mit Software-Entwicklung auskennt, hatte sie die Idee, eine Applikation zu entwickeln, mit der man verschiedene Regelsätze für die deutsche Rechtschreibung schnell ausprobieren kann. Es ist ein Unterschied ob man unterschiedliche Regelsätze nur redet oder ob man sich die Auswirkungen auf einen Text direkt konkret anschauen kann. Zu diesem Zweck haben sich beide einen Text überlegt, der viele der Phänomene enthält, an denen sich die Unterschiede leicht erkennen lassen. Mithilfe von Schaltern lassen sich Regeln individuell aktivieren bzw. deaktivieren. Die daraus resultierende Schreibweise des gesamten Textes wird direkt in einem Fenster dargestellt. Außerdem werden auf Wunsch Unterschiede zum Stand vor dem Umschalten farblich hervorgehoben. Wenn der Benutzer einen besonders interessanten Regelsatz gebaut hat kann er diesen späteren Gebrauch unter einem sprechenden Namen abspeichern. Casimir ist ganz begeistert von der Idee und trägt durch eigene Ideen zum Gelingen des Projektes bei.
+
+Thematisch kann man die vorhandenen Konfigurationsmöglichkeiten in verschiedene Gruppen einteilen, wobei die Zuordnung der einzelnen Regeln zu den Gruppen nicht in allen Fällen eindeutig ist.
+
+*) Klein- und Großschreibung:
+*) Regeln zur Vereinfachung der Rechtschreibung durch andere Schreibweise von Lautkombinationen:
+*) Regeln zur Zeichensetzung:
+*) Regeln zum Layout:
+*) Regeln zur (partiellen) Reaktivierung der Rechtschreibung vor der Reform:
+*) Regeln zur Harmonisierung (Vereinheitlichung) der Rechtschreibung:
+
+Für jede der Gruppen gibt es einen Unterdialog in der Applikation, um die zugehörigen Regeln ein- und auszuschalten.
+
+Im folgenden sollen nun einige Beispiele herausgegriffen werden:
+
+*) Klein- und Großschreibung
+
+Das Deutsche ist eine wenigen westlichen Sprachen, bei der Substantive großgeschrieben werden. In anderen Sprachen ist die Großschreibung normalerweise auf a) Namen, b) Satzanfänge sowie in manchen Fällen auch noch c) Wochentage und Monatsnamen beschränkt, wobei man c) auch als einen Spezialfall von a) sehen kann. Die Großschreibung macht besonders Anfängern Schwierigkeiten, weil sich das Konzept eines Substantivs nur schwer fassen lässt, zumal das gleiche Wort z.B. mal als Verb und mal als Substantiv auftreten kann: "Wir gehen schwimmen", aber "Das Schwimmen macht mir Spaß." 
+
+Viele Leute plädieren daher dafür, normale Substantive zur Vereinfachung klein zu schreiben. Die Gegner bringen normalerweise das Argument an, dass besonders die Substantive einen guten Teil der Bedeutung eines Textes enthalten, d.h. das schnelle Erkennen der Substantive hilft dann auch beim Begreifen des Textes, besonders dann, wenn selbiger nur überflogen wird.
+
+*) Lautgetreue Schreibweise bei Doppellauten
+
+Im deutschen gibt es sechs Doppellaute: "au", "äu", "ai", "ei", "eu", "oi". Der letzte ("oi") wird normalerweise in Lehnworten aus dem Französischen verwendet. Das eigenartige ist, das drei der sechs nicht den Laut repräsentieren, der tatsächlich gesprochen wird: "äu" wird zu "oi", "ei" wird zu "ai", "eu" wird zu "oi" und "oi" wird zu "oa". Das ist für einen Sprachanfänger höchst verwirrend.

@@ -1,0 +1,62 @@
+[
+  {
+    "selected" : false,
+    "frame" : "{{0, 0}, {408, 461}}",
+    "class" : "View",
+    "nodes" : [
+      {
+        "selected" : false,
+        "frame" : "{{0, 0}, {408, 407}}",
+        "class" : "TableView",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "data_source_action" : "self.handle_action",
+          "uuid" : "B15DABF3-1997-4784-8F29-A47418D05C98",
+          "background_color" : "RGBA(0.928571,0.928571,0.928571,1.000000)",
+          "data_source_items" : "",
+          "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "data_source_number_of_lines" : 1,
+          "enabled" : true,
+          "data_source_accessory_action" : "self.handle_accessory",
+          "data_source_delete_enabled" : true,
+          "row_height" : 44,
+          "data_source_font_size" : 18,
+          "name" : "tableview_spelling_mode_selector",
+          "flex" : "WH"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{6, 415}, {150, 40}}",
+        "class" : "Button",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "RT",
+          "uuid" : "D20777B1-8BC1-49DF-83DF-A9DD747EDF4A",
+          "corner_radius" : 15,
+          "background_color" : "RGBA(0.857143,0.857143,0.857143,1.000000)",
+          "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "border_width" : 0,
+          "title" : "Abbrechen",
+          "action" : "self.handle_action",
+          "enabled" : true,
+          "font_bold" : false,
+          "name" : "button_cancel",
+          "font_size" : 15
+        }
+      }
+    ],
+    "attributes" : {
+      "flex" : "",
+      "enabled" : true,
+      "background_color" : "RGBA(0.785714,0.785714,0.785714,1.000000)",
+      "name" : "Regelsatz laden",
+      "tint_color" : "RGBA(0.000000,0.478000,1.000000,1.000000)",
+      "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)"
+    }
+  }
+]

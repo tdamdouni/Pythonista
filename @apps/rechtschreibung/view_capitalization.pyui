@@ -1,0 +1,307 @@
+[
+  {
+    "selected" : false,
+    "frame" : "{{0, 0}, {320, 480}}",
+    "class" : "View",
+    "nodes" : [
+      {
+        "selected" : false,
+        "frame" : "{{0, 0}, {320, 480}}",
+        "class" : "ScrollView",
+        "nodes" : [
+          {
+            "selected" : false,
+            "frame" : "{{0, 60}, {202.5, 32}}",
+            "class" : "Label",
+            "nodes" : [
+
+            ],
+            "attributes" : {
+              "flex" : "R",
+              "name" : "label1",
+              "enabled" : true,
+              "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+              "text" : "...durchgehend",
+              "alignment" : "left",
+              "uuid" : "511A8945-3EF7-4C2A-8F63-748A60AE6851",
+              "font_size" : 17,
+              "text_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)"
+            }
+          },
+          {
+            "selected" : false,
+            "frame" : "{{268, 59}, {51, 31}}",
+            "class" : "Switch",
+            "nodes" : [
+
+            ],
+            "attributes" : {
+              "flex" : "L",
+              "action" : "self.handle_action",
+              "enabled" : true,
+              "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+              "uuid" : "7FCE066F-F229-413D-A3BB-829B0E3E10A1",
+              "value" : false,
+              "name" : "switch_capitalization_all_capital"
+            }
+          },
+          {
+            "selected" : false,
+            "frame" : "{{0, 6}, {285, 32}}",
+            "class" : "Label",
+            "nodes" : [
+
+            ],
+            "attributes" : {
+              "flex" : "",
+              "name" : "label2",
+              "enabled" : true,
+              "font_name" : "<System-Bold>",
+              "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+              "text" : "Großschreibung...",
+              "alignment" : "left",
+              "uuid" : "36567578-DD77-43F8-BA44-C739EB717EF2",
+              "font_size" : 17,
+              "text_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)"
+            }
+          },
+          {
+            "selected" : false,
+            "frame" : "{{0, 96}, {203, 32}}",
+            "class" : "Label",
+            "nodes" : [
+
+            ],
+            "attributes" : {
+              "flex" : "R",
+              "name" : "label3",
+              "enabled" : true,
+              "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+              "text" : "...am Satzanfang",
+              "alignment" : "left",
+              "uuid" : "5E4E9CFE-5B62-4F47-BFB2-F5037AB19B3E",
+              "font_size" : 17,
+              "text_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)"
+            }
+          },
+          {
+            "selected" : false,
+            "frame" : "{{268, 96}, {51, 31}}",
+            "class" : "Switch",
+            "nodes" : [
+
+            ],
+            "attributes" : {
+              "flex" : "L",
+              "action" : "self.handle_action",
+              "enabled" : true,
+              "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+              "uuid" : "581B7FDC-449E-4D00-9A87-9CCA0CB93B7E",
+              "value" : true,
+              "name" : "bitswitch_capitalization|4"
+            }
+          },
+          {
+            "selected" : false,
+            "frame" : "{{0, 132}, {203, 32}}",
+            "class" : "Label",
+            "nodes" : [
+
+            ],
+            "attributes" : {
+              "flex" : "R",
+              "name" : "label4",
+              "enabled" : true,
+              "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+              "text" : "....bei Substantiven",
+              "alignment" : "left",
+              "uuid" : "A0C2DE53-CA87-472C-951A-8C14E9453E3A",
+              "font_size" : 17,
+              "text_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)"
+            }
+          },
+          {
+            "selected" : false,
+            "frame" : "{{0, 168}, {203, 32}}",
+            "class" : "Label",
+            "nodes" : [
+
+            ],
+            "attributes" : {
+              "flex" : "R",
+              "name" : "label5",
+              "enabled" : true,
+              "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+              "text" : "....bei Eigennamen",
+              "alignment" : "left",
+              "uuid" : "80B718D1-BA8C-4842-9EA6-5893EC6D097A",
+              "font_size" : 17,
+              "text_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)"
+            }
+          },
+          {
+            "selected" : false,
+            "frame" : "{{0, 204}, {203, 32}}",
+            "class" : "Label",
+            "nodes" : [
+
+            ],
+            "attributes" : {
+              "flex" : "R",
+              "name" : "label6",
+              "enabled" : true,
+              "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+              "text" : "....bei Anreden",
+              "alignment" : "left",
+              "uuid" : "E22930CF-0AB9-47A9-8551-4588A613012E",
+              "font_size" : 17,
+              "text_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)"
+            }
+          },
+          {
+            "selected" : false,
+            "frame" : "{{268, 132}, {51, 31}}",
+            "class" : "Switch",
+            "nodes" : [
+
+            ],
+            "attributes" : {
+              "flex" : "L",
+              "action" : "self.handle_action",
+              "enabled" : true,
+              "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+              "uuid" : "04939650-4A5C-47D7-9CA8-BBFCCEF9AD8E",
+              "value" : true,
+              "name" : "bitswitch_capitalization|1"
+            }
+          },
+          {
+            "selected" : false,
+            "frame" : "{{268, 168}, {51, 31}}",
+            "class" : "Switch",
+            "nodes" : [
+
+            ],
+            "attributes" : {
+              "flex" : "L",
+              "action" : "self.handle_action",
+              "enabled" : true,
+              "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+              "uuid" : "D7E0B99C-90EE-4174-B3AF-5A1600AF82F5",
+              "value" : true,
+              "name" : "bitswitch_capitalization|2"
+            }
+          },
+          {
+            "selected" : false,
+            "frame" : "{{268, 204}, {51, 31}}",
+            "class" : "Switch",
+            "nodes" : [
+
+            ],
+            "attributes" : {
+              "flex" : "L",
+              "action" : "self.handle_action",
+              "enabled" : true,
+              "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+              "uuid" : "A4CB6435-F6DF-4EAF-B970-0F02E37F2FDA",
+              "value" : true,
+              "name" : "bitswitch_capilization|8"
+            }
+          },
+          {
+            "selected" : false,
+            "frame" : "{{0, 240}, {203, 32}}",
+            "class" : "Label",
+            "nodes" : [
+
+            ],
+            "attributes" : {
+              "flex" : "R",
+              "name" : "label7",
+              "enabled" : true,
+              "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+              "text" : "....\"ß\" zu \"SS\"",
+              "alignment" : "left",
+              "uuid" : "AC5B836E-AF3A-44A4-B089-3FCF6E925E14",
+              "font_size" : 17,
+              "text_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)"
+            }
+          },
+          {
+            "selected" : false,
+            "frame" : "{{268, 240}, {51, 31}}",
+            "class" : "Switch",
+            "nodes" : [
+
+            ],
+            "attributes" : {
+              "flex" : "L",
+              "action" : "self.handle_action",
+              "enabled" : true,
+              "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+              "uuid" : "EFC5A376-3CD3-45FC-BC98-E98CA68433D0",
+              "value" : true,
+              "name" : "switch_capitalization_expand_sz"
+            }
+          },
+          {
+            "selected" : false,
+            "frame" : "{{0, 276}, {203, 32}}",
+            "class" : "Label",
+            "nodes" : [
+
+            ],
+            "attributes" : {
+              "flex" : "R",
+              "name" : "label8",
+              "enabled" : true,
+              "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+              "text" : "...am Satzanfang nach \":\"",
+              "alignment" : "left",
+              "uuid" : "E9E7AA38-00ED-489C-83EA-F3331C0ED3BB",
+              "font_size" : 17,
+              "text_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)"
+            }
+          },
+          {
+            "selected" : true,
+            "frame" : "{{268, 276}, {51, 31}}",
+            "class" : "Switch",
+            "nodes" : [
+
+            ],
+            "attributes" : {
+              "flex" : "L",
+              "action" : "self.handle_action",
+              "enabled" : true,
+              "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+              "uuid" : "C61201B7-88E7-4657-AD30-7F1927FAC1DF",
+              "value" : true,
+              "name" : "bitswitch_capitalization|16"
+            }
+          }
+        ],
+        "attributes" : {
+          "flex" : "WH",
+          "enabled" : true,
+          "content_width" : 320,
+          "content_height" : 480,
+          "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "uuid" : "A20E6066-8081-4BFD-93E7-17DA45B82052",
+          "custom_attributes" : "{ 'background_color' : defaults.COLOR_LIGHT_GREEN }\n\n",
+          "name" : "view_capitalization"
+        }
+      }
+    ],
+    "attributes" : {
+      "flex" : "",
+      "enabled" : true,
+      "tint_color" : "RGBA(0.000000,0.478000,1.000000,1.000000)",
+      "custom_class" : "",
+      "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+      "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+      "name" : "Groß- und Kleinschreibung"
+    }
+  }
+]

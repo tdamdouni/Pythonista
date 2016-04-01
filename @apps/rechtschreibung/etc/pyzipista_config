@@ -1,0 +1,6 @@
+[general]
+app_directory = rechtschreibung
+app_name = Rechtschreibung
+app_url = https://github.com/marcus67/rechtschreibung
+zip_filename = build/rechtschreibung_zip.py
+

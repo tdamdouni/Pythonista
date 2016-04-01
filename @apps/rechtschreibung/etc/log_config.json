@@ -1,0 +1,63 @@
+{
+    "version": 1,
+    "disable_existing_loggers": 1,
+    "formatters": {
+        "simple": {
+            "format": "%(name)s - %(levelname)s - %(message)s"
+        },
+        "precise": {
+            "format": "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+        }    },
+
+    "handlers": {
+        "console": {
+            "class": "logging.StreamHandler",
+            "level": "INFO",
+            "formatter": "simple",
+            "stream": "ext://sys.stdout"
+        },
+        "file": {
+            "class" : "logging.FileHandler",
+            "level": "DEBUG",
+            "formatter": "precise",
+            "filename": "log/rechtschreibung.log",
+            "mode": "w"
+        }
+    },
+
+    "loggers": {
+        "rechtschreibung": {
+            "level": "INFO",
+            "handlers": ["console", "file"],
+            "propagate": 0
+        },
+        "mode_manager": {
+            "level": "INFO",
+            "handlers": ["console", "file"],
+            "propagate": 0
+        },        
+        "enhanced_view": {
+            "level": "INFO",
+            "handlers": ["console", "file"],
+            "propagate": 0
+        },        
+        "test": {
+            "level": "INFO",
+            "handlers": ["console", "file"],
+            "propagate": 0
+        },
+        "log": {
+            "level": "INFO",
+            "handlers": ["console", "file"],
+            "propagate": 0
+        },
+        "__main__": {
+            "level": "INFO",
+            "handlers": ["console"],
+            "propagate": 0
+        }    },
+    "root": {
+        "level": "INFO",
+        "handlers": ["console"]
+    }
+}

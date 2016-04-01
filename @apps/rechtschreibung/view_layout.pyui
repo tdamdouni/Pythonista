@@ -1,0 +1,106 @@
+[
+  {
+    "selected" : false,
+    "frame" : "{{0, 0}, {320, 480}}",
+    "class" : "View",
+    "nodes" : [
+      {
+        "selected" : true,
+        "frame" : "{{0, 0}, {320, 480}}",
+        "class" : "ScrollView",
+        "nodes" : [
+          {
+            "selected" : false,
+            "frame" : "{{6, 7}, {248, 32}}",
+            "class" : "Label",
+            "nodes" : [
+
+            ],
+            "attributes" : {
+              "flex" : "",
+              "font_size" : 17,
+              "enabled" : true,
+              "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+              "text" : "Leerzeichen zwischen Worten",
+              "alignment" : "left",
+              "uuid" : "1205DDA5-4EAE-4D83-B35D-F686BBD164C7",
+              "name" : "label1",
+              "text_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)"
+            }
+          },
+          {
+            "selected" : false,
+            "frame" : "{{6, 46}, {248, 32}}",
+            "class" : "Label",
+            "nodes" : [
+
+            ],
+            "attributes" : {
+              "flex" : "",
+              "font_size" : 17,
+              "enabled" : true,
+              "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+              "text" : "Umbruch von Absätzen.",
+              "alignment" : "left",
+              "uuid" : "478119D5-49C4-4AC5-976F-C9C87AFB609D",
+              "name" : "label2",
+              "text_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)"
+            }
+          },
+          {
+            "selected" : false,
+            "frame" : "{{268, 7}, {51, 31}}",
+            "class" : "Switch",
+            "nodes" : [
+
+            ],
+            "attributes" : {
+              "flex" : "L",
+              "action" : "self.handle_action",
+              "enabled" : true,
+              "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+              "uuid" : "04F129C1-2A0D-47E7-A3D7-4870D55C4942",
+              "value" : true,
+              "name" : "switch_layout_word_separation"
+            }
+          },
+          {
+            "selected" : true,
+            "frame" : "{{268, 46}, {51, 31}}",
+            "class" : "Switch",
+            "nodes" : [
+
+            ],
+            "attributes" : {
+              "flex" : "L",
+              "action" : "self.handle_action",
+              "enabled" : true,
+              "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+              "uuid" : "22D539CD-A117-41E4-B519-CDC714F152D6",
+              "value" : true,
+              "name" : "switch_layout_paragraph_separation"
+            }
+          }
+        ],
+        "attributes" : {
+          "flex" : "WH",
+          "enabled" : true,
+          "content_width" : 320,
+          "content_height" : 480,
+          "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "uuid" : "A12AC11D-1BAB-4954-A206-9C1C8E18A089",
+          "custom_attributes" : "{ 'background_color' : defaults.COLOR_LIGHT_BLUE }",
+          "name" : "scrollview_layout"
+        }
+      }
+    ],
+    "attributes" : {
+      "tint_color" : "RGBA(0.000000,0.478000,1.000000,1.000000)",
+      "enabled" : true,
+      "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+      "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+      "name" : "Layout",
+      "flex" : ""
+    }
+  }
+]
