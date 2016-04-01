@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Raphaël · World Map</title>
+        <link rel="stylesheet" href="../demo.css"media="screen">
+        <link rel="stylesheet" href="../demo-print.css"media="print">
+        <style media="screen">
+            #latlon-form {
+                position: absolute;
+                top: 430px;
+            }
+            #latlon-form input {
+                font-size: 14px;
+                width: 200px;
+            }
+            #latlon-form button {
+                font-size: 14px;
+            }
+            #cities {
+                position: absolute;
+                top: 470px;
+                margin: 0 10px;
+                padding: 0;
+                list-style: none;
+            }
+            #cities a {
+                color: #ccf;
+            }
+        </style>
+        <script src="../raphael.js"></script>
+        <script src="world.js"></script>
+        <script>
+            Raphael(10, 10, 1000, 400, function () {
+                var r = this;
+                r.rect(0, 0, 1000, 400, 10).attr({
+                    stroke: "none",
+                    fill: "0-#9bb7cb-#adc8da"
+                });
+                var over = function () {
+                    this.c = this.c || this.attr("fill");
+                    this.stop().animate({fill: "#bacabd"}, 500);
+                    //JB added next line
+                    window.location.assign('world://'+encodeURIComponent(worldmap.names[this.attr("title")]));
+                },
+                    out = function () {
+                        this.stop().animate({fill: this.c}, 500);
+                    };
+                r.setStart();
+                var hue = Math.random();
+                for (var country in worldmap.shapes) {
+                    // var c = Raphael.hsb(Math.random(), .5, .75);
+                    // var c = Raphael.hsb(.11, .5, Math.random() * .25 - .25 + .75);
+                    r.path(worldmap.shapes[country]).attr({stroke: "#ccc6ae", fill: "#f0efeb", "stroke-opacity": 0.25, "title":country});  //JB added title
+                }
+                var world = r.setFinish();
+                world.hover(over, out);
+                // world.animate({fill: "#666", stroke: "#666"}, 2000);
+                world.getXY = function (lat, lon) {
+                    return {
+                        cx: lon * 2.6938 + 465.4,
+                        cy: lat * -2.6938 + 227.066
+                    };
+                };
+                world.getLatLon = function (x, y) {
+                    return {
+                        lat: (y - 227.066) / -2.6938,
+                        lon: (x - 465.4) / 2.6938
+                    };
+                };
+                var latlonrg = /(\d+(?:\.\d+)?)[\xb0\s]?\s*(?:(\d+(?:\.\d+)?)['\u2019\u2032\s])?\s*(?:(\d+(?:\.\d+)?)["\u201d\u2033\s])?\s*([SNEW])?/i;
+                world.parseLatLon = function (latlon) {
+                    var m = String(latlon).split(latlonrg),
+                        lat = m && +m[1] + (m[2] || 0) / 60 + (m[3] || 0) / 3600;
+                    if (m[4].toUpperCase() == "S") {
+                        lat = -lat;
+                    }
+                    var lon = m && +m[6] + (m[7] || 0) / 60 + (m[8] || 0) / 3600;
+                    if (m[9].toUpperCase() == "W") {
+                        lon = -lon;
+                    }
+                    return this.getXY(lat, lon);
+                };
+
+                try {
+                    navigator.geolocation && navigator.geolocation.getCurrentPosition(function (pos) {
+                        r.circle().attr({fill: "none", stroke: "#f00", r: 5}).attr(world.getXY(pos.coords.latitude, pos.coords.longitude));
+                    });
+                } catch (e) {}
+                var frm = document.getElementById("latlon-form"),
+                    dot = r.circle().attr({fill: "r#FE7727:50-#F57124:100", stroke: "#fff", "stroke-width": 2, r: 0}),
+                    // dot2 = r.circle().attr({stroke: "#000", r: 0}),
+                    ll = document.getElementById("latlon"),
+                    cities = document.getElementById("cities");
+                frm.onsubmit = function () {
+                    var attr = world.parseLatLon(ll.value);
+                    attr.r = 0;
+                    dot.stop().attr(attr).animate({r: 5}, 1000, "elastic");
+                    // dot2.stop().attr(attr).animate({r: 10}, 1000, "elastic");
+                    return false;
+                };
+                cities.onclick = function (e) {
+                    e = e || window.event;
+                    var target = e.target || e.srcElement || document;
+                    if (target.tagName == "A") {
+                        var txt = decodeURIComponent(target.href.substring(target.href.indexOf("#") + 1)),
+                            attr = world.parseLatLon(txt);
+                        window.location.assign('test://')
+                        ll.value = txt;
+                        attr.r = 0;
+                        dot.stop().attr(attr).animate({r: 5}, 1000, "elastic");
+                        // dot2.stop().attr(attr).animate({r: 10}, 1000, "elastic");
+                        return false;
+                    }
+                };
+            });
+        </script>
+    </head>
+    <body>
+
+        <form id="latlon-form">
+            <input id="latlon" value="33°51′35.9″S, 151°12′40″E">
+            <button type="submit">Find</button>
+        </form>
+        <ol id="cities">
+            <li><a href="#22 20 N 114 11 E">Hong Kong</a></li>
+            <li><a href="#26° 12' 0&quot; S  28° 5' 0&quot; E">Johannesburg</a></li>
+            <li><a href="#55 45 N 37 36 E">Moscow</a></li>
+            <li><a href="#40° 45' 21″N 73° 59' 11″W">New York</a></li>
+            <li><a href="#48 48 N 2 20 E">Paris</a></li>
+            <li><a href="#22 57 S 43 12 W">Rio de Janeiro</a></li>
+            <li><a href="#37° N 122° W">San Francisco</a></li>
+            <li><a href="#33°51′35.9″S, 151°12′40″E">Sydney</a></li>
+            <li><a href="#35 40 N 139 45 E">Tokyo</a></li>
+            <li><a href="#48 14 N, 16 20 E">Vienna</a></li>
+        </ol>
+        <p id="copy">Demo of <a href="http://raphaeljs.com/">Raphaël</a>—JavaScript Vector Library</p>
+    </body>
+</html>
