@@ -1,0 +1,58 @@
+# This is a sample configuration file for gitsynchista. Place a copy of this file without the
+# prefix 'sample_' into the directory of the application that you would like to synchronize.
+# Then create an action shortcut with gitsynchista.py using the filename of the new configuration
+# file as the first parameter. Make sure you use a relative path from the location of the 
+# gitsynchista.py script!
+
+# These are settings of the WebDav server.
+[webdav]
+
+# WebDav server name (IP or DNS name)
+server=localhost
+
+# WebDav port address 
+port=8080
+
+# Authentication mode. Selects authentication mode to be used with the credentials below.
+# Permitted values: 'basic' and 'digest'. The latter is the default value and also the one to
+# be used with iOS app "working copy".
+auth_mode = digest
+
+# User name for authentication. Comment out if the authentication has been disabled.
+# Note: For authenticated access you will need the easywebdav client.py from the GitHub clone
+# at https://github.com/marcus67/easywebdav.
+username = test_user
+
+# Password for authentication. Comment out if the authentication has been disabled.
+# The special value 'USE_KEY_CHAIN' (which is also the default) will prompt for the password
+# and store it in the keychain of iOS.
+password = test_password
+
+# Use this parameter to tell the tool how much ahead of time the WebDav server is in seconds.
+# The 'working copy' server seems to be ahead a full hour. So the value of 3600 seconds will
+# correct this. Comment out if local files and WebDav files have consistent time stamps.
+epoch_delta = 3600
+
+[repository]
+
+# Logical name of the repository
+name = test
+
+# Directory name of the application in the Pythonista directory tree. Do not use leading '/'.
+local_path = test
+
+# Directory name of the application on the WebDav server. For 'working copy' leading '/' work fine. 
+remote_path = test
+
+# Allow transfers from local directory tree to remote WebDav directory.
+transfer_to_remote = True
+
+# Allow transfers from remote WebDav directory to local directory tree.
+transfer_to_local = True
+
+# GUI only: automatically (re-)scan this repository. If not set the repository must be scanned 
+# manually before a sync is possible.
+auto_scan = False
+
+# Assume that the WebDav server is hosted by "working copy". Send a wakeup command to the server
+working_copy_wakeup = False

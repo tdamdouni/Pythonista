@@ -1,0 +1,10 @@
+[webdav]
+
+epoch_delta = 3600
+
+[repository]
+
+name = gitsynchista
+local_path = .
+remote_path = /gitsynchista
+

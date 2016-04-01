@@ -1,0 +1,93 @@
+{
+    "version": 1,
+    "disable_existing_loggers": 1,
+    "formatters": {
+        "simple": {
+            "format": "%(name)s - %(levelname)s - %(message)s"
+        },
+        "precise": {
+            "format": "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+        }    },
+
+    "handlers": {
+        "console": {
+            "class": "logging.StreamHandler",
+            "level": "INFO",
+            "formatter": "simple",
+            "stream": "ext://sys.stdout"
+        },
+        "file": {
+            "class" : "logging.FileHandler",
+            "level": "DEBUG",
+            "formatter": "precise",
+            "filename": "log/gitsynchista.log",
+            "mode": "w"
+        }
+    },
+
+    "loggers": {
+        "gitsynchista": {
+            "level": "INFO",
+            "handlers": ["console", "file"],
+            "propagate": 0
+        },
+        "pyzipista": {
+            "level": "INFO",
+            "handlers": ["console", "file"],
+            "propagate": 0
+        },
+        "config": {
+            "level": "INFO",
+            "handlers": ["console", "file"],
+            "propagate": 0
+        },        
+        "sync_selector": {
+            "level": "INFO",
+            "handlers": ["console", "file"],
+            "propagate": 0
+        },        
+        "sync": {
+            "level": "DEBUG",
+            "handlers": ["console", "file"],
+            "propagate": 0
+        },        
+        "ui_util": {
+            "level": "INFO",
+            "handlers": ["console", "file"],
+            "propagate": 0
+        },        
+        "url_scheme_support": {
+            "level": "DEBUG",
+            "handlers": ["console", "file"],
+            "propagate": 0
+        },        
+        "working_copy": {
+            "level": "DEBUG",
+            "handlers": ["console", "file"],
+            "propagate": 0
+        },        
+        "test": {
+            "level": "INFO",
+            "handlers": ["console", "file"],
+            "propagate": 0
+        },
+        "log": {
+            "level": "INFO",
+            "handlers": ["console", "file"],
+            "propagate": 0
+        },
+        "client": {
+            "level": "DEBUG",
+            "handlers": ["console", "file"],
+            "propagate": 0
+        },
+        "__main__": {
+            "level": "INFO",
+            "handlers": ["console"],
+            "propagate": 0
+        }    },
+    "root": {
+        "level": "INFO",
+        "handlers": ["console"]
+    }
+}

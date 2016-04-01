@@ -1,0 +1,2 @@
+import gistcheck
+gistcheck.set()

@@ -1,0 +1,5 @@
+[general]
+app_directory = gitsynchista
+app_url = https://github.com/marcus67/gitsynchista
+zip_filename = build/gitsynchista_zip.py
+

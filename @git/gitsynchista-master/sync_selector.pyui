@@ -1,0 +1,211 @@
+[
+  {
+    "selected" : false,
+    "frame" : "{{0, 0}, {500, 423}}",
+    "class" : "View",
+    "nodes" : [
+      {
+        "selected" : false,
+        "frame" : "{{0, 74}, {500, 295}}",
+        "class" : "TableView",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "uuid" : "55CBACF3-1959-4C21-978A-5E8F7CEC13DF",
+          "flex" : "WH",
+          "editing" : false,
+          "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+          "data_source_items" : "Row 1\nRow 2 >\nRow 3 (i)",
+          "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "data_source_number_of_lines" : 1,
+          "enabled" : true,
+          "data_source_accessory_action" : "self.handle_accessory",
+          "data_source_delete_enabled" : false,
+          "row_height" : 44,
+          "data_source_font_size" : 16,
+          "name" : "tableview_sync_selector",
+          "data_source_action" : "self.handle_action"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{412, 377}, {80, 40}}",
+        "class" : "Button",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "uuid" : "EF812BD4-D95B-49B3-827B-2C9A4D8E59B3",
+          "font_size" : 15,
+          "corner_radius" : 5,
+          "background_color" : "RGBA(0.642857,0.821429,1.000000,1.000000)",
+          "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "border_width" : 1,
+          "title" : "Sync",
+          "action" : "self.handle_action",
+          "enabled" : true,
+          "font_bold" : false,
+          "name" : "button_sync",
+          "flex" : "LT"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{324, 377}, {80, 40}}",
+        "class" : "Button",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "uuid" : "380E7AE1-8E1D-48EE-8E95-5D8EBE3FD134",
+          "font_size" : 15,
+          "corner_radius" : 5,
+          "background_color" : "RGBA(0.642857,0.821429,1.000000,1.000000)",
+          "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "border_width" : 1,
+          "title" : "Scan",
+          "action" : "self.handle_action",
+          "enabled" : true,
+          "font_bold" : false,
+          "name" : "button_scan",
+          "flex" : "LT"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{6, 6}, {305, 64}}",
+        "class" : "ImageView",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "frame" : "{{171, 162}, {100, 100}}",
+          "class" : "ImageView",
+          "name" : "imageview_gitsynchista_icon",
+          "uuid" : "F5799F05-CAB6-46F8-9ABF-2ABBD49CDB1C"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{428, 6}, {64, 64}}",
+        "class" : "ImageView",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "uuid" : "184194DC-E365-488C-97F9-1B61E5AA1FD8",
+          "frame" : "{{171, 162}, {100, 100}}",
+          "class" : "ImageView",
+          "name" : "imageview_icon_feature_1",
+          "flex" : "L"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{6, 377}, {40, 40}}",
+        "class" : "Button",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "uuid" : "F226F6B7-BA60-4396-8F9A-429D10EB9817",
+          "flex" : "RT",
+          "corner_radius" : 5,
+          "frame" : "{{181, 196}, {80, 32}}",
+          "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "border_width" : 1,
+          "title" : "",
+          "action" : "self.handle_action",
+          "enabled" : true,
+          "font_bold" : false,
+          "class" : "Button",
+          "name" : "button_working_copy",
+          "font_size" : 14
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{54, 377}, {100, 40}}",
+        "class" : "Label",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "RT",
+          "name" : "label_open_repository",
+          "frame" : "{{175, 196}, {150, 32}}",
+          "uuid" : "509B896F-2F82-4563-8721-1CE4DEF5DDA3",
+          "text" : "Open Repo",
+          "alignment" : "left",
+          "class" : "Label",
+          "font_size" : 18,
+          "font_name" : "<System>"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{175, 377}, {40, 40}}",
+        "class" : "Button",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "border_width" : 3,
+          "action" : "self.handle_action",
+          "flex" : "T",
+          "frame" : "{{210, 196}, {80, 32}}",
+          "title" : "Zip",
+          "class" : "Button",
+          "uuid" : "5236AC36-E3AC-41FD-9953-66E4F9B5DCD4",
+          "corner_radius" : 5,
+          "border_color" : "RGBA(0.009434,0.009434,0.009434,1.000000)",
+          "font_size" : 15,
+          "name" : "button_pyzipista"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{222, 377}, {84, 40}}",
+        "class" : "Label",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "T",
+          "font_size" : 18,
+          "frame" : "{{175, 196}, {150, 32}}",
+          "uuid" : "E82C58E3-6964-40CB-A0F2-12C7355ECE64",
+          "text" : "pyzipista",
+          "alignment" : "left",
+          "class" : "Label",
+          "name" : "label_pyzipista",
+          "font_name" : "<System>"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{356, 6}, {64, 64}}",
+        "class" : "ImageView",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "uuid" : "BDA533E3-C4BF-4604-9D15-BE89BFEF9DF4",
+          "frame" : "{{200, 162}, {100, 100}}",
+          "class" : "ImageView",
+          "name" : "imageview_icon_feature_2",
+          "flex" : "L"
+        }
+      }
+    ],
+    "attributes" : {
+      "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+      "enabled" : true,
+      "tint_color" : "RGBA(0.000000,0.478000,1.000000,1.000000)",
+      "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+      "name" : "gitsynchista GUI",
+      "flex" : ""
+    }
+  }
+]

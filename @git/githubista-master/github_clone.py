@@ -1,0 +1,3 @@
+import githubista
+
+githubista.clone()
