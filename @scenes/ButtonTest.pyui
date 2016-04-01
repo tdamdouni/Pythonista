@@ -1,0 +1,32 @@
+[
+  {
+    "frame" : "{{0, 0}, {240, 240}}",
+    "class" : "View",
+    "nodes" : [
+      {
+        "frame" : "{{69.5, 80}, {125.5, 87.5}}",
+        "class" : "Button",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "",
+          "enabled" : true,
+          "title" : "",
+          "uuid" : "7D7AD8D1-C994-4CCD-8BB7-DFC1EFD91F2C",
+          "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "font_bold" : false,
+          "font_size" : 15,
+          "name" : "button1"
+        }
+      }
+    ],
+    "attributes" : {
+      "enabled" : true,
+      "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+      "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+      "tint_color" : "RGBA(0.000000,0.478000,1.000000,1.000000)",
+      "flex" : ""
+    }
+  }
+]

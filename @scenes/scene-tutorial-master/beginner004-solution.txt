@@ -1,0 +1,25 @@
+touch_began here x:165.5, y:218.5
+touch_ended here x:167.0, y:216.5
+
+touch_began here x:532.5, y:452.0
+touch_ended here x:541.5, y:457.0
+
+touch_began here x:897.0, y:649.0
+touch_ended here x:897.5, y:649.0
+
+
+
+touch_began here x:400.0, y:384.0
+touch_moved there x:406.5, y:386.5
+touch_moved there x:412.0, y:386.5
+touch_moved there x:427.0, y:386.5
+touch_moved there x:436.0, y:386.5
+touch_moved there x:444.5, y:386.5
+touch_moved there x:451.0, y:386.5
+touch_moved there x:458.0, y:386.5
+touch_moved there x:462.5, y:386.5
+touch_moved there x:465.5, y:386.5
+touch_moved there x:467.5, y:386.5
+touch_moved there x:468.0, y:386.5
+touch_moved there x:468.5, y:386.5
+touch_ended here x:468.0, y:386.5
