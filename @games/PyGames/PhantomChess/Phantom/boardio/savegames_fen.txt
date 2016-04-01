@@ -1,0 +1,15 @@
+# Line comments can be marked with a '#'
+# The '#' MUST be placed as the first character of the line
+# Blank lines are also ignored
+
+# Default savegames
+Long Endgame 1: 8/1r5n/8/8/5k2/1b6/3K3N/7Q b - - 0 1
+Long Endgame 2: 1n1k4/6Q1/5KP1/8/7b/1r6/8/8 w - - 0 1
+Long Endgame 3: 6N1/5KR1/2n5/8/8/8/2n5/1k6 w - - 0 1
+Long Endgame 4: 8/1r6/8/6n1//5k2/1b6/3K3N/7Q b - - 0 1
+Game 1: rn1q1bnr/3bpkpp/ppp5/3p1p2/3PPBP1/2N4N/PPP1QP1P/2KR1B1R b - - 1 8
+Game 2: 2kr1bnr/ppnb1p1p/2p1pqp1/3p2B1/3P4/N2Q4/PPPKPPPP/3RNBR1 w - - 6 10
+Annoyance: 8/1P4R1/K2k2p1/8/8/7p/1r6/8 w - - 0 67
+Opening: rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1
+
+# -------- User saves --------

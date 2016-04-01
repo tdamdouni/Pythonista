@@ -1,0 +1,76 @@
+# A set of savegames in EPD format to test the Phantom engine.
+# Please don't write directly to this file.
+
+# ------------ Some random studies ------------
+behting study: 8/8/7p/3KNN1k/2p4p/8/3P2p1/8 w - - bm Kc6; id "Behting study";
+djaja study: 6R1/P2k4/r7/5N1P/r7/p7/7K/8 w - - bm Nh6; id "Djaja study";
+en passant: rnbqkbnr/2pp1ppp/8/3PpP2/1pPp4/8/PP1PPP2/RNBQKBNR w KQkq e5 bm Pfxe5; id "En passant test";
+eval test 1: r1bqkbr1/p1pp1ppp/4p3/7N/6P1/PPPPPPBP/RNBQ1RK1 b q - bm g5; id "pos-eval test 1";
+checkmate test 1: rnQ1kb1r/pp2pp1p/2p2np1/3P4/6B1/1PNP4/1P2PP1P/R1B1K1NR b KQ - hmvc 2; fmvn 6; id "Checkmate detection test 1";
+promote test 1: 8/4P3/8/1k4K1/8/8/4p3/8 w - - bm Pe8; id "Promotion test 1";
+
+# ------------- Nolot suite -------------
+nolot 1: r3qb1k/1b4p1/p2pr2p/3n4/Pnp1N1N1/6RP/1B3PP1/1B1QR1K1 w - - bm Nxh6; id "nolot pos 1";
+nolot 2: r4rk1/pp1n1p1p/1nqP2p1/2b1P1B1/4NQ2/1B3P2/PP2K2P/2R5 w - - bm Rxc5; id "nolot pos 2";
+nolot 3: r2qk2r/ppp1b1pp/2n1p3/3pP1n1/3P2b1/2PB1NN1/PP4PP/R1BQK2R w KQkq - bm Nxg5; id "nolot pos 3";
+nolot 4: r1b1kb1r/1p1n1ppp/p2ppn2/6BB/2qNP3/2N5/PPP2PPP/R2Q1RK1 w kq - bm Nxe6; id "nolot pos 4";
+nolot 5: r2qrb1k/1p1b2p1/p2ppn1p/8/3NP3/1BN5/PPP3QP/1K3RR1 w - - bm e5; id "nolot pos 5";
+nolot 6: rnbqk2r/1p3ppp/p7/1NpPp3/QPP1P1n1/P4N2/4KbPP/R1B2B1R b kq - bm axb5; id "nolot pos 6";
+nolot 7: 1r1bk2r/2R2ppp/p3p3/1b2P2q/4QP2/4N3/1B4PP/3R2K1 w k - bm Rxd8+; id "nolot pos 7";
+nolot 8: r3rbk1/ppq2ppp/2b1pB2/8/6Q1/1P1B3P/P1P2PP1/R2R2K1 w - - bm Bxh7+; id "nolot pos 8";
+nolot 9: r4r1k/4bppb/2n1p2p/p1n1P3/1p1p1BNP/3P1NP1/qP2QPB1/2RR2K1 w - - bm Ng5; id "nolot pos 9";
+nolot 10: r1b2rk1/1p1nbppp/pq1p4/3B4/P2NP3/2N1p3/1PP3PP/R2Q1R1K w - - bm Rxf7; id "nolot pos 10";
+nolot 11: r1b3k1/p2p1nP1/2pqr1Rp/1p2p2P/2B1PnQ1/1P6/P1PP4/1K4R1 w - - bm Rxh6; id "nolot pos 11";
+
+# ------------ Kaufman test -----------
+kaufman 1: 1rbq1rk1/p1b1nppp/1p2p3/8/1B1pN3/P2B4/1P3PPP/2RQ1R1K w - - bm Nf6+; id "kaufman pos 01";
+kaufman 2: 3r2k1/p2r1p1p/1p2p1p1/q4n2/3P4/PQ5P/1P1RNPP1/3R2K1 b - - bm Nxd4 id "kaufman pos 02";
+kaufman 3: 3r2k1/1p3ppp/2pq4/p1n5/P6P/1P6/1PB2QP1/1K2R3 w - - am Rd1; id "kaufman pos 03";
+kaufman 4: r1b1r1k1/1ppn1p1p/3pnqp1/8/p1P1P3/5P2/PbNQNBPP/1R2RB1K w - - bm Rxb2; id "kaufman pos 04";
+kaufman 5: 2r4k/pB4bp/1p4p1/6q1/1P1n4/2N5/P4PPP/2R1Q1K1 b - - bm Qxc1; id "kaufman pos 05";
+kaufman 6: r5k1/3n1ppp/1p6/3p1p2/3P1B2/r3P2P/PR3PP1/2R3K1 b - - am Rxa2; id "kaufman pos 06";
+kaufman 7: 2r2rk1/1bqnbpp1/1p1ppn1p/pP6/N1P1P3/P2B1N1P/1B2QPP1/R2R2K1 b - - bm Bxe4 id "kaufman pos 07";
+kaufman 8: 5r1k/6pp/1n2Q3/4p3/8/7P/PP4PK/R1B1q3 b - - bm h6; id "kaufman pos 08";
+kaufman 9: r3k2r/pbn2ppp/8/1P1pP3/P1qP4/5B2/3Q1PPP/R3K2R w KQkq - bm Be2; id "kaufman pos 09";
+kaufman 10: 3r2k1/ppq2pp1/4p2p/3n3P/3N2P1/2P5/PP2QP2/K2R4 b - - bm Nxc3; id "kaufman pos 10";
+kaufman 11: q3rn1k/2QR4/pp2pp2/8/P1P5/1P4N1/6n1/6K1 w - - bm Nf5; id "kaufman pos 11";
+kaufman 12: 6k1/p3q2p/1nr3pB/8/3Q1P2/6P1/PP5P/3R2K1 b - - bm Rd6; id "kaufman pos 12";
+kaufman 13: 1r4k1/7p/5np1/3p3n/8/2NB4/7P/3N1RK1 w - - bm Nxd5; id "kaufman pos 13";
+kaufman 14: 1r2r1k1/p4p1p/6pB/q7/8/3Q2P1/PbP2PKP/1R3R2 w - - bm Rxb2; id "kaufman pos 14";
+kaufman 15: r2q1r1k/pb3p1p/2n1p2Q/5p2/8/3B2N1/PP3PPP/R3R1K1 w - - bm Bxf5; id "kaufman pos 15";
+kaufman 16: 8/4p3/p2p4/2pP4/2P1P3/1P4k1/1P1K4/8 w - - bm b4; id "kaufman pos 16";
+kaufman 17: 1r1q1rk1/p1p2pbp/2pp1np1/6B1/4P3/2NQ4/PPP2PPP/3R1RK1 w - - bm e5; id "kaufman pos 17";
+kaufman 18: q4rk1/1n1Qbppp/2p5/1p2p3/1P2P3/2P4P/6P1/2B1NRK1 b - - bm Qc8; id "kaufman pos 18";
+kaufman 19: r2q1r1k/1b1nN2p/pp3pp1/8/Q7/PP5P/1BP2RPN/7K w - - bm Qxd7; id "kaufman pos 19";
+kaufman 20: 8/5p2/pk2p3/4P2p/2b1pP1P/P3P2B/8/7K w - - bm Bg4; id "kaufman pos 20";
+kaufman 21: 8/2k5/4p3/1nb2p2/2K5/8/6B1/8 w - - bm Kxb5; id "kaufman pos 21";
+kaufman 22: 1B1b4/7K/1p6/1k6/8/8/8/8 w - - bm Ba7; id "kaufman pos 22";
+kaufman 23: rn1q1rk1/1b2bppp/1pn1p3/p2pP3/3P4/P2BBN1P/1P1N1PP1/R2Q1RK1 b - - bm Ba6; id "kaufman pos 23";
+kaufman 24: 8/p1ppk1p1/2n2p2/8/4B3/2P1KPP1/1P5P/8 w - - bm Bxc6; id "kaufman pos 24";
+kaufman 25: 8/3nk3/3pp3/1B6/8/3PPP2/4K3/8 w - - bm Bxd7; id "kaufman pos 25";
+
+# ----------- Bratko-Kopec test ------------
+BK 1: 1k1r4/pp1b1R2/3q2pp/4p3/2B5/4Q3/PPP2B2/2K5 b - - bm Qd1+; id "BK.01";
+BK 2: 3r1k2/4npp1/1ppr3p/p6P/P2PPPP1/1NR5/5K2/2R5 w - - bm d5; id "BK.02";
+BK 3: 2q1rr1k/3bbnnp/p2p1pp1/2pPp3/PpP1P1P1/1P2BNNP/2BQ1PRK/7R b - - bm f5; id "BK.03";
+BK 4: rnbqkb1r/p3pppp/1p6/2ppP3/3N4/2P5/PPP1QPPP/R1B1KB1R w KQkq - bm e6; id "BK.04";
+BK 5: r1b2rk1/2q1b1pp/p2ppn2/1p6/3QP3/1BN1B3/PPP3PP/R4RK1 w - - bm Nd5 a4; id "BK.05";
+BK 6: 2r3k1/pppR1pp1/4p3/4P1P1/5P2/1P4K1/P1P5/8 w - - bm g6; id "BK.06";
+BK 7: 1nk1r1r1/pp2n1pp/4p3/q2pPp1N/b1pP1P2/B1P2R2/2P1B1PP/R2Q2K1 w - - bm Nf6; id "BK.07";
+BK 8: 4b3/p3kp2/6p1/3pP2p/2pP1P2/4K1P1/P3N2P/8 w - - bm f5; id "BK.08";
+BK 9: 2kr1bnr/pbpq4/2n1pp2/3p3p/3P1P1B/2N2N1Q/PPP3PP/2KR1B1R w - - bm f5; id "BK.09";
+BK 10: 3rr1k1/pp3pp1/1qn2np1/8/3p4/PP1R1P2/2P1NQPP/R1B3K1 b - - bm Ne5; id "BK.10";
+BK 11: 2r1nrk1/p2q1ppp/bp1p4/n1pPp3/P1P1P3/2PBB1N1/4QPPP/R4RK1 w - - bm f4; id "BK.11";
+BK 12: r3r1k1/ppqb1ppp/8/4p1NQ/8/2P5/PP3PPP/R3R1K1 b - - bm Bf5; id "BK.12";
+BK 13: r2q1rk1/4bppp/p2p4/2pP4/3pP3/3Q4/PP1B1PPP/R3R1K1 w - - bm b4; id "BK.13";
+BK 14: rnb2r1k/pp2p2p/2pp2p1/q2P1p2/8/1Pb2NP1/PB2PPBP/R2Q1RK1 w - - bm Qd2 Qe1; id "BK.14";
+BK 15: 2r3k1/1p2q1pp/2b1pr2/p1pp4/6Q1/1P1PP1R1/P1PN2PP/5RK1 w - - bm Qxg7+; id "BK.15";
+BK 16: r1bqkb1r/4npp1/p1p4p/1p1pP1B1/8/1B6/PPPN1PPP/R2Q1RK1 w kq - bm Ne4; id "BK.16";
+BK 17: r2q1rk1/1ppnbppp/p2p1nb1/3Pp3/2P1P1P1/2N2N1P/PPB1QP2/R1B2RK1 b - - bm h5; id "BK.17";
+BK 18: r1bq1rk1/pp2ppbp/2np2p1/2n5/P3PP2/N1P2N2/1PB3PP/R1B1QRK1 b - - bm Nb3; id "BK.18";
+BK 19: 3rr3/2pq2pk/p2p1pnp/8/2QBPP2/1P6/P5PP/4RRK1 b - - bm Rxe4; id "BK.19";
+BK 20: r4k2/pb2bp1r/1p1qp2p/3pNp2/3P1P2/2N3P1/PPP1Q2P/2KRR3 w - - bm g4; id "BK.20";
+BK 21: 3rn2k/ppb2rpp/2ppqp2/5N2/2P1P3/1P5Q/PB3PPP/3RR1K1 w - - bm Nh6; id "BK.21";
+BK 22: 2r2rk1/1bqnbpp1/1p1ppn1p/pP6/N1P1P3/P2B1N1P/1B2QPP1/R2R2K1 b - - bm Bxe4; id "BK.22";
+BK 23: r1bqk2r/pp2bppp/2p5/3pP3/P2Q1P2/2N1B3/1PP3PP/R4RK1 b kq - bm f6; id "BK.23";
+BK 24: r2qnrnk/p2b2b1/1p1p2pp/2pPpp2/1PP1P3/PRNBB3/3QNPPP/5RK1 w - - bm f4; id "BK.24";

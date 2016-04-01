@@ -1,0 +1,7 @@
+# Line comments can be marked with a '#'
+# The '#' MUST be placed as the first character of the line
+# Blank lines are also ignored
+
+# This is the Extended Position Description formatted savegame file.
+
+
