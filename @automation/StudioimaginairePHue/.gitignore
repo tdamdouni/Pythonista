@@ -1,0 +1,6 @@
+*.pyc
+*~
+*.swp
+test.py
+*.DS_Store
+*.sublime-workspace

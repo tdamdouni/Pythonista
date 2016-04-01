@@ -1,0 +1,22 @@
+language: python
+python:
+  - "2.6"
+  - "2.7"
+  - "3.2"
+  - "3.3"
+  - "3.4"
+  - "pypy"
+
+install:
+  - pip install -r requirements.txt
+  - pip install -r requirements-dev.txt
+  - pip install -e .
+
+script:
+  - make lint
+  - py.test --cov-config .coveragerc --cov soco .
+
+after_script:
+  - coveralls
+  
+sudo: false
