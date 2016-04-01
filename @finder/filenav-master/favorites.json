@@ -1,0 +1,18 @@
+[
+    [
+        ".", 
+        "Current Working Directory"
+    ], 
+    [
+        "~/Documents", 
+        "Script Library"
+    ], 
+    [
+        "~", 
+        "User Home"
+    ], 
+    [
+        "$APPDIR", 
+        "Pythonista App Bundle"
+    ]
+]
