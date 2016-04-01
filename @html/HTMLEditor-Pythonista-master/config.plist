@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>editor.font.size</key>
+	<integer>13</integer>
+	<key>editor.line.wrap</key>
+	<string>false</string>
+	<key>editor.print.margin</key>
+	<string>false</string>
+	<key>editor.show.gutter</key>
+	<string>false</string>
+	<key>editor.soft.tabs</key>
+	<string>false</string>
+	<key>editor.style</key>
+	<string>ace/theme/kuroir</string>
+	<key>editor.tab.size</key>
+	<string>4</string>
+</dict>
+</plist>
