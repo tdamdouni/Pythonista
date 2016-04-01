@@ -1,0 +1,77 @@
+{
+  "gridVisible" : 1,
+  "showsPhysics" : true,
+  "backgroundColor" : "RGBA(0.150,0.150,0.150,1.000)",
+  "children" : [
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0.2,
+        "linearDamping" : 0.1
+      },
+      "attributes" : {
+        "emissionAngle" : 0,
+        "particlePositionRange.x" : 0,
+        "particleAlphaSpeed" : 0,
+        "particleScaleRange" : 0.5,
+        "particleColorBlendFactor" : 1,
+        "position.y" : 48,
+        "particleBirthRate" : 30,
+        "particleZPositionRange" : 0,
+        "particleRotation" : 0,
+        "particleSize.height" : 39,
+        "emissionAngleRange" : 6.283185482025146,
+        "particleColorGreenRange" : 0,
+        "particleColorBlueRange" : 0,
+        "particleZPositionSpeed" : 0,
+        "particleLifetimeRange" : 0,
+        "yScale" : 1,
+        "particleColorBlueSpeed" : -0.3000000029802322,
+        "particleColorRedRange" : 0,
+        "particleBlendMode" : 1,
+        "particleColorBlendFactorRange" : 0,
+        "particlePositionRange.y" : 0,
+        "particleTexture" : "shp:Spark",
+        "particleColorGreenSpeed" : -0.2000000014901161,
+        "particleColorRedSpeed" : 0.5,
+        "particleSpeedRange" : 10,
+        "zRotation" : 0,
+        "particleAlphaRange" : 0,
+        "particleLifetime" : 3,
+        "particleRotationRange" : 0,
+        "particleScaleSpeed" : -0.4000000059604645,
+        "xAcceleration" : 0,
+        "position.x" : 48,
+        "yAcceleration" : 50,
+        "alpha" : 1,
+        "particleRotationSpeed" : 0,
+        "xScale" : 1,
+        "particleSize.width" : 40,
+        "particleColorAlphaRange" : 0,
+        "_type" : "Emitter",
+        "name" : "emitter",
+        "targetNodeIsScene" : false,
+        "particleScale" : 1,
+        "particleColor" : "RGBA(0.283,1.000,1.000,1.000)",
+        "particleAlpha" : 1,
+        "particleSpeed" : 10,
+        "particleColorBlendFactorSpeed" : 0,
+        "particleColorAlphaSpeed" : 0,
+        "particleZPosition" : 0
+      },
+      "children" : [
+
+      ]
+    }
+  ],
+  "gridSize" : 4
+}

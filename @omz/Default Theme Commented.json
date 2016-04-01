@@ -1,0 +1,157 @@
+{
+    "name": "Default Commented", "name___comment": "The theme's display name in the Themes menu.",
+    
+    "library_background": "#fafafa", "library_background___comment": "The background color of the Script Library.",
+    "thumbnail_border": "#d1d1d1", "thumbnail_border___comment": "The color of the borders between files in the Script Library.",
+    
+    "default_text": "#333333", "default_text___comment": "The default color of interface text.",
+    
+    "tint": "#5794b0", "tint___comment": "The tint color of interface buttons.",
+    "text_selection_tint": "#5794b0", "text_selection_tint___comment": "The tint color of the text selection and cursor.",
+    "bar_background": "#ffffff", "bar_background___comment": "The background color of the toolbar and the active tab.",
+    "tab_background": "#f0f0f0", "tab_background___comment": "The background color of inactive tabs.",
+    "tab_title": "#000000", "tab_title___comment": "The color of the tab title text.",
+    "separator_line": "#b3b3b3",  "separator_line___comment": "The color of the separator line between toolbar/tabs and editor.",
+    
+    "background": "#ffffff", "background___comment": "The default background color of the editor.",
+    
+    "gutter_background": "#fafafa", "gutter_background___comment": "The background color of the line number column on the left side of the editor.",
+    "gutter_border": "#dddddd", "gutter_border___comment": "The color of the border that separates the gutter from the editor.",
+    "line_number": "#a5a5a5", "line_number___comment": "The color of the line numbers in the gutter.",
+    
+    "dark_keyboard": false, "dark_keyboard___comment": "Whether to use a dark onscreen keyboard.",
+    
+    "font-size": 15.0, "font-size___comment": "The default editor and console font size.",
+    "font-family": "Menlo-Regular", "font-family___comment": "The default editor and console font family.",
+    
+    
+    "scopes___comment": "Formatting for various kinds of text in the editor. Formatting options are similar to CSS styles.",
+    "scopes": {
+        "default___comment": "Default text, for plain text files or text with no special meaning.",
+        "default": {
+            "color": "#000000"
+        },
+        "string___comment": "String literals.",
+        "string": {
+            "color": "#ce5149"
+        },
+        "docstring___comment": "Python multiline string literals.",
+        "docstring": {
+            "color": "#447919",
+            "font-style": "italic"
+        },
+        "number___comment": "Numbers.",
+        "number": {
+            "color": "#2682d5"
+        },
+        "keyword___comment": "Language keywords.",
+        "keyword": {
+            "color": "#a4258f"
+        },
+        "module___comment": "Python module names as part of import statements.",
+        "module": {
+            "color": "#6e41a8"
+        },
+        "function___comment": "Function names as part of a function call.",
+        "function": {
+            "color": "#21767e"
+        },
+        "builtinfunction___comment": "Built-in function names as part of a function call.",
+        "builtinfunction": {
+            "color": "#21767e"
+        },
+        "functiondef___comment": "Function names as part of a function definition.",
+        "functiondef": {
+            "color": "#21767e",
+            "font-style": "bold"
+        },
+        "classdef___comment": "Class names as part of a class definition.",
+        "classdef": {
+            "color": "#21767e",
+            "font-style": "bold"
+        },
+        "class___comment": "Class names as part of a class instantiation.",
+        "class": {
+            "color": "#21767e"
+        },
+        "comment___comment": "Comments.",
+        "comment": {
+            "color": "#808080",
+            "font-style": "italic"
+        },
+        "escape___comment": "Should probably be for escaped characters in string literals, but doesn't seem to do anything.",
+        "escape": {
+            "background-color": "#ebf1d8"
+        },
+        "decorator___comment": "Function or class decoration statements.",
+        "decorator": {
+            "color": "#99684c"
+        },
+        
+        
+        "formatting___comment": "Markdown formatting characters.",
+        "formatting": {
+            "color": "#80808080"
+        },
+        "codeblock-start___comment": "GitHub-style syntax highlighting instructions after code block start.",
+        "codeblock-start": {
+            "color": "#80808080"
+        },
+        "bold___comment": "Bold text.",
+        "bold": {
+            "font-style": "bold"
+        },
+        "italic___comment": "Italic text.",
+        "italic": {
+            "font-style": "italic"
+        },
+        "bold-italic___comment": "Bold and italic text.",
+        "bold-italic": {
+            "font-style": "bold-italic"
+        },
+        "heading-1___comment": "Level 1 headings.",
+        "heading-1": {
+            "font-style": "bold"
+        },
+        "heading-2___comment": "Level 2 headings.",
+        "heading-2": {
+            "font-style": "bold"
+        },
+        "heading-3___comment": "Level 3 headings.",
+        "heading-3": {
+            "font-style": "bold"
+        },
+        "link___comment": "Link titles.",
+        "link": {
+            "text-decoration": "underline"
+        },
+        "code___comment": "Inline code sequences.",
+        "code": {
+            "background-color": "#80808020",
+            "corner-radius": 2.0
+        },
+        
+        "project___comment": "Taskpaper project.",
+        "project": {
+            "font-style": "bold"
+        },
+        "checkbox___comment": "Taskpaper checkbox.",
+        "checkbox": {
+            "checkbox": true
+        },
+        "checkbox-done___comment": "Checked Taskpaper checkbox.",
+        "checkbox-done": {
+            "checkbox": true,
+            "done": true
+        },
+        "task-done___comment": "Finished Taskpaper task.",
+        "task-done": {
+            "text-decoration": "strikeout",
+            "color": "#66666680"
+        },
+        "tag___comment": "Is this Taskpaper or HTML or what now?",
+        "tag": {
+            "text-decoration": "none"
+        }
+    }
+}

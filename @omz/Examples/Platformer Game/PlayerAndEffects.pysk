@@ -1,0 +1,373 @@
+{
+  "gridVisible" : 1,
+  "showsPhysics" : true,
+  "backgroundColor" : "RGBA(0.826,1.000,1.000,1.000)",
+  "children" : [
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0.2,
+        "linearDamping" : 0.1
+      },
+      "attributes" : {
+        "emissionAngle" : 1.570796370506287,
+        "particlePositionRange.x" : 0,
+        "particleAlphaSpeed" : -1,
+        "particleScaleRange" : 0.5,
+        "particleColorBlendFactor" : 1,
+        "position.y" : 36,
+        "particleBirthRate" : 40,
+        "particleZPositionRange" : 0,
+        "particleRotation" : 0,
+        "particleSize.height" : 15,
+        "emissionAngleRange" : 3.141592741012573,
+        "particleColorGreenRange" : 0,
+        "particleColorBlueRange" : 0,
+        "particleZPositionSpeed" : 0,
+        "particleLifetimeRange" : 0,
+        "yScale" : 1,
+        "particleColorBlueSpeed" : 0,
+        "particleColorRedRange" : 0,
+        "particleBlendMode" : 0,
+        "particleColorBlendFactorRange" : 0,
+        "particlePositionRange.y" : 0,
+        "particleTexture" : "shp:Circle",
+        "particleColorGreenSpeed" : 0,
+        "particleColorRedSpeed" : 0,
+        "particleSpeedRange" : 0,
+        "zRotation" : 0,
+        "particleAlphaRange" : 0.2000000029802322,
+        "particleLifetime" : 2,
+        "particleRotationRange" : 0,
+        "particleScaleSpeed" : -0.4000000059604645,
+        "xAcceleration" : 0,
+        "position.x" : 32,
+        "yAcceleration" : 0,
+        "alpha" : 1,
+        "particleRotationSpeed" : 0,
+        "xScale" : 1,
+        "particleSize.width" : 16,
+        "particleColorAlphaRange" : 0,
+        "_type" : "Emitter",
+        "name" : "dust",
+        "particleScale" : 1,
+        "particleColor" : "RGBA(0.804,0.759,0.670,1.000)",
+        "particleAlpha" : 0.699999988079071,
+        "particleSpeed" : 50,
+        "particleColorBlendFactorSpeed" : 0,
+        "particleColorAlphaSpeed" : 0,
+        "particleZPosition" : 0
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0.2,
+        "linearDamping" : 0.1
+      },
+      "attributes" : {
+        "emissionAngle" : 0,
+        "particlePositionRange.x" : 0,
+        "particleAlphaSpeed" : -1.5,
+        "particleScaleRange" : 0,
+        "particleColorBlendFactor" : 1,
+        "position.y" : 44,
+        "particleBirthRate" : 500,
+        "particleZPositionRange" : 0,
+        "particleRotation" : 0,
+        "particleSize.height" : 32,
+        "emissionAngleRange" : 6.283185482025146,
+        "particleColorGreenRange" : 0,
+        "particleColorBlueRange" : 0,
+        "particleZPositionSpeed" : 0,
+        "particleLifetimeRange" : 0,
+        "yScale" : 1,
+        "particleColorBlueSpeed" : 0,
+        "particleColorRedRange" : 0,
+        "particleBlendMode" : 0,
+        "particleColorBlendFactorRange" : 0,
+        "particlePositionRange.y" : 0,
+        "particleTexture" : "plf:Item_Star",
+        "particleColorGreenSpeed" : 0,
+        "particleColorRedSpeed" : 0,
+        "particleSpeedRange" : 0,
+        "zRotation" : 0,
+        "particleAlphaRange" : 0,
+        "particleLifetime" : 2,
+        "particleRotationRange" : 6.283185482025146,
+        "particleScaleSpeed" : 1,
+        "xAcceleration" : 0,
+        "position.x" : 156,
+        "yAcceleration" : 0,
+        "alpha" : 1,
+        "particleRotationSpeed" : 3.141592741012573,
+        "xScale" : 1,
+        "particleSize.width" : 32,
+        "particleColorAlphaRange" : 0,
+        "_type" : "Emitter",
+        "name" : "stars",
+        "particleScale" : 0.5,
+        "particleColor" : "RGBA(1.000,1.000,0.000,1.000)",
+        "particleAlpha" : 1,
+        "particleSpeed" : 130,
+        "particleColorBlendFactorSpeed" : 0,
+        "particleColorAlphaSpeed" : 0,
+        "particleZPosition" : 0
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0.2,
+        "linearDamping" : 0.1
+      },
+      "attributes" : {
+        "yScale" : 1,
+        "xScale" : 1,
+        "alpha" : 1,
+        "_type" : "Node",
+        "zRotation" : 0,
+        "position.y" : 220,
+        "position.x" : 84,
+        "name" : "player"
+      },
+      "children" : [
+        {
+          "filterAttributes" : {
+
+          },
+          "physicsAttributes" : {
+            "bodyType" : "None",
+            "dynamic" : true,
+            "affectedByGravity" : true,
+            "allowsRotation" : true,
+            "density" : 1,
+            "angularDamping" : 0.1,
+            "friction" : 0.2,
+            "restitution" : 0.2,
+            "linearDamping" : 0.1
+          },
+          "attributes" : {
+            "yScale" : 1,
+            "xScale" : 1,
+            "alpha" : 1,
+            "_type" : "Node",
+            "zRotation" : 0,
+            "position.y" : -23,
+            "position.x" : -15,
+            "name" : "jetpack"
+          },
+          "children" : [
+            {
+              "filterAttributes" : {
+
+              },
+              "physicsAttributes" : {
+                "bodyType" : "None",
+                "dynamic" : true,
+                "affectedByGravity" : true,
+                "allowsRotation" : true,
+                "density" : 1,
+                "angularDamping" : 0.1,
+                "friction" : 0.2,
+                "restitution" : 0.2,
+                "linearDamping" : 0.1
+              },
+              "attributes" : {
+                "xScale" : 1,
+                "size.height" : 33,
+                "blendMode" : 0,
+                "position.x" : 0,
+                "yScale" : 1,
+                "size.width" : 17,
+                "texture" : "spc:Fire3",
+                "colorBlendFactor" : 1,
+                "color" : "RGBA(1.000,1.000,1.000,1.000)",
+                "position.y" : -15,
+                "alpha" : 1,
+                "zRotation" : 0,
+                "_type" : "Sprite",
+                "name" : "jetpack_flame"
+              },
+              "children" : [
+
+              ]
+            },
+            {
+              "filterAttributes" : {
+
+              },
+              "physicsAttributes" : {
+                "bodyType" : "None",
+                "dynamic" : true,
+                "affectedByGravity" : true,
+                "allowsRotation" : true,
+                "density" : 1,
+                "angularDamping" : 0.1,
+                "friction" : 0.2,
+                "restitution" : 0.2,
+                "linearDamping" : 0.1
+              },
+              "attributes" : {
+                "xScale" : 1,
+                "size.height" : 38.5,
+                "blendMode" : 0,
+                "position.x" : 0,
+                "yScale" : 1,
+                "size.width" : 18,
+                "texture" : "spc:Gun5",
+                "colorBlendFactor" : 1,
+                "color" : "RGBA(1.000,1.000,1.000,1.000)",
+                "position.y" : 15,
+                "alpha" : 1,
+                "zRotation" : 0,
+                "_type" : "Sprite",
+                "name" : ""
+              },
+              "children" : [
+
+              ]
+            },
+            {
+              "filterAttributes" : {
+
+              },
+              "physicsAttributes" : {
+                "bodyType" : "None",
+                "dynamic" : true,
+                "affectedByGravity" : true,
+                "allowsRotation" : true,
+                "density" : 1,
+                "angularDamping" : 0.1,
+                "friction" : 0.2,
+                "restitution" : 0.2,
+                "linearDamping" : 0.1
+              },
+              "attributes" : {
+                "xScale" : 1,
+                "size.height" : 4,
+                "blendMode" : 0,
+                "position.x" : 16,
+                "name" : "jetpack_fuel_hud_empty",
+                "size.width" : 50,
+                "colorBlendFactor" : 1,
+                "color" : "RGBA(0.870,0.870,0.870,1.000)",
+                "position.y" : 60,
+                "alpha" : 1,
+                "zRotation" : 0,
+                "_type" : "Sprite",
+                "yScale" : 1
+              },
+              "children" : [
+
+              ]
+            },
+            {
+              "filterAttributes" : {
+
+              },
+              "physicsAttributes" : {
+                "bodyType" : "None",
+                "dynamic" : true,
+                "affectedByGravity" : true,
+                "allowsRotation" : true,
+                "density" : 1,
+                "angularDamping" : 0.1,
+                "friction" : 0.2,
+                "restitution" : 0.2,
+                "linearDamping" : 0.1
+              },
+              "attributes" : {
+                "xScale" : 1,
+                "size.height" : 4,
+                "blendMode" : 0,
+                "position.x" : 16,
+                "name" : "jetpack_fuel_hud_full",
+                "size.width" : 50,
+                "colorBlendFactor" : 1,
+                "color" : "RGBA(0.300,0.901,0.000,1.000)",
+                "position.y" : 60,
+                "alpha" : 1,
+                "zRotation" : 0,
+                "_type" : "Sprite",
+                "yScale" : 1
+              },
+              "children" : [
+
+              ]
+            }
+          ]
+        },
+        {
+          "filterAttributes" : {
+
+          },
+          "physicsAttributes" : {
+            "bodyType" : "None",
+            "dynamic" : true,
+            "affectedByGravity" : true,
+            "allowsRotation" : true,
+            "density" : 1,
+            "angularDamping" : 0.1,
+            "friction" : 0.2,
+            "restitution" : 0.2,
+            "linearDamping" : 0.1
+          },
+          "attributes" : {
+            "xScale" : 0.8500000238418579,
+            "size.height" : 128,
+            "blendMode" : 0,
+            "position.x" : 0,
+            "_type" : "Sprite",
+            "size.width" : 64,
+            "texture" : "plf:AlienPink_stand",
+            "colorBlendFactor" : 1,
+            "color" : "RGBA(1.000,1.000,1.000,1.000)",
+            "position.y" : 23,
+            "alpha" : 1,
+            "zRotation" : 0,
+            "name" : "sprite",
+            "yScale" : 0.8500000238418579
+          },
+          "children" : [
+
+          ]
+        }
+      ]
+    }
+  ],
+  "gridSize" : 4
+}

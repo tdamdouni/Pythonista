@@ -1,0 +1,7382 @@
+{
+  "gridVisible" : 1,
+  "showsPhysics" : true,
+  "backgroundColor" : "RGBA(0.150,0.150,0.150,1.000)",
+  "children" : [
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0,
+        "linearDamping" : 0.1,
+        "rectSize" : {
+          "width" : 64,
+          "height" : 64
+        },
+        "usesPreciseCollisionDetection" : true
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 672,
+        "name" : "water",
+        "size.width" : 64,
+        "texture" : "plf:Tile_WaterTop_low",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 32,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "yScale" : 1,
+        "_type" : "Sprite"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0,
+        "linearDamping" : 0.1,
+        "rectSize" : {
+          "width" : 64,
+          "height" : 64
+        },
+        "usesPreciseCollisionDetection" : true
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 608,
+        "yScale" : 1,
+        "size.width" : 64,
+        "texture" : "plf:Tile_WaterTop_low",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 32,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "_type" : "Sprite",
+        "name" : "water"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0,
+        "linearDamping" : 0.1,
+        "rectSize" : {
+          "width" : 64,
+          "height" : 64
+        },
+        "usesPreciseCollisionDetection" : true
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 608,
+        "_type" : "Sprite",
+        "size.width" : 64,
+        "texture" : "plf:Tile_WaterTop_low",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 8,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "name" : "water",
+        "yScale" : 1
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0,
+        "linearDamping" : 0.1,
+        "rectSize" : {
+          "width" : 64,
+          "height" : 64
+        },
+        "usesPreciseCollisionDetection" : true
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 416,
+        "yScale" : 1,
+        "size.width" : 64,
+        "texture" : "plf:Tile_WaterTop_low",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 8,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "_type" : "Sprite",
+        "name" : "water"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0.2,
+        "linearDamping" : 0.1
+      },
+      "attributes" : {
+        "yScale" : 1,
+        "xScale" : 1,
+        "alpha" : 1,
+        "_type" : "Node",
+        "zRotation" : 0,
+        "position.y" : 160,
+        "position.x" : 44,
+        "name" : "player"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0,
+        "linearDamping" : 0.1,
+        "rectSize" : {
+          "width" : 64,
+          "height" : 64
+        },
+        "usesPreciseCollisionDetection" : true
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 32,
+        "_type" : "Sprite",
+        "size.width" : 64,
+        "texture" : "plf:Ground_GrassMid",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 32,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "name" : "tile_ground_T",
+        "yScale" : 1
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0,
+        "linearDamping" : 0.1,
+        "rectSize" : {
+          "width" : 64,
+          "height" : 64
+        },
+        "usesPreciseCollisionDetection" : true
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 96,
+        "name" : "tile_ground_T",
+        "size.width" : 64,
+        "texture" : "plf:Ground_GrassMid",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 32,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "yScale" : 1,
+        "_type" : "Sprite"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0,
+        "linearDamping" : 0.1,
+        "rectSize" : {
+          "width" : 64,
+          "height" : 64
+        },
+        "usesPreciseCollisionDetection" : true
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 160,
+        "name" : "tile_ground_T",
+        "size.width" : 64,
+        "texture" : "plf:Ground_GrassMid",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 32,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "yScale" : 1,
+        "_type" : "Sprite"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0,
+        "linearDamping" : 0.1,
+        "rectSize" : {
+          "width" : 64,
+          "height" : 64
+        },
+        "usesPreciseCollisionDetection" : true
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 224,
+        "name" : "tile_ground_T",
+        "size.width" : 64,
+        "texture" : "plf:Ground_GrassMid",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 32,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "yScale" : 1,
+        "_type" : "Sprite"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0,
+        "linearDamping" : 0.1,
+        "rectSize" : {
+          "width" : 64,
+          "height" : 64
+        },
+        "usesPreciseCollisionDetection" : true
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 288,
+        "yScale" : 1,
+        "size.width" : 64,
+        "texture" : "plf:Ground_GrassMid",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 32,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "_type" : "Sprite",
+        "name" : "tile_ground_T"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0,
+        "linearDamping" : 0.1,
+        "rectSize" : {
+          "width" : 64,
+          "height" : 64
+        },
+        "usesPreciseCollisionDetection" : true
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 352,
+        "yScale" : 1,
+        "size.width" : 64,
+        "texture" : "plf:Ground_GrassMid",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 32,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "_type" : "Sprite",
+        "name" : "tile_ground_T"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0,
+        "linearDamping" : 0.1,
+        "rectSize" : {
+          "width" : 64,
+          "height" : 64
+        },
+        "usesPreciseCollisionDetection" : true
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 416,
+        "yScale" : 1,
+        "size.width" : 64,
+        "texture" : "plf:Ground_GrassRight",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 32,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "_type" : "Sprite",
+        "name" : "tile_ground_TRB"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0,
+        "linearDamping" : 0.1,
+        "rectSize" : {
+          "width" : 64,
+          "height" : 64
+        },
+        "usesPreciseCollisionDetection" : true
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 480,
+        "_type" : "Sprite",
+        "size.width" : 64,
+        "texture" : "plf:Tile_WaterTop_low",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 32,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "name" : "water",
+        "yScale" : 1
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0,
+        "linearDamping" : 0.1,
+        "rectSize" : {
+          "width" : 64,
+          "height" : 64
+        },
+        "usesPreciseCollisionDetection" : true
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 544,
+        "name" : "water",
+        "size.width" : 64,
+        "texture" : "plf:Tile_WaterTop_low",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 32,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "yScale" : 1,
+        "_type" : "Sprite"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0,
+        "linearDamping" : 0.1,
+        "rectSize" : {
+          "width" : 64,
+          "height" : 64
+        },
+        "usesPreciseCollisionDetection" : true
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 480,
+        "name" : "water",
+        "size.width" : 64,
+        "texture" : "plf:Tile_WaterTop_low",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 8,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "yScale" : 1,
+        "_type" : "Sprite"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0,
+        "linearDamping" : 0.1,
+        "rectSize" : {
+          "width" : 64,
+          "height" : 64
+        },
+        "usesPreciseCollisionDetection" : true
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 544,
+        "yScale" : 1,
+        "size.width" : 64,
+        "texture" : "plf:Tile_WaterTop_low",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 8,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "_type" : "Sprite",
+        "name" : "water"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0,
+        "linearDamping" : 0.1,
+        "rectSize" : {
+          "width" : 64,
+          "height" : 64
+        },
+        "usesPreciseCollisionDetection" : true
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 1120,
+        "yScale" : 1,
+        "size.width" : 64,
+        "texture" : "plf:Ground_GrassCenter",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 32,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "_type" : "Sprite",
+        "name" : "tile_ground_TLRB"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0,
+        "linearDamping" : 0.1,
+        "rectSize" : {
+          "width" : 64,
+          "height" : 64
+        },
+        "usesPreciseCollisionDetection" : true
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 1184,
+        "yScale" : 1,
+        "size.width" : 64,
+        "texture" : "plf:Ground_GrassMid",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 32,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "_type" : "Sprite",
+        "name" : "tile_ground_T"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0,
+        "linearDamping" : 0.1,
+        "rectSize" : {
+          "width" : 64,
+          "height" : 64
+        },
+        "usesPreciseCollisionDetection" : true
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 1248,
+        "_type" : "Sprite",
+        "size.width" : 64,
+        "texture" : "plf:Ground_GrassMid",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 32,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "name" : "tile_ground_T",
+        "yScale" : 1
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0,
+        "linearDamping" : 0.1,
+        "rectSize" : {
+          "width" : 64,
+          "height" : 64
+        },
+        "usesPreciseCollisionDetection" : true
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 1504,
+        "_type" : "Sprite",
+        "size.width" : 64,
+        "texture" : "plf:Ground_GrassMid",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 32,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "name" : "tile_ground_T",
+        "yScale" : 1
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0,
+        "linearDamping" : 0.1,
+        "rectSize" : {
+          "width" : 64,
+          "height" : 64
+        },
+        "usesPreciseCollisionDetection" : true
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 1568,
+        "name" : "tile_ground_T",
+        "size.width" : 64,
+        "texture" : "plf:Ground_GrassMid",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 32,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "yScale" : 1,
+        "_type" : "Sprite"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0,
+        "linearDamping" : 0.1,
+        "rectSize" : {
+          "width" : 64,
+          "height" : 64
+        },
+        "usesPreciseCollisionDetection" : true
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 1632,
+        "name" : "tile_ground_T",
+        "size.width" : 64,
+        "texture" : "plf:Ground_GrassMid",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 32,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "yScale" : 1,
+        "_type" : "Sprite"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0,
+        "linearDamping" : 0.1,
+        "rectSize" : {
+          "width" : 64,
+          "height" : 64
+        },
+        "usesPreciseCollisionDetection" : true
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 1312,
+        "_type" : "Sprite",
+        "size.width" : 64,
+        "texture" : "plf:Ground_GrassMid",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 32,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "name" : "tile_ground_T",
+        "yScale" : 1
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0,
+        "linearDamping" : 0.1,
+        "rectSize" : {
+          "width" : 64,
+          "height" : 64
+        },
+        "usesPreciseCollisionDetection" : true
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 1376,
+        "name" : "tile_ground_T",
+        "size.width" : 64,
+        "texture" : "plf:Ground_GrassMid",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 32,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "yScale" : 1,
+        "_type" : "Sprite"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0,
+        "linearDamping" : 0.1,
+        "rectSize" : {
+          "width" : 64,
+          "height" : 64
+        },
+        "usesPreciseCollisionDetection" : true
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 1440,
+        "yScale" : 1,
+        "size.width" : 64,
+        "texture" : "plf:Ground_GrassMid",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 32,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "_type" : "Sprite",
+        "name" : "tile_ground_T"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0,
+        "linearDamping" : 0.1,
+        "rectSize" : {
+          "width" : 64,
+          "height" : 64
+        },
+        "usesPreciseCollisionDetection" : true
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 864,
+        "name" : "water",
+        "size.width" : 64,
+        "texture" : "plf:Tile_WaterTop_low",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 8,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "yScale" : 1,
+        "_type" : "Sprite"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0,
+        "linearDamping" : 0.1,
+        "rectSize" : {
+          "width" : 64,
+          "height" : 64
+        },
+        "usesPreciseCollisionDetection" : true
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 672,
+        "_type" : "Sprite",
+        "size.width" : 64,
+        "texture" : "plf:Tile_WaterTop_low",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 8,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "name" : "water",
+        "yScale" : 1
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0,
+        "linearDamping" : 0.1,
+        "rectSize" : {
+          "width" : 64,
+          "height" : 64
+        },
+        "usesPreciseCollisionDetection" : true
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 864,
+        "_type" : "Sprite",
+        "size.width" : 64,
+        "texture" : "plf:Ground_GrassLeft",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 32,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "name" : "tile_ground_TBL",
+        "yScale" : 1
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0,
+        "linearDamping" : 0.1,
+        "rectSize" : {
+          "width" : 64,
+          "height" : 64
+        },
+        "usesPreciseCollisionDetection" : true
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 736,
+        "name" : "water",
+        "size.width" : 64,
+        "texture" : "plf:Tile_WaterTop_low",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 32,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "yScale" : 1,
+        "_type" : "Sprite"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0,
+        "linearDamping" : 0.1,
+        "rectSize" : {
+          "width" : 64,
+          "height" : 64
+        },
+        "usesPreciseCollisionDetection" : true
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 800,
+        "yScale" : 1,
+        "size.width" : 64,
+        "texture" : "plf:Tile_WaterTop_low",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 32,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "_type" : "Sprite",
+        "name" : "water"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0,
+        "linearDamping" : 0.1,
+        "rectSize" : {
+          "width" : 64,
+          "height" : 64
+        },
+        "usesPreciseCollisionDetection" : true
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 736,
+        "yScale" : 1,
+        "size.width" : 64,
+        "texture" : "plf:Tile_WaterTop_low",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 8,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "_type" : "Sprite",
+        "name" : "water"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0,
+        "linearDamping" : 0.1,
+        "rectSize" : {
+          "width" : 64,
+          "height" : 64
+        },
+        "usesPreciseCollisionDetection" : true
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 800,
+        "_type" : "Sprite",
+        "size.width" : 64,
+        "texture" : "plf:Tile_WaterTop_low",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 8,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "name" : "water",
+        "yScale" : 1
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0,
+        "linearDamping" : 0.1,
+        "rectSize" : {
+          "width" : 64,
+          "height" : 64
+        },
+        "usesPreciseCollisionDetection" : true
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 928,
+        "_type" : "Sprite",
+        "size.width" : 64,
+        "texture" : "plf:Ground_GrassMid",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 32,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "name" : "tile_ground_T",
+        "yScale" : 1
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0,
+        "linearDamping" : 0.1,
+        "rectSize" : {
+          "width" : 64,
+          "height" : 64
+        },
+        "usesPreciseCollisionDetection" : true
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 992,
+        "_type" : "Sprite",
+        "size.width" : 64,
+        "texture" : "plf:Ground_GrassMid",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 32,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "name" : "tile_ground_T",
+        "yScale" : 1
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0,
+        "linearDamping" : 0.1,
+        "rectSize" : {
+          "width" : 64,
+          "height" : 64
+        },
+        "usesPreciseCollisionDetection" : true
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 1056,
+        "name" : "tile_ground_T",
+        "size.width" : 64,
+        "texture" : "plf:Ground_GrassMid",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 32,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "yScale" : 1,
+        "_type" : "Sprite"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0,
+        "linearDamping" : 0.1,
+        "rectSize" : {
+          "width" : 64,
+          "height" : 64
+        },
+        "usesPreciseCollisionDetection" : true
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 1696,
+        "name" : "tile_ground_T",
+        "size.width" : 64,
+        "texture" : "plf:Ground_GrassMid",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 32,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "yScale" : 1,
+        "_type" : "Sprite"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0,
+        "linearDamping" : 0.1,
+        "rectSize" : {
+          "width" : 64,
+          "height" : 64
+        },
+        "usesPreciseCollisionDetection" : true
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 1760,
+        "yScale" : 1,
+        "size.width" : 64,
+        "texture" : "plf:Ground_GrassMid",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 32,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "_type" : "Sprite",
+        "name" : "tile_ground_T"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0,
+        "linearDamping" : 0.1,
+        "rectSize" : {
+          "width" : 64,
+          "height" : 64
+        },
+        "usesPreciseCollisionDetection" : true
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 1824,
+        "yScale" : 1,
+        "size.width" : 64,
+        "texture" : "plf:Ground_GrassMid",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 32,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "_type" : "Sprite",
+        "name" : "tile_ground_T"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0,
+        "linearDamping" : 0.1,
+        "rectSize" : {
+          "width" : 64,
+          "height" : 64
+        },
+        "usesPreciseCollisionDetection" : true
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 1888,
+        "yScale" : 1,
+        "size.width" : 64,
+        "texture" : "plf:Ground_GrassMid",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 32,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "_type" : "Sprite",
+        "name" : "tile_ground_T"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0,
+        "linearDamping" : 0.1,
+        "rectSize" : {
+          "width" : 64,
+          "height" : 64
+        },
+        "usesPreciseCollisionDetection" : true
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 1952,
+        "_type" : "Sprite",
+        "size.width" : 64,
+        "texture" : "plf:Ground_GrassMid",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 32,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "name" : "tile_ground_T",
+        "yScale" : 1
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0,
+        "linearDamping" : 0.1,
+        "rectSize" : {
+          "width" : 64,
+          "height" : 64
+        },
+        "usesPreciseCollisionDetection" : true
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 2016,
+        "_type" : "Sprite",
+        "size.width" : 64,
+        "texture" : "plf:Ground_GrassMid",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 32,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "name" : "tile_ground_T",
+        "yScale" : 1
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0.2,
+        "linearDamping" : 0.1
+      },
+      "attributes" : {
+        "yScale" : 1,
+        "xScale" : 1,
+        "alpha" : 1,
+        "_type" : "Node",
+        "zRotation" : 0,
+        "position.y" : 96,
+        "position.x" : 160,
+        "name" : "item_fuel"
+      },
+      "children" : [
+        {
+          "filterAttributes" : {
+
+          },
+          "physicsAttributes" : {
+            "bodyType" : "None",
+            "dynamic" : true,
+            "affectedByGravity" : true,
+            "allowsRotation" : true,
+            "density" : 1,
+            "angularDamping" : 0.1,
+            "friction" : 0.2,
+            "restitution" : 0.2,
+            "linearDamping" : 0.1
+          },
+          "attributes" : {
+            "emissionAngle" : 0,
+            "particlePositionRange.x" : 0,
+            "particleAlphaSpeed" : 0,
+            "particleScaleRange" : 0,
+            "particleColorBlendFactor" : 1,
+            "position.y" : 0,
+            "particleBirthRate" : 40,
+            "particleZPositionRange" : 0,
+            "particleRotation" : 0,
+            "particleSize.height" : 3,
+            "emissionAngleRange" : 6.283185482025146,
+            "particleColorGreenRange" : 0,
+            "particleColorBlueRange" : 0,
+            "particleZPositionSpeed" : 0,
+            "particleLifetimeRange" : 0,
+            "yScale" : 1,
+            "particleColorBlueSpeed" : 0,
+            "particleColorRedRange" : 0,
+            "particleBlendMode" : 0,
+            "particleColorBlendFactorRange" : 0,
+            "particlePositionRange.y" : 0,
+            "particleColorGreenSpeed" : 0,
+            "particleColorRedSpeed" : 0,
+            "particleSpeedRange" : 0,
+            "zRotation" : 0,
+            "particleAlphaRange" : 0,
+            "particleLifetime" : 0.4000000238418579,
+            "particleRotationRange" : 0,
+            "particleScaleSpeed" : 0,
+            "xAcceleration" : 0,
+            "position.x" : 0,
+            "yAcceleration" : 0,
+            "alpha" : 1,
+            "particleRotationSpeed" : 0,
+            "xScale" : 1,
+            "particleSize.width" : 3,
+            "particleColorAlphaRange" : 0,
+            "_type" : "Emitter",
+            "particleScale" : 1,
+            "particleColor" : "RGBA(1.000,0.761,1.000,1.000)",
+            "particleAlpha" : 1,
+            "particleSpeed" : 70,
+            "particleColorBlendFactorSpeed" : 0,
+            "particleColorAlphaSpeed" : 0,
+            "particleZPosition" : 0
+          },
+          "children" : [
+
+          ]
+        },
+        {
+          "filterAttributes" : {
+
+          },
+          "physicsAttributes" : {
+            "bodyType" : "None",
+            "dynamic" : true,
+            "affectedByGravity" : true,
+            "allowsRotation" : true,
+            "density" : 1,
+            "angularDamping" : 0.1,
+            "friction" : 0.2,
+            "restitution" : 0.2,
+            "linearDamping" : 0.1
+          },
+          "attributes" : {
+            "xScale" : 1,
+            "size.height" : 33,
+            "blendMode" : 0,
+            "position.x" : 0,
+            "_type" : "Sprite",
+            "size.width" : 33,
+            "texture" : "spc:BoltSilver",
+            "colorBlendFactor" : 1,
+            "color" : "RGBA(0.739,0.609,1.000,1.000)",
+            "position.y" : 0,
+            "alpha" : 1,
+            "zRotation" : 0,
+            "name" : "",
+            "yScale" : 1
+          },
+          "children" : [
+
+          ]
+        }
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0.2,
+        "linearDamping" : 0.1
+      },
+      "attributes" : {
+        "yScale" : 1,
+        "xScale" : 1,
+        "alpha" : 1,
+        "_type" : "Node",
+        "zRotation" : 0,
+        "position.y" : 320,
+        "position.x" : 352,
+        "name" : "item_fuel"
+      },
+      "children" : [
+        {
+          "filterAttributes" : {
+
+          },
+          "physicsAttributes" : {
+            "bodyType" : "None",
+            "dynamic" : true,
+            "affectedByGravity" : true,
+            "allowsRotation" : true,
+            "density" : 1,
+            "angularDamping" : 0.1,
+            "friction" : 0.2,
+            "restitution" : 0.2,
+            "linearDamping" : 0.1
+          },
+          "attributes" : {
+            "emissionAngle" : 0,
+            "particlePositionRange.x" : 0,
+            "particleAlphaSpeed" : 0,
+            "particleScaleRange" : 0,
+            "particleColorBlendFactor" : 1,
+            "position.y" : 0,
+            "particleBirthRate" : 40,
+            "particleZPositionRange" : 0,
+            "particleRotation" : 0,
+            "particleSize.height" : 3,
+            "emissionAngleRange" : 6.283185482025146,
+            "particleColorGreenRange" : 0,
+            "particleColorBlueRange" : 0,
+            "particleZPositionSpeed" : 0,
+            "particleLifetimeRange" : 0,
+            "yScale" : 1,
+            "particleColorBlueSpeed" : 0,
+            "particleColorRedRange" : 0,
+            "particleBlendMode" : 0,
+            "particleColorBlendFactorRange" : 0,
+            "particlePositionRange.y" : 0,
+            "particleColorGreenSpeed" : 0,
+            "particleColorRedSpeed" : 0,
+            "particleSpeedRange" : 0,
+            "zRotation" : 0,
+            "particleAlphaRange" : 0,
+            "particleLifetime" : 0.4000000238418579,
+            "particleRotationRange" : 0,
+            "particleScaleSpeed" : 0,
+            "xAcceleration" : 0,
+            "position.x" : 0,
+            "yAcceleration" : 0,
+            "alpha" : 1,
+            "particleRotationSpeed" : 0,
+            "xScale" : 1,
+            "particleSize.width" : 3,
+            "particleColorAlphaRange" : 0,
+            "_type" : "Emitter",
+            "particleScale" : 1,
+            "particleColor" : "RGBA(1.000,0.761,1.000,1.000)",
+            "particleAlpha" : 1,
+            "particleSpeed" : 70,
+            "particleColorBlendFactorSpeed" : 0,
+            "particleColorAlphaSpeed" : 0,
+            "particleZPosition" : 0
+          },
+          "children" : [
+
+          ]
+        },
+        {
+          "filterAttributes" : {
+
+          },
+          "physicsAttributes" : {
+            "bodyType" : "None",
+            "dynamic" : true,
+            "affectedByGravity" : true,
+            "allowsRotation" : true,
+            "density" : 1,
+            "angularDamping" : 0.1,
+            "friction" : 0.2,
+            "restitution" : 0.2,
+            "linearDamping" : 0.1
+          },
+          "attributes" : {
+            "xScale" : 1,
+            "size.height" : 33,
+            "blendMode" : 0,
+            "position.x" : 0,
+            "name" : "",
+            "size.width" : 33,
+            "texture" : "spc:BoltSilver",
+            "colorBlendFactor" : 1,
+            "color" : "RGBA(0.739,0.609,1.000,1.000)",
+            "position.y" : 0,
+            "alpha" : 1,
+            "zRotation" : 0,
+            "yScale" : 1,
+            "_type" : "Sprite"
+          },
+          "children" : [
+
+          ]
+        }
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0.2,
+        "linearDamping" : 0.1
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 1056,
+        "_type" : "Sprite",
+        "size.width" : 64,
+        "texture" : "plf:Tile_Spikes",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 452,
+        "alpha" : 1,
+        "zRotation" : 1.570796370506287,
+        "name" : "hazard_spikes_L",
+        "yScale" : 1
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0,
+        "linearDamping" : 0.1,
+        "rectSize" : {
+          "width" : 64,
+          "height" : 64
+        },
+        "usesPreciseCollisionDetection" : true
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 1120,
+        "name" : "tile_ground_TB",
+        "size.width" : 64,
+        "texture" : "plf:Ground_GrassMid",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 576,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "yScale" : 1,
+        "_type" : "Sprite"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0.2,
+        "linearDamping" : 0.1
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 1184,
+        "name" : "hazard_spikes_R",
+        "size.width" : 64,
+        "texture" : "plf:Tile_Spikes",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 452,
+        "alpha" : 1,
+        "zRotation" : -1.570796370506287,
+        "yScale" : 1,
+        "_type" : "Sprite"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0.2,
+        "linearDamping" : 0.1
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 1120,
+        "yScale" : -1,
+        "size.width" : 64,
+        "texture" : "plf:Tile_Spikes",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 388,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "_type" : "Sprite",
+        "name" : "hazard_spikes_B"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0,
+        "linearDamping" : 0.1,
+        "rectSize" : {
+          "width" : 64,
+          "height" : 64
+        },
+        "usesPreciseCollisionDetection" : true
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 1120,
+        "_type" : "Sprite",
+        "size.width" : 64,
+        "texture" : "plf:Ground_GrassCenter",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 96,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "name" : "tile_ground_TLRB",
+        "yScale" : 1
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0.2,
+        "linearDamping" : 0.1
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 1056,
+        "name" : "hazard_spikes_L",
+        "size.width" : 64,
+        "texture" : "plf:Tile_Spikes",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 96,
+        "alpha" : 1,
+        "zRotation" : 1.570796370506287,
+        "yScale" : 1,
+        "_type" : "Sprite"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0.2,
+        "linearDamping" : 0.1
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 1056,
+        "yScale" : 1,
+        "size.width" : 64,
+        "texture" : "plf:Tile_Spikes",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 160,
+        "alpha" : 1,
+        "zRotation" : 1.570796370506287,
+        "_type" : "Sprite",
+        "name" : "hazard_spikes_L"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0.2,
+        "linearDamping" : 0.1
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 1120,
+        "name" : "hazard_spikes_T",
+        "size.width" : 64,
+        "texture" : "plf:Tile_Spikes",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 224,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "yScale" : 1,
+        "_type" : "Sprite"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0.2,
+        "linearDamping" : 0.1
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 1184,
+        "yScale" : 1,
+        "size.width" : 64,
+        "texture" : "plf:Tile_Spikes",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 160,
+        "alpha" : 1,
+        "zRotation" : -1.570796370506287,
+        "_type" : "Sprite",
+        "name" : "hazard_spikes_R"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0.2,
+        "linearDamping" : 0.1
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 1184,
+        "_type" : "Sprite",
+        "size.width" : 64,
+        "texture" : "plf:Tile_Spikes",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 96,
+        "alpha" : 1,
+        "zRotation" : -1.570796370506287,
+        "name" : "hazard_spikes_R",
+        "yScale" : 1
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0,
+        "linearDamping" : 0.1,
+        "rectSize" : {
+          "width" : 64,
+          "height" : 64
+        },
+        "usesPreciseCollisionDetection" : true
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 1120,
+        "yScale" : 1,
+        "size.width" : 64,
+        "texture" : "plf:Ground_GrassMid",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 160,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "_type" : "Sprite",
+        "name" : "tile_ground_TB"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0,
+        "linearDamping" : 0.1,
+        "rectSize" : {
+          "width" : 64,
+          "height" : 64
+        },
+        "usesPreciseCollisionDetection" : true
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 1120,
+        "name" : "tile_ground_TLRB",
+        "size.width" : 64,
+        "texture" : "plf:Ground_GrassCenter",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 452,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "yScale" : 1,
+        "_type" : "Sprite"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0,
+        "linearDamping" : 0.1,
+        "rectSize" : {
+          "width" : 64,
+          "height" : 64
+        },
+        "usesPreciseCollisionDetection" : true
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 1120,
+        "yScale" : 1,
+        "size.width" : 64,
+        "texture" : "plf:Ground_GrassCenter",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 512,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "_type" : "Sprite",
+        "name" : "tile_ground_TLRB"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0.2,
+        "linearDamping" : 0.1
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 1056,
+        "name" : "hazard_spikes_L",
+        "size.width" : 64,
+        "texture" : "plf:Tile_Spikes",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 516,
+        "alpha" : 1,
+        "zRotation" : 1.570796370506287,
+        "yScale" : 1,
+        "_type" : "Sprite"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0.2,
+        "linearDamping" : 0.1
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 1184,
+        "yScale" : 1,
+        "size.width" : 64,
+        "texture" : "plf:Tile_Spikes",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 516,
+        "alpha" : 1,
+        "zRotation" : -1.570796370506287,
+        "_type" : "Sprite",
+        "name" : "hazard_spikes_R"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0.2,
+        "linearDamping" : 0.1
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 1056,
+        "_type" : "Sprite",
+        "size.width" : 64,
+        "texture" : "plf:Tile_Spikes",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 576,
+        "alpha" : 1,
+        "zRotation" : 1.570796370506287,
+        "name" : "hazard_spikes_L",
+        "yScale" : 1
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0.2,
+        "linearDamping" : 0.1
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 1184,
+        "_type" : "Sprite",
+        "size.width" : 64,
+        "texture" : "plf:Tile_Spikes",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 576,
+        "alpha" : 1,
+        "zRotation" : -1.570796370506287,
+        "name" : "hazard_spikes_R",
+        "yScale" : 1
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0.2,
+        "linearDamping" : 0.1
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 1120,
+        "yScale" : 1,
+        "size.width" : 64,
+        "texture" : "plf:Tile_Spikes",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 640,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "_type" : "Sprite",
+        "name" : "hazard_spikes_T"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0.2,
+        "linearDamping" : 0.1
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 640,
+        "_type" : "Sprite",
+        "size.width" : 64,
+        "texture" : "plf:Item_CoinGold",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 320,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "name" : "item_coin",
+        "yScale" : 1
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0.2,
+        "linearDamping" : 0.1
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 704,
+        "name" : "item_coin",
+        "size.width" : 64,
+        "texture" : "plf:Item_CoinGold",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 320,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "yScale" : 1,
+        "_type" : "Sprite"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0.2,
+        "linearDamping" : 0.1
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 768,
+        "yScale" : 1,
+        "size.width" : 64,
+        "texture" : "plf:Item_CoinGold",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 320,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "_type" : "Sprite",
+        "name" : "item_coin"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0,
+        "linearDamping" : 0.1,
+        "rectSize" : {
+          "width" : 64,
+          "height" : 64
+        },
+        "usesPreciseCollisionDetection" : true
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 1440,
+        "name" : "tile_ground_TLRB",
+        "size.width" : 64,
+        "texture" : "plf:Ground_GrassCenter",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 96,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "yScale" : 1,
+        "_type" : "Sprite"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0.2,
+        "linearDamping" : 0.1
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 1376,
+        "yScale" : 1,
+        "size.width" : 64,
+        "texture" : "plf:Tile_Spikes",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 96,
+        "alpha" : 1,
+        "zRotation" : 1.570796370506287,
+        "_type" : "Sprite",
+        "name" : "hazard_spikes_L"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0.2,
+        "linearDamping" : 0.1
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 1376,
+        "_type" : "Sprite",
+        "size.width" : 64,
+        "texture" : "plf:Tile_Spikes",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 224,
+        "alpha" : 1,
+        "zRotation" : 1.570796370506287,
+        "name" : "hazard_spikes_L",
+        "yScale" : 1
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0.2,
+        "linearDamping" : 0.1
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 1440,
+        "yScale" : 1,
+        "size.width" : 64,
+        "texture" : "plf:Tile_Spikes",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 288,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "_type" : "Sprite",
+        "name" : "hazard_spikes_T"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0.2,
+        "linearDamping" : 0.1
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 1504,
+        "_type" : "Sprite",
+        "size.width" : 64,
+        "texture" : "plf:Tile_Spikes",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 224,
+        "alpha" : 1,
+        "zRotation" : -1.570796370506287,
+        "name" : "hazard_spikes_R",
+        "yScale" : 1
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0.2,
+        "linearDamping" : 0.1
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 1504,
+        "name" : "hazard_spikes_R",
+        "size.width" : 64,
+        "texture" : "plf:Tile_Spikes",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 96,
+        "alpha" : 1,
+        "zRotation" : -1.570796370506287,
+        "yScale" : 1,
+        "_type" : "Sprite"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0,
+        "linearDamping" : 0.1,
+        "rectSize" : {
+          "width" : 64,
+          "height" : 64
+        },
+        "usesPreciseCollisionDetection" : true
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 1440,
+        "_type" : "Sprite",
+        "size.width" : 64,
+        "texture" : "plf:Ground_GrassMid",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 224,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "name" : "tile_ground_TB",
+        "yScale" : 1
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0.2,
+        "linearDamping" : 0.1
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 1376,
+        "name" : "hazard_spikes_L",
+        "size.width" : 64,
+        "texture" : "plf:Tile_Spikes",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 516,
+        "alpha" : 1,
+        "zRotation" : 1.570796370506287,
+        "yScale" : 1,
+        "_type" : "Sprite"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0,
+        "linearDamping" : 0.1,
+        "rectSize" : {
+          "width" : 64,
+          "height" : 64
+        },
+        "usesPreciseCollisionDetection" : true
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 1440,
+        "yScale" : 1,
+        "size.width" : 64,
+        "texture" : "plf:Ground_GrassMid",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 640,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "_type" : "Sprite",
+        "name" : "tile_ground_TB"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0.2,
+        "linearDamping" : 0.1
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 1504,
+        "yScale" : 1,
+        "size.width" : 64,
+        "texture" : "plf:Tile_Spikes",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 516,
+        "alpha" : 1,
+        "zRotation" : -1.570796370506287,
+        "_type" : "Sprite",
+        "name" : "hazard_spikes_R"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0.2,
+        "linearDamping" : 0.1
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 1440,
+        "_type" : "Sprite",
+        "size.width" : 64,
+        "texture" : "plf:Tile_Spikes",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 452,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "name" : "hazard_spikes_B",
+        "yScale" : -1
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0,
+        "linearDamping" : 0.1,
+        "rectSize" : {
+          "width" : 64,
+          "height" : 64
+        },
+        "usesPreciseCollisionDetection" : true
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 1440,
+        "yScale" : 1,
+        "size.width" : 64,
+        "texture" : "plf:Ground_GrassCenter",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 516,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "_type" : "Sprite",
+        "name" : "tile_ground_TLRB"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0,
+        "linearDamping" : 0.1,
+        "rectSize" : {
+          "width" : 64,
+          "height" : 64
+        },
+        "usesPreciseCollisionDetection" : true
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 1440,
+        "_type" : "Sprite",
+        "size.width" : 64,
+        "texture" : "plf:Ground_GrassCenter",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 576,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "name" : "tile_ground_TLRB",
+        "yScale" : 1
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0.2,
+        "linearDamping" : 0.1
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 1376,
+        "yScale" : 1,
+        "size.width" : 64,
+        "texture" : "plf:Tile_Spikes",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 580,
+        "alpha" : 1,
+        "zRotation" : 1.570796370506287,
+        "_type" : "Sprite",
+        "name" : "hazard_spikes_L"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0.2,
+        "linearDamping" : 0.1
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 1504,
+        "_type" : "Sprite",
+        "size.width" : 64,
+        "texture" : "plf:Tile_Spikes",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 580,
+        "alpha" : 1,
+        "zRotation" : -1.570796370506287,
+        "name" : "hazard_spikes_R",
+        "yScale" : 1
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0.2,
+        "linearDamping" : 0.1
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 1376,
+        "name" : "hazard_spikes_L",
+        "size.width" : 64,
+        "texture" : "plf:Tile_Spikes",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 640,
+        "alpha" : 1,
+        "zRotation" : 1.570796370506287,
+        "yScale" : 1,
+        "_type" : "Sprite"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0.2,
+        "linearDamping" : 0.1
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 1504,
+        "name" : "hazard_spikes_R",
+        "size.width" : 64,
+        "texture" : "plf:Tile_Spikes",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 640,
+        "alpha" : 1,
+        "zRotation" : -1.570796370506287,
+        "yScale" : 1,
+        "_type" : "Sprite"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0.2,
+        "linearDamping" : 0.1
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 1440,
+        "_type" : "Sprite",
+        "size.width" : 64,
+        "texture" : "plf:Tile_Spikes",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 704,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "name" : "hazard_spikes_T",
+        "yScale" : 1
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0,
+        "linearDamping" : 0.1,
+        "rectSize" : {
+          "width" : 64,
+          "height" : 64
+        },
+        "usesPreciseCollisionDetection" : true
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 1440,
+        "yScale" : 1,
+        "size.width" : 64,
+        "texture" : "plf:Ground_GrassCenter",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 160,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "_type" : "Sprite",
+        "name" : "tile_ground_TLRB"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0.2,
+        "linearDamping" : 0.1
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 1376,
+        "_type" : "Sprite",
+        "size.width" : 64,
+        "texture" : "plf:Tile_Spikes",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 160,
+        "alpha" : 1,
+        "zRotation" : 1.570796370506287,
+        "name" : "hazard_spikes_L",
+        "yScale" : 1
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0.2,
+        "linearDamping" : 0.1
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 1504,
+        "yScale" : 1,
+        "size.width" : 64,
+        "texture" : "plf:Tile_Spikes",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 160,
+        "alpha" : 1,
+        "zRotation" : -1.570796370506287,
+        "_type" : "Sprite",
+        "name" : "hazard_spikes_R"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0.2,
+        "linearDamping" : 0.1
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 1696,
+        "name" : "hazard_spikes_L",
+        "size.width" : 64,
+        "texture" : "plf:Tile_Spikes",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 452,
+        "alpha" : 1,
+        "zRotation" : 1.570796370506287,
+        "yScale" : 1,
+        "_type" : "Sprite"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0,
+        "linearDamping" : 0.1,
+        "rectSize" : {
+          "width" : 64,
+          "height" : 64
+        },
+        "usesPreciseCollisionDetection" : true
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 1760,
+        "yScale" : 1,
+        "size.width" : 64,
+        "texture" : "plf:Ground_GrassMid",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 576,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "_type" : "Sprite",
+        "name" : "tile_ground_TB"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0.2,
+        "linearDamping" : 0.1
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 1824,
+        "yScale" : 1,
+        "size.width" : 64,
+        "texture" : "plf:Tile_Spikes",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 452,
+        "alpha" : 1,
+        "zRotation" : -1.570796370506287,
+        "_type" : "Sprite",
+        "name" : "hazard_spikes_R"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0.2,
+        "linearDamping" : 0.1
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 1760,
+        "_type" : "Sprite",
+        "size.width" : 64,
+        "texture" : "plf:Tile_Spikes",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 388,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "name" : "hazard_spikes_B",
+        "yScale" : -1
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0,
+        "linearDamping" : 0.1,
+        "rectSize" : {
+          "width" : 64,
+          "height" : 64
+        },
+        "usesPreciseCollisionDetection" : true
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 1760,
+        "name" : "tile_ground_TLRB",
+        "size.width" : 64,
+        "texture" : "plf:Ground_GrassCenter",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 96,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "yScale" : 1,
+        "_type" : "Sprite"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0.2,
+        "linearDamping" : 0.1
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 1696,
+        "yScale" : 1,
+        "size.width" : 64,
+        "texture" : "plf:Tile_Spikes",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 96,
+        "alpha" : 1,
+        "zRotation" : 1.570796370506287,
+        "_type" : "Sprite",
+        "name" : "hazard_spikes_L"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0.2,
+        "linearDamping" : 0.1
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 1696,
+        "_type" : "Sprite",
+        "size.width" : 64,
+        "texture" : "plf:Tile_Spikes",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 160,
+        "alpha" : 1,
+        "zRotation" : 1.570796370506287,
+        "name" : "hazard_spikes_L",
+        "yScale" : 1
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0.2,
+        "linearDamping" : 0.1
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 1760,
+        "yScale" : 1,
+        "size.width" : 64,
+        "texture" : "plf:Tile_Spikes",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 224,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "_type" : "Sprite",
+        "name" : "hazard_spikes_T"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0.2,
+        "linearDamping" : 0.1
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 1824,
+        "_type" : "Sprite",
+        "size.width" : 64,
+        "texture" : "plf:Tile_Spikes",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 160,
+        "alpha" : 1,
+        "zRotation" : -1.570796370506287,
+        "name" : "hazard_spikes_R",
+        "yScale" : 1
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0.2,
+        "linearDamping" : 0.1
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 1824,
+        "name" : "hazard_spikes_R",
+        "size.width" : 64,
+        "texture" : "plf:Tile_Spikes",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 96,
+        "alpha" : 1,
+        "zRotation" : -1.570796370506287,
+        "yScale" : 1,
+        "_type" : "Sprite"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0,
+        "linearDamping" : 0.1,
+        "rectSize" : {
+          "width" : 64,
+          "height" : 64
+        },
+        "usesPreciseCollisionDetection" : true
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 1760,
+        "_type" : "Sprite",
+        "size.width" : 64,
+        "texture" : "plf:Ground_GrassMid",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 160,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "name" : "tile_ground_TB",
+        "yScale" : 1
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0,
+        "linearDamping" : 0.1,
+        "rectSize" : {
+          "width" : 64,
+          "height" : 64
+        },
+        "usesPreciseCollisionDetection" : true
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 1760,
+        "yScale" : 1,
+        "size.width" : 64,
+        "texture" : "plf:Ground_GrassCenter",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 452,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "_type" : "Sprite",
+        "name" : "tile_ground_TLRB"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0,
+        "linearDamping" : 0.1,
+        "rectSize" : {
+          "width" : 64,
+          "height" : 64
+        },
+        "usesPreciseCollisionDetection" : true
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 1760,
+        "_type" : "Sprite",
+        "size.width" : 64,
+        "texture" : "plf:Ground_GrassCenter",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 512,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "name" : "tile_ground_TLRB",
+        "yScale" : 1
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0.2,
+        "linearDamping" : 0.1
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 1696,
+        "yScale" : 1,
+        "size.width" : 64,
+        "texture" : "plf:Tile_Spikes",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 516,
+        "alpha" : 1,
+        "zRotation" : 1.570796370506287,
+        "_type" : "Sprite",
+        "name" : "hazard_spikes_L"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0.2,
+        "linearDamping" : 0.1
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 1824,
+        "_type" : "Sprite",
+        "size.width" : 64,
+        "texture" : "plf:Tile_Spikes",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 516,
+        "alpha" : 1,
+        "zRotation" : -1.570796370506287,
+        "name" : "hazard_spikes_R",
+        "yScale" : 1
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0.2,
+        "linearDamping" : 0.1
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 1696,
+        "name" : "hazard_spikes_L",
+        "size.width" : 64,
+        "texture" : "plf:Tile_Spikes",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 576,
+        "alpha" : 1,
+        "zRotation" : 1.570796370506287,
+        "yScale" : 1,
+        "_type" : "Sprite"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0.2,
+        "linearDamping" : 0.1
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 1824,
+        "name" : "hazard_spikes_R",
+        "size.width" : 64,
+        "texture" : "plf:Tile_Spikes",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 576,
+        "alpha" : 1,
+        "zRotation" : -1.570796370506287,
+        "yScale" : 1,
+        "_type" : "Sprite"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0.2,
+        "linearDamping" : 0.1
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 1760,
+        "_type" : "Sprite",
+        "size.width" : 64,
+        "texture" : "plf:Tile_Spikes",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 640,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "name" : "hazard_spikes_T",
+        "yScale" : 1
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0.2,
+        "linearDamping" : 0.1
+      },
+      "attributes" : {
+        "yScale" : 1,
+        "xScale" : 1,
+        "alpha" : 1,
+        "_type" : "Node",
+        "zRotation" : 0,
+        "position.y" : 96,
+        "position.x" : 924,
+        "name" : "item_fuel"
+      },
+      "children" : [
+        {
+          "filterAttributes" : {
+
+          },
+          "physicsAttributes" : {
+            "bodyType" : "None",
+            "dynamic" : true,
+            "affectedByGravity" : true,
+            "allowsRotation" : true,
+            "density" : 1,
+            "angularDamping" : 0.1,
+            "friction" : 0.2,
+            "restitution" : 0.2,
+            "linearDamping" : 0.1
+          },
+          "attributes" : {
+            "emissionAngle" : 0,
+            "particlePositionRange.x" : 0,
+            "particleAlphaSpeed" : 0,
+            "particleScaleRange" : 0,
+            "particleColorBlendFactor" : 1,
+            "position.y" : 0,
+            "particleBirthRate" : 40,
+            "particleZPositionRange" : 0,
+            "particleRotation" : 0,
+            "particleSize.height" : 3,
+            "emissionAngleRange" : 6.283185482025146,
+            "particleColorGreenRange" : 0,
+            "particleColorBlueRange" : 0,
+            "particleZPositionSpeed" : 0,
+            "particleLifetimeRange" : 0,
+            "yScale" : 1,
+            "particleColorBlueSpeed" : 0,
+            "particleColorRedRange" : 0,
+            "particleBlendMode" : 0,
+            "particleColorBlendFactorRange" : 0,
+            "particlePositionRange.y" : 0,
+            "particleColorGreenSpeed" : 0,
+            "particleColorRedSpeed" : 0,
+            "particleSpeedRange" : 0,
+            "zRotation" : 0,
+            "particleAlphaRange" : 0,
+            "particleLifetime" : 0.4000000238418579,
+            "particleRotationRange" : 0,
+            "particleScaleSpeed" : 0,
+            "xAcceleration" : 0,
+            "position.x" : 0,
+            "yAcceleration" : 0,
+            "alpha" : 1,
+            "particleRotationSpeed" : 0,
+            "xScale" : 1,
+            "particleSize.width" : 3,
+            "particleColorAlphaRange" : 0,
+            "_type" : "Emitter",
+            "particleScale" : 1,
+            "particleColor" : "RGBA(1.000,0.761,1.000,1.000)",
+            "particleAlpha" : 1,
+            "particleSpeed" : 70,
+            "particleColorBlendFactorSpeed" : 0,
+            "particleColorAlphaSpeed" : 0,
+            "particleZPosition" : 0
+          },
+          "children" : [
+
+          ]
+        },
+        {
+          "filterAttributes" : {
+
+          },
+          "physicsAttributes" : {
+            "bodyType" : "None",
+            "dynamic" : true,
+            "affectedByGravity" : true,
+            "allowsRotation" : true,
+            "density" : 1,
+            "angularDamping" : 0.1,
+            "friction" : 0.2,
+            "restitution" : 0.2,
+            "linearDamping" : 0.1
+          },
+          "attributes" : {
+            "xScale" : 1,
+            "size.height" : 33,
+            "blendMode" : 0,
+            "position.x" : 0,
+            "yScale" : 1,
+            "size.width" : 33,
+            "texture" : "spc:BoltSilver",
+            "colorBlendFactor" : 1,
+            "color" : "RGBA(0.739,0.609,1.000,1.000)",
+            "position.y" : 0,
+            "alpha" : 1,
+            "zRotation" : 0,
+            "_type" : "Sprite",
+            "name" : ""
+          },
+          "children" : [
+
+          ]
+        }
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0.2,
+        "linearDamping" : 0.1
+      },
+      "attributes" : {
+        "yScale" : 1,
+        "xScale" : 1,
+        "alpha" : 1,
+        "_type" : "Node",
+        "zRotation" : 0,
+        "position.y" : 432,
+        "position.x" : 2428,
+        "name" : "item_star"
+      },
+      "children" : [
+        {
+          "filterAttributes" : {
+
+          },
+          "physicsAttributes" : {
+            "bodyType" : "None",
+            "dynamic" : true,
+            "affectedByGravity" : true,
+            "allowsRotation" : true,
+            "density" : 1,
+            "angularDamping" : 0.1,
+            "friction" : 0.2,
+            "restitution" : 0.2,
+            "linearDamping" : 0.1
+          },
+          "attributes" : {
+            "emissionAngle" : 0,
+            "particlePositionRange.x" : 0,
+            "particleAlphaSpeed" : 0,
+            "particleScaleRange" : 0,
+            "particleColorBlendFactor" : 1,
+            "position.y" : 0,
+            "particleBirthRate" : 40,
+            "particleZPositionRange" : 0,
+            "particleRotation" : 0,
+            "particleSize.height" : 3,
+            "emissionAngleRange" : 6.283185482025146,
+            "particleColorGreenRange" : 0,
+            "particleColorBlueRange" : 0,
+            "particleZPositionSpeed" : 0,
+            "particleLifetimeRange" : 0,
+            "yScale" : 1,
+            "particleColorBlueSpeed" : 0,
+            "particleColorRedRange" : 0,
+            "particleBlendMode" : 0,
+            "particleColorBlendFactorRange" : 0,
+            "particlePositionRange.y" : 0,
+            "particleColorGreenSpeed" : -0.3000000029802322,
+            "particleColorRedSpeed" : 0,
+            "particleSpeedRange" : 0,
+            "zRotation" : 0,
+            "particleAlphaRange" : 0,
+            "particleLifetime" : 0.4000000238418579,
+            "particleRotationRange" : 0,
+            "particleScaleSpeed" : 0,
+            "xAcceleration" : 0,
+            "position.x" : 0,
+            "yAcceleration" : 0,
+            "alpha" : 1,
+            "particleRotationSpeed" : 0,
+            "xScale" : 1,
+            "particleSize.width" : 3,
+            "particleColorAlphaRange" : 0,
+            "_type" : "Emitter",
+            "particleScale" : 1,
+            "particleColor" : "RGBA(1.000,1.000,0.367,1.000)",
+            "particleAlpha" : 1,
+            "particleSpeed" : 70,
+            "particleColorBlendFactorSpeed" : 0,
+            "particleColorAlphaSpeed" : 0,
+            "particleZPosition" : 0
+          },
+          "children" : [
+
+          ]
+        },
+        {
+          "filterAttributes" : {
+
+          },
+          "physicsAttributes" : {
+            "bodyType" : "None",
+            "dynamic" : true,
+            "affectedByGravity" : true,
+            "allowsRotation" : true,
+            "density" : 1,
+            "angularDamping" : 0.1,
+            "friction" : 0.2,
+            "restitution" : 0.2,
+            "linearDamping" : 0.1
+          },
+          "attributes" : {
+            "xScale" : 1,
+            "size.height" : 64,
+            "blendMode" : 0,
+            "position.x" : 0,
+            "name" : "",
+            "size.width" : 64,
+            "texture" : "plf:Item_Star",
+            "colorBlendFactor" : 1,
+            "color" : "RGBA(1.000,1.000,1.000,1.000)",
+            "position.y" : 0,
+            "alpha" : 1,
+            "zRotation" : 0,
+            "yScale" : 1,
+            "_type" : "Sprite"
+          },
+          "children" : [
+
+          ]
+        }
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0.2,
+        "linearDamping" : 0.1
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 2364,
+        "yScale" : 1,
+        "size.width" : 64,
+        "texture" : "plf:Tile_Spikes",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 564,
+        "alpha" : 1,
+        "zRotation" : 1.570796370506287,
+        "_type" : "Sprite",
+        "name" : "hazard_spikes_L"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0,
+        "linearDamping" : 0.1,
+        "rectSize" : {
+          "width" : 64,
+          "height" : 64
+        },
+        "usesPreciseCollisionDetection" : true
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 2428,
+        "_type" : "Sprite",
+        "size.width" : 64,
+        "texture" : "plf:Ground_GrassMid",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 688,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "name" : "tile_ground_TB",
+        "yScale" : 1
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0.2,
+        "linearDamping" : 0.1
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 2492,
+        "_type" : "Sprite",
+        "size.width" : 64,
+        "texture" : "plf:Tile_Spikes",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 564,
+        "alpha" : 1,
+        "zRotation" : -1.570796370506287,
+        "name" : "hazard_spikes_R",
+        "yScale" : 1
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0.2,
+        "linearDamping" : 0.1
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 2428,
+        "name" : "hazard_spikes_B",
+        "size.width" : 64,
+        "texture" : "plf:Tile_Spikes",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 500,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "yScale" : -1,
+        "_type" : "Sprite"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0,
+        "linearDamping" : 0.1,
+        "rectSize" : {
+          "width" : 64,
+          "height" : 64
+        },
+        "usesPreciseCollisionDetection" : true
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 2428,
+        "yScale" : 1,
+        "size.width" : 64,
+        "texture" : "plf:Ground_GrassCenter",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 224,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "_type" : "Sprite",
+        "name" : "tile_ground_TLRB"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0.2,
+        "linearDamping" : 0.1
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 2364,
+        "_type" : "Sprite",
+        "size.width" : 64,
+        "texture" : "plf:Tile_Spikes",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 224,
+        "alpha" : 1,
+        "zRotation" : 1.570796370506287,
+        "name" : "hazard_spikes_L",
+        "yScale" : 1
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0.2,
+        "linearDamping" : 0.1
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 2364,
+        "name" : "hazard_spikes_L",
+        "size.width" : 64,
+        "texture" : "plf:Tile_Spikes",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 288,
+        "alpha" : 1,
+        "zRotation" : 1.570796370506287,
+        "yScale" : 1,
+        "_type" : "Sprite"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0.2,
+        "linearDamping" : 0.1
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 2428,
+        "_type" : "Sprite",
+        "size.width" : 64,
+        "texture" : "plf:Tile_Spikes",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 352,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "name" : "hazard_spikes_T",
+        "yScale" : 1
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0.2,
+        "linearDamping" : 0.1
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 2492,
+        "name" : "hazard_spikes_R",
+        "size.width" : 64,
+        "texture" : "plf:Tile_Spikes",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 288,
+        "alpha" : 1,
+        "zRotation" : -1.570796370506287,
+        "yScale" : 1,
+        "_type" : "Sprite"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0.2,
+        "linearDamping" : 0.1
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 2492,
+        "yScale" : 1,
+        "size.width" : 64,
+        "texture" : "plf:Tile_Spikes",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 224,
+        "alpha" : 1,
+        "zRotation" : -1.570796370506287,
+        "_type" : "Sprite",
+        "name" : "hazard_spikes_R"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0,
+        "linearDamping" : 0.1,
+        "rectSize" : {
+          "width" : 64,
+          "height" : 64
+        },
+        "usesPreciseCollisionDetection" : true
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 2428,
+        "name" : "tile_ground_TB",
+        "size.width" : 64,
+        "texture" : "plf:Ground_GrassMid",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 288,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "yScale" : 1,
+        "_type" : "Sprite"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0,
+        "linearDamping" : 0.1,
+        "rectSize" : {
+          "width" : 64,
+          "height" : 64
+        },
+        "usesPreciseCollisionDetection" : true
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 2428,
+        "_type" : "Sprite",
+        "size.width" : 64,
+        "texture" : "plf:Ground_GrassCenter",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 564,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "name" : "tile_ground_TLRB",
+        "yScale" : 1
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0,
+        "linearDamping" : 0.1,
+        "rectSize" : {
+          "width" : 64,
+          "height" : 64
+        },
+        "usesPreciseCollisionDetection" : true
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 2428,
+        "name" : "tile_ground_TLRB",
+        "size.width" : 64,
+        "texture" : "plf:Ground_GrassCenter",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 624,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "yScale" : 1,
+        "_type" : "Sprite"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0.2,
+        "linearDamping" : 0.1
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 2364,
+        "_type" : "Sprite",
+        "size.width" : 64,
+        "texture" : "plf:Tile_Spikes",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 628,
+        "alpha" : 1,
+        "zRotation" : 1.570796370506287,
+        "name" : "hazard_spikes_L",
+        "yScale" : 1
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0.2,
+        "linearDamping" : 0.1
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 2492,
+        "name" : "hazard_spikes_R",
+        "size.width" : 64,
+        "texture" : "plf:Tile_Spikes",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 628,
+        "alpha" : 1,
+        "zRotation" : -1.570796370506287,
+        "yScale" : 1,
+        "_type" : "Sprite"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0.2,
+        "linearDamping" : 0.1
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 2364,
+        "yScale" : 1,
+        "size.width" : 64,
+        "texture" : "plf:Tile_Spikes",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 688,
+        "alpha" : 1,
+        "zRotation" : 1.570796370506287,
+        "_type" : "Sprite",
+        "name" : "hazard_spikes_L"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0.2,
+        "linearDamping" : 0.1
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 2492,
+        "yScale" : 1,
+        "size.width" : 64,
+        "texture" : "plf:Tile_Spikes",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 688,
+        "alpha" : 1,
+        "zRotation" : -1.570796370506287,
+        "_type" : "Sprite",
+        "name" : "hazard_spikes_R"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0.2,
+        "linearDamping" : 0.1
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 2428,
+        "name" : "hazard_spikes_T",
+        "size.width" : 64,
+        "texture" : "plf:Tile_Spikes",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 752,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "yScale" : 1,
+        "_type" : "Sprite"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0.2,
+        "linearDamping" : 0.1
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 2080,
+        "_type" : "Sprite",
+        "size.width" : 64,
+        "texture" : "plf:Item_CoinGold",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 96,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "name" : "item_coin",
+        "yScale" : 1
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0,
+        "linearDamping" : 0.1,
+        "rectSize" : {
+          "width" : 64,
+          "height" : 64
+        },
+        "usesPreciseCollisionDetection" : true
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 2080,
+        "_type" : "Sprite",
+        "size.width" : 64,
+        "texture" : "plf:Ground_GrassMid",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 32,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "name" : "tile_ground_T",
+        "yScale" : 1
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0,
+        "linearDamping" : 0.1,
+        "rectSize" : {
+          "width" : 64,
+          "height" : 64
+        },
+        "usesPreciseCollisionDetection" : true
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 2144,
+        "name" : "tile_ground_T",
+        "size.width" : 64,
+        "texture" : "plf:Ground_GrassMid",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 32,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "yScale" : 1,
+        "_type" : "Sprite"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0,
+        "linearDamping" : 0.1,
+        "rectSize" : {
+          "width" : 64,
+          "height" : 64
+        },
+        "usesPreciseCollisionDetection" : true
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 2208,
+        "name" : "tile_ground_T",
+        "size.width" : 64,
+        "texture" : "plf:Ground_GrassMid",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 32,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "yScale" : 1,
+        "_type" : "Sprite"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0,
+        "linearDamping" : 0.1,
+        "rectSize" : {
+          "width" : 64,
+          "height" : 64
+        },
+        "usesPreciseCollisionDetection" : true
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 2272,
+        "name" : "tile_ground_T",
+        "size.width" : 64,
+        "texture" : "plf:Ground_GrassMid",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 32,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "yScale" : 1,
+        "_type" : "Sprite"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0,
+        "linearDamping" : 0.1,
+        "rectSize" : {
+          "width" : 64,
+          "height" : 64
+        },
+        "usesPreciseCollisionDetection" : true
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 2336,
+        "yScale" : 1,
+        "size.width" : 64,
+        "texture" : "plf:Ground_GrassMid",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 32,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "_type" : "Sprite",
+        "name" : "tile_ground_T"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0,
+        "linearDamping" : 0.1,
+        "rectSize" : {
+          "width" : 64,
+          "height" : 64
+        },
+        "usesPreciseCollisionDetection" : true
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 2400,
+        "yScale" : 1,
+        "size.width" : 64,
+        "texture" : "plf:Ground_GrassMid",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 32,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "_type" : "Sprite",
+        "name" : "tile_ground_T"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0.2,
+        "linearDamping" : 0.1
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 2592,
+        "name" : "tile_ground_T",
+        "size.width" : 64,
+        "texture" : "plf:Ground_GrassHalf_left",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 260,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "yScale" : 1,
+        "_type" : "Sprite"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0.2,
+        "linearDamping" : 0.1
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 2656,
+        "name" : "tile_ground_T",
+        "size.width" : 64,
+        "texture" : "plf:Ground_GrassHalf_mid",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 260,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "yScale" : 1,
+        "_type" : "Sprite"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0.2,
+        "linearDamping" : 0.1
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 2848,
+        "name" : "tile_ground_T",
+        "size.width" : 64,
+        "texture" : "plf:Ground_GrassHalf_right",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 260,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "yScale" : 1,
+        "_type" : "Sprite"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0.2,
+        "linearDamping" : 0.1
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 2592,
+        "name" : "item_coin",
+        "size.width" : 64,
+        "texture" : "plf:Item_CoinGold",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 324,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "yScale" : 1,
+        "_type" : "Sprite"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0.2,
+        "linearDamping" : 0.1
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 2720,
+        "yScale" : 1,
+        "size.width" : 64,
+        "texture" : "plf:Ground_GrassHalf_mid",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 260,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "_type" : "Sprite",
+        "name" : "tile_ground_T"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0.2,
+        "linearDamping" : 0.1
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 2784,
+        "_type" : "Sprite",
+        "size.width" : 64,
+        "texture" : "plf:Ground_GrassHalf_mid",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 260,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "name" : "tile_ground_T",
+        "yScale" : 1
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0,
+        "linearDamping" : 0.1,
+        "rectSize" : {
+          "width" : 64,
+          "height" : 64
+        },
+        "usesPreciseCollisionDetection" : true
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 2464,
+        "yScale" : 1,
+        "size.width" : 64,
+        "texture" : "plf:Ground_GrassMid",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 32,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "_type" : "Sprite",
+        "name" : "tile_ground_T"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0.2,
+        "linearDamping" : 0.1
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 2656,
+        "yScale" : 1,
+        "size.width" : 64,
+        "texture" : "plf:Item_CoinGold",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 324,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "_type" : "Sprite",
+        "name" : "item_coin"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0.2,
+        "linearDamping" : 0.1
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 2720,
+        "_type" : "Sprite",
+        "size.width" : 64,
+        "texture" : "plf:Item_CoinGold",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 324,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "name" : "item_coin",
+        "yScale" : 1
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0.2,
+        "linearDamping" : 0.1
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 2784,
+        "yScale" : 1,
+        "size.width" : 64,
+        "texture" : "plf:Item_CoinGold",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 324,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "_type" : "Sprite",
+        "name" : "item_coin"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0.2,
+        "linearDamping" : 0.1
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 2848,
+        "_type" : "Sprite",
+        "size.width" : 64,
+        "texture" : "plf:Item_CoinGold",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 324,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "name" : "item_coin",
+        "yScale" : 1
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0.2,
+        "linearDamping" : 0.1
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 2656,
+        "_type" : "Sprite",
+        "size.width" : 64,
+        "texture" : "plf:Item_CoinGold",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 372,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "name" : "item_coin",
+        "yScale" : 1
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0.2,
+        "linearDamping" : 0.1
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 2720,
+        "name" : "item_coin",
+        "size.width" : 64,
+        "texture" : "plf:Item_CoinGold",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 372,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "yScale" : 1,
+        "_type" : "Sprite"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0.2,
+        "linearDamping" : 0.1
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 2784,
+        "_type" : "Sprite",
+        "size.width" : 64,
+        "texture" : "plf:Item_CoinGold",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 372,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "name" : "item_coin",
+        "yScale" : 1
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0,
+        "linearDamping" : 0.1,
+        "rectSize" : {
+          "width" : 64,
+          "height" : 64
+        },
+        "usesPreciseCollisionDetection" : true
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 2784,
+        "name" : "tile_ground_T",
+        "size.width" : 64,
+        "texture" : "plf:Ground_GrassMid",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 32,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "yScale" : 1,
+        "_type" : "Sprite"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0.2,
+        "linearDamping" : 0.1
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 2144,
+        "name" : "item_coin",
+        "size.width" : 64,
+        "texture" : "plf:Item_CoinGold",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 96,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "yScale" : 1,
+        "_type" : "Sprite"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0.2,
+        "linearDamping" : 0.1
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 2208,
+        "yScale" : 1,
+        "size.width" : 64,
+        "texture" : "plf:Item_CoinGold",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 96,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "_type" : "Sprite",
+        "name" : "item_coin"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0,
+        "linearDamping" : 0.1,
+        "rectSize" : {
+          "width" : 64,
+          "height" : 64
+        },
+        "usesPreciseCollisionDetection" : true
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 2848,
+        "yScale" : 1,
+        "size.width" : 64,
+        "texture" : "plf:Ground_GrassMid",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 32,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "_type" : "Sprite",
+        "name" : "tile_ground_T"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0,
+        "linearDamping" : 0.1,
+        "rectSize" : {
+          "width" : 64,
+          "height" : 64
+        },
+        "usesPreciseCollisionDetection" : true
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 2912,
+        "yScale" : 1,
+        "size.width" : 64,
+        "texture" : "plf:Ground_GrassMid",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 32,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "_type" : "Sprite",
+        "name" : "tile_ground_T"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0,
+        "linearDamping" : 0.1,
+        "rectSize" : {
+          "width" : 64,
+          "height" : 64
+        },
+        "usesPreciseCollisionDetection" : true
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 2720,
+        "_type" : "Sprite",
+        "size.width" : 64,
+        "texture" : "plf:Tile_WaterTop_low",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 8,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "name" : "water",
+        "yScale" : 1
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0,
+        "linearDamping" : 0.1,
+        "rectSize" : {
+          "width" : 64,
+          "height" : 64
+        },
+        "usesPreciseCollisionDetection" : true
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 2528,
+        "yScale" : 1,
+        "size.width" : 64,
+        "texture" : "plf:Tile_WaterTop_low",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 8,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "_type" : "Sprite",
+        "name" : "water"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0,
+        "linearDamping" : 0.1,
+        "rectSize" : {
+          "width" : 64,
+          "height" : 64
+        },
+        "usesPreciseCollisionDetection" : true
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 2720,
+        "yScale" : 1,
+        "size.width" : 64,
+        "texture" : "plf:Ground_GrassLeft",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 32,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "_type" : "Sprite",
+        "name" : "tile_ground_TBL"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0,
+        "linearDamping" : 0.1,
+        "rectSize" : {
+          "width" : 64,
+          "height" : 64
+        },
+        "usesPreciseCollisionDetection" : true
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 2528,
+        "yScale" : 1,
+        "size.width" : 64,
+        "texture" : "plf:Ground_GrassRight",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 32,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "_type" : "Sprite",
+        "name" : "tile_ground_TRB"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0,
+        "linearDamping" : 0.1,
+        "rectSize" : {
+          "width" : 64,
+          "height" : 64
+        },
+        "usesPreciseCollisionDetection" : true
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 2592,
+        "_type" : "Sprite",
+        "size.width" : 64,
+        "texture" : "plf:Tile_WaterTop_low",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 32,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "name" : "water",
+        "yScale" : 1
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0,
+        "linearDamping" : 0.1,
+        "rectSize" : {
+          "width" : 64,
+          "height" : 64
+        },
+        "usesPreciseCollisionDetection" : true
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 2656,
+        "name" : "water",
+        "size.width" : 64,
+        "texture" : "plf:Tile_WaterTop_low",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 32,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "yScale" : 1,
+        "_type" : "Sprite"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0,
+        "linearDamping" : 0.1,
+        "rectSize" : {
+          "width" : 64,
+          "height" : 64
+        },
+        "usesPreciseCollisionDetection" : true
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 2592,
+        "name" : "water",
+        "size.width" : 64,
+        "texture" : "plf:Tile_WaterTop_low",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 8,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "yScale" : 1,
+        "_type" : "Sprite"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0,
+        "linearDamping" : 0.1,
+        "rectSize" : {
+          "width" : 64,
+          "height" : 64
+        },
+        "usesPreciseCollisionDetection" : true
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 2656,
+        "yScale" : 1,
+        "size.width" : 64,
+        "texture" : "plf:Tile_WaterTop_low",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 8,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "_type" : "Sprite",
+        "name" : "water"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0.2,
+        "linearDamping" : 0.1
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 1120,
+        "_type" : "Sprite",
+        "size.width" : 64,
+        "texture" : "plf:Item_CoinGold",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 304,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "name" : "item_coin",
+        "yScale" : 1
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0.2,
+        "linearDamping" : 0.1
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 1440,
+        "name" : "item_coin",
+        "size.width" : 64,
+        "texture" : "plf:Item_CoinGold",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 368,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "yScale" : 1,
+        "_type" : "Sprite"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0.2,
+        "linearDamping" : 0.1
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 1760,
+        "yScale" : 1,
+        "size.width" : 64,
+        "texture" : "plf:Item_CoinGold",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 304,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "_type" : "Sprite",
+        "name" : "item_coin"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0.2,
+        "linearDamping" : 0.1
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 2140,
+        "_type" : "Sprite",
+        "size.width" : 64,
+        "texture" : "plf:Tile_Spikes",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 580,
+        "alpha" : 1,
+        "zRotation" : 1.570796370506287,
+        "name" : "hazard_spikes_L",
+        "yScale" : 1
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0,
+        "linearDamping" : 0.1,
+        "rectSize" : {
+          "width" : 64,
+          "height" : 64
+        },
+        "usesPreciseCollisionDetection" : true
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 2204,
+        "name" : "tile_ground_TB",
+        "size.width" : 64,
+        "texture" : "plf:Ground_GrassMid",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 704,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "yScale" : 1,
+        "_type" : "Sprite"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0.2,
+        "linearDamping" : 0.1
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 2268,
+        "name" : "hazard_spikes_R",
+        "size.width" : 64,
+        "texture" : "plf:Tile_Spikes",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 580,
+        "alpha" : 1,
+        "zRotation" : -1.570796370506287,
+        "yScale" : 1,
+        "_type" : "Sprite"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0.2,
+        "linearDamping" : 0.1
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 2204,
+        "yScale" : -1,
+        "size.width" : 64,
+        "texture" : "plf:Tile_Spikes",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 516,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "_type" : "Sprite",
+        "name" : "hazard_spikes_B"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0,
+        "linearDamping" : 0.1,
+        "rectSize" : {
+          "width" : 64,
+          "height" : 64
+        },
+        "usesPreciseCollisionDetection" : true
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 2204,
+        "_type" : "Sprite",
+        "size.width" : 64,
+        "texture" : "plf:Ground_GrassCenter",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 224,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "name" : "tile_ground_TLRB",
+        "yScale" : 1
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0.2,
+        "linearDamping" : 0.1
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 2140,
+        "name" : "hazard_spikes_L",
+        "size.width" : 64,
+        "texture" : "plf:Tile_Spikes",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 224,
+        "alpha" : 1,
+        "zRotation" : 1.570796370506287,
+        "yScale" : 1,
+        "_type" : "Sprite"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0.2,
+        "linearDamping" : 0.1
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 2140,
+        "yScale" : 1,
+        "size.width" : 64,
+        "texture" : "plf:Tile_Spikes",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 288,
+        "alpha" : 1,
+        "zRotation" : 1.570796370506287,
+        "_type" : "Sprite",
+        "name" : "hazard_spikes_L"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0.2,
+        "linearDamping" : 0.1
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 2204,
+        "name" : "hazard_spikes_T",
+        "size.width" : 64,
+        "texture" : "plf:Tile_Spikes",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 352,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "yScale" : 1,
+        "_type" : "Sprite"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0.2,
+        "linearDamping" : 0.1
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 2268,
+        "yScale" : 1,
+        "size.width" : 64,
+        "texture" : "plf:Tile_Spikes",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 288,
+        "alpha" : 1,
+        "zRotation" : -1.570796370506287,
+        "_type" : "Sprite",
+        "name" : "hazard_spikes_R"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0.2,
+        "linearDamping" : 0.1
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 2268,
+        "_type" : "Sprite",
+        "size.width" : 64,
+        "texture" : "plf:Tile_Spikes",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 224,
+        "alpha" : 1,
+        "zRotation" : -1.570796370506287,
+        "name" : "hazard_spikes_R",
+        "yScale" : 1
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0,
+        "linearDamping" : 0.1,
+        "rectSize" : {
+          "width" : 64,
+          "height" : 64
+        },
+        "usesPreciseCollisionDetection" : true
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 2204,
+        "yScale" : 1,
+        "size.width" : 64,
+        "texture" : "plf:Ground_GrassMid",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 288,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "_type" : "Sprite",
+        "name" : "tile_ground_TB"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0,
+        "linearDamping" : 0.1,
+        "rectSize" : {
+          "width" : 64,
+          "height" : 64
+        },
+        "usesPreciseCollisionDetection" : true
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 2204,
+        "name" : "tile_ground_TLRB",
+        "size.width" : 64,
+        "texture" : "plf:Ground_GrassCenter",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 580,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "yScale" : 1,
+        "_type" : "Sprite"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0,
+        "linearDamping" : 0.1,
+        "rectSize" : {
+          "width" : 64,
+          "height" : 64
+        },
+        "usesPreciseCollisionDetection" : true
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 2204,
+        "yScale" : 1,
+        "size.width" : 64,
+        "texture" : "plf:Ground_GrassCenter",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 640,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "_type" : "Sprite",
+        "name" : "tile_ground_TLRB"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0.2,
+        "linearDamping" : 0.1
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 2140,
+        "name" : "hazard_spikes_L",
+        "size.width" : 64,
+        "texture" : "plf:Tile_Spikes",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 644,
+        "alpha" : 1,
+        "zRotation" : 1.570796370506287,
+        "yScale" : 1,
+        "_type" : "Sprite"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0.2,
+        "linearDamping" : 0.1
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 2268,
+        "yScale" : 1,
+        "size.width" : 64,
+        "texture" : "plf:Tile_Spikes",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 644,
+        "alpha" : 1,
+        "zRotation" : -1.570796370506287,
+        "_type" : "Sprite",
+        "name" : "hazard_spikes_R"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0.2,
+        "linearDamping" : 0.1
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 2140,
+        "_type" : "Sprite",
+        "size.width" : 64,
+        "texture" : "plf:Tile_Spikes",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 704,
+        "alpha" : 1,
+        "zRotation" : 1.570796370506287,
+        "name" : "hazard_spikes_L",
+        "yScale" : 1
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0.2,
+        "linearDamping" : 0.1
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 2268,
+        "_type" : "Sprite",
+        "size.width" : 64,
+        "texture" : "plf:Tile_Spikes",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 704,
+        "alpha" : 1,
+        "zRotation" : -1.570796370506287,
+        "name" : "hazard_spikes_R",
+        "yScale" : 1
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0.2,
+        "linearDamping" : 0.1
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 2204,
+        "yScale" : 1,
+        "size.width" : 64,
+        "texture" : "plf:Tile_Spikes",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 768,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "_type" : "Sprite",
+        "name" : "hazard_spikes_T"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0.2,
+        "linearDamping" : 0.1
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 2204,
+        "_type" : "Sprite",
+        "size.width" : 64,
+        "texture" : "plf:Item_CoinGold",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 432,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "name" : "item_coin",
+        "yScale" : 1
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0.2,
+        "linearDamping" : 0.1
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 2428,
+        "_type" : "Sprite",
+        "size.width" : 64,
+        "texture" : "plf:Tile_Spikes",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 160,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "name" : "hazard_spikes_B",
+        "yScale" : -1
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0.2,
+        "linearDamping" : 0.1
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 2204,
+        "name" : "hazard_spikes_B",
+        "size.width" : 64,
+        "texture" : "plf:Tile_Spikes",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 160,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "yScale" : -1,
+        "_type" : "Sprite"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0.2,
+        "linearDamping" : 0.1
+      },
+      "attributes" : {
+        "yScale" : 1,
+        "xScale" : 1,
+        "alpha" : 1,
+        "_type" : "Node",
+        "zRotation" : 0,
+        "position.y" : 516,
+        "position.x" : 2976,
+        "name" : "item_star"
+      },
+      "children" : [
+        {
+          "filterAttributes" : {
+
+          },
+          "physicsAttributes" : {
+            "bodyType" : "None",
+            "dynamic" : true,
+            "affectedByGravity" : true,
+            "allowsRotation" : true,
+            "density" : 1,
+            "angularDamping" : 0.1,
+            "friction" : 0.2,
+            "restitution" : 0.2,
+            "linearDamping" : 0.1
+          },
+          "attributes" : {
+            "emissionAngle" : 0,
+            "particlePositionRange.x" : 0,
+            "particleAlphaSpeed" : 0,
+            "particleScaleRange" : 0,
+            "particleColorBlendFactor" : 1,
+            "position.y" : 0,
+            "particleBirthRate" : 40,
+            "particleZPositionRange" : 0,
+            "particleRotation" : 0,
+            "particleSize.height" : 3,
+            "emissionAngleRange" : 6.283185482025146,
+            "particleColorGreenRange" : 0,
+            "particleColorBlueRange" : 0,
+            "particleZPositionSpeed" : 0,
+            "particleLifetimeRange" : 0,
+            "yScale" : 1,
+            "particleColorBlueSpeed" : 0,
+            "particleColorRedRange" : 0,
+            "particleBlendMode" : 0,
+            "particleColorBlendFactorRange" : 0,
+            "particlePositionRange.y" : 0,
+            "particleColorGreenSpeed" : -0.3000000029802322,
+            "particleColorRedSpeed" : 0,
+            "particleSpeedRange" : 0,
+            "zRotation" : 0,
+            "particleAlphaRange" : 0,
+            "particleLifetime" : 0.4000000238418579,
+            "particleRotationRange" : 0,
+            "particleScaleSpeed" : 0,
+            "xAcceleration" : 0,
+            "position.x" : 0,
+            "yAcceleration" : 0,
+            "alpha" : 1,
+            "particleRotationSpeed" : 0,
+            "xScale" : 1,
+            "particleSize.width" : 3,
+            "particleColorAlphaRange" : 0,
+            "_type" : "Emitter",
+            "particleScale" : 1,
+            "particleColor" : "RGBA(1.000,1.000,0.367,1.000)",
+            "particleAlpha" : 1,
+            "particleSpeed" : 70,
+            "particleColorBlendFactorSpeed" : 0,
+            "particleColorAlphaSpeed" : 0,
+            "particleZPosition" : 0
+          },
+          "children" : [
+
+          ]
+        },
+        {
+          "filterAttributes" : {
+
+          },
+          "physicsAttributes" : {
+            "bodyType" : "None",
+            "dynamic" : true,
+            "affectedByGravity" : true,
+            "allowsRotation" : true,
+            "density" : 1,
+            "angularDamping" : 0.1,
+            "friction" : 0.2,
+            "restitution" : 0.2,
+            "linearDamping" : 0.1
+          },
+          "attributes" : {
+            "xScale" : 1,
+            "size.height" : 64,
+            "blendMode" : 0,
+            "position.x" : 0,
+            "yScale" : 1,
+            "size.width" : 64,
+            "texture" : "plf:Item_Star",
+            "colorBlendFactor" : 1,
+            "color" : "RGBA(1.000,1.000,1.000,1.000)",
+            "position.y" : 0,
+            "alpha" : 1,
+            "zRotation" : 0,
+            "_type" : "Sprite",
+            "name" : ""
+          },
+          "children" : [
+
+          ]
+        }
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0,
+        "linearDamping" : 0.1,
+        "rectSize" : {
+          "width" : 64,
+          "height" : 64
+        },
+        "usesPreciseCollisionDetection" : true
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 2976,
+        "yScale" : 1,
+        "size.width" : 64,
+        "texture" : "plf:Ground_GrassMid",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 32,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "_type" : "Sprite",
+        "name" : "tile_ground_T"
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0,
+        "linearDamping" : 0.1,
+        "rectSize" : {
+          "width" : 64,
+          "height" : 64
+        },
+        "usesPreciseCollisionDetection" : true
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 3040,
+        "_type" : "Sprite",
+        "size.width" : 64,
+        "texture" : "plf:Ground_GrassMid",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 32,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "name" : "tile_ground_T",
+        "yScale" : 1
+      },
+      "children" : [
+
+      ]
+    },
+    {
+      "filterAttributes" : {
+
+      },
+      "physicsAttributes" : {
+        "bodyType" : "None",
+        "dynamic" : true,
+        "affectedByGravity" : true,
+        "allowsRotation" : true,
+        "density" : 1,
+        "angularDamping" : 0.1,
+        "friction" : 0.2,
+        "restitution" : 0,
+        "linearDamping" : 0.1,
+        "rectSize" : {
+          "width" : 64,
+          "height" : 64
+        },
+        "usesPreciseCollisionDetection" : true
+      },
+      "attributes" : {
+        "xScale" : 1,
+        "size.height" : 64,
+        "blendMode" : 0,
+        "position.x" : 3104,
+        "_type" : "Sprite",
+        "size.width" : 64,
+        "texture" : "plf:Ground_GrassMid",
+        "colorBlendFactor" : 1,
+        "color" : "RGBA(1.000,1.000,1.000,1.000)",
+        "position.y" : 32,
+        "alpha" : 1,
+        "zRotation" : 0,
+        "name" : "tile_ground_T",
+        "yScale" : 1
+      },
+      "children" : [
+
+      ]
+    }
+  ],
+  "gridSize" : 4
+}

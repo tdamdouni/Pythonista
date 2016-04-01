@@ -1,0 +1,124 @@
+{
+    "name": "Pacific Dark",
+    
+    "library_background": "#313b44",
+    "thumbnail_border": "#313b44",
+    
+    "default_text": "#f8f8f2",
+    "dark_keyboard": true,
+    
+    "tint": "#78aab5",
+    "library_tint": "#78aab5",
+    
+    "text_selection_tint": "#42505a",
+    "bar_background": "#354552",
+    "tab_background": "#313b44",
+    "tab_title": "#78aab5",
+    "separator_line": "#313b44",
+    
+    "background": "#354552",
+    
+    "gutter_background": "#354552",
+    "gutter_border": "#354552",
+    "line_number": "#4f6c8a",
+    
+    "font-size": 15.0,
+    "font-family": "Menlo-Regular",
+    
+    "interstitial": "#1c2933",
+    
+    "scopes": {
+        "default": {
+            "color": "#ffffff",
+        },
+        
+        "string": {
+            "color": "#ffdb8b",
+        },
+        "docstring": {
+            "color": "#587585",
+            "font-style": "italic"
+        },
+        "number": {
+            "color": "#8086d7",
+        },
+        "keyword": {
+            "color": "#ff8b69",
+        },
+        "module": {
+            "color": "#ffdb8b",
+        },
+        "function": {
+            "color": "#ffffff",
+        },
+        "builtinfunction": {
+            "color": "#6baaaa",
+        },
+        "functiondef": {
+            "color": "#89ca90",
+            "font-style": "bold"
+        },
+        "classdef": {
+            "color": "#ffffff",
+            "font-style": "italic"
+        },
+        "class": {
+            "color": "#ffffff"
+        },
+        "comment": {
+            "color": "#587585",
+            "font-style": "italic"
+        },
+        
+        "formatting": {
+            "color": "#80808080"
+        },
+        "codeblock-start": {
+            "color": "#80808080"
+        },
+        "bold": {
+            "font-style": "bold"
+        },
+        "italic": {
+            "font-style": "italic"
+        },
+        "bold-italic": {
+            "font-style": "bold-italic"
+        },
+        "heading-1": {
+            "font-style": "bold"
+        },
+        "heading-2": {
+            "font-style": "bold"
+        },
+        "heading-3": {
+            "font-style": "bold"
+        },
+        "link": {
+            "text-decoration": "underline"
+        },
+        "code": {
+            "background-color": "#80808040",
+            "corner-radius": 2.0
+        },
+        
+        
+        "project": {
+            "font-style": "bold"
+        },
+        "checkbox": {
+            "checkbox": true
+        },
+        "checkbox-done": {
+            "checkbox": true,
+            "done": true
+        },
+        "task-done": {
+            "text-decoration": "strikeout",
+            "color": "#99999980"
+        },
+        "tag": {
+            "text-decoration": "none"
+        }
+    }
+}
