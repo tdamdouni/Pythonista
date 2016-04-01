@@ -1,0 +1,39 @@
+[
+  {
+    "class" : "View",
+    "attributes" : {
+      "custom_class" : "MyView",
+      "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+      "tint_color" : "RGBA(0.000000,0.478000,1.000000,1.000000)",
+      "enabled" : true,
+      "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+      "flex" : ""
+    },
+    "frame" : "{{0, 0}, {200, 200}}",
+    "selected" : false,
+    "nodes" : [
+      {
+        "class" : "Button",
+        "attributes" : {
+          "background_color" : "RGBA(1.000000,0.033333,0.033333,1.000000)",
+          "frame" : "{{80, 104}, {80, 32}}",
+          "font_size" : 26,
+          "title" : "DO NOT PUSH",
+          "tint_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "action" : "this().button_callback",
+          "font_bold" : true,
+          "name" : "Hey can't you read?| Don't do that again| HARDDRIVE FORMAT COMPLETE|Just kidding|Are you still here!|You have been eaten by a grue.| 👹|👹👹|👹👹👹👹|❎❌🚫❌❌❌❌🚫❎❎❌🚫❌❎❌❌❌❎❌❌🚫❌🚫🚫❌🚫❌🌞😓😙😚😂😝😡😋😜😶😡😰😡😲",
+          "corner_radius" : 100,
+          "uuid" : "26E52FCA-27E9-49BE-B245-A64865FBE536",
+          "border_width" : 3,
+          "class" : "Button"
+        },
+        "frame" : "{{0, 6}, {194, 194}}",
+        "selected" : false,
+        "nodes" : [
+
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,39 @@
+[
+  {
+    "class" : "View",
+    "attributes" : {
+      "custom_class" : "",
+      "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+      "tint_color" : "RGBA(0.000000,0.478000,1.000000,1.000000)",
+      "enabled" : true,
+      "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+      "flex" : ""
+    },
+    "frame" : "{{0, 0}, {939, 534}}",
+    "nodes" : [
+      {
+        "class" : "Button",
+        "attributes" : {
+          "background_color" : "RGBA(0.000000,0.666667,1.000000,1.000000)",
+          "border_color" : "RGBA(0.000000,0.000000,1.000000,1.000000)",
+          "font_size" : 15,
+          "title" : "Blue",
+          "enabled" : true,
+          "tint_color" : "RGBA(0.000000,0.000000,1.000000,1.000000)",
+          "flex" : "",
+          "action" : "button_action",
+          "font_bold" : true,
+          "alpha" : 0.5000000000000001,
+          "name" : "Blue",
+          "border_width" : 2,
+          "uuid" : "0F0AEC82-2A01-4D53-A7C2-75C5EF40C67E",
+          "corner_radius" : 4
+        },
+        "frame" : "{{50, 50}, {130, 35.5}}",
+        "nodes" : [
+
+        ]
+      }
+    ]
+  }
+]
