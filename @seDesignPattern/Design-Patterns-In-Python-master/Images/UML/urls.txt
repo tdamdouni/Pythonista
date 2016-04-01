@@ -1,0 +1,53 @@
+This is to store the editable URLS from the online UML tool used to make these images
+
+Facade_specific.jpg
+http://yuml.me/diagram/plain;/class/edit/// Facade Class Diagram, [Car|battery;starter;engine;|turn_key()]++->[Engine|spin|start(charge))], [Car]++->[StarterMotor|spin|start(charge)], [Car]++->[Battery|charge|]
+
+Strategy_general.jpg
+http://yuml.me/diagram/plain;dir:RL;/class/edit/// Non-specific Strategy Class Diagram, [Caller]<>->[<<IAlgorithm>>], [<<IAlgorithm>>]^-.-[Algorithm1], [<<IAlgorithm>>]^-.-[Algorithm2]
+
+Strategy_specific.png
+http://yuml.me9dfd5ea2
+
+// specific strategy pattern
+[PrimeFinder|algorithm;primes|calculate(limit);out()]+->[Algorithm|calculate(limit)]
+[Algorithm]^-.-[HardCoded|calculate(limit)]
+[Algorithm]^-.-[Standard|calculate(limit)
+
+
+Builder_general.png
+http://yuml.me/3f5049ad
+http://yuml.me/edit/3f5049ad
+
+// General Builder pattern
+[Director| builder| create()]<>->[Builder]
+[Builder| build_part_1();build_part_2()]^-.-[ConcreteBuilder2| build_part_1();build_part_2()]
+[Builder]^-.-[ConcreteBuilder1| build_part_1();build_part_2()]
+[ConcreteBuilder1]creates->[Product]
+[ConcreteBuilder2]creates->[Product]
+
+Builder_specific.png
+http://yuml.me/abcf254a
+http://yuml.me/edit/abcf254a
+
+// Specific Builder pattern
+[VehicleManufacturer| builder| create()]<>->[VehicleBuilder]
+[VehicleBuilder| |make_wheels();make_doors();make_seats()]^-.-[BikeBuilder| vehicle |make_wheels();make_doors();make_seats()]
+[VehicleBuilder]^-.-[CarBuilder| vehicle|make_wheels();make_doors();make_seats()]
+[CarBuilder]creates->[Vehicle| type;wheels;doors;seats | view() ]
+[BikeBuilder]creates->[Vehicle]
+
+Iterator_general.png
+http://yuml.me/7653a2e6
+http://yuml.me/edit/7653a2e6
+
+// General Iterator Pattern
+[Iterator|__iter__();next()|collection]<>->[Collection|__len__();__getitem__(key);...|]
+
+Iterator specific
+http://yuml.me/b8a2a966
+http://yuml.me/edit/b8a2a966
+
+// Specific Iterator Pattern
+[ReverseIterator|__iter__();next()|list;index]<>->[list]
+[Days|reverse_iter()|days]<>->[list]

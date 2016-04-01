@@ -1,0 +1,23 @@
+#ignore debug.log
+debug.log
+
+# ignore emacs temp files
+*~
+
+# ignore the latex rubbish
+*.aux 
+*.out 
+*.log 
+*.snm 
+*.nav 
+*.toc 
+*.synctex.gz
+
+# ignore the finished product, attach as a download later
+Output/*
+
+# ignore the C++ examples I've made to better my understanding
+C++/*
+
+# ignore the python byte files
+*.pyc
