@@ -1,0 +1,170 @@
+[
+  {
+    "frame" : "{{0, 0}, {520, 290}}",
+    "class" : "View",
+    "nodes" : [
+      {
+        "frame" : "{{0, 85}, {510, 195}}",
+        "class" : "View",
+        "nodes" : [
+          {
+            "frame" : "{{0, 0}, {510, 32}}",
+            "class" : "Label",
+            "nodes" : [
+
+            ],
+            "attributes" : {
+              "flex" : "",
+              "font_size" : 17,
+              "enabled" : true,
+              "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+              "text" : "Export the text of your ASCII art, rendered onto an image.",
+              "alignment" : "left",
+              "uuid" : "FC68F744-2C33-443C-B41F-7B2C0A2D22A6",
+              "name" : "label1",
+              "text_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)"
+            }
+          },
+          {
+            "frame" : "{{6, 40}, {200, 32}}",
+            "class" : "TextField",
+            "nodes" : [
+
+            ],
+            "attributes" : {
+              "uuid" : "E069CFE0-17A0-41F2-A0C1-C0DD3A604071",
+              "flex" : "",
+              "border_style" : 3,
+              "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+              "alignment" : "left",
+              "autocorrection_type" : "no",
+              "enabled" : true,
+              "placeholder" : "Background color",
+              "text_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+              "spellchecking_type" : "no",
+              "name" : "colorbox",
+              "font_size" : 17
+            }
+          },
+          {
+            "frame" : "{{346.5, 157}, {157.5, 32}}",
+            "class" : "Button",
+            "nodes" : [
+
+            ],
+            "attributes" : {
+              "flex" : "",
+              "action" : "exporti",
+              "enabled" : true,
+              "title" : "Render and export",
+              "uuid" : "4FAFFC56-1E76-455B-9F9D-61247A1AB383",
+              "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+              "font_bold" : false,
+              "font_size" : 15,
+              "name" : "button1"
+            }
+          }
+        ],
+        "attributes" : {
+          "uuid" : "2E29B9D2-8CA2-4A63-8BAD-56519BFB604C",
+          "enabled" : true,
+          "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "name" : "ShareImage",
+          "flex" : ""
+        }
+      },
+      {
+        "frame" : "{{0, 85}, {510, 195}}",
+        "class" : "View",
+        "nodes" : [
+          {
+            "frame" : "{{0, 0}, {510, 32}}",
+            "class" : "Label",
+            "nodes" : [
+
+            ],
+            "attributes" : {
+              "flex" : "",
+              "font_size" : 17,
+              "enabled" : true,
+              "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+              "text" : "Export the raw text of your ASCII art",
+              "alignment" : "left",
+              "uuid" : "B2521D7E-872E-4545-BA20-BD5E0A007EDA",
+              "name" : "label1",
+              "text_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)"
+            }
+          },
+          {
+            "frame" : "{{424, 157}, {80, 32}}",
+            "class" : "Button",
+            "nodes" : [
+
+            ],
+            "attributes" : {
+              "flex" : "",
+              "action" : "exportt",
+              "enabled" : true,
+              "title" : "Export",
+              "uuid" : "5F60DC47-5461-46F3-8902-E758CB07F837",
+              "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+              "font_bold" : false,
+              "font_size" : 15,
+              "name" : "button1"
+            }
+          }
+        ],
+        "attributes" : {
+          "uuid" : "6BA0BA46-0D60-4874-9D50-FBC5E160A67B",
+          "enabled" : true,
+          "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "name" : "ShareText",
+          "flex" : ""
+        }
+      },
+      {
+        "frame" : "{{0, 5}, {510, 48}}",
+        "class" : "Label",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "",
+          "font_size" : 24,
+          "enabled" : true,
+          "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "text" : "Export Your ASCII Art",
+          "alignment" : "center",
+          "uuid" : "8294C3DB-D305-43E4-98C8-C53B07BD0A35",
+          "name" : "label1",
+          "text_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)"
+        }
+      },
+      {
+        "frame" : "{{0, 55}, {510, 29}}",
+        "class" : "SegmentedControl",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "LR",
+          "border_width" : 0,
+          "enabled" : true,
+          "segments" : "Text|Image",
+          "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "corner_radius" : 0,
+          "uuid" : "BD10FDC3-E7BF-4C60-ABA5-2AF17DEA4164",
+          "name" : "segcon"
+        }
+      }
+    ],
+    "attributes" : {
+      "name" : "",
+      "enabled" : true,
+      "tint_color" : "RGBA(0.000000,0.478000,1.000000,1.000000)",
+      "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+      "custom_class" : "ShadowView",
+      "flex" : ""
+    }
+  }
+]
