@@ -1,0 +1,10 @@
+[webdav]
+
+epoch_delta = 3600
+
+[repository]
+
+name = Pythonista Markdown View
+local_path = ../pythonista-markdownview
+remote_path = /pythonista-markdownview
+
