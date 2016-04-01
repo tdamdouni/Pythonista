@@ -1,0 +1,8 @@
+
+body {margin: 4em; }
+p {line-height: 1.2em; text-align: justify;}
+h1, h2, h3, h4 {font-weight: normal;}
+sup {line-height: 0;}
+hr {border: 1px #eee solid; margin-top: 2em; margin-botom: 2em; width: 70%;}
+pre {white-space: pre-wrap; word-wrap: break-word;}
+@page {margin: 1in; @bottom-center{content: counter(page)}}
