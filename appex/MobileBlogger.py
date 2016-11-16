@@ -134,7 +134,7 @@ def main():
 
         github_repo     = 'tdamdouni.github.io'
         github_user     = 'tdamdouni'
-        github_password = keychain.get_password('github', github_user) or 'nis%Tuni22'
+        github_password = keychain.get_password('github', github_user) or ''
 
         (title, text)   = extract_title(text)
         filename        = '%s-%s.md' % (date.today(), slug(title))
