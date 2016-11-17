@@ -1,0 +1,54 @@
+[
+  {
+    "class" : "View",
+    "attributes" : {
+      "name" : "Reminders",
+      "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+      "tint_color" : "RGBA(0.000000,0.478000,1.000000,1.000000)",
+      "enabled" : true,
+      "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+      "flex" : ""
+    },
+    "frame" : "{{0, 0}, {540, 540}}",
+    "selected" : false,
+    "nodes" : [
+      {
+        "class" : "SegmentedControl",
+        "attributes" : {
+          "class" : "SegmentedControl",
+          "name" : "segmentedcontrol1",
+          "frame" : "{{210, 256}, {120, 29}}",
+          "uuid" : "56411903-71C1-4CA1-B06C-0BDD8CB2F12B",
+          "segments" : "To Do|Completed",
+          "flex" : "LR"
+        },
+        "frame" : "{{191, 6}, {158, 29}}",
+        "selected" : false,
+        "nodes" : [
+
+        ]
+      },
+      {
+        "class" : "TableView",
+        "attributes" : {
+          "data_source_font_size" : 18,
+          "data_source_number_of_lines" : 1,
+          "flex" : "WH",
+          "name" : "reminders",
+          "row_height" : 44,
+          "data_source_delete_enabled" : false,
+          "class" : "TableView",
+          "data_source_items" : "",
+          "frame" : "{{170, 170}, {200, 200}}",
+          "background_color" : "RGBA(1.0, 1.0, 1.0, 1.0)",
+          "uuid" : "DE498FF6-637F-4EFF-8E76-17894B3D11AC"
+        },
+        "frame" : "{{0, 43}, {539, 497}}",
+        "selected" : false,
+        "nodes" : [
+
+        ]
+      }
+    ]
+  }
+]

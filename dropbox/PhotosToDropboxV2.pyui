@@ -1,0 +1,242 @@
+[
+  {
+    "selected" : false,
+    "frame" : "{{0, 0}, {411, 640}}",
+    "class" : "View",
+    "nodes" : [
+      {
+        "selected" : false,
+        "frame" : "{{63, 362}, {292, 59}}",
+        "class" : "Button",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "uuid" : "73A83603-5B52-439E-9FC9-12A6C0B9D4C5",
+          "flex" : "HLRTB",
+          "corner_radius" : 0,
+          "background_color" : "RGBA(0.444444,0.927536,1.000000,1.000000)",
+          "frame" : "{{80, 104}, {80, 32}}",
+          "tint_color" : "RGBA(0.007625,0.007625,0.007625,1.000000)",
+          "border_width" : 2,
+          "title" : "50% with a 1600x1200 minumum",
+          "action" : "button_tapped",
+          "font_bold" : true,
+          "class" : "Button",
+          "name" : "fifty",
+          "font_size" : 15
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{269, 172}, {51, 31}}",
+        "class" : "Switch",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "action" : "button_tapped",
+          "flex" : "HLRTB",
+          "frame" : "{{95, 105}, {51, 31}}",
+          "class" : "Switch",
+          "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+          "value" : true,
+          "uuid" : "EC89E1C2-C1A5-4861-A85C-0658ACF7DDDB",
+          "name" : "toggle_meta"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{63, 285}, {292, 69}}",
+        "class" : "Label",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "LRTB",
+          "font_name" : "<System-Bold>",
+          "frame" : "{{45, 104}, {150, 32}}",
+          "uuid" : "B5A8A15E-31E7-42A8-BFF8-D52000A6D559",
+          "text" : "Scale the selected photo(s) by what percent of their original size?",
+          "alignment" : "center",
+          "class" : "Label",
+          "font_size" : 18,
+          "name" : "label1"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{99, 166}, {150, 37}}",
+        "class" : "Label",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "HLRTB",
+          "name" : "label2",
+          "frame" : "{{45, 104}, {150, 32}}",
+          "uuid" : "35057A74-EF43-4D3B-AB85-2D1ECC4F256B",
+          "text" : "Keep Metadata:",
+          "alignment" : "left",
+          "class" : "Label",
+          "font_size" : 18,
+          "font_name" : "<System>"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{269, 224}, {51, 31}}",
+        "class" : "Switch",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "action" : "button_tapped",
+          "flex" : "HLRTB",
+          "frame" : "{{95, 105}, {51, 31}}",
+          "class" : "Switch",
+          "uuid" : "0D60BEF0-1A63-4F32-810A-AB23E1CF2D48",
+          "value" : true,
+          "name" : "toggle_geotag"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{99, 224}, {150, 37}}",
+        "class" : "Label",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "HLRTB",
+          "name" : "label3",
+          "frame" : "{{45, 104}, {150, 32}}",
+          "uuid" : "DF8A7BD2-1CEE-4F22-9521-D16F9E325807",
+          "text" : "Geotag Photos:",
+          "alignment" : "left",
+          "class" : "Label",
+          "font_size" : 18,
+          "font_name" : "<System>"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{99, 36}, {150, 37}}",
+        "class" : "Label",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "HLRTB",
+          "font_name" : "<System-Bold>",
+          "frame" : "{{45, 104}, {150, 32}}",
+          "uuid" : "5F86AF82-D8C3-4F52-A6C0-05AD095ACC70",
+          "text" : "Options:",
+          "alignment" : "left",
+          "class" : "Label",
+          "name" : "label4",
+          "font_size" : 18
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{63, 429}, {292, 59}}",
+        "class" : "Button",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "uuid" : "6CB2C49F-7F18-4B38-A18E-4C1E8E8452CA",
+          "flex" : "HLRTB",
+          "corner_radius" : 0,
+          "background_color" : "RGBA(0.444444,0.927536,1.000000,1.000000)",
+          "frame" : "{{120, 224}, {80, 32}}",
+          "tint_color" : "RGBA(0.040305,0.040305,0.040305,1.000000)",
+          "border_width" : 2,
+          "title" : "Custom % without a minumum",
+          "action" : "button_tapped",
+          "font_bold" : true,
+          "class" : "Button",
+          "name" : "custom",
+          "font_size" : 15
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{63, 496}, {292, 59}}",
+        "class" : "Button",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "uuid" : "AB07027A-7CEA-44B5-962B-FDF942244C9A",
+          "flex" : "HLRTB",
+          "corner_radius" : 0,
+          "background_color" : "RGBA(0.444444,0.927536,1.000000,1.000000)",
+          "frame" : "{{149, 262}, {80, 32}}",
+          "tint_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "border_width" : 2,
+          "title" : "Keep Original Size",
+          "action" : "button_tapped",
+          "font_bold" : true,
+          "class" : "Button",
+          "name" : "none",
+          "font_size" : 15
+        }
+      },
+      {
+        "selected" : true,
+        "frame" : "{{251, 107}, {104, 37}}",
+        "class" : "TextField",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "uuid" : "48D0AFDF-338E-4B93-AB74-695EE83D5630",
+          "font_size" : 17,
+          "corner_radius" : 0,
+          "background_color" : "RGBA(0.333333,1.000000,0.913043,1.000000)",
+          "frame" : "{{106, 304}, {200, 32}}",
+          "tint_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "border_width" : 2,
+          "alignment" : "left",
+          "autocorrection_type" : "default",
+          "text" : "\/Photos",
+          "font_name" : "<System>",
+          "spellchecking_type" : "default",
+          "class" : "TextField",
+          "name" : "photo_dir",
+          "flex" : "HLRTB"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{99, 107}, {150, 37}}",
+        "class" : "Label",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "HLRTB",
+          "name" : "label5",
+          "frame" : "{{131, 304}, {150, 32}}",
+          "uuid" : "3F2BB4B5-C85D-465B-A020-A59CFDBE0A5D",
+          "text" : "Photo Dir:",
+          "alignment" : "left",
+          "class" : "Label",
+          "font_size" : 18,
+          "font_name" : "<System>"
+        }
+      }
+    ],
+    "attributes" : {
+      "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+      "enabled" : true,
+      "tint_color" : "RGBA(0.000000,0.478000,1.000000,1.000000)",
+      "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+      "name" : "PhotosToDropbox",
+      "flex" : ""
+    }
+  }
+]
