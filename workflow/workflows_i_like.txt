@@ -1,0 +1,27 @@
+I haven't tried them all, so take care...
+
+2pdf
+rich text, text, url to pdf / filename suggested, but editable
+https://workflow.is/workflows/e719fb68533b4e828323d7fbac7c181a
+
+CountImages
+https://workflow.is/workflows/7328156d42694c98949bac069ba5a974
+
+GetImages
+https://workflow.is/workflows/8f5ec08868d2411aabf523d2bcaf41d2
+
+Download Youtube
+https://workflow.is/workflows/5ea8a71931f8439b8c99d813263d9eb1
+
+Workflow Search (change google.ie to your region)
+https://workflow.is/workflows/01b92a4f7fea45518fdf710462661a1b
+
+Reboot Pi
+https://workflow.is/workflows/a3c014d3071e4396ba53d63bd029be54
+
+GSM Power Socket
+https://workflow.is/workflows/07d3dfc7b78443978fc8cb2e7d1a2092
+
+Duplicate workflow
+https://workflow.is/workflows/0be2906d284c446ab27dca950f63a036
+http://www.thoughtasylum.com/blog/2015/1/11/workflow-ios-a-workflow-to-duplicate-workflows.html
