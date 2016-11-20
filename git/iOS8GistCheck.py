@@ -75,7 +75,7 @@ def auth(username, password):
 	result.close()
 	print rdata
 	return json.loads(rdata)
-
+	
 #get auth data
 def get_token():
 	token = keychain.get_password('gistcheck','gistcheck')
@@ -84,7 +84,7 @@ def get_token():
 		token = auth(u, p)['token']
 		keychain.set_password('gistcheck','gistcheck',token)
 	return token
-
+	
 def commit_or_create(gist, files, token, message=None):
 	payload = {"files":{}}
 	if message is not None: payload['description'] = message
@@ -104,7 +104,7 @@ def commit_or_create(gist, files, token, message=None):
 		r = requests.post(api_url + gist,
 		data=json.dumps(payload),headers=headers).json()
 	return r
-
+	
 def fork(gist,token):
 	headers = {
 	'Content-Type':'application/json',
@@ -112,26 +112,26 @@ def fork(gist,token):
 	}
 	return requests.post(api_url + gist + '/forks',
 	headers=headers).json()
-
+	
 def get_gist_id():
 	db = shelve.open('gistcheck.db')
 	gist_id = db.get(editor.get_path(),None)
 	db.close()
 	return gist_id
-
+	
 def set_gist_id(gist_id):
 	gist_id = extract_gist_id(gist_id)
 	db = shelve.open('gistcheck.db')
 	db[editor.get_path()] = gist_id
 	db.close()
-
+	
 def del_gist_id():
 	db = shelve.open('gistcheck.db')
 	fpath = editor.get_path()
 	if fpath in db:
 		del db[fpath]
 	db.close()
-
+	
 def extract_gist_id(gist):
 	if re.match(r'^([0-9a-f]+)$', gist):
 		return gist
@@ -142,7 +142,7 @@ def extract_gist_id(gist):
 	if m:
 		return m.group(2)
 	raise InvalidGistIDError()
-
+	
 #load a file from a gist
 def pull():
 	gist_id = get_gist_id()
@@ -157,7 +157,7 @@ def pull():
 			console.alert('Pull Error', 'There was a problem with the pull',gist_data)
 		if newtext is not None:
 			editor.replace_text(0,len(editor.get_text()),newtext)
-
+			
 def commit():
 	token = get_token()
 	fpath = editor.get_path()
@@ -202,7 +202,7 @@ def gist_set():
 			set_gist_id(gist)
 		except InvalidGistIDError:
 			console.alert('Invalid Gist ID', 'That does not appear to be a valid gist id')
-
+			
 def download_gist(gist_url):
 	# Returns a 2-tuple of filename and content
 	gist_id = extract_gist_id(gist_url)
@@ -218,7 +218,7 @@ def download_gist(gist_url):
 		if os.path.splitext(filename)[1] not in ['.py', '.pyui','.txt']:
 			continue
 		yield file_info['filename'],gist_id,file_info['content']
-
+		
 def makefile(filename,content):
 	#replacing with direct file write.
 	#editor.make_new_file(filename, content)
@@ -226,7 +226,7 @@ def makefile(filename,content):
 	f.write(content)
 	f.close()
 	editor.open_file(filename)
-
+	
 def download(gist_url):
 	try:
 		for num, (filename, gist_id, content) in enumerate(download_gist(gist_url), start=1):
@@ -236,7 +236,7 @@ def download(gist_url):
 				'Auto Rename', 'Skip')
 				if i == 1:
 					makefile(filename, content)
-					set_gist_id(gist_id)				
+					set_gist_id(gist_id)
 			else:
 				makefile(filename, content)
 				set_gist_id(gist_id)
@@ -246,14 +246,14 @@ def download(gist_url):
 		console.alert('Error', 'The Gist could not be downloaded.')
 	if not num:
 		console.alert('No Python Files', 'This Gist contains no Python files.')
-
+		
 def download_from_args(args):
 	if len(args) == 2:
 		url = args[1]
 	else:
 		url = clipboard.get()
 	download(url)
-
+	
 def setup():
 	script_map={
 	'GistCommit'  :'gistcheck.commit()',
@@ -264,6 +264,7 @@ def setup():
 	for s,c in script_map.items():
 		with open(s+'.py','w') as f:
 			f.writelines(['import gistcheck\n','%s\n'%c])
-
+			
 if __name__ == '__main__':
 	setup()
+

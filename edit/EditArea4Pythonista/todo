@@ -1,6 +1,0 @@
-def helpme():
-    Todo... Python ui to determine orientation change, keyboard present, etc, and resize textarea
-    figure out why sometimes text doesn't select, can't edit until changing focus
-    Consider javascript file open/save, which call pythin callbacks through custom url. This would enable multiple file tabs.
-
-     

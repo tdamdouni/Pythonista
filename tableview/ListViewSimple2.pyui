@@ -1,0 +1,72 @@
+[
+  {
+    "selected" : false,
+    "frame" : "{{0, 0}, {240, 240}}",
+    "class" : "View",
+    "nodes" : [
+      {
+        "selected" : false,
+        "frame" : "{{19, 80}, {150, 154}}",
+        "class" : "TableView",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "WH",
+          "data_source_items" : "Row 1\nRow 2\nRow 3",
+          "uuid" : "244F224E-DD4C-4258-B94F-35F8E1CAEB03",
+          "frame" : "{{20, 20}, {200, 200}}",
+          "data_source_number_of_lines" : 1,
+          "class" : "TableView",
+          "background_color" : "RGBA(1.0, 1.0, 1.0, 1.0)",
+          "data_source_delete_enabled" : true,
+          "data_source_font_size" : 18,
+          "name" : "tableview1",
+          "row_height" : 44
+        }
+      },
+      {
+        "selected" : true,
+        "frame" : "{{19, 40}, {200, 32}}",
+        "class" : "TextField",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "font_name" : "<System>",
+          "frame" : "{{20, 104}, {200, 32}}",
+          "spellchecking_type" : "default",
+          "class" : "TextField",
+          "uuid" : "705CB1D5-2671-4FBD-A229-D9BC2C7B0EA8",
+          "alignment" : "left",
+          "autocorrection_type" : "default",
+          "name" : "textfield1",
+          "font_size" : 17
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{77, 6}, {80, 32}}",
+        "class" : "Button",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "font_size" : 15,
+          "frame" : "{{80, 104}, {80, 32}}",
+          "title" : "Button",
+          "class" : "Button",
+          "name" : "button1",
+          "uuid" : "D47FA349-C86F-4986-A8E8-67116AD92F85"
+        }
+      }
+    ],
+    "attributes" : {
+      "enabled" : true,
+      "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+      "tint_color" : "RGBA(0.000000,0.478000,1.000000,1.000000)",
+      "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+      "flex" : ""
+    }
+  }
+]

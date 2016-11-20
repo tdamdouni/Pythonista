@@ -1,0 +1,635 @@
+{
+    "pip-mini": {
+        "meta_version": "1.0",  
+        "name": "pip-mini", 
+        "author": "@pudquick",
+        "email": "",
+        "website": "https://gist.github.com/pudquick/cb7b6413a54162fd1c00",
+        "long_description": "Minimal version of pip in a standalone form for handling pure python situations (Pythonista, etc.)",
+        "releases": [ 
+            {
+                "url": "https://gist.github.com/pudquick/cb7b6413a54162fd1c00"
+            }
+        ]
+    }, 
+
+    "tinywebdav": {
+        "meta_version": "1.0",  
+        "name": "tinywebdav", 
+        "author": "@wolf71",
+        "email": "",
+        "website": "https://github.com/wolf71/TinyWebDav",
+        "long_description": "A Single File,Tiny, Python WebDav Server",
+        "releases": [ 
+            {
+                "url": "https://raw.githubusercontent.com/wolf71/TinyWebDav/gh-pages/webdav.py"
+            }
+        ]
+    }, 
+
+    "GitHubGet": {
+        "meta_version": "1.0",  
+        "name": "GitHubGet", 
+        "author": "@jsbain",
+        "email": "",
+        "website": "https://github.com/jsbain/GitHubGet",
+        "long_description": "Quick script to zip and download a repo from github",
+        "releases": [ 
+            {
+                "url": "https://raw.githubusercontent.com/jsbain/GitHubGet/master/GitHubGet.py"
+            }
+        ]
+    }, 
+
+    "gitview": {
+        "meta_version": "1.0",  
+        "name": "gitview", 
+        "author": "@jsbain",
+        "email": "",
+        "website": "https://github.com/jsbain/gitview",
+        "long_description": "Pythonista git wrapper",
+        "releases": [ 
+            {
+                "url": "https://github.com/jsbain/gitview/archive/master.zip"
+            }
+        ]
+    },
+ 
+    "StaSh": {
+        "meta_version": "1.0",  
+        "name": "stash", 
+        "author": "@ywangd",
+        "email": "",
+        "website": "https://github.com/ywangd/stash",
+        "long_description": "Pythonista Shell with UI, threading, command line auto-completion and history",
+        "releases": [ 
+            {
+                "version": "0.4.0",
+                "url": "https://github.com/ywangd/stash/archive/v0.4.0.zip"
+            }
+        ]
+    },
+
+    "shellista": {
+        "meta_version": "1.0",  
+        "name": "shellista", 
+        "author": "@pudquick, @transistor1",
+        "website": "https://github.com/transistor1/shellista",
+        "long_description": "iOS shell written for Pythonista",
+        "releases": [ 
+            {
+                "url": "https://github.com/transistor1/shellista/archive/master.zip"
+            }
+        ]
+    },
+
+
+    "editmenu": {
+        "meta_version": "1.0",  
+        "author": "@jsbain",
+        "website": "https://github.com/jsbain/editmenu",
+        "long_description": "Pythonista editor sidebar utilities",
+        "releases": [ 
+            {
+                "url": "https://github.com/jsbain/editmenu/archive/master.zip"
+            }
+        ]
+    },
+
+    "Snakeyes": {
+        "meta_version": "1.0",  
+        "author": "@Gerzer",
+        "website": "https://github.com/gerzer/snakeyes",
+        "long_description": "A simple code-completion system for Pythonista",
+        "releases": [ 
+            {
+                "url": "https://raw.githubusercontent.com/Gerzer/Snakeyes/master/Snakeyes.py"
+            }
+        ]
+    },
+
+    "filenav": {
+        "meta_version": "1.0",  
+        "author": "@dgelessus",
+        "website": "https://github.com/dgelessus/filenav",
+        "long_description": "A custom file system navigator for Pythonista",
+        "releases": [ 
+            {
+                "url": "https://github.com/dgelessus/filenav/archive/master.zip"
+            }
+        ]
+    },
+
+    "PythonistaRSSReader": {
+        "meta_version": "1.0",  
+        "author": "@dlo",
+        "website": "https://github.com/dlo/PythonistaRSSReader",
+        "long_description": "A simple RSS reader for Pythonista",
+        "releases": [ 
+            {
+                "url": "https://raw.githubusercontent.com/dlo/PythonistaRSSReader/master/RSS.py"
+            }
+        ]
+    },
+
+    "lastpass-pythonista": {
+        "meta_version": "1.0",  
+        "author": "@HyShai",
+        "website": "https://github.com/HyShai/lastpass-pythonista",
+        "long_description": "LastPass Python API, adapted for iOS - Pythonista",
+        "releases": [ 
+            {
+                "url": "https://github.com/HyShai/lastpass-pythonista/archive/master.zip"
+            }
+        ]
+    },
+
+    "gitrepo": {
+        "meta_version": "1.0",  
+        "author": "@Vik2015",
+        "website": "https://github.com/Vik2015/gitrepo",
+        "long_description": "Lightweight Pythonista utility to easily download repos, releases and gists from GitHub",
+        "releases": [ 
+            {
+                "url": "https://raw.githubusercontent.com/Vik2015/gitrepo/master/gitrepo.py"
+            }
+        ]
+    },
+
+    "FileManager": {
+        "meta_version": "1.0",  
+        "author": "@humberry",
+        "website": "https://github.com/humberry/FileManager",
+        "long_description": "UI file manager",
+        "releases": [ 
+            {
+                "url": "https://github.com/humberry/FileManager/archive/master.zip"
+            }
+        ]
+    },
+
+    "ed": {
+        "meta_version": "1.0",  
+        "author": "@jsbain",
+        "website": "https://github.com/jsbain/ed",
+        "long_description": "Editor in webview for pythonista",
+        "releases": [ 
+            {
+                "url": "https://github.com/jsbain/ed/archive/master.zip"
+            }
+        ]
+    },
+
+    "SMBclient": {
+        "meta_version": "1.0",  
+        "author": "@humberry",
+        "website": "https://github.com/humberry/SMBclient",
+        "long_description": "UI tool to access Samba/Windows-Shares",
+        "releases": [ 
+            {
+                "url": "https://github.com/humberry/SMBclient/archive/master.zip"
+            }
+        ]
+    },
+
+    "youtube-dl": {
+        "meta_version": "1.0",  
+        "author": "@HyShai",
+        "website": "https://github.com/HyShai/youtube-dl",
+        "long_description": "Small command-line program to download videos from YouTube.com and other video sites",
+        "releases": [ 
+            {
+                "url": "https://github.com/HyShai/youtube-dl/archive/ytdl-pythonista.zip"
+            }
+        ]
+    },
+
+    "sftp-client": {
+        "meta_version": "1.0",  
+        "author": "@humberry",
+        "website": "https://github.com/humberry/sftp-client",
+        "long_description": "Simple UI sftp client",
+        "releases": [ 
+            {
+                "url": "https://github.com/humberry/sftp-client/archive/master.zip"
+            }
+        ]
+    },
+
+    "DropboxFilePicker": {
+        "meta_version": "1.0",  
+        "name": "Dropbox File Picker",
+        "author": "@omz",
+        "website": "https://gist.github.com/omz/fb180c58c94526e2c40b",
+        "long_description": "Script to import a file from Dropbox into Pythonista",
+        "releases": [ 
+            {
+                "url": "https://gist.github.com/omz/fb180c58c94526e2c40b"
+            }
+        ]
+    },
+    
+    "DropboxSync": {
+        "meta_version": "1.0",  
+        "author": "@wrenoud, @sidewinder42",
+        "website": "https://gist.github.com/sidewinder42/8631794",
+        "long_description": "Dropbox File Synchronization",
+        "releases": [ 
+            {
+                "url": "https://gist.github.com/sidewinder42/8631794"
+            }
+        ]
+    },
+
+    "FontInstaller": {
+        "meta_version": "1.0",  
+        "author": "@omz",
+        "website": "https://gist.github.com/omz/9901460",
+        "long_description": "Script installs a custom TTF font on iOS (system-wide)",
+        "releases": [ 
+            {
+                "url": "https://gist.github.com/omz/9901460"
+            }
+        ]
+    },
+
+    "ShortcutGenerator": {
+        "meta_version": "1.0",  
+        "author": "@omz",
+        "website": "https://gist.github.com/omz/7870550",
+        "long_description": "Script adds a Webclip shortcut to your homescreen for another script",
+        "releases": [ 
+            {
+                "url": "https://gist.github.com/omz/7870550"
+            }
+        ]
+    },
+
+    "GoogleSearch": {
+        "meta_version": "1.0",  
+        "author": "@omz",
+        "website": "https://gist.github.com/omz/3908817",
+        "long_description": "Google Search for Pythonista (iOS). Searches Google and copies the first result to the clipboard as a Markdown link in the form [title](url).",
+        "releases": [ 
+            {
+                "url": "https://gist.github.com/omz/3908817"
+            }
+        ]
+    },
+
+    "watch_pythonista_forum": {
+        "meta_version": "1.0",  
+        "author": "@cclauss",
+        "website": "https://gist.github.com/cclauss/8794104",
+        "long_description": "Script prints out info on all posts to the Pythonista forum in the past 24 hours",
+        "releases": [ 
+            {
+                "url": "https://gist.github.com/cclauss/8794104"
+            }
+        ]
+    },
+
+    "github_download": {
+        "meta_version": "1.0",  
+        "author": "@SpotlightKid",
+        "website": "https://gist.github.com/SpotlightKid/04c2b5ce5978c0d66e6e",
+        "long_description": "Github file viewer / general URL download script for Pythonista",
+        "releases": [ 
+            {
+                "url": "https://gist.github.com/SpotlightKid/04c2b5ce5978c0d66e6e"
+            }
+        ]
+    },
+
+    "MarkdownPDF": {
+        "meta_version": "1.0",  
+        "author": "@SpotlightKid",
+        "website": "https://gist.github.com/SpotlightKid/0efb4d07f28af1c8fc1b",
+        "long_description": "Markdown to PDF Conversion for Pythonista",
+        "releases": [ 
+            {
+                "url": "https://gist.github.com/SpotlightKid/0efb4d07f28af1c8fc1b"
+            }
+        ]
+    },
+
+    "filedownloader": {
+        "meta_version": "1.0",  
+        "author": "@elliospizzaman",
+        "website": "https://gist.github.com/elliospizzaman/89edf288a15fde45682a",
+        "long_description": "Provide a URL to a file and this script will download it with a progress bar",
+        "releases": [ 
+            {
+                "url": "https://gist.github.com/elliospizzaman/89edf288a15fde45682a"
+            }
+        ]
+    },
+
+    "gistcheck": {
+        "meta_version": "1.0",  
+        "author": "@jsbain",
+        "website": "https://gist.github.com/jsbain/1c95b3491d65d9e24456",
+        "long_description": "Download or upload gists via bookmarklet and action menu",
+        "releases": [ 
+            {
+                "url": "https://gist.github.com/jsbain/1c95b3491d65d9e24456"
+            }
+        ]
+    },
+
+    "PackUI": {
+        "meta_version": "1.0",  
+        "author": "@dgelessus",
+        "website": "https://github.com/dgelessus/pythonista-scripts/blob/master/PackUI.py",
+        "long_description": "Package a .py script and its .pyui file into a self-extracting bundle",
+        "releases": [ 
+            {
+                "url": "https://raw.githubusercontent.com/dgelessus/pythonista-scripts/master/PackUI.py"
+            }
+        ]
+    },
+
+    "Task-List": {
+        "meta_version": "1.0",  
+        "author": "@robinsiebler",
+        "website": "https://github.com/robinsiebler/Task-List",
+        "long_description": "Create, read, update, and delete task lists",
+        "releases": [ 
+            {
+                "url": "https://github.com/robinsiebler/Task-List/archive/master.zip"
+            }
+        ]
+    },
+
+    "ui-tutorial": {
+        "meta_version": "1.0",  
+        "author": "@humberry",
+        "website": "https://github.com/humberry/ui-tutorial",
+        "long_description": "UI Tutorial gives you a running start in using the ui module",
+        "releases": [ 
+            {
+                "url": "https://github.com/humberry/ui-tutorial/archive/master.zip"
+            }
+        ]
+    },
+
+    "uicomponents": {
+        "meta_version": "1.0",  
+        "author": "@jsbain",
+        "website": "https://github.com/jsbain/uicomponents",
+        "long_description": "Various advanced UI components for pythonista",
+        "releases": [ 
+            {
+                "url": "https://github.com/jsbain/uicomponents/archive/master.zip"
+            }
+        ]
+    },
+
+    "propertyListener": {
+        "meta_version": "1.0",  
+        "author": "@jsbain",
+        "website": "https://gist.github.com/jsbain/87cf25db0d3f1b16c512",
+        "long_description": "Create a listener on one or more of a view's properties, and dispatches a callback whenever those properties change",
+        "releases": [ 
+            {
+                "url": "https://gist.github.com/jsbain/87cf25db0d3f1b16c512"
+            }
+        ]
+    },
+
+    "nav-view-example": {
+        "meta_version": "1.0",  
+        "author": "@tjferry14",
+        "website": "https://gist.github.com/tjferry14/9ea8bfc0c8d089cdb530",
+        "long_description": "An example on how to use the NavigationView",
+        "releases": [ 
+            {
+                "url": "https://gist.github.com/tjferry14/9ea8bfc0c8d089cdb530"
+            }
+        ]
+    },
+
+    "photo_ext": {
+        "meta_version": "1.0",  
+        "author": "@humberry",
+        "website": "https://github.com/humberry/photo_text",
+        "long_description": "Script to add one line of text to a photo",
+        "releases": [ 
+            {
+                "url": "https://raw.githubusercontent.com/humberry/photo_text/master/photo_text.py"
+            }
+        ]
+    },
+
+    "ShowLastPhotoMap": {
+        "meta_version": "1.0",  
+        "author": "@omz",
+        "website": "https://gist.github.com/omz/8838751",
+        "long_description": "Shows the location of the last photo in the canera roll in the Maps app",
+        "releases": [ 
+            {
+                "url": "https://gist.github.com/omz/8838751"
+            }
+        ]
+    },
+
+    "easy_paint": {
+        "meta_version": "1.0",  
+        "author": "@SebastianJarsve",
+        "website": "https://gist.github.com/SebastianJarsve/5297697",
+        "long_description": "Simple canvas/sketchpad script",
+        "releases": [ 
+            {
+                "url": "https://gist.github.com/SebastianJarsve/5297697"
+            }
+        ]
+    },
+
+    "minesweeper": {
+        "meta_version": "1.0",  
+        "author": "@mevdschee",
+        "website": "https://github.com/mevdschee/pythonista-minesweeper",
+        "long_description": "Minesweeper game for iOS in Python (requires Pythonista)",
+        "releases": [ 
+            {
+                "url": "https://raw.githubusercontent.com/mevdschee/pythonista-minesweeper/master/Mines.py"
+            }
+        ]
+    },
+
+    "CloudJump": {
+        "meta_version": "1.0",  
+        "author": "@BashedCrab",
+        "website": "https://gist.github.com/BashedCrab/9098744",
+        "long_description": "Doodle Jump style game",
+        "releases": [ 
+            {
+                "url": "https://gist.github.com/BashedCrab/9098744"
+            }
+        ]
+    },
+
+    "CloudJump2": {
+        "meta_version": "1.0",  
+        "author": "@tjferry14",
+        "website": "https://github.com/tjferry14/Cloud-Jump-2",
+        "long_description": "Expanding on the original Cloud Jump",
+        "releases": [ 
+            {
+                "url": "https://github.com/tjferry14/Cloud-Jump-2/archive/master.zip"
+            }
+        ]
+    },
+
+    "TimesTablesTorture": {
+        "meta_version": "1.0",  
+        "author": "@BashedCrab",
+        "website": "https://gist.github.com/BashedCrab/9062268",
+        "long_description": "Math Challenge game",
+        "releases": [ 
+            {
+                "url": "https://gist.github.com/BashedCrab/9062268"
+            }
+        ]
+    },
+
+    "JumpyOctopus": {
+        "meta_version": "1.0",  
+        "author": "@BashedCrab",
+        "website": "https://gist.github.com/BashedCrab/8949577",
+        "long_description": "Flappy Bird style game",
+        "releases": [ 
+            {
+                "url": "https://gist.github.com/BashedCrab/8949577"
+            }
+        ]
+    },
+
+    "SpaceShooter": {
+        "meta_version": "1.0",  
+        "author": "@omz",
+        "website": "https://gist.github.com/omz/4050951",
+        "long_description": "Space Shooter style game",
+        "releases": [ 
+            {
+                "url": "https://gist.github.com/omz/4050951"
+            }
+        ]
+    },
+
+    "monkey": {
+        "meta_version": "1.0",  
+        "author": "@GuyCarver",
+        "website": "https://gist.github.com/GuyCarver/4116156",
+        "long_description": "Frogger style game",
+        "releases": [ 
+            {
+                "url": "https://gist.github.com/GuyCarver/4116156"
+            }
+        ]
+    },
+
+    "DiceRoller": {
+        "meta_version": "1.0",  
+        "name": "Dice Roller",
+        "author": "@mmurdoch",
+        "website": "https://gist.github.com/mmurdoch/6263978",
+        "long_description": "Simple dice roller program",
+        "releases": [ 
+            {
+                "url": "https://gist.github.com/mmurdoch/6263978"
+            }
+        ]
+    },
+
+    "SpaceInvaders": {
+        "meta_version": "1.0",  
+        "name": "Space Invaders",
+        "author": "@davebang",
+        "website": "https://gist.github.com/davebang/6113246",
+        "long_description": "Space Invaders style game",
+        "releases": [ 
+            {
+                "url": "https://gist.github.com/davebang/6113246"
+            }
+        ]
+    },
+
+    "MazeCraze": {
+        "meta_version": "1.0",  
+        "name": "mazecraze",
+        "author": "@GuyCarver",
+        "website": "https://gist.github.com/GuyCarver/4000630",
+        "long_description": "A Maze Generator/Pacman style game",
+        "releases": [ 
+            {
+                "url": "https://gist.github.com/GuyCarver/4000630"
+            }
+        ]
+    },
+
+    "2048_Clone": {
+        "meta_version": "1.0",  
+        "name": "h2048",
+        "author": "@henryiii",
+        "website": "https://gist.github.com/henryiii/0a58c7e958c1b317f64a",
+        "long_description": "A Pythonista 2048 clone, using ui module. Also should work in console in any python.",
+        "releases": [ 
+            {
+                "url": "https://gist.github.com/henryiii/0a58c7e958c1b317f64a"
+            }
+        ]
+    },
+
+    "ripoff": {
+        "meta_version": "1.0",  
+        "author": "@GuyCarver",
+        "website": "https://gist.github.com/GuyCarver/4115763",
+        "long_description": "A Pythonista version of the vector graphics arcade game",
+        "releases": [ 
+            {
+                "url": "https://gist.github.com/GuyCarver/4115763"
+            }
+        ]
+    },
+
+    "Breakout_Clone": {
+        "meta_version": "1.0",  
+        "author": "@SebastianJarsve",
+        "website": "https://gist.github.com/SebastianJarsve/5305895",
+        "long_description": "A clone of the popular game Breakout",
+        "releases": [ 
+            {
+                "url": "https://gist.github.com/SebastianJarsve/5305895"
+            }
+        ]
+    },
+
+    "chordcalc": {
+        "meta_version": "1.0",  
+        "author": "@polymerchm",
+        "website": "https://github.com/polymerchm/chordcalc",
+        "long_description": "Turning Gek S. Low's chordcalc python script into a full-featured chord calculator/player",
+        "releases": [ 
+            {
+                "url": "https://github.com/polymerchm/chordcalc/archive/master.zip"
+            }
+        ]
+    },
+
+    "ped": {
+        "meta_version": "1.0",  
+        "name": "ped", 
+        "author": "@ywangd",
+        "email": "",
+        "website": "https://github.com/ywangd/ed-pythonista",
+        "long_description": "Poor man's text editor",
+        "releases": [ 
+            {
+                "url": "https://raw.githubusercontent.com/ywangd/ed-pythonista/master/ed.py"
+            }
+        ]
+    }
+
+}
+

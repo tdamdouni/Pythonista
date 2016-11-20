@@ -1,0 +1,84 @@
+[
+  {
+    "selected" : false,
+    "frame" : "{{0, 0}, {414, 736}}",
+    "class" : "View",
+    "nodes" : [
+      {
+        "selected" : true,
+        "frame" : "{{164, 208}, {77, 48}}",
+        "class" : "TextField",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "uuid" : "21579208-0E45-4D3F-A3EF-0F9C8608A031",
+          "font_size" : 17,
+          "corner_radius" : 0,
+          "frame" : "{{107, 352}, {200, 32}}",
+          "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "border_width" : 2,
+          "alignment" : "center",
+          "autocorrection_type" : "default",
+          "text" : "35",
+          "font_name" : "<System>",
+          "spellchecking_type" : "default",
+          "class" : "TextField",
+          "name" : "scale_text",
+          "flex" : "HLRTB"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{82, 57}, {264, 89}}",
+        "class" : "Label",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "HLRTB",
+          "font_name" : "<System-Bold>",
+          "frame" : "{{132, 352}, {150, 32}}",
+          "uuid" : "533EF32C-76CE-4C6E-B96A-8FEBA7CAA1BC",
+          "text" : "Enter desired percent of selected photo(s) original size to scale for a Dropbox copy.",
+          "alignment" : "center",
+          "class" : "Label",
+          "font_size" : 18,
+          "name" : "label1"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{63, 317}, {292, 59}}",
+        "class" : "Button",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "uuid" : "BF384FC4-6E3D-40BB-85C1-C02E85A479BD",
+          "font_size" : 15,
+          "corner_radius" : 0,
+          "background_color" : "RGBA(0.444444,1.000000,0.927536,1.000000)",
+          "frame" : "{{167, 352}, {80, 32}}",
+          "tint_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "border_width" : 2,
+          "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "title" : "Ok",
+          "action" : "button_tapped",
+          "font_bold" : true,
+          "class" : "Button",
+          "name" : "ok_button",
+          "flex" : "HLRTB"
+        }
+      }
+    ],
+    "attributes" : {
+      "name" : "PhotosToScale",
+      "enabled" : true,
+      "tint_color" : "RGBA(0.000000,0.478000,1.000000,1.000000)",
+      "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+      "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+      "flex" : ""
+    }
+  }
+]

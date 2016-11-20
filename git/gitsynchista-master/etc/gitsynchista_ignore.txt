@@ -1,3 +1,0 @@
-log_config.json
-gitsynchista_config
-gitsynchista_config.txt

@@ -1,0 +1,100 @@
+[
+  {
+    "selected" : false,
+    "frame" : "{{0, 0}, {402, 412}}",
+    "class" : "View",
+    "nodes" : [
+      {
+        "selected" : false,
+        "frame" : "{{85, 253}, {247, 137}}",
+        "class" : "DatePicker",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "uuid" : "E8D26151-1E91-4118-A895-83F774786CCC",
+          "frame" : "{{41, 98}, {320, 216}}",
+          "class" : "DatePicker",
+          "name" : "datepicker1",
+          "mode" : 1
+        }
+      },
+      {
+        "selected" : true,
+        "frame" : "{{26, 58}, {200, 34}}",
+        "class" : "Slider",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "W",
+          "frame" : "{{101, 189}, {200, 34}}",
+          "value" : 0.5,
+          "class" : "Slider",
+          "name" : "slider1",
+          "uuid" : "430E582F-BAC7-4B74-B8CD-403C15159DF0"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{132, 189}, {200, 32}}",
+        "class" : "TextField",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "font_name" : "<System>",
+          "frame" : "{{101, 190}, {200, 32}}",
+          "spellchecking_type" : "default",
+          "class" : "TextField",
+          "uuid" : "219BB20E-D632-450A-A3DE-E087DC8DC4E4",
+          "alignment" : "left",
+          "autocorrection_type" : "default",
+          "name" : "textfield1",
+          "font_size" : 17
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{209, 123}, {150, 32}}",
+        "class" : "Label",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "font_name" : "<System>",
+          "frame" : "{{126, 190}, {150, 32}}",
+          "uuid" : "70D8A461-F778-4630-A34D-EF8951C9EB2B",
+          "text" : "Woah it's a thing",
+          "alignment" : "left",
+          "class" : "Label",
+          "name" : "label1",
+          "font_size" : 18
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{15, 131}, {80, 102}}",
+        "class" : "Button",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "font_size" : 15,
+          "frame" : "{{161, 190}, {80, 32}}",
+          "title" : "ok",
+          "class" : "Button",
+          "name" : "button1",
+          "uuid" : "D8B432C1-7B3C-4871-A7DE-B462F108170C"
+        }
+      }
+    ],
+    "attributes" : {
+      "enabled" : true,
+      "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+      "tint_color" : "RGBA(0.000000,0.478000,1.000000,1.000000)",
+      "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+      "flex" : ""
+    }
+  }
+]
