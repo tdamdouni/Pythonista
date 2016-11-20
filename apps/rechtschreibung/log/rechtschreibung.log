@@ -1,7 +1,0 @@
-2016-02-11 20:37:49,225 - log - INFO - Loaded logging configuration from etc/log_config.json
-2016-02-11 20:37:49,232 - log - INFO - Starting logging
-2016-02-11 20:37:49,238 - rechtschreibung - INFO - Start application
-2016-02-11 20:37:49,887 - rechtschreibung - INFO - Loading HTML page at file:/private/var/mobile/Containers/Shared/AppGroup/6FFE2397-8613-46A4-8F57-569169AA8746/Documents/rechtschreibung/etc/text_page.html
-2016-02-11 20:37:57,330 - rechtschreibung - INFO - Terminate application
-2016-02-11 20:38:09,616 - rechtschreibung - INFO - Opening URL https://github.com/marcus67/rechtschreibung
-2016-02-11 20:38:10,900 - rechtschreibung - INFO - Opening URL https://github.com/marcus67/rechtschreibung

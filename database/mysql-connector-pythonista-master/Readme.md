@@ -1,1 +1,0 @@
-https://github.com/tommasoturchi/mysql-connector-pythonista

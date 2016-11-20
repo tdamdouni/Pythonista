@@ -1,0 +1,77 @@
+[
+  {
+    "selected" : false,
+    "frame" : "{{0, 0}, {566, 371}}",
+    "class" : "View",
+    "nodes" : [
+      {
+        "selected" : false,
+        "frame" : "{{0, 110}, {566, 41}}",
+        "class" : "TextField",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "uuid" : "1826D2C9-EFF1-4120-B618-ADFD2138A3B9",
+          "spellchecking_type" : "yes",
+          "flex" : "",
+          "frame" : "{{182, 301}, {200, 32}}",
+          "secure" : false,
+          "alignment" : "left",
+          "autocorrection_type" : "yes",
+          "text" : "",
+          "placeholder" : "Type something here.",
+          "text_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "font_name" : "<System>",
+          "alpha" : 1,
+          "class" : "TextField",
+          "name" : "textfield1",
+          "font_size" : 17
+        }
+      },
+      {
+        "selected" : true,
+        "frame" : "{{6, 13}, {150, 32}}",
+        "class" : "Label",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "font_size" : 18,
+          "frame" : "{{207, 301}, {150, 32}}",
+          "class" : "Label",
+          "text" : "Text editor below",
+          "alignment" : "left",
+          "uuid" : "FA3384D2-A283-40B7-B0F2-F234E8698A1C",
+          "name" : "label1",
+          "font_name" : "<System>"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{6, 53}, {435, 40}}",
+        "class" : "Label",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "font_size" : 18,
+          "frame" : "{{207, 301}, {150, 32}}",
+          "class" : "Label",
+          "text" : "editor includes a spell check and auto correction.",
+          "alignment" : "left",
+          "uuid" : "141F9A5C-BF2A-481B-B4D3-5362F7A9D98B",
+          "name" : "label2",
+          "font_name" : "<System>"
+        }
+      }
+    ],
+    "attributes" : {
+      "enabled" : true,
+      "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+      "tint_color" : "RGBA(0.000000,0.478000,1.000000,1.000000)",
+      "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+      "flex" : ""
+    }
+  }
+]

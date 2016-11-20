@@ -1,3 +1,0 @@
-import githubista
-	
-githubista.commit()

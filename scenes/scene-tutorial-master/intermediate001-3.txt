@@ -1,8 +1,0 @@
-Exercise:
-Please combine the techniques you learned in beginner007.py, intermediate001-1.py and intermediate001-2.py.
-
-- open a picture from the camera roll (self.layer)
-- use a two finger zoom in/out gesture to change the scale_x and scale_y variables (Layer.animate)
-
-Extra Credit:
-Preserve the image's original aspect ratio.

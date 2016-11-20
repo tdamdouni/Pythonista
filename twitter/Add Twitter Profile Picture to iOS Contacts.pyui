@@ -1,0 +1,165 @@
+[
+  {
+    "selected" : false,
+    "frame" : "{{0, 0}, {540, 540}}",
+    "class" : "View",
+    "nodes" : [
+      {
+        "selected" : false,
+        "frame" : "{{6, 98}, {200, 384}}",
+        "class" : "ImageView",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "frame" : "{{220, 220}, {100, 100}}",
+          "class" : "ImageView",
+          "name" : "left_image_view",
+          "uuid" : "86F8DA1C-749C-4B49-9220-9ABBF87EC096"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{334, 98}, {200, 384}}",
+        "class" : "ImageView",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "frame" : "{{220, 220}, {100, 100}}",
+          "class" : "ImageView",
+          "name" : "right_image_view",
+          "uuid" : "376D3E92-30F4-4775-BC07-7E3BC9DA7E28"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{6, 6}, {528, 32}}",
+        "class" : "Label",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "font_name" : "<System-Bold>",
+          "frame" : "{{195, 254}, {150, 32}}",
+          "uuid" : "1B46EC9C-4220-43C7-AC1D-BFD961A95DC4",
+          "text" : "First Last Name",
+          "alignment" : "center",
+          "class" : "Label",
+          "name" : "contact_name_label",
+          "font_size" : 20
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{6, 490}, {200, 32}}",
+        "class" : "Button",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "action" : "",
+          "frame" : "{{230, 254}, {80, 32}}",
+          "title" : "Keep this image",
+          "class" : "Button",
+          "uuid" : "64DC09A2-56F9-4DE9-8ADA-3B0FE7F765D0",
+          "font_size" : 15,
+          "name" : "keep_image_button"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{334, 490}, {200, 32}}",
+        "class" : "Button",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "action" : "",
+          "frame" : "{{230, 254}, {80, 32}}",
+          "title" : "Use this image",
+          "class" : "Button",
+          "uuid" : "72C2D520-78A0-4D13-9E6B-0C5392695AD7",
+          "font_size" : 15,
+          "name" : "use_new_image_button"
+        }
+      },
+      {
+        "selected" : true,
+        "frame" : "{{6, 98}, {200, 32}}",
+        "class" : "Label",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "name" : "old_image_title_label",
+          "frame" : "{{195, 254}, {150, 32}}",
+          "uuid" : "19F5E89D-4A0B-45D7-BE95-6B37F20B9CA3",
+          "text" : "Address Book image",
+          "alignment" : "center",
+          "class" : "Label",
+          "font_size" : 18,
+          "font_name" : "<System-Bold>"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{334, 58}, {200, 32}}",
+        "class" : "Label",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "font_name" : "<System-Bold>",
+          "frame" : "{{195, 254}, {150, 32}}",
+          "uuid" : "19F5E89D-4A0B-45D7-BE95-6B37F20B9CA3",
+          "text" : "Twitter Profile image",
+          "alignment" : "center",
+          "class" : "Label",
+          "font_size" : 18,
+          "name" : "new_image_title_label"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{226, 220}, {100, 100}}",
+        "class" : "View",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "frame" : "{{220, 220}, {100, 100}}",
+          "class" : "View",
+          "name" : "progress_view_container",
+          "uuid" : "E7992A6A-86F9-4DB8-8BE8-8A055D3BA441"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{6, 450}, {528, 32}}",
+        "class" : "Label",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "font_size" : 18,
+          "frame" : "{{195, 254}, {150, 32}}",
+          "uuid" : "B589C3B7-ECBC-4E73-A163-1FA7A874B638",
+          "text" : "Label",
+          "alignment" : "center",
+          "class" : "Label",
+          "name" : "currently_loading_info_label",
+          "font_name" : "<System>"
+        }
+      }
+    ],
+    "attributes" : {
+      "flex" : "",
+      "enabled" : true,
+      "tint_color" : "RGBA(0.000000,0.478000,1.000000,1.000000)",
+      "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+      "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+      "name" : "Update Contact Pictures"
+    }
+  }
+]

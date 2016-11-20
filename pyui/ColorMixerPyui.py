@@ -1,0 +1,28 @@
+# coding: utf-8
+
+# https://forum.omz-software.com/topic/2905/helper-script-for-embedding-pyui-files-in-single-file-scripts
+
+data = '''\
+QlpoOTFBWSZTWXGZJlkAA4FfgBAAWGd/8D/HGYq/79/6UAOe4DODcAKGkSeRpNPSNlHoTQ
+AMgAAADSBoaKnsEk0AABoAAABElCmxEyah6T9SGgNqeKGjTQGTR6hzAATAAEwAAAAACpJC
+NTAp6NNINqADQAaeo00zUeLNIRevYhXCrDnMydv5ddssuKvtW15+Xbtq5Jb7tdp+9zbxAt
+0YFOEK1PYeGP1TvLaJaWQwRKSmwu10yMYD+I3AZhIpeImxVjxApqNRWMEpqlaWFSEBpDL/
+aufdj7d+bciZInpuffUawrbLDoAvAbnRnsGwjlCwY3AQoiMikcVFxjaN+bHfmJbntv5eF2
++uFa81a57LMdue7TprLZNiPISIBIJIpCEjJJyQUTLnrPqyRNwBBIRSQ6G5UCEdREAQhnkc
+6VdTklBZifrGeSmnRkpxuY0EVsxA1pVB5Qsz4MiA4S8EXkSFKFsCzBrVMbE5AonjPMqxNC
+wkHGbGhkyVvKNgvhUrMzbhyRIMUtxbanSoYg+DVEpEagCDTofplQ3HJlBms7EigcLOq3RN
+EFnsFtYRbfKW4/Xg+4el7Z5BiEa4QvDTfExOSYnYNrB8bvRTDiUXComARAkIEKYi2uQM0N
+wquuSlujXUQINEaOD0so0QHiOEwuir0S0zm12Bd4dWkF5BtsG9FSbCDFaughLw0+P7WKlQ
+DzAdvV2jJ1bfW8DetJUYFS5Uu4fTq9o4DhGuO1X7cZkkZhiMA2oxWh2ilVcKF0RctN1Xou
+kwaxiLoYw7hbBokOM/0utJ81GN1q71DY/mocm3dN37tJFhz/3wTOL29qnhmhI3MriMuzv2
+ugX87PJph2cWzffrVjBZ02cdE6BvZLDeyOedIocsxTdhkSLRyblpDmvSXjP5aUqNoy4N14
+syUvKLVLTKNLr1xGhgilLNaVL6cqRkhh0DTObOaIqIqSZhaGcahUjYMBllDUyaHJr8EpNg
+7t+MqoZhg357F85kWcrJrJ0yLGcapzSM2mYR5gNDHyATsKOUTCXuuAaYcWnwTbJzAd/ApR
+Ucg6hwdb9dn84ZR9Rl4V+Zav+LuSKcKEg4zJMsgA==
+'''
+import ui
+import bz2
+from base64 import b64decode
+pyui = bz2.decompress(b64decode(data))
+v = ui.load_view_str(pyui.decode('utf-8'))
+

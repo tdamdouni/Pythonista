@@ -1,0 +1,112 @@
+[
+  {
+    "selected" : false,
+    "frame" : "{{0, 0}, {414, 736}}",
+    "class" : "View",
+    "nodes" : [
+      {
+        "selected" : false,
+        "frame" : "{{49, 29}, {325, 55}}",
+        "class" : "Button",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "uuid" : "B5D82355-AE58-4F3F-AD70-C7F65E23BE64",
+          "flex" : "HLRTB",
+          "corner_radius" : 0,
+          "background_color" : "RGBA(0.333333,1.000000,0.913043,1.000000)",
+          "frame" : "{{167, 352}, {80, 32}}",
+          "tint_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "border_width" : 2,
+          "title" : "From Where You Are",
+          "action" : "btn_weather_tapped",
+          "font_bold" : true,
+          "class" : "Button",
+          "name" : "button1",
+          "font_size" : 20
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{49, 92}, {325, 55}}",
+        "class" : "Button",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "uuid" : "6059DC31-B9D0-410F-B47C-684EAB279D8C",
+          "flex" : "HLRTB",
+          "corner_radius" : 0,
+          "background_color" : "RGBA(0.357488,1.000000,0.222222,1.000000)",
+          "frame" : "{{167, 352}, {80, 32}}",
+          "tint_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "border_width" : 2,
+          "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "title" : "From A City You Can Add To List",
+          "action" : "btn_type_tapped",
+          "font_bold" : true,
+          "class" : "Button",
+          "name" : "button2",
+          "font_size" : 20
+        }
+      },
+      {
+        "selected" : true,
+        "frame" : "{{49, 187}, {325, 536}}",
+        "class" : "TableView",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "uuid" : "F916A916-5E02-4C12-9999-17A8D1F6CE28",
+          "editing" : false,
+          "flex" : "HLRTB",
+          "corner_radius" : 0,
+          "background_color" : "RGBA(1.0, 1.0, 1.0, 1.0)",
+          "frame" : "{{107, 268}, {200, 200}}",
+          "data_source_items" : "",
+          "data_source_number_of_lines" : 1,
+          "border_width" : 2,
+          "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "data_source_delete_enabled" : true,
+          "data_source_font_size" : 18,
+          "row_height" : 35,
+          "class" : "TableView",
+          "name" : "tv",
+          "data_source_action" : "item_selected"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{73, 155}, {275, 24}}",
+        "class" : "Label",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "uuid" : "2FB1DBC6-0C60-4DF6-AE8B-1105887F7D27",
+          "flex" : "HLRTB",
+          "corner_radius" : 0,
+          "frame" : "{{132, 352}, {150, 32}}",
+          "tint_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "border_width" : 0,
+          "alignment" : "center",
+          "text" : "From A City You Pick:",
+          "font_name" : "<System-Bold>",
+          "class" : "Label",
+          "name" : "label1",
+          "font_size" : 18
+        }
+      }
+    ],
+    "attributes" : {
+      "tint_color" : "RGBA(0.000000,0.478000,1.000000,1.000000)",
+      "enabled" : true,
+      "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+      "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+      "name" : "Your Weather Sources:",
+      "flex" : ""
+    }
+  }
+]

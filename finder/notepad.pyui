@@ -1,0 +1,118 @@
+[
+  {
+    "selected" : false,
+    "frame" : "{{0, 0}, {1024, 710}}",
+    "class" : "View",
+    "nodes" : [
+      {
+        "selected" : false,
+        "frame" : "{{6, 6}, {320, 124.5}}",
+        "class" : "View",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "",
+          "enabled" : true,
+          "background_color" : "RGBA(0.857143,0.857143,0.857143,1.000000)",
+          "name" : "view1",
+          "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "uuid" : "C3CFEA60-D82C-4C10-9C3A-211C22F661CC"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{6, 56}, {320, 644}}",
+        "class" : "TableView",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "uuid" : "D6ED5C6D-E887-4112-83A6-C635241117DD",
+          "data_source_action" : "select",
+          "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+          "data_source_items" : "",
+          "border_color" : "RGBA(0.857143,0.857143,0.857143,1.000000)",
+          "data_source_number_of_lines" : 1,
+          "border_width" : 1,
+          "enabled" : true,
+          "data_source_delete_enabled" : false,
+          "data_source_font_size" : 18,
+          "row_height" : 40,
+          "name" : "file list",
+          "flex" : "WH"
+        }
+      },
+      {
+        "selected" : true,
+        "frame" : "{{344, 71}, {478, 339}}",
+        "class" : "TextView",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "",
+          "border_width" : 1,
+          "enabled" : true,
+          "editable" : true,
+          "text_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "border_color" : "RGBA(0.714286,0.714286,0.714286,1.000000)",
+          "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+          "alignment" : "left",
+          "uuid" : "024791DA-9697-48FE-8410-71ADCA41AFA6",
+          "name" : "file content",
+          "font_size" : 17
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{344, 26}, {674, 36.5}}",
+        "class" : "TextField",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "",
+          "placeholder" : "Name your file",
+          "enabled" : true,
+          "text_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "border_style" : 3,
+          "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "uuid" : "AF4E3EED-65EE-4BE8-9D76-BE8E3EF220E0",
+          "alignment" : "left",
+          "name" : "file name",
+          "font_size" : 17
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{14.5, 16}, {302, 32}}",
+        "class" : "TextField",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "",
+          "placeholder" : "Search",
+          "enabled" : true,
+          "text_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "border_style" : 3,
+          "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "uuid" : "B90F7BF2-8D53-4ADC-A613-44758565B671",
+          "alignment" : "center",
+          "name" : "search string",
+          "font_size" : 17
+        }
+      }
+    ],
+    "attributes" : {
+      "flex" : "",
+      "enabled" : true,
+      "tint_color" : "RGBA(0.000000,0.478000,1.000000,1.000000)",
+      "custom_class" : "NotepadView",
+      "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+      "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+      "name" : "Note Pad"
+    }
+  }
+]

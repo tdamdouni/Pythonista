@@ -1,0 +1,27 @@
+[
+  {
+    "selected" : false,
+    "frame" : "{{0, 0}, {240, 240}}",
+    "class" : "View",
+    "nodes" : [
+      {
+        "selected" : true,
+        "frame" : "{{63, 33}, {100, 100}}",
+        "class" : "View",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "name" : "view1",
+          "frame" : "{{70, 70}, {100, 100}}",
+          "custom_class" : "MyView",
+          "class" : "View",
+          "uuid" : "C9AF78B9-C0EB-4951-A282-D06468F22F3E"
+        }
+      }
+    ],
+    "attributes" : {
+
+    }
+  }
+]
