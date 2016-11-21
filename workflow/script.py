@@ -27,5 +27,3 @@ log+= text + '\n'
 client.put_file(filename,log,overwrite=True )
  
 webbrowser.open('workflow://')
-
-

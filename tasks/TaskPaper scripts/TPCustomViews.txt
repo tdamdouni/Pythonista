@@ -1,5 +1,0 @@
-Available | not @done and not @cancel and not @hold and (@start <=  {today} or @due <=  {today} or @today)
-Due over the next 6 weeks | @due <= {now + 42d}
-Due this week | @due < {now +7d}
-In Progress | not @done and (@start <= {today} or @draft or @waiting or @today)
-Overdue | @due < {now}

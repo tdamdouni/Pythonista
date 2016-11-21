@@ -1,0 +1,172 @@
+[
+  {
+    "selected" : false,
+    "frame" : "{{0, 0}, {420, 740}}",
+    "class" : "View",
+    "nodes" : [
+      {
+        "selected" : false,
+        "frame" : "{{45, 470}, {320, 53}}",
+        "class" : "Label",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "uuid" : "C5C9265D-D844-4A67-A4E8-983DCC1A0B14",
+          "font_size" : 16,
+          "corner_radius" : 10,
+          "background_color" : "RGBA(0.971014,1.000000,0.333333,1.000000)",
+          "frame" : "{{135, 354}, {150, 32}}",
+          "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "border_width" : 2,
+          "tint_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "alignment" : "center",
+          "text" : "",
+          "text_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "font_name" : "<System-Bold>",
+          "class" : "Label",
+          "name" : "label1",
+          "flex" : "HLRTB"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{45, 146}, {320, 42}}",
+        "class" : "SegmentedControl",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "HLRTB",
+          "border_width" : 2,
+          "segments" : "Date|Time|Both",
+          "frame" : "{{150, 356}, {120, 29}}",
+          "tint_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "class" : "SegmentedControl",
+          "uuid" : "EEDBE319-CE43-4664-888B-6E3CF90583FC",
+          "background_color" : "RGBA(0.971014,1.000000,0.333333,1.000000)",
+          "corner_radius" : 10,
+          "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "name" : "segmentedcontrol1"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{45, 531}, {320, 53}}",
+        "class" : "Button",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "uuid" : "C365EA40-C689-45D2-8772-602590F5D921",
+          "font_size" : 16,
+          "corner_radius" : 10,
+          "background_color" : "RGBA(0.222222,1.000000,0.289855,1.000000)",
+          "frame" : "{{170, 354}, {80, 32}}",
+          "tint_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "border_width" : 2,
+          "title" : "Set To Current Date - TIme",
+          "action" : "set_current",
+          "font_bold" : true,
+          "class" : "Button",
+          "name" : "button1",
+          "flex" : "HLRTB"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{45, 592}, {320, 53}}",
+        "class" : "Button",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "uuid" : "69A0234F-DB24-4D37-82B1-C530A0531392",
+          "font_size" : 16,
+          "corner_radius" : 10,
+          "background_color" : "RGBA(0.333333,1.000000,0.391304,1.000000)",
+          "frame" : "{{170, 354}, {80, 32}}",
+          "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "border_width" : 2,
+          "tint_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "title" : "Done",
+          "action" : "done",
+          "font_bold" : true,
+          "class" : "Button",
+          "name" : "button2",
+          "flex" : "HLRTB"
+        }
+      },
+      {
+        "selected" : true,
+        "frame" : "{{45, 85}, {320, 53}}",
+        "class" : "Label",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "HLRTB",
+          "font_size" : 22,
+          "text_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "frame" : "{{135, 354}, {150, 32}}",
+          "uuid" : "2E51E321-B979-4E9B-BCBA-8EBFFDBC196E",
+          "text" : "Select Desired Date & Time:",
+          "alignment" : "center",
+          "class" : "Label",
+          "name" : "label2",
+          "font_name" : "<System-Bold>"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{45, 246}, {320, 216}}",
+        "class" : "DatePicker",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "action" : "change_date",
+          "border_width" : 2,
+          "flex" : "HLRTB",
+          "frame" : "{{50, 262}, {320, 216}}",
+          "mode" : 2,
+          "uuid" : "21C39B94-EE10-4BEC-A762-633C80576937",
+          "class" : "DatePicker",
+          "background_color" : "RGBA(0.971014,1.000000,0.333333,1.000000)",
+          "corner_radius" : 10,
+          "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "name" : "datepicker1"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{45, 196}, {320, 42}}",
+        "class" : "SegmentedControl",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "HLRTB",
+          "border_width" : 2,
+          "segments" : "12 Hr Clock|24 Hr Clock",
+          "frame" : "{{150, 356}, {120, 29}}",
+          "tint_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "class" : "SegmentedControl",
+          "background_color" : "RGBA(0.971014,1.000000,0.333333,1.000000)",
+          "uuid" : "83C7177E-B1EC-490D-98BD-EAC912F201F4",
+          "corner_radius" : 10,
+          "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "name" : "segmentedcontrol2"
+        }
+      }
+    ],
+    "attributes" : {
+      "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+      "enabled" : true,
+      "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+      "tint_color" : "RGBA(0.000000,0.478000,1.000000,1.000000)",
+      "name" : "",
+      "flex" : ""
+    }
+  }
+]

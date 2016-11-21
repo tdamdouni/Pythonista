@@ -1,0 +1,100 @@
+[
+  {
+    "selected" : false,
+    "frame" : "{{0, 0}, {768, 960}}",
+    "class" : "View",
+    "nodes" : [
+      {
+        "selected" : true,
+        "frame" : "{{6, 64}, {756, 890}}",
+        "class" : "TableView",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "WH",
+          "data_source_items" : "Row 1\nRow 2 >\nRow 3 (i)",
+          "enabled" : true,
+          "name" : "tableview1",
+          "uuid" : "E8FF35CE-DD14-4490-92D8-F5D7AD1F3C5F",
+          "data_source_number_of_lines" : 1,
+          "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+          "data_source_font_size" : 18,
+          "row_height" : 44,
+          "data_source_delete_enabled" : true
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{6, 6}, {150, 50}}",
+        "class" : "Button",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "",
+          "border_width" : 1,
+          "enabled" : true,
+          "action" : "self.bt_dir_action",
+          "title" : "Dir",
+          "border_color" : "RGBA(0.000000,0.000000,1.000000,1.000000)",
+          "font_bold" : false,
+          "corner_radius" : 5,
+          "uuid" : "B18F462E-0334-4FC5-9808-4FCAB5466EC3",
+          "font_size" : 15,
+          "name" : "bt_dir"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{164, 6}, {150, 50}}",
+        "class" : "Button",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "",
+          "border_width" : 1,
+          "enabled" : true,
+          "action" : "self.bt_empty_action",
+          "title" : "Empty",
+          "border_color" : "RGBA(0.000000,0.000000,1.000000,1.000000)",
+          "font_bold" : false,
+          "corner_radius" : 5,
+          "uuid" : "8FED7A39-74EE-4C2E-A6FE-C3A4D9943237",
+          "font_size" : 15,
+          "name" : "bt_empty"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{322, 6}, {150, 50}}",
+        "class" : "Button",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "",
+          "border_width" : 1,
+          "enabled" : true,
+          "action" : "self.bt_picture_action",
+          "title" : "Picture",
+          "border_color" : "RGBA(0.000000,0.000000,1.000000,1.000000)",
+          "font_bold" : false,
+          "corner_radius" : 5,
+          "uuid" : "54B6B933-686C-40DD-B40D-EE82A349E951",
+          "font_size" : 15,
+          "name" : "bt_picture"
+        }
+      }
+    ],
+    "attributes" : {
+      "enabled" : true,
+      "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+      "tint_color" : "RGBA(0.000000,0.478000,1.000000,1.000000)",
+      "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+      "flex" : ""
+    }
+  }
+]

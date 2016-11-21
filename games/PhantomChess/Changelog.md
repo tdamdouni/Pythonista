@@ -2,6 +2,13 @@
 *Please note*: this log has only been updated since version 0.7.0, as this was effectively the first 'working' release.
 This log is **only** for major features in each update.  I will not be listing every single character I change here, considering GitHub can do that for me.
 
+### 0.7.8
+ - Removed all `from import *` in `Phantom.core`
+ - Fix mystery `int('m')` bug in `epd_read.py`
+ - Code in `Phantom.core` updated according to PEP8 (mostly)
+ - Update `Simple.exe` and `Phantom_installer.exe`
+ - Add automatic `exc_catch` deactivation if debug level is above a set number
+
 ### 0.7.7
  - Removed `from scene import *` in all `gui_pythonista` files, not just `scene_main`
  - Added the `promote()` method to the `ChessGame` class rather than just the board

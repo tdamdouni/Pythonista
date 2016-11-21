@@ -1,0 +1,137 @@
+[
+  {
+    "selected" : false,
+    "frame" : "{{0, 0}, {540, 575}}",
+    "class" : "View",
+    "nodes" : [
+      {
+        "selected" : false,
+        "frame" : "{{6, 61.5}, {150, 32}}",
+        "class" : "Label",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "",
+          "name" : "home_label",
+          "enabled" : true,
+          "text_color" : "RGBA(0.112245,0.462449,0.785714,1.000000)",
+          "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "text" : "Home",
+          "alignment" : "center",
+          "uuid" : "D5E3A2E7-DFD6-4310-948C-66036D004ED0",
+          "font_size" : 17,
+          "font_name" : "Arial-BoldMT"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{384, 61.5}, {150, 32}}",
+        "class" : "Label",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "",
+          "name" : "opponents_label",
+          "enabled" : true,
+          "text_color" : "RGBA(0.857143,0.122449,0.122449,1.000000)",
+          "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "text" : "Visitors",
+          "alignment" : "center",
+          "uuid" : "09DE7CE8-2C2F-4445-9A31-FC4394BAE697",
+          "font_size" : 17,
+          "font_name" : "Arial-BoldMT"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{6, 91.5}, {150, 152}}",
+        "class" : "Label",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "",
+          "name" : "home_score",
+          "enabled" : true,
+          "text_color" : "RGBA(0.112245,0.462764,0.785714,1.000000)",
+          "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "text" : "00",
+          "alignment" : "center",
+          "uuid" : "0A338D22-4029-43D3-B29A-1951F69F06EA",
+          "font_size" : 50,
+          "font_name" : "DINCondensed-Bold"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{384, 91.5}, {150, 152}}",
+        "class" : "Label",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "",
+          "name" : "opponents_score",
+          "enabled" : true,
+          "text_color" : "RGBA(0.857143,0.122449,0.122449,1.000000)",
+          "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "text" : "00",
+          "alignment" : "center",
+          "uuid" : "252C7F3C-2743-4956-A16B-71A97023F710",
+          "font_size" : 50,
+          "font_name" : "DINCondensed-Bold"
+        }
+      },
+      {
+        "selected" : true,
+        "frame" : "{{194, 219}, {129.5, 62.5}}",
+        "class" : "Button",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "",
+          "border_width" : 1,
+          "enabled" : true,
+          "tint_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "action" : "get_score",
+          "title" : "Generate",
+          "border_color" : "RGBA(0.785714,0.785714,0.785714,1.000000)",
+          "font_bold" : true,
+          "uuid" : "36C89CE2-AD81-4D5F-A358-0A90AB1F3BF2",
+          "font_size" : 18,
+          "name" : "button1"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{194, 112}, {150, 32}}",
+        "class" : "Label",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "",
+          "text_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "enabled" : true,
+          "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "text" : "",
+          "alignment" : "center",
+          "uuid" : "FD82F46E-A6AA-4D00-9E9E-8EEDE9E4807D",
+          "name" : "outcome",
+          "font_size" : 17
+        }
+      }
+    ],
+    "attributes" : {
+      "flex" : "",
+      "enabled" : true,
+      "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+      "tint_color" : "RGBA(0.000000,0.478000,1.000000,1.000000)",
+      "name" : "Score Generator",
+      "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)"
+    }
+  }
+]

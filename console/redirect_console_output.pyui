@@ -1,0 +1,87 @@
+[
+  {
+    "selected" : false,
+    "frame" : "{{0, 0}, {451, 300}}",
+    "class" : "View",
+    "nodes" : [
+      {
+        "selected" : true,
+        "frame" : "{{56, 201}, {141, 52}}",
+        "class" : "Button",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "action" : "button_action",
+          "frame" : "{{80, 104}, {80, 32}}",
+          "title" : "Button1",
+          "class" : "Button",
+          "uuid" : "5C1173E2-1C48-4FC7-AED9-2256DCBADDA4",
+          "font_size" : 15,
+          "name" : "button1"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{279, 77}, {152, 195}}",
+        "class" : "TextView",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "WH",
+          "font_size" : 17,
+          "editable" : false,
+          "spellchecking_type" : "default",
+          "frame" : "{{20, 20}, {200, 200}}",
+          "class" : "TextView",
+          "uuid" : "4B000022-3FCC-40CE-A1B8-56F8ED7C996F",
+          "alignment" : "left",
+          "autocorrection_type" : "default",
+          "name" : "textview1",
+          "font_name" : "<System>"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{56, 105}, {135, 58}}",
+        "class" : "Button",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "action" : "button_action",
+          "frame" : "{{186, 134}, {80, 32}}",
+          "title" : "Button2",
+          "class" : "Button",
+          "uuid" : "822A696E-6FB8-4421-8BFC-C8C6B63B6EC2",
+          "font_size" : 15,
+          "name" : "button2"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{24, 26}, {407, 28}}",
+        "class" : "SegmentedControl",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "class" : "SegmentedControl",
+          "frame" : "{{166, 136}, {120, 29}}",
+          "flex" : "LR",
+          "name" : "segmentedcontrol1",
+          "segments" : "console|textview",
+          "uuid" : "384FC3D2-00A5-41AC-9B07-507B8DBD0150"
+        }
+      }
+    ],
+    "attributes" : {
+      "enabled" : true,
+      "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+      "tint_color" : "RGBA(0.000000,0.478000,1.000000,1.000000)",
+      "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+      "flex" : ""
+    }
+  }
+]

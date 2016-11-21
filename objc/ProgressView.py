@@ -1,7 +1,9 @@
+#!python2
 # coding: utf-8
 
 # https://gist.github.com/blmacbeth/60bacd65c89e5290f452
 
+import ui
 from objc_util import *
 
 ## this is bad python styling, but I justify it by saying the

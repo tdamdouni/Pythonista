@@ -1,3 +1,4 @@
+#!python2
 # coding: utf-8
 
 # https://gist.github.com/pfcbenjamin/c2852b22663aaa66011c

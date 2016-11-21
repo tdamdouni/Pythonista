@@ -1,4 +1,0 @@
-include requirements.txt
-include requirements-dev.txt
-include README.rst AUTHORS.rst LICENSE.rst
-recursive-include unittest *.py

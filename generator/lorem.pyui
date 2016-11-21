@@ -1,0 +1,148 @@
+[
+  {
+    "selected" : false,
+    "frame" : "{{0, 0}, {320, 416}}",
+    "class" : "View",
+    "nodes" : [
+      {
+        "selected" : false,
+        "frame" : "{{114, 8}, {200, 34}}",
+        "class" : "Slider",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "W",
+          "continuous" : false,
+          "enabled" : true,
+          "action" : "slider_changed",
+          "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "uuid" : "85449C42-D72D-4B84-B8C8-3CE3AEB42670",
+          "value" : 0,
+          "name" : "slider1"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{6, 8}, {100, 32}}",
+        "class" : "Label",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "",
+          "name" : "label1",
+          "enabled" : true,
+          "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "text" : "Sentences",
+          "alignment" : "right",
+          "uuid" : "D2DC640B-BD50-4B4E-9F69-72F12E1E6A79",
+          "font_size" : 12,
+          "text_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{6, 58}, {100, 32}}",
+        "class" : "Label",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "",
+          "name" : "label2",
+          "enabled" : true,
+          "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "text" : "Paragraphs",
+          "alignment" : "right",
+          "uuid" : "A6B04662-FA58-4A05-B6D4-86B17359D3DE",
+          "font_size" : 12,
+          "text_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{114, 58}, {200, 34}}",
+        "class" : "Slider",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "W",
+          "continuous" : false,
+          "enabled" : true,
+          "action" : "slider_changed",
+          "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "uuid" : "55AB9D05-EC01-4D39-AF53-55A3A4F88ED9",
+          "value" : 0,
+          "name" : "slider2"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{6, 100}, {308, 270}}",
+        "class" : "TextView",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "",
+          "name" : "textview1",
+          "enabled" : true,
+          "editable" : true,
+          "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "uuid" : "1A6D9A37-6710-48A9-9D67-DAF5FD77917C",
+          "alignment" : "left",
+          "font_size" : 17,
+          "text_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{6, 378}, {80, 32}}",
+        "class" : "Button",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "",
+          "action" : "copy_action",
+          "enabled" : true,
+          "title" : "Copy",
+          "uuid" : "EC7D44DC-B7AD-49F4-9EAD-05739D1F2C1D",
+          "font_bold" : false,
+          "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "font_size" : 15,
+          "name" : "button1"
+        }
+      },
+      {
+        "selected" : true,
+        "frame" : "{{232, 378}, {82, 32}}",
+        "class" : "Button",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "",
+          "action" : "randomize_action",
+          "enabled" : true,
+          "title" : "Randomize",
+          "uuid" : "8CC20617-E7C3-4772-AA43-CC1DFADA19A0",
+          "font_bold" : false,
+          "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "font_size" : 15,
+          "name" : "button2"
+        }
+      }
+    ],
+    "attributes" : {
+      "name" : "Generate Lorem Ipsum",
+      "enabled" : true,
+      "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+      "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+      "tint_color" : "RGBA(0.000000,0.478000,1.000000,1.000000)",
+      "flex" : ""
+    }
+  }
+]

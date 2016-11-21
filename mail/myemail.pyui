@@ -1,0 +1,159 @@
+[
+  {
+    "selected" : false,
+    "frame" : "{{0, 0}, {540, 575}}",
+    "class" : "View",
+    "nodes" : [
+      {
+        "selected" : false,
+        "frame" : "{{47.5, 19.5}, {486.5, 32}}",
+        "class" : "TextField",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "",
+          "text_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "enabled" : true,
+          "border_style" : 3,
+          "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "uuid" : "7A729C7C-B7BB-40A9-9C87-E4AD9DE72D06",
+          "alignment" : "left",
+          "name" : "tofield",
+          "font_size" : 17
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{6, 19.5}, {33.5, 32}}",
+        "class" : "Label",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "",
+          "name" : "label1",
+          "enabled" : true,
+          "text_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "text" : "To:",
+          "alignment" : "left",
+          "uuid" : "C5C79299-1A8C-4F9B-97BC-2EF6C8C43AD0",
+          "font_size" : 17,
+          "font_name" : "<System-Bold>"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{6, 59.5}, {69, 32}}",
+        "class" : "Label",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "",
+          "name" : "label2",
+          "enabled" : true,
+          "text_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "text" : "From:",
+          "alignment" : "left",
+          "uuid" : "3DB90485-0B5A-4A25-B5A3-F4D4C06B0BBA",
+          "font_size" : 17,
+          "font_name" : "<System-Bold>"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{6, 99}, {69, 32}}",
+        "class" : "Label",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "",
+          "name" : "label3",
+          "enabled" : true,
+          "text_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "text" : "Subject:",
+          "alignment" : "left",
+          "uuid" : "CE4F1218-B47D-48B2-A2B0-EF811BD40568",
+          "font_size" : 17,
+          "font_name" : "<System-Bold>"
+        }
+      },
+      {
+        "selected" : true,
+        "frame" : "{{83, 99}, {451, 32}}",
+        "class" : "TextField",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "",
+          "text_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "enabled" : true,
+          "border_style" : 3,
+          "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "uuid" : "F7FCF0F9-C547-49E2-9CF9-3632930DFCC5",
+          "alignment" : "left",
+          "name" : "subjectfield",
+          "font_size" : 17
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{58.5, 59.5}, {475.5, 32}}",
+        "class" : "TextView",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "uuid" : "4D6023D7-BC09-4917-8885-4BC3444623F1",
+          "flex" : "",
+          "corner_radius" : 5,
+          "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+          "border_color" : "RGBA(0.857143,0.857143,0.857143,1.000000)",
+          "editable" : false,
+          "border_width" : 1,
+          "alignment" : "left",
+          "enabled" : true,
+          "text_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "name" : "fromfield",
+          "font_size" : 17
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{6, 139}, {528, 430}}",
+        "class" : "TextView",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "uuid" : "B380728C-40BC-4152-B2DB-88019CEA7D5C",
+          "flex" : "",
+          "corner_radius" : 5,
+          "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+          "border_color" : "RGBA(0.857143,0.857143,0.857143,1.000000)",
+          "editable" : true,
+          "border_width" : 1,
+          "alignment" : "left",
+          "enabled" : true,
+          "text_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "name" : "message",
+          "font_size" : 17
+        }
+      }
+    ],
+    "attributes" : {
+      "flex" : "",
+      "enabled" : true,
+      "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+      "tint_color" : "RGBA(0.000000,0.478000,1.000000,1.000000)",
+      "name" : "Send an Email",
+      "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)"
+    }
+  }
+]

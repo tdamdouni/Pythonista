@@ -1,9 +1,0 @@
-(dp1
-S'player'
-p2
-S'Player'
-p3
-sS'board_size'
-p4
-I3
-s.

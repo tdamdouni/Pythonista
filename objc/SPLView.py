@@ -5,6 +5,7 @@
 # experiments with gestureRecognizers
 #. note this code may not work with 64bit code, due to bool encoding
 
+import sys
 import ui
 #from objc_util import *
 from objcnew import *

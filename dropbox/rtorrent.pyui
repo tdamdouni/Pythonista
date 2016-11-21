@@ -1,0 +1,291 @@
+[
+  {
+    "selected" : false,
+    "frame" : "{{0, 0}, {541, 462}}",
+    "class" : "View",
+    "nodes" : [
+      {
+        "selected" : false,
+        "frame" : "{{422, 166}, {113, 32}}",
+        "class" : "Button",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "uuid" : "67609F43-491F-4868-AA40-F4DE00ADCF5A",
+          "name" : "deleteButton",
+          "flex" : "",
+          "background_color" : "RGBA(1.000000,0.214286,0.214286,1.000000)",
+          "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "tint_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+          "title" : "Delete",
+          "action" : "self.on_delete_clicked",
+          "enabled" : true,
+          "font_bold" : false,
+          "image_name" : "ionicons-close-32",
+          "font_size" : 15
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{5.5, 86}, {112.5, 32}}",
+        "class" : "Label",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "",
+          "text_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "enabled" : true,
+          "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "text" : "Completed :",
+          "alignment" : "right",
+          "uuid" : "BB1B7834-E23E-436B-8998-569079307E45",
+          "name" : "label3",
+          "font_size" : 17
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{6, 46}, {112, 32}}",
+        "class" : "Label",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "",
+          "text_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "enabled" : true,
+          "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "text" : "Name :",
+          "alignment" : "right",
+          "uuid" : "8D710673-BAE7-40D5-B7A8-BDADEA078055",
+          "name" : "label2",
+          "font_size" : 17
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{126, 86}, {230, 32}}",
+        "class" : "Label",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "W",
+          "text_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "enabled" : true,
+          "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "text" : "",
+          "alignment" : "left",
+          "uuid" : "48F1BA44-7520-4C5D-836D-DAF4B89BAE5F",
+          "name" : "completedLabel",
+          "font_size" : 17
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{126, 46}, {409, 32}}",
+        "class" : "Label",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "W",
+          "text_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "enabled" : true,
+          "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "text" : "",
+          "alignment" : "left",
+          "uuid" : "ACB1866B-9BA2-4186-AE55-C643D107ADB8",
+          "name" : "nameLabel",
+          "font_size" : 17
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{6, 6}, {529, 32}}",
+        "class" : "Label",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "W",
+          "name" : "label1",
+          "enabled" : true,
+          "text_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "text" : "Torrent info",
+          "alignment" : "center",
+          "uuid" : "65D47DD2-B725-462C-A862-72EDD8C7DFEC",
+          "font_size" : 17,
+          "font_name" : "<System-Bold>"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{6, 206}, {529, 250}}",
+        "class" : "TableView",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "uuid" : "E7053D8B-4FDA-4973-9766-C208B08FC814",
+          "data_source_action" : "self.on_file_picked",
+          "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+          "data_source_items" : "",
+          "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "data_source_number_of_lines" : 1,
+          "enabled" : true,
+          "data_source_delete_enabled" : false,
+          "data_source_font_size" : 18,
+          "row_height" : 44,
+          "name" : "filesTableView",
+          "flex" : "WH"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{7, 166}, {111, 32}}",
+        "class" : "Button",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "",
+          "action" : "self.on_pause_clicked",
+          "enabled" : true,
+          "image_name" : "ionicons-ios7-pause-32",
+          "title" : "Pause",
+          "uuid" : "1511A4AB-8830-41CA-B9C5-E3F5C0FBFC78",
+          "font_bold" : false,
+          "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "background_color" : "RGBA(0.857143,0.857143,0.857143,1.000000)",
+          "name" : "pauseButton",
+          "font_size" : 15
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{7, 126}, {111, 32}}",
+        "class" : "Label",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "",
+          "text_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "enabled" : true,
+          "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "text" : "Priority:",
+          "alignment" : "right",
+          "uuid" : "2C76443F-2FB2-408C-B3C7-6435A2270957",
+          "name" : "label4",
+          "font_size" : 17
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{126, 126}, {113, 32}}",
+        "class" : "Label",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "",
+          "text_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "enabled" : true,
+          "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "text" : "",
+          "alignment" : "left",
+          "uuid" : "B8F0C863-3099-42E7-A10D-A6D7AA603A14",
+          "name" : "priorityLabel",
+          "font_size" : 17
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{247, 126}, {288, 34}}",
+        "class" : "Slider",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "W",
+          "action" : "self.on_priority_changed",
+          "enabled" : true,
+          "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "uuid" : "FB8BA118-0916-4A8D-90F8-EEA6E5FB5218",
+          "value" : 0.5,
+          "name" : "prioritySlider"
+        }
+      },
+      {
+        "selected" : true,
+        "frame" : "{{126, 166}, {113, 32}}",
+        "class" : "Button",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "",
+          "action" : "self.on_check_clicked",
+          "enabled" : true,
+          "title" : "Check hash",
+          "uuid" : "F24B8FBD-207F-4A94-81BD-668BF1A28FE4",
+          "font_bold" : false,
+          "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "background_color" : "RGBA(0.857143,0.857143,0.857143,1.000000)",
+          "font_size" : 15,
+          "name" : "checkButton"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{422, 86}, {113, 32}}",
+        "class" : "Label",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "WL",
+          "text_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "enabled" : true,
+          "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "text" : "",
+          "alignment" : "left",
+          "uuid" : "4DF44952-1259-4A20-9E32-7EC66EAEFAAA",
+          "name" : "sizeLabel",
+          "font_size" : 17
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{364, 86}, {50, 32}}",
+        "class" : "Label",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "",
+          "text_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "enabled" : true,
+          "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "text" : "Size :",
+          "alignment" : "right",
+          "uuid" : "6FCC8739-304C-4498-A11F-41B53A4D3CA7",
+          "name" : "label6",
+          "font_size" : 17
+        }
+      }
+    ],
+    "attributes" : {
+      "flex" : "",
+      "enabled" : true,
+      "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+      "tint_color" : "RGBA(0.000000,0.478000,1.000000,1.000000)",
+      "name" : "rtorrent",
+      "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)"
+    }
+  }
+]
