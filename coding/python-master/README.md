@@ -1,0 +1,2 @@
+# Python for Everybody Specialization
+This repository will include my work from Coursera's Python for Everybody Specialization. Exercises are taken from the following textbook (http://www.pythonlearn.com/book.php). I'm currently using python 2 for this course. 
