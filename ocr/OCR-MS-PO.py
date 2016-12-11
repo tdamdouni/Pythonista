@@ -7,8 +7,8 @@ import httplib, urllib, base64, clipboard, json, requests, datetime, appex, phot
 timestamp = datetime.datetime.now()
 name = timestamp.strftime("%Y-%m-%d-%H%M%S") + '.jpeg'
 
-apiKey = '721e3b542a8c2d16a8414e9a303e1652'
-apiSecret = 'd2cd8ee80e4bcdc75b84e009bc5ec059c39e588c'
+apiKey = ''
+apiSecret = ''
 
 params = {
     'auth': {
@@ -50,7 +50,7 @@ urlOcr = '/vision/v1/ocr'
 headers = {
     # Request headers
     'User-Agent': 'python',
-    'Ocp-Apim-Subscription-Key': 'a6552b79edca4a2c8005b50248559320',
+    'Ocp-Apim-Subscription-Key': '',
 }
 
 params2 = urllib.urlencode({
