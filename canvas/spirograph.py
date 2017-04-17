@@ -1,121 +1,180 @@
-# http://jerrekedb.deviantart.com/gallery/33102100
+#Spirograph.py
 
-""" Spirograph drawing
-    Created on 8/10/2011
+# https://github.com/The-Penultimate-Defenestrator/Python/blob/master/Spirograph.py
 
-    Author: Jeroen De Busser
-"""
+from math import *
+from Tkinter import *
+import tkColorChooser
+import time
 
-import turtle
-import math # Needed for the FancyCircleRing
-import random
+thecolor = "#000000"
+tk = Tk()
+
+tk.configure(background='white')
+run = 0
+
+#Main Widgets
+Tlabel = Label(text="Spirograph", background="white")
+Tlabel.grid(row=0, column=0, columnspan=3)
+
+Lframe = Frame(tk, bg="white")
+Lframe.grid(row=1, column=0)
+
+canvas = Canvas(tk, width=500, height=500, highlightthickness=0)
+canvas.grid(row=1, column=1)
+canvas.configure(scrollregion=(-250, -250, 250, 250), bg="white")
+
+Rframe = Frame(tk, bg="white")
+Rframe.grid(row=1, column=2)
+
+Bframe = Frame(tk, bg="white")
+Bframe.grid(row=2, column=0, columnspan=3)
+
+label1 = Label(Rframe, text="Angular Velocities", bg="white")
+label1.grid(row=0, column=0, columnspan=2)
+
+scale1 = Scale(Rframe, from_=10, to=-10, resolution=0.1, label="1", bg="white", length=150, highlightthickness=0)
+scale1.grid(row=1, column=0)
+
+scale2 = Scale(Rframe, from_=10, to=-10, resolution=0.1, label="2", bg="white", length=150, highlightthickness=0)
+scale2.grid(row=1, column=1)
+
+label2 = Label(Lframe, text="Arm Lengths", bg="white")
+label2.grid(row=0, column=0, columnspan=2)
+
+scale3 = Scale(Lframe, from_=100, to=0, resolution=1, label="1", bg="white", length=150, highlightthickness=0)
+scale3.grid(row=1, column=0)
+
+scale4 = Scale(Lframe, from_=100, to=0, resolution=1, label="2", bg="white", length=150, highlightthickness=0)
+scale4.grid(row=1, column=1)
 
 
-def reset_turtle(t):
-	'''Resets the turtle t'''
-	t.reset()
-	t.speed(0)
-	t.hideturtle()
+def create_point(coords, canv=canvas):
+	assert len(coords) == 2
+	canv.create_line(coords[0], coords[1], coords[0]+1, coords[1]+1)
 	
+def create_line(coords1, coords2, canv=canvas):
+	line = canvas.create_line(coords1[0], coords1[1], coords2[1], coords2[1])
+	return line
+def border():
+	canvas.create_line(-250, -250, -250, 250)
+	canvas.create_line(-250, -250, 250, -250)
+	canvas.create_line(249, 249, 249, -249)
+	canvas.create_line(249, 249, -249, 249)
 	
-def init_turtle():
-	'''Returns a turtle in an initialized turtle environment'''
-	window = turtle.Screen()
-	window.bgcolor('black')
-	window.tracer(0)
-	alex = turtle.Turtle()
-	reset_turtle(alex)
-	return alex
+def rotate(point, angle, center=(0, 0)):
+	counterangle = 360 - angle
+	while counterangle > 0: counterangle -= 360
+	while counterangle < 0: counterangle += 360
+	theta = radians(counterangle)
+	#Translate point to rotate around center
+	translated = point[0]-center[0] , point[1]-center[1]
+	#Rotate point
+	rotated = (translated[0]*cos(theta)-translated[1]*sin(theta),translated[0]*sin(theta)+translated[1]*cos(theta))
+	#Translate point back
+	newcoords = (round(rotated[0]+center[0], 1),round(rotated[1]+center[1], 1))
+	return newcoords
 	
+def createSpiral(armOne, armTwo, color):
+
+	clearbutton.config(text="Stop Drawing")
 	
-def __draw_circle(t, distance, sz, n):
-	"""Draws a circle at a distance from the current position with a size of sz
-	If n is not equal to None, it will draw a regular polygon with n corners
-	"""
-	# Get to the place where the circle must be drawn
-	t.fd(distance)
-	t.right(90) # Make sure the circle is at distance from the center
+	x, y = 0, 0
+	len1, step1 = armOne
+	len2, step2 = armTwo
+	global lines
+	lines = []
+	previousPositions = []
 	
-	# Draw the circle
-	t.down()
-	t.circle(sz, 360, n)
-	t.up()
-	
-	# return to the center
-	t.left(90)
-	t.backward(distance)
-	
-	
-def __draw_ring(t, rsz, rlist, csz, a_circles, a_corners):
-	""" Draw a ring with the radii rlist of len(rlist) circles(of size csz) with turtle t
-	If a_corners is not None, regular polygons with a_corners corners will be drawn instead of circles
-	"""
-	for i in rlist:
-		__draw_circle(t, rsz*i, csz, a_corners)
-		t.left(360/a_circles)
+	while step1 > 10 or step2 > 10:
+		step1 /= 2
+		step2 /= 2
 		
+	global run
+	run = 1
+	iteration = 1
+	inarow = 0
+	while run:
+		scale1.set(step1)
+		scale2.set(step2)
+		iteration += 1
 		
-def range_list(n, amp=0, period=0, phase=0):
-	""" Return a list of size n containing factors for the radii of DrawCircleRing. If only given an amount of circles, this function will return a list filled with 1.0
-	amp, period and phase are the arguments for a sinus function to draw more complicated patterns than circles, and their default values are chosen to result in a normal spirograph
-	"""
-	factors = []
-	for i in range(n):
-		factors.append(amp * math.sin(period * i / n * 2 * math.pi + phase) + 1)
-	return factors
-	
-	
-def random_color_list(n):
-	""" Make a list of n randomly chosen color tuples """
-	colors = []
-	for i in range(n):
-		colors.append( ( random.random(), random.random(), random.random() ) )
-	return colors
-	
-	
-def draw_spirograph(t, ring_t, circle_t, r_list=None):
-	""" Make turtle t draw a spirograph with him starting in the center
-	Parameters:
-	t: the turtle
-	ring_t: a tuple or list in this schematic:
-	ring_t[0]: radius of the innermost ring
-	ring_t[1]: radius of the outermost ring
-	ring_t[2]: amount of rings
-	ring_t[3]: a list of colors. Can either exist of tuples holding r,g,b values or color names.
-	Its length should be equal to ring_t[2]
-	circle_t: a tuple/list following this schematic:
-	circle_t[0]: radius of the circles in the innermost ring
-	circle_t[1]: radius of the circles in the outermost ring
-	circle_t[2]: amount of circles/ring
-	circle_t[3]: amount of corners. Set to None if you want to draw circles
-	r_list: a list, normally constructed with range_list()
-	It holds factors to be multiplied with the radius of the current ring to get the distance of each circle in the ring from the center.
-	It should be of length circle_t[2]
-	If not specified, it will be set to range_list(circle_t[2]) and thus result in a normal spirograph
-	"""
-	# Check if r_list was specified
-	if(r_list == None):
-		r_list = range_list(circle_t[2])
+		point1 = rotate((0,len1), x)
+		point2 = map(sum,zip(rotate((0, len2), y), point1))
 		
-	# Calculate the size difference between each ring(both ring and circle radii)
-	ring_size_diff = (ring_t[1] - ring_t[0]) / ring_t[2]
-	circle_size_diff = (circle_t[1] - circle_t[0]) / ring_t[2]
+		#Detection of whether pattern is repeating itself
+		if point2 not in previousPositions:
+			previousPositions.append(point2)
+			inarow = 0
+		else:
+			inarow += 1
+			
+		if inarow > 5:
+			print "Pattern is detected to be repeating itself"
+			run = 0
+			
+			
+		if x == 0:
+			oldpoint2 = point2
+		else:
+			canvas.create_line(oldpoint2[0], oldpoint2[1], point2[0], point2[1], fill=color)
+		lines.append( canvas.create_line(0, 0, point1[0], point1[1], fill="#5CE6E6", width=3.0) )
+		lines.append( canvas.create_line(point1[0], point1[1], point2[0], point2[1], fill="#5CE6E6", width=3.0) )
+		oldpoint2 = point2
+		
+		tk.update()
+		
+		x += step1
+		if x > 360: x -= 360
+		y += step2
+		if y > 360: y -= 360
+		
+		for line in lines:
+			canvas.delete(line)
+		lines = []
+		time.sleep(0.005)
+	print "Done!"
+	clearbutton.config(text="Clear Canvas")
 	
-	t.up() # Make sure the first moving operation won't draw anything
-	for i in range(ring_t[2]):
-		t.pencolor(ring_t[3][i])
-		__draw_ring(t, ring_t[1] - i * ring_size_diff, r_list, circle_t[1] - i * circle_size_diff, circle_t[2], circle_t[3])
-	t.down()
+def getColor():
+	global thecolor
+	thecolor = tkColorChooser.askcolor("black")[1]
+	print thecolor
 	
+def graph():
+	len1 = scale3.get()
+	len2 = scale4.get()
+	vel1 = scale1.get()
+	vel2 = scale2.get()
+	createSpiral((len1, vel1), (len2, vel2), thecolor)
 	
-if __name__ == '__main__':
+def clear():
+	canvas.delete("all")
+	border()
+	
+def STOPPIT():
+	global run, lines
+	run = 0
+	for line in lines:
+		canvas.delete(line)
+	lines = []
+	
+def universalCommand():
+	if run:
+		STOPPIT()
+	else:
+		clear()
+		
+colorchooserbutton = Button(Bframe, text='Select Color', command=getColor, bg="white")
+colorchooserbutton.pack(side=LEFT, padx=5)
 
-	# Initialization
-	random.seed()
-	
-	# Draw the Spirograph
-	draw_spirograph(init_turtle(), (0, 25, 7, ["green", "purple", "magenta", "blue", "yellow", "orange", "red"] ), (10, 150, 50, None) )
-	
-	# Keep the window from closing too quickly
-	input()
+button = Button(Bframe, text="Create Spiral", command=graph, bg="white")
+button.pack(side=LEFT, padx=5)
+
+clearbutton = Button(Bframe, text="Clear Drawing", command=universalCommand, bg="white")
+clearbutton.pack(side=LEFT, padx=5)
+
+border()
+while 1:
+	tk.update()
 

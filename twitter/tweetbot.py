@@ -1,20 +1,16 @@
-# coding: utf-8
+# https://gist.github.com/djbouche/5079739
 
-import clipboard
-import console
+import urllib
 import webbrowser
+CALLBACK_URL_BASE = 'pythonista://'
+url = "tweetbot://x-callback-url/post?"
 
-mytext = clipboard.get()
-mytext = mytext.replace('https://twitter.com/', 'tweetbot://')
-mytext = mytext.replace('statuses', 'status')
-mytext = mytext.replace('http://twitter.com/', 'tweetbot://')
-mytext = mytext.replace('http://mobile.twitter.com/', 'tweetbot://')
-mytext = mytext.replace('https://mobile.twitter.com/', 'tweetbot://')
-
-console.clear()
-print mytext
-
-clipboard.set(mytext)
-
-webbrowser.open(mytext)
+def tweet(txt,cb=CALLBACK_URL_BASE):
+	data = {
+	'text': txt,
+	'callback_url': cb
+	}
+	surl = url + urllib.urlencode(data)
+	webbrowser.open(surl)
+	print "Tweet Complete!"
 

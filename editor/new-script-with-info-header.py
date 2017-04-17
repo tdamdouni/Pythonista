@@ -1,9 +1,4 @@
 #!/usr/bin/env python3
-
-# https://github.com/lukaskollmer/pythonista-scripts/blob/master/Templates/New%20Script%20with%20info%20header.py
-
-# https://forum.omz-software.com/topic/3329/share-code-file-template-to-automatically-add-an-header-comment-block
-
 '''
 Pythonista template to include some basic information in a header comment
 
