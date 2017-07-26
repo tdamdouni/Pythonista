@@ -1,0 +1,8 @@
+title: Pythonista
+description: "Collection of Python Scripts written for Pythonista iOS App "
+google_analytics: UA-60748121-2
+show_downloads: true
+theme: jekyll-theme-minimal
+
+gems:
+  - jekyll-mentions
