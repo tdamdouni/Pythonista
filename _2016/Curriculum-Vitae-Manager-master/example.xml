@@ -1,0 +1,302 @@
+<cvdata>
+	<!-- Name (Your Fullname) -->
+	<name>Johann du Toit</name>
+	<!-- Date of Birth -->
+	<dob year="0000" month="00" day="00" />
+	<!--
+		Your Addresses
+		residential or postal
+
+		Example:
+		<residential>My Residential Address</residential>
+		<postal>My Postal Address</postal>
+	-->
+	<address>
+	</address>
+	<!-- E-Mail -->
+	<email>youremail@domain.com</email>
+	<!--
+		Contact Numbers to reach you by
+		<tel> / <cel> or <fax>
+
+		<tel>xxx xxx xxxx</tel>  / <cel>xxx xxx xxxx</cel>  / <fax>xxx xxx xxxx</fax> 
+	-->
+	<contactnumbers>
+		<tel>xxx xxx xxxx</tel>
+		<cel>xxx xxx xxxx</cel>
+		<fax>xxx xxx xxxx</fax>
+	</contactnumbers>
+
+	<!-- Profile/Cover Letter -->
+	<letter>
+		This is my letter
+	</letter>
+
+	<!-- 
+		Accounts on the Internet you would like to link to
+
+		<account>
+			<name>Facebook</name>
+			<url>http://www.facebook.com</url>
+			<logo>facebook_logo.png</logo>
+		</account>
+	-->
+	<accounts>
+	</accounts>
+
+	<!--
+		Your Skills with their Rating ( out of 5 ) on how good you are with them
+		<skill rating="4">Java</skill>
+	-->
+	<skills>
+		<skill rating="4">Java</skill>
+		<skill rating="4">C#</skill>
+		<skill rating="4">Python</skill>
+		<skill rating="5">PHP</skill>
+		<skill rating="1">XSLT</skill>
+		<skill rating="3">MongoDB (NoSQL)</skill>
+		<skill rating="5">MySQL</skill>
+		<skill rating="4">LINQ</skill>
+		<skill rating="3">WCF</skill>
+		<skill rating="3">IIS</skill>
+		<skill rating="4">ASP.NET</skill>
+		<skill rating="3">SQL Server (2005/2008)</skill>
+		<skill rating="3">WPF</skill>
+		<skill rating="1">Oracle 11g DB</skill>
+		<skill rating="3">Android Development</skill>
+		<skill rating="4">Linux</skill>
+		<skill rating="4">Javascript</skill>
+		<skill rating="4">CSS2/3</skill>
+		<skill rating="3">Subversion</skill>
+		<skill rating="3">Git</skill>
+	</skills>
+
+	<!--
+		Where did you go to school. 
+		What Year?
+		And any distictions with the format <distinction>Information Technology</distinction>. (This is from South-Africa don't you if you have this in your country)
+	-->
+	<school>
+		<name>Swartland Hoerskool</name>
+		<year>2009</year>
+		<distinctions>
+			<distinction>Information Technology</distinction>
+			<distinction>Life Sciences</distinction>
+		</distinctions>
+	</school>
+
+	<!--
+		Any Training/Qaulifications etc. you have would go here.
+		<edu>
+			<name>Name of Training/Qaulifcation</name>
+			<logo>Filename of Logo under assets/custom</logo>
+			<timeframe>Year when you received this</timeframe>
+			<description>
+				Nice little description on why or how easy it was for you :D
+			</description>
+		</edu>
+
+		Could'nt include the logos as I'm not sure if I may distribute it like that
+	-->
+	<education>
+		<edu>
+			<name>CCNA - Cisco Certified Network Associate</name>
+			<logo>logo.jpg</logo>
+			<timeframe>2010</timeframe>
+			<description>
+				Description Here
+			</description>
+		</edu>
+		<edu>
+			<name>CCNP - Cisco Certified Network Professional</name>
+			<logo>logo.jpg</logo>
+			<timeframe>2011</timeframe>
+			<description>
+				Description Here
+			</description>
+		</edu>
+		<edu>
+			<name>MCPD - Microsoft Certified Professional Developer</name>
+			<logo>logo.png</logo>
+			<timeframe>2010</timeframe>
+			<description>
+				Description Here
+			</description>
+		</edu>
+		<edu>
+			<name>MCITP - Microsoft Certified Information Technology Specialist</name>
+			<logo>logo.png</logo>
+			<timeframe>2010</timeframe>
+			<description>
+				Description Here
+			</description>
+		</edu>
+		<edu>
+			<name>ITIL Foundations V3 (Green Badge)</name>
+			<logo>logo.png</logo>
+			<timeframe>2010</timeframe>
+			<description>
+				Description Here
+			</description>
+		</edu>
+		<edu>
+			<name>CBP Project Management</name>
+			<logo>logo.png</logo>
+			<timeframe>2010</timeframe>
+			<description>
+				Description Here
+			</description>
+		</edu>
+	</education>
+
+	<!--
+		Any Experience you may have this can be either from a Company or a Freelance Project
+
+		<company>
+			<name>Company I worked at</name>
+			<started year="2010" month="10" />
+			
+			/* Remove if this to render current if this is your current company your working at */
+			<ended year="2010" month="10" />
+			<logo>logo.png</logo>
+			<tel>xxx xxx xxxx</tel>
+			<description>
+				Describe what you did at the company and how GREAT you were
+			</description>
+			<projects>
+				<project>
+					<name>Project Example</name>
+					<date year="2011" month="04" />
+					<url>http://www.example.com</url>
+					<description>Description Here</description>
+					<logo>logo.png</logo>
+					<technologies>
+						<tech>C#</tech>
+						<tech>MVC 3</tech>
+						<tech>ASP.NET</tech>
+						<tech>MySQL Server</tech>
+						<tech>IIS</tech>
+						<tech>CSS</tech>
+						<tech>HTML4 / 5</tech>
+						<tech>JQuery</tech>
+					</technologies>
+				</project>
+			</projects>
+		</company>
+
+		<freelance>
+			<name>Freelance Project</name>
+			<date year="2010" month="12" />
+			<url>http://www.example.com</url>
+			<description>Description Here</description>
+			<logo>logo.png</logo>
+			<technologies>
+				<tech>PHP</tech>
+				<tech>MySQL</tech>
+				<tech>Linux</tech>
+				<tech>Apache</tech>
+				<tech>Codeigniter</tech>
+			</technologies>
+		</freelance>
+	-->
+	<experience>
+		<company>
+			<name>Company I worked at</name>
+			<started year="2010" month="10" />
+
+			<!-- Leave this out for current -->
+			<!--<ended year="2010" month="10" />-->
+			<logo>logo.png</logo>
+			<tel>xxx xxx xxxx</tel>
+			<description>
+				Describe what you did at the company and how GREAT you were
+			</description>
+			<projects>
+				<project>
+					<name>Project Example</name>
+					<date year="2011" month="04" />
+					<url>http://www.example.com</url>
+					<description>Description Here</description>
+					<logo>logo.png</logo>
+					<technologies>
+						<tech>C#</tech>
+						<tech>MVC 3</tech>
+						<tech>ASP.NET</tech>
+						<tech>MySQL Server</tech>
+						<tech>IIS</tech>
+						<tech>CSS</tech>
+						<tech>HTML4 / 5</tech>
+						<tech>JQuery</tech>
+					</technologies>
+				</project>
+			</projects>
+		</company>
+		<freelance>
+			<name>Freelance Project</name>
+			<date year="2010" month="12" />
+			<url>http://www.example.com</url>
+			<description>Description Here</description>
+			<logo>logo.png</logo>
+			<technologies>
+				<tech>PHP</tech>
+				<tech>MySQL</tech>
+				<tech>Linux</tech>
+				<tech>Apache</tech>
+				<tech>Codeigniter</tech>
+			</technologies>
+		</freelance>
+	</experience>
+
+	<!--
+		Any Open Source Projects you have
+
+		<project>
+			<name>CV Generator</name>
+			<url>https://github.com/Johanndutoit/Curriculum-Vitae-Manager</url>
+			<logo>project.png</logo>
+			<technologies>
+				<tech>Python</tech>
+				<tech>XML</tech>
+				<tech>HTML</tech>
+				<tech>CSS</tech>
+				<tech>QT</tech>
+				<tech>PySide</tech>
+			</technologies>
+			<description>
+				Description of the Project
+			</description>
+		</project>
+	-->
+	<opensourceprojects>
+		<project>
+			<name>CV Generator</name>
+			<url>https://github.com/Johanndutoit/Curriculum-Vitae-Manager</url>
+			<logo>project.png</logo>
+			<technologies>
+				<tech>Python</tech>
+				<tech>XML</tech>
+				<tech>HTML</tech>
+				<tech>CSS</tech>
+				<tech>QT</tech>
+				<tech>PySide</tech>
+			</technologies>
+			<description>
+				Wanted to be able to generate a good looking CV dynamic from a XML file. So I can just update the XML file and the script would output the CV in a PDF format. This CV was generated with this Script.
+			</description>
+		</project>
+		<project>
+			<name>Pck Compass</name>
+			<url>https://github.com/Johanndutoit/PckCompass</url>
+			<logo>project.png</logo>
+			<technologies>
+				<tech>Python</tech>
+				<tech>Linux</tech>
+				<tech>Qt</tech>
+				<tech>PySide</tech>
+			</technologies>
+			<description>
+				Provides a easy tool to create local (offline) Repositories which will allow Users to install offline and say update from a computer  (running windows, mac or linux) at work. Inspired by the expensive prices of Cap in South-Africa
+			</description>
+		</project>
+	</opensourceprojects>
+</cvdata>

@@ -1,0 +1,48 @@
+[
+  {
+    "selected" : false,
+    "frame" : "{{0, 0}, {240, 240}}",
+    "class" : "View",
+    "nodes" : [
+      {
+        "selected" : true,
+        "frame" : "{{28, 82}, {193, 107}}",
+        "class" : "WebView",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "WH",
+          "frame" : "{{20, 20}, {200, 200}}",
+          "scales_to_fit" : true,
+          "class" : "WebView",
+          "name" : "webview1",
+          "uuid" : "3110DADE-F7C0-4EB0-8C67-72C7772758D1"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{28, 23}, {97, 32}}",
+        "class" : "Button",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "font_size" : 15,
+          "frame" : "{{80, 104}, {80, 32}}",
+          "title" : "drück mich",
+          "class" : "Button",
+          "name" : "button1",
+          "uuid" : "3FA74749-D096-4EF9-A0FB-C3CEE0DE5432"
+        }
+      }
+    ],
+    "attributes" : {
+      "enabled" : true,
+      "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+      "tint_color" : "RGBA(0.000000,0.478000,1.000000,1.000000)",
+      "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+      "flex" : ""
+    }
+  }
+]

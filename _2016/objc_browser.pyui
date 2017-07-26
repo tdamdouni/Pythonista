@@ -1,0 +1,126 @@
+[
+  {
+    "selected" : false,
+    "frame" : "{{0, 0}, {700, 540}}",
+    "class" : "View",
+    "nodes" : [
+      {
+        "selected" : false,
+        "frame" : "{{6, 6}, {250, 32}}",
+        "class" : "TextField",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "placeholder" : "Filter Classes",
+          "flex" : "WRB",
+          "font_name" : "<System>",
+          "frame" : "{{170, 254}, {200, 32}}",
+          "spellchecking_type" : "no",
+          "class" : "TextField",
+          "uuid" : "A76AE27E-FC97-4617-B5F3-838F5785BDC9",
+          "alignment" : "left",
+          "autocorrection_type" : "no",
+          "name" : "find",
+          "font_size" : 17
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{662, 6}, {32, 32}}",
+        "class" : "Button",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "LB",
+          "font_size" : 15,
+          "frame" : "{{230, 254}, {80, 32}}",
+          "title" : "",
+          "uuid" : "1A357BC7-6AC6-474C-91FB-DAEC5A7B797B",
+          "class" : "Button",
+          "name" : "settings",
+          "image_name" : "iob:ios7_cog_outline_32"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{6, 46}, {250, 488}}",
+        "class" : "TableView",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "uuid" : "61FF2E18-AB1F-4936-B4E9-4AB501FFC34E",
+          "corner_radius" : 0,
+          "content_height" : 569,
+          "frame" : "{{0, 185}, {200, 200}}",
+          "data_source_items" : "",
+          "data_source_number_of_lines" : 1,
+          "border_width" : 0,
+          "content_width" : 200,
+          "background_color" : "RGBA(0.937255,0.937255,0.956863,1.000000)",
+          "data_source_delete_enabled" : false,
+          "data_source_font_size" : 18,
+          "row_height" : 44,
+          "class" : "TableView",
+          "name" : "classes",
+          "flex" : "WHRB"
+        }
+      },
+      {
+        "selected" : true,
+        "frame" : "{{264, 46}, {425, 488}}",
+        "class" : "View",
+        "nodes" : [
+          {
+            "selected" : true,
+            "frame" : "{{6, 6}, {200, 476}}",
+            "class" : "TableView",
+            "nodes" : [
+
+            ],
+            "attributes" : {
+              "flex" : "WHRB",
+              "data_source_items" : "",
+              "data_source_font_size" : 18,
+              "frame" : "{{63, 144}, {200, 200}}",
+              "data_source_number_of_lines" : 1,
+              "background_color" : "RGBA(1.0, 1.0, 1.0, 1.0)",
+              "class" : "TableView",
+              "uuid" : "C466A6D2-2532-414E-B79E-472E37699ED8",
+              "data_source_delete_enabled" : false,
+              "name" : "table",
+              "row_height" : 44
+            }
+          }
+        ],
+        "attributes" : {
+          "uuid" : "DCE4FFB2-84AA-4F21-A913-E363C96D6305",
+          "corner_radius" : 0,
+          "background_color" : "RGBA(0.937255,0.937255,0.956863,1.000000)",
+          "frame" : "{{220, 220}, {100, 100}}",
+          "data_source_items" : "",
+          "content_height" : 569,
+          "border_width" : 0,
+          "data_source_number_of_lines" : 1,
+          "content_width" : 200,
+          "data_source_delete_enabled" : false,
+          "data_source_font_size" : 18,
+          "row_height" : 44,
+          "class" : "View",
+          "name" : "selected",
+          "flex" : "WHRB"
+        }
+      }
+    ],
+    "attributes" : {
+      "flex" : "",
+      "enabled" : true,
+      "tint_color" : "RGBA(0.000000,0.478000,1.000000,1.000000)",
+      "name" : "main",
+      "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+      "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)"
+    }
+  }
+]

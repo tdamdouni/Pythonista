@@ -1,0 +1,2021 @@
+[
+  {
+    "selected" : false,
+    "frame" : "{{0, 0}, {320, 568}}",
+    "class" : "View",
+    "nodes" : [
+      {
+        "selected" : false,
+        "frame" : "{{0, 0}, {320, 568}}",
+        "class" : "Button",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "",
+          "action" : "kbrd_dismiss",
+          "enabled" : true,
+          "title" : "Button",
+          "uuid" : "E5B7771F-A6D8-45B0-A374-66466DC94249",
+          "font_bold" : false,
+          "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "font_size" : 15,
+          "name" : "kbrd_dism"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{6, 70}, {308, 413}}",
+        "class" : "View",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "",
+          "enabled" : true,
+          "custom_class" : "CloseView",
+          "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "corner_radius" : 10,
+          "uuid" : "35D8150C-457B-441F-B18D-2370D0360CD4",
+          "name" : "kbrd_view"
+        }
+      },
+      {
+        "selected" : true,
+        "frame" : "{{6, 70}, {308, 413}}",
+        "class" : "TextView",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "uuid" : "F6D9936E-6160-445A-8EBC-D849F2ED5EA1",
+          "flex" : "",
+          "corner_radius" : 10,
+          "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+          "border_color" : "RGBA(0.785714,0.785714,0.785714,1.000000)",
+          "editable" : false,
+          "border_width" : 1,
+          "alignment" : "left",
+          "autocorrection_type" : "no",
+          "enabled" : true,
+          "text" : "",
+          "text_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "font_name" : "AppleSDGothicNeo-Regular",
+          "spellchecking_type" : "no",
+          "name" : "txMain",
+          "font_size" : 18
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{6, 491}, {270, 71}}",
+        "class" : "ScrollView",
+        "nodes" : [
+          {
+            "selected" : false,
+            "frame" : "{{0, 0}, {30, 30}}",
+            "class" : "Button",
+            "nodes" : [
+
+            ],
+            "attributes" : {
+              "uuid" : "8235A4F9-AC6C-4ABB-9D8F-889BC82DE034",
+              "flex" : "",
+              "corner_radius" : 0,
+              "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+              "border_color" : "RGBA(0.928571,0.928571,0.928571,1.000000)",
+              "border_width" : 0,
+              "title" : "😀",
+              "action" : "smile_add",
+              "enabled" : true,
+              "font_bold" : false,
+              "name" : "button1",
+              "font_size" : 25
+            }
+          },
+          {
+            "selected" : false,
+            "frame" : "{{30, 0}, {30, 30}}",
+            "class" : "Button",
+            "nodes" : [
+
+            ],
+            "attributes" : {
+              "uuid" : "6D1D61CD-BE88-4A22-8C35-15531D3ED76D",
+              "flex" : "",
+              "corner_radius" : 0,
+              "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+              "border_color" : "RGBA(0.928571,0.928571,0.928571,1.000000)",
+              "border_width" : 0,
+              "title" : "😁",
+              "action" : "smile_add",
+              "enabled" : true,
+              "font_bold" : false,
+              "name" : "button2",
+              "font_size" : 25
+            }
+          },
+          {
+            "selected" : false,
+            "frame" : "{{60, 0}, {30, 30}}",
+            "class" : "Button",
+            "nodes" : [
+
+            ],
+            "attributes" : {
+              "uuid" : "B046A106-8238-4D1B-B412-44FFEA71EBA9",
+              "flex" : "",
+              "corner_radius" : 0,
+              "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+              "border_color" : "RGBA(0.928571,0.928571,0.928571,1.000000)",
+              "border_width" : 0,
+              "title" : "😂",
+              "action" : "smile_add",
+              "enabled" : true,
+              "font_bold" : false,
+              "name" : "button3",
+              "font_size" : 25
+            }
+          },
+          {
+            "selected" : false,
+            "frame" : "{{90, 0}, {30, 30}}",
+            "class" : "Button",
+            "nodes" : [
+
+            ],
+            "attributes" : {
+              "uuid" : "14D5E37B-68CB-42A7-A865-C042E4DB5146",
+              "flex" : "",
+              "corner_radius" : 0,
+              "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+              "border_color" : "RGBA(0.928571,0.928571,0.928571,1.000000)",
+              "border_width" : 0,
+              "title" : "😃",
+              "action" : "smile_add",
+              "enabled" : true,
+              "font_bold" : false,
+              "name" : "button4",
+              "font_size" : 25
+            }
+          },
+          {
+            "selected" : false,
+            "frame" : "{{120, 0}, {30, 30}}",
+            "class" : "Button",
+            "nodes" : [
+
+            ],
+            "attributes" : {
+              "uuid" : "9EA9B15C-0E88-4744-B1C8-2304C51D50D7",
+              "flex" : "",
+              "corner_radius" : 0,
+              "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+              "border_color" : "RGBA(0.928571,0.928571,0.928571,1.000000)",
+              "border_width" : 0,
+              "title" : "😄",
+              "action" : "smile_add",
+              "enabled" : true,
+              "font_bold" : false,
+              "name" : "button5",
+              "font_size" : 25
+            }
+          },
+          {
+            "selected" : false,
+            "frame" : "{{150, 0}, {30, 30}}",
+            "class" : "Button",
+            "nodes" : [
+
+            ],
+            "attributes" : {
+              "uuid" : "0543FD24-C56F-4C10-92A7-B7B0238ECA27",
+              "flex" : "",
+              "corner_radius" : 0,
+              "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+              "border_color" : "RGBA(0.928571,0.928571,0.928571,1.000000)",
+              "border_width" : 0,
+              "title" : "😅",
+              "action" : "smile_add",
+              "enabled" : true,
+              "font_bold" : false,
+              "name" : "button6",
+              "font_size" : 25
+            }
+          },
+          {
+            "selected" : false,
+            "frame" : "{{180, 0}, {30, 30}}",
+            "class" : "Button",
+            "nodes" : [
+
+            ],
+            "attributes" : {
+              "uuid" : "4D6D1666-108B-4517-B040-D1ECDCD742FC",
+              "flex" : "",
+              "corner_radius" : 0,
+              "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+              "border_color" : "RGBA(0.928571,0.928571,0.928571,1.000000)",
+              "border_width" : 0,
+              "title" : "😆",
+              "action" : "smile_add",
+              "enabled" : true,
+              "font_bold" : false,
+              "name" : "button7",
+              "font_size" : 25
+            }
+          },
+          {
+            "selected" : false,
+            "frame" : "{{210, 0}, {30, 30}}",
+            "class" : "Button",
+            "nodes" : [
+
+            ],
+            "attributes" : {
+              "uuid" : "08CDEB86-3B1C-44AF-8C08-490991AE0FC6",
+              "flex" : "",
+              "corner_radius" : 0,
+              "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+              "border_color" : "RGBA(0.928571,0.928571,0.928571,1.000000)",
+              "border_width" : 0,
+              "title" : "😇",
+              "action" : "smile_add",
+              "enabled" : true,
+              "font_bold" : false,
+              "name" : "button8",
+              "font_size" : 25
+            }
+          },
+          {
+            "selected" : false,
+            "frame" : "{{240, 0}, {30, 30}}",
+            "class" : "Button",
+            "nodes" : [
+
+            ],
+            "attributes" : {
+              "uuid" : "063A8A05-365F-49F9-BA65-343DAA2B23B8",
+              "flex" : "",
+              "corner_radius" : 0,
+              "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+              "border_color" : "RGBA(0.928571,0.928571,0.928571,1.000000)",
+              "border_width" : 0,
+              "title" : "😈",
+              "action" : "smile_add",
+              "enabled" : true,
+              "font_bold" : false,
+              "name" : "button9",
+              "font_size" : 25
+            }
+          },
+          {
+            "selected" : false,
+            "frame" : "{{0, 30}, {30, 30}}",
+            "class" : "Button",
+            "nodes" : [
+
+            ],
+            "attributes" : {
+              "uuid" : "A2418FFD-AEC0-4E28-851A-5D67C53AC2FF",
+              "flex" : "",
+              "corner_radius" : 0,
+              "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+              "border_color" : "RGBA(0.928571,0.928571,0.928571,1.000000)",
+              "border_width" : 0,
+              "title" : "👿",
+              "action" : "smile_add",
+              "enabled" : true,
+              "font_bold" : false,
+              "name" : "button10",
+              "font_size" : 25
+            }
+          },
+          {
+            "selected" : false,
+            "frame" : "{{30, 30}, {30, 30}}",
+            "class" : "Button",
+            "nodes" : [
+
+            ],
+            "attributes" : {
+              "uuid" : "5BEA429D-0E1F-486F-B708-EE71C1A7BC57",
+              "flex" : "",
+              "corner_radius" : 0,
+              "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+              "border_color" : "RGBA(0.928571,0.928571,0.928571,1.000000)",
+              "border_width" : 0,
+              "title" : "😉",
+              "action" : "smile_add",
+              "enabled" : true,
+              "font_bold" : false,
+              "name" : "button11",
+              "font_size" : 25
+            }
+          },
+          {
+            "selected" : false,
+            "frame" : "{{60, 30}, {30, 30}}",
+            "class" : "Button",
+            "nodes" : [
+
+            ],
+            "attributes" : {
+              "uuid" : "EF49EA09-2415-4B21-B7D8-8E0496E17D6E",
+              "flex" : "",
+              "corner_radius" : 0,
+              "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+              "border_color" : "RGBA(0.928571,0.928571,0.928571,1.000000)",
+              "border_width" : 0,
+              "title" : "😊",
+              "action" : "smile_add",
+              "enabled" : true,
+              "font_bold" : false,
+              "name" : "button12",
+              "font_size" : 25
+            }
+          },
+          {
+            "selected" : false,
+            "frame" : "{{90, 30}, {30, 30}}",
+            "class" : "Button",
+            "nodes" : [
+
+            ],
+            "attributes" : {
+              "uuid" : "F7550B58-3D05-4DC3-AB35-C22513F38E6B",
+              "flex" : "",
+              "corner_radius" : 0,
+              "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+              "border_color" : "RGBA(0.928571,0.928571,0.928571,1.000000)",
+              "border_width" : 0,
+              "title" : "☺️",
+              "action" : "smile_add",
+              "enabled" : true,
+              "font_bold" : false,
+              "name" : "button13",
+              "font_size" : 25
+            }
+          },
+          {
+            "selected" : false,
+            "frame" : "{{120, 30}, {30, 30}}",
+            "class" : "Button",
+            "nodes" : [
+
+            ],
+            "attributes" : {
+              "uuid" : "8ECA49AD-7024-448B-B0E5-1DCCEA721242",
+              "flex" : "",
+              "corner_radius" : 0,
+              "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+              "border_color" : "RGBA(0.928571,0.928571,0.928571,1.000000)",
+              "border_width" : 0,
+              "title" : "😋",
+              "action" : "smile_add",
+              "enabled" : true,
+              "font_bold" : false,
+              "name" : "button14",
+              "font_size" : 25
+            }
+          },
+          {
+            "selected" : false,
+            "frame" : "{{150, 30}, {30, 30}}",
+            "class" : "Button",
+            "nodes" : [
+
+            ],
+            "attributes" : {
+              "uuid" : "A0A4D7AE-2633-4A16-B207-D7A370DCFCA7",
+              "flex" : "",
+              "corner_radius" : 0,
+              "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+              "border_color" : "RGBA(0.928571,0.928571,0.928571,1.000000)",
+              "border_width" : 0,
+              "title" : "😌",
+              "action" : "smile_add",
+              "enabled" : true,
+              "font_bold" : false,
+              "name" : "button15",
+              "font_size" : 25
+            }
+          },
+          {
+            "selected" : false,
+            "frame" : "{{180, 30}, {30, 30}}",
+            "class" : "Button",
+            "nodes" : [
+
+            ],
+            "attributes" : {
+              "uuid" : "756C1EBD-1E2D-4669-BBD8-CDD01F2E1CCF",
+              "flex" : "",
+              "corner_radius" : 0,
+              "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+              "border_color" : "RGBA(0.928571,0.928571,0.928571,1.000000)",
+              "border_width" : 0,
+              "title" : "😍",
+              "action" : "smile_add",
+              "enabled" : true,
+              "font_bold" : false,
+              "name" : "button16",
+              "font_size" : 25
+            }
+          },
+          {
+            "selected" : false,
+            "frame" : "{{210, 30}, {30, 30}}",
+            "class" : "Button",
+            "nodes" : [
+
+            ],
+            "attributes" : {
+              "uuid" : "73A68B16-75F6-4EC3-B551-A0F233DB83B7",
+              "flex" : "",
+              "corner_radius" : 0,
+              "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+              "border_color" : "RGBA(0.928571,0.928571,0.928571,1.000000)",
+              "border_width" : 0,
+              "title" : "😎",
+              "action" : "smile_add",
+              "enabled" : true,
+              "font_bold" : false,
+              "name" : "button17",
+              "font_size" : 25
+            }
+          },
+          {
+            "selected" : false,
+            "frame" : "{{240, 30}, {30, 30}}",
+            "class" : "Button",
+            "nodes" : [
+
+            ],
+            "attributes" : {
+              "uuid" : "52E3A89D-F975-4D35-A3D5-A2BE41B4DEC2",
+              "flex" : "",
+              "corner_radius" : 0,
+              "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+              "border_color" : "RGBA(0.928571,0.928571,0.928571,1.000000)",
+              "border_width" : 0,
+              "title" : "😏",
+              "action" : "smile_add",
+              "enabled" : true,
+              "font_bold" : false,
+              "name" : "button18",
+              "font_size" : 25
+            }
+          },
+          {
+            "selected" : false,
+            "frame" : "{{0, 60}, {30, 30}}",
+            "class" : "Button",
+            "nodes" : [
+
+            ],
+            "attributes" : {
+              "uuid" : "73BD3A43-755C-47D9-AFEB-41AC2517057C",
+              "flex" : "",
+              "corner_radius" : 0,
+              "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+              "border_color" : "RGBA(0.928571,0.928571,0.928571,1.000000)",
+              "border_width" : 0,
+              "title" : "😐",
+              "action" : "smile_add",
+              "enabled" : true,
+              "font_bold" : false,
+              "name" : "button19",
+              "font_size" : 25
+            }
+          },
+          {
+            "selected" : false,
+            "frame" : "{{30, 60}, {30, 30}}",
+            "class" : "Button",
+            "nodes" : [
+
+            ],
+            "attributes" : {
+              "uuid" : "0261628E-EBDE-4645-A6E0-C14CD965D472",
+              "flex" : "",
+              "corner_radius" : 0,
+              "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+              "border_color" : "RGBA(0.928571,0.928571,0.928571,1.000000)",
+              "border_width" : 0,
+              "title" : "😑",
+              "action" : "smile_add",
+              "enabled" : true,
+              "font_bold" : false,
+              "name" : "button20",
+              "font_size" : 25
+            }
+          },
+          {
+            "selected" : false,
+            "frame" : "{{60, 60}, {30, 30}}",
+            "class" : "Button",
+            "nodes" : [
+
+            ],
+            "attributes" : {
+              "uuid" : "675A70C9-C217-40F5-85F5-711512AB879E",
+              "flex" : "",
+              "corner_radius" : 0,
+              "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+              "border_color" : "RGBA(0.928571,0.928571,0.928571,1.000000)",
+              "border_width" : 0,
+              "title" : "😒",
+              "action" : "smile_add",
+              "enabled" : true,
+              "font_bold" : false,
+              "name" : "button21",
+              "font_size" : 25
+            }
+          },
+          {
+            "selected" : false,
+            "frame" : "{{90, 60}, {30, 30}}",
+            "class" : "Button",
+            "nodes" : [
+
+            ],
+            "attributes" : {
+              "uuid" : "3AD010EC-2853-4CF4-8F1A-EBC17EC7E079",
+              "flex" : "",
+              "corner_radius" : 0,
+              "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+              "border_color" : "RGBA(0.928571,0.928571,0.928571,1.000000)",
+              "border_width" : 0,
+              "title" : "😓",
+              "action" : "smile_add",
+              "enabled" : true,
+              "font_bold" : false,
+              "name" : "button22",
+              "font_size" : 25
+            }
+          },
+          {
+            "selected" : false,
+            "frame" : "{{120, 60}, {30, 30}}",
+            "class" : "Button",
+            "nodes" : [
+
+            ],
+            "attributes" : {
+              "uuid" : "ABA00813-2FD3-4697-87B1-402F12AB7A90",
+              "flex" : "",
+              "corner_radius" : 0,
+              "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+              "border_color" : "RGBA(0.928571,0.928571,0.928571,1.000000)",
+              "border_width" : 0,
+              "title" : "😔",
+              "action" : "smile_add",
+              "enabled" : true,
+              "font_bold" : false,
+              "name" : "button23",
+              "font_size" : 25
+            }
+          },
+          {
+            "selected" : false,
+            "frame" : "{{150, 60}, {30, 30}}",
+            "class" : "Button",
+            "nodes" : [
+
+            ],
+            "attributes" : {
+              "uuid" : "0BC52428-4383-418F-B039-E053089F1E2D",
+              "flex" : "",
+              "corner_radius" : 0,
+              "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+              "border_color" : "RGBA(0.928571,0.928571,0.928571,1.000000)",
+              "border_width" : 0,
+              "title" : "😕",
+              "action" : "smile_add",
+              "enabled" : true,
+              "font_bold" : false,
+              "name" : "button24",
+              "font_size" : 25
+            }
+          },
+          {
+            "selected" : false,
+            "frame" : "{{180, 60}, {30, 30}}",
+            "class" : "Button",
+            "nodes" : [
+
+            ],
+            "attributes" : {
+              "uuid" : "47F76B4D-21DD-4713-9A66-CEAFB750AD12",
+              "flex" : "",
+              "corner_radius" : 0,
+              "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+              "border_color" : "RGBA(0.928571,0.928571,0.928571,1.000000)",
+              "border_width" : 0,
+              "title" : "😖",
+              "action" : "smile_add",
+              "enabled" : true,
+              "font_bold" : false,
+              "name" : "button25",
+              "font_size" : 25
+            }
+          },
+          {
+            "selected" : false,
+            "frame" : "{{210, 60}, {30, 30}}",
+            "class" : "Button",
+            "nodes" : [
+
+            ],
+            "attributes" : {
+              "uuid" : "6DED7410-987D-4366-B6E4-65CC05DC9047",
+              "flex" : "",
+              "corner_radius" : 0,
+              "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+              "border_color" : "RGBA(0.928571,0.928571,0.928571,1.000000)",
+              "border_width" : 0,
+              "title" : "😗",
+              "action" : "smile_add",
+              "enabled" : true,
+              "font_bold" : false,
+              "name" : "button26",
+              "font_size" : 25
+            }
+          },
+          {
+            "selected" : false,
+            "frame" : "{{240, 60}, {30, 30}}",
+            "class" : "Button",
+            "nodes" : [
+
+            ],
+            "attributes" : {
+              "uuid" : "FF29793C-74B6-478D-8C04-20DE94A0E3D7",
+              "flex" : "",
+              "corner_radius" : 0,
+              "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+              "border_color" : "RGBA(0.928571,0.928571,0.928571,1.000000)",
+              "border_width" : 0,
+              "title" : "😘",
+              "action" : "smile_add",
+              "enabled" : true,
+              "font_bold" : false,
+              "name" : "button27",
+              "font_size" : 25
+            }
+          },
+          {
+            "selected" : false,
+            "frame" : "{{0, 90}, {30, 30}}",
+            "class" : "Button",
+            "nodes" : [
+
+            ],
+            "attributes" : {
+              "uuid" : "5876BC7C-E2DF-41C4-AD15-5D17C93A8C7E",
+              "flex" : "",
+              "corner_radius" : 0,
+              "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+              "border_color" : "RGBA(0.928571,0.928571,0.928571,1.000000)",
+              "border_width" : 0,
+              "title" : "😙",
+              "action" : "smile_add",
+              "enabled" : true,
+              "font_bold" : false,
+              "name" : "button28",
+              "font_size" : 25
+            }
+          },
+          {
+            "selected" : false,
+            "frame" : "{{30, 90}, {30, 30}}",
+            "class" : "Button",
+            "nodes" : [
+
+            ],
+            "attributes" : {
+              "uuid" : "2580CCA9-3995-4B4C-9C22-027C549E6736",
+              "flex" : "",
+              "corner_radius" : 0,
+              "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+              "border_color" : "RGBA(0.928571,0.928571,0.928571,1.000000)",
+              "border_width" : 0,
+              "title" : "😚",
+              "action" : "smile_add",
+              "enabled" : true,
+              "font_bold" : false,
+              "name" : "button29",
+              "font_size" : 25
+            }
+          },
+          {
+            "selected" : false,
+            "frame" : "{{60, 90}, {30, 30}}",
+            "class" : "Button",
+            "nodes" : [
+
+            ],
+            "attributes" : {
+              "uuid" : "5C007966-7678-4447-8900-EF1E8DC6AE12",
+              "flex" : "",
+              "corner_radius" : 0,
+              "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+              "border_color" : "RGBA(0.928571,0.928571,0.928571,1.000000)",
+              "border_width" : 0,
+              "title" : "😛",
+              "action" : "smile_add",
+              "enabled" : true,
+              "font_bold" : false,
+              "name" : "button30",
+              "font_size" : 25
+            }
+          },
+          {
+            "selected" : false,
+            "frame" : "{{90, 90}, {30, 30}}",
+            "class" : "Button",
+            "nodes" : [
+
+            ],
+            "attributes" : {
+              "uuid" : "5B3B1D90-D8D4-4462-BFDF-13FD59CA3C56",
+              "flex" : "",
+              "corner_radius" : 0,
+              "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+              "border_color" : "RGBA(0.928571,0.928571,0.928571,1.000000)",
+              "border_width" : 0,
+              "title" : "😜",
+              "action" : "smile_add",
+              "enabled" : true,
+              "font_bold" : false,
+              "name" : "button31",
+              "font_size" : 25
+            }
+          },
+          {
+            "selected" : false,
+            "frame" : "{{120, 90}, {30, 30}}",
+            "class" : "Button",
+            "nodes" : [
+
+            ],
+            "attributes" : {
+              "uuid" : "42F21F2C-BE50-4F1C-A735-932159BDE675",
+              "flex" : "",
+              "corner_radius" : 0,
+              "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+              "border_color" : "RGBA(0.928571,0.928571,0.928571,1.000000)",
+              "border_width" : 0,
+              "title" : "😝",
+              "action" : "smile_add",
+              "enabled" : true,
+              "font_bold" : false,
+              "name" : "button32",
+              "font_size" : 25
+            }
+          },
+          {
+            "selected" : false,
+            "frame" : "{{150, 90}, {30, 30}}",
+            "class" : "Button",
+            "nodes" : [
+
+            ],
+            "attributes" : {
+              "uuid" : "4FBD90F3-8B13-4B02-8F59-6F0D8E9220A9",
+              "flex" : "",
+              "corner_radius" : 0,
+              "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+              "border_color" : "RGBA(0.928571,0.928571,0.928571,1.000000)",
+              "border_width" : 0,
+              "title" : "😞",
+              "action" : "smile_add",
+              "enabled" : true,
+              "font_bold" : false,
+              "name" : "button33",
+              "font_size" : 25
+            }
+          },
+          {
+            "selected" : false,
+            "frame" : "{{180, 90}, {30, 30}}",
+            "class" : "Button",
+            "nodes" : [
+
+            ],
+            "attributes" : {
+              "uuid" : "47460EF8-A67F-4CCC-A6BE-B42B045CBA66",
+              "flex" : "",
+              "corner_radius" : 0,
+              "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+              "border_color" : "RGBA(0.928571,0.928571,0.928571,1.000000)",
+              "border_width" : 0,
+              "title" : "😟",
+              "action" : "smile_add",
+              "enabled" : true,
+              "font_bold" : false,
+              "name" : "button34",
+              "font_size" : 25
+            }
+          },
+          {
+            "selected" : false,
+            "frame" : "{{210, 90}, {30, 30}}",
+            "class" : "Button",
+            "nodes" : [
+
+            ],
+            "attributes" : {
+              "uuid" : "61998FE9-E2FD-4C5C-BE73-B75255832C63",
+              "flex" : "",
+              "corner_radius" : 0,
+              "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+              "border_color" : "RGBA(0.928571,0.928571,0.928571,1.000000)",
+              "border_width" : 0,
+              "title" : "😠",
+              "action" : "smile_add",
+              "enabled" : true,
+              "font_bold" : false,
+              "name" : "button35",
+              "font_size" : 25
+            }
+          },
+          {
+            "selected" : false,
+            "frame" : "{{240, 90}, {30, 30}}",
+            "class" : "Button",
+            "nodes" : [
+
+            ],
+            "attributes" : {
+              "uuid" : "9D0F8898-A6CF-4674-9D36-E1A7E90EE506",
+              "flex" : "",
+              "corner_radius" : 0,
+              "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+              "border_color" : "RGBA(0.928571,0.928571,0.928571,1.000000)",
+              "border_width" : 0,
+              "title" : "😡",
+              "action" : "smile_add",
+              "enabled" : true,
+              "font_bold" : false,
+              "name" : "button36",
+              "font_size" : 25
+            }
+          },
+          {
+            "selected" : false,
+            "frame" : "{{0, 120}, {30, 30}}",
+            "class" : "Button",
+            "nodes" : [
+
+            ],
+            "attributes" : {
+              "uuid" : "16F43C38-7C49-400C-9411-A179C3FB7618",
+              "flex" : "",
+              "corner_radius" : 0,
+              "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+              "border_color" : "RGBA(0.928571,0.928571,0.928571,1.000000)",
+              "border_width" : 0,
+              "title" : "😢",
+              "action" : "smile_add",
+              "enabled" : true,
+              "font_bold" : false,
+              "name" : "button37",
+              "font_size" : 25
+            }
+          },
+          {
+            "selected" : false,
+            "frame" : "{{30, 120}, {30, 30}}",
+            "class" : "Button",
+            "nodes" : [
+
+            ],
+            "attributes" : {
+              "uuid" : "8C56EFC2-2DEC-44A5-AAE3-EA6D9CCE5441",
+              "flex" : "",
+              "corner_radius" : 0,
+              "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+              "border_color" : "RGBA(0.928571,0.928571,0.928571,1.000000)",
+              "border_width" : 0,
+              "title" : "😣",
+              "action" : "smile_add",
+              "enabled" : true,
+              "font_bold" : false,
+              "name" : "button38",
+              "font_size" : 25
+            }
+          },
+          {
+            "selected" : false,
+            "frame" : "{{60, 120}, {30, 30}}",
+            "class" : "Button",
+            "nodes" : [
+
+            ],
+            "attributes" : {
+              "uuid" : "BD46D140-E285-472D-9989-BF46970B9782",
+              "flex" : "",
+              "corner_radius" : 0,
+              "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+              "border_color" : "RGBA(0.928571,0.928571,0.928571,1.000000)",
+              "border_width" : 0,
+              "title" : "😤",
+              "action" : "smile_add",
+              "enabled" : true,
+              "font_bold" : false,
+              "name" : "button39",
+              "font_size" : 25
+            }
+          },
+          {
+            "selected" : false,
+            "frame" : "{{90, 120}, {30, 30}}",
+            "class" : "Button",
+            "nodes" : [
+
+            ],
+            "attributes" : {
+              "uuid" : "D8B7F002-4A80-4DDA-BFA4-4FC0C50244A2",
+              "flex" : "",
+              "corner_radius" : 0,
+              "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+              "border_color" : "RGBA(0.928571,0.928571,0.928571,1.000000)",
+              "border_width" : 0,
+              "title" : "😥",
+              "action" : "smile_add",
+              "enabled" : true,
+              "font_bold" : false,
+              "name" : "button40",
+              "font_size" : 25
+            }
+          },
+          {
+            "selected" : false,
+            "frame" : "{{120, 120}, {30, 30}}",
+            "class" : "Button",
+            "nodes" : [
+
+            ],
+            "attributes" : {
+              "uuid" : "64C706EF-BF37-478E-BB9D-55A165F8A45A",
+              "flex" : "",
+              "corner_radius" : 0,
+              "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+              "border_color" : "RGBA(0.928571,0.928571,0.928571,1.000000)",
+              "border_width" : 0,
+              "title" : "😦",
+              "action" : "smile_add",
+              "enabled" : true,
+              "font_bold" : false,
+              "name" : "button41",
+              "font_size" : 25
+            }
+          },
+          {
+            "selected" : false,
+            "frame" : "{{150, 120}, {30, 30}}",
+            "class" : "Button",
+            "nodes" : [
+
+            ],
+            "attributes" : {
+              "uuid" : "6E73DB92-CFC8-41FD-A8C0-447F007C3888",
+              "flex" : "",
+              "corner_radius" : 0,
+              "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+              "border_color" : "RGBA(0.928571,0.928571,0.928571,1.000000)",
+              "border_width" : 0,
+              "title" : "😧",
+              "action" : "smile_add",
+              "enabled" : true,
+              "font_bold" : false,
+              "name" : "button42",
+              "font_size" : 25
+            }
+          },
+          {
+            "selected" : false,
+            "frame" : "{{180, 120}, {30, 30}}",
+            "class" : "Button",
+            "nodes" : [
+
+            ],
+            "attributes" : {
+              "uuid" : "5205F7DE-47B3-4507-9D59-AE209A7E470B",
+              "flex" : "",
+              "corner_radius" : 0,
+              "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+              "border_color" : "RGBA(0.928571,0.928571,0.928571,1.000000)",
+              "border_width" : 0,
+              "title" : "😨",
+              "action" : "smile_add",
+              "enabled" : true,
+              "font_bold" : false,
+              "name" : "button43",
+              "font_size" : 25
+            }
+          },
+          {
+            "selected" : false,
+            "frame" : "{{210, 120}, {30, 30}}",
+            "class" : "Button",
+            "nodes" : [
+
+            ],
+            "attributes" : {
+              "uuid" : "A390C2A7-3FD5-45E7-B0D5-2632D36D3480",
+              "flex" : "",
+              "corner_radius" : 0,
+              "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+              "border_color" : "RGBA(0.928571,0.928571,0.928571,1.000000)",
+              "border_width" : 0,
+              "title" : "😩",
+              "action" : "smile_add",
+              "enabled" : true,
+              "font_bold" : false,
+              "name" : "button44",
+              "font_size" : 25
+            }
+          },
+          {
+            "selected" : false,
+            "frame" : "{{240, 120}, {30, 30}}",
+            "class" : "Button",
+            "nodes" : [
+
+            ],
+            "attributes" : {
+              "uuid" : "E09BEEC7-264F-4DFD-AF6D-A04E6D32071E",
+              "flex" : "",
+              "corner_radius" : 0,
+              "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+              "border_color" : "RGBA(0.928571,0.928571,0.928571,1.000000)",
+              "border_width" : 0,
+              "title" : "😪",
+              "action" : "smile_add",
+              "enabled" : true,
+              "font_bold" : false,
+              "name" : "button45",
+              "font_size" : 25
+            }
+          },
+          {
+            "selected" : false,
+            "frame" : "{{0, 150}, {30, 30}}",
+            "class" : "Button",
+            "nodes" : [
+
+            ],
+            "attributes" : {
+              "uuid" : "61FD90DA-0C3C-4FF4-8EA7-855476F26183",
+              "flex" : "",
+              "corner_radius" : 0,
+              "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+              "border_color" : "RGBA(0.928571,0.928571,0.928571,1.000000)",
+              "border_width" : 0,
+              "title" : "😫",
+              "action" : "smile_add",
+              "enabled" : true,
+              "font_bold" : false,
+              "name" : "button46",
+              "font_size" : 25
+            }
+          },
+          {
+            "selected" : false,
+            "frame" : "{{30, 150}, {30, 30}}",
+            "class" : "Button",
+            "nodes" : [
+
+            ],
+            "attributes" : {
+              "uuid" : "5C251B15-109A-4BA7-9DCF-B1E22C6321F0",
+              "flex" : "",
+              "corner_radius" : 0,
+              "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+              "border_color" : "RGBA(0.928571,0.928571,0.928571,1.000000)",
+              "border_width" : 0,
+              "title" : "😬",
+              "action" : "smile_add",
+              "enabled" : true,
+              "font_bold" : false,
+              "name" : "button47",
+              "font_size" : 25
+            }
+          },
+          {
+            "selected" : false,
+            "frame" : "{{60, 150}, {30, 30}}",
+            "class" : "Button",
+            "nodes" : [
+
+            ],
+            "attributes" : {
+              "uuid" : "CF9CF380-7B0E-45E6-BFD1-B5BAF697B1EC",
+              "flex" : "",
+              "corner_radius" : 0,
+              "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+              "border_color" : "RGBA(0.928571,0.928571,0.928571,1.000000)",
+              "border_width" : 0,
+              "title" : "😭",
+              "action" : "smile_add",
+              "enabled" : true,
+              "font_bold" : false,
+              "name" : "button48",
+              "font_size" : 25
+            }
+          },
+          {
+            "selected" : false,
+            "frame" : "{{90, 150}, {30, 30}}",
+            "class" : "Button",
+            "nodes" : [
+
+            ],
+            "attributes" : {
+              "uuid" : "64CCC278-9BC5-431F-9BA3-175A2B8A84DB",
+              "flex" : "",
+              "corner_radius" : 0,
+              "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+              "border_color" : "RGBA(0.928571,0.928571,0.928571,1.000000)",
+              "border_width" : 0,
+              "title" : "😮",
+              "action" : "smile_add",
+              "enabled" : true,
+              "font_bold" : false,
+              "name" : "button49",
+              "font_size" : 25
+            }
+          },
+          {
+            "selected" : false,
+            "frame" : "{{120, 150}, {30, 30}}",
+            "class" : "Button",
+            "nodes" : [
+
+            ],
+            "attributes" : {
+              "uuid" : "62FC9D75-893D-4EDA-89B8-084972CAF596",
+              "flex" : "",
+              "corner_radius" : 0,
+              "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+              "border_color" : "RGBA(0.928571,0.928571,0.928571,1.000000)",
+              "border_width" : 0,
+              "title" : "😯",
+              "action" : "smile_add",
+              "enabled" : true,
+              "font_bold" : false,
+              "name" : "button50",
+              "font_size" : 25
+            }
+          },
+          {
+            "selected" : false,
+            "frame" : "{{150, 150}, {30, 30}}",
+            "class" : "Button",
+            "nodes" : [
+
+            ],
+            "attributes" : {
+              "uuid" : "21EA67CF-8EDF-4467-8577-8C4250201026",
+              "flex" : "",
+              "corner_radius" : 0,
+              "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+              "border_color" : "RGBA(0.928571,0.928571,0.928571,1.000000)",
+              "border_width" : 0,
+              "title" : "😰",
+              "action" : "smile_add",
+              "enabled" : true,
+              "font_bold" : false,
+              "name" : "button51",
+              "font_size" : 25
+            }
+          },
+          {
+            "selected" : false,
+            "frame" : "{{180, 150}, {30, 30}}",
+            "class" : "Button",
+            "nodes" : [
+
+            ],
+            "attributes" : {
+              "uuid" : "1FAF07A4-E2E8-49D0-BC40-1F61936A0B75",
+              "flex" : "",
+              "corner_radius" : 0,
+              "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+              "border_color" : "RGBA(0.928571,0.928571,0.928571,1.000000)",
+              "border_width" : 0,
+              "title" : "😱",
+              "action" : "smile_add",
+              "enabled" : true,
+              "font_bold" : false,
+              "name" : "button52",
+              "font_size" : 25
+            }
+          },
+          {
+            "selected" : false,
+            "frame" : "{{210, 150}, {30, 30}}",
+            "class" : "Button",
+            "nodes" : [
+
+            ],
+            "attributes" : {
+              "uuid" : "DD0CD102-8814-4F2D-B8F2-1CB9DBBC9F47",
+              "flex" : "",
+              "corner_radius" : 0,
+              "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+              "border_color" : "RGBA(0.928571,0.928571,0.928571,1.000000)",
+              "border_width" : 0,
+              "title" : "😲",
+              "action" : "smile_add",
+              "enabled" : true,
+              "font_bold" : false,
+              "name" : "button53",
+              "font_size" : 25
+            }
+          },
+          {
+            "selected" : false,
+            "frame" : "{{240, 150}, {30, 30}}",
+            "class" : "Button",
+            "nodes" : [
+
+            ],
+            "attributes" : {
+              "uuid" : "147CAC59-7A1A-4E1B-A667-3B1D963A72F7",
+              "flex" : "",
+              "corner_radius" : 0,
+              "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+              "border_color" : "RGBA(0.928571,0.928571,0.928571,1.000000)",
+              "border_width" : 0,
+              "title" : "😳",
+              "action" : "smile_add",
+              "enabled" : true,
+              "font_bold" : false,
+              "name" : "button54",
+              "font_size" : 25
+            }
+          },
+          {
+            "selected" : false,
+            "frame" : "{{0, 180}, {30, 30}}",
+            "class" : "Button",
+            "nodes" : [
+
+            ],
+            "attributes" : {
+              "uuid" : "2376C1E8-D102-4F76-BDE6-1B4B33324546",
+              "flex" : "",
+              "corner_radius" : 0,
+              "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+              "border_color" : "RGBA(0.928571,0.928571,0.928571,1.000000)",
+              "border_width" : 0,
+              "title" : "😴",
+              "action" : "smile_add",
+              "enabled" : true,
+              "font_bold" : false,
+              "name" : "button55",
+              "font_size" : 25
+            }
+          },
+          {
+            "selected" : false,
+            "frame" : "{{30, 180}, {30, 30}}",
+            "class" : "Button",
+            "nodes" : [
+
+            ],
+            "attributes" : {
+              "uuid" : "1C86F2E4-A6B7-4CF2-82E0-FB9E0EFACEB3",
+              "flex" : "",
+              "corner_radius" : 0,
+              "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+              "border_color" : "RGBA(0.928571,0.928571,0.928571,1.000000)",
+              "border_width" : 0,
+              "title" : "😵",
+              "action" : "smile_add",
+              "enabled" : true,
+              "font_bold" : false,
+              "name" : "button56",
+              "font_size" : 25
+            }
+          },
+          {
+            "selected" : false,
+            "frame" : "{{60, 180}, {30, 30}}",
+            "class" : "Button",
+            "nodes" : [
+
+            ],
+            "attributes" : {
+              "uuid" : "C57110C5-B32C-4A68-9D09-1CAE4C00F709",
+              "flex" : "",
+              "corner_radius" : 0,
+              "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+              "border_color" : "RGBA(0.928571,0.928571,0.928571,1.000000)",
+              "border_width" : 0,
+              "title" : "😶",
+              "action" : "smile_add",
+              "enabled" : true,
+              "font_bold" : false,
+              "name" : "button57",
+              "font_size" : 25
+            }
+          },
+          {
+            "selected" : false,
+            "frame" : "{{90, 180}, {30, 30}}",
+            "class" : "Button",
+            "nodes" : [
+
+            ],
+            "attributes" : {
+              "uuid" : "F4B160E5-C51B-43D7-8D38-ABFF2E4521FB",
+              "flex" : "",
+              "corner_radius" : 0,
+              "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+              "border_color" : "RGBA(0.928571,0.928571,0.928571,1.000000)",
+              "border_width" : 0,
+              "title" : "😷",
+              "action" : "smile_add",
+              "enabled" : true,
+              "font_bold" : false,
+              "name" : "button58",
+              "font_size" : 25
+            }
+          },
+          {
+            "selected" : false,
+            "frame" : "{{120, 180}, {30, 30}}",
+            "class" : "Button",
+            "nodes" : [
+
+            ],
+            "attributes" : {
+              "uuid" : "12A2FF06-8E23-468F-B277-0DA3099CC08B",
+              "flex" : "",
+              "corner_radius" : 0,
+              "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+              "border_color" : "RGBA(0.928571,0.928571,0.928571,1.000000)",
+              "border_width" : 0,
+              "title" : "😸",
+              "action" : "smile_add",
+              "enabled" : true,
+              "font_bold" : false,
+              "name" : "button59",
+              "font_size" : 25
+            }
+          },
+          {
+            "selected" : false,
+            "frame" : "{{150, 180}, {30, 30}}",
+            "class" : "Button",
+            "nodes" : [
+
+            ],
+            "attributes" : {
+              "uuid" : "80791AB9-632B-4589-A98D-62E0613A0421",
+              "flex" : "",
+              "corner_radius" : 0,
+              "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+              "border_color" : "RGBA(0.928571,0.928571,0.928571,1.000000)",
+              "border_width" : 0,
+              "title" : "😹",
+              "action" : "smile_add",
+              "enabled" : true,
+              "font_bold" : false,
+              "name" : "button60",
+              "font_size" : 25
+            }
+          },
+          {
+            "selected" : false,
+            "frame" : "{{180, 180}, {30, 30}}",
+            "class" : "Button",
+            "nodes" : [
+
+            ],
+            "attributes" : {
+              "uuid" : "C1A0A476-3696-4DFB-8BED-C5DDF82CB61B",
+              "flex" : "",
+              "corner_radius" : 0,
+              "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+              "border_color" : "RGBA(0.928571,0.928571,0.928571,1.000000)",
+              "border_width" : 0,
+              "title" : "😺",
+              "action" : "smile_add",
+              "enabled" : true,
+              "font_bold" : false,
+              "name" : "button61",
+              "font_size" : 25
+            }
+          },
+          {
+            "selected" : false,
+            "frame" : "{{210, 180}, {30, 30}}",
+            "class" : "Button",
+            "nodes" : [
+
+            ],
+            "attributes" : {
+              "uuid" : "BF83221C-9B15-4C17-9395-9495E42FAA0B",
+              "flex" : "",
+              "corner_radius" : 0,
+              "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+              "border_color" : "RGBA(0.928571,0.928571,0.928571,1.000000)",
+              "border_width" : 0,
+              "title" : "😻",
+              "action" : "smile_add",
+              "enabled" : true,
+              "font_bold" : false,
+              "name" : "button62",
+              "font_size" : 25
+            }
+          },
+          {
+            "selected" : false,
+            "frame" : "{{240, 180}, {30, 30}}",
+            "class" : "Button",
+            "nodes" : [
+
+            ],
+            "attributes" : {
+              "uuid" : "A85E4367-BF55-4A0D-AF18-F1B4B2A27559",
+              "flex" : "",
+              "corner_radius" : 0,
+              "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+              "border_color" : "RGBA(0.928571,0.928571,0.928571,1.000000)",
+              "border_width" : 0,
+              "title" : "😼",
+              "action" : "smile_add",
+              "enabled" : true,
+              "font_bold" : false,
+              "name" : "button63",
+              "font_size" : 25
+            }
+          },
+          {
+            "selected" : false,
+            "frame" : "{{0, 210}, {30, 30}}",
+            "class" : "Button",
+            "nodes" : [
+
+            ],
+            "attributes" : {
+              "uuid" : "AA3D2633-F4A7-456F-99EB-A62842CB46DA",
+              "flex" : "",
+              "corner_radius" : 0,
+              "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+              "border_color" : "RGBA(0.928571,0.928571,0.928571,1.000000)",
+              "border_width" : 0,
+              "title" : "😽",
+              "action" : "smile_add",
+              "enabled" : true,
+              "font_bold" : false,
+              "name" : "button64",
+              "font_size" : 25
+            }
+          },
+          {
+            "selected" : false,
+            "frame" : "{{30, 210}, {30, 30}}",
+            "class" : "Button",
+            "nodes" : [
+
+            ],
+            "attributes" : {
+              "uuid" : "EAF2130C-4ACD-4929-AF54-28EB10F58381",
+              "flex" : "",
+              "corner_radius" : 0,
+              "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+              "border_color" : "RGBA(0.928571,0.928571,0.928571,1.000000)",
+              "border_width" : 0,
+              "title" : "😾",
+              "action" : "smile_add",
+              "enabled" : true,
+              "font_bold" : false,
+              "name" : "button65",
+              "font_size" : 25
+            }
+          },
+          {
+            "selected" : false,
+            "frame" : "{{60, 210}, {30, 30}}",
+            "class" : "Button",
+            "nodes" : [
+
+            ],
+            "attributes" : {
+              "uuid" : "F60D069E-A4B5-4BAF-9563-256DD5F23EE4",
+              "flex" : "",
+              "corner_radius" : 0,
+              "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+              "border_color" : "RGBA(0.928571,0.928571,0.928571,1.000000)",
+              "border_width" : 0,
+              "title" : "😿",
+              "action" : "smile_add",
+              "enabled" : true,
+              "font_bold" : false,
+              "name" : "button66",
+              "font_size" : 25
+            }
+          },
+          {
+            "selected" : false,
+            "frame" : "{{90, 210}, {30, 30}}",
+            "class" : "Button",
+            "nodes" : [
+
+            ],
+            "attributes" : {
+              "uuid" : "085DF097-E92B-413A-B882-B816BD6D7C7A",
+              "flex" : "",
+              "corner_radius" : 0,
+              "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+              "border_color" : "RGBA(0.928571,0.928571,0.928571,1.000000)",
+              "border_width" : 0,
+              "title" : "🙀",
+              "action" : "smile_add",
+              "enabled" : true,
+              "font_bold" : false,
+              "name" : "button67",
+              "font_size" : 25
+            }
+          },
+          {
+            "selected" : false,
+            "frame" : "{{120, 210}, {30, 30}}",
+            "class" : "Button",
+            "nodes" : [
+
+            ],
+            "attributes" : {
+              "uuid" : "741CD360-5727-4DF0-ADFB-8DE73E983FDD",
+              "flex" : "",
+              "corner_radius" : 0,
+              "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+              "border_color" : "RGBA(0.928571,0.928571,0.928571,1.000000)",
+              "border_width" : 0,
+              "title" : "👣",
+              "action" : "smile_add",
+              "enabled" : true,
+              "font_bold" : false,
+              "name" : "button68",
+              "font_size" : 25
+            }
+          },
+          {
+            "selected" : false,
+            "frame" : "{{150, 210}, {30, 30}}",
+            "class" : "Button",
+            "nodes" : [
+
+            ],
+            "attributes" : {
+              "uuid" : "2F060399-298F-4C01-87D3-B32AA1D8D722",
+              "flex" : "",
+              "corner_radius" : 0,
+              "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+              "border_color" : "RGBA(0.928571,0.928571,0.928571,1.000000)",
+              "border_width" : 0,
+              "title" : "👤",
+              "action" : "smile_add",
+              "enabled" : true,
+              "font_bold" : false,
+              "name" : "button69",
+              "font_size" : 25
+            }
+          },
+          {
+            "selected" : false,
+            "frame" : "{{180, 210}, {30, 30}}",
+            "class" : "Button",
+            "nodes" : [
+
+            ],
+            "attributes" : {
+              "uuid" : "ADE10055-EAE4-4D3F-9233-825976D0E495",
+              "flex" : "",
+              "corner_radius" : 0,
+              "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+              "border_color" : "RGBA(0.928571,0.928571,0.928571,1.000000)",
+              "border_width" : 0,
+              "title" : "👥",
+              "action" : "smile_add",
+              "enabled" : true,
+              "font_bold" : false,
+              "name" : "button70",
+              "font_size" : 25
+            }
+          },
+          {
+            "selected" : false,
+            "frame" : "{{210, 210}, {30, 30}}",
+            "class" : "Button",
+            "nodes" : [
+
+            ],
+            "attributes" : {
+              "uuid" : "2606A290-76DE-4328-80F9-53BB77221D9F",
+              "flex" : "",
+              "corner_radius" : 0,
+              "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+              "border_color" : "RGBA(0.928571,0.928571,0.928571,1.000000)",
+              "border_width" : 0,
+              "title" : "👶",
+              "action" : "smile_add",
+              "enabled" : true,
+              "font_bold" : false,
+              "name" : "button71",
+              "font_size" : 25
+            }
+          },
+          {
+            "selected" : false,
+            "frame" : "{{240, 210}, {30, 30}}",
+            "class" : "Button",
+            "nodes" : [
+
+            ],
+            "attributes" : {
+              "uuid" : "81E51C8C-CB5E-4536-9676-37A31229F993",
+              "flex" : "",
+              "corner_radius" : 0,
+              "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+              "border_color" : "RGBA(0.928571,0.928571,0.928571,1.000000)",
+              "border_width" : 0,
+              "title" : "👦",
+              "action" : "smile_add",
+              "enabled" : true,
+              "font_bold" : false,
+              "name" : "button72",
+              "font_size" : 25
+            }
+          },
+          {
+            "selected" : false,
+            "frame" : "{{0, 240}, {30, 30}}",
+            "class" : "Button",
+            "nodes" : [
+
+            ],
+            "attributes" : {
+              "uuid" : "DBF5BBEB-3277-4A70-970A-4A21EC88C3BD",
+              "flex" : "",
+              "corner_radius" : 0,
+              "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+              "border_color" : "RGBA(0.928571,0.928571,0.928571,1.000000)",
+              "border_width" : 0,
+              "title" : "👧",
+              "action" : "smile_add",
+              "enabled" : true,
+              "font_bold" : false,
+              "name" : "button73",
+              "font_size" : 25
+            }
+          },
+          {
+            "selected" : false,
+            "frame" : "{{30, 240}, {30, 30}}",
+            "class" : "Button",
+            "nodes" : [
+
+            ],
+            "attributes" : {
+              "uuid" : "B3CCA9A8-50D5-4BE3-BEEC-285695FA30CB",
+              "flex" : "",
+              "corner_radius" : 0,
+              "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+              "border_color" : "RGBA(0.928571,0.928571,0.928571,1.000000)",
+              "border_width" : 0,
+              "title" : "👨",
+              "action" : "smile_add",
+              "enabled" : true,
+              "font_bold" : false,
+              "name" : "button74",
+              "font_size" : 25
+            }
+          },
+          {
+            "selected" : false,
+            "frame" : "{{60, 240}, {30, 30}}",
+            "class" : "Button",
+            "nodes" : [
+
+            ],
+            "attributes" : {
+              "uuid" : "AEF505D7-6F40-4E34-AF36-0BDD5C934BF0",
+              "flex" : "",
+              "corner_radius" : 0,
+              "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+              "border_color" : "RGBA(0.928571,0.928571,0.928571,1.000000)",
+              "border_width" : 0,
+              "title" : "👩",
+              "action" : "smile_add",
+              "enabled" : true,
+              "font_bold" : false,
+              "name" : "button75",
+              "font_size" : 25
+            }
+          },
+          {
+            "selected" : false,
+            "frame" : "{{90, 240}, {30, 30}}",
+            "class" : "Button",
+            "nodes" : [
+
+            ],
+            "attributes" : {
+              "uuid" : "F975F8F2-64C5-4EE7-A7CF-E2E6A3E2DE1E",
+              "flex" : "",
+              "corner_radius" : 0,
+              "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+              "border_color" : "RGBA(0.928571,0.928571,0.928571,1.000000)",
+              "border_width" : 0,
+              "title" : "👪",
+              "action" : "smile_add",
+              "enabled" : true,
+              "font_bold" : false,
+              "name" : "button76",
+              "font_size" : 25
+            }
+          },
+          {
+            "selected" : false,
+            "frame" : "{{120, 240}, {30, 30}}",
+            "class" : "Button",
+            "nodes" : [
+
+            ],
+            "attributes" : {
+              "uuid" : "09BB2F76-2917-4BC3-B13F-DD548A451FB4",
+              "flex" : "",
+              "corner_radius" : 0,
+              "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+              "border_color" : "RGBA(0.928571,0.928571,0.928571,1.000000)",
+              "border_width" : 0,
+              "title" : "👨‍👩‍👧",
+              "action" : "smile_add",
+              "enabled" : true,
+              "font_bold" : false,
+              "name" : "button77",
+              "font_size" : 25
+            }
+          },
+          {
+            "selected" : false,
+            "frame" : "{{150, 240}, {30, 30}}",
+            "class" : "Button",
+            "nodes" : [
+
+            ],
+            "attributes" : {
+              "uuid" : "558AA665-A35E-4E78-A8DA-84795783B202",
+              "flex" : "",
+              "corner_radius" : 0,
+              "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+              "border_color" : "RGBA(0.928571,0.928571,0.928571,1.000000)",
+              "border_width" : 0,
+              "title" : "👨‍👩‍👧‍👦",
+              "action" : "smile_add",
+              "enabled" : true,
+              "font_bold" : false,
+              "name" : "button78",
+              "font_size" : 25
+            }
+          },
+          {
+            "selected" : false,
+            "frame" : "{{180, 240}, {30, 30}}",
+            "class" : "Button",
+            "nodes" : [
+
+            ],
+            "attributes" : {
+              "uuid" : "6F17A1F9-BE5B-494F-B455-E2E3F1912312",
+              "flex" : "",
+              "corner_radius" : 0,
+              "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+              "border_color" : "RGBA(0.928571,0.928571,0.928571,1.000000)",
+              "border_width" : 0,
+              "title" : "👨‍👩‍👦‍👦",
+              "action" : "smile_add",
+              "enabled" : true,
+              "font_bold" : false,
+              "name" : "button79",
+              "font_size" : 25
+            }
+          },
+          {
+            "selected" : false,
+            "frame" : "{{210, 240}, {30, 30}}",
+            "class" : "Button",
+            "nodes" : [
+
+            ],
+            "attributes" : {
+              "uuid" : "F6536A14-6609-41CF-8D51-4BBA518935A4",
+              "flex" : "",
+              "corner_radius" : 0,
+              "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+              "border_color" : "RGBA(0.928571,0.928571,0.928571,1.000000)",
+              "border_width" : 0,
+              "title" : "👨‍👩‍👧‍👧",
+              "action" : "smile_add",
+              "enabled" : true,
+              "font_bold" : false,
+              "name" : "button80",
+              "font_size" : 25
+            }
+          },
+          {
+            "selected" : false,
+            "frame" : "{{240, 240}, {30, 30}}",
+            "class" : "Button",
+            "nodes" : [
+
+            ],
+            "attributes" : {
+              "uuid" : "C875D860-75C5-46A3-B5A5-AE5AC4FE4B1C",
+              "flex" : "",
+              "corner_radius" : 0,
+              "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+              "border_color" : "RGBA(0.928571,0.928571,0.928571,1.000000)",
+              "border_width" : 0,
+              "title" : "👩‍👩‍👦",
+              "action" : "smile_add",
+              "enabled" : true,
+              "font_bold" : false,
+              "name" : "button81",
+              "font_size" : 25
+            }
+          }
+        ],
+        "attributes" : {
+          "flex" : "",
+          "border_width" : 1,
+          "enabled" : true,
+          "alpha" : 1,
+          "content_width" : 270,
+          "content_height" : 300,
+          "border_color" : "RGBA(0.785714,0.785714,0.785714,1.000000)",
+          "corner_radius" : 10,
+          "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+          "name" : "smiles",
+          "uuid" : "68E25B0F-7C1B-4805-9863-C3B1DE5BA3E1"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{6, 491}, {270, 71}}",
+        "class" : "TextView",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "uuid" : "9FD40C4D-1A3A-47D0-BAF5-D93768FB2999",
+          "flex" : "",
+          "corner_radius" : 10,
+          "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+          "border_color" : "RGBA(0.785714,0.785714,0.785714,1.000000)",
+          "editable" : true,
+          "border_width" : 1,
+          "alignment" : "left",
+          "enabled" : true,
+          "text_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "font_name" : "AppleSDGothicNeo-Regular",
+          "name" : "tx1",
+          "font_size" : 18
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{279, 527}, {35, 35}}",
+        "class" : "Button",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "uuid" : "8004F323-235F-41BC-9C85-95AB52F27E94",
+          "name" : "btS",
+          "flex" : "",
+          "corner_radius" : 10,
+          "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+          "border_color" : "RGBA(0.785714,0.785714,0.785714,1.000000)",
+          "tint_color" : "RGBA(0.285714,0.285714,0.285714,1.000000)",
+          "border_width" : 1,
+          "title" : "",
+          "action" : "msg_in",
+          "enabled" : true,
+          "font_bold" : false,
+          "image_name" : "ionicons-arrow-right-b-24",
+          "font_size" : 14
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{279, 491}, {35, 35}}",
+        "class" : "Button",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "uuid" : "F1395420-5EEC-4FCD-AE02-3BDF7CD96D01",
+          "flex" : "",
+          "corner_radius" : 10,
+          "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+          "border_color" : "RGBA(0.785714,0.785714,0.785714,1.000000)",
+          "tint_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "border_width" : 1,
+          "title" : "😀",
+          "action" : "smile",
+          "enabled" : true,
+          "font_bold" : false,
+          "name" : "btSm",
+          "font_size" : 25
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{6, 28}, {34, 34}}",
+        "class" : "Button",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "uuid" : "0EB8635A-E73D-46AC-8543-017B146F7032",
+          "name" : "btPrs",
+          "flex" : "",
+          "corner_radius" : 15,
+          "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+          "border_color" : "RGBA(0.785714,0.785714,0.785714,1.000000)",
+          "tint_color" : "RGBA(0.285714,0.285714,0.285714,1.000000)",
+          "border_width" : 1,
+          "title" : "Button",
+          "action" : "close_app",
+          "enabled" : true,
+          "font_bold" : false,
+          "image_name" : "ionicons-ios7-contact-32",
+          "font_size" : 15
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{280, 28}, {34, 34}}",
+        "class" : "Button",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "uuid" : "68BE66AA-8D39-4DD6-AF3A-EC93C1C0DF1D",
+          "name" : "bt_pref",
+          "flex" : "",
+          "corner_radius" : 15,
+          "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+          "border_color" : "RGBA(0.785714,0.785714,0.785714,1.000000)",
+          "tint_color" : "RGBA(0.285714,0.285714,0.285714,1.000000)",
+          "border_width" : 1,
+          "title" : "",
+          "enabled" : true,
+          "font_bold" : false,
+          "image_name" : "ionicons-ios7-cog-outline-32",
+          "font_size" : 15
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{0, 0}, {320, 20}}",
+        "class" : "Label",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "",
+          "text_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "enabled" : true,
+          "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "text" : "",
+          "alignment" : "left",
+          "background_color" : "RGBA(0.928571,0.928571,0.928571,1.000000)",
+          "uuid" : "E0EE312F-89FC-409D-B014-1169A008CF74",
+          "name" : "statusbar_bg",
+          "font_size" : 17
+        }
+      }
+    ],
+    "attributes" : {
+      "flex" : "",
+      "border_width" : 0,
+      "enabled" : true,
+      "tint_color" : "RGBA(0.000000,0.478000,1.000000,1.000000)",
+      "custom_class" : "",
+      "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+      "corner_radius" : 0,
+      "background_color" : "RGBA(0.714286,0.855186,1.000000,1.000000)",
+      "name" : "Chat"
+    }
+  }
+]

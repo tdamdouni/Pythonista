@@ -1,0 +1,225 @@
+[
+  {
+    "selected" : false,
+    "frame" : "{{0, 0}, {320, 320}}",
+    "class" : "View",
+    "nodes" : [
+      {
+        "selected" : false,
+        "frame" : "{{78, 46}, {236, 32}}",
+        "class" : "TextField",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "uuid" : "4DC7D5BB-5881-41A2-907E-A8752D9BF470",
+          "font_size" : 17,
+          "frame" : "{{60, 144}, {200, 32}}",
+          "custom_attributes" : "{ 'autocapitalization_type':ui.AUTOCAPITALIZE_NONE }",
+          "alignment" : "left",
+          "autocorrection_type" : "no",
+          "placeholder" : "default",
+          "font_name" : "<System>",
+          "spellchecking_type" : "no",
+          "class" : "TextField",
+          "name" : "txt_account",
+          "flex" : "W"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{6, 46}, {64, 32}}",
+        "class" : "Label",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "font_size" : 18,
+          "frame" : "{{85, 144}, {150, 32}}",
+          "uuid" : "C11F5C05-1ED4-4699-AD91-1B6202A9B254",
+          "class" : "Label",
+          "alignment" : "left",
+          "text" : "Account",
+          "name" : "lbl_account",
+          "font_name" : "GillSans-Light"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{78, 6}, {236, 32}}",
+        "class" : "TextField",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "uuid" : "6862B895-0893-45C7-8830-586D46C9BD32",
+          "font_size" : 17,
+          "frame" : "{{60, 144}, {200, 32}}",
+          "custom_attributes" : "{ 'autocapitalization_type':ui.AUTOCAPITALIZE_NONE }",
+          "alignment" : "left",
+          "autocorrection_type" : "no",
+          "placeholder" : "eg. google",
+          "font_name" : "<System>",
+          "spellchecking_type" : "no",
+          "class" : "TextField",
+          "name" : "txt_service",
+          "flex" : "W"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{78, 86}, {204, 34}}",
+        "class" : "Slider",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "W",
+          "continuous" : true,
+          "action" : "",
+          "frame" : "{{60, 143}, {200, 34}}",
+          "class" : "Slider",
+          "uuid" : "A828A7C7-0854-4EB7-B5B2-CED0ABB75C2D",
+          "value" : 0,
+          "name" : "sld_iter"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{6, 128}, {42, 42}}",
+        "class" : "Button",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "uuid" : "B18BFDA4-0085-4D45-8140-590A00B052CC",
+          "font_size" : 24,
+          "corner_radius" : 5,
+          "background_color" : "RGBA(0.924528,0.924528,0.924528,1.000000)",
+          "frame" : "{{120, 144}, {80, 32}}",
+          "border_color" : "RGBA(0.808962,0.808962,0.808962,1.000000)",
+          "border_width" : 1,
+          "custom_attributes" : "{ 'enabled':False }",
+          "title" : "⛔️",
+          "action" : "",
+          "font_bold" : false,
+          "class" : "Button",
+          "name" : "btn_hash",
+          "flex" : "RB"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{290, 86}, {24, 34}}",
+        "class" : "Label",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "border_width" : 0,
+          "flex" : "L",
+          "font_name" : "GillSans-Light",
+          "frame" : "{{85, 144}, {150, 32}}",
+          "uuid" : "06D5E485-9804-4313-BBD6-330422BABF84",
+          "class" : "Label",
+          "alignment" : "center",
+          "text" : "0",
+          "corner_radius" : 0,
+          "font_size" : 18,
+          "name" : "lbl_iterdisp"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{6, 86}, {64, 34}}",
+        "class" : "Label",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "font_name" : "GillSans-Light",
+          "frame" : "{{85, 144}, {150, 32}}",
+          "uuid" : "5C3063D4-A54C-4417-95B7-D4CC64B2448F",
+          "class" : "Label",
+          "alignment" : "left",
+          "text" : "Iteration",
+          "font_size" : 18,
+          "name" : "lbl_iteration"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{56, 128}, {258, 186}}",
+        "class" : "TextView",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "uuid" : "E262CEAF-4579-4E01-AC1C-3DCFBFF499B8",
+          "font_size" : 24,
+          "corner_radius" : 5,
+          "frame" : "{{60, 140}, {200, 200}}",
+          "border_color" : "RGBA(0.811321,0.811321,0.811321,1.000000)",
+          "editable" : false,
+          "border_width" : 1,
+          "alignment" : "left",
+          "autocorrection_type" : "no",
+          "font_name" : "GillSans-Light",
+          "spellchecking_type" : "no",
+          "class" : "TextView",
+          "name" : "txv_spell",
+          "flex" : "WH"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{6, 272}, {42, 42}}",
+        "class" : "Button",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "uuid" : "E0E72CB4-FBF2-4159-B779-03CDF0542CA1",
+          "flex" : "RT",
+          "corner_radius" : 5,
+          "background_color" : "RGBA(0.922170,0.922170,0.922170,1.000000)",
+          "frame" : "{{120, 144}, {80, 32}}",
+          "border_color" : "RGBA(0.808962,0.808962,0.808962,1.000000)",
+          "border_width" : 1,
+          "title" : "🔐",
+          "action" : "",
+          "class" : "Button",
+          "name" : "btn_secret",
+          "font_size" : 24
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{6, 6}, {64, 32}}",
+        "class" : "Label",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "font_size" : 18,
+          "frame" : "{{85, 144}, {150, 32}}",
+          "uuid" : "A9C0579D-C3AF-4038-AE41-C2E21DA84D41",
+          "class" : "Label",
+          "alignment" : "left",
+          "text" : "Service",
+          "name" : "lbl_service",
+          "font_name" : "GillSans-Light"
+        }
+      }
+    ],
+    "attributes" : {
+      "flex" : "",
+      "custom_class" : "spellGenGui",
+      "enabled" : true,
+      "tint_color" : "RGBA(0.000000,0.478000,1.000000,1.000000)",
+      "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+      "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+      "name" : "spellGen"
+    }
+  }
+]

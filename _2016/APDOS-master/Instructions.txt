@@ -1,0 +1,36 @@
+# Exact Instructions On Use #
+
+- Run APDOS.py on Pythonista 3
+
+!!! SET YOUR SYS ARGV TO EITHER 1-9 !!!
+!!! YOUR SYS ARGV DETERMINES POWER  !!!
+
+- On the first line that pops up, write 
+which version you would like to use.
+
+- If you are using 'great' 
+or 'feedbacks' then you won't 
+have to fill in the next 2 lines.
+
+!!! WHEN IT SAYS "type:" enter 'skip' if you want to skip the long boot !!!
+
+- If you are running the original 
+APDOS (really weak) then fill in the 
+host and the data that will be sent. 
+The original APDOS only works to target HTTP.
+
+- Feedbacks attack lets you know if 
+you can DDoS the target server without 
+getting blocked by DDoS protection.
+
+- Great attack is the part of APDOS 
+that makes it powerful. You can ether 
+open the program UDPdos.py or type 'great' 
+in for the version on APDOS.py
+
+- UDPdos.py can attack any server port 
+and its speed increases on better wifi (logic)
+
+- If you are running feedbacks, after the loading screen for APDOS is done, just enter the server, and how long you want to keep testing the server.
+
+# APDOS was not intended for malicious use. It is intended to test DDoS protection against devices that the server's might not expect. #

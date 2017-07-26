@@ -1,0 +1,56 @@
+[
+  {
+    "selected" : false,
+    "frame" : "{{0, 0}, {540, 540}}",
+    "class" : "View",
+    "nodes" : [
+      {
+        "selected" : true,
+        "frame" : "{{0, 62}, {534, 472}}",
+        "class" : "TableView",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "WH",
+          "data_source_items" : "",
+          "row_height" : 44,
+          "frame" : "{{170, 170}, {200, 200}}",
+          "uuid" : "FEF25D01-D53C-4ECC-991F-CDB7D13689A9",
+          "data_source_number_of_lines" : 1,
+          "class" : "TableView",
+          "background_color" : "RGBA(1.0, 1.0, 1.0, 1.0)",
+          "data_source_delete_enabled" : true,
+          "data_source_font_size" : 18,
+          "name" : "tv_favorite"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{218, 6}, {106, 48}}",
+        "class" : "Button",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "border_width" : 4,
+          "frame" : "{{230, 254}, {80, 32}}",
+          "title" : "Add",
+          "border_color" : "RGBA(0.413043,1.000000,0.608696,1.000000)",
+          "class" : "Button",
+          "uuid" : "5D4C5D42-A021-4FCB-BEFC-487B2E67624D",
+          "corner_radius" : 10,
+          "font_size" : 15,
+          "name" : "bt_add_favorite"
+        }
+      }
+    ],
+    "attributes" : {
+      "enabled" : true,
+      "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+      "tint_color" : "RGBA(0.000000,0.478000,1.000000,1.000000)",
+      "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+      "flex" : ""
+    }
+  }
+]

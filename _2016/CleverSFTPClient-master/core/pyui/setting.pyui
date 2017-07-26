@@ -1,0 +1,83 @@
+[
+  {
+    "selected" : false,
+    "frame" : "{{0, 0}, {540, 540}}",
+    "class" : "View",
+    "nodes" : [
+      {
+        "selected" : false,
+        "frame" : "{{19, 29}, {155, 32}}",
+        "class" : "Label",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "font_name" : "<System>",
+          "frame" : "{{195, 254}, {150, 32}}",
+          "uuid" : "8FFE0578-B88F-457D-9AC9-AC278E16D699",
+          "text" : "Auto scan port 22",
+          "alignment" : "left",
+          "class" : "Label",
+          "font_size" : 18,
+          "name" : "label1"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{199, 29}, {51, 31}}",
+        "class" : "Switch",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "frame" : "{{245, 255}, {51, 31}}",
+          "value" : true,
+          "class" : "Switch",
+          "name" : "sw_autoscan",
+          "uuid" : "8B7B86E8-E22D-404B-AC80-C3B18F8889BA"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{19, 92}, {88, 32}}",
+        "class" : "Label",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "name" : "label2",
+          "frame" : "{{195, 254}, {150, 32}}",
+          "uuid" : "527F783C-0FC9-4910-8499-5A49A7C5F8E3",
+          "text" : "Log level",
+          "alignment" : "left",
+          "class" : "Label",
+          "font_size" : 18,
+          "font_name" : "<System>"
+        }
+      },
+      {
+        "selected" : true,
+        "frame" : "{{129, 92}, {120, 29}}",
+        "class" : "SegmentedControl",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "class" : "SegmentedControl",
+          "frame" : "{{210, 256}, {120, 29}}",
+          "uuid" : "98C86FDA-6AC9-49A8-8301-F375C8CE9A4A",
+          "segments" : "INFO|DEBUG",
+          "name" : "sc_log_level",
+          "flex" : "LR"
+        }
+      }
+    ],
+    "attributes" : {
+      "enabled" : true,
+      "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+      "tint_color" : "RGBA(0.000000,0.478000,1.000000,1.000000)",
+      "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+      "flex" : ""
+    }
+  }
+]

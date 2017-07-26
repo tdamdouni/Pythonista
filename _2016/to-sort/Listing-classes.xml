@@ -1,0 +1,42 @@
+<!-- https://forum.omz-software.com/topic/1123/classes/3 -->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>-- ClassesPlist_url 1.0</key>
+    <string>http://omz-forums.appspot.com/pythonista/post/5866848084033536</string>
+    <key>00 Classes Classes 3.0</key>
+    <string>http://omz-forums.appspot.com/pythonista/post/6151216794959872</string>
+    <key>01 CommentView Comment 2.0</key>
+    <string>http://omz-forums.appspot.com/pythonista/post/5772187004829696</string>
+    <key>02 ReplaceView Replace 2.0</key>
+    <string>http://omz-forums.appspot.com/pythonista/post/5266920341241856</string>
+    <key>03 WebBrowser WebBrowser 2.0</key>
+    <string>http://omz-forums.appspot.com/pythonista/post/5885813317435392</string>
+    <key>04 MultiBrowser MultiBrowser 3.0</key>
+    <string>http://omz-forums.appspot.com/pythonista/post/5866392280629248</string>
+    <key>05 BaseMenu Menu 3.0</key>
+    <string>http://omz-forums.appspot.com/pythonista/post/6432563593740288</string>
+    <key>06 MenuController Menu 3.0</key>
+    <string>http://omz-forums.appspot.com/pythonista/post/6432563593740288</string>
+    <key>07 ForumCodeBlock ForumCodeBlock 3.1</key>
+    <string>http://omz-forums.appspot.com/pythonista/post/5910314025484288</string>
+    <key>08 ForumCodeBlockAdmin ForumCodeBlockAdmin 5.0</key>
+    <string>http://omz-forums.appspot.com/pythonista/post/5825453289897984</string>
+    <key>09 Settings Settings 4.0</key>
+    <string>http://omz-forums.appspot.com/pythonista/post/5885488242098176</string>
+    <key>10 SettingsSheet SettingsSheet 4.0</key>
+    <string>http://omz-forums.appspot.com/pythonista/post/6458521839206400</string>
+    <key>11 SettingsSheetDataSource SettingsSheet 4.0</key>
+    <string>http://omz-forums.appspot.com/pythonista/post/6458521839206400</string>
+    <key>12 Documents Documents 4.1</key>
+    <string>http://omz-forums.appspot.com/pythonista/post/5252173302595584</string>
+    <key>13 EditView Edit 4.0</key>
+    <string>http://omz-forums.appspot.com/pythonista/post/5860313022857216</string>
+    <key>14 EditRequestHandler Edit 4.0</key>
+    <string>http://omz-forums.appspot.com/pythonista/post/5860313022857216</string>
+    <key>15 Project Projects 4.0</key>
+    <string>http://omz-forums.appspot.com/pythonista/post/5323307960238080</string>
+</dict>
+</plist>

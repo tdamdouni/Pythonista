@@ -1,0 +1,32 @@
+
+Feel free to use this but I did create that site - http://www.curriculumvitae.co.za/
+
+------------------
+Wanted to be able to generate a good looking CV dynamic from a XML file. So I can just update the XML file and the script would output the CV in a PDF format. 
+
+What I still want to do:
+-> Generate a .doc word file from the xml file
+-> Fix the Pages on PDF as some of them break the layout (Go over to the next page)
+-> Accounts Sections (Where you point to all your accounts like github/stackoverflow/facebook/google plus etc.)
+-> Add more details
+
+Requirements:
+-> PySide (http://www.pyside.org/)
+
+Using the Script:
+The script can be run by supplying the data xml file and the output file.
+
+If the output file is a html file the script will output a single .html file.
+Else if the output filename has .pdf extension or does not match any of the other the script will produce a .pdf using WebKit. (Black Magic huh :D)
+
+The Command syntax:
+
+python cv.py example.xml CV.pdf
+or
+python cv.py example.xml CV.html
+
+Used:
+-> PySide (http://www.pyside.org/)
+-> Twitter Bootstrap (http://twitter.github.com/bootstrap/)
+
+Enjoy, this is one of my little side projects so I work on it when I have time. Could use your help if you have a idea.

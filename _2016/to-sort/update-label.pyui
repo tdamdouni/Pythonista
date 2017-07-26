@@ -1,0 +1,50 @@
+[
+  {
+    "selected" : false,
+    "frame" : "{{0, 0}, {240, 240}}",
+    "class" : "View",
+    "nodes" : [
+      {
+        "selected" : true,
+        "frame" : "{{25, 65}, {150, 32}}",
+        "class" : "Label",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "font_name" : "<System>",
+          "frame" : "{{45, 104}, {150, 32}}",
+          "uuid" : "16A98AA7-8CFE-4FCA-A27D-5557EBC27803",
+          "text" : "Label",
+          "alignment" : "left",
+          "class" : "Label",
+          "name" : "lblRoll",
+          "font_size" : 18
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{80, 136}, {80, 34}}",
+        "class" : "Button",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "font_size" : 15,
+          "frame" : "{{80, 104}, {80, 32}}",
+          "title" : "Button",
+          "class" : "Button",
+          "name" : "button1",
+          "uuid" : "AD5673F0-1E77-44D1-B067-9638D2C0E35B"
+        }
+      }
+    ],
+    "attributes" : {
+      "enabled" : true,
+      "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+      "tint_color" : "RGBA(0.000000,0.478000,1.000000,1.000000)",
+      "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+      "flex" : ""
+    }
+  }
+]

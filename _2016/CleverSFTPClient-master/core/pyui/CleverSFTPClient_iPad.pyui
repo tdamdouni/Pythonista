@@ -1,0 +1,634 @@
+[
+  {
+    "selected" : false,
+    "frame" : "{{0, 0}, {768, 960}}",
+    "class" : "View",
+    "nodes" : [
+      {
+        "selected" : false,
+        "frame" : "{{595, 21}, {85, 32}}",
+        "class" : "Button",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "WLRB",
+          "border_width" : 3,
+          "enabled" : true,
+          "title" : "Connect",
+          "border_color" : "RGBA(0.325490,0.776471,1.000000,1.000000)",
+          "font_bold" : true,
+          "corner_radius" : 5,
+          "uuid" : "7AD78AAF-EF1C-4410-9CF1-2A83BC87251A",
+          "font_size" : 15,
+          "name" : "bt_connect"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{113, 21}, {130, 34}}",
+        "class" : "TextField",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "WLRB",
+          "font_size" : 17,
+          "enabled" : true,
+          "border_style" : 3,
+          "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "text" : "",
+          "alignment" : "left",
+          "uuid" : "C4FD6A71-F693-45A8-B1C3-CF731E159B85",
+          "name" : "tf_host",
+          "text_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{302, 19}, {88, 32}}",
+        "class" : "TextField",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "WLRB",
+          "font_size" : 17,
+          "enabled" : true,
+          "border_style" : 3,
+          "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "text" : "",
+          "alignment" : "left",
+          "uuid" : "BF6E2370-EF2D-4D26-B367-012BE0EE7685",
+          "name" : "tf_user",
+          "text_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{476, 19}, {88, 34}}",
+        "class" : "TextField",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "secure" : true,
+          "flex" : "WLRB",
+          "enabled" : true,
+          "font_size" : 17,
+          "border_style" : 3,
+          "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "text" : "",
+          "alignment" : "left",
+          "uuid" : "D15A9796-AF00-497D-95D3-18CAA0BCED4D",
+          "name" : "tf_passkey",
+          "text_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{57, 21}, {48, 34}}",
+        "class" : "Label",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "WLRB",
+          "font_size" : 17,
+          "enabled" : true,
+          "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "text" : "Host:",
+          "alignment" : "left",
+          "uuid" : "A6BDC61C-CA2B-4E3D-A3AF-70D081A1DAC6",
+          "name" : "label1",
+          "text_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{251, 19}, {54, 32}}",
+        "class" : "Label",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "WLRB",
+          "font_size" : 17,
+          "enabled" : true,
+          "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "text" : "User:",
+          "alignment" : "left",
+          "uuid" : "21FD6F8B-F724-4E64-958D-A5B539E59DF1",
+          "name" : "label2",
+          "text_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{13, 808}, {85, 45}}",
+        "class" : "Button",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "WLRT",
+          "border_width" : 3,
+          "enabled" : true,
+          "title" : "Upload",
+          "border_color" : "RGBA(0.325490,0.776471,1.000000,1.000000)",
+          "font_bold" : true,
+          "corner_radius" : 5,
+          "uuid" : "567B1FFA-A6DB-4734-8AC0-929BCDA84F21",
+          "font_size" : 15,
+          "name" : "bt_upload"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{385, 808}, {74, 45}}",
+        "class" : "Button",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "WLRT",
+          "border_width" : 3,
+          "enabled" : true,
+          "title" : "Download",
+          "border_color" : "RGBA(0.325490,0.776471,1.000000,1.000000)",
+          "font_bold" : true,
+          "corner_radius" : 5,
+          "uuid" : "4D264473-411D-4404-85FA-42437F1171DE",
+          "font_size" : 15,
+          "name" : "bt_download"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{0, 103}, {367, 697}}",
+        "class" : "TableView",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "WHR",
+          "data_source_items" : "",
+          "enabled" : true,
+          "name" : "tv_local",
+          "data_source_number_of_lines" : 1,
+          "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "uuid" : "71E89D06-BE72-421A-9F60-8650768FF7A9",
+          "data_source_font_size" : 14,
+          "data_source_delete_enabled" : true,
+          "row_height" : 36,
+          "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{43, 63}, {277, 32}}",
+        "class" : "Label",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "uuid" : "11B3F14C-97C3-4AE8-8AEE-446B5A4D3786",
+          "font_size" : 15,
+          "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "border_width" : 0,
+          "alignment" : "center",
+          "numberOfLines" : 1,
+          "enabled" : true,
+          "text" : "Local",
+          "text_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "font_name" : "<System-Bold>",
+          "name" : "lb_local",
+          "flex" : "WRB"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{448, 63}, {212, 32}}",
+        "class" : "Label",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "uuid" : "F133687C-1C01-4A6A-99E2-6CA8AABB6E97",
+          "font_size" : 13,
+          "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "border_width" : 0,
+          "alignment" : "center",
+          "numberOfLines" : 1,
+          "enabled" : true,
+          "text" : "Remote",
+          "text_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "font_name" : "<System-Bold>",
+          "name" : "lb_remote",
+          "flex" : "WLB"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{387, 103}, {367, 697}}",
+        "class" : "TableView",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "WHL",
+          "data_source_items" : "",
+          "enabled" : true,
+          "name" : "tv_remote",
+          "data_source_number_of_lines" : 1,
+          "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "uuid" : "550BF0F0-64D2-4472-982E-328A5D6C9BFD",
+          "data_source_font_size" : 14,
+          "data_source_delete_enabled" : true,
+          "row_height" : 36,
+          "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{6, 852}, {645, 104}}",
+        "class" : "TextView",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "WLRT",
+          "font_size" : 14,
+          "enabled" : true,
+          "editable" : true,
+          "font_name" : "Courier",
+          "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "uuid" : "74C22F00-C602-4DCF-9E57-18F1CF3C13DE",
+          "alignment" : "left",
+          "name" : "tv_info",
+          "text_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{465, 808}, {74, 45}}",
+        "class" : "Button",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "WLRT",
+          "border_width" : 3,
+          "enabled" : true,
+          "title" : "Rename",
+          "border_color" : "RGBA(0.325490,0.776471,1.000000,1.000000)",
+          "font_bold" : true,
+          "corner_radius" : 5,
+          "uuid" : "9DD69F5D-F8A5-4521-B797-751C204FAEFF",
+          "font_size" : 15,
+          "name" : "bt_remote_rename"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{546, 808}, {74, 45}}",
+        "class" : "Button",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "WLRT",
+          "border_width" : 3,
+          "enabled" : true,
+          "title" : "Delete",
+          "border_color" : "RGBA(0.325490,0.776471,1.000000,1.000000)",
+          "font_bold" : true,
+          "corner_radius" : 5,
+          "uuid" : "D674A938-2E08-42AA-AB73-D71FF4D5A053",
+          "font_size" : 15,
+          "name" : "bt_remote_delete"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{628, 808}, {63, 45}}",
+        "class" : "Button",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "WLRT",
+          "border_width" : 3,
+          "enabled" : true,
+          "title" : "MkDir",
+          "border_color" : "RGBA(0.325490,0.776471,1.000000,1.000000)",
+          "font_bold" : true,
+          "corner_radius" : 5,
+          "uuid" : "D09862EC-6486-4B0D-BE94-A84E27100CD7",
+          "font_size" : 15,
+          "name" : "bt_remote_mkdir"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{99, 808}, {85, 45}}",
+        "class" : "Button",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "WLRT",
+          "border_width" : 3,
+          "enabled" : true,
+          "title" : "Rename",
+          "border_color" : "RGBA(0.325490,0.776471,1.000000,1.000000)",
+          "font_bold" : true,
+          "corner_radius" : 5,
+          "uuid" : "CAF410F9-0A83-48C6-A50A-F56BC86942C1",
+          "font_size" : 15,
+          "name" : "bt_local_rename"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{192, 808}, {85, 45}}",
+        "class" : "Button",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "WLRT",
+          "border_width" : 3,
+          "enabled" : true,
+          "title" : "Delete",
+          "border_color" : "RGBA(0.325490,0.776471,1.000000,1.000000)",
+          "font_bold" : true,
+          "corner_radius" : 5,
+          "uuid" : "F5BC87E5-631A-4BEB-9C08-DDF02512FDF5",
+          "font_size" : 15,
+          "name" : "bt_local_delete"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{285, 808}, {85, 45}}",
+        "class" : "Button",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "WLRT",
+          "border_width" : 3,
+          "enabled" : true,
+          "title" : "MkDir",
+          "border_color" : "RGBA(0.325490,0.776471,1.000000,1.000000)",
+          "font_bold" : true,
+          "corner_radius" : 5,
+          "uuid" : "E271F792-2280-4A44-B1A2-7608B601EE6E",
+          "font_size" : 15,
+          "name" : "bt_local_mkdir"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{688, 19}, {72, 34}}",
+        "class" : "Button",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "WLB",
+          "border_width" : 3,
+          "enabled" : true,
+          "title" : "SSH",
+          "border_color" : "RGBA(0.000000,1.000000,0.333333,1.000000)",
+          "font_bold" : true,
+          "corner_radius" : 5,
+          "uuid" : "7AD78AAF-EF1C-4410-9CF1-2A83BC87251A",
+          "font_size" : 15,
+          "name" : "bt_ssh"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{666, 861}, {83, 48}}",
+        "class" : "Button",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "WLRT",
+          "border_width" : 3,
+          "enabled" : true,
+          "image_name" : "iob:pinpoint_32",
+          "title" : "",
+          "border_color" : "RGBA(1.000000,1.000000,0.000000,1.000000)",
+          "font_bold" : true,
+          "corner_radius" : 5,
+          "uuid" : "D09862EC-6486-4B0D-BE94-A84E27100CD7",
+          "font_size" : 14,
+          "name" : "bt_progress"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{323, 63}, {56, 32}}",
+        "class" : "Button",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "WLRB",
+          "border_width" : 3,
+          "enabled" : true,
+          "title" : "Edit",
+          "border_color" : "RGBA(0.325490,0.776471,1.000000,1.000000)",
+          "font_bold" : true,
+          "corner_radius" : 5,
+          "uuid" : "7AD78AAF-EF1C-4410-9CF1-2A83BC87251A",
+          "font_size" : 15,
+          "name" : "bt_local_edit"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{703, 61}, {60, 34}}",
+        "class" : "Button",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "WLB",
+          "border_width" : 3,
+          "enabled" : true,
+          "title" : "Edit",
+          "border_color" : "RGBA(0.325490,0.776471,1.000000,1.000000)",
+          "font_bold" : true,
+          "corner_radius" : 5,
+          "uuid" : "7AD78AAF-EF1C-4410-9CF1-2A83BC87251A",
+          "font_size" : 15,
+          "name" : "bt_remote_edit"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{6, 21}, {51, 43}}",
+        "class" : "Button",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "name" : "bt_close",
+          "frame" : "{{344, 464}, {80, 32}}",
+          "tint_color" : "RGBA(1.000000,0.021739,0.021739,1.000000)",
+          "title" : "",
+          "class" : "Button",
+          "uuid" : "8FB881E5-51E5-41EB-B916-05C61297DC2A",
+          "font_size" : 15,
+          "image_name" : "iob:close_32"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{6, 63}, {50, 32}}",
+        "class" : "Label",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "font_name" : "<System>",
+          "frame" : "{{309, 464}, {150, 32}}",
+          "uuid" : "24F528AE-5274-4E8E-B6DE-3AB7A694F8E9",
+          "text" : "Local :",
+          "alignment" : "left",
+          "class" : "Label",
+          "name" : "label4",
+          "font_size" : 15
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{387, 63}, {64, 32}}",
+        "class" : "Label",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "WLRB",
+          "name" : "label4",
+          "frame" : "{{309, 464}, {150, 32}}",
+          "uuid" : "24F528AE-5274-4E8E-B6DE-3AB7A694F8E9",
+          "text" : "Remote :",
+          "alignment" : "left",
+          "class" : "Label",
+          "font_size" : 15,
+          "font_name" : "<System>"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{566, 19}, {29, 34}}",
+        "class" : "Button",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "WLRB",
+          "image_name" : "iob:ios7_clock_outline_32",
+          "frame" : "{{344, 464}, {80, 32}}",
+          "tint_color" : "RGBA(0.333333,0.000000,1.000000,1.000000)",
+          "title" : "",
+          "class" : "Button",
+          "uuid" : "0CC0106D-EB20-4606-9B07-C4FFE1AF4525",
+          "font_size" : 15,
+          "name" : "bt_history"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{666, 912}, {83, 48}}",
+        "class" : "Button",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "WLRT",
+          "border_width" : 3,
+          "enabled" : true,
+          "font_size" : 14,
+          "title" : "",
+          "border_color" : "RGBA(0.000000,1.000000,0.333333,1.000000)",
+          "font_bold" : true,
+          "corner_radius" : 5,
+          "uuid" : "D09862EC-6486-4B0D-BE94-A84E27100CD7",
+          "name" : "bt_setting",
+          "image_name" : "iob:settings_32"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{392, 19}, {76, 29}}",
+        "class" : "SegmentedControl",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "name" : "sc_passkey",
+          "frame" : "{{324, 466}, {120, 29}}",
+          "uuid" : "B509F32D-20E7-4663-99CA-46570D50CDAD",
+          "class" : "SegmentedControl",
+          "segments" : "Pass|Key",
+          "flex" : "LR"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{699, 808}, {61, 45}}",
+        "class" : "Button",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "WLRT",
+          "border_width" : 3,
+          "enabled" : true,
+          "title" : "Chmod",
+          "border_color" : "RGBA(0.325490,0.776471,1.000000,1.000000)",
+          "font_bold" : true,
+          "corner_radius" : 5,
+          "uuid" : "D09862EC-6486-4B0D-BE94-A84E27100CD7",
+          "font_size" : 15,
+          "name" : "bt_remote_chmod"
+        }
+      },
+      {
+        "selected" : true,
+        "frame" : "{{662, 62}, {38, 32}}",
+        "class" : "Button",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "WLB",
+          "image_name" : "iob:bookmark_32",
+          "frame" : "{{344, 464}, {80, 32}}",
+          "tint_color" : "RGBA(0.820755,0.820755,0.027358,1.000000)",
+          "title" : "",
+          "class" : "Button",
+          "uuid" : "43B37C56-A3D0-478F-A5E3-EDC993B92EFE",
+          "name" : "bt_remote_favorite",
+          "font_size" : 15
+        }
+      }
+    ],
+    "attributes" : {
+      "flex" : "",
+      "enabled" : true,
+      "tint_color" : "RGBA(0.000000,0.478000,1.000000,1.000000)",
+      "custom_class" : "",
+      "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+      "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+      "name" : "CleverSFTPclient"
+    }
+  }
+]
