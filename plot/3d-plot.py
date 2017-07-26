@@ -1,22 +1,20 @@
-# https://forum.omz-software.com/topic/3630/how-to-make-my-3d-scatter-graph-rotating-to-view/3 
+# http://matplotlib.org/mpl_toolkits/mplot3d/tutorial.html?highlight=quiver#mpl_toolkits.mplot3d.Axes3D.quiver]
 
+import matplotlib as mpl
 from mpl_toolkits.mplot3d import Axes3D
+import numpy as np
 import matplotlib.pyplot as plt
 
+mpl.rcParams['legend.fontsize'] = 10
+
 fig = plt.figure()
-ax = fig.add_subplot(111, projection='3d')
+ax = fig.gca(projection='3d')
+theta = np.linspace(-4 * np.pi, 4 * np.pi, 100)
+z = np.linspace(-2, 2, 100)
+r = z**2 + 1
+x = r * np.sin(theta)
+y = r * np.cos(theta)
+ax.plot(x, y, z, label='parametric curve')
+ax.legend()
 
-x =[1,2,3,4,5,6,7,8,9,10]
-y =[5,6,2,3,13,4,1,2,4,8]
-z =[2,3,3,3,5,7,9,11,9,10]
-
-ax.scatter(x, y, z, c='r', marker='o')
-
-ax.set_xlabel('X Label')
-ax.set_ylabel('Y Label')
-ax.set_zlabel('Z Label')
-
-for i in range(0, 360, 45):
-	ax.view_init(None, i)
-	plt.show()
-
+plt.show()

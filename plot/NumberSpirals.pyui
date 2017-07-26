@@ -1,0 +1,723 @@
+[
+  {
+    "selected" : false,
+    "frame" : "{{0, 0}, {1270, 970}}",
+    "class" : "View",
+    "nodes" : [
+      {
+        "selected" : false,
+        "frame" : "{{964, 193}, {293, 34}}",
+        "class" : "Slider",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "L",
+          "continuous" : true,
+          "action" : "sliderSpacingChanged",
+          "frame" : "{{378, 402}, {200, 34}}",
+          "class" : "Slider",
+          "uuid" : "14BEF107-92A6-4490-B837-763FA4EEFA9A",
+          "value" : 0.5,
+          "name" : "sliderSpacing"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{964, 161}, {134, 32}}",
+        "class" : "Label",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "L",
+          "font_name" : "<System>",
+          "frame" : "{{403, 403}, {150, 32}}",
+          "uuid" : "1C1C0234-66D2-4791-8726-3C44A1B3AB1E",
+          "text" : "Spacing",
+          "alignment" : "left",
+          "class" : "Label",
+          "font_size" : 18,
+          "name" : "label1"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{6, 6}, {950, 950}}",
+        "class" : "View",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "border_width" : 1,
+          "flex" : "WH",
+          "custom_class" : "numberSpiralView",
+          "frame" : "{{428, 369}, {100, 100}}",
+          "border_color" : "RGBA(0.563679,0.563679,0.563679,1.000000)",
+          "corner_radius" : 12,
+          "class" : "View",
+          "uuid" : "75147734-1377-4973-9391-22C9D76924ED",
+          "background_color" : "RGBA(0.839623,0.839623,0.839623,1.000000)",
+          "name" : "spiralView"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{1129, 169}, {128, 24}}",
+        "class" : "Label",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "L",
+          "font_size" : 14,
+          "frame" : "{{560, 469}, {150, 32}}",
+          "uuid" : "C50B6C14-9F0D-439C-970C-7CECC9187813",
+          "text" : "Label",
+          "alignment" : "right",
+          "class" : "Label",
+          "name" : "labelSpacing",
+          "font_name" : "<System>"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{964, 112}, {293, 34}}",
+        "class" : "Slider",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "L",
+          "action" : "sliderTurnsChanged",
+          "continuous" : true,
+          "frame" : "{{535, 468}, {200, 34}}",
+          "class" : "Slider",
+          "uuid" : "E4B50AFE-2925-4B56-85CC-E46490EB0A40",
+          "value" : 0.5,
+          "name" : "sliderTurns"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{964, 82}, {150, 32}}",
+        "class" : "Label",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "L",
+          "font_size" : 18,
+          "frame" : "{{560, 469}, {150, 32}}",
+          "uuid" : "2DB32B3C-ED81-4B50-B1D0-D2EC55727CB5",
+          "text" : "Turns",
+          "alignment" : "left",
+          "class" : "Label",
+          "name" : "label2",
+          "font_name" : "<System>"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{1129, 90}, {128, 24}}",
+        "class" : "Label",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "L",
+          "font_size" : 14,
+          "frame" : "{{560, 469}, {150, 32}}",
+          "uuid" : "DEDEBEE9-77AD-4FC8-8AF2-CB8E1EB46845",
+          "text" : "Label",
+          "alignment" : "right",
+          "class" : "Label",
+          "name" : "labelTurns",
+          "font_name" : "<System>"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{1206, 226}, {51, 31}}",
+        "class" : "Switch",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "L",
+          "action" : "switchAutoSpacingChanged",
+          "frame" : "{{610, 470}, {51, 31}}",
+          "class" : "Switch",
+          "uuid" : "4740F7C5-9468-4BDA-90A2-B47B496A34A7",
+          "value" : true,
+          "name" : "switchAutoSpacing"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{964, 226}, {234, 32}}",
+        "class" : "Label",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "L",
+          "font_size" : 18,
+          "frame" : "{{560, 469}, {150, 32}}",
+          "uuid" : "F96998B1-835F-4478-9AE3-F817EB5BFD3F",
+          "text" : "Auto Spacing",
+          "alignment" : "left",
+          "class" : "Label",
+          "name" : "label3",
+          "font_name" : "<System>"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{1206, 324}, {51, 31}}",
+        "class" : "Switch",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "L",
+          "action" : "switchDrawAxisChanged",
+          "frame" : "{{610, 470}, {51, 31}}",
+          "class" : "Switch",
+          "uuid" : "F5AEC3CB-FEB1-436F-8116-4EE3D1343BDD",
+          "value" : false,
+          "name" : "switchDrawAxis"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{964, 324}, {234, 32}}",
+        "class" : "Label",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "L",
+          "font_size" : 18,
+          "frame" : "{{560, 469}, {150, 32}}",
+          "uuid" : "964EFD22-0953-4EA4-8ABF-1459579222DC",
+          "text" : "Draw Axis",
+          "alignment" : "left",
+          "class" : "Label",
+          "name" : "label4",
+          "font_name" : "<System>"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{1206, 363}, {51, 31}}",
+        "class" : "Switch",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "action" : "switchDrawDotsChanged",
+          "flex" : "L",
+          "frame" : "{{610, 470}, {51, 31}}",
+          "class" : "Switch",
+          "uuid" : "F9857D63-4F6C-4053-ADB4-F6D539630A05",
+          "value" : true,
+          "name" : "switchDrawDots"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{964, 364}, {234, 32}}",
+        "class" : "Label",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "L",
+          "font_size" : 18,
+          "frame" : "{{560, 469}, {150, 32}}",
+          "uuid" : "14622C3D-4B99-4563-9F65-72A5B07CA096",
+          "text" : "Draw Number Dots",
+          "alignment" : "left",
+          "class" : "Label",
+          "name" : "label5",
+          "font_name" : "<System>"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{1206, 402}, {51, 31}}",
+        "class" : "Switch",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "L",
+          "action" : "switchDrawNumbersChanged",
+          "frame" : "{{610, 470}, {51, 31}}",
+          "class" : "Switch",
+          "uuid" : "9202C51F-0137-4A96-A405-4799F2DA3405",
+          "value" : true,
+          "name" : "switchDrawNumbers"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{988, 401}, {210, 32}}",
+        "class" : "Label",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "L",
+          "font_size" : 18,
+          "frame" : "{{560, 469}, {150, 32}}",
+          "uuid" : "D41E47BB-0A30-4FE8-B41E-F4704967B279",
+          "text" : "Draw Numbers",
+          "alignment" : "left",
+          "class" : "Label",
+          "name" : "labelDrawNumbers",
+          "font_name" : "<System>"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{1206, 441}, {51, 31}}",
+        "class" : "Switch",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "L",
+          "action" : "switchHilitePrimesChanged",
+          "frame" : "{{610, 470}, {51, 31}}",
+          "class" : "Switch",
+          "uuid" : "CE8DE121-E544-48D2-9967-CC9D6045FF35",
+          "value" : false,
+          "name" : "switchHilitePrimes"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{988, 440}, {210, 32}}",
+        "class" : "Label",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "L",
+          "font_name" : "<System>",
+          "frame" : "{{560, 469}, {150, 32}}",
+          "uuid" : "DF02276E-89B9-4AAB-A6B5-AD9D194F49E0",
+          "text" : "Highlight Primes",
+          "alignment" : "left",
+          "class" : "Label",
+          "name" : "labelHilitePrimes",
+          "font_size" : 18
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{964, 6}, {219, 32}}",
+        "class" : "Label",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "L",
+          "font_name" : "<System-Bold>",
+          "frame" : "{{560, 469}, {150, 32}}",
+          "uuid" : "B4803AD5-FA89-4CCB-A068-F1BAD7D6C3B8",
+          "text" : "Number Spiral Explorer",
+          "alignment" : "left",
+          "class" : "Label",
+          "name" : "label7",
+          "font_size" : 20
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{964, 37}, {125, 27}}",
+        "class" : "Label",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "L",
+          "name" : "label8",
+          "font_name" : "<System>",
+          "frame" : "{{560, 469}, {150, 32}}",
+          "uuid" : "9BD4F8BC-8DEF-466C-B4AC-BFF12F056C6B",
+          "text" : "By Stefan Wolfrum,",
+          "alignment" : "left",
+          "class" : "Label",
+          "font_size" : 14,
+          "text_color" : "RGBA(0.507075,0.507075,0.507075,1.000000)"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{1183, 9}, {30, 27}}",
+        "class" : "Label",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "L",
+          "name" : "label9",
+          "font_name" : "<System>",
+          "frame" : "{{560, 469}, {150, 32}}",
+          "uuid" : "B65E8AF8-10B3-41D1-AC37-D3D21A8070B5",
+          "text" : "v1.0",
+          "alignment" : "right",
+          "class" : "Label",
+          "font_size" : 14,
+          "text_color" : "RGBA(0.507075,0.507075,0.507075,1.000000)"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{1093, 37}, {80, 27}}",
+        "class" : "Button",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "action" : "buttonMetawopsTapped",
+          "flex" : "L",
+          "frame" : "{{595, 469}, {80, 32}}",
+          "title" : "@metawops",
+          "class" : "Button",
+          "uuid" : "7BB1F2E8-B4DA-47E9-A528-0E41E6133C10",
+          "font_size" : 14,
+          "name" : "button1"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{1206, 285}, {51, 31}}",
+        "class" : "Switch",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "L",
+          "action" : "switchDrawSpiralChanged",
+          "frame" : "{{610, 470}, {51, 31}}",
+          "class" : "Switch",
+          "uuid" : "5DFAD3BE-A4E8-464E-9DE4-929AEC79B54D",
+          "value" : true,
+          "name" : "switchDrawSpiral"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{964, 285}, {234, 32}}",
+        "class" : "Label",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "L",
+          "font_name" : "<System>",
+          "frame" : "{{560, 469}, {150, 32}}",
+          "uuid" : "37B0504A-6CE1-4373-B0B1-07DEDF9D3486",
+          "text" : "Draw Spiral",
+          "alignment" : "left",
+          "class" : "Label",
+          "name" : "label10",
+          "font_size" : 18
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{1012, 480}, {186, 32}}",
+        "class" : "Label",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "L",
+          "font_name" : "<System>",
+          "frame" : "{{560, 469}, {150, 32}}",
+          "uuid" : "3DDAEE99-08E8-4F53-93FD-0D27F306E136",
+          "text" : "Primes only",
+          "alignment" : "left",
+          "class" : "Label",
+          "font_size" : 18,
+          "name" : "labelPrimesOnly"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{1206, 481}, {51, 31}}",
+        "class" : "Switch",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "action" : "switchPrimesOnlyChanged",
+          "flex" : "L",
+          "frame" : "{{610, 470}, {51, 31}}",
+          "class" : "Switch",
+          "uuid" : "563091AE-FD20-45DF-8F1B-61E5BA64C613",
+          "value" : true,
+          "name" : "switchPrimesOnly"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{1206, 533}, {51, 31}}",
+        "class" : "Switch",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "L",
+          "action" : "switchDrawCurveChanged",
+          "frame" : "{{610, 470}, {51, 31}}",
+          "class" : "Switch",
+          "uuid" : "BD03F69A-08CA-4FA4-BC7B-7C2B49F87AA2",
+          "value" : true,
+          "name" : "switchDrawCurve"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{964, 533}, {180, 32}}",
+        "class" : "Label",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "L",
+          "font_size" : 18,
+          "frame" : "{{560, 469}, {150, 32}}",
+          "uuid" : "E0E80932-2017-44F2-8FB6-13F34535B816",
+          "text" : "Draw Curve an²+bn+c",
+          "alignment" : "left",
+          "class" : "Label",
+          "name" : "label11",
+          "font_name" : "<System>"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{998, 573}, {200, 34}}",
+        "class" : "Slider",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "L",
+          "continuous" : true,
+          "action" : "sliderAchanged",
+          "frame" : "{{535, 468}, {200, 34}}",
+          "class" : "Slider",
+          "uuid" : "4915C6D8-0D64-4CEE-9564-F3765E67203F",
+          "value" : 0.5,
+          "name" : "sliderA"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{964, 573}, {37, 32}}",
+        "class" : "Label",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "L",
+          "font_size" : 18,
+          "frame" : "{{560, 469}, {150, 32}}",
+          "uuid" : "1F206667-B1F1-49CB-9790-0DF0307135DA",
+          "text" : "a",
+          "alignment" : "left",
+          "class" : "Label",
+          "name" : "labelA",
+          "font_name" : "<System>"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{998, 608}, {200, 34}}",
+        "class" : "Slider",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "L",
+          "continuous" : true,
+          "action" : "sliderBchanged",
+          "frame" : "{{535, 468}, {200, 34}}",
+          "class" : "Slider",
+          "uuid" : "2E66192C-5DBC-4709-AA17-0A94C26FA9B8",
+          "value" : 0.5,
+          "name" : "sliderB"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{964, 608}, {37, 32}}",
+        "class" : "Label",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "L",
+          "font_size" : 18,
+          "frame" : "{{560, 469}, {150, 32}}",
+          "uuid" : "3200D93A-3079-454A-91FF-EB69317CE6E2",
+          "text" : "b",
+          "alignment" : "left",
+          "class" : "Label",
+          "name" : "labelB",
+          "font_name" : "<System>"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{964, 643}, {37, 32}}",
+        "class" : "Label",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "L",
+          "font_size" : 18,
+          "frame" : "{{560, 469}, {150, 32}}",
+          "uuid" : "E6AEA25B-08AE-4E97-9603-FAB33BC32EC7",
+          "text" : "c",
+          "alignment" : "left",
+          "class" : "Label",
+          "name" : "labelC",
+          "font_name" : "<System>"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{998, 643}, {200, 34}}",
+        "class" : "Slider",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "L",
+          "continuous" : true,
+          "action" : "sliderCchanged",
+          "frame" : "{{535, 468}, {200, 34}}",
+          "class" : "Slider",
+          "uuid" : "82683FFC-D9A7-4ACE-AF11-2BBEB1FFF2A4",
+          "value" : 0.5,
+          "name" : "sliderC"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{1200, 573}, {57, 32}}",
+        "class" : "TextField",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "L",
+          "font_name" : "<System>",
+          "frame" : "{{535, 469}, {200, 32}}",
+          "spellchecking_type" : "default",
+          "class" : "TextField",
+          "uuid" : "E0D36685-CC65-447D-B528-D67E3B190DB3",
+          "alignment" : "left",
+          "autocorrection_type" : "default",
+          "name" : "textfieldA",
+          "font_size" : 17
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{1200, 608}, {57, 32}}",
+        "class" : "TextField",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "L",
+          "name" : "textfieldB",
+          "frame" : "{{535, 469}, {200, 32}}",
+          "spellchecking_type" : "default",
+          "class" : "TextField",
+          "uuid" : "E0D36685-CC65-447D-B528-D67E3B190DB3",
+          "alignment" : "left",
+          "autocorrection_type" : "default",
+          "font_size" : 17,
+          "font_name" : "<System>"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{1200, 644}, {57, 32}}",
+        "class" : "TextField",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "L",
+          "font_name" : "<System>",
+          "frame" : "{{535, 469}, {200, 32}}",
+          "spellchecking_type" : "default",
+          "class" : "TextField",
+          "uuid" : "E0D36685-CC65-447D-B528-D67E3B190DB3",
+          "alignment" : "left",
+          "autocorrection_type" : "default",
+          "font_size" : 17,
+          "name" : "textfieldC"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{1226, 36}, {30, 30}}",
+        "class" : "Button",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "action" : "settingsButtonTapped",
+          "flex" : "L",
+          "font_size" : 15,
+          "frame" : "{{595, 469}, {80, 32}}",
+          "title" : "",
+          "class" : "Button",
+          "uuid" : "5393B48F-0E0B-417B-ABF8-A6919B99D3F0",
+          "name" : "buttonSettings",
+          "image_name" : "iob:ios7_gear_outline_32"
+        }
+      },
+      {
+        "selected" : true,
+        "frame" : "{{1181, 36}, {37, 29}}",
+        "class" : "Button",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "action" : "saveButtonTapped",
+          "flex" : "L",
+          "name" : "buttonShare",
+          "frame" : "{{595, 469}, {80, 32}}",
+          "title" : "",
+          "uuid" : "C7F9DD45-8909-42A3-8FF1-41FE311F0DB0",
+          "class" : "Button",
+          "font_size" : 15,
+          "image_name" : "iob:archive_32"
+        }
+      }
+    ],
+    "attributes" : {
+      "name" : "Number Spirals",
+      "enabled" : true,
+      "tint_color" : "RGBA(0.000000,0.478000,1.000000,1.000000)",
+      "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+      "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+      "flex" : ""
+    }
+  }
+]

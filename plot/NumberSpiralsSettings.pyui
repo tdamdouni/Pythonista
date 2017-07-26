@@ -1,0 +1,125 @@
+[
+  {
+    "selected" : false,
+    "frame" : "{{0, 0}, {320, 320}}",
+    "class" : "View",
+    "nodes" : [
+      {
+        "selected" : false,
+        "frame" : "{{6, 80}, {308, 34}}",
+        "class" : "Slider",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "W",
+          "action" : "sliderSettingsDotSizeChanged",
+          "continuous" : true,
+          "frame" : "{{60, 143}, {200, 34}}",
+          "class" : "Slider",
+          "uuid" : "902B44EF-0E87-4DCC-B201-A3754D776C1B",
+          "value" : 0.5,
+          "name" : "sliderDotSize"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{6, 40}, {150, 32}}",
+        "class" : "Label",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "name" : "label1",
+          "frame" : "{{85, 144}, {150, 32}}",
+          "uuid" : "63950743-4086-477D-B6FD-B3432D88175C",
+          "text" : "Dots' size",
+          "alignment" : "left",
+          "class" : "Label",
+          "font_size" : 18,
+          "font_name" : "<System>"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{6, 182}, {308, 34}}",
+        "class" : "Slider",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "W",
+          "action" : "sliderSettingsFontSizeChanged",
+          "continuous" : true,
+          "frame" : "{{60, 143}, {200, 34}}",
+          "uuid" : "902B44EF-0E87-4DCC-B201-A3754D776C1B",
+          "class" : "Slider",
+          "value" : 0.5,
+          "name" : "sliderFontSize"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{6, 142}, {150, 32}}",
+        "class" : "Label",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "font_name" : "<System>",
+          "frame" : "{{85, 144}, {150, 32}}",
+          "uuid" : "63950743-4086-477D-B6FD-B3432D88175C",
+          "text" : "Font size",
+          "alignment" : "left",
+          "class" : "Label",
+          "font_size" : 18,
+          "name" : "label1"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{243, 142}, {71, 32}}",
+        "class" : "Label",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "font_name" : "<System>",
+          "frame" : "{{85, 144}, {150, 32}}",
+          "uuid" : "792438F5-AB07-4B7F-A14E-8833E97C85F9",
+          "text" : "Label",
+          "alignment" : "right",
+          "class" : "Label",
+          "font_size" : 18,
+          "name" : "labelFontSize"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{243, 43}, {71, 32}}",
+        "class" : "Label",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "font_size" : 18,
+          "frame" : "{{85, 144}, {150, 32}}",
+          "uuid" : "792438F5-AB07-4B7F-A14E-8833E97C85F9",
+          "text" : "Label",
+          "alignment" : "right",
+          "class" : "Label",
+          "name" : "labelDotSize",
+          "font_name" : "<System>"
+        }
+      }
+    ],
+    "attributes" : {
+      "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+      "enabled" : true,
+      "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+      "name" : "Preferences",
+      "tint_color" : "RGBA(0.000000,0.478000,1.000000,1.000000)",
+      "flex" : ""
+    }
+  }
+]
