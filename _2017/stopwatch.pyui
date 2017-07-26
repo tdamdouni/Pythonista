@@ -1,0 +1,88 @@
+[
+  {
+    "class" : "View",
+    "attributes" : {
+      "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+      "tint_color" : "RGBA(0.000000,0.478000,1.000000,1.000000)",
+      "enabled" : true,
+      "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+      "flex" : ""
+    },
+    "frame" : "{{0, 0}, {397, 271}}",
+    "selected" : false,
+    "nodes" : [
+      {
+        "class" : "View",
+        "attributes" : {
+          "class" : "View",
+          "name" : "view1",
+          "uuid" : "80BC4BC3-1F0A-45A1-94AD-680AF1DA4FE2",
+          "frame" : "{{70, 70}, {100, 100}}",
+          "custom_class" : "StopWatch"
+        },
+        "frame" : "{{17, 27}, {345, 76}}",
+        "selected" : false,
+        "nodes" : [
+
+        ]
+      },
+      {
+        "class" : "Button",
+        "attributes" : {
+          "font_size" : 15,
+          "uuid" : "32799482-CFED-474F-8B25-7E044E478CDA",
+          "name" : "button1",
+          "corner_radius" : 40,
+          "border_width" : 1,
+          "action" : "button_action",
+          "class" : "Button",
+          "frame" : "{{80, 104}, {80, 32}}",
+          "title" : "Start"
+        },
+        "frame" : "{{29, 175}, {80, 80}}",
+        "selected" : false,
+        "nodes" : [
+
+        ]
+      },
+      {
+        "class" : "Button",
+        "attributes" : {
+          "font_size" : 15,
+          "uuid" : "C0300CD9-B1C7-49A8-ADF2-B16EF023A146",
+          "name" : "button2",
+          "corner_radius" : 40,
+          "border_width" : 1,
+          "action" : "button_action",
+          "class" : "Button",
+          "frame" : "{{159, 120}, {80, 32}}",
+          "title" : "Stop"
+        },
+        "frame" : "{{145, 175}, {80, 80}}",
+        "selected" : false,
+        "nodes" : [
+
+        ]
+      },
+      {
+        "class" : "Button",
+        "attributes" : {
+          "font_size" : 15,
+          "uuid" : "0666B9DE-5266-452A-A2CF-F583594B57A8",
+          "name" : "button3",
+          "corner_radius" : 40,
+          "border_width" : 1,
+          "action" : "button_action",
+          "class" : "Button",
+          "frame" : "{{159, 120}, {80, 32}}",
+          "title" : "Reset"
+        },
+        "frame" : "{{275, 175}, {80, 80}}",
+        "selected" : false,
+        "nodes" : [
+
+        ]
+      }
+    ]
+  }
+]
