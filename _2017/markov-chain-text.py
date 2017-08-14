@@ -1,6 +1,6 @@
 #!python3
 
-# https://forum.omz-software.com/topic/4210/markov-chain-text
+# https://forum.omz-software.com/topic/4210/markov-chain-text/3
 
 # Adapted from this blog post: http://agiliq.com/blog/2009/06/generating-pseudo-random-text-with-markov-chains-u/
 
