@@ -1,0 +1,92 @@
+[
+{
+class: "View",
+attributes: {
+name: "clock_gadget",
+tint_color: "RGBA(0.000000,0.478000,1.000000,1.000000)",
+background_color: "RGBA(1.000000,1.000000,1.000000,1.000000)",
+enabled: true,
+border_color: "RGBA(0.000000,0.000000,0.000000,1.000000)",
+flex: ""
+},
+frame: "{{0, 0}, {125, 233}}",
+nodes: [
+{
+class: "View",
+attributes: {
+enabled: true,
+flex: "",
+name: "rootview",
+border_width: 1,
+alpha: 0,
+border_color: "RGBA(0.000000,0.000000,0.000000,1.000000)",
+uuid: "F9CA3888-3F34-4DCA-9C86-DDB5EEE7C867"
+},
+frame: "{{0, 0}, {127, 230}}",
+nodes: [
+{
+class: "WebView",
+attributes: {
+name: "webview",
+border_color: "RGBA(0.000000,0.000000,0.000000,1.000000)",
+uuid: "266E1FE4-C52A-4785-B092-498E9C313A96",
+enabled: true,
+scales_to_fit: true,
+flex: "WH"
+},
+frame: "{{6, 6}, {115, 94}}",
+nodes: [ ]
+},
+{
+class: "Button",
+attributes: {
+font_size: 11,
+enabled: true,
+flex: "",
+font_bold: false,
+name: "speakTimeButton",
+uuid: "ADC2750C-A6F5-4311-8138-F368D068F9E9",
+border_color: "RGBA(0.000000,0.000000,0.000000,1.000000)",
+border_width: 1,
+action: "self.speaknowButtonTapped",
+image_name: "ionicons-ios7-mic-32",
+title: "Say Now "
+},
+frame: "{{12, 180}, {100.5, 35}}",
+nodes: [ ]
+},
+{
+class: "Switch",
+attributes: {
+enabled: true,
+flex: "",
+name: "speakSecondsSwitch",
+value: false,
+action: "self.switchTapped",
+border_color: "RGBA(0.000000,0.000000,0.000000,1.000000)",
+uuid: "42117A61-0D45-465F-9711-4AEA39422352"
+},
+frame: "{{12, 141}, {51, 31}}",
+nodes: [ ]
+},
+{
+class: "Label",
+attributes: {
+font_size: 10,
+enabled: true,
+text: "Speak Seconds",
+flex: "",
+name: "speakSecondsLabel",
+border_color: "RGBA(0.000000,0.000000,0.000000,1.000000)",
+text_color: "RGBA(0.000000,0.000000,0.000000,1.000000)",
+alignment: "left",
+uuid: "039FAE80-19F0-4D9E-9BC1-EEAEFD306EE6"
+},
+frame: "{{12, 123.5}, {80.5, 20}}",
+nodes: [ ]
+}
+]
+}
+]
+}
+]
