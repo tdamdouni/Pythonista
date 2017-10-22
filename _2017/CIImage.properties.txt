@@ -1,0 +1,143 @@
+{
+    ColorModel = RGB;
+    DPIHeight = 72;
+    DPIWidth = 72;
+    Depth = 8;
+    Orientation = 1;
+    PixelHeight = 960;
+    PixelWidth = 1280;
+    ProfileName = "sRGB IEC61966-2.1";
+    "{ExifAux}" =     {
+        Regions =         {
+            HeightAppliedTo = 960;
+            RegionList =             (
+                                {
+                    AngleInfoRoll = 0;
+                    AngleInfoYaw = 0;
+                    ConfidenceLevel = 1000;
+                    FaceID = 13;
+                    Height = "0.267";
+                    Timestamp = 2147483647;
+                    Type = Face;
+                    Width = "0.2";
+                    X = "0.217";
+                    Y = "0.4395";
+                },
+                                {
+                    AngleInfoRoll = 0;
+                    AngleInfoYaw = 45;
+                    ConfidenceLevel = 1000;
+                    FaceID = 14;
+                    Height = "0.407";
+                    Timestamp = 2147483647;
+                    Type = Face;
+                    Width = "0.305";
+                    X = "0.7435";
+                    Y = "0.6485";
+                }
+            );
+            WidthAppliedTo = 1280;
+        };
+    };
+    "{Exif}" =     {
+        ApertureValue = "2.52606882168926";
+        BrightnessValue = "7.893604980192417";
+        ColorSpace = 1;
+        ComponentsConfiguration =         (
+            1,
+            2,
+            3,
+            0
+        );
+        CustomRendered = 4;
+        DateTimeDigitized = "2017:08:15 15:41:45";
+        DateTimeOriginal = "2017:08:15 15:41:45";
+        ExifVersion =         (
+            2,
+            2,
+            1
+        );
+        ExposureBiasValue = 0;
+        ExposureMode = 0;
+        ExposureProgram = 2;
+        ExposureTime = "0.002890173410404624";
+        FNumber = "2.4";
+        Flash = 16;
+        FlashPixVersion =         (
+            1,
+            0
+        );
+        FocalLenIn35mmFilm = 31;
+        FocalLength = "2.15";
+        ISOSpeedRatings =         (
+            50
+        );
+        LensMake = Apple;
+        LensModel = "iPhone SE front camera 2.15mm f/2.4";
+        LensSpecification =         (
+            "2.15",
+            "2.15",
+            "2.4",
+            "2.4"
+        );
+        MeteringMode = 5;
+        PixelXDimension = 1280;
+        PixelYDimension = 960;
+        SceneCaptureType = 0;
+        SceneType = 1;
+        SensingMethod = 2;
+        ShutterSpeedValue = "8.435213887166769";
+        SubsecTimeDigitized = 035;
+        SubsecTimeOriginal = 035;
+        WhiteBalance = 0;
+    };
+    "{GPS}" =     {
+        Altitude = "1166.847222222222";
+        AltitudeRef = 0;
+        DateStamp = "2017:08:15";
+        DestBearing = "99.63764705882353";
+        DestBearingRef = T;
+        HPositioningError = 5;
+        ImgDirection = "279.6376470588235";
+        ImgDirectionRef = T;
+        Latitude = "48.97483833333333";
+        LatitudeRef = N;
+        Longitude = "13.56078";
+        LongitudeRef = E;
+        Speed = 0;
+        SpeedRef = K;
+        TimeStamp = "13:41:44";
+    };
+    "{MakerApple}" =     {
+        1 = 5;
+        10 = 4;
+        14 = 0;
+        20 = 3;
+        21 = "E0C2ED13-1675-455F-92EB-BC76EADD8D85";
+        3 =         {
+            epoch = 0;
+            flags = 1;
+            timescale = 1000000000;
+            value = 366822928402750;
+        };
+        4 = 1;
+        5 = 220;
+        6 = 226;
+        7 = 1;
+        8 =         (
+            "0.9782212",
+            "0.001269334",
+            "-0.1241331"
+        );
+    };
+    "{TIFF}" =     {
+        DateTime = "2017:08:15 15:41:45";
+        Make = Apple;
+        Model = "iPhone SE";
+        Orientation = 1;
+        ResolutionUnit = 2;
+        Software = "10.3.3";
+        XResolution = 72;
+        YResolution = 72;
+    };
+}
