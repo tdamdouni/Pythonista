@@ -1,0 +1,87 @@
+[
+  {
+    "class" : "View",
+    "attributes" : {
+      "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+      "tint_color" : "RGBA(0.000000,0.478000,1.000000,1.000000)",
+      "enabled" : true,
+      "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+      "flex" : ""
+    },
+    "frame" : "{{0, 0}, {451, 300}}",
+    "selected" : false,
+    "nodes" : [
+      {
+        "class" : "Button",
+        "attributes" : {
+          "font_size" : 15,
+          "title" : "Button1",
+          "name" : "button1",
+          "action" : "button_action",
+          "class" : "Button",
+          "frame" : "{{80, 104}, {80, 32}}",
+          "uuid" : "5C1173E2-1C48-4FC7-AED9-2256DCBADDA4"
+        },
+        "frame" : "{{56, 220}, {141, 52}}",
+        "selected" : false,
+        "nodes" : [
+
+        ]
+      },
+      {
+        "class" : "TextView",
+        "attributes" : {
+          "font_size" : 17,
+          "font_name" : "<System>",
+          "flex" : "WH",
+          "autocorrection_type" : "default",
+          "name" : "textview1",
+          "spellchecking_type" : "default",
+          "class" : "TextView",
+          "alignment" : "left",
+          "frame" : "{{20, 20}, {200, 200}}",
+          "editable" : false,
+          "uuid" : "4B000022-3FCC-40CE-A1B8-56F8ED7C996F"
+        },
+        "frame" : "{{279, 77}, {152, 195}}",
+        "selected" : false,
+        "nodes" : [
+
+        ]
+      },
+      {
+        "class" : "Button",
+        "attributes" : {
+          "font_size" : 15,
+          "title" : "Button2",
+          "name" : "button2",
+          "action" : "button_action",
+          "class" : "Button",
+          "frame" : "{{186, 134}, {80, 32}}",
+          "uuid" : "822A696E-6FB8-4421-8BFC-C8C6B63B6EC2"
+        },
+        "frame" : "{{56, 105}, {135, 58}}",
+        "selected" : true,
+        "nodes" : [
+
+        ]
+      },
+      {
+        "class" : "SegmentedControl",
+        "attributes" : {
+          "class" : "SegmentedControl",
+          "name" : "segmentedcontrol1",
+          "frame" : "{{166, 136}, {120, 29}}",
+          "uuid" : "384FC3D2-00A5-41AC-9B07-507B8DBD0150",
+          "segments" : "console|textview",
+          "flex" : "LR"
+        },
+        "frame" : "{{24, 26}, {407, 28}}",
+        "selected" : false,
+        "nodes" : [
+
+        ]
+      }
+    ]
+  }
+]
