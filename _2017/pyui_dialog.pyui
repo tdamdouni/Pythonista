@@ -1,0 +1,165 @@
+[
+  {
+    "class" : "View",
+    "attributes" : {
+      "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+      "tint_color" : "RGBA(0.000000,0.478000,1.000000,1.000000)",
+      "enabled" : true,
+      "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+      "flex" : ""
+    },
+    "frame" : "{{0, 0}, {474, 392}}",
+    "selected" : false,
+    "nodes" : [
+      {
+        "class" : "Label",
+        "attributes" : {
+          "font_size" : 18,
+          "text" : "Switch",
+          "font_name" : "<System>",
+          "name" : "label1",
+          "class" : "Label",
+          "alignment" : "right",
+          "frame" : "{{162, 180}, {150, 32}}",
+          "uuid" : "03F4FAE5-9D37-48B6-96AD-F22361E38D09"
+        },
+        "frame" : "{{36, 61}, {128, 64}}",
+        "selected" : false,
+        "nodes" : [
+
+        ]
+      },
+      {
+        "class" : "Label",
+        "attributes" : {
+          "font_size" : 18,
+          "text" : "Seg Control",
+          "font_name" : "<System>",
+          "name" : "label2",
+          "class" : "Label",
+          "alignment" : "right",
+          "frame" : "{{162, 180}, {150, 32}}",
+          "uuid" : "5A48F1C7-1FD8-49AB-8461-FB37CC1E621C"
+        },
+        "frame" : "{{36, 141}, {128, 55}}",
+        "selected" : false,
+        "nodes" : [
+
+        ]
+      },
+      {
+        "class" : "Label",
+        "attributes" : {
+          "font_size" : 18,
+          "text" : "Text Field",
+          "font_name" : "<System>",
+          "name" : "label3",
+          "class" : "Label",
+          "alignment" : "right",
+          "frame" : "{{162, 180}, {150, 32}}",
+          "uuid" : "1E980083-A1F6-4C92-9091-DE1510FF7080"
+        },
+        "frame" : "{{36, 329}, {128, 50}}",
+        "selected" : false,
+        "nodes" : [
+
+        ]
+      },
+      {
+        "class" : "Switch",
+        "attributes" : {
+          "class" : "Switch",
+          "value" : true,
+          "frame" : "{{212, 181}, {51, 31}}",
+          "uuid" : "43C475C8-4894-4CBC-A38E-964FB9EBAFED",
+          "name" : "switch1"
+        },
+        "frame" : "{{217, 77}, {51, 31}}",
+        "selected" : false,
+        "nodes" : [
+
+        ]
+      },
+      {
+        "class" : "SegmentedControl",
+        "attributes" : {
+          "class" : "SegmentedControl",
+          "name" : "segmentedcontrol1",
+          "frame" : "{{177, 182}, {120, 29}}",
+          "uuid" : "EE9A3B3C-B08B-4BC5-A379-552960327F71",
+          "segments" : "dog|cat|cow",
+          "flex" : ""
+        },
+        "frame" : "{{217, 141}, {227, 55}}",
+        "selected" : false,
+        "nodes" : [
+
+        ]
+      },
+      {
+        "class" : "TextField",
+        "attributes" : {
+          "font_size" : 17,
+          "font_name" : "<System>",
+          "autocorrection_type" : "default",
+          "name" : "textfield1",
+          "class" : "TextField",
+          "alignment" : "left",
+          "frame" : "{{137, 180}, {200, 32}}",
+          "spellchecking_type" : "default",
+          "uuid" : "76318C92-634C-4C86-9A86-BE289C327ADD"
+        },
+        "frame" : "{{217, 329}, {227, 50}}",
+        "selected" : false,
+        "nodes" : [
+
+        ]
+      },
+      {
+        "class" : "ImageView",
+        "attributes" : {
+          "class" : "ImageView",
+          "name" : "imageview1",
+          "uuid" : "FFFE3F49-16D8-4B2F-88B2-EFC2D4239FFA",
+          "frame" : "{{187, 146}, {100, 100}}",
+          "custom_attributes" : "{'image':ui.Image('Dog_Face')}"
+        },
+        "frame" : "{{217, 230}, {65, 61}}",
+        "selected" : false,
+        "nodes" : [
+
+        ]
+      },
+      {
+        "class" : "ImageView",
+        "attributes" : {
+          "class" : "ImageView",
+          "name" : "imageview1",
+          "uuid" : "FFFE3F49-16D8-4B2F-88B2-EFC2D4239FFA",
+          "frame" : "{{187, 146}, {100, 100}}",
+          "custom_attributes" : "{'image':ui.Image('Cat_Face')}"
+        },
+        "frame" : "{{302.5, 230}, {65, 61}}",
+        "selected" : false,
+        "nodes" : [
+
+        ]
+      },
+      {
+        "class" : "ImageView",
+        "attributes" : {
+          "class" : "ImageView",
+          "name" : "imageview1",
+          "uuid" : "FFFE3F49-16D8-4B2F-88B2-EFC2D4239FFA",
+          "frame" : "{{187, 146}, {100, 100}}",
+          "custom_attributes" : "{'image':ui.Image('Cow_Face')}"
+        },
+        "frame" : "{{390, 230}, {54, 61}}",
+        "selected" : false,
+        "nodes" : [
+
+        ]
+      }
+    ]
+  }
+]
