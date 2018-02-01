@@ -10,14 +10,15 @@ import ui
 
 
 class FullScreenButtonView(ui.View):
-    def __init__(self):
-        self.name = ''
-
-    def touch_began(self, touch):
-        self.tap_time = dt.now()
-
-    def touch_ended(self, touch):
-        self.name += '.' if (dt.now() - self.tap_time).total_seconds() < 1 else '-'
-
-
+	def __init__(self):
+		self.name = ''
+		
+	def touch_began(self, touch):
+		self.tap_time = dt.now()
+		
+	def touch_ended(self, touch):
+		self.name += '.' if (dt.now() - self.tap_time).total_seconds() < 1 else '-'
+		
+		
 FullScreenButtonView().present()
+
