@@ -50,6 +50,7 @@ def main():
 		mutable_contact = p.mutableCopy().autorelease()
 		# Assign new image data...
 		mutable_contact.imageData = new_img_bytes
+		contacts.save()
 		# Create a save request for he contact, and execute it...
 		save_req = CNSaveRequest.new().autorelease()
 		save_req.updateContact_(mutable_contact)
@@ -57,4 +58,3 @@ def main():
 		
 if __name__ == '__main__':
 	main()
-
