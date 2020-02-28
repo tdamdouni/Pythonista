@@ -79,7 +79,7 @@ def parse_color(c):
     return ast.literal_eval(c.replace('RGBA','') )
 def parse_frame(framestr):
     '''convert {{x,y},{w,h}} string to (x,y,w,h) tuple '''
-    frame=str(framestr).translate(None,'{}')
+    frame=framestr.replace('{', '').replace('}', '')
     return ast.literal_eval(frame)
 def parse_alignment(a):
     '''handle alignment attribute.  TODO: handle all valid types'''
