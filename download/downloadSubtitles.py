@@ -8,6 +8,7 @@
 # Downloads Subtitles using the Open Subtitles API based on https://github.com/Tulifer/OpenSubtitles and suited for Hazel
 
 from __future__ import unicode_literals
+from __future__ import print_function
 import xmlrpclib
 import base64
 import zlib
@@ -179,12 +180,12 @@ if len(sys.argv) > 1:
 		if OS.SearchSubtitles(1) != 'Error' or OS.SearchSubtitles(2) != 'Error' or OS.SearchSubtitles(3) != 'Error' or OS.SearchSubtitles(4) != 'Error' or OS.SearchSubtitles(5) != 'Error':
 			OS.DownloadSubtitles()
 			OS.Logout()
-			print True
+			print(True)
 		else:
 			OS.Logout()
-			print False
+			print(False)
 	else:
 		OS.Logout()
-		print False
+		print(False)
 else:
-	print False
+	print(False)

@@ -7,6 +7,7 @@
 # Cross Device Pickle
 # Here is an example of doing a cross-device pickle between, for example, an iPad and an IPhone, using cloud.File (note: this requires the updated source that implements readline()).
 
+from __future__ import print_function
 import cloud, pickle
 
 # on device 1
@@ -21,9 +22,9 @@ with cloud.File('', 'w', encryptionKey = 'password') as f:
 with cloud.File(url, 'r', encryptionKey = 'password') as f:
 	d = {}
 	d = pickle.Unpickler(f).load()
-	print d['key1']
-	print d['key2']
-	print d['key3']
+	print(d['key1'])
+	print(d['key2'])
+	print(d['key3'])
 	
 # ====================
 
@@ -86,7 +87,7 @@ JSON = """
 
 
 with cloud.File('http://bit.ly/1XSmPCq', 'r') as f:
-	print json.load(f)['Gestures']
+	print(json.load(f)['Gestures'])
 	
 # ====================
 

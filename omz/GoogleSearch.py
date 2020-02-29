@@ -1,3 +1,4 @@
+from __future__ import print_function
 # https://gist.github.com/omz/3908817
 
 # Google Search for Pythonista (iOS)
@@ -25,7 +26,7 @@ def google(terms):
 if __name__ == '__main__':
 	terms = raw_input('Enter search terms:')
 	title, url = google(terms)
-	print 'First Google Result:'
-	print 'Title:', title
-	print 'URL:', url
+	print('First Google Result:')
+	print('Title:', title)
+	print('URL:', url)
 	clipboard.set('[' + title + ']' + '(' + url + ')')

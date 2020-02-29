@@ -1,3 +1,4 @@
+from __future__ import print_function
 # https://gist.github.com/pudquick/4130373
 
 import uuid, BaseHTTPServer, select, types, clipboard, console
@@ -145,18 +146,18 @@ def serve_it_up(port):
 	UUID2 = str(uuid.uuid4()).upper()
 	mobile_config_str = base_mobileconfig % (icon_label, UUID1, UUID1, script_name, arg_str, payload_name, UUID2, UUID2)
 	my_httpd = NicerHTTPServer((ip, port), MobileConfigHTTPRequestHandler)
-	print "Serving HTTP on %s:%s ..." % (ip,port)
+	print("Serving HTTP on %s:%s ..." % (ip,port))
 	my_httpd.serve_forever()
-	print "\n*** Webclip installed! ***"
+	print("\n*** Webclip installed! ***")
 	
 port = 8000
 clipboard.set('http://127.0.0.1:%s/webclip.mobileconfig' % port)
 console.clear()
 console.set_font('Futura', 22)
 console.set_color(0.2,0.2,0.2)
-print "Open Safari and paste in the URL on your clipboard\n"
+print("Open Safari and paste in the URL on your clipboard\n")
 console.set_color(0.9,0.2,0.2)
-print "It will pause loading,\n   then re-open Pythonista!\n"
+print("It will pause loading,\n   then re-open Pythonista!\n")
 console.set_font()
 console.set_color()
 serve_it_up(port)

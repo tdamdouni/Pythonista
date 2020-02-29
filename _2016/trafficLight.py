@@ -1,3 +1,4 @@
+from __future__ import print_function
 # https://gist.github.com/TutorialDoctor/1e65fbe19e5a3acbb3d3
 
 # Traffic Light
@@ -34,9 +35,9 @@ class TrafficLight():
 # IMPLEMENTATION
 #--------------------------------------------------
 light = TrafficLight()
-print light.state
+print(light.state)
 light.state=TrafficLight.RED
-print light.signal()
-print light.switchIndex()
-print help(light)
+print(light.signal())
+print(light.switchIndex())
+print(help(light))
 #--------------------------------------------------

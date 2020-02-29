@@ -1,4 +1,5 @@
 # coding: utf-8
+from __future__ import print_function
 import ui, speech, console
 svgInHtml='''
 <?xml version="1.0"?>
@@ -106,7 +107,7 @@ class ClockGadget:
 		# cache away the current location (if location services on for Pythonista)
 		self.locationString = self.createCurrentLocationString()
 		
-		if traceFlag: print 'location string in __init__ is ->>' + self.locationString
+		if traceFlag: print('location string in __init__ is ->>' + self.locationString)
 		
 		webview = view['rootview']['webview']
 		
@@ -118,24 +119,24 @@ class ClockGadget:
 		webview.frame= 15,25,120,125
 		webview.multitouch_enabled = False
 		webview.touch_enabled = False
-		if traceFlag: print 'Presenting view now.'
+		if traceFlag: print('Presenting view now.')
 		view.present('sidebar')
-		if traceFlag: print 'Loading html with embedded svg now.'
+		if traceFlag: print('Loading html with embedded svg now.')
 		webview.load_html(svgInHtml)
 #==============================================================================
 	def speaknowButtonTapped(self, sender):
 		if sender.name == 'speakTimeButton':
 			# Get the say seconds preference
 			isSaySeconds = sender.superview['speakSecondsSwitch'].value
-			if traceFlag: print 'isSaySeconds current value now->>' + str(isSaySeconds)
+			if traceFlag: print('isSaySeconds current value now->>' + str(isSaySeconds))
 			
 			timeMessage = self.getCurrentLocalTimeAnnouncement(isSaySeconds)
-			if traceFlag: print 'Time message to announce ->>' + timeMessage
+			if traceFlag: print('Time message to announce ->>' + timeMessage)
 			speech.say(timeMessage,locale, speechDelay)
 #=============================================================================
 	def switchTapped(self,sender):
 		if sender.name == 'speakSecondsSwitch':
-			if traceFlag: print "speakSecondsSwitch tapped...current value is ->>" + str(sender.value)
+			if traceFlag: print("speakSecondsSwitch tapped...current value is ->>" + str(sender.value))
 #==============================================================================
 	def createCurrentLocationString(self):
 		import location
@@ -152,7 +153,7 @@ class ClockGadget:
 		locationString = "in " + mycity + " " + mycountry
 		location.stop_updates()
 		
-		if traceFlag: print 'Returning location string ->>' + locationString
+		if traceFlag: print('Returning location string ->>' + locationString)
 		return locationString
 #==============================================================================
 	def getCurrentLocalTimeAnnouncement(self, isSaySeconds):
@@ -166,11 +167,11 @@ class ClockGadget:
 		
 		# Get the current local hour
 		hourString = self.getCurrentHourString(nowHour)
-		if traceFlag: print "hourString is -->" + hourString
+		if traceFlag: print("hourString is -->" + hourString)
 		
 		# Get the local current minute
 		minuteString = self.getCurrentMinutesString(nowMinutes)
-		if traceFlag: print 'minuteString is ->>' + minuteString
+		if traceFlag: print('minuteString is ->>' + minuteString)
 		
 		# If it is right on the hour, add "o'clock"; if not, bad English grammar to use it in this context.
 		if nowMinutes == 0:
@@ -193,15 +194,15 @@ class ClockGadget:
 			announcement =  announce1 + " " + self.locationString + " " +announce2 + " " + hourString + " " + minuteString + " " + ampm + " " + str(nowSeconds) + " " + seconds + " "
 		else:
 			announcement =  announce1 + " " + self.locationString + " " + announce2 + " "  + hourString + " " + minuteString + " " + ampm
-		if traceFlag: print announcement
+		if traceFlag: print(announcement)
 		return announcement
 #==============================================================================
 	def getCurrentHourString(self, nowHour):
-		if traceFlag: print "nowHour parameter to function ->>" + str(nowHour)
+		if traceFlag: print("nowHour parameter to function ->>" + str(nowHour))
 		hourString = ""
 		
 		assert -1 < nowHour < 24, 'Error: Invalid hour {}.'.format(nowHour)
-		if traceFlag: print "Hour string to return ->>" + hourString
+		if traceFlag: print("Hour string to return ->>" + hourString)
 		return numbersZeroToTwenty[nowHour % 12 or 12]
 #==============================================================================
 	def getCurrentMinutesString(self, nowMinutes):
@@ -306,7 +307,7 @@ class ClockGadget:
 			elif nowMinutes == 59:
 				minuteString = fifty + " " + numbersZeroToTwenty[9]
 				
-		if traceFlag: print "Minute string to return ->>" + minuteString
+		if traceFlag: print("Minute string to return ->>" + minuteString)
 		return minuteString
 #==============================================================================
 if traceFlag: console.clear()

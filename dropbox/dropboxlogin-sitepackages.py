@@ -1,3 +1,4 @@
+from __future__ import print_function
 # YOU NEED TO INSERT YOUR APP KEY AND SECRET BELOW!
 # Go to dropbox.com/developers/apps to create an app.
 import keychain
@@ -21,7 +22,7 @@ import console
 
 def get_request_token():
 	console.clear()
-	print 'Getting request token...'	
+	print('Getting request token...')	
 	sess = session.DropboxSession(app_key, app_secret, access_type)
 	request_token = sess.obtain_request_token()
 	url = sess.build_authorize_url(request_token)
@@ -51,10 +52,10 @@ def get_client():
 def main():
 	# Demo if started run as a script...
 	# Just print the account info to verify that the authentication worked:
-	print 'Getting account info...'
+	print('Getting account info...')
 	dropbox_client = get_client()
 	account_info = dropbox_client.account_info()
-	print 'linked account:', account_info
+	print('linked account:', account_info)
 
 if __name__ == '__main__':
     main()

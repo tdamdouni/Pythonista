@@ -35,6 +35,7 @@
 
 # import console
 # import editor
+from __future__ import print_function
 from os import path
 import os
 
@@ -83,9 +84,9 @@ def main():
 	ssl_crt_path = path.expanduser(config.get(CONFIG_SECTION, 'ssl_crt'))
 	document_root = path.expanduser(
 	config.get(CONFIG_SECTION, 'document_root'))
-	print 'SSL key file: {}'.format(ssl_key_path)
-	print 'SSL crt file: {}'.format(ssl_crt_path)
-	print 'Document root: {}'.format(document_root)
+	print('SSL key file: {}'.format(ssl_key_path))
+	print('SSL crt file: {}'.format(ssl_crt_path))
+	print('Document root: {}'.format(document_root))
 	
 	user_key = base64.b64encode(
 	'{}:{}'.format(config.get(CONFIG_SECTION, 'username'),
@@ -105,25 +106,25 @@ def main():
 	server_side=True)
 	
 	url = '{0}://{1}:{2}'.format(protocol, get_my_address(), port)
-	print 'Open this page in your browser:'
+	print('Open this page in your browser:')
 	# console.set_font('Helvetica-Bold', 30)
-	print url
+	print(url)
 	# console.set_font()
-	print 'Tap the stop button when you\'re done.'
+	print('Tap the stop button when you\'re done.')
 	server.serve_forever()
 	
 	
 def init_config(config_dir=DEFAULT_CONFIG_DIR):
 	config_dir_path = path.abspath(path.expanduser(config_dir))
 	if not path.exists(config_dir_path):
-		print 'Creating config directory: {}'.format(config_dir_path)
+		print('Creating config directory: {}'.format(config_dir_path))
 		os.makedirs(config_dir_path)
 	else:
-		print 'Config directory already exists: {}'.format(config_dir_path)
+		print('Config directory already exists: {}'.format(config_dir_path))
 		
 	config_file_path = path.join(config_dir_path, DEFAULT_CONFIG_FILE)
 	if not path.exists(config_file_path):
-		print 'Creating config file: {}'.format(config_file_path)
+		print('Creating config file: {}'.format(config_file_path))
 		config = load_config(config_file_path)
 		config.add_section(CONFIG_SECTION)
 		for name, value in config.items('DEFAULT'):
@@ -136,19 +137,19 @@ def init_config(config_dir=DEFAULT_CONFIG_DIR):
 			config.write(config_out)
 		edit_config(config_file_path)
 	else:
-		print 'Config file already exists: {}'.format(config_file_path)
-		print 'Use `HttpFileServer.edit_config()` to edit.'
+		print('Config file already exists: {}'.format(config_file_path))
+		print('Use `HttpFileServer.edit_config()` to edit.')
 		
 		
 def edit_config(config_file=DEFAULT_CONFIG):
 	# pylint: disable=import-error
 	config_file_path = path.abspath(path.expanduser(config_file))
 	if path.exists(config_file_path):
-		print 'Opening: {}'.format(config_file_path)
+		print('Opening: {}'.format(config_file_path))
 		import editor
 		editor.open_file(config_file_path)
 	else:
-		print 'Config file does not exist: {}'.format(config_file_path)
+		print('Config file does not exist: {}'.format(config_file_path))
 		
 		
 def process_args():
@@ -166,8 +167,8 @@ def process_args():
 def load_config(config_file):
 	config_path = path.abspath(path.expanduser(config_file))
 	config = SafeConfigParser(CONFIG_DEFAULTS)
-	print 'Loaded the following configration files: {}'\
-	.format(config.read(config_path))
+	print('Loaded the following configration files: {}'\
+	.format(config.read(config_path)))
 	return config
 	
 	
@@ -248,7 +249,7 @@ class FileServerRequestHandler(BaseHTTPRequestHandler, object):
 		
 	def do_HEAD(self):
 		# pylint: disable=invalid-name
-		print "send header"
+		print("send header")
 		self.send_response(200)
 		self.send_header('Content-type', 'text/html')
 		self.end_headers()

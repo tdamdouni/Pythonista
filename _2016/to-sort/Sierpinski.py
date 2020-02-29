@@ -1,4 +1,5 @@
 # coding: utf-8
+from __future__ import print_function
 from images2gif import writeGif
 from PIL import Image, ImageDraw, ImageChops
 
@@ -100,10 +101,10 @@ for x in numbers:
     alpha = x / float(W/2)
     images.append(Image.blend(a, b, alpha))
     console.clear()
-    print str(alpha*100)+'%'
+    print(str(alpha*100)+'%')
 
 
 console.clear()
-print 'writing...'
+print('writing...')
 
 writeGif('sierpinski.gif', images, 2.0/len(images))

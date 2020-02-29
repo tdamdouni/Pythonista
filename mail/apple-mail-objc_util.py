@@ -2,12 +2,13 @@
 
 # https://forum.omz-software.com/topic/3025/apple-mail-objc_util/5
 
+from __future__ import print_function
 from objc_util import *
 import smtplib
 
 # - (void)mailComposeController:(MFMailComposeViewController *)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError *)error
 def mailComposeController_didFinishWithResult_error_(_self, _cmd, controller, result, error):
-	print 'Mail composer finished'
+	print('Mail composer finished')
 	# Wrap the controller parameter in an `ObjCInstance`, so we can send messages:
 	mail_vc = ObjCInstance(controller)
 	# Set delegate to nil, and release its memory:

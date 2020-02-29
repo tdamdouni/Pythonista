@@ -1,3 +1,4 @@
+from __future__ import print_function
 #This program records the domain name (instead of the address)
 #where the message was sent from instead of who the mail came from (i.e., the
 #whole email address). At the end of the program, print out the contents of your
@@ -15,7 +16,7 @@ for line in fhand:
         host = line[at_position+1 :space_position]
         senders_domain_name[host] = senders_domain_name.get(host,0) + 1
 
-print senders_domain_name
+print(senders_domain_name)
 
 {'media.berkeley.edu': 4, 'uct.ac.za': 6, 'umich.edu': 7,
 'gmail.com': 1, 'caret.cam.ac.uk': 1, 'iupui.edu': 8}

@@ -1,3 +1,4 @@
+from __future__ import print_function
 # https://github.com/humberry/bs4_examples
 
 from bs4 import BeautifulSoup
@@ -12,5 +13,5 @@ soup = BeautifulSoup(homepage)
  
 images = soup.find_all('img')
 for image in images:
-    print image['src']
-    print
+    print(image['src'])
+    print()

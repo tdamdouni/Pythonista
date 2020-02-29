@@ -1,3 +1,4 @@
+from __future__ import print_function
 # https://forum.omz-software.com/topic/3708/use-objc_util-and-nsurlconnection-to-make-a-get-request/2
 
 from objc_util import *
@@ -28,4 +29,4 @@ root='http://validate.jsontest.com'
 url=root+''
 params = {'json':str({"key":"value"})}
 r = requests.get(url, params=params)
-print r.json()
+print(r.json())

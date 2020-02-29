@@ -4,6 +4,7 @@
 
 # https://gist.github.com/omz/66a763a9db15dc847690
 
+from __future__ import print_function
 from objc_util import * 
 import threading
 
@@ -68,9 +69,9 @@ def main():
 	try:
 		reason = 'We need you fingerprint to ste...ehm... to log you in. You have 10 seconds.'
 		authenticate(reason, allow_passcode=True, timeout=10)
-		print 'Success!'
-	except AuthFailedException, e:
-		print e
+		print('Success!')
+	except AuthFailedException as e:
+		print(e)
 
 if __name__ == '__main__':
 	main()

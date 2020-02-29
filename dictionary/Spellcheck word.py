@@ -4,6 +4,7 @@
 
 # https://gist.github.com/omz/e141f676504b743dbaa8
 
+from __future__ import print_function
 from objc_util import ObjCClass
 UITextChecker = ObjCClass('UITextChecker')
 
@@ -15,5 +16,5 @@ def check_word(word, lang='en_US'):
 	
 test_words = ['foo', 'bar', 'baz', 'quuz', 'cat', 'dog']
 for word in test_words:
-	print '%s: %s' % (word, check_word(word))
+	print('%s: %s' % (word, check_word(word)))
 

@@ -1,3 +1,4 @@
+from __future__ import print_function
 # https://forum.omz-software.com/topic/1934/virtual-display-container/9
 
 import ui
@@ -131,7 +132,7 @@ class VirtualScroll(ui.View):
         scroll = ui.ScrollView()
         scroll.frame = frame
         scroll.content_size = (self.width, height * num_items)
-        print scroll.content_size
+        print(scroll.content_size)
         
         self.add_subview(scroll)
         
@@ -170,7 +171,7 @@ if __name__ == '__main__':
     item_size = (120,120)
     x = test(frame, item_size)
     for i in range(0,101):
-        print x.frame_for_item(i)
+        print(x.frame_for_item(i))
 # --------------------
 # code from @omz
 import ui
@@ -189,7 +190,7 @@ if __name__ == '__main__':
     frame = (0,0,540,576 - 44)
     item_size = (120,120)
     for i in range(0,101):
-        print frame_for_item(frame, item_size , i )
+        print(frame_for_item(frame, item_size , i ))
 # --------------------
 #@omz code
 import ui
@@ -279,7 +280,7 @@ class GridView (ui.View):
         num_rows = math.ceil(len(self.items) / float(items_per_row))
         self.scrollview.content_size = (0, num_rows *self.item_size[1])
         self.scrollview_did_scroll(self.scrollview)
-        print 'reload'
+        print('reload')
         
     def xcells_per_row(self):
         if self.cells_per_row:
@@ -356,11 +357,11 @@ class GridView (ui.View):
     
     def cell_callback(self, sender):
         #sure, my thought needed here
-        print 'cell called us back'
+        print('cell called us back')
         
     # not working ??
     def __del__(self):
-        print 'exiting'
+        print('exiting')
         
 
 
@@ -532,7 +533,7 @@ class GridView (ui.View):
         
         #self.cell_buffer[0] 
         self.num_rows = num_rows
-        print 'reload'
+        print('reload')
     
         
     def xcells_per_row(self):
@@ -653,13 +654,13 @@ class GridView (ui.View):
     def cell_callback(self, sender):
         # @Phuket2
         #sure, more thought needed here
-        print 'cell called us back'
+        print('cell called us back')
         
     # @Phuket2  
     # not sure why its not working ??
     # seems to never be called
     def __del__(self):
-        print 'exiting'
+        print('exiting')
         
 
 

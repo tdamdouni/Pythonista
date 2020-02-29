@@ -10,6 +10,7 @@
 # * It's not possible to get correct argspecs for functions and methods that are implemented in C, so they're always just
 # `self, *args` (for bound methods) or `*args*` (for module-level functions) in the output.
 
+from __future__ import print_function
 import ui
 import inspect
 from numbers import Number
@@ -61,7 +62,7 @@ def main():
 	write_functions(s, ui)
 	write_classes(s, ui)
 	mod_str = s.getvalue()
-	print mod_str
+	print(mod_str)
 	with open('ui_stubs.py', 'w') as f:
 		f.write(mod_str)
 

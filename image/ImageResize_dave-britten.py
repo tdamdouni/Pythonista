@@ -1,3 +1,4 @@
+from __future__ import print_function
 #Gist ID: 9951701907ed328218dd
 
 # https://gist.github.com/dave-britten/9951701907ed328218dd
@@ -20,7 +21,7 @@ def adjust(dim, newdim):
 	
 img = photos.pick_image(show_albums = True, include_metadata = False, original = True, raw_data = False)
 if img is None:
-	print "No image selected."
+	print("No image selected.")
 else:
 	#Get orientation from EXIF data.
 	o = 1

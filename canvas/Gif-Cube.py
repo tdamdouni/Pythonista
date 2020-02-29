@@ -2,6 +2,7 @@
 
 # Based loosely on http://codentronix.com/2011/05/12/rotating-3d-cube-using-python-and-pygame/
 
+from __future__ import print_function
 import math
 from operator import itemgetter
 
@@ -125,7 +126,7 @@ images = []
 for x in range(0,360,5):
 	images.append(c.make_frame(x))
 	console.clear()
-	print str((x/360.0)*100.0)[:5]+'%'
+	print(str((x/360.0)*100.0)[:5]+'%')
 	
 writeGif('cube.gif', images, 0.01)
 

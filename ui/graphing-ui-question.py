@@ -1,3 +1,4 @@
+from __future__ import print_function
 # https://forum.omz-software.com/topic/3203/graphing-ui-question/6
 
 import ui

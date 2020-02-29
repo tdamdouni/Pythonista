@@ -1,3 +1,4 @@
+from __future__ import print_function
 # https://gist.github.com/guyhillyer/4240849
 
 # Mandelista: a Mandelbrot set explorer for Pythonista.
@@ -336,7 +337,7 @@ class Mandelbrot(Scene):
 
 	# This doesn't seem to work, in fact it is not called at all.
 	def should_rotate(self, orientation):
-		print 'should_rotate called with', orientation
+		print('should_rotate called with', orientation)
 		return False
 
 	def init_selection(self):

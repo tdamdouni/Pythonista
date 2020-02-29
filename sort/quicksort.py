@@ -1,3 +1,4 @@
+from __future__ import print_function
 #Function definition
 def quicksort( arr, x, y ):
 	if(y - x < 1):
@@ -34,6 +35,6 @@ for num in range(0, length):
 	temp = int(raw_input("input the node of the Array:"))
 	arr.append(temp)
 quicksort( arr, 0, length - 1 )
-print arr
+print(arr)
 
 

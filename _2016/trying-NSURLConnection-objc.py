@@ -1,3 +1,4 @@
+from __future__ import print_function
 # https://gist.github.com/tlinnet/c1aaa1d4494548217b3ed91301f64eb2
 
 from objc_util import *
@@ -45,5 +46,5 @@ class Web(object):
 # Try for root 2
 headers = {}
 A = Web(root=root2, method=method, headers=headers)
-print dir(A.get_conn().conn)
+print(dir(A.get_conn().conn))
 

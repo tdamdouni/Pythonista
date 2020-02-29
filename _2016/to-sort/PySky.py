@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+from __future__ import print_function
 import json
 import urllib
 from os import environ
@@ -24,12 +25,12 @@ try:
 	jsonString = urllib.urlopen(dsURL).read()
 	weather = json.loads(jsonString)
 except (IOError, ValueError):
-	print "Connection failure to %s" % dsURL
+	print("Connection failure to %s" % dsURL)
 	exit()
 	
-print 'NOW\n' +  str(weather['currentSummary']).capitalize() + ', '\
-    + str(weather['currentTemp']) + u'° F'.encode('utf8') + '\n'
-print 'NEXT HOUR \n' + weather['hourSummary'].capitalize() + '\n'
+print('NOW\n' +  str(weather['currentSummary']).capitalize() + ', '\
+    + str(weather['currentTemp']) + u'° F'.encode('utf8') + '\n')
+print('NEXT HOUR \n' + weather['hourSummary'].capitalize() + '\n')
 
 # Highest intensity in the next 3 hours.
 hrsType = [ i['type'] for i in weather['dayPrecipitation'][1:4] ]
@@ -47,6 +48,6 @@ elif chance > 0.2:
 else:
 	nextThreeHrs = 'No precipitation'
 	
-print  'FOLLOWING 3 HRS\n' + nextThreeHrs.capitalize() + '\n'
-print 'NEXT 24 HRS \n' + weather['daySummary'].capitalize() + '\n'
+print('FOLLOWING 3 HRS\n' + nextThreeHrs.capitalize() + '\n')
+print('NEXT 24 HRS \n' + weather['daySummary'].capitalize() + '\n')
 

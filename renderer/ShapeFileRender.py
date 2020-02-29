@@ -6,6 +6,7 @@
 
 # At the moment only polylines (Number of Parts = 1 & Index = 0) and polygons are supported.
 
+from __future__ import print_function
 from struct import unpack
 import math, Image, ImageDraw, ui, scene, sys
 
@@ -19,7 +20,7 @@ class ShapeFileRender(object):
 		self.scr_height = scr[1] - 64.0    #title bar = 64px
 		
 		if len(config) < 5:
-			print 'Error: You need at least 5 parameter (xdelta, ydelta, background color, shape file, shape color)'
+			print('Error: You need at least 5 parameter (xdelta, ydelta, background color, shape file, shape color)')
 			sys.exit()
 			
 		self.xdelta = config[0]
@@ -116,7 +117,7 @@ class ShapeFileRender(object):
 		verbose = 'HEADER of ' + filename + ':\n'
 		file_code = unpack('>i', ''.join(self.data[0:4]))[0]    #4byte integer big endian
 		if file_code != 9994:
-			print 'sorry, no shape file - ' + filename
+			print('sorry, no shape file - ' + filename)
 			sys.exit()
 		file_length = unpack('>i', ''.join(self.data[24:28]))[0] * 2  #4byte integer big endian
 		verbose += 'file length = ' + str(file_length) + ' Bytes\n'
@@ -159,7 +160,7 @@ class ShapeFileRender(object):
 			elif shape_type == 5:
 				self.get_polygon(self.data[i+8:i+8+content_length])
 			else:
-				print '--- ' + self.shape_type_def[shape_type] + ' ---'
+				print('--- ' + self.shape_type_def[shape_type] + ' ---')
 			i += content_length + 8
 			
 if __name__ == '__main__':

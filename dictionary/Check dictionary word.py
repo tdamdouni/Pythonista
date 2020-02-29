@@ -13,6 +13,7 @@ NOTES: This is quite slow, it might be possible to use the spell-checking
       (probably so that the "Define" menu item can be shown before
       a dictionary has been downloaded).
 '''
+from __future__ import print_function
 
 from objc_util import ObjCClass
 
@@ -22,5 +23,5 @@ def is_word_valid(word):
 	
 test_words = ['foo', 'bar', 'quuz', 'cat', 'dog']
 for word in test_words:
-	print '%s: %s' % (word, is_word_valid(word))
+	print('%s: %s' % (word, is_word_valid(word)))
 

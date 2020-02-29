@@ -2,6 +2,7 @@
 
 # https://forum.omz-software.com/topic/2513/getting-the-parent-of-a-dynamically-method-as-a-function/45
 
+from __future__ import print_function
 import ui
 
 def test_func(msg):
@@ -12,7 +13,7 @@ def test_func(msg):
 	but i cant figure it out.
 	MAYBE, its even easier than that... well that would be great
 	'''
-	print msg
+	print(msg)
 	
 	
 btn = ui.Button()
@@ -119,14 +120,14 @@ if __name__ == '__main__':
 	v.bg_color = 'white'
 	
 	button = extend(ui.Button(name = 'test'), HighlightStyle(), MyCustomAttrs())
-	print dir(button)
+	print(dir(button))
 	button.title = 'Styled button'
 	button.size_to_fit()
 	button.x = 10
 	button.y = 10
 	button.border_width = .5
 	v.add_subview(button)
-	print button.superview
+	print(button.superview)
 	
 	v.present('sheet')
 	
@@ -137,7 +138,7 @@ if __name__ == '__main__':
 import ui
 
 def MyMother(sender):
-	print 'I love my Mums cooking'
+	print('I love my Mums cooking')
 	
 _default_btn_style = \
     {

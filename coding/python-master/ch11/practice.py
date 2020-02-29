@@ -1,3 +1,4 @@
+from __future__ import print_function
 import re
 
 #regular expressions useful for string extraction, matching... Each character has a meaning. C
@@ -112,11 +113,11 @@ for line in hand:
     line = line.rstrip()
     x = re.findall('^Details:.*rev=([0-9.]+)', line)
     if len(x) > 0:
-        print x
+        print(x)
         
 #extract for me the part that went in between parentheses. 
 #remember, The "+" matches at least one character and the "*" matches zero or more characters
 
 x = 'From stephen.marquard@uct.ac.za Sat Jan  5 09:14:16 2008'
 y = re.findall( '\S+?@\S+', x)
-print y
+print(y)

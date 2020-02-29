@@ -1,3 +1,4 @@
+from __future__ import print_function
 # Editorial Reminders
 
 # https://forum.omz-software.com/topic/2429/editorial-reminders/2
@@ -19,5 +20,5 @@ def extract_alarm_info(alarm_text):
 	}
 	
 the_alarm = '@alarm(2015-12-10, 22:05)'
-print extract_alarm_info(the_alarm)
+print(extract_alarm_info(the_alarm))
 

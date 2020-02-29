@@ -65,6 +65,7 @@ post/4998190881308672. Ability for scrolling scene
 with inertia added on by hroe @ https:/
 gist.github.com/henryroe/6724117.
 '''
+from __future__ import print_function
 import datetime
 from math import exp
 import os

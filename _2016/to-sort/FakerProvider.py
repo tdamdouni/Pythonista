@@ -2,6 +2,7 @@
 
 # https://forum.omz-software.com/topic/2514/share-code-markdownview/2
 
+from __future__ import print_function
 from faker import Faker
 fake = Faker()
 
@@ -20,5 +21,5 @@ class MyProvider(BaseProvider):
 fake.add_provider(MyProvider)
 
 # now you can use:
-print fake.foo()
-print fake.orange()
+print(fake.foo())
+print(fake.orange())

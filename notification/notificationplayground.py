@@ -3,6 +3,7 @@
 # https://gist.github.com/jsbain/d9a3971157d3a559cd7e
 
 #. objc from http://www.thinkandbuild.it/interactive-notifications-with-notification-actions/
+from __future__ import print_function
 from objc_util import *
 
 
@@ -74,9 +75,9 @@ import time
 
 # CREATE replacement delegate method
 def application_handleActionWithIdentifier_forLocalNotification_completionHandler_(_cmd,_sel,app,identifier,notif,completionhandler):
-	print ObjCInstance(identifier)
-	print ObjCInstance(notif)
-	print time.ctime()
+	print(ObjCInstance(identifier))
+	print(ObjCInstance(notif))
+	print(time.ctime())
 	ObjCInstance( completionhandler).invoke()
 	
 	

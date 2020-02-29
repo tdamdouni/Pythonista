@@ -1,3 +1,4 @@
+from __future__ import print_function
 import urllib
 import tarfile
 import shutil
@@ -25,48 +26,48 @@ class Installer(object):
 			self.download()
 			self.extract()
 			self.copy()
-		except Exception, e:
-			print str(e)
+		except Exception as e:
+			print(str(e))
 		finally:
 			self.clean()
 			
 	def download(self):
-		print 'Downloading ' + self.name + ' v' + self.version + '...'
+		print('Downloading ' + self.name + ' v' + self.version + '...')
 		url = 'http://pypi.python.org/packages/source/' + self.firstLetter + '/' + self.name + '/' + self.tarname
 		urllib.urlretrieve(url, self.tarname)
-		print 'Download Complete'
+		print('Download Complete')
 		
 	def extract(self):
-		print 'Extracting...'
+		print('Extracting...')
 		t = tarfile.open(self.tarname)
 		t.extractall()
-		print 'Package extracted'
+		print('Package extracted')
 		
 	def copy(self):
 		# If source is a folder
 		if os.path.isdir(self.tarfolder + '/' + self.lowerName):
 			if os.path.isdir(self.lowerName):
-				print 'Removing old package directory...'
+				print('Removing old package directory...')
 				shutil.rmtree(self.lowerName)
-			print 'Installing package directory...'
+			print('Installing package directory...')
 			shutil.move(self.tarfolder + '/' + self.lowerName, './' + self.lowerName)
 			
 		# if source is a file
 		file = self.lowerName + '.py'
 		if os.path.isfile(self.tarfolder + '/' + file):
 			if os.path.isfile(file):
-				print 'Removing old package file...'
+				print('Removing old package file...')
 				os.remove(file)
-			print 'Installing package file...'
+			print('Installing package file...')
 			shutil.move(self.tarfolder + '/' + file, './' + file)
 			
 	def clean(self):
-		print 'Cleaning up...'
+		print('Cleaning up...')
 		if os.path.isdir(self.tarfolder):
-			print 'Removing source directory...'
+			print('Removing source directory...')
 			shutil.rmtree(self.tarfolder)
 		if os.path.isfile(self.tarname):
-			print 'Removing source tarball...'
+			print('Removing source tarball...')
 			os.remove(self.tarname)
-		print 'Done.'
+		print('Done.')
 

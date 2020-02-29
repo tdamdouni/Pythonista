@@ -1,3 +1,4 @@
+from __future__ import print_function
 # http://pi3.sites.sheffield.ac.uk/tutorials/week-1-fibonacci
 
 ###################################
@@ -8,6 +9,6 @@
 # the sum of two elements defines the next
 a, b = 0, 1
 while b < 10:
-	print b
+	print(b)
 	a, b = b, a+b
 

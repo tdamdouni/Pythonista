@@ -39,6 +39,7 @@
 # (which in turn is based on https://gist.github.com/4036200,
 # which is based on https://gist.github.com/b0644f5ed1d94bd32805)
 
+from __future__ import print_function
 import console
 import editor
 import json
@@ -78,8 +79,8 @@ def edit(gist, files, token, message=None):
 		rdata = result.read()
 		result.close()
 		return rdata
-	except Exception, e:
-		print e
+	except Exception as e:
+		print(e)
 	return None
 	
 def get_gist_id(fname):
@@ -124,8 +125,8 @@ def load(gist, fname):
 		# rdata = result.read()
 		# result.close()
 		# return rdata
-	except Exception, e:
-		print e
+	except Exception as e:
+		print(e)
 	return None
 	
 def pull():
@@ -145,7 +146,7 @@ def commit():
 		if token is None:
 			u, p = console.login_alert('GitHub Login')
 			r = json.loads(auth(u, p))
-			print r
+			print(r)
 			token = r['token']
 			keychain.set_password('gistcheck','gistcheck',token)
 		fname = os.path.basename(editor.get_path())

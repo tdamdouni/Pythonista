@@ -1,3 +1,4 @@
+from __future__ import print_function
 # https://gist.github.com/Anton-2/6590539
 
 # coding: utf-8
@@ -118,7 +119,7 @@ if __name__ == '__main__':
 
 	try:
 		loc = get_location(enableHighAccuracy=False)
-		print 'loc: ', loc
+		print('loc: ', loc)
 	except GeoLocationError as error:
-		print 'failed: ', error.message
+		print('failed: ', error.message)
 

@@ -1,6 +1,7 @@
 '''Prints a list of birthdays in your address book (in days from now).
 
 NOTE: This script requires access to your contacts in order to work properly.'''
+from __future__ import print_function
 
 import contacts
 import dialogs
@@ -21,12 +22,12 @@ def main():
 		days = (next_birthday - now).days
 		days_list.append({'name': p.first_name, 'days': days})
 	if not days_list:
-		print 'You don\'t have any birthdays in your address book.'
+		print('You don\'t have any birthdays in your address book.')
 	else:
 		days_list.sort(key=operator.itemgetter('days'))
-		print 'Upcoming Birthdays\n' + '=' * 40
+		print('Upcoming Birthdays\n' + '=' * 40)
 		for item in days_list:
-			print '* %s in %i days' % (item['name'], item['days'])
+			print('* %s in %i days' % (item['name'], item['days']))
 
 if __name__ == '__main__':
 	main()

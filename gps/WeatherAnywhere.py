@@ -75,6 +75,7 @@ The inspiration for this script came from https://
 github.com/cclauss/weather_where_you_are/
 weather_where_you_are.py.
 '''
+from __future__ import print_function
 import console
 import csv
 import datetime
@@ -114,7 +115,7 @@ def pick_your_weather():
     ans = console.alert('Choose Your Weather Source:', '', 'From Your Current Location', 'From Entering a City Name', 'From A Pick List of Cities')
     if ans == 1:
       # Weather where you are
-      print 'Gathering weather data from where you are...'
+      print('Gathering weather data from where you are...')
       # Get lat & lon of where you are
       lat, lon = get_current_lat_lon()
     elif ans == 2:
@@ -123,7 +124,7 @@ def pick_your_weather():
       ans = console.input_alert(msg).title()
       if ans:
         print('='*20)
-        print 'Gathering weather data for {}'.format(ans)
+        print('Gathering weather data for {}'.format(ans))
         ans = ans.split(',')
         city = ans[0].replace(' ', '%20').strip()
         st = ans[1].strip()
@@ -132,7 +133,7 @@ def pick_your_weather():
       theCity, st, zcode = city_zips()
       print('='*20)
       if zcode:
-        print 'Gathering weather data for {}, {}'.format(theCity, st)
+        print('Gathering weather data for {}, {}'.format(theCity, st))
   except Exception as e:
     sys.exit('Error: {}'.format(e))
 
@@ -789,9 +790,9 @@ def main():
       except:
         missing_icons.append(ico)
       count += 1
-    print line
+    print(line)
 
-  print '\nWeather information provided by api.wunderground.com'
+  print('\nWeather information provided by api.wunderground.com')
 
   if missing_icons:
     ans = console.alert('Weather Icon(s) Missing:','','Download Them Now')
@@ -800,7 +801,7 @@ def main():
 
   alerts = get_alerts(w, f)
   if len(alerts) != 0:
-    print alerts
+    print(alerts)
 
 if __name__ == '__main__':
   main()

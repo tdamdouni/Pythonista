@@ -2,6 +2,7 @@
 
 # https://gist.github.com/cvpe/996324053898a6642b9c77f4ac1445c9
 
+from __future__ import print_function
 import ui
 import photos
 import console
@@ -39,7 +40,7 @@ def main():
 			fn_index[fn] = (ip,album)
 			
 	# print filename -> album,index
-	print fn_index
+	print(fn_index)
 	
 main()
 

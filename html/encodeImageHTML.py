@@ -3,6 +3,7 @@
 # Should work just about anywhere else though.
 # Please note: script will ask for image Title and Alt attributes using an input_alert from console.
 
+from __future__ import print_function
 import clipboard
 import console
 
@@ -15,9 +16,9 @@ final = "<img src=" + '"' + image + '"' + " " + "alt=" + '"' + alts + '"' + " " 
 
 console.clear()
 
-print final
+print(final)
 
 clipboard.set(final)
 
-print "\n \n HTML set to clipboard"
+print("\n \n HTML set to clipboard")
 

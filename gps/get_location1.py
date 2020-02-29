@@ -1,3 +1,4 @@
+from __future__ import print_function
 import socket
 import webbrowser
 import re
@@ -74,4 +75,4 @@ def getLocation(port=3050):
  
 if __name__ == '__main__':
     lat, lng = getLocation()
-    print lat, lng
+    print(lat, lng)

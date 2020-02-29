@@ -1,3 +1,4 @@
+from __future__ import print_function
 # When making 3d video games, vector math is very helpful. Simulate the [dot and cross product](https://github.com/TutorialDoctor/Scripts-for-Kids/blob/master/Python/dotAndCross.py) with Python!
 
 import math
@@ -15,18 +16,18 @@ V6 = [-3,-2,2]
 def dot(A,B):
 	dotprod = A[0]*B[0] + A[1]*B[1] + A[2]*B[2]
 	if dotprod == 0:
-		print 'perpendicular'
+		print('perpendicular')
 	elif dotprod > 0:
-		print 'acute'
+		print('acute')
 	elif dotprod < 0:
-		print 'obtuse'
+		print('obtuse')
 	return dotprod
 
 # Implementation
-print dot(V1,V2)
-print dot(V2,V1)
-print dot(V3,V4)
-print dot(V5,V6)
+print(dot(V1,V2))
+print(dot(V2,V1))
+print(dot(V3,V4))
+print(dot(V5,V6))
 
 
 # Cross Product
@@ -41,8 +42,8 @@ def cross(A,B):
 
 
 # Implementation
-print cross(V1,V2)
-print cross(V2,V1)
+print(cross(V1,V2))
+print(cross(V2,V1))
 
 
 # Add and subtract vectors

@@ -4,6 +4,7 @@
 
 # Extension of dialogs.form_dialog() that supports simple data validation
 
+from __future__ import print_function
 import dialogs
 import collections
 import ui
@@ -78,7 +79,7 @@ def validate_form(values):
 def main():
 	fields = [{'type': 'text', 'key': 'title', 'title': 'Title (Mr/Mrs/Ms)'}, {'type': 'text', 'key': 'name', 'title': 'Name'}, {'type': 'switch', 'key': 'terms', 'title': 'Accept Terms'}]
 	r = form_dialog('Test', fields, validator=validate_form)
-	print r
+	print(r)
 	
 if __name__ == '__main__':
 	main()
@@ -126,7 +127,7 @@ class MyTextFieldDelegate (object):
 	def textfield_should_change(self, textfield, range, replacement):
 		if replacement == ' ':
 			return False
-		print textfield, range, replacement
+		print(textfield, range, replacement)
 		return True
 	def textfield_did_change(self, textfield):
 		pass
@@ -153,7 +154,7 @@ def form_dialog(title='', fields=None, sections=None, done_button_title='Done', 
 				raise TypeError('fields must be dicts')
 	c = ValidatingFormDialogController(title, sections, done_button_title=done_button_title)
 	cell = c.cells[0][0]
-	print c.cells[0][0].text_label.text
+	print(c.cells[0][0].text_label.text)
 	tf = cell.content_view.subviews[0]
 	tf.text = 'Hi there'
 	tf.clear_button_mode = 'when_editing'
@@ -188,7 +189,7 @@ def validate_form(values):
 def main():
 	fields = [{'type': 'text', 'key': 'title', 'title': 'Title (Mr/Mrs/Ms)'}, {'type': 'text', 'key': 'name', 'title': 'Name'}, {'type': 'switch', 'key': 'terms', 'title': 'Accept Terms'}]
 	r = form_dialog('Test', fields, validator=validate_form)
-	print r
+	print(r)
 	
 if __name__ == '__main__':
 	main()

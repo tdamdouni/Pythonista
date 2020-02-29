@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """List names of all imports in all Python files given on command line."""
+from __future__ import print_function
 
 import sys
 import ast

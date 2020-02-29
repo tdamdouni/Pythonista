@@ -25,6 +25,7 @@ subclass of BaseHTTPRequestHandler.
 from SimpleHTTPServer import SimpleHTTPRequestHandler
 Handler = SimpleHTTPRequestHandler
 '''
+from __future__ import print_function
 
 from BaseHTTPServer import HTTPServer
 import webbrowser
@@ -37,5 +38,5 @@ if 'Handler' in locals():
 	webbrowser.open('http://localhost:8000', stop_when_done = True)
 	httpd.serve_forever()
 else:
-	print 'No class "Handler" found'
+	print('No class "Handler" found')
 

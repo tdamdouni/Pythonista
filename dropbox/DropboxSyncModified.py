@@ -1,3 +1,4 @@
+from __future__ import print_function
 # https://github.com/dhutchison/PythonistaScripts/blob/master/DropboxSync.py
 
 # See: http://www.devwithimagination.com/2014/05/11/pythonista-dropbox-sync
@@ -51,8 +52,8 @@ def setup_new_auth_token(sess):
 	url = sess.build_authorize_url(request_token)
 
 	# Make the user sign in and authorize this token
-	print "url:", url
-	print "Please visit this website and press the 'Allow' button, then hit 'Enter' here."
+	print("url:", url)
+	print("Please visit this website and press the 'Allow' button, then hit 'Enter' here.")
 	webbrowser.open(url)
 	raw_input()
 	# This will fail if the user didn't visit the above URL and hit 'Allow'
@@ -62,15 +63,15 @@ def setup_new_auth_token(sess):
 		token_file.write("%s|%s" % (access_token.key,access_token.secret) )
 
 def upload(file, details, client, parent_revision):
-	print "Trying to upload %s" % file
+	print("Trying to upload %s" % file)
 	details['md5hash'] = getHash(file)
-	print "New MD5 hash: %s" % details['md5hash']
+	print("New MD5 hash: %s" % details['md5hash'])
 
 	response = client.put_file(file, open(file, 'r'), False, parent_revision)
 	#print "Response: %s" % response
 	details = update_file_details(details, response)
 
-	print "File %s uploaded to Dropbox" % file
+	print("File %s uploaded to Dropbox" % file)
 
 	return details
 
@@ -80,7 +81,7 @@ def download(dest_path, dropbox_metadata, details, client):
 	out.write(file_content)
 
 	details['md5hash'] = getHash(dest_path)
-	print "New MD5 hash: %s" % details['md5hash']
+	print("New MD5 hash: %s" % details['md5hash'])
 	details = update_file_details(details, dropbox_metadata)
 
 	return details
@@ -93,7 +94,7 @@ def process_folder(client, dropbox_dir, file_details):
 		folder_metadata = client.metadata(dropbox_dir)
 
 		if VERBOSE_LOGGING == True:
-			print "metadata"
+			print("metadata")
 			pp.pprint(folder_metadata)
 	except dropbox.rest.ErrorResponse as error:
 		pp.pprint(error.status)
@@ -124,7 +125,7 @@ def process_folder(client, dropbox_dir, file_details):
 		if file['is_dir'] == False and file['mime_type'].endswith('python'):
 
 			if not os.path.exists(os.path.join(PYTHONISTA_DOC_DIR, dropbox_path)):
-				print "Processing Dropbox file %s (%s)" % (file['path'], dropbox_path)
+				print("Processing Dropbox file %s (%s)" % (file['path'], dropbox_path))
 				try:
 
 
@@ -132,7 +133,7 @@ def process_folder(client, dropbox_dir, file_details):
 						# in cache but file no longer locally exists
 						details = file_details[dropbox_path]
 
-						print "File %s is in the sync cache and on Dropbox, but no longer exists locally. [Delete From Dropbox (del)|Download File (d)] (Default Delete)" % file['path']
+						print("File %s is in the sync cache and on Dropbox, but no longer exists locally. [Delete From Dropbox (del)|Download File (d)] (Default Delete)" % file['path'])
 
 						choice = raw_input()
 						if (choice == 'd'):
@@ -150,9 +151,9 @@ def process_folder(client, dropbox_dir, file_details):
 						download_file = True
 
 					if (download_file ==  True):
-						print "Downloading file %s (%s)" % (file['path'], dropbox_path)
+						print("Downloading file %s (%s)" % (file['path'], dropbox_path))
 						if VERBOSE_LOGGING == True:
-							print details
+							print(details)
 
 						details = download(dropbox_path, file, details, client)
 						file_details[dropbox_path] = details
@@ -170,19 +171,19 @@ def process_folder(client, dropbox_dir, file_details):
 					details = file_details[dropbox_path]
 
 					if VERBOSE_LOGGING == True:
-						print "Held details are: %s" % details
+						print("Held details are: %s" % details)
 
 					if details['revision'] == file['revision']:
 						# same revision
 						current_hash = getHash(dropbox_path)
 
 						if VERBOSE_LOGGING == True:
-							print 'New hash: %s, Old hash: %s' % (current_hash, details['md5hash'])
+							print('New hash: %s, Old hash: %s' % (current_hash, details['md5hash']))
 
 						if current_hash == details['md5hash']:
-							print 'File "%s" not changed.' % dropbox_path
+							print('File "%s" not changed.' % dropbox_path)
 						else:
-							print 'File "%s" updated locally, uploading...' % dropbox_path
+							print('File "%s" updated locally, uploading...' % dropbox_path)
 
 							details = upload(dropbox_path, details, client, file['rev'])
 							file_details[dropbox_path] = details
@@ -190,28 +191,28 @@ def process_folder(client, dropbox_dir, file_details):
 						processed_files.append(file_name)
 					else:
 						#different revision
-						print 'Revision of "%s" changed from %s to %s. ' % (dropbox_path, details['revision'], file['revision'])
+						print('Revision of "%s" changed from %s to %s. ' % (dropbox_path, details['revision'], file['revision']))
 
 						current_hash = getHash(dropbox_path)
 
 						if VERBOSE_LOGGING == True:
-							print 'File %s. New hash: %s, Old hash: %s' % (dropbox_path, current_hash, details['md5hash'])
+							print('File %s. New hash: %s, Old hash: %s' % (dropbox_path, current_hash, details['md5hash']))
 
 						if current_hash == details['md5hash']:
-							print 'File "%s" updated remotely. Downloading...' % dropbox_path
+							print('File "%s" updated remotely. Downloading...' % dropbox_path)
 
 							details = download(dropbox_path, file, details, client)
 							file_details[dropbox_path] = details
 						else:
-							print "File %s has been updated both locally and on Dropbox. Overwrite [Dropbox Copy (d)|Local Copy (l)| Skip(n)] (Default Skip)" % file['path']
+							print("File %s has been updated both locally and on Dropbox. Overwrite [Dropbox Copy (d)|Local Copy (l)| Skip(n)] (Default Skip)" % file['path'])
 							choice = raw_input()
 
 							if choice == 'd' or choice == 'D':
-								print "Overwriting Dropbox Copy of %s" % file
+								print("Overwriting Dropbox Copy of %s" % file)
 								details = upload(dropbox_path, details, client, file['rev'])
 								file_details[dropbox_path] = details
 							elif choice == 'l' or choice == 'L':
-								print "Overwriting Local Copy of %s" % file
+								print("Overwriting Local Copy of %s" % file)
 								details = download(dropbox_path, file, details, client)
 								file_details[dropbox_path] = details
 
@@ -219,20 +220,20 @@ def process_folder(client, dropbox_dir, file_details):
 				else:
 					# Not in cache, but exists on dropbox and local, need to prompt user
 
-					print "File %s is not in the sync cache but exists both locally and on dropbox. Overwrite [Dropbox Copy (d)|Local Copy (l) | Skip(n)] (Default Skip)" % file['path']
+					print("File %s is not in the sync cache but exists both locally and on dropbox. Overwrite [Dropbox Copy (d)|Local Copy (l) | Skip(n)] (Default Skip)" % file['path'])
 					choice = raw_input()
 
 					details = {}
 					if choice == 'd' or choice == 'D':
-						print "Overwriting Dropbox Copy of %s" % file
+						print("Overwriting Dropbox Copy of %s" % file)
 						details = upload(dropbox_path, details, client, file['rev'])
 						file_details[dropbox_path] = details
 					elif choice == 'l' or choice == 'L':
-						print "Overwriting Local Copy of %s" % file
+						print("Overwriting Local Copy of %s" % file)
 						details = download(dropbox_path, file, details, client)
 						file_details[dropbox_path] = details
 					else:
-						print "Skipping processing for file %s" % file
+						print("Skipping processing for file %s" % file)
 
 				# Finished dealing with this file, update the sync state and mark this file as processed.
 				write_sync_state(file_details)
@@ -252,11 +253,11 @@ def process_folder(client, dropbox_dir, file_details):
 		if not file in processed_files and not os.path.isdir(file) and not file.startswith('.') and file.endswith('.py'):
 
 			if VERBOSE_LOGGING == True:
-				print 'Searching "%s" for "%s"' % (dropbox_dir, file)
+				print('Searching "%s" for "%s"' % (dropbox_dir, file))
 			found = client.search(dropbox_dir, file)
 
 			if found:
-				print "File found on Dropbox, this shouldn't happen! Skipping %s..." % file
+				print("File found on Dropbox, this shouldn't happen! Skipping %s..." % file)
 			else:
 				if VERBOSE_LOGGING == True:
 					pp.pprint(file)
@@ -265,7 +266,7 @@ def process_folder(client, dropbox_dir, file_details):
 					details = file_details[file]
 				else:
 					details = {}
-				print details
+				print(details)
 
 				details = upload(relative_path, details, client, None )
 				file_details[relative_path] = details
@@ -278,12 +279,12 @@ def process_folder(client, dropbox_dir, file_details):
 	#process the directories
 	for folder in dropbox_dirs:
 		if VERBOSE_LOGGING == True:
-			print 'Processing dropbox dir %s from %s' % (folder, dropbox_dir)
+			print('Processing dropbox dir %s from %s' % (folder, dropbox_dir))
 		process_folder(client, folder, file_details)
 
 	for folder in local_dirs:
 		if VERBOSE_LOGGING == True:
-			print 'Processing local dir %s from %s' % (folder, dropbox_dir)
+			print('Processing local dir %s from %s' % (folder, dropbox_dir))
 		process_folder(client, folder, file_details)
 
 def update_file_details(file_details, dropbox_metadata):
@@ -296,7 +297,7 @@ def write_sync_state(file_details):
 	sync_status_file = os.path.join(SYNC_STATE_FOLDER, 'file.cache.txt')
 
 	if VERBOSE_LOGGING:
-		print 'Writing sync state to %s' % sync_status_file
+		print('Writing sync state to %s' % sync_status_file)
 
 	with open(sync_status_file, 'w') as output_file:
 		json.dump(file_details, output_file)
@@ -321,7 +322,7 @@ def main():
 		file_details = {}
 
 	if VERBOSE_LOGGING == True:
-		print "File Details: "
+		print("File Details: ")
 		pp.pprint(file_details)
 
 	#configure dropbox
@@ -329,7 +330,7 @@ def main():
 	configure_token(sess)
 	client = dropbox.client.DropboxClient(sess)
 
-	print "linked account: %s" % client.account_info()['display_name']
+	print("linked account: %s" % client.account_info()['display_name'])
 	#pp.pprint (client.account_info())
 
 	process_folder(client, '/', file_details)
@@ -339,6 +340,6 @@ def main():
 
 
 if __name__ == "__main__":
-	print 'Begin Dropbox sync'
+	print('Begin Dropbox sync')
 	main()
-	print 'Dropbox sync done!'
+	print('Dropbox sync done!')

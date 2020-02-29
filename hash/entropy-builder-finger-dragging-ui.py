@@ -1,3 +1,4 @@
+from __future__ import print_function
 # https://forum.omz-software.com/topic/3186/entropy-builder-finger-dragging-ui/2 
 
 import ui
@@ -7,7 +8,7 @@ import hashlib
 
 hash_object = hashlib.sha256(b'Hello World')
 hex_dig = hash_object.hexdigest()
-print hex_dig
+print(hex_dig)
 
 class TouchHash(ui.View):
 	def __init__(self):
@@ -53,7 +54,7 @@ import hashlib
 
 hash_object = hashlib.sha256(b'Hello World')
 hex_dig = hash_object.hexdigest()
-print hex_dig
+print(hex_dig)
 
 class TouchHash(ui.View):
     def __init__(self):
@@ -118,7 +119,7 @@ class TouchHash(ui.View):
             self.name = str(self.count) + '% complete'
             self.textview.text = 'Hash: ' + self.hash.hexdigest() #show the text in the textview
         elif self.count == 100:
-            print self.hash.hexdigest()
+            print(self.hash.hexdigest())
             clipboard.set(self.hash.hexdigest())
             self.close() #close the view
 

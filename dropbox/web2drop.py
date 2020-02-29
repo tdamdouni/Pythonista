@@ -9,6 +9,7 @@
 # Run manually using a URL in the clipboard or use a bookmarlet to open from Safari
 # javascript:window.location='pythonista://web2drop?action=run&argv='+encodeURIComponent(document.title)+'&argv='+encodeURIComponent(document.location.href);
 
+from __future__ import print_function
 import clipboard
 import urllib2
 import console
@@ -46,7 +47,7 @@ marky = 'http://heckyesmarkdown.com/go/?read=1&u='
 instaURL = insta + url
 markURL = marky + url
 
-print 'Retrieving reading list file...'
+print('Retrieving reading list file...')
 retrieve = dropbox_client.get_file('/Reading/Links.txt')
 
 old = open('Links.txt', 'w')
@@ -56,11 +57,11 @@ old.close()
 
 new = open ('Links.txt')
 
-print 'Updating reading list file...'
+print('Updating reading list file...')
 response = dropbox_client.put_file('/Reading/Links.txt',new,True)
 new.close()
 
-print 'Generating Markdown file...'
+print('Generating Markdown file...')
 getText = urllib2.Request(markURL)
 openText = urllib2.urlopen(getText)
 content = (openText.read().decode('utf-8'))
@@ -73,9 +74,9 @@ md.close()
 md = open('temp.md')
 
 #encode = urllib.quote(name, safe='')
-print 'Uploading Markdown file to Dropbox..'
+print('Uploading Markdown file to Dropbox..')
 response = dropbox_client.put_file('/Reading/'+name+'.md',md)
 md.close()
 
-print 'Complete'
+print('Complete')
 

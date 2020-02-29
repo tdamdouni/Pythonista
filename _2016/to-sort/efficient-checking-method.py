@@ -2,6 +2,7 @@
 
 # https://forum.omz-software.com/topic/2653/efficient-checking-method
 
+from __future__ import print_function
 nums_list = []
 for number in range(1000): # This makes a list with a ton of uneven numbers.
     eoro_check = (number-1)%2
@@ -12,7 +13,7 @@ for number in range(1000): # This makes a list with a ton of uneven numbers.
             pass
         else:
             nums_list.append(number-1)
-print nums_list
+print(nums_list)
 
 #==============================
 

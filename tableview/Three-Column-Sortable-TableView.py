@@ -4,6 +4,7 @@
 
 # https://forum.omz-software.com/topic/2940/share-code-tableview
 
+from __future__ import print_function
 import ui, os, datetime
 from operator import itemgetter
 
@@ -38,10 +39,10 @@ class MyTableViewDataSource (object):
 		
 class MyTableViewDelegate(object):
 	def tableview_did_select(self, tableview, section, row):
-		print 'select'
+		print('select')
 		
 	def tableview_did_deselect(self, tableview, section, row):
-		print 'deselect'
+		print('deselect')
 		
 class MyTableView(ui.View):
 	def __init__(self):

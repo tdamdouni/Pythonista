@@ -1,3 +1,4 @@
+from __future__ import print_function
 # https://forum.omz-software.com/topic/2291/share-code-for-beginners-like-me-the-python-help-function
 
 # coding: utf-8
@@ -32,4 +33,4 @@ class SolveTheWorldsProblems(object):
 
 if __name__ == '__main__':
     stwp = SolveTheWorldsProblems(666)
-    print help(stwp)
+    print(help(stwp))

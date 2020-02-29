@@ -1,3 +1,4 @@
+from __future__ import print_function
 # https://gist.github.com/pudquick/4139094
 
 import os, cmd, sys, re, glob, os.path, shutil, zipfile, tarfile, gzip
@@ -243,8 +244,8 @@ class Shell(cmd.Cmd):
     def bash(self, argstr):
         try:
             return self._bash.parse('. ' + argstr)[1:]
-        except SyntaxError, e:
-            print "Syntax Error: %s" % e
+        except SyntaxError as e:
+            print("Syntax Error: %s" % e)
             return None
     def pprint(self, path):
         if (path.startswith(self._bash.env_vars['$HOME'])):
@@ -252,7 +253,7 @@ class Shell(cmd.Cmd):
         return path
     def do_pwd(self, line):
         """return working directory name"""
-        print self.pprint(os.getcwd())
+        print(self.pprint(os.getcwd()))
     def do_cd(self, line):
         """change the current directory to DIR"""
         args = self.bash(line)
@@ -262,9 +263,9 @@ class Shell(cmd.Cmd):
             try:
                 os.chdir(args[0])
             except Exception:
-                print "cd: %s: No such directory" % line
+                print("cd: %s: No such directory" % line)
         elif len(args) > 1:
-            print "cd: Too many arguments"
+            print("cd: Too many arguments")
         else:
             os.chdir(self._bash.env_vars['$HOME'])
     def sizeof_fmt(self, num):
@@ -284,28 +285,28 @@ class Shell(cmd.Cmd):
         elif (len(args) == 1):
             target = args[0]
             if os.path.exists(target):
-                print "mkdir: %s: File exists" % line
+                print("mkdir: %s: File exists" % line)
             else:
                 try:
                     os.mkdir(target)
                 except Exception:
-                    print "mkdir: %s: Unable to create" % line
+                    print("mkdir: %s: Unable to create" % line)
         else:
-            print "mkdir: Usage: mkdir directory_name"
+            print("mkdir: Usage: mkdir directory_name")
     def do_mv(self, line):
         """move files and directories"""
         args = self.bash(line)
         if args is None:
             return
         elif (not (len(args) >= 2)):
-            print "mv: Usage: mv src [..] dest"
+            print("mv: Usage: mv src [..] dest")
         else:
             dest  = args[-1]
             files = args[0:-1]
             if (len(files) > 1):
                 # Moving multiple files, destination must be an existing directory.
                 if (not os.path.isdir(dest)):
-                    print "cp: %s: No such directory" % self.pprint(dest)
+                    print("cp: %s: No such directory" % self.pprint(dest))
                 else:
                     full_dest = os.path.abspath(dest).rstrip('/') + '/'
                     for filef in files:
@@ -313,12 +314,12 @@ class Shell(cmd.Cmd):
                         file_name = os.path.basename(full_file)
                         new_name  = os.path.join(full_dest,file_name)
                         if (not os.path.exists(full_file)):
-                            print "! Error: Skipped, missing -", self.pprint(filef)
+                            print("! Error: Skipped, missing -", self.pprint(filef))
                             continue
                         try:
                             os.rename(full_file,new_name)
                         except Exception:
-                            print "mv: %s: Unable to move" % self.pprint(filef)
+                            print("mv: %s: Unable to move" % self.pprint(filef))
             else:
                 # Moving a single file to a (pre-existing) directory or a file
                 filef = files[0]
@@ -330,24 +331,24 @@ class Shell(cmd.Cmd):
                         try:
                             os.rename(full_file, full_dest + '/' + file_name)
                         except:
-                            print "mv: %s: Unable to move" % self.pprint(filef)
+                            print("mv: %s: Unable to move" % self.pprint(filef))
                     else:
-                        print "mv: %s: No such file" % self.pprint(filef)
+                        print("mv: %s: No such file" % self.pprint(filef))
                 else:
                     if (os.path.exists(full_file)):
                         try:
                             os.rename(full_file, full_dest)
                         except:
-                            print "mv: %s: Unable to move" % self.pprint(filef)
+                            print("mv: %s: Unable to move" % self.pprint(filef))
                     else:
-                        print "mv: %s: No such file" % self.pprint(filef)
+                        print("mv: %s: No such file" % self.pprint(filef))
     def do_cp(self, line):
         """copy files and directories"""
         args = self.bash(line)
         if args is None:
             return
         elif (not (len(args) >= 2)):
-            print "cp: Usage: cp src [..] dest"
+            print("cp: Usage: cp src [..] dest")
         else:
             if len(args) > 2:
                 files = args[:-1]
@@ -358,7 +359,7 @@ class Shell(cmd.Cmd):
             if (len(files) > 1):
                 # Copying multiple files, destination must be an existing directory.
                 if (not os.path.isdir(dest)):
-                    print "cp: %s: No such directory" % self.pprint(dest)
+                    print("cp: %s: No such directory" % self.pprint(dest))
                 else:
                     full_dest = os.path.abspath(dest).rstrip('/') + '/'
                     for filef in files:
@@ -366,7 +367,7 @@ class Shell(cmd.Cmd):
                         file_name = os.path.basename(full_file)
                         new_name  = os.path.join(full_dest,file_name)
                         if (not os.path.exists(full_file)):
-                            print "! Error: Skipped, missing -", self.pprint(filef)
+                            print("! Error: Skipped, missing -", self.pprint(filef))
                             continue
                         try:
                             if (os.path.isdir(full_file)):
@@ -374,7 +375,7 @@ class Shell(cmd.Cmd):
                             else:
                                 shutil.copy(full_file,new_name)
                         except Exception:
-                            print "cp: %s: Unable to copy" % self.pprint(filef)
+                            print("cp: %s: Unable to copy" % self.pprint(filef))
             else:
                 # Copying a single file to a (pre-existing) directory or a file
                 filef = files[0]
@@ -391,31 +392,31 @@ class Shell(cmd.Cmd):
                             else:
                                 shutil.copy(full_file,new_name)
                         except:
-                            print "cp: %s: Unable to copy" % self.pprint(filef)
+                            print("cp: %s: Unable to copy" % self.pprint(filef))
                     else:
-                        print "cp: %s: No such file" % self.pprint(filef)
+                        print("cp: %s: No such file" % self.pprint(filef))
                 elif (os.path.exists(full_dest)):
                     # Destination is a file
                     if (os.path.exists(full_file)):
                         try:
                             shutil.copy(full_file,full_dest)
                         except:
-                            print "cp: %s: Unable to copy" % self.pprint(filef)
+                            print("cp: %s: Unable to copy" % self.pprint(filef))
                     else:
-                        print "cp: %s: No such file" % self.pprint(filef)
+                        print("cp: %s: No such file" % self.pprint(filef))
                 else:
                     if (os.path.isdir(full_file)):
                         # Source is a directory, destination should become a directory
                         try:
                             shutil.copytree(full_file,full_dest)
                         except:
-                            print "cp: %s: Unable to copy" % self.pprint(filef)
+                            print("cp: %s: Unable to copy" % self.pprint(filef))
                     else:
                         # Source is a file, destination should become a file
                         try:
                             shutil.copy(full_file,full_dest)
                         except:
-                            print "cp: %s: Unable to copy" % self.pprint(filef)
+                            print("cp: %s: Unable to copy" % self.pprint(filef))
 
     def do_rm(self, line):
         """remove one or more files/directories"""
@@ -423,47 +424,47 @@ class Shell(cmd.Cmd):
         if args is None:
             return
         elif (len(args) < 1):
-            print "rm: Usage: rm file_or_dir [...]"
+            print("rm: Usage: rm file_or_dir [...]")
         else:
             for filef in args:
                 full_file = os.path.abspath(filef).rstrip('/')
                 if not os.path.exists(filef):
-                    print "! Skipping: Not found -", self.pprint(filef)
+                    print("! Skipping: Not found -", self.pprint(filef))
                     continue
                 if (os.path.isdir(full_file)):
                     try:
                         shutil.rmtree(full_file, True)
                         if (os.path.exists(full_file)):
-                            print "rm: %s: Unable to remove" % self.pprint(filef)
+                            print("rm: %s: Unable to remove" % self.pprint(filef))
                     except Exception:
-                        print "rm: %s: Unable to remove" % self.pprint(filef)
+                        print("rm: %s: Unable to remove" % self.pprint(filef))
                 else:
                     try:
                         os.remove(full_file)
                     except Exception:
-                        print "rm: %s: Unable to remove" % self.pprint(filef)
+                        print("rm: %s: Unable to remove" % self.pprint(filef))
     def do_cat(self, line):
         """print file"""
         args = self.bash(line)
         if args is None:
             return
         elif (len(args) != 1):
-            print "cat: Usage: cat file"
+            print("cat: Usage: cat file")
         else:
             target = args[0]
             if (not os.path.exists(target)):
-                print "cat: %s: No such file" % line
+                print("cat: %s: No such file" % line)
             elif (os.path.isdir(target)):
-                print "cat: %s: Is a directory" % line
+                print("cat: %s: Is a directory" % line)
             else:
                 try:
                     contents = ""
                     with open(target, 'r') as f:
                         contents = f.read()
-                    print contents
-                    print ""
+                    print(contents)
+                    print("")
                 except Exception:
-                    print "cat: %s: Unable to access" % line
+                    print("cat: %s: Unable to access" % line)
     def do_ls(self, line):
         """list directory contents"""
         files = self.bash(line)
@@ -477,7 +478,7 @@ class Shell(cmd.Cmd):
             file_name = os.path.basename(full_file)
             dir_name  = os.path.dirname(full_file).rstrip('/')
             if (not os.path.exists(full_file)):
-                print "! Error: Skipped, missing -", self.pprint(filef)
+                print("! Error: Skipped, missing -", self.pprint(filef))
                 continue
             if (os.path.isdir(full_file)):
                 # Need to add this as a key and all the files contained inside it
@@ -500,16 +501,16 @@ class Shell(cmd.Cmd):
             in_cwd = True
         for i,path in enumerate(paths):
             if (i > 0):
-                print "\n" + self.pprint(path) + "/:"
+                print("\n" + self.pprint(path) + "/:")
             elif (not in_cwd):
-                print self.pprint(path) + "/:"
+                print(self.pprint(path) + "/:")
             for filef in sorted(list(files_for_path[path])):
                 full_file = os.path.abspath(filef).rstrip('/')
                 file_name = os.path.basename(full_file)
                 if (os.path.isdir(full_file)):
-                    print file_name + "/"
+                    print(file_name + "/")
                 else:
-                    print file_name + (" (%s)" % (self.sizeof_fmt(os.stat(full_file).st_size)))
+                    print(file_name + (" (%s)" % (self.sizeof_fmt(os.stat(full_file).st_size))))
     def do_unzip(self, line):
         """unzip a zip archive"""
         # filename with optional destination
@@ -517,11 +518,11 @@ class Shell(cmd.Cmd):
         if args is None:
             return
         elif not (1 <= len(args) <= 2):
-            print "unzip: Usage: unzip file [destination]"
+            print("unzip: Usage: unzip file [destination]")
         else:
             filename = os.path.abspath(args[0])
             if not os.path.isfile(filename):
-                print "unzip: %s: No such file" % args[0]
+                print("unzip: %s: No such file" % args[0])
             else:
                 # PK magic marker check
                 f = open(filename)
@@ -532,7 +533,7 @@ class Shell(cmd.Cmd):
                 finally:
                     f.close()
                 if pk_check != 'PK':
-                    print "unzip: %s: does not appear to be a zip file" % args[0]
+                    print("unzip: %s: does not appear to be a zip file" % args[0])
                 else:
                     if (os.path.basename(filename).lower().endswith('.zip')):
                         altpath = os.path.splitext(os.path.basename(filename))[0]
@@ -541,7 +542,7 @@ class Shell(cmd.Cmd):
                     altpath = os.path.join(os.path.dirname(filename), altpath)
                     location = (args[1:2] or [altpath])[0]
                     if (os.path.exists(location)) and not (os.path.isdir(location)):
-                        print "unzip: %s: destination is not a directory" % location
+                        print("unzip: %s: destination is not a directory" % location)
                         return
                     elif not os.path.exists(location):
                         os.makedirs(location)
@@ -579,7 +580,7 @@ class Shell(cmd.Cmd):
                                     fp.close()
                     except Exception:
                         zipfp.close()
-                        print "unzip: %s: zip file is corrupt" % args[0]
+                        print("unzip: %s: zip file is corrupt" % args[0])
                         return
                     finally:
                         zipfp.close()
@@ -590,11 +591,11 @@ class Shell(cmd.Cmd):
         if args is None:
             return
         elif not (1 <= len(args) <= 2):
-            print "untar: Usage: untar file [destination]"
+            print("untar: Usage: untar file [destination]")
         else:
             filename = os.path.abspath(args[0])
             if not os.path.isfile(filename):
-                print "untar: %s: No such file" % args[0]
+                print("untar: %s: No such file" % args[0])
             else:
                 # 'ustar' magic marker check
                 f = open(filename)
@@ -606,7 +607,7 @@ class Shell(cmd.Cmd):
                 finally:
                     f.close()
                 if ustar_check != 'ustar':
-                    print "untar: %s: does not appear to be a tar file" % args[0]
+                    print("untar: %s: does not appear to be a tar file" % args[0])
                 else:
                     if (os.path.basename(filename).lower().endswith('.tar')):
                         altpath = os.path.splitext(os.path.basename(filename))[0]
@@ -615,7 +616,7 @@ class Shell(cmd.Cmd):
                     altpath = os.path.join(os.path.dirname(filename), altpath)
                     location = (args[1:2] or [altpath])[0]
                     if (os.path.exists(location)) and not (os.path.isdir(location)):
-                        print "untar: %s: destination is not a directory" % location
+                        print("untar: %s: destination is not a directory" % location)
                         return
                     elif not os.path.exists(location):
                         os.makedirs(location)
@@ -658,7 +659,7 @@ class Shell(cmd.Cmd):
                                 fp.close()
                     except Exception:
                         tar.close()
-                        print "untar: %s: tar file is corrupt" % args[0]
+                        print("untar: %s: tar file is corrupt" % args[0])
                         return
                     finally:
                         tar.close()
@@ -672,11 +673,11 @@ class Shell(cmd.Cmd):
         if args is None:
             return
         elif not (1 <= len(args) <= 2):
-            print "%s: Usage: %s file [outfile]" % (fname, fname)
+            print("%s: Usage: %s file [outfile]" % (fname, fname))
         else:
             filename = os.path.abspath(args[0])
             if not os.path.isfile(filename):
-                print "%s: %s: No such file" % (fname,args[0])
+                print("%s: %s: No such file" % (fname,args[0]))
             else:
                 # '\x1f\x8b\x08' magic marker check
                 f = open(filename, 'rb')
@@ -687,7 +688,7 @@ class Shell(cmd.Cmd):
                 finally:
                     f.close()
                 if gz_check != '\x1f\x8b\x08':
-                    print "%s: %s: does not appear to be a gzip file" % (fname,args[0])
+                    print("%s: %s: does not appear to be a gzip file" % (fname,args[0]))
                 else:
                     if (os.path.basename(filename).lower().endswith('.gz') or os.path.basename(filename).lower().endswith('.gzip')):
                         altpath = os.path.splitext(os.path.basename(filename))[0]
@@ -698,7 +699,7 @@ class Shell(cmd.Cmd):
                     altpath = os.path.join(os.path.dirname(filename), altpath)
                     location = (args[1:2] or [altpath])[0]
                     if os.path.exists(location):
-                        print "%s: %s: destination already exists" % (fname,os.path.basename(location))
+                        print("%s: %s: destination already exists" % (fname,os.path.basename(location)))
                         return                    
                     dirf = os.path.dirname(os.path.dirname(os.path.abspath(location)))
                     try:
@@ -708,7 +709,7 @@ class Shell(cmd.Cmd):
                             with gzip.open(filename, 'rb') as gzfile:
                                 outfile.write(gzfile.read())
                     except Exception:
-                        print "%s: %s: gzip file is corrupt" % (fname, args[0])
+                        print("%s: %s: gzip file is corrupt" % (fname, args[0]))
     def do_gunzip(self, line):
         """ungzip a gzip archive"""
         self.do_ungzip(line, gunzip=True)

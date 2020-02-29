@@ -2,6 +2,7 @@
 
 # https://gist.github.com/beer2011/b53151703781f705d2f9/
 
+from __future__ import print_function
 import console
 console.set_font('Menlo',18)
 
@@ -21,12 +22,12 @@ def download(url):
 
 def main():
 	if not appex.is_running_extension():
-		print 'This script is intended to be run from the sharing extension.'
+		print('This script is intended to be run from the sharing extension.')
 		return
 	par_url = appex.get_url()
-	print par_url
+	print(par_url)
 	if not par_url:
-		print 'No input URL found.'
+		print('No input URL found.')
 		return
 
 	# url access
@@ -40,7 +41,7 @@ def main():
 		img_url = link.get('src')
         	if img_url.startswith('//'):
             		img_url = 'http:' + img_url
-		print img_url
+		print(img_url)
 		# 
 		download(img_url)
 	

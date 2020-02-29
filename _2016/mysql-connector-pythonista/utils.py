@@ -233,7 +233,7 @@ def read_string(buf, end=None, size=None):
     if end is not None:
         try:
             idx = buf.index(end)
-        except (ValueError), e:
+        except (ValueError) as e:
             raise ValueError("end byte not precent in buffer")
         return (buf[idx+1:], buf[0:idx])
     elif size is not None:

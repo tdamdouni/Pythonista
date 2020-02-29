@@ -5,6 +5,7 @@
 
 # https://forum.omz-software.com/topic/2670/how-can-i-present-a-uialertcontroller/4
 
+from __future__ import print_function
 from objc_util import *
 import ctypes
 import ui
@@ -14,7 +15,7 @@ UIAlertController = ObjCClass('UIAlertController')
 UIAlertAction     = ObjCClass('UIAlertAction')
 
 def ok_pressed(sender):
-	print 'OK pressed'
+	print('OK pressed')
 	
 alert = UIAlertController.alertControllerWithTitle_message_preferredStyle_(ns('My Alert'), ns('My Message'), 1)
 alert_action_block = ObjCBlock(ok_pressed, None, [c_void_p])

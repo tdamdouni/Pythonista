@@ -1,3 +1,4 @@
+from __future__ import print_function
 # https://forum.omz-software.com/topic/681/get-workflow-name-programmatically
 
 import editor
@@ -7,7 +8,7 @@ import json
 with open(os.path.join(editor.get_workflows_path(), 'Commands.edcmd')) as f:
 	wf_infos = json.load(f)
 	for wf in wf_infos:
-		print wf['filename'] + ' -- ' + wf['title']
+		print(wf['filename'] + ' -- ' + wf['title'])
 # --------------------
 
 import json

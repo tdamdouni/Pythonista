@@ -1,4 +1,5 @@
 '''Functions for generating and solving graph structures from images'''
+from __future__ import print_function
 from PIL import Image
 from dijkstra import *
 
@@ -64,4 +65,4 @@ if __name__ == '__main__':
 		resultstr='Solved maze: \''+name+'\' in',time.time()-t1,'seconds.'
 		
 		ImagePlus.sidebyside((i.resize((256,256)), markPath(path, i).resize((256,256)))).show()
-		print resultstr
+		print(resultstr)

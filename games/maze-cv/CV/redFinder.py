@@ -1,4 +1,5 @@
 '''Can find red objects in an image. Can also find inside coordinates of a rectangle formed by 4 red squares. '''
+from __future__ import print_function
 
 from PIL import Image, ImageFilter
 from colorsys import rgb_to_hsv
@@ -122,7 +123,7 @@ if __name__ == '__main__':
 	inp = photos.pick_image()
 	t = time.time()
 	points = cornerCoords(inp)
-	print time.time()-t
+	print(time.time()-t)
 	out = inp.copy()
 	
 	import ImageDraw

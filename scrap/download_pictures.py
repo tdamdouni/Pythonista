@@ -1,9 +1,10 @@
+from __future__ import print_function
 from bs4 import BeautifulSoup
 import urllib2, os, requests, urlparse
 
 path = os.getcwd() + '/images'
 if not os.path.exists(path):
-  print 'Create new path /images'
+  print('Create new path /images')
   os.mkdir(path)
 
 homepage = urllib2.urlopen('http://imdb.com').read()
@@ -20,4 +21,4 @@ for image in images:
         f.write(chunk)
         f.flush()
 
-print 'Pictures downloaded to /images'
+print('Pictures downloaded to /images')

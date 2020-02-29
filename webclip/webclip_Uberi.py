@@ -1,3 +1,4 @@
+from __future__ import print_function
 # https://gist.github.com/Uberi/5031803/
 
 # https://gist.github.com/pudquick/4130373
@@ -155,9 +156,9 @@ def serve_it_up(port):
 	UUID2 = str(uuid.uuid4()).upper()
 	mobile_config_str = base_mobileconfig % (icon_label, UUID1, UUID1, script_name, arg_str, payload_name, UUID2, UUID2)
 	my_httpd = NicerHTTPServer((ip, port), MobileConfigHTTPRequestHandler)
-	print "Serving HTTP on %s:%s ..." % (ip,port)
+	print("Serving HTTP on %s:%s ..." % (ip,port))
 	my_httpd.serve_forever()
-	print "\n*** Webclip installed! ***"
+	print("\n*** Webclip installed! ***")
 	
 port = 8000
 webbrowser.open('safari-http://127.0.0.1:%s/webclip.mobileconfig' % port)

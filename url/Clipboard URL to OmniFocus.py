@@ -1,3 +1,4 @@
+from __future__ import print_function
 # https://gist.github.com/bachya/5c806bb14b9dd8a78268
 
 # Script to scrape an HTML page's title and, along with its URL, send it to OmniFocus as a task.
@@ -41,7 +42,7 @@ if cb_text == url:
         page = urllib2.urlopen(req)
         content = page.read()
         title = re.search('<title>(.*)</title>', content).group(1)
-    except urllib2.HTTPError, e:
+    except urllib2.HTTPError as e:
         # Something went wrong with the request, so just use
         # the URL itself as the title:
         title = url

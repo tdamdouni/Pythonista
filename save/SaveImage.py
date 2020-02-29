@@ -1,3 +1,4 @@
+from __future__ import print_function
 import clipboard
 import urllib
 import Image
@@ -12,4 +13,4 @@ file = Image.open(cStringIO.StringIO(urllib.urlopen(URL).read()))
 
 photos.save_image(file)
 
-print 'Image Saved'
+print('Image Saved')

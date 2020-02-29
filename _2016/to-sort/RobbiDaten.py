@@ -1,6 +1,7 @@
 #coding: utf-8
 # http://www.uni-brachbach.de/dokuwiki/doku.php/informatik-buch:programmiersprachen:python:beispiele:karol_in_python#version_010
 
+from __future__ import print_function
 from RobbiDaten import *
 #from RobbiShell import *
 #from RobbiInter import *
@@ -137,7 +138,7 @@ class GUI:
 		self.ausfuehren(programm)
 		
 	def ausfuehren(self,liste):
-		print liste
+		print(liste)
 		merke = [0,0,0,0]
 		schleifenzaehler = [0,0,0,0]
 		schleife = -1

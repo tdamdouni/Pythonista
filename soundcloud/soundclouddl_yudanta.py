@@ -6,6 +6,7 @@
 
 #usage : python soundclouddl.py <soundcloud url track/list>
 
+from __future__ import print_function
 import soundcloud
 import urllib
 import re
@@ -35,11 +36,11 @@ class soundcloudDownloader:
 
 		resolveurl = self.client.get('/resolve', url=url);
 		if resolveurl.kind == 'track':
-			print 'downloading track'
+			print('downloading track')
 			returnMedia.append(self.getTrackDetail(resolveurl.id))
 			
 		elif resolveurl.kind == 'playlist':
-			print 'downloading playlist'
+			print('downloading playlist')
 			for song in resolveurl.tracks:
 				returnMedia.append(self.getTrackDetail(song['id']))
 

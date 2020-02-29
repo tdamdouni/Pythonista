@@ -4,6 +4,7 @@
 
 # Experimental photo picker using the Photos framework via objc_util. Compared to the photos module, this has the advantage of showing all photos, including iCloud photo library. Not very well tested!
 
+from __future__ import print_function
 from objc_util import *
 import threading
 from io import BytesIO
@@ -156,7 +157,7 @@ def main():
 		img = asset.fetch_image()
 		img.show()
 	else:
-		print 'No image picked'
+		print('No image picked')
 		
 if __name__ == '__main__':
 	main()

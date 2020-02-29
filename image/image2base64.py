@@ -1,3 +1,4 @@
+from __future__ import print_function
 # https://gist.github.com/GuyCarver/4132799
 # covert an image in the clipboard to a 57x57 rgb icon and store base64 version of it into the clipboard.
 # if an image is not in the clipboard the base64 string 'b64str' will be loaded and displayed.
@@ -39,10 +40,10 @@ def main():
 	#show the image.
 	img.show()
 	#print some info.
-	print str(img.format)
-	print str(img.mode)
-	print str(img.size)
-	print str(img.info)
+	print(str(img.format))
+	print(str(img.mode))
+	print(str(img.size))
+	print(str(img.info))
 	
 if __name__ == '__main__':
 	main()

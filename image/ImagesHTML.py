@@ -1,3 +1,4 @@
+from __future__ import print_function
 # Taken from Viticci :: https://github.com/viticci/pythonista-scripts
 # Uses direct link to image in clipboard to generate HTML code suitable for MacStories
 # Should work just about anywhere else though.
@@ -13,5 +14,5 @@ title = console.input_alert("Image Title", "Type title below")
 
 final = "<img src=" + '"' + image + '"' + " " + "alt=" + '"' + alts + '"' + " " + "title=" + '"' + title + '"' + " " + "class=\"aligncenter\" />"
 
-print final
+print(final)
 clipboard.set(final)

@@ -1,3 +1,4 @@
+from __future__ import print_function
 # https://gist.github.com/omz/9901460
 
 # FontInstaller (by @olemoritz)
@@ -63,7 +64,7 @@ def main():
 		font_path = sys.argv[1]
 		label = os.path.split(font_path)[1]
 		if os.path.splitext(font_path)[1].lower() != '.ttf':
-			print 'Not a ttf file.'
+			print('Not a ttf file.')
 			return
 		with open(font_path, 'r') as f:
 			font_data = f.read()

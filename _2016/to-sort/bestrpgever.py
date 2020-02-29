@@ -1,5 +1,6 @@
 #-*-coding: utf-8 -*-
 
+from __future__ import print_function
 from pygraph.classes.graph import graph
 
 ROOMS = {
@@ -45,32 +46,32 @@ class GameLoop(object):
     def loop(self):
         
         self.player.name = raw_input(u'What is your name? ')
-        print u"Good news! You are on PyConPL 2013 in a derelict hotel, 'ORLE GNIAZDO'"
-        print u"You are at the hotel reception. You need to get to the BAR"
+        print(u"Good news! You are on PyConPL 2013 in a derelict hotel, 'ORLE GNIAZDO'")
+        print(u"You are at the hotel reception. You need to get to the BAR")
         
         while not self.end:
-            print '\nYou are in: %s \n' % ROOMS.get(self.player.room,
-                                            u'Generic room %s' % (self.player.room,))
+            print('\nYou are in: %s \n' % ROOMS.get(self.player.room,
+                                            u'Generic room %s' % (self.player.room,)))
             moves = self.lab.possible_moves(self.player.room)
             try:
                 next_move = raw_input(self.lab.print_moves(moves) + '\n')
             except EOFError:
-                print "\nBye...."
+                print("\nBye....")
                 break
             except:
-                print "\n...What?"
+                print("\n...What?")
                 continue
             try:
                 if int(next_move) in moves:
                     self.player.room = int(next_move)
                 else:
-                    print "\nThis is a wall. You're drunk already."
+                    print("\nThis is a wall. You're drunk already.")
                 if self.player.room == self.dest:
-                    print u'YOU WON %s! Now DRINK!' %self.player.name
+                    print(u'YOU WON %s! Now DRINK!' %self.player.name)
                     self.end = True
             except Exception:
                 # Errors should never pass silently.
-                print "Try harder"
+                print("Try harder")
     
 
 class Player(object):    

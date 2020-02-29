@@ -2,6 +2,7 @@
 
 # https://gist.github.com/philgruneich/13f02f45a41ad90f454f
 
+from __future__ import print_function
 import requests
 import photos
 from PIL import Image, ImageEnhance
@@ -62,14 +63,14 @@ headers = {
 
 image.show()
 console.show_activity()
-print 'Starting request to Project Oxford...'
+print('Starting request to Project Oxford...')
 
 r = requests.post(url, data=data, headers=headers, params=params)
 
 console.hide_activity()
 
 if r.status_code == 200:
-	print 'Request to Project Oxford was successful, building string...'
+	print('Request to Project Oxford was successful, building string...')
 	
 	def words(w):
 		return w["text"]

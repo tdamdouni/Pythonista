@@ -6,12 +6,13 @@ You can use this to exchange files with a Mac/PC or a file management app on the
 
 If you use a Mac, you can connect from the Finder, using the "Go -> Connect to Server..." menu item.
 '''
+from __future__ import print_function
 
 import os
 from socket import gethostname
 
 def install_pyftpdlib():
-	print 'Downloading pyftpdlib...'
+	print('Downloading pyftpdlib...')
 	import urllib
 	import shutil
 	os.chdir(os.path.expanduser('~/Documents'))
@@ -41,13 +42,13 @@ def main():
 	server = FTPServer(('0.0.0.0', 2121), handler)
 	t = threading.Thread(target=server.serve_forever)
 	t.start()
-	print 'Server started.'
-	print '\nConnect as guest/anonymous user to ftp://localhost:2121 (from this device) or "ftp://(YOUR_IP_ADDRESS):2121" (from other devices in your network -- you can find the IP address of your device in the WiFi settings)'
+	print('Server started.')
+	print('\nConnect as guest/anonymous user to ftp://localhost:2121 (from this device) or "ftp://(YOUR_IP_ADDRESS):2121" (from other devices in your network -- you can find the IP address of your device in the WiFi settings)')
 	try:
 		while True: pass
 	except KeyboardInterrupt:
 		server.close_all()
-		print 'Server stopped'
+		print('Server stopped')
 
 if __name__ == '__main__':
 	main()

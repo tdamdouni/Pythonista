@@ -4,6 +4,7 @@
 
 # Example of parsing a table using BeautifulSoup and requests in Python
 
+from __future__ import print_function
 import requests
 from bs4 import BeautifulSoup
 
@@ -56,7 +57,7 @@ for table_row in soup.select("table.inmatesList tr"):
 		inmates_list.append(inmate)
 		
 		# Let's print our table out.
-		print "Added {0} {1}, {2}, to the list".format(first_name, last_name, age)
+		print("Added {0} {1}, {2}, to the list".format(first_name, last_name, age))
 		
 # What if we want to do more than just print out all the names and
 # ages? Maybe we want to filter things a bit. Say, only we want to
@@ -74,12 +75,12 @@ for inmate in inmates_list:
 	
 	if age > 19 and age < 31:
 		# Let's print our table out.
-		print "{0} {1}, {2} is in the 20 to 30 age range".format(inmate['first_name'], inmate['last_name'], age)
+		print("{0} {1}, {2} is in the 20 to 30 age range".format(inmate['first_name'], inmate['last_name'], age))
 		
 		# Add one to our inmates in their 20s count
 		inmates_in_20s_count = inmates_in_20s_count + 1
 		
 # How many inmates did we find in the page? Use the len funciton to find out.
-print "Found {0} in the page".format(len(inmates_list))
-print "Found {0} between age 20 and 30 in the page".format(inmates_in_20s_count)
+print("Found {0} in the page".format(len(inmates_list)))
+print("Found {0} between age 20 and 30 in the page".format(inmates_in_20s_count))
 

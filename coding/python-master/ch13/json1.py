@@ -1,3 +1,4 @@
+from __future__ import print_function
 #Let python know we are going to use the json library (aka deserialize some json data)
 import json
 
@@ -26,5 +27,5 @@ info = json.loads(data)
 
 #pull things out like you typically would for dictionaries. 
 #info is all the data and name is the key of the value we're interested in.
-print 'Name:', info["name"]
-print 'Hide:', info["email"]["hide"]
+print('Name:', info["name"])
+print('Hide:', info["email"]["hide"])

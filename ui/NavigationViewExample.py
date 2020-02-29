@@ -1,5 +1,6 @@
 # coding: utf-8
 
+from __future__ import print_function
 import ui
 
 def make_button_item(action, image_name):
@@ -24,6 +25,6 @@ class NavView(ui.View):
         self.nav_view.close()
         
     def bt_action(self, sender):
-        print 'action from ' + sender.name
+        print('action from ' + sender.name)
 
 NavView()

@@ -2,6 +2,7 @@
 
 # https://forum.omz-software.com/topic/3115/ui-and-device-rotation-monitoring/4
 
+from __future__ import print_function
 import ui
 
 class myView(ui.View):
@@ -10,7 +11,7 @@ class myView(ui.View):
 		self.present('full_screen')
 		
 	def draw(self):
-		print 'orientation = ' + self.scr_orientation
+		print('orientation = ' + self.scr_orientation)
 		
 	def layout(self):
 		if self.width > self.height:

@@ -1,3 +1,4 @@
+from __future__ import print_function
 # https://gist.github.com/viticci/8586671
 import re
 import string
@@ -35,6 +36,6 @@ if match:
         title = console.input_alert('Image text', 'Type the image alt text below.')
         final = '![' + title + '](' + cleaned + ')'
         clipboard.set(final)
-        print 'Done.'
+        print('Done.')
 elif not match:
     console.alert('No match found')

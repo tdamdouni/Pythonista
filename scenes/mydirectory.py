@@ -2,6 +2,7 @@
 
 # https://gist.github.com/PKHG/4039885
 
+from __future__ import print_function
 from scene import *
 #from random import random
 from time import ctime
@@ -15,7 +16,7 @@ def dir_contents(path):
 	try:
 		contents = listdir(path)
 	except:
-		print '***ERROR with ', path
+		print('***ERROR with ', path)
 		sys.exit()
 #	print(contents)
 #	tmp = [isfile(path + "\\" + el) for el in contents]
@@ -93,9 +94,9 @@ class MyScene (Scene):
 		#print self.nr_dirs, self.nr_files
 		self.total = len(self.dir_name_layers)
 		if not self.total:
-			print '***IMPOSSIBLE TD =', td
+			print('***IMPOSSIBLE TD =', td)
 			sys.exit(1)
-		print '***DBG CHANGE_DIR_TO TOTAL = ', self.total
+		print('***DBG CHANGE_DIR_TO TOTAL = ', self.total)
 		#list of ranges to do			
 		self.my_ranges = range_split(self.total, 18)
 		#print self.my_ranges
@@ -175,7 +176,7 @@ class MyScene (Scene):
 					self.is_DIR = self.root.sublayers[el]
 					self.is_DIR.stroke == Color(1,0,0)
 					#self.new_dir.stroke = Color(0,1,0)
-					print 'I am ', self.is_DIR
+					print('I am ', self.is_DIR)
 					self.root.sublayers[el].stroke = Color(1,1,1)
 					#print 'found ',el
 					result = self.all_names[self.root.sublayers[el].image]
@@ -241,31 +242,31 @@ class MyScene (Scene):
 		elif touch.location in self.new_dir.frame:
 			if self.is_DIR:
 				if path.isdir(self.is_DIR):
-					print 'new_dir ==>', self.is_DIR
+					print('new_dir ==>', self.is_DIR)
 					self.root.sublayers = []
 					self.change_dir_to(self.is_DIR)
 				else:
-					print '***INFO ', self.is_DIR, ' is not a directory!'
+					print('***INFO ', self.is_DIR, ' is not a directory!')
 			else:
-				print '***ERROR no dir chosen'
+				print('***ERROR no dir chosen')
 		elif touch.location in self.txt_file.frame:
 			if self.is_DIR:
 				if path.isfile(self.is_DIR):
 					fd = open(self.is_DIR)
 					try:
 						for line in fd:
-							print line
+							print(line)
 					finally:
 						fd.close()
 		elif touch.location.x < 600:
 			#print 'item at' , touch.location
 			res = which_item()
-			print res
+			print(res)
 			if res:
 				stat_info = stat(res)
-				print 'ctime= ', ctime(stat_info.st_ctime)
+				print('ctime= ', ctime(stat_info.st_ctime))
 				#print 'atime= ', ctime(stat_info.st_atime)
-				print 'size =', int(stat_info.st_size), ' bytes'
+				print('size =', int(stat_info.st_size), ' bytes')
 		else:
 			go_on = False 
 		if go_on:

@@ -18,6 +18,7 @@ The strucure of a "node" is a dictionary with the four keys:
 The topmost node (the rootView) is a list with a single node
 
 '''
+from __future__ import print_function
 import ui, console,os,os.path,sys,json,re,uuid,math,copy,dialogs
 from copy import deepcopy
 
@@ -144,8 +145,8 @@ class nodeMapView(ui.View):
 			try:
 				parent = node['parent']
 			except KeyError:
-				print "Keyerror on node['parent']\n"
-				print item
+				print("Keyerror on node['parent']\n")
+				print(item)
 				sys.exit(1)
 			isSelected = item['selected']
 			isHidden = item['hidden']
@@ -163,8 +164,8 @@ class nodeMapView(ui.View):
 			try:
 				xframe = [frame[0] + offset[0], frame[1] + offset[1], frame[2], frame[3]]	
 			except TypeError:
-				print "Type error in collect"
-				print "frame", xframe, "offset", offset
+				print("Type error in collect")
+				print("frame", xframe, "offset", offset)
 			if not isHidden and level:
 				scaledFrame = [x*self.ratio for x in xframe]
 				path = ui.Path.rect(*scaledFrame)
@@ -221,9 +222,9 @@ class NodeTableViewDelegate(object):
 		try:
 			level = self.items[row]['node']['level']
 		except KeyError:
-			print "Keyerror in cell for row"
-			print row
-			print self.items[row]['node']
+			print("Keyerror in cell for row")
+			print(row)
+			print(self.items[row]['node'])
 			sys.exit(1)
 		cell.background_color = depthColors[level]
 		return cell

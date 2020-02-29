@@ -7,6 +7,7 @@ Created on Sat Jul 12 09:33:29 2014
 
 @author: henryiii
 """
+from __future__ import print_function
 
 import random
 import numpy as np
@@ -82,18 +83,18 @@ def run_console():
 	board = Board()
 	board.add_tile()
 	while True:
-		print board
+		print(board)
 		x = raw_input('wasd:').lower()
 		if len(x)==1 and x in 'wasd':
 			v = 'dwas'.find(x)
 			if board.move(v):
 				board.add_tile()
 				if not board.check_move():
-					print 'game over'
+					print('game over')
 					break
 		else:
 			break 
-	print 'done'
+	print('done')
 	return board
 
 def _ui_setup(board, labels, v):
@@ -108,8 +109,8 @@ def _ui_move(board, labels, v, dir, ext):
 	if board.move(dir):
 				board.add_tile()
 				if not board.check_move():
-					print 'Game over.'
-					print board
+					print('Game over.')
+					print(board)
 					v.close()
 	_ui_setup(board, labels, v)
 

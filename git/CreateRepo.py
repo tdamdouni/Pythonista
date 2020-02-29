@@ -1,4 +1,5 @@
 # coding: utf-8
+from __future__ import print_function
 import requests, json, dialogs
 
 token = "InsertYourTokenHere"
@@ -13,9 +14,9 @@ if items:
 		headers = {"Authorization": "token " + token}
 		r = requests.post(url, data=json.dumps(data), headers=headers)
 		if r.status_code == 201:
-			print 'Success: Repo ' + repo_name + ' is created.'
+			print('Success: Repo ' + repo_name + ' is created.')
 		else:
-			print 'Error: ' + str(r)
+			print('Error: ' + str(r))
 	else:
-		print 'Error: No RepoName.'
+		print('Error: No RepoName.')
 

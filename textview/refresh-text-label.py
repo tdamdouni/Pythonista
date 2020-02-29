@@ -5,6 +5,7 @@
 
 # https://forum.omz-software.com/topic/2849/refresh-text-label/3
 
+from __future__ import print_function
 import ui
 import random
 import time
@@ -16,7 +17,7 @@ def button_tapped(sender):
 	v=sender.superview
 	def updateLabel():
 		v['lblRoll'].text=str(dieRoll())
-		print v['lblRoll'].text
+		print(v['lblRoll'].text)
 		
 	for n in range(6) :
 		updateLabel()

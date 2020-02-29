@@ -2,6 +2,7 @@
 
 # https://gist.github.com/henryiii/5f38c0668b73c2e87ff0
 
+from __future__ import print_function
 import ui
 import os
 import console
@@ -68,4 +69,4 @@ nv = ui.NavigationView(fv.view)
 nv.name = 'File Selector' 
 nv.present('sheet')
 #nv.wait_modal()
-print fv.selection
+print(fv.selection)

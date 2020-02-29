@@ -4,6 +4,7 @@
 
 # https://forum.omz-software.com/topic/2429/editorial-reminders/7
 
+from __future__ import print_function
 import re
 import editor
 import dialogs
@@ -34,7 +35,7 @@ for line in action_in.split('\n'):
                                                             'Ok')
             rem.save()
         except KeyboardInterrupt:
-            print "User Cancled Input"
+            print("User Cancled Input")
         
 
 action_out = action_in
@@ -60,14 +61,14 @@ def extract_alarm_info(alarm_text):
             }
 
 the_alarm = '@alarm(2015-12-10, 22:05)'
-print extract_alarm_info(the_alarm)
+print(extract_alarm_info(the_alarm))
 
 # --------------------
 
 import datetime
 the_alarm = '@alarm(2015-12-10, 22:05)'
 alarm_datetime = datetime.datetime.strptime(the_alarm, '@alarm(%Y-%m-%d, %H:%M)')
-print(alarm_datetime, str(alarm_datetime))
+print((alarm_datetime, str(alarm_datetime)))
 # (datetime.datetime(2015, 12, 10, 22, 5), '2015-12-10 22:05:00')
 
 # --------------------
@@ -80,10 +81,10 @@ def str_inside(s, delimiters='()'):  # 'this (is a) test.' --> 'is a'
 
 the_alarm = '@alarm(2015-12-10, 22:05)'
 alarm_datetime = dateutil.parser.parse(str_inside(the_alarm))
-print(alarm_datetime, str(alarm_datetime))
+print((alarm_datetime, str(alarm_datetime)))
 
 # --------------------
 
 for s in '2/13/70', '8:00 on 13 Feb 70', "8am on 13th Feb 1970", 'July 4th', '7:30am', '7:30pm', 'Monday':
-    print(dateutil.parser.parse(s), s)
+    print((dateutil.parser.parse(s), s))
 # --------------------

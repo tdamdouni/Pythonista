@@ -4,6 +4,7 @@
 
 # https://forum.omz-software.com/topic/3046/help-finding-photos-in-album/11
 
+from __future__ import print_function
 import ui
 import photos
 import console
@@ -41,7 +42,7 @@ def main():
 			fn_index[fn] = (ip,album)
 			
 	# print filename -> album,index
-	print fn_index
+	print(fn_index)
 	
 main()
 

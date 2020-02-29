@@ -1,3 +1,4 @@
+from __future__ import print_function
 from dropboxlogin import get_client
 dropbox_client = get_client()
 import keychain
@@ -21,7 +22,7 @@ def WorkPic(img):
 	imgname = today.strftime("%Y-%m-%d-at-%H-%M-%S") + '-' + titles + '.jpeg'
 	response = dropbox_client.put_file('/MacStories_Team/Photos/Ticci/upload-unedited/' + imgname, buffer)
 	console.hide_activity()
-	print 'Image Uploaded'
+	print('Image Uploaded')
 	
 if __name__ == '__main__':
   import photos

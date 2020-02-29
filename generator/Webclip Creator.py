@@ -1,3 +1,4 @@
+from __future__ import print_function
 import uuid, BaseHTTPServer, select, types, clipboard, console, photos, PIL, base64, urllib, webbrowser
 from SimpleHTTPServer import SimpleHTTPRequestHandler
 try: from cStringIO import StringIO
@@ -100,15 +101,15 @@ clipboard.set('http://%s:%s/webclip.mobileconfig' % (ip, port))
 console.clear()
 console.set_font('Futura', 16)
 console.set_color(0.2, 0.2, 1)
-print "Safari will open automatically. Alternatively, you can open Safari manually and paste in the URL on your clipboard.\n"
+print("Safari will open automatically. Alternatively, you can open Safari manually and paste in the URL on your clipboard.\n")
 console.set_font()
 console.set_color()
 
 my_httpd = NicerHTTPServer((ip, port), MobileConfigHTTPRequestHandler)
-print "Serving HTTP on %s:%s ..." % (ip, port)
+print("Serving HTTP on %s:%s ..." % (ip, port))
 
 webbrowser.open('safari-http://%s:%s/webclip.mobileconfig' % (ip, port))
 my_httpd.serve_forever()
 
-print "\n*** Webclip installed! ***"
+print("\n*** Webclip installed! ***")
 

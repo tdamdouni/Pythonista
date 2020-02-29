@@ -1,4 +1,5 @@
 # coding: utf-8
+from __future__ import print_function
 import sqlite3
 import shapefile
 
@@ -17,16 +18,16 @@ class Shape2Sqlite(object):
 		self.points_count = 0
 		
 		self.check_tables()
-		print str(self.shapes_count) + ' shapes, ' + str(self.polys_count) + ' polys and ' + str(self.points_count) + ' points'
-		print
+		print(str(self.shapes_count) + ' shapes, ' + str(self.polys_count) + ' polys and ' + str(self.points_count) + ' points')
+		print()
 		self.shapes_count += 1
 		self.polys_count += 1
 		
 		for i in range(len(files)):
 			self.read_files(files[i])
 		self.sqlcon.close()
-		print 'db closed'
-		print 'exit'
+		print('db closed')
+		print('exit')
 		
 	def check_tables(self):
 		self.sqlcon = sqlite3.connect('earth.db')
@@ -100,7 +101,7 @@ class Shape2Sqlite(object):
 		fields = r.fields
 		self.shapes.append((self.shapes_count, file))
 		ShapeType = shapes[0].shapeType
-		print 'ShapeType[0] = ' + self.shape_type_def[ShapeType]
+		print('ShapeType[0] = ' + self.shape_type_def[ShapeType])
 		if self.shape_type_def[ShapeType] == 'Point':
 			self.polys.append((self.shapes_count, self.polys_count, ShapeType, None, None, None, None, None, len(shapes), None))
 		name_nr = -1
@@ -130,23 +131,23 @@ class Shape2Sqlite(object):
 					if i < len(shapes) - 1:
 						self.polys_count += 1
 				except:
-					print '>>> Error: ShapeType[' + str(i) + '] = ' + str(shapes[i].shapeType) + ' <<<'
+					print('>>> Error: ShapeType[' + str(i) + '] = ' + str(shapes[i].shapeType) + ' <<<')
 			else:
-				print '--- ' + self.shape_type_def[ShapeType] + ' ---'
+				print('--- ' + self.shape_type_def[ShapeType] + ' ---')
 				
 		if len(self.shapes) > 0:
 			self.sqlcur.executemany("INSERT INTO Shapes VALUES (?, ?)", self.shapes)
-			print 'added ' + str(len(self.shapes)) + ' shape ' + file
+			print('added ' + str(len(self.shapes)) + ' shape ' + file)
 			self.sqlcon.commit()
 		if len(self.polys) > 0:
 			self.sqlcur.executemany("INSERT INTO Polys VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", self.polys)
-			print 'added ' + str(len(self.polys)) + ' polys'
+			print('added ' + str(len(self.polys)) + ' polys')
 			self.sqlcon.commit()
 		if len(self.points) > 0:
 			self.sqlcur.executemany("INSERT INTO Points VALUES (?, ?, ?, ?, ?)", self.points)
-			print 'added ' + str(len(self.points)) + ' points'
+			print('added ' + str(len(self.points)) + ' points')
 			self.sqlcon.commit()
-		print
+		print()
 		self.shapes_count += 1
 		self.polys_count += 1
 		

@@ -1,3 +1,4 @@
+from __future__ import print_function
 # https://gist.github.com/pudquick/5606582
 
 import re, hashlib, uuid, json, random, os, urllib2, os.path, time, sys, SimpleHTTPServer, SocketServer, string, console, webbrowser, shutil, zipfile
@@ -100,11 +101,11 @@ class pyGroovClient:
 		if (total_size != None):
 			percent = float(bytes_so_far) / total_size
 			percent = round(percent*100, 2)
-			print 'Downloaded %d of %d bytes (%0.2f%%)' % (bytes_so_far, total_size, percent)
+			print('Downloaded %d of %d bytes (%0.2f%%)' % (bytes_so_far, total_size, percent))
 			if bytes_so_far >= total_size:
-				print ''
+				print('')
 		else:
-			print 'Downloaded %d bytes' % (bytes_so_far)
+			print('Downloaded %d bytes' % (bytes_so_far))
 	def _chunk_read(self, response, chunk_size=32768, report_hook=None, filename=None, streamDict=None):
 		# Delete old file if it's present
 		if os.path.exists(filename):
@@ -113,7 +114,7 @@ class pyGroovClient:
 		try:
 			f = open(filename, 'wb')
 		except Exception:
-			print '! Error:', sys.exc_info()[1]
+			print('! Error:', sys.exc_info()[1])
 			raise
 		start_time = time.time()
 		did_hit_30 = False
@@ -125,7 +126,7 @@ class pyGroovClient:
 			# No size
 			total_size = None
 			if report_hook:
-				print '* Warning: No total file size available.'
+				print('* Warning: No total file size available.')
 		bytes_so_far = 0
 		i = 0
 		while True:
@@ -136,7 +137,7 @@ class pyGroovClient:
 			if not did_hit_30:
 				if abs(now_time - start_time) >= 30:
 					did_hit_30 = True
-					print "* Notifying 30 seconds of play ..."
+					print("* Notifying 30 seconds of play ...")
 					self._markStreamKeyOver30Seconds(streamDict)
 					# Set remaining time to 0
 					time_so_far = 31.0
@@ -156,29 +157,29 @@ class pyGroovClient:
 		except:
 			_ = False
 		if bytes_so_far > 0:
-			print '* Saved to:', filename
+			print('* Saved to:', filename)
 			return (os.path.abspath(filename), time_so_far)
 		else:
-			print '* Error: 0 bytes downloaded, not saved.'
+			print('* Error: 0 bytes downloaded, not saved.')
 		return (None, time_so_far)
 	def _download(self, src_url, fname='download.mp3', streamDict=None):
 		headers = {'User-Agent': self.user_agent, 'Cookie': 'PHPSESSID=%s' % self.session}
-		print 'INFO: This download will take a *minimum* of 30 seconds, to keep Grooveshark from banning you.'
-		print '* Downloading:', src_url
+		print('INFO: This download will take a *minimum* of 30 seconds, to keep Grooveshark from banning you.')
+		print('* Downloading:', src_url)
 		req = urllib2.Request(src_url, headers=headers)
 		response = urllib2.urlopen(req)
 		filename,time_spent = self._chunk_read(response, report_hook=self._chunk_report, filename=fname, streamDict=streamDict)
 		if filename:
 			if time_spent < 30.0:
 				# Need to sleep a little longer, then notify the 30 second download
-				print "* Waiting remaining seconds to reach 30 ..."
+				print("* Waiting remaining seconds to reach 30 ...")
 				time.sleep(31.0 - time_spent)
-				print "* Notifying 30 seconds of play."
+				print("* Notifying 30 seconds of play.")
 				self._markStreamKeyOver30Seconds(streamDict)
-			print "* Completed."
+			print("* Completed.")
 			return filename
 		else:
-			print "* Error, aborting."
+			print("* Error, aborting.")
 			if os.path.exists(fname):
 				os.remove(fname)
 	def setupClient(self):
@@ -270,34 +271,34 @@ def sanitize(filename):
 	return ''.join([['_',x][x in safe] for x in filename])
 	
 def do_search_and_download(gsClient):
-	print "\nEnter your search:"
+	print("\nEnter your search:")
 	searchStr = raw_input('> ').strip()
 	if not searchStr:
-		print "* Cancelled."
+		print("* Cancelled.")
 		return
-	print "* Searching ..."
+	print("* Searching ...")
 	results = gsClient.search(searchStr)
 	top8 = results[:8]
 	if not top8:
-		print "! No results found for:", searchStr
+		print("! No results found for:", searchStr)
 		return
-	print "* Found, enter the number for download:"
+	print("* Found, enter the number for download:")
 	for i,x in enumerate(top8):
-		print "%s) %s - %s - %s" % (i+1, x['SongName'], x['ArtistName'], x['AlbumName'])
-	print '0) Cancel'
+		print("%s) %s - %s - %s" % (i+1, x['SongName'], x['ArtistName'], x['AlbumName']))
+	print('0) Cancel')
 	choice = ''.join([x for x in raw_input('> ').strip() if x in '0123456789'])
 	if (choice in ['0','']):
-		print "* Cancelled."
+		print("* Cancelled.")
 		return
 	else:
 		nChoice = int(choice) - 1
 	cDict = top8[nChoice]
-	print "*Downloading: %s" % cDict['SongName']
+	print("*Downloading: %s" % cDict['SongName'])
 	fname = "gs_dl/" + sanitize("%s - %s - %s.mp3" % (cDict['ArtistName'], cDict['AlbumName'],cDict['SongName']))
 	if not os.path.exists('gs_dl'):
 		os.makedirs('gs_dl')
 	if gsClient.download(cDict, fname) == False:
-		print "* Song not available (removed or not for mobile)."
+		print("* Song not available (removed or not for mobile).")
 		return
 	# Prep webserver
 	global ready_to_stop, did_download
@@ -313,15 +314,15 @@ def do_search_and_download(gsClient):
 	httpd.server_activate()
 	download_url = 'http://127.0.0.1:8000/transfer'
 	download_url = download_url.replace('http://', 'iDownloads://')
-	print '* Transferring to browser ...'
+	print('* Transferring to browser ...')
 	webbrowser.open(download_url)
 	# print download_url
 	httpd.serve_limited(timeout=3,max_requests=8)
 	httpd.release()
 	if did_download:
-		print '* Transfer complete, deleting local copy.'
+		print('* Transfer complete, deleting local copy.')
 	else:
-		print '* Transfer did not complete, deleting local copy.'
+		print('* Transfer did not complete, deleting local copy.')
 	try:
 		os.remove(fname)
 	except:
@@ -343,7 +344,7 @@ def _unzip(a_zip=None, path='.', altpath='unzipped'):
 	finally:
 		f.close()
 	if pk_check != 'PK':
-		print "unzip: %s: does not appear to be a zip file" % a_zip
+		print("unzip: %s: does not appear to be a zip file" % a_zip)
 	else:
 		altpath = os.path.join(os.path.dirname(filename), altpath)
 		location = os.path.abspath(altpath)
@@ -383,7 +384,7 @@ def _unzip(a_zip=None, path='.', altpath='unzipped'):
 						fp.close()
 		except Exception:
 			zipfp.close()
-			print "unzip: %s: zip file is corrupt" % a_zip
+			print("unzip: %s: zip file is corrupt" % a_zip)
 			return
 		zipfp.close()
 		return os.path.abspath(location)
@@ -393,9 +394,9 @@ def req12_setup():
 	relative_dir = os.path.abspath(os.path.dirname(__file__))
 	curdir = os.getcwd()
 	os.chdir(relative_dir)
-	print '!!! requests-1.2.0 not installed, downloading rev.d06908d ...'
+	print('!!! requests-1.2.0 not installed, downloading rev.d06908d ...')
 	zip_url = 'https://github.com/kennethreitz/requests/archive/v1.2.0.zip'
-	print '  * Downloading: requests_1.2.0.zip (565KB)...'
+	print('  * Downloading: requests_1.2.0.zip (565KB)...')
 	f = open('requests_1.2.0.zip', 'wb')
 	try:
 		f.write(old_req.get(zip_url).content)
@@ -404,19 +405,19 @@ def req12_setup():
 	f.close()
 	# Unload built-in requests module
 	del old_req
-	print "!!! zip downloaded, extracting ..."
+	print("!!! zip downloaded, extracting ...")
 	try:
 		shutil.rmtree('requests_zip', ignore_errors=True)
 	except Exception:
 		sys.exc_clear()
 	_ = _unzip('requests_1.2.0.zip', altpath='requests_zip')
-	print "!!! Extraction complete, re-arranging ..."
+	print("!!! Extraction complete, re-arranging ...")
 	try:
 		shutil.rmtree('requests_1_2', ignore_errors=True)
 	except Exception:
 		sys.exc_clear()
 	os.rename('requests_zip/requests', 'requests_1_2')
-	print "!!! Re-arranging complete, cleaning up ..."
+	print("!!! Re-arranging complete, cleaning up ...")
 	try:
 		os.remove('requests_1.2.0.zip')
 		shutil.rmtree('requests_zip', ignore_errors=True)
@@ -434,36 +435,36 @@ def main():
 			import requests_1_2 as requests
 			init_tries = 0
 		except:
-			print "!!! Init failure %s of 3 ..." % (4 - init_tries)
+			print("!!! Init failure %s of 3 ..." % (4 - init_tries))
 			sys.exc_clear()
 			req12_setup()
 		init_tries -= 1
 	if not requests:
-		print '!!! Please check your network connection and try again.'
+		print('!!! Please check your network connection and try again.')
 		return
 	try:
 		gsc = pyGroovClient()
 	except Exception:
 		sys.exc_clear()
-		print "* Error initializing GS client, make sure you're online."
+		print("* Error initializing GS client, make sure you're online.")
 		return
 	console.clear()
-	print "* Client successfully initialized"
+	print("* Client successfully initialized")
 	loop = True
 	while loop:
-		print "Enter a menu number choice:"
-		print "--------------------------"
-		print "1) Search and download"
-		print "0) Quit"
+		print("Enter a menu number choice:")
+		print("--------------------------")
+		print("1) Search and download")
+		print("0) Quit")
 		choice = ''.join([x for x in raw_input('> ').strip() if x in '0123456789'])
 		if (choice in ['0','']):
-			print "* Quit."
+			print("* Quit.")
 			loop = False
 		elif (choice in ['1']):
 			do_search_and_download(gsc)
 		else:
-			print "* Unknown choice number, try again."
-		print ""
+			print("* Unknown choice number, try again.")
+		print("")
 		
 if __name__ == "__main__":
 	main()

@@ -1,3 +1,4 @@
+from __future__ import print_function
 import urllib2, os, os.path, bs4
 import re
 from shutil import copyfileobj
@@ -11,7 +12,7 @@ for link in soup.find_all('a'):
 	dir_unesc = urllib2.unquote(dir)
 	try:
 		os.mkdir('ASL/'+dir_unesc)
-		print 'created directory for '+dir_unesc
+		print('created directory for '+dir_unesc)
 	except:
 		continue
 	

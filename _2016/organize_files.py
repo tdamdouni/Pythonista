@@ -1,3 +1,4 @@
+from __future__ import print_function
 # https://gist.github.com/TutorialDoctor/5834bbefb9c9d795518e
 
 # Drop this folder in a directory and run it. It will organize all of your files into folder by first letter
@@ -25,10 +26,10 @@ def organize_files_by_letter(first_letter):
         # If the first letter in the file name is equal to the first_letter parameter...
         if str(File[0]).capitalize() == first_letter.capitalize():
             # Print the file (will print as a string)...
-            print File
+            print(File)
             # And print if it is a file or not (This step and the prior is nor really needed)
-            print os.path.isfile(File)
-            print 
+            print(os.path.isfile(File))
+            print() 
             # If the file is truly a file...
             if os.path.isfile(File):
                 try:
@@ -44,7 +45,7 @@ def organize_files_by_extension(ext):
     for File in directory_files:
         # If the extension of the file matches some text followed by ext...
         if fnmatch.fnmatch(File,'*' + ext):
-            print file          
+            print(file)          
             # If the file is truly a file...
             if os.path.isfile(File):
                 try:
@@ -60,7 +61,7 @@ def organize_files_by_keyword(keyword):
     for File in directory_files:
         # If the name of the file contains a keyword
         if fnmatch.fnmatch(File,'*' + keyword + '*'):
-            print file          
+            print(file)          
             # If the file is truly a file...
             if os.path.isfile(File):
                 try:
@@ -144,7 +145,7 @@ def read_files():
     for File in directory_files:
         try:
             with open(File,'r') as infile:
-                print infile.read()
+                print(infile.read())
         except:
             None
 
@@ -153,7 +154,7 @@ def match_files(ext):
     'Prints files with extension ext'
     for File in directory_files:
         if fnmatch.fnmatch(File,'*' + ext):
-            print File
+            print(File)
     # * matches everything
     # ? matches any single character
     # [seq] matches any character in seq

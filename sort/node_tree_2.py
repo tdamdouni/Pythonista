@@ -1,3 +1,4 @@
+from __future__ import print_function
 
 
 class BinaryTree(object):
@@ -87,5 +88,5 @@ def eval_tree(tree):
 	total = getattr(left_int, operator_map[operator])(right_int)
 	return total
 	
-print eval_tree(parse_expr_to_tree('(3 + (4 * 5))'))
+print(eval_tree(parse_expr_to_tree('(3 + (4 * 5))')))
 

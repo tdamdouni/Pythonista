@@ -1,4 +1,5 @@
 #coding: utf-8
+from __future__ import print_function
 def minsort(liste):
  
     # gehe die Liste von Anfang bis zur vorletzen Stelle durch (Zähler i)
@@ -12,7 +13,7 @@ def minsort(liste):
  
         # Tausche i-te Stelle mit dem Minimum, falls sie sich unterscheiden
         if minimum != i:
-            print"Tausche %d. Element (%d) mit %d. Element (%d)"%(i+1, liste[i], minimum+1, liste[minimum])
+            print("Tausche %d. Element (%d) mit %d. Element (%d)"%(i+1, liste[i], minimum+1, liste[minimum]))
             tausch = liste[minimum]
             liste[minimum] = liste[i]
             liste[i] = tausch

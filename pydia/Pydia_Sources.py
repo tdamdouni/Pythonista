@@ -2,6 +2,7 @@
 
 # https://gist.github.com/bmw1821/bc2ccf257d60804be010
 
+from __future__ import print_function
 import os
 
 class Source (object):
@@ -80,7 +81,7 @@ def add_source(source_url):
 		json.dump(sources, open(sources_list_dir, 'w'))
 		return source
 	except Exception as e:
-		print e
+		print(e)
 		return None
 		
 def download_source_files():
@@ -95,7 +96,7 @@ def download_source_files():
 		try:
 			os.remove(pydia_dir + 'Pydia Sources/' + file)
 		except Exception as e:
-			print e
+			print(e)
 			
 	sources = json.load(open(pydia_dir + 'Pydia User Info/Sources.json'))
 	

@@ -2,6 +2,7 @@
 
 # https://forum.omz-software.com/topic/3074/send-url-from-extension-to-editorial-app
 
+from __future__ import print_function
 import appex
 import requests
 import webbrowser
@@ -25,7 +26,7 @@ if url:
 # Editorial.app will use the clipboard and paste it at the end of a document
 	webbrowser.open('editorial://x-callback-url/open/path-to-file.txt?root=dropbox&command=PasteLink&x-success=pythonista://')
 else:
-	print 'No input URL found.'
+	print('No input URL found.')
 	
 if __name__ == '__main__':
 	main()

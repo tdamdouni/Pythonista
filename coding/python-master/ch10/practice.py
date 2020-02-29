@@ -1,3 +1,4 @@
+from __future__ import print_function
 #Suppose you have a list of words and 
 #you want to sort them from longest to shortest:
 
@@ -11,19 +12,19 @@ t = list()
 for word in words:
     t.append((len(word), word)) #this builds a list of tuples. Each tuple is a word preceded by its length e.g. (3, 'but')
     
-print t                         #this is what our list of tuples looks like prior to sorting.    
+print(t)                         #this is what our list of tuples looks like prior to sorting.    
 
 t.sort(reverse=True)            #the sort() method on a list sorts that list into ascending order, but since we uesd the
                                 #arguement reverse=True, it's sorted in decreasing order. Sort compares the first element 
                                 #of each tuple (which is the 3 in the tuple (3, 'but')) -- it only considers the second
                                 #element to break ties that may occur when comparing the first elements. 
-print t
+print(t)
 
 res = list()                    #this creates another list. 
 for length, word in t:          #this loop traverses the list of tuples. 
     res.append(word)            #we append each word to our list.
     
-print res                       #the result is a list, sorted in descending word length order. 
+print(res)                       #the result is a list, sorted in descending word length order. 
 
 #the above is an example of the (DSU) Decorate, Sory and Undecorate pattern. 
 #Decorate a sequence by building a list of tuples with one or more sort keys preceding the elements from the sequence
@@ -43,16 +44,16 @@ m = ['have', 'fun']
 
 x, y = m
 
-print x
-print y
+print(x)
+print(y)
 
 #Essentially x = m[0] and y = m[1]
 #We can swap values in a single statement 
 
 x, y = y, x 
 
-print x
-print y
+print(x)
+print(y)
 
 #both sides of this statement are tuples, but the left side is a tuple of variables
 #the right side is a tuple of expressions. Each value on the right side is assigned 
@@ -64,8 +65,8 @@ print y
 addr = 'monty@python.org'
 uname, domain = addr.split('@') #the right side is a list with two elements, monty and python.org
 
-print uname
-print domain
+print(uname)
+print(domain)
 
 #Dictionaries and Tuples
 
@@ -75,7 +76,7 @@ print domain
 d = {'a':10, 'b':1, 'c':22}
 t = d.items()
 
-print t
+print(t)
 
 #Since t is a list of tuples, and tuples are comparable, we can 
 #sort the list of tuples. Converting a dictionary to a list of tuples
@@ -83,7 +84,7 @@ print t
 
 t.sort()
 
-print t
+print(t)
 
 #This new list is in ascending alphapetical order by the key value (letter a, b and c). 
 
@@ -93,7 +94,7 @@ print t
 #using items, tuple assignment and for.
 
 for key, val in d.items():
-    print val, key
+    print(val, key)
 
 #this loop has two iteration variables, key and val, because items returns a list of tuples
 #Key and val successively iterate through each of the key value pairs in the dictionary. 
@@ -108,11 +109,11 @@ for key,val in d.items(): #items method gives us a list of key and value tuples.
                           #append the value and the key to our new list called l.
     l.append((val, key))
     
-print l
+print(l)
 
 l.sort(reverse=True)
 
-print l
+print(l)
 
 #The most common word practice
 
@@ -137,11 +138,11 @@ for key, val in counts.items():
 
 lst.sort(reverse=True)
 
-print lst[:10] #this is a list of the most common words in romeo-full.txt. 
+print(lst[:10]) #this is a list of the most common words in romeo-full.txt. 
                 #but we are looking at just the ten most common words.
 
 for key, val in lst[:10]: 
-    print key, val
+    print(key, val)
     
 #using tuples as keys in dictionaries
 
@@ -164,7 +165,7 @@ directory[last, first] = number
 #the expression in the bracket is a tuple.
 
 for last, first in directory:
-    print first, last, directory[last, first]
+    print(first, last, directory[last, first])
 
 #this loop traverses the keys in the directory, which are tuples. 
 #it assigns the elements of each tuple to last and first, then prints 

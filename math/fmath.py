@@ -101,6 +101,7 @@ Vars, functions, and classes:
             inherited from
             circle_equ
 '''
+from __future__ import print_function
 
 __all__ = []
 __author__ = '671620616'
@@ -468,7 +469,7 @@ class rectangle (object):
 		'''Prints basic info about a shape.'''
 		area = self.area()
 		perimeter = self.perimeter()
-		print "Width: {}\nHeight: {}\nArea: {}\nPerimeter: {}".format(self.w, self.h, area, perimeter)
+		print("Width: {}\nHeight: {}\nArea: {}\nPerimeter: {}".format(self.w, self.h, area, perimeter))
 __all__.append('rectangle')
 
 
@@ -534,16 +535,16 @@ class st_quadrat (object):
 	def info(self):
 		'''Display information about a quadratic'''
 		self.calcall()
-		print self.expr
-		print self.vexpr
-		print "Vertex: ({}, {})".format(self.vertex[0],self.vertex[1])
+		print(self.expr)
+		print(self.vexpr)
+		print("Vertex: ({}, {})".format(self.vertex[0],self.vertex[1]))
 		if self.numz == 1:
-			print "One zero at: ({}, 0)".format(self.zeroes[0])
+			print("One zero at: ({}, 0)".format(self.zeroes[0]))
 		elif self.numz == 2:
-			print "Two zeroes at: \n({}, 0), \n({}, 0)".format(self.zeroes[0], self.zeroes[1])
+			print("Two zeroes at: \n({}, 0), \n({}, 0)".format(self.zeroes[0], self.zeroes[1]))
 		elif self.numz == -2:
-			print "Two nonreal zeroes at: \n({}i, 0), \n({}i, 0)".format(self.zeroes[0], self.zeroes[1])
-		print "Axis of symmetry: {}".format(self.aos)
+			print("Two nonreal zeroes at: \n({}i, 0), \n({}i, 0)".format(self.zeroes[0], self.zeroes[1]))
+		print("Axis of symmetry: {}".format(self.aos))
 		
 		
 	def solve(self,x):

@@ -1,3 +1,4 @@
+from __future__ import print_function
 import csv
 
 fhand = open('TSE_sample_data.csv')
@@ -29,13 +30,13 @@ with open('TSE_sample_data.csv') as fhand:
             
             #print "skip"
             
-print my_list
-print date2words
+print(my_list)
+print(date2words)
 
 a_list.sort()
 
 for key in a_list:
-    print key, date2words[key]
+    print(key, date2words[key])
 
 #for key in date2words:
 #   print int(key), date2words[key]

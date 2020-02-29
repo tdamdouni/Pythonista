@@ -2,6 +2,7 @@
 
 # https://forum.omz-software.com/topic/2531/animation-of-complex-objects
 
+from __future__ import print_function
 from scene import *
 import ui
 
@@ -29,7 +30,7 @@ class MyScene(Scene):
             
         def touch_began(self, touch):
             #end location
-            print touch.location.x, touch.location.y
+            print(touch.location.x, touch.location.y)
             push_matrix()
             scale(1.5, 1.5)
             translate(touch.location.x, touch.location.y)

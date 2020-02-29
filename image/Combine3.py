@@ -1,3 +1,4 @@
+from __future__ import print_function
 # https://gist.github.com/viticci/2e466ff4e6b3425aba3c
 import Image
 import photos
@@ -19,7 +20,7 @@ if mode == 2:
 
 # Creates final image
 console.clear()
-print "Creating final image..."
+print("Creating final image...")
 background = Image.new('RGBA', (1850,1275), (255, 255, 255, 255))
 file1 = screenshot1.resize((545,969),Image.ANTIALIAS)
 file2 = screenshot2.resize((700,1245),Image.ANTIALIAS)
@@ -35,4 +36,4 @@ background.paste(file3,(1295,138))
 
 console.hide_activity()
 background.show()
-print "\n\n Image created"
+print("\n\n Image created")

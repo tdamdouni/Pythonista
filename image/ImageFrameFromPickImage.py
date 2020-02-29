@@ -1,3 +1,4 @@
+from __future__ import print_function
 # https://forum.omz-software.com/topic/2335/display-image-from-photos-pick_image/3
 
 # coding: utf-8
@@ -31,4 +32,4 @@ if mapimage:
     mapimage.show()
     mapimage2.show()
 else:
-    print 'Canceled or invalid image.'
+    print('Canceled or invalid image.')

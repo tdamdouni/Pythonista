@@ -1,3 +1,4 @@
+from __future__ import print_function
 # cosing: utf-8
 
 # https://forum.omz-software.com/topic/1848/working-copy-integration-sidebar/23
@@ -58,7 +59,7 @@ class WorkingCopySync():
 		documentsDir = os.path.expanduser('~/Documents')
 		info = editor.get_path()
 		fullPath = info[len(documentsDir)+1:] # get the relative path and remove the leading /
-		print fullPath
+		print(fullPath)
 		path = fullPath.split('/',1)[1]
 		repo = fullPath.split('/',1)[0]
 		return repo, path			
@@ -161,7 +162,7 @@ class WorkingCopySync():
 		
 		try:
 			os.makedirs(os.path.join(os.path.expanduser('~/Documents'), path))
-		except OSError, e:
+		except OSError as e:
 			if e.errno != errno.EEXIST:
 				raise e
 			console.alert('Overwriting existing directory', button1='Continue')
@@ -181,7 +182,7 @@ class WorkingCopySync():
 		
 		try:
 			os.makedirs(os.path.join(os.path.expanduser('~/Documents'), path))
-		except OSError, e:
+		except OSError as e:
 			if e.errno != errno.EEXIST:
 				raise e
 				

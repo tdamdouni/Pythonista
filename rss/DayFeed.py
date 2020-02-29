@@ -2,6 +2,7 @@
 #!/usr/bin/env python
 # http://leancrew.com/all-this/2015/11/simpler-syndication/
 
+from __future__ import print_function
 import feedparser as fp
 import time
 from datetime import datetime, timedelta
@@ -114,7 +115,7 @@ for p in posts:
 ul = '\n<hr />\n'.join(litems)
 
 # Print the HTMl.
-print '''<html>
+print('''<html>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width" />
 <head>
@@ -182,4 +183,4 @@ img {{
 </ul>
 </body>
 </html>
-'''.format(ul)
+'''.format(ul))

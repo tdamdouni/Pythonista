@@ -1,3 +1,4 @@
+from __future__ import print_function
 # https://forum.omz-software.com/topic/3178/intro-and-question-re-google-app-engine-and-web-stuff-in-pythonista/9
 
 def test_upper(self):
@@ -34,9 +35,9 @@ class MyTCPHandler(SocketServer.BaseRequestHandler):
 	def handle(self):
 		# self.request is the TCP socket connected to the client
 		self.data = self.request.recv(1024).strip()
-		print "ron jeffries has gotten something working part 2"
-		print "{} wrote:".format(self.client_address[0])
-		print self.data
+		print("ron jeffries has gotten something working part 2")
+		print("{} wrote:".format(self.client_address[0]))
+		print(self.data)
 		# just send back the same data, but upper-cased
 		back = "here you go\n" + self.data.upper()
 		self.request.sendall(back)

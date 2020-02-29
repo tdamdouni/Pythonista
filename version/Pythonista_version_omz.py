@@ -2,6 +2,7 @@
 
 # https://forum.omz-software.com/topic/2794/old-bugs/6
 
+from __future__ import print_function
 def pythonista_version():
 	try:
 		# Try reading Info.plist using plistlib; could fail if Info.plist is binary
@@ -47,5 +48,5 @@ def pythonista_version():
 			if not version:
 				version = '1.0'
 			return version
-print version
+print(version)
 

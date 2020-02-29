@@ -1,3 +1,4 @@
+from __future__ import print_function
 from bs4 import BeautifulSoup
 import requests
 
@@ -7,4 +8,4 @@ data = r.text
 
 soup = BeautifulSoup(data)
 for link in soup.findAll('a'):
-    print link.get('href')
+    print(link.get('href'))

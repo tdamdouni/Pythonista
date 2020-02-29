@@ -8,6 +8,7 @@ listbm.py
 Created by Gopal Sharma on 2010-11-26.
 Copyright (c) 2010 Gopal Sharma. All rights reserved.
 """
+from __future__ import print_function
 
 import random
 import gc
@@ -20,7 +21,7 @@ def generate_list_of_size(size):
 	return random.sample(xrange(10 ** 8), size)
 
 def bm_index():
-	print "Index:"
+	print("Index:")
 	results = {}
 	for size in sizes:
 		l = generate_list_of_size(size)
@@ -32,13 +33,13 @@ def bm_index():
 		for s in sample:
 			tmp = l.index(s)
 		end = time()
-		print size, end-start
+		print(size, end-start)
 		results[size] = end-start
-	print
+	print()
 	return results
 
 def bm_count():
-	print "Count:"
+	print("Count:")
 	results = {}
 	sample = generate_list_of_size(1000)
 	for size in sizes:
@@ -48,13 +49,13 @@ def bm_count():
 		for s in sample:
 			tmp = l.count(s)
 		end = time()
-		print size, end-start
+		print(size, end-start)
 		results[size] = end-start
-	print
+	print()
 	return results
 
 def bm_pop():
-	print "Pop:"
+	print("Pop:")
 	results = {}
 	for size in sizes:
 		l = generate_list_of_size(size)
@@ -63,13 +64,13 @@ def bm_pop():
 		for i in xrange(5):
 			tmp = l.pop(random.randint(0, len(l) - 1))
 		end = time()
-		print size, end-start
+		print(size, end-start)
 		results[size] = end-start
-	print
+	print()
 	return results
 
 def bm_remove():
-	print "Remove:"
+	print("Remove:")
 	results = {}
 	for size in sizes:
 		l = generate_list_of_size(size)
@@ -79,13 +80,13 @@ def bm_remove():
 		for s in sample:
 			l.remove(s)
 		end = time()
-		print size, end-start
+		print(size, end-start)
 		results[size] = end-start
-	print
+	print()
 	return results
 
 def bm_insert():
-	print "Insert:"
+	print("Insert:")
 	results = {}
 	for size in sizes:
 		l = generate_list_of_size(size)
@@ -95,13 +96,13 @@ def bm_insert():
 		for s in sample:
 			l.insert(s, random.randint(-300, 300))
 		end = time()
-		print size, end-start
+		print(size, end-start)
 		results[size] = end-start
-	print
+	print()
 	return results
 
 def bm_reverse():
-	print "Reverse:"
+	print("Reverse:")
 	results = {}
 	for size in sizes:
 		l = generate_list_of_size(size)
@@ -109,13 +110,13 @@ def bm_reverse():
 		start = time()
 		l.reverse()
 		end = time()
-		print size, end-start
+		print(size, end-start)
 		results[size] = end-start
-	print
+	print()
 	return results
 
 def bm_sort():
-	print "Sort:"
+	print("Sort:")
 	results = {}
 	for size in sizes:
 		l = generate_list_of_size(size)
@@ -123,13 +124,13 @@ def bm_sort():
 		start = time()
 		l.sort()
 		end = time()
-		print size, end-start
+		print(size, end-start)
 		results[size] = end-start
-	print
+	print()
 	return results
 
 def bm_extend():
-	print "Extend:"
+	print("Extend:")
 	results = {}
 	for size in sizes:
 		l = generate_list_of_size(1000)
@@ -138,13 +139,13 @@ def bm_extend():
 		start = time()
 		l.extend(sample)
 		end = time()
-		print size, end-start
+		print(size, end-start)
 		results[size] = end-start
-	print
+	print()
 	return results
 
 def bm_append():
-	print "Append:"
+	print("Append:")
 	results = {}
 	for size in sizes:
 		l = generate_list_of_size(size)
@@ -154,9 +155,9 @@ def bm_append():
 		for s in sample:
 			l.append(s)
 		end = time()
-		print size, end-start
+		print(size, end-start)
 		results[size] = end-start
-	print
+	print()
 	return results
 	
 def main():
@@ -176,7 +177,7 @@ def main():
 		for i in xrange(N):
 			results[name].append(func())
 	
-	print
+	print()
 	
 	for name, numbers in results.items():
 		runs = {}
@@ -185,9 +186,9 @@ def main():
 				if s not in runs.keys():
 					runs[s] = []
 				runs[s].append(t)
-		print name
+		print(name)
 		for s in sorted(runs.keys()):
-			print s, sum(runs[s]) / len(runs[s])
+			print(s, sum(runs[s]) / len(runs[s]))
 
 if __name__ == '__main__':
 	main()

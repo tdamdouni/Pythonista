@@ -1,8 +1,9 @@
+from __future__ import print_function
 #coding utf-8
-print """
+print("""
 ****************************************
 *   Script gestartet, bitte warten     *
-****************************************"""
+****************************************""")
 
 import requests, random, datetime, sys, webbrowser, console, urllib, clipboard, bs4
 
@@ -14,7 +15,7 @@ def main():
         except Exception:
             song_page = None
     if not song_page:
-        print repr(sys.argv)
+        print(repr(sys.argv))
         return
     console.clear()
     
@@ -28,19 +29,19 @@ def main():
 #    print "Dateiname: " pageTitle
     
     
-    print "Grabbing:", song_page
+    print("Grabbing:", song_page)
     sess = requests.Session()
     sess.headers.update({'User-Agent': 'Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_3_3 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8J2 Safari/6533.18.5'})
-    print " .. getting xtsite and js .. "
+    print(" .. getting xtsite and js .. ")
     find_xtsite_js = sess.get(song_page).text
     xtsite = find_xtsite_js.rsplit('xtsite',1)[1].split(';',1)[0].split('"',1)[1].split('"',1)[0]
     the_js = find_xtsite_js.rsplit('m-a-tb.sndcdn.com',1)[1].split('"',1)[0].split('/')[-1]
-    print " .. getting client_id .. "
+    print(" .. getting client_id .. ")
     new_headers = {'Accept-Encoding': 'identity', 'Connection': 'close'}
     sess.headers.update(new_headers)
     find_client_id = sess.get('http://m-a-tb.sndcdn.com/' + the_js)
     client_id = find_client_id.content[:250].split('clientId',1)[1].split(';',1)[0].split('"',1)[1].split('"',1)[0]
-    print "id:", client_id
+    print("id:", client_id)
     today = datetime.datetime.utcnow().now()
     # ---- cookies here ----
     xtant='1'
@@ -51,10 +52,10 @@ def main():
     # ---- end cookies ----
     sess.headers.update({'X-Requested-With': 'XMLHttpRequest'})
     new_cookies = {'xtant': xtant, 'xtan': xtan, 'xtvrn': xtvrn, 'xtidc': xtidc, 'sc_anonymous_id': sc_anonymous_id}
-    print " .. getting track id .. "
+    print(" .. getting track id .. ")
     find_track_id = sess.get('http://m.soundcloud.com/_api/resolve?url=%s&client_id=%s&format=json' % (song_page, client_id), cookies = new_cookies, allow_redirects=False).headers['location']
     track_id = find_track_id.split('.json',1)[0].rsplit('/',1)[-1]
-    print "id:", track_id
+    print("id:", track_id)
     mp3_url = 'http://api.soundcloud.com/tracks/%s/stream?client_id=%s' % (track_id, client_id)
     download_url = mp3_url.replace('http://', 'ghttp://')
     webbrowser.open(download_url)

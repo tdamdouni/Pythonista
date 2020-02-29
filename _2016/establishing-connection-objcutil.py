@@ -1,3 +1,4 @@
+from __future__ import print_function
 # https://gist.github.com/tlinnet/92c0654081a6c49aa5b39a984018b253
 
 # https://forum.omz-software.com/topic/3701/ipv6-in-pythonista-not-supplied/2
@@ -44,5 +45,5 @@ def get(root=None, method=None, headers={}):
 headers = {"es":"Accept-Language"}
 data = get(root=root1, method=method, headers=headers)
 
-print data
+print(data)
 

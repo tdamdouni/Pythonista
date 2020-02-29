@@ -1,3 +1,4 @@
+from __future__ import print_function
 #You are to retrieve the following document using the HTTP protocol 
 #in a way that you can examine the HTTP Response headers.
 
@@ -11,6 +12,6 @@ while True:
     data = mysock.recv(512)
     if ( len(data) < 1 ) :
         break
-    print data
+    print(data)
 
 mysock.close()

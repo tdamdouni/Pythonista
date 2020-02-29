@@ -1,3 +1,4 @@
+from __future__ import print_function
 class debugStream():
 	""" create buffered output to speed up console printing"""
 	def __init__(self):
@@ -7,5 +8,5 @@ class debugStream():
 		self.out += string.format(*args) + '\n'
 	
 	def send(self):
-		print self.out
+		print(self.out)
 		self.out = ''

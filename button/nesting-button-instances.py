@@ -3,6 +3,7 @@
 
 # https://forum.omz-software.com/topic/2513/getting-the-parent-of-a-dynamically-method-as-a-function/57
 
+from __future__ import print_function
 import ui
 from extend import Extender
 
@@ -18,7 +19,7 @@ class ButtonAction(Extender):
 	def __init__(self, msg = None):
 		self.msg = msg
 	def action(self, sender):
-		print self.msg
+		print(self.msg)
 		
 button = BorderedStyle(ButtonAction(ui.Button(title = 'Click me'), 'Clicked'))
 

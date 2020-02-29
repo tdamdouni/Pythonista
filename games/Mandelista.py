@@ -1,3 +1,4 @@
+from __future__ import print_function
 # Mandelista: a Mandelbrot set explorer for Pythonista.
 # Dragging selects a region which is highlighted;
 # tapping inside the highlighted region zooms to the region;
@@ -334,7 +335,7 @@ class Mandelbrot(Scene):
 
 	# This doesn't seem to work, in fact it is not called at all.
 	def should_rotate(self, orientation):
-		print 'should_rotate called with', orientation
+		print('should_rotate called with', orientation)
 		return False
 
 	def init_selection(self):

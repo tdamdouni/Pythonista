@@ -1,3 +1,4 @@
+from __future__ import print_function
 # https://gist.github.com/omz/6855c10632c286401f9d
 
 # coding: utf-8
@@ -20,7 +21,7 @@ def main():
 	if images is None:
 		return
 	for i, img in enumerate(images):
-		print 'Uploading image %i/%i...' % (i+1, len(images))
+		print('Uploading image %i/%i...' % (i+1, len(images)))
 		if not upload_originals:
 			b = BytesIO()
 			img.save(b, 'JPEG', quality=jpeg_quality)
@@ -51,10 +52,10 @@ def main():
 			result_img.show()
 			if faces:
 				faces_str = ', '.join(['%s (%s)' % (face['attributes']['age'], face['attributes']['gender']) for face in faces])
-				print '%i face%s: %s' % (len(faces), 's' if len(faces) != 1 else '', faces_str)
+				print('%i face%s: %s' % (len(faces), 's' if len(faces) != 1 else '', faces_str))
 			else:
-				print 'No faces found'
-	print 'Done'
+				print('No faces found')
+	print('Done')
 
 if __name__ == '__main__':
 	main()

@@ -2,6 +2,7 @@
 
 # https://gist.github.com/filippocld/c0deb6714a9aff9f1da9
 
+from __future__ import print_function
 from objc_util import NSBundle, ObjCClass, on_main_thread
 
 NSBundle.bundleWithPath_('/System/Library/Frameworks/MediaPlayer.framework').load()
@@ -19,11 +20,11 @@ def get_system_volume():
 	
 def upAction():
 	#Volume Up button has been pressed
-	print 'Up!'
+	print('Up!')
 	
 def downAction():
 	#Volume Down button has been pressed
-	print 'Down!'
+	print('Down!')
 	
 	
 default = get_system_volume()

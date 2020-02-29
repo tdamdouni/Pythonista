@@ -3,6 +3,7 @@
 
 # https://forum.omz-software.com/topic/3009/font-size-for-a-rect
 
+from __future__ import print_function
 import ui
 
 # only for testing...
@@ -39,7 +40,7 @@ if __name__ == '__main__':
 	fs = font_size_for_rect(_frame, '99', _font_name,
 	inset_factor = _inset)
 	
-	print 'Calculated Font Size = ' ,  fs
+	print('Calculated Font Size = ' ,  fs)
 	btn.font = (_font_name, fs)
 	v.add_subview(btn)
 	v.present('sheet')

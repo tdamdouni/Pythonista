@@ -1,4 +1,5 @@
-print "Let's compute the first few terms in the Fibonacci sequence."
+from __future__ import print_function
+print("Let's compute the first few terms in the Fibonacci sequence.")
 
 n = 30 # How many terms shall we include?
 
@@ -10,8 +11,8 @@ n = 30 # How many terms shall we include?
 fiblist = [0,1]
 for i in range(n - 1):
 	fiblist.append(fiblist[i] + fiblist[i+1])
-print fiblist
+print(fiblist)
 
 gratio = [fiblist[i]/float(fiblist[i-1]) for i in range(2,len(fiblist))]
-print gratio
+print(gratio)
 

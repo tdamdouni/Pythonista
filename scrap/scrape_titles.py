@@ -1,3 +1,4 @@
+from __future__ import print_function
 import urllib2
 import re
 
@@ -11,5 +12,5 @@ while i < len(urls):
     html_file = urllib2.urlopen(urls[i])
     html_text = html_file.read()
     titles = re.findall(pattern, html_text)
-    print titles
+    print(titles)
     i += 1

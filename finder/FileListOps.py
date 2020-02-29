@@ -5,6 +5,7 @@
 # https://forum.omz-software.com/topic/2784/feature-request-pythonista-built-in-file-picker
 
 """A set of operations for working with the file lists returned from zipfile.ZipFile.namelist()"""
+from __future__ import print_function
 
 import os
 
@@ -55,6 +56,6 @@ def exists(flist, path):
 if __name__ == "__main__":
 	import zipfile
 	files=zipfile.ZipFile("example.zip").namelist()
-	print getSubDirs(files, 'GitHub')
-	print getSubFiles(files, 'GitHub')
+	print(getSubDirs(files, 'GitHub'))
+	print(getSubFiles(files, 'GitHub'))
 

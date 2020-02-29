@@ -3,6 +3,7 @@
 
 # https://forum.omz-software.com/topic/3741/objcblock-restype-define-question/9
 
+from __future__ import print_function
 from objc_util import *
 import ctypes,time,os,struct,array,console
 
@@ -34,12 +35,12 @@ def conv_block(self,inNumberOfPackets,buffstat):
     global gcnt
     
     # buffstat: 0-have data 1-no data 2-endOfStream   3-error
-    print '@1',inNumberOfPackets,buffstat.contents.value
+    print('@1',inNumberOfPackets,buffstat.contents.value)
     gcnt += 1
     if gcnt == 1:
         buffstat.contents.value = 0
-        print '@2',inNumberOfPackets,buffstat.contents.value
-        print '!!! InBuff:',inBuffer,type(inBuffer),ctypes.cast(inBuffer,ctypes.c_void_p) #,ctypes.addressof(inBuffer)
+        print('@2',inNumberOfPackets,buffstat.contents.value)
+        print('!!! InBuff:',inBuffer,type(inBuffer),ctypes.cast(inBuffer,ctypes.c_void_p)) #,ctypes.addressof(inBuffer)
         return None #pointer(c_void_p(inBuffer.ptr))
     else:
         buffstat.contents.value = 2
@@ -51,14 +52,14 @@ convblock=ObjCBlock(conv_block,restype=c_void_p,argtypes=[c_void_p,c_int32,POINT
 error=ctypes.c_void_p(0)
 
 status = converter.convertToBuffer_error_withInputFromBlock_(outBuffer,error,convblock)
-print '>>Ret1:',status
-print '>>out1:',outBuffer
+print('>>Ret1:',status)
+print('>>out1:',outBuffer)
 if error:
-    print '>>Err:',ObjCInstance(error)
+    print('>>Err:',ObjCInstance(error))
 
 status = converter.convertToBuffer_error_withInputFromBlock_(outBuffer,None,convblock)
-print '>>Ret2:',status
-print '>>out2:',outBuffer
+print('>>Ret2:',status)
+print('>>out2:',outBuffer)
 
 
 # --------------------

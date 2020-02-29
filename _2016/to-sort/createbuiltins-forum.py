@@ -1,3 +1,4 @@
+from __future__ import print_function
 # https://forum.omz-software.com/topic/3316/pythonista-and-pycharm/14
 
 import inspect
@@ -42,7 +43,7 @@ def get_info(modul, indentlevel=0, inclass=False):
 	
 	
 def create_func(modul, modname, indentlevel=0, inclass=False):
-	print "processing %s" % modname
+	print("processing %s" % modname)
 	_f = []
 	indent = '    ' * indentlevel
 	for name, func in inspect.getmembers(modul):
@@ -60,12 +61,12 @@ def create_func(modul, modname, indentlevel=0, inclass=False):
 			elif name not in ['__name__', '__package__']:
 				_f.append(handle_attribute(name, func, indent))
 	open(modname, 'w').write(''.join(_f))
-	print "processed %s" % modname
+	print("processed %s" % modname)
 	
 	
 if __name__ == "__main__":
 	create_func(sound, 'sound.py')
 	create_func(_ui, '_ui.py')
 	create_func(_scene2, '_scene2.py')
-	print "done"
+	print("done")
 

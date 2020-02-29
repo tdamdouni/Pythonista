@@ -1,3 +1,4 @@
+from __future__ import print_function
 # https://gist.github.com/omz/4073599
 
 # Example for sending an email with an attached image using smtplib
@@ -33,7 +34,7 @@ def main():
 	#Load a sample image, modify as needed:
 	image = Image.open('Test_Lenna')
 	
-	print 'Connecting...'
+	print('Connecting...')
 	smtpserver = smtplib.SMTP("smtp.gmail.com", 587)
 	
 	smtpserver.ehlo()
@@ -41,7 +42,7 @@ def main():
 	smtpserver.ehlo
 	smtpserver.login(gmail_user, gmail_pwd)
 	
-	print 'Preparing message...'
+	print('Preparing message...')
 	outer = MIMEMultipart()
 	outer['Subject'] = subject
 	outer['To'] = to
@@ -51,10 +52,10 @@ def main():
 	outer.attach(attachment)
 	composed = outer.as_string()
 	
-	print 'Sending...'
+	print('Sending...')
 	smtpserver.sendmail(gmail_user, to, composed)
 	smtpserver.close()
-	print 'Done.'
+	print('Done.')
 
 if __name__ == '__main__':
 	main()

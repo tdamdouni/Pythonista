@@ -1,3 +1,4 @@
+from __future__ import print_function
 # Allows you to upload simple articles and images from clipboard
 # to your Statamic site using Pythonista.
 # 
@@ -86,7 +87,7 @@ try:
 	ftp = ftplib.FTP(host, userName, userPass)
 	console.hide_activity()
 except Exception as e:
-	print "Unable to connect to FTP"
+	print("Unable to connect to FTP")
 
 # trying to retrieve the folders used in the 'txtRemotePath' directory
 # returns a simple dictionary with folders info separated. 
@@ -116,7 +117,7 @@ def get_folders():
 		return folders
 
 	except Exception as e:
-		print "Unable to get folder listing"
+		print("Unable to get folder listing")
 
 # Generates the actual text for the article with YAML headers
 def make_file(template,values):
@@ -139,23 +140,23 @@ def slug(text, encoding=None, permitted_chars='abcdefghijklmnopqrstuvwxyz0123456
 # David's code to resize your clipboard image
 def customSize(img):
     w, h = img.size
-    print 'w: ' + str(w)
-    print 'h: '+ str(h)
+    print('w: ' + str(w))
+    print('h: '+ str(h))
     if w > 600:
         wsize = 600/float(w)
-        print 'wsize: '+str(wsize)
+        print('wsize: '+str(wsize))
         hsize = int(float(h)*float(wsize))
-        print 'hsize: ' + str(hsize)
+        print('hsize: ' + str(hsize))
  
         img = img.resize((600, hsize), Image.ANTIALIAS)
     return img
 
 # Nothing to see here. Just the fun stuff coming together.
 image = customSize(image)
-print image.size
+print(image.size)
 image.show()
-print title + " (" + status + ")"
-print words
+print(title + " (" + status + ")")
+print(words)
  
 imgBuffer = BytesIO()
 image.save(imgBuffer, 'png')
@@ -211,7 +212,7 @@ try:
 	ftp.storbinary('STOR '+imgFileName, imgBuffer)
 	console.hide_activity()
 except Exception as e:
-	print "Unable save image file"
+	print("Unable save image file")
 
 try:
 	console.show_activity()
@@ -219,8 +220,8 @@ try:
 	ftp.storbinary('STOR '+txtFileName, txtBuffer)
 	console.hide_activity()
 except Exception as e:
-	print "Unable save article file"
+	print("Unable save article file")
 
 ftp.quit()
 
-print "\n=================\nFinished"
+print("\n=================\nFinished")

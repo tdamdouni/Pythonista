@@ -21,6 +21,7 @@
     1Writer:
       pythonista://DateTimePicker?action=run&argv=onewriter
 '''
+from __future__ import print_function
 import ui
 import datetime
 import dateutil.tz
@@ -241,5 +242,5 @@ try:
   sys.exit(msg)
 except IndexError:
   # Initiated stand alone, so just display results & exit with date-time text in the iOS clipboard to paste anywhere desired.
-  print 'Date-Time Selected: {}\n'.format(date_time)
+  print('Date-Time Selected: {}\n'.format(date_time))
   sys.exit('Finished')

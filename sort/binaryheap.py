@@ -1,3 +1,4 @@
+from __future__ import print_function
 # https://gist.github.com/jefflovejapan/7796921
 
 class BinaryHeap(list):
@@ -52,7 +53,7 @@ def tests():
 				
 	heap.del_min()
 	heaptest(heap)
-	print heap
+	print(heap)
 	
 if __name__ == '__main__':
 	tests()

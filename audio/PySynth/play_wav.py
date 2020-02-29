@@ -4,6 +4,7 @@
 Audio playback with pyaudio, tkSnack, pyglet or console media player depending on availability.
 Pranav Ravichandran <me@onloop.net>
 """
+from __future__ import print_function
 
 import wave
 import os
@@ -26,7 +27,7 @@ except ImportError:
 			import pyglet
 			pygletFound = True
 		except ImportError:
-			print "Audio playback frameworks not found. Install one of pyaudio, tkSnack or pyglet."
+			print("Audio playback frameworks not found. Install one of pyaudio, tkSnack or pyglet.")
 
 class Sound:
 	def __init__(self, fn = None):

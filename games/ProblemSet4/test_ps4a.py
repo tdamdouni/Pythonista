@@ -1,3 +1,4 @@
+from __future__ import print_function
 from ps4a import *
 
 #
@@ -16,11 +17,11 @@ def test_getWordScore():
     for (word, n) in words.keys():
         score = getWordScore(word, n)
         if score != words[(word, n)]:
-            print "FAILURE: test_getWordScore()"
-            print "\tExpected", words[(word, n)], "points but got '" + str(score) + "' for word '" + word + "', n=" + str(n)
+            print("FAILURE: test_getWordScore()")
+            print("\tExpected", words[(word, n)], "points but got '" + str(score) + "' for word '" + word + "', n=" + str(n))
             failure=True
     if not failure:
-        print "SUCCESS: test_getWordScore()"
+        print("SUCCESS: test_getWordScore()")
 
 # end of test_getWordScore
 
@@ -38,15 +39,15 @@ def test_updateHand():
     expectedHand1 = {'l':1, 'm':1}
     expectedHand2 = {'a':0, 'q':0, 'l':1, 'm':1, 'u':0, 'i':0}
     if hand2 != expectedHand1 and hand2 != expectedHand2:
-        print "FAILURE: test_updateHand('"+ word +"', " + str(handOrig) + ")"
-        print "\tReturned: ", hand2, "\n\t-- but expected:", expectedHand1, "or", expectedHand2
+        print("FAILURE: test_updateHand('"+ word +"', " + str(handOrig) + ")")
+        print("\tReturned: ", hand2, "\n\t-- but expected:", expectedHand1, "or", expectedHand2)
 
         return # exit function
     if handCopy != handOrig:
-        print "FAILURE: test_updateHand('"+ word +"', " + str(handOrig) + ")"
-        print "\tOriginal hand was", handOrig
-        print "\tbut implementation of updateHand mutated the original hand!"
-        print "\tNow the hand looks like this:", handCopy
+        print("FAILURE: test_updateHand('"+ word +"', " + str(handOrig) + ")")
+        print("\tOriginal hand was", handOrig)
+        print("\tbut implementation of updateHand mutated the original hand!")
+        print("\tNow the hand looks like this:", handCopy)
         
         return # exit function
         
@@ -59,16 +60,16 @@ def test_updateHand():
     expectedHand1 = {'v':1, 'n':1, 'l':1}
     expectedHand2 = {'e':0, 'v':1, 'n':1, 'i':0, 'l':1}
     if hand2 != expectedHand1 and hand2 != expectedHand2:
-        print "FAILURE: test_updateHand('"+ word +"', " + str(handOrig) + ")"        
-        print "\tReturned: ", hand2, "\n\t-- but expected:", expectedHand1, "or", expectedHand2
+        print("FAILURE: test_updateHand('"+ word +"', " + str(handOrig) + ")")        
+        print("\tReturned: ", hand2, "\n\t-- but expected:", expectedHand1, "or", expectedHand2)
 
         return # exit function
 
     if handCopy != handOrig:
-        print "FAILURE: test_updateHand('"+ word +"', " + str(handOrig) + ")"
-        print "\tOriginal hand was", handOrig
-        print "\tbut implementation of updateHand mutated the original hand!"
-        print "\tNow the hand looks like this:", handCopy
+        print("FAILURE: test_updateHand('"+ word +"', " + str(handOrig) + ")")
+        print("\tOriginal hand was", handOrig)
+        print("\tbut implementation of updateHand mutated the original hand!")
+        print("\tNow the hand looks like this:", handCopy)
         
         return # exit function
 
@@ -81,20 +82,20 @@ def test_updateHand():
     expectedHand1 = {}
     expectedHand2 = {'h': 0, 'e': 0, 'l': 0, 'o': 0}
     if hand2 != expectedHand1 and hand2 != expectedHand2:
-        print "FAILURE: test_updateHand('"+ word +"', " + str(handOrig) + ")"                
-        print "\tReturned: ", hand2, "\n\t-- but expected:", expectedHand1, "or", expectedHand2
+        print("FAILURE: test_updateHand('"+ word +"', " + str(handOrig) + ")")                
+        print("\tReturned: ", hand2, "\n\t-- but expected:", expectedHand1, "or", expectedHand2)
         
         return # exit function
 
     if handCopy != handOrig:
-        print "FAILURE: test_updateHand('"+ word +"', " + str(handOrig) + ")"
-        print "\tOriginal hand was", handOrig
-        print "\tbut implementation of updateHand mutated the original hand!"
-        print "\tNow the hand looks like this:", handCopy
+        print("FAILURE: test_updateHand('"+ word +"', " + str(handOrig) + ")")
+        print("\tOriginal hand was", handOrig)
+        print("\tbut implementation of updateHand mutated the original hand!")
+        print("\tNow the hand looks like this:", handCopy)
         
         return # exit function
 
-    print "SUCCESS: test_updateHand()"
+    print("SUCCESS: test_updateHand()")
 
 # end of test_updateHand
 
@@ -109,25 +110,25 @@ def test_isValidWord(wordList):
     handCopy = handOrig.copy()
 
     if not isValidWord(word, handCopy, wordList):
-        print "FAILURE: test_isValidWord()"
-        print "\tExpected True, but got False for word: '" + word + "' and hand:", handOrig
+        print("FAILURE: test_isValidWord()")
+        print("\tExpected True, but got False for word: '" + word + "' and hand:", handOrig)
 
         failure = True
 
     # Test a second time to see if wordList or hand has been modified
     if not isValidWord(word, handCopy, wordList):
-        print "FAILURE: test_isValidWord()"
+        print("FAILURE: test_isValidWord()")
 
         if handCopy != handOrig:
-            print "\tTesting word", word, "for a second time - be sure you're not modifying hand."
-            print "\tAt this point, hand ought to be", handOrig, "but it is", handCopy
+            print("\tTesting word", word, "for a second time - be sure you're not modifying hand.")
+            print("\tAt this point, hand ought to be", handOrig, "but it is", handCopy)
 
         else:
-            print "\tTesting word", word, "for a second time - have you modified wordList?"
+            print("\tTesting word", word, "for a second time - have you modified wordList?")
             wordInWL = word in wordList
-            print "The word", word, "should be in wordList - is it?", wordInWL
+            print("The word", word, "should be in wordList - is it?", wordInWL)
 
-        print "\tExpected True, but got False for word: '" + word + "' and hand:", handCopy
+        print("\tExpected True, but got False for word: '" + word + "' and hand:", handCopy)
 
         failure = True
 
@@ -137,8 +138,8 @@ def test_isValidWord(wordList):
     word = "rapture"
 
     if  isValidWord(word, hand, wordList):
-        print "FAILURE: test_isValidWord()"
-        print "\tExpected False, but got True for word: '" + word + "' and hand:", hand
+        print("FAILURE: test_isValidWord()")
+        print("\tExpected False, but got True for word: '" + word + "' and hand:", hand)
 
         failure = True        
 
@@ -147,8 +148,8 @@ def test_isValidWord(wordList):
     word = "honey"
 
     if  not isValidWord(word, hand, wordList):
-        print "FAILURE: test_isValidWord()"
-        print "\tExpected True, but got False for word: '"+ word +"' and hand:", hand
+        print("FAILURE: test_isValidWord()")
+        print("\tExpected True, but got False for word: '"+ word +"' and hand:", hand)
 
         failure = True                        
 
@@ -157,8 +158,8 @@ def test_isValidWord(wordList):
     word = "honey"
 
     if  isValidWord(word, hand, wordList):
-        print "FAILURE: test_isValidWord()"
-        print "\tExpected False, but got True for word: '" + word + "' and hand:", hand
+        print("FAILURE: test_isValidWord()")
+        print("\tExpected False, but got True for word: '" + word + "' and hand:", hand)
         
         failure = True
 
@@ -167,8 +168,8 @@ def test_isValidWord(wordList):
     word = "evil"
     
     if  not isValidWord(word, hand, wordList):
-        print "FAILURE: test_isValidWord()"
-        print "\tExpected True, but got False for word: '" + word + "' and hand:", hand
+        print("FAILURE: test_isValidWord()")
+        print("\tExpected True, but got False for word: '" + word + "' and hand:", hand)
         
         failure = True
         
@@ -176,25 +177,25 @@ def test_isValidWord(wordList):
     word = "even"
 
     if  isValidWord(word, hand, wordList):
-        print "FAILURE: test_isValidWord()"
-        print "\tExpected False, but got True for word: '" + word + "' and hand:", hand
-        print "\t(If this is the only failure, make sure isValidWord() isn't mutating its inputs)"        
+        print("FAILURE: test_isValidWord()")
+        print("\tExpected False, but got True for word: '" + word + "' and hand:", hand)
+        print("\t(If this is the only failure, make sure isValidWord() isn't mutating its inputs)")        
         
         failure = True        
 
     if not failure:
-        print "SUCCESS: test_isValidWord()"
+        print("SUCCESS: test_isValidWord()")
 
 
 wordList = loadWords()
-print "----------------------------------------------------------------------"
-print "Testing getWordScore..."
+print("----------------------------------------------------------------------")
+print("Testing getWordScore...")
 test_getWordScore()
-print "----------------------------------------------------------------------"
-print "Testing updateHand..."
+print("----------------------------------------------------------------------")
+print("Testing updateHand...")
 test_updateHand()
-print "----------------------------------------------------------------------"
-print "Testing isValidWord..."
+print("----------------------------------------------------------------------")
+print("Testing isValidWord...")
 test_isValidWord(wordList)
-print "----------------------------------------------------------------------"
-print "All done!"
+print("----------------------------------------------------------------------")
+print("All done!")

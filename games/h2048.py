@@ -7,6 +7,7 @@ Created on Sat Jul 12 09:33:29 2014
 
 Added improvents by JonB (swipes), techteej (design), LawAbidingCactus (size)
 """
+from __future__ import print_function
 
 import console, random
 import numpy as np
@@ -95,7 +96,7 @@ def run_console():
 	board = Board()
 	board.add_tile()
 	while True:
-		print board
+		print(board)
 		x = raw_input('wasd:').lower()
 		if len(x)==1 and x in 'wasd':
 			v = 'dwas'.find(x)
@@ -106,7 +107,7 @@ def run_console():
 					break
 		else:
 			break 
-	print 'Done'
+	print('Done')
 	return board
 
 def _ui_setup(board, labels, v):

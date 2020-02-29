@@ -1,3 +1,4 @@
+from __future__ import print_function
 # Based on https://gist.github.com/4063716
 # 
 # Provides a simple shell with basic
@@ -35,7 +36,7 @@ def print_in_color(color_name, msg):
 	color = get_color(color_name)
 	if color:
 		console.set_color(*color)
-	print msg
+	print(msg)
 	console.set_color()
 
 class Shell(cmd.Cmd):
@@ -57,11 +58,11 @@ class Shell(cmd.Cmd):
 					print_in_color('blue', f)
 				else:
 					print_in_color('default', f)
-		except OSError, e:
-			print e
+		except OSError as e:
+			print(e)
 
 	def do_pwd(self, line):
-		print os.getcwd()
+		print(os.getcwd())
 	
 	def do_cat(self, line):
 		args = shlex.split(line)
@@ -71,7 +72,7 @@ class Shell(cmd.Cmd):
 			with open(args[0], 'r') as f:
 				for l in f:
 					sys.stdout.write(l)
-		except Exception, e:
+		except Exception as e:
 			print_in_color('red', e)
 	
 	def do_cd(self, line):
@@ -83,43 +84,43 @@ class Shell(cmd.Cmd):
 			os.chdir(dir)
 			self.do_pwd(line)
 		else:
-			print 'Directory does not exist: ' + dir
+			print('Directory does not exist: ' + dir)
 	
 	def do_mkdir(self, line):
 		args = shlex.split(line)
 		if len(args) == 0:
 			return
 		if not self.safe_path(os.getcwd()):
-			print 'Changes to unsafe directories are disabled.'
+			print('Changes to unsafe directories are disabled.')
 			return 
 		if os.path.exists(args[0]):
-			print 'Directory already exists: ' + args[0]
+			print('Directory already exists: ' + args[0])
 			return
 		try:
 			os.mkdir(args[0])
-		except OSError, e:
-			print e
+		except OSError as e:
+			print(e)
 		
 	def do_rm(self, line):
 		args = shlex.split(line)
 		if len(args) == 0:
 			return
 		if not os.path.exists(args[0]):
-			print 'Invalid path: ' + args[0]
+			print('Invalid path: ' + args[0])
 			return 
 		elif not self.safe_path(os.path.abspath(args[0])):
-			print 'Changes to unsafe directories are disabled.'
+			print('Changes to unsafe directories are disabled.')
 			return 
 		elif os.path.isdir(args[0]):
 			try:
 				os.rmdir(args[0])
-			except OSError, e:
-				print e
+			except OSError as e:
+				print(e)
 		else:
 			try:
 				os.remove(args[0])
-			except OSError, e:
-				print e
+			except OSError as e:
+				print(e)
 
 if __name__ == '__main__':
 	main()

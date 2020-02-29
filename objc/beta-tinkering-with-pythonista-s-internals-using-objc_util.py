@@ -4,6 +4,7 @@
 
 # here is the method i used to explore the wonderful world of pythonista's view heirarchy. we will search for an objective c object that contains some known text or classname. the custom classes tend to start with OM...
 
+from __future__ import print_function
 from objc_util import *
 w=ObjCClass('UIApplication').sharedApplication().keyWindow()
 main_view=w.rootViewController().view()
@@ -24,7 +25,7 @@ def filter_subviews(view,text=None, objcclasstext=None):
 	return matching_svs
 	
 # don't find editor window, so concatenate string
-print 'find'+'me'
+print('find'+'me')
 # in this case, only one entry will be returned.  otherwise, may need to look at list to figure out which view is the one you are seeking.
 console_view=filter_subviews(main_view,'find'+'me')[0]
 

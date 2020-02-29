@@ -98,7 +98,7 @@ class BaseMySQLSocket(object):
         for packet in packets:
             try:
                 self.sock.sendall(packet)
-            except Exception, err:
+            except Exception as err:
                 raise errors.OperationalError(str(err))
     send = send_plain
 
@@ -159,7 +159,7 @@ class BaseMySQLSocket(object):
         for zip_packet in zpkts:
             try:
                 self.sock.sendall(zip_packet)
-            except Exception, err:
+            except Exception as err:
                 raise errors.OperationalError('%s' % err)
 
     def recv_plain(self):
@@ -188,9 +188,9 @@ class BaseMySQLSocket(object):
                 rest = packet_totlen - len(packet)
 
             return packet
-        except socket.timeout, err:
+        except socket.timeout as err:
             raise errors.InterfaceError(errno=2013)
-        except socket.error, err:
+        except socket.error as err:
             try:
                 msg = err.errno
                 if msg is None:
@@ -248,9 +248,9 @@ class BaseMySQLSocket(object):
                 while abyte and len(header) < 7:
                     header += abyte
                     abyte = self.sock.recv(1)
-        except socket.timeout, err:
+        except socket.timeout as err:
             raise errors.InterfaceError(errno=2013)
-        except socket.error, err:
+        except socket.error as err:
             try:
                 msg = err.errno
                 if msg is None:
@@ -299,7 +299,7 @@ class BaseMySQLSocket(object):
         except NameError:
             raise errors.NotSupportedError(
                 "Python installation has no SSL support")
-        except ssl.SSLError, err:
+        except ssl.SSLError as err:
             raise errors.InterfaceError("SSL error: %s" % err)
 
 
@@ -320,7 +320,7 @@ class MySQLUnixSocket(BaseMySQLSocket):
             self.sock = socket.socket(socket.AF_UNIX, socket.SOCK_STREAM)
             self.sock.settimeout(self._connection_timeout)
             self.sock.connect(self._unix_socket)
-        except socket.error, err:
+        except socket.error as err:
             try:
                 msg = err.errno
                 if msg is None:
@@ -329,7 +329,7 @@ class MySQLUnixSocket(BaseMySQLSocket):
                 msg = str(err)
             raise errors.InterfaceError(
                 errno=2002, values=(self.get_address(), msg))
-        except StandardError, err:
+        except StandardError as err:
             raise errors.InterfaceError('%s' % err)
 
 class MySQLTCPSocket(BaseMySQLSocket):
@@ -368,7 +368,7 @@ class MySQLTCPSocket(BaseMySQLSocket):
                     "No IPv6 address found for %s" % self.server_host)
             if not addrinfo:
                 addrinfo = addrinfos[0]
-        except socket.gaierror, err:
+        except socket.gaierror as err:
             raise errors.InterfaceError(
                 errno=2003, values=(self.server_host, err[1]))
 
@@ -379,10 +379,10 @@ class MySQLTCPSocket(BaseMySQLSocket):
             self.sock = socket.socket(self._family, socktype, proto)
             self.sock.settimeout(self._connection_timeout)
             self.sock.connect(sockaddr)
-        except socket.gaierror, err:
+        except socket.gaierror as err:
             raise errors.InterfaceError(
                 errno=2003, values=(self.server_host, err[1]))
-        except socket.error, err:
+        except socket.error as err:
             try:
                 msg = err.errno
                 if msg is None:
@@ -391,7 +391,7 @@ class MySQLTCPSocket(BaseMySQLSocket):
                 msg = str(err)
             raise errors.InterfaceError(
                 errno=2003, values=(self.server_host, msg))
-        except StandardError, err:
+        except StandardError as err:
             raise errors.InterfaceError('%s' % err)
         except:
             raise

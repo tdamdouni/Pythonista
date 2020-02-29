@@ -15,6 +15,7 @@ Some of the definitions are borrowed from PlayABC 1.1
 
 2012-07-17
 """
+from __future__ import print_function
 
 import sys, urllib2
 
@@ -312,14 +313,14 @@ if do_repeat:
 f.close()
 
 if not sel:
-	print
-	print "*** Song %u not found in file %s!" % (num, fn)
-	print
+	print()
+	print("*** Song %u not found in file %s!" % (num, fn))
+	print()
 else:
-	print key, unit
-	print song
-	print
-	print len(song)
+	print(key, unit)
+	print(song)
+	print()
+	print(len(song))
 
 	pysynth.make_wav(song, bpm = bpm)
 

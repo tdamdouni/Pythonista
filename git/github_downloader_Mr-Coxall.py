@@ -1,3 +1,4 @@
+from __future__ import print_function
 # https://gist.github.com/Mr-Coxall/7fbf6dc0ec3d83525f1944812ccce46f
 
 # Created by: jsbain
@@ -86,7 +87,7 @@ def git_download(url):
                     os.mkdir(githubpath)
                 z.extractall(path = githubpath)
                 console.hud_alert('Extracting zip.')
-                print z.namelist()
+                print(z.namelist())
         except:
             print('git url did not return zip file')
         console.hud_alert('Files saved in "Downloaded from Github" directory.')

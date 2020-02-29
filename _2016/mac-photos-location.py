@@ -2,6 +2,7 @@
 
 # http://www.leancrew.com/all-this/2014/02/photo-locations-with-apple-maps/
 
+from __future__ import print_function
 import Image
 import sys
 import subprocess
@@ -55,8 +56,8 @@ def coord_pair(gps):
 # Parse the options.
 try:
 	options, args = getopt.getopt(sys.argv[1:], 'gbh')
-except getopt.GetoptError, err:
-	print str(err)
+except getopt.GetoptError as err:
+	print(str(err))
 	sys.exit(2)
 	
 # Set the option values.
@@ -67,17 +68,17 @@ for o, a in options:
 	elif o == '-b':
 		engine = 'bing'
 	else:
-		print usage
+		print(usage)
 		sys.exit()
 		
 try:
 	# Open the photo file and read the EXIF data.
 	exif = Image.open(args[0])._getexif()
 except AttributeError:
-	print "No EXIF data for %s" % args[0]
+	print("No EXIF data for %s" % args[0])
 	sys.exit()
 except IOError:
-	print "Couldn't open %s" % args[0]
+	print("Couldn't open %s" % args[0])
 	sys.exit()
 	
 try:
@@ -85,7 +86,7 @@ try:
 	gps = exif[GPS]
 	latitude, longitude = coord_pair(gps)
 except KeyError:
-	print "No GPS data for %s" % args[0]
+	print("No GPS data for %s" % args[0])
 	sys.exit(1)
 	
 # Open the map.

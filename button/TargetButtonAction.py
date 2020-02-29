@@ -9,6 +9,7 @@
 
 # coding: utf-8
 
+from __future__ import print_function
 from objc_util import *
 import ui
 
@@ -16,7 +17,7 @@ UIBarButtonItem = ObjCClass('UIBarButtonItem')
 UIBarButtonItemGroup = ObjCClass('UIBarButtonItemGroup')
 
 def btnAction(_self, _cmd):
-	print 'hello world'
+	print('hello world')
 	
 ActionTarget = create_objc_class('ActionTarget', methods=[btnAction])
 target = ActionTarget.new().autorelease()

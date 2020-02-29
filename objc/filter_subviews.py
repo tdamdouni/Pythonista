@@ -2,6 +2,7 @@
 
 # https://github.com/jsbain/objc_hacks/blob/master/filter_subviews.py
 
+from __future__ import print_function
 from objc_util import *
 w=ObjCClass('UIApplication').sharedApplication().keyWindow()
 main_view=w.rootViewController().view()
@@ -22,5 +23,5 @@ def filter_subviews(view,text=None, objcclasstext=None):
    return matching_svs
 
 # don't find editor window!
-print 'find'+'me'
+print('find'+'me')
 console_view=filter_subviews(main_view,'find'+'me')[0]

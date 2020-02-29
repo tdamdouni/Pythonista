@@ -1,3 +1,4 @@
+from __future__ import print_function
 # https://gist.github.com/Cethric/af84bf4130d2db8abbe3
 
 # coding: utf-8
@@ -104,8 +105,8 @@ def print_image(mh, added):
     func.restype = ctypes.c_int
     result = func(mh, ctypes.byref(image_info))
     if result == 0:
-        print 'Could not print info for mach_header:'
-        print mh
+        print('Could not print info for mach_header:')
+        print(mh)
         return
     image_name = ctypes.string_at(image_info.dli_fname)
     image_base_address = image_info.dli_fbase.contents.value
@@ -114,7 +115,7 @@ def print_image(mh, added):
     image_uuid = ''
     if uuidt:
         image_uuid = uuidt
-    print "%s: 0x%x %s <%s>" % ('Added' if added else 'Removed', image_base_address, image_name, image_uuid)
+    print("%s: 0x%x %s <%s>" % ('Added' if added else 'Removed', image_base_address, image_name, image_uuid))
 
 @ctypes.CFUNCTYPE(None, ctypes.POINTER(mach_header), ctypes.c_void_p)
 def dyld_add(mh, vmaddr_slide):

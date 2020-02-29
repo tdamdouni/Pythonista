@@ -1,3 +1,4 @@
+from __future__ import print_function
 #Let python know we are going to use the urllib library which handles all of the HTTP protocol and header details. 
 import urllib
 from bs4 import BeautifulSoup
@@ -15,13 +16,13 @@ count = 0
 
 for tag in tags:
     #print tag
-    print tag.contents[0]
+    print(tag.contents[0])
     num = int(tag.contents[0])
     #print num
     my_sum += num
     count += 1
     
-print 'count:',count   
-print 'sum:',my_sum  
+print('count:',count)   
+print('sum:',my_sum)  
 
     

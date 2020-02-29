@@ -1,3 +1,4 @@
+from __future__ import print_function
 # Show an image picker dialog (allowing multiple selection) and print the result
 
 import photos

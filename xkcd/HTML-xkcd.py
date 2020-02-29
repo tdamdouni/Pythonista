@@ -9,6 +9,7 @@
 
 # coding: utf-8
 
+from __future__ import print_function
 import appex
 
 from urllib2 import urlopen
@@ -84,18 +85,18 @@ def pick(url):
 	elif choice == 2:
 		view_doc(img_page(pics))
 	else:
-		print '\n'.join(pics)
+		print('\n'.join(pics))
 		
 def main():
 	if not appex.is_running_extension():
-		print '\nRunning using test data...'
+		print('\nRunning using test data...')
 		url = 'http://xkcd.com'
 	else:
 		url = appex.get_url()
 	if url:
 		pick(url)
 	else:
-		print 'No input URL found.'
+		print('No input URL found.')
 		
 if __name__ == '__main__':
 	main()

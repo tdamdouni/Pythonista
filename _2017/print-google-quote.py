@@ -2,6 +2,7 @@
 
 # https://forum.omz-software.com/topic/4214/urllib-request-python-2-vs-3/9
 
+from __future__ import print_function
 import urllib,time,datetime
 
 class Quote(object):
@@ -66,5 +67,5 @@ class GoogleQuote(Quote):
 			
 #if __name__ == '__main__':
 q = GoogleQuote('vti','2017-09-08','2017-09-28')
-print q
+print(q)
 

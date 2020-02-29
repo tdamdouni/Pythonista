@@ -1,3 +1,4 @@
+from __future__ import print_function
 #Write a program that will prompt the user for a URL. 
 #Note, user should use http://python-data.dr-chuck.net/comments_297215.json.
 #Read the JSON data from that URL using urllib and 
@@ -32,6 +33,6 @@ for item in info['comments']:
     #print item['count']
     num = num + int(item['count'])
 
-print "The sum of the numbers in the file is:", num
+print("The sum of the numbers in the file is:", num)
 
  

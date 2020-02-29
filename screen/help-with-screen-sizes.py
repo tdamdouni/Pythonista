@@ -2,8 +2,9 @@
 
 # https://forum.omz-software.com/topic/2632/help-with-screen-sizes/19
 
+from __future__ import print_function
 import ui
-print str(ui.get_screen_size())
+print(str(ui.get_screen_size()))
 
 #==============================
 

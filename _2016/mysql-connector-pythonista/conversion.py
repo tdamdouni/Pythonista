@@ -257,9 +257,9 @@ class MySQLConverter(ConverterBase):
         except KeyError:
             # If one type is not defined, we just return the value as str
             return str(value)
-        except ValueError, e:
+        except ValueError as e:
             raise ValueError, "%s (field %s)" % (e, flddsc[0])
-        except TypeError, e:
+        except TypeError as e:
             raise TypeError, "%s (field %s)" % (e, flddsc[0])
         except:
             raise
@@ -335,7 +335,7 @@ class MySQLConverter(ConverterBase):
             (h, m, s) = [ int(d) for d in hms.split(':')]
             pv = datetime.timedelta(hours=h, minutes=m, seconds=s,
                                     microseconds=fs)
-        except ValueError, err:
+        except ValueError as err:
             raise ValueError(
                 "Could not convert %s to python datetime.timedelta" % v)
         else:

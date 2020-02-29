@@ -16,6 +16,7 @@ in general the pyui is a json representation of a view:
          
          
 '''
+from __future__ import print_function
 
 
 import json,ui,ast,re
@@ -51,11 +52,11 @@ def build_view(view_dict,verbose=False ):
                 v.__setattr__(str(key),val)
         except AttributeError:
             if verbose:
-                print key, val ,'was not set ',
+                print(key, val ,'was not set ', end=' ')
                 if 'name' in a:
-                    print 'for ',a['name']
+                    print('for ',a['name'])
                 else:
-                    print 'for root'
+                    print('for root')
 
     #handle some other special cases for pyui quirks
     if 'font' in dir(v):
@@ -90,7 +91,7 @@ def parse_alignment(a):
     elif a=='center':
         return ui.ALIGN_CENTER
     else:        #fixme... handle all types. 
-        print 'unhandled alignment',a
+        print('unhandled alignment',a)
         return ui.ALIGN_LEFT
 def parse_segments(seg):
     '''segmentview.segments convert 'Hello|World' to ['Hello','World']'''
@@ -124,7 +125,7 @@ def bind_action(v,action):
     elif action in globals():
             v.action= globals()[action]
     else:
-        print 'Warning: could not bind action', action, 'in ', v.name
+        print('Warning: could not bind action', action, 'in ', v.name)
 
 #handle keys which match the regexp keys below, replace value with function called on value   
 special_handlers={'.*color':parse_color,

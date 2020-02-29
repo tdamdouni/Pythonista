@@ -1,3 +1,4 @@
+from __future__ import print_function
 # @viticci
 # A simple Markdown converter for the clipboard contents
 
@@ -11,6 +12,6 @@ s = input_file
 md = markdown.Markdown()
 html = md.convert(s)
 
-print html
+print(html)
 
 clipboard.set(html)

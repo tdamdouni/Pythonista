@@ -2,6 +2,7 @@
 
 # https://forum.omz-software.com/topic/2928/ui-animate-wider-usage/10
 
+from __future__ import print_function
 import ui
 import time, warnings
 
@@ -90,8 +91,8 @@ class CallMeBack(object):
 			# we are finished
 			self.finish_time = time.time()
 			ui.cancel_delays()
-			print 'duration {}, total time {}, difference {}'.format(self.duration , self.finish_time - self.start_time,
-			(self.finish_time - self.start_time) - self.duration)
+			print('duration {}, total time {}, difference {}'.format(self.duration , self.finish_time - self.start_time,
+			(self.finish_time - self.start_time) - self.duration))
 			
 			# if a completion routine has been defined, is called here
 			if self.on_completion:

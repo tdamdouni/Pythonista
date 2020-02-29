@@ -2,6 +2,7 @@
 
 # https://forum.omz-software.com/topic/2863/help-adding-images-to-built-in-ui-tableviewcell-image_view
 
+from __future__ import print_function
 import ui
 #import openSecretsEndpoints
 import dialogs
@@ -73,7 +74,7 @@ OTVD.row_height = 50
 
 OTVD.data_source = data
 print(data)
-print len(table)
+print(len(table))
 
 
 if len(table) >=1:
@@ -104,7 +105,7 @@ try:
 	print(urllib2)
 except ImportError:
 	import urllib3 as urllib2
-	print(urllib3,' as urllib2')
+	print((urllib3,' as urllib2'))
 from PIL import Image, ImageOps, ImageDraw
 import io
 import Image

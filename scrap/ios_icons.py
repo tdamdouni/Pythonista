@@ -9,6 +9,7 @@
 # If you find any bug, you can find me @silouane20 on Twitter.
 # iOS 7 masks by @pgruneich on Twitter.
 
+from __future__ import print_function
 from PIL import Image
 from StringIO import StringIO
 import re
@@ -27,13 +28,13 @@ def find_icon(terms, platform):
 		return found
 		
 def main():
-	print "Select chosen platform \n"
-	print "[1] iPhone"
-	print "[2] iPad\n"
+	print("Select chosen platform \n")
+	print("[1] iPhone")
+	print("[2] iPad\n")
 	platform = raw_input("")
 	
 	if platform == "x":
-		print "Exited"
+		print("Exited")
 	else:
 		terms = raw_input("Input app name: ")
 		icon_url = find_icon(terms, platform)
@@ -56,7 +57,7 @@ def main():
 			image.paste(mask,(0,0,width,width),mask)
 			image.show()
 		else:
-			print "Failed to get iTunes url"
+			print("Failed to get iTunes url")
 			
 			
 if __name__ == "__main__":

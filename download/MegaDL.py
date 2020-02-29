@@ -1,3 +1,4 @@
+from __future__ import print_function
 # https://gist.github.com/pudquick/5562741
 
 import os.path, sys, os, SimpleHTTPServer, SocketServer, clipboard, webbrowser, shutil, zipfile, console
@@ -20,7 +21,7 @@ def _unzip(a_zip=None, path='.', altpath='unzipped'):
 	finally:
 		f.close()
 	if pk_check != 'PK':
-		print "unzip: %s: does not appear to be a zip file" % a_zip
+		print("unzip: %s: does not appear to be a zip file" % a_zip)
 	else:
 		altpath = os.path.join(os.path.dirname(filename), altpath)
 		location = os.path.abspath(altpath)
@@ -60,7 +61,7 @@ def _unzip(a_zip=None, path='.', altpath='unzipped'):
 						fp.close()
 		except Exception:
 			zipfp.close()
-			print "unzip: %s: zip file is corrupt" % a_zip
+			print("unzip: %s: zip file is corrupt" % a_zip)
 			return
 		zipfp.close()
 		return os.path.abspath(location)
@@ -70,9 +71,9 @@ def req12_setup():
 	relative_dir = os.path.abspath(os.path.dirname(__file__))
 	curdir = os.getcwd()
 	os.chdir(relative_dir)
-	print '!!! requests-1.2.0 not installed, downloading rev.d06908d ...'
+	print('!!! requests-1.2.0 not installed, downloading rev.d06908d ...')
 	zip_url = 'https://github.com/kennethreitz/requests/archive/v1.2.0.zip'
-	print '  * Downloading: requests_1.2.0.zip (565KB)...'
+	print('  * Downloading: requests_1.2.0.zip (565KB)...')
 	f = open('requests_1.2.0.zip', 'wb')
 	try:
 		f.write(old_req.get(zip_url).content)
@@ -81,19 +82,19 @@ def req12_setup():
 	f.close()
 	# Unload built-in requests module
 	del old_req
-	print "!!! zip downloaded, extracting ..."
+	print("!!! zip downloaded, extracting ...")
 	try:
 		shutil.rmtree('requests_zip', ignore_errors=True)
 	except Exception:
 		sys.exc_clear()
 	_ = _unzip('requests_1.2.0.zip', altpath='requests_zip')
-	print "!!! Extraction complete, re-arranging ..."
+	print("!!! Extraction complete, re-arranging ...")
 	try:
 		shutil.rmtree('requests_1_2', ignore_errors=True)
 	except Exception:
 		sys.exc_clear()
 	os.rename('requests_zip/requests', 'requests_1_2')
-	print "!!! Re-arranging complete, cleaning up ..."
+	print("!!! Re-arranging complete, cleaning up ...")
 	try:
 		os.remove('requests_1.2.0.zip')
 		shutil.rmtree('requests_zip', ignore_errors=True)
@@ -102,7 +103,7 @@ def req12_setup():
 	os.chdir(curdir)
 	
 def mega_setup():
-	print '!!! richardasaurus/mega.py not installed, downloading rev.878f095056 ...'
+	print('!!! richardasaurus/mega.py not installed, downloading rev.878f095056 ...')
 	base_git = 'https://raw.github.com/richardasaurus/mega.py/878f095056b31d5f675aa96fecb59ffcaa180143/mega/'
 	relative_dir = os.path.abspath(os.path.dirname(__file__))
 	# Change directory to the one containing this script
@@ -112,14 +113,14 @@ def mega_setup():
 		os.makedirs('mega')
 	os.chdir('mega')
 	for fname in ['__init__.py', 'crypto.py', 'errors.py', 'mega.py']:
-		print '  * Downloading: ', fname, '...'
+		print('  * Downloading: ', fname, '...')
 		f = open(fname, 'wb')
 		try:
 			f.write(requests.get(base_git + fname).content)
 		except Exception:
 			sys.exc_clear()
 		f.close()
-	print "!!! Complete, attempting to import again ..."
+	print("!!! Complete, attempting to import again ...")
 	os.chdir(curdir)
 	
 def mega_patch():
@@ -131,7 +132,7 @@ def mega_patch():
 	old_mega = f.read()
 	f.close()
 	if 'import requests\n' in old_mega:
-		print '!!! Patching mega/mega.py to use requests_1_2 ...'
+		print('!!! Patching mega/mega.py to use requests_1_2 ...')
 		new_mega = old_mega.replace('import requests\n', 'import requests_1_2 as requests\n')
 		f = open('mega/mega.py','w')
 		f.write(new_mega)
@@ -159,7 +160,7 @@ class SmarterHTTPRequestHandler(SimpleHTTPServer.SimpleHTTPRequestHandler):
 				f.close()
 	def get_transfer(self):
 		global ready_to_stop
-		print '* Transferring to browser ...'
+		print('* Transferring to browser ...')
 		# Perform the actual file download
 		self.send_response(200)
 		# Content-Disposition: attachment; filename="fname.ext"
@@ -172,9 +173,9 @@ class SmarterHTTPRequestHandler(SimpleHTTPServer.SimpleHTTPRequestHandler):
 		f.close()
 		if self.file_delete:
 			os.remove('mega_dl/' + self.file_name)
-			print '* Download complete, file deleted.'
+			print('* Download complete, file deleted.')
 		else:
-			print '* Download complete, file preserved.'
+			print('* Download complete, file preserved.')
 		ready_to_stop = True
 	def log_message(self, format, *args):
 		return
@@ -225,37 +226,37 @@ def do_download():
 		down_url = ''
 	# Make sure it's the right format
 	if not down_url.startswith('https://mega.co.nz/#'):
-		print '!!! Clipboard contents are not a mega URL, aborting. Please try again.'
+		print('!!! Clipboard contents are not a mega URL, aborting. Please try again.')
 		sys.exit()
 	# Log in
-	print '* Logging into Mega ...'
+	print('* Logging into Mega ...')
 	mega = Mega({'verbose': True})
 	m = mega.login(__mega_acct__, __mega_pass__)
 	# Check file stats
-	print '* Looking up URL file details ...'
+	print('* Looking up URL file details ...')
 	details = m.get_public_url_info(down_url)
-	print '* Filename:', details['name']
-	print '* Size:', sizeof_fmt(details['size'])
+	print('* Filename:', details['name'])
+	print('* Size:', sizeof_fmt(details['size']))
 	# Download
-	print '* Downloading ...'
+	print('* Downloading ...')
 	if not os.path.exists('mega_dl'):
 		os.makedirs('mega_dl')
 	m.download_url(down_url, 'mega_dl')
-	print "Download complete."
+	print("Download complete.")
 	# Interactive choices
 	answer = raw_input('Transfer out using Safari (for Open In ...)? [Y/n]: ')
 	if not answer.strip().lower() in ['', 'y', 'yes']:
 		# Quit here, they must be using iFunbox or something
-		print '* Complete.'
+		print('* Complete.')
 		sys.exit()
 	# Delete afterwards?
 	answer = raw_input('Delete when complete? [Y/n]: ')
 	if not answer.strip().lower() in ['', 'y', 'yes']:
 		mega_file_delete = False
-		print '* Preserving file after transfer.'
+		print('* Preserving file after transfer.')
 	else:
 		mega_file_delete = True
-		print '* Will delete file when transfer ends.'
+		print('* Will delete file when transfer ends.')
 	# Prep webserver
 	global ready_to_stop
 	ready_to_stop = False
@@ -275,7 +276,7 @@ def do_download():
 	# print 'OPEN: http://localhost:8000/transfer'
 	httpd.serve_limited(timeout=3,max_requests=4)
 	httpd.release()
-	print '* Complete.'
+	print('* Complete.')
 	sys.exit()
 	
 def main():
@@ -289,12 +290,12 @@ def main():
 			import requests_1_2 as requests
 			init_tries = 0
 		except:
-			print "!!! Init failure %s of 3 ..." % (4 - init_tries)
+			print("!!! Init failure %s of 3 ..." % (4 - init_tries))
 			sys.exc_clear()
 			req12_setup()
 		init_tries -= 1
 	if not requests:
-		print '!!! Please check your network connection and try again.'
+		print('!!! Please check your network connection and try again.')
 		sys.exit()
 	global Mega
 	# Ensure that the mega module is available
@@ -305,13 +306,13 @@ def main():
 			from mega import Mega
 			init_tries = 0
 		except:
-			print "!!! Init failure %s of 3 ..." % (4 - init_tries)
+			print("!!! Init failure %s of 3 ..." % (4 - init_tries))
 			sys.exc_clear()
 			mega_setup()
 			mega_patch()
 		init_tries -= 1
 	if not Mega:
-		print '!!! Please check your network connection and try again.'
+		print('!!! Please check your network connection and try again.')
 		sys.exit()
 	# Begin download
 	do_download()

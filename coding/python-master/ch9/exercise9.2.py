@@ -1,3 +1,4 @@
+from __future__ import print_function
 #Exercise 9.2 Write a program that categorizes each mail message by which day
 #of the week the commit was done. To do this look for lines that start with From,
 #then look for the third word and keep a running count of each of the days of the
@@ -19,6 +20,6 @@ for line in fhand:
         #else:
         #    weekday[running_count] += 1
 
-print weekday
+print(weekday)
         
         

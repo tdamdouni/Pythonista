@@ -1,3 +1,4 @@
+from __future__ import print_function
 # Get the oldest screenshot image, and delete it from the library
 
 import photos

@@ -1,3 +1,4 @@
+from __future__ import print_function
 import json
 import sqlite3
 import cmd
@@ -13,7 +14,7 @@ def get_room(id, dbfile='rooms.sqlite'):
   try:
   	rows = con.execute("select json from rooms where id=?", (id,))
   except Exception as e:
-  	print 'DB ERROR', e
+  	print('DB ERROR', e)
     
   for row in rows:
   	jsontext = row[0]

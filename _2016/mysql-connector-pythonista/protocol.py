@@ -46,7 +46,7 @@ class MySQLProtocol(object):
             xored = [ utils.intread(h1) ^ utils.intread(h3)
                 for (h1,h3) in zip(hash1, hash3) ]
             hash4 = struct.pack('20B', *xored)
-        except Exception, err:
+        except Exception as err:
             raise errors.InterfaceError(
                 'Failed scrambling password; %s' % err)
 

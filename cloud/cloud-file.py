@@ -19,6 +19,7 @@ Credits:
 - cloud.File: idea and first version by @guerito, future versions on @webmaster4o's GitHub
 
 '''
+from __future__ import print_function
 
 import io, os, urllib, json, base64
 
@@ -76,7 +77,7 @@ class File(io.BytesIO):
 	#def isatty(self): should not be implemented for file-like objects
 	
 	def next(self):
-		if self.debug : print 'next'
+		if self.debug : print('next')
 		
 	def read(self, size = -1):
 		if size < 0:
@@ -102,7 +103,7 @@ class File(io.BytesIO):
 		return l
 		
 	def xreadlines(self):
-		if self.debug : print 'xreadlines'
+		if self.debug : print('xreadlines')
 		return None
 		
 	def seek(self, offset, whence = os.SEEK_SET):
@@ -118,13 +119,13 @@ class File(io.BytesIO):
 		return self.__iPos
 		
 	def truncate(self, size):
-		if self.debug : print 'truncate'
+		if self.debug : print('truncate')
 		
 	def write(self, str):
 		self.__mf.write(str)
 		
 	def writelines(self, sequence = None):
-		if self.debug : print 'writelines'
+		if self.debug : print('writelines')
 		
 		
 	class __mFile(io.BytesIO):

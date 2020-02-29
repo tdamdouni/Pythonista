@@ -28,6 +28,7 @@
     Thanks to @nekotaroneko for GUI_Helper.py available here:
     'https://github.com/nekotaroneko/GUI_Helper' 
 ''' 
+from __future__ import print_function
 import json, pprint, clipboard, os
 
 # file_picker code
@@ -468,7 +469,7 @@ def main():
   clipboard.set('')
   clipboard.set(attribs)
   
-  print attribs
+  print(attribs)
   console.hud_alert('Attributes Successfully Copied to Clipboard', 'success', 2)
 if __name__ == '__main__':
   main()

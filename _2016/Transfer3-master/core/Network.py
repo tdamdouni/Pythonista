@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 #coding: utf-8
 
+from __future__ import print_function
 import socket
 from contextlib import closing
 import threading
@@ -119,7 +120,7 @@ class Scanner(object):
 						
 			except Exception as e:
 				import traceback
-				print traceback.format_exc()
+				print(traceback.format_exc())
 				time.sleep(1)
 					
 class Port_Scan(object):
@@ -237,4 +238,4 @@ if __name__ == '__main__':
 		assert result, 'Not found'
 		for ip, data_dict in six.iteritems(result):
 			print('IP {}\n{}'.format(ip, data_dict))
-			print data_dict['host_name']
+			print(data_dict['host_name'])

@@ -2,6 +2,7 @@
 
 # https://forum.omz-software.com/topic/3086/ftp-in-appex-mode/11
 
+from __future__ import print_function
 import console
 from ftplib import FTP
 
@@ -21,6 +22,6 @@ if ftpok:
 
     # Get all authors sub-dirctories
     authors = ftp.nlst(source)
-    print authors[0]
+    print(authors[0])
     ftp.quit()
 

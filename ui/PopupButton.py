@@ -1,3 +1,4 @@
+from __future__ import print_function
 import ui, threading, time
 from uicontainer import FlowContainer
 from threading import Timer
@@ -243,7 +244,7 @@ if __name__=='__main__':
     keyrow=FlowContainer(frame=(0,200,400,40))
     def addKey(key,altkeys,keyrow):
         def printkey(sender):
-            print key
+            print(key)
         b=PopupButton(title=key, action=printkey,frame=(0,0,60,60))
         keyrow.add_subview(b)
         if altkeys:

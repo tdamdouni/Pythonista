@@ -2,6 +2,7 @@
 
 # https://gist.github.com/ejetzer/7685539
 
+from __future__ import print_function
 from math import sqrt, pi
 
 # Program examples
@@ -49,7 +50,7 @@ print(roots)
 my_tuple = (1, 2, 3)
 my_list = [1, 2, 3]
 
-print(my_tuple[2], my_list[2])
+print((my_tuple[2], my_list[2]))
 
 # Some vector, represented by a list
 
@@ -66,19 +67,19 @@ print(some_vector[2])
 
 try: 
 	some_vector[2] = 5
-except Exception, e:
-	print e
+except Exception as e:
+	print(e)
 	
 some_tuple = (1, 2, 3)
-print some_tuple
+print(some_tuple)
 
 some_tuple = (some_tuple[0], 7, some_tuple[2])
-print some_tuple
+print(some_tuple)
 
 
 first_vector = [1, 2, 3]
 second_vector = [3, 2, 1]
-print first_vector, second_vector
+print(first_vector, second_vector)
 
 third_vector = []
 index = 0
@@ -86,7 +87,7 @@ while index < 3:
 	added_terms = first_vector[index] + second_vector[index]
 	third_vector.append(added_terms)
 	index += 1
-print third_vector
+print(third_vector)
 
 third_vector = []
 for index in range(3):

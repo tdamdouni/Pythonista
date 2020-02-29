@@ -1,3 +1,4 @@
+from __future__ import print_function
 # https://gist.github.com/Moving-Electrons/7762481
 
 # This script reads an Abstractspoon ToDoList file, searches for tasks overdue, due today and due within the next 7 days and puts the results in a text file in Markdown format. It includes Due Dates, Categories and Priorities per task. More information in www.movingelectrons.net
@@ -39,7 +40,7 @@ data = csv.reader((line.replace('\0','') for line in data_initial), delimiter=",
 
 header = data.next()
 td = date.today() #gets today's date
-print 'Today\'s date: %s' % str(td)
+print('Today\'s date: %s' % str(td))
 
 sortedList = sorted(data, key=operator.itemgetter(ddtCol)) #Sorts by DueDate (however, since data is a string type, the sort is almost meaningless. This is use to dump contents of file in a list of lists). SortedList is created after the header was taken, the header is not included in sortedList
 
@@ -48,7 +49,7 @@ todayLst = []
 tomorrowLst = []
 futureLst = []
 
-print 'Iterating inside task list...'
+print('Iterating inside task list...')
 for row in range(len(sortedList)):
 	if sortedList[row][ddtCol] == '': # if Due Date is blank, continue
 	    continue
@@ -71,19 +72,19 @@ for row in range(len(sortedList)):
 		elif dtDif.days>=2 and dtDif.days<=7:
 			tempLst=[int(sortedList[row][priCol]),'['+sortedList[row][catCol]+']',sortedList[row][desCol],'due: '+sortedList[row][ddtCol]]
 			futureLst.append(tempLst)
-print 'Done.'
+print('Done.')
 data_initial.close()
 
 # sorting lists
-print 'Sorting lists...'
+print('Sorting lists...')
 overdueLst2 = sorted(overdueLst, key=operator.itemgetter(0), reverse=True)
 todayLst2 = sorted(todayLst, key=operator.itemgetter(0), reverse=True)
 tomorrowLst2 = sorted(tomorrowLst, key=operator.itemgetter(0), reverse=True)
 futureLst2 = sorted(futureLst, key=operator.itemgetter(0), reverse=True)
-print 'Done.'
+print('Done.')
 
 # Writing to the file
-print 'Writing tasks to file...'
+print('Writing tasks to file...')
 txtFile= open(output, 'w')
 txtFile.write("## TodoList - Work\r\n")
 txtFile.write("## Overdue Tasks:\r\n")
@@ -95,4 +96,4 @@ append_ListInFile(tomorrowLst2,txtFile)
 txtFile.write("\n## Next 7 days:\r\n")
 append_ListInFile(futureLst2,txtFile)
 txtFile.close()
-print 'Done.'
+print('Done.')

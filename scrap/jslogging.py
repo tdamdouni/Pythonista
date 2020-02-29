@@ -1,3 +1,4 @@
+from __future__ import print_function
 # @scarp @web @JavaScript
 
 # https://forum.omz-software.com/topic/2358/appex-safari-content/6
@@ -32,9 +33,9 @@ import ui,os,urllib
 class debugDelegate (object):
     def webview_should_start_load(self,webview, url, nav_type):
        if url.startswith('ios-log'):
-          print urllib.unquote(url)
+          print(urllib.unquote(url))
        else:
-          print url
+          print(url)
        return True
 w=ui.WebView()
 w.eval_js(jslogging)

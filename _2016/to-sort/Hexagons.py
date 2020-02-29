@@ -1,5 +1,6 @@
 # coding: utf-8
 
+from __future__ import print_function
 import colorsys, console
 import numpy as np
 from images2gif import writeGif
@@ -74,8 +75,8 @@ images = []
 for x in range(100):
     images.append(make_frame(x/100.0).resize((512,512), Image.ANTIALIAS))
     console.clear()
-    print str(x+1)+'%'
+    print(str(x+1)+'%')
 
 console.clear()
-print 'Writing gif...'
+print('Writing gif...')
 writeGif("pentagon.gif", images, duration=0.01)

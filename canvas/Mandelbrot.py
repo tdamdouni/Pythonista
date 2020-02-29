@@ -1,3 +1,4 @@
+from __future__ import print_function
 from math import log
 import canvas
 
@@ -74,8 +75,8 @@ def toColor(a):
                 a = ColorList[int(a)]
                 return [int(a[0]*255),int(a[1]*255), int(a[2]*255)]
         except IndexError:
-                print a
-                print len(ColorList)
+                print(a)
+                print(len(ColorList))
                 return [0,0,0]
 
 def v(z,n):
@@ -94,7 +95,7 @@ def heightVals(pixSize, t, b, pixH):
         if pixH == len(hList):
                 return hList
         else:
-                print "oh dear... something's gone wrong", hList, t, b, locCount
+                print("oh dear... something's gone wrong", hList, t, b, locCount)
 
 
 def widthVals(pixSize, l, r, pixW):
@@ -106,7 +107,7 @@ def widthVals(pixSize, l, r, pixW):
         if pixW == len(wList):
                 return wList
         else:
-                print "oh dear... something's gone wrong", wList, r, l, locCount
+                print("oh dear... something's gone wrong", wList, r, l, locCount)
 
 colorList()
 
@@ -130,7 +131,7 @@ wVals = widthVals(pixelSize, left, right,w)
 hVals = heightVals(pixelSize, top, bottom,h)
 
 lastPercentage = 0
-print "0%"
+print("0%")
 a_count = 0
 for a in hVals:
         canvas.begin_updates()
@@ -150,6 +151,6 @@ for a in hVals:
         curPerc = 100-(int((a-bottom)/(top-bottom)*100))
         if curPerc>=lastPercentage+1:
             lastPercentage=curPerc
-            print str(lastPercentage)+"%"
+            print(str(lastPercentage)+"%")
         a_count+=1
         canvas.end_updates()

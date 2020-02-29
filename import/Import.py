@@ -30,6 +30,7 @@ Text:
         pythonista://Import?action=run&args=(Input)
 Open URLs
 '''
+from __future__ import print_function
 
 import sys
 import clipboard

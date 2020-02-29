@@ -1,4 +1,5 @@
 # coding: utf-8
+from __future__ import print_function
 import markdown
 import clipboard
 
@@ -11,6 +12,6 @@ s = input_file
 md = markdown.Markdown()
 html = md.convert(s)
 
-print html
+print(html)
 
 clipboard.set(html)

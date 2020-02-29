@@ -4,6 +4,7 @@
 
 # https://github.com/ifuchs/RoomAreaFinder
 
+from __future__ import print_function
 import ui, photos
 class RoomAreaView(ui.View):
 	''' top level container, consisting of an imageview and an overlay.  
@@ -25,7 +26,7 @@ class RoomAreaView(ui.View):
 	def will_close(self):
 		'''upon close, dump out the current area.  do this by first getting the set of points.  The zip notation lets us convert from a tuple of the form ((x0,y0),(x1,y1),...) to x=(x0,x1,...) and y=(y0,y1,...)'''
 		x,y=zip(*self.rv.pts)
-		print polygonArea(x,y,float(self.rv.scale.value)), self.rv.scale.value
+		print(polygonArea(x,y,float(self.rv.scale.value)), self.rv.scale.value)
 class RoomAreaOverlay(ui.View):
 	'''A touch sensitive overlay.  Touches add to a list of points, which are then used to compute area.  Lengths are shown for each line segment, and a scaling parameter is used to adjust the length of drawn lines to known dimensions'''
 	def __init__(self,*args,**kwargs):

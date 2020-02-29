@@ -5,6 +5,7 @@
 # https://forum.omz-software.com/topic/3698/how-to-save-user-input-from-text-field-and-use-throughout-script-with-ui/3
 
 """ Math """
+from __future__ import print_function
 
 import random
 import speech
@@ -40,7 +41,7 @@ def gen_add_equ():
 		
 			#speak_must = speech.say("oops...sorry...you must do at least 5","en-US", 0.5)
 			
-			print "\nYou must do at least 5"
+			print("\nYou must do at least 5")
 			
 			finish = 5
 			
@@ -66,7 +67,7 @@ def gen_add_equ():
 			
 			#speak_nums = speech.say("what is"+ str_num_a1 + "+"+ str_num_b1, "en-US", 0.5)
 			
-			print "\n#."+str(count),sol_pro, "{:,}".format(a1), "+", "{:,}".format(b1)
+			print("\n#."+str(count),sol_pro, "{:,}".format(a1), "+", "{:,}".format(b1))
 			
 			ans = a1 + b1
 			
@@ -90,31 +91,31 @@ def gen_add_equ():
 						
 					#speak_yours = speech.say(str_your + "is incorrect....try again....")
 					
-					print "\n",count_wrong,"wrong","{:,}".format(yours),"Is Incorrect Try Again."
+					print("\n",count_wrong,"wrong","{:,}".format(yours),"Is Incorrect Try Again.")
 					
 					if count_wrong == wrong:
 					
 						#speech.say("maybe you should try" + str_ans + "and lets see what happens")
 						
-						print "\n",ans,"might do it!"
+						print("\n",ans,"might do it!")
 						
 				else:
 				
 					#speak_yours = speech.say(str_ans + "is correct....good job....")
 					
-					print "\n","{:,}".format(ans),"Is Correct Good Job!\n"
+					print("\n","{:,}".format(ans),"Is Correct Good Job!\n")
 					
 		if count == finish:
 		
 			#speak_done = speech.say("youre done for now....Bye.bye", "en-US", 0.5)
 			
-			print "Done For Now Bye Bye"
+			print("Done For Now Bye Bye")
 			
-			print "\n",count_wrong,"were wrong out of",finish
+			print("\n",count_wrong,"were wrong out of",finish)
 			
 	except:
 	
-		print
+		print()
 		
 		return
 		

@@ -1,3 +1,4 @@
+from __future__ import print_function
 # https://forum.omz-software.com/topic/3708/use-objc_util-and-nsurlconnection-to-make-a-get-request/4
 
 import objc_util
@@ -50,7 +51,7 @@ wait = True
 while wait:
 	data = call.return_data()
 	if data != None:
-		print data
+		print(data)
 		wait = False
-print "Done"
+print("Done")
 

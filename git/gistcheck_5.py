@@ -1,3 +1,4 @@
+from __future__ import print_function
 # https://gist.github.com/davenicholls/5212628
 
 # Source: https://gist.github.com/5212628
@@ -75,7 +76,7 @@ def auth(username, password):
 	result = urllib2.urlopen(request)
 	rdata = result.read()
 	result.close()
-	print rdata
+	print(rdata)
 	return json.loads(rdata)
 	
 #get auth data

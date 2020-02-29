@@ -1,3 +1,4 @@
+from __future__ import print_function
 # https://gist.github.com/lukf/8982684
 
 import feedparser, webbrowser, urllib, console, sys, datetime
@@ -15,7 +16,7 @@ for post in feedparser.parse(feedURL).entries:
 		
 dayone_entry=outp+dayone_footer
 # User confirmation
-print dayone_entry
+print(dayone_entry)
 if not raw_input("-- Press enter to import"):
 	# encode final entry
 	dayone_entry = urllib.quote(dayone_entry.encode("utf-8"))

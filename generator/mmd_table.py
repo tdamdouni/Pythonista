@@ -1,3 +1,4 @@
+from __future__ import print_function
 # https://gist.github.com/mcsquaredjr/4450031
 
 # Interactive multimarkdown table generator. 
@@ -337,11 +338,11 @@ def _validate_input(row=True):
 	try:
 		par = int(par)
 		if par < 1 or par > MAX_DIM:
-			print msg2
+			print(msg2)
 			par = _validate_input(row)
 	except ValueError:
 		# Cannot convert to int
-		print '***Error: Enter a number between 1 and %d' % (MAX_DIM)
+		print('***Error: Enter a number between 1 and %d' % (MAX_DIM))
 		par = _validate_input(row)
 	
 	return par

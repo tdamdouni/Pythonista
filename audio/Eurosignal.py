@@ -11,6 +11,7 @@
 # Found in Nov 2007 by Tim Weber <http://scytale.name/> at
 # http://forum.mysnip.de/read.php?8773,164803
 
+from __future__ import print_function
 import sys
 from math import *
 import struct
@@ -120,14 +121,14 @@ class EurosignalEncoder:
         self.wavfile.write(struct.pack('<L', size - 44))
 
 def Usage():
-    print 'Usage: eurosig.py <numbers file> <wav file>'
+    print('Usage: eurosig.py <numbers file> <wav file>')
 
-    print '(to "play" an existing numbers file to a wav file)'
-    print 'or:    eurosig.py <numbers file> <wav file> <# numbers> [<load>]'
-    print '(to generate a random sequence of numbers which will be logged'
+    print('(to "play" an existing numbers file to a wav file)')
+    print('or:    eurosig.py <numbers file> <wav file> <# numbers> [<load>]')
+    print('(to generate a random sequence of numbers which will be logged')
 
-    print 'to a numbers file and "played" to a wav file -- load will be'
-    print 'assumed at 0.5 if not given)'
+    print('to a numbers file and "played" to a wav file -- load will be')
+    print('assumed at 0.5 if not given)')
 
 if __name__ == '__main__':
     limit = 0

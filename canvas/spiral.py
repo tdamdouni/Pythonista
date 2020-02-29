@@ -3,6 +3,7 @@
 
 # https://gist.github.com/The-Penultimate-Defenestrator/ca552fad4225627417d9
 
+from __future__ import print_function
 import turtle
 t = turtle.Pen()
 t.ht()
@@ -33,6 +34,6 @@ def spiral(angle):
 		t.fd(x)
 		t.left(angle)
 spiral(89)
-print "done!"
+print("done!")
 turtle.getscreen().getcanvas().postscript(file="output.eps")
 

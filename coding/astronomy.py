@@ -18,6 +18,7 @@ Uranus      25559  8.68e25  1.32  .51   5.5   -0.72
 Neptune     24766  1.02e26  1.64  .41   7.8    0.67
 Pluto        1150  1.27e22  2.06  .55  13.6   -6.39  (z)
 """
+from __future__ import print_function
 
 # There is a little math involved, so we need to import the math module
 #Module
@@ -77,12 +78,12 @@ body = [sun,moon]
 # This function calculates the area of the planet using the formula for the area of a sphere (had to look it up)
 def Calculate_Area(planet_arg):
 	area = 4 *(pie * math.pow(planet_arg['radius'],2))
-	print 'The area of ' + planet_arg['name'] + ' is ' + str(area) + ' ' + planet_arg['units'] + planet_arg['abbr']
+	print('The area of ' + planet_arg['name'] + ' is ' + str(area) + ' ' + planet_arg['units'] + planet_arg['abbr'])
 	return area
 
 
-print "Lesson " + str(lesson_number)
-print title
+print("Lesson " + str(lesson_number))
+print(title)
 
 # Using the Calculate_Area() function:
 Calculate_Area(mercury)
@@ -91,7 +92,7 @@ Calculate_Area(earth)
 
 # Getting the radius of the planet using another formula I looked up on google and returning it
 def Get_Radius(planet_arg):
-	print 'The radius of ' + planet_arg['name'] + ' is ' + str(planet_arg['radius']) + ' ' + planet_arg['units'] + planet_arg['abbr']
+	print('The radius of ' + planet_arg['name'] + ' is ' + str(planet_arg['radius']) + ' ' + planet_arg['units'] + planet_arg['abbr'])
 	return planet_arg['radius']
 
 # We can return the mass of something given it's coefficient and power
@@ -101,7 +102,7 @@ def Set_Mass(coefficient,power):
 	
 # And we can get the mass or a particular planet
 def Get_Mass(planet_arg):
-	print 'The mass of ' + planet_arg['name'] + ' is ' + planet_arg['mass']
+	print('The mass of ' + planet_arg['name'] + ' is ' + planet_arg['mass'])
 	return planet_arg['mass']
 	
 

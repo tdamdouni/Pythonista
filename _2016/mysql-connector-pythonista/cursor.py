@@ -232,7 +232,7 @@ class MySQLCursor(CursorBase):
                 c = escape(c)
                 c = quote(c)
                 res[k] = c
-        except StandardError, e:
+        except StandardError as e:
             raise errors.ProgrammingError(
                 "Failed processing pyformat-parameters; %s" % e)
         else:
@@ -258,7 +258,7 @@ class MySQLCursor(CursorBase):
             res = map(self._connection.converter.to_mysql,res)
             res = map(self._connection.converter.escape,res)
             res = map(self._connection.converter.quote,res)
-        except StandardError, e:
+        except StandardError as e:
             raise errors.ProgrammingError(
                 "Failed processing format-parameters; %s" % e)
         else:
@@ -273,7 +273,7 @@ class MySQLCursor(CursorBase):
             for idx,v in enumerate(rowdata):
                 flddsc = desc[idx]
                 res += (self._connection.converter.to_python(flddsc, v),)
-        except StandardError, e:
+        except StandardError as e:
             raise errors.InterfaceError(
                 "Failed converting row to Python types; %s" % e)
         else:
@@ -288,7 +288,7 @@ class MySQLCursor(CursorBase):
             self._rowcount = res['affected_rows']
             self._last_insert_id = res['insert_id']
             self._warning_count = res['warning_count']
-        except (KeyError, TypeError), err:
+        except (KeyError, TypeError) as err:
             raise errors.ProgrammingError(
                 "Failed handling non-resultset; %s" % err)
         
@@ -370,7 +370,7 @@ class MySQLCursor(CursorBase):
         try:
             if isinstance(operation, unicode):
                 operation = operation.encode(self._connection.charset)
-        except (UnicodeDecodeError, UnicodeEncodeError), e:
+        except (UnicodeDecodeError, UnicodeEncodeError) as e:
             raise errors.ProgrammingError(str(e))
             
         if params is not None:
@@ -390,7 +390,7 @@ class MySQLCursor(CursorBase):
             self._executed = stmt
             try:
                 self._handle_result(self._connection.cmd_query(stmt))
-            except errors.InterfaceError, err:
+            except errors.InterfaceError as err:
                 if self._connection._have_next_result:
                     raise errors.InterfaceError(
                         "Use multi=True when executing multiple statements")
@@ -445,7 +445,7 @@ class MySQLCursor(CursorBase):
                 if self.with_rows and self._have_unread_result():
                     self.fetchall()
                 rowcnt += self._rowcount
-        except (ValueError, TypeError), err:
+        except (ValueError, TypeError) as err:
             raise errors.InterfaceError(
                 "Failed executing the operation; %s" % err)
         except:
@@ -525,7 +525,7 @@ class MySQLCursor(CursorBase):
 
         except errors.Error:
             raise
-        except StandardError, e:
+        except StandardError as e:
             raise errors.InterfaceError(
                 "Failed calling stored routine; %s" % e)
 
@@ -552,7 +552,7 @@ class MySQLCursor(CursorBase):
             cnt = c.execute("SHOW WARNINGS")
             res = c.fetchall()
             c.close()
-        except StandardError, e:
+        except StandardError as e:
             raise errors.InterfaceError, errors.InterfaceError(
                 "Failed getting warnings; %s" % e), sys.exc_info()[2]
         

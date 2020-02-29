@@ -2,6 +2,7 @@
 
 # https://gist.github.com/derickfay/8891099
 # http://dfay.fastmail.fm/et/
+from __future__ import print_function
 import re
 import sys
 
@@ -23,4 +24,4 @@ for i in sorted(theList):
 		j = j+i[1]+"\n"
 
 j = j[:-1]
-print j
+print(j)

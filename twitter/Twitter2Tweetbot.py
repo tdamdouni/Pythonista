@@ -1,3 +1,4 @@
+from __future__ import print_function
 import clipboard
 import console
 import webbrowser
@@ -10,7 +11,7 @@ twitter_name = 'jayhickey'
 
 try:
 	mytext = sys.argv[1]
-	print clipboard.get()
+	print(clipboard.get())
 except IndexError:
 	mytext = clipboard.get()
 	
@@ -26,7 +27,7 @@ if mytext.count('/') < 3 or mytext.find('tweets') != -1:
 	mytext = 'tweetbot://' + twitter_name + '/user_profile' + u.path
 	
 # console.clear()
-print mytext
+print(mytext)
 
 webbrowser.open(mytext)
 

@@ -4,6 +4,7 @@
 
 # This script takes the taskpaper file passed as an argument and reschedules completed recurring tasks based on their due date, done date and recurring frequency. The task is put in the project it was completed on, even if it has been archived at the end of the file. The script looks for the following tags: - @due(YYYY-MM-DD) e.g. @due(2015-04-17) - @done(YYYY-MM-DD) e.g. @done(2015-04-17). If the done date is not included, the script won't register that task as completed. - @freq(nF). This is the recurring frequency, where n is an integer and F can be d (days), w (weeks), m (months) or y (years). e.g. if @freq(2m) the task will be done every two months. Note: If a task is completed before its due date, it will be put at the top of the file with the unmodified due date for further manual processing.
 
+from __future__ import print_function
 import re
 import shutil
 import os
@@ -31,12 +32,12 @@ def WriteToTaskpaper(tskList,tskFile):
 	
 	with open('tmpFile', 'w') as tmpFile:
 
-		print 'Writing to file...'
+		print('Writing to file...')
 		for line in tskList:
 			tmpFile.write(line)
 
 
-	print 'Copying and removing temp file.'
+	print('Copying and removing temp file.')
 	shutil.copy('tmpFile',tskFile)
 	os.remove('tmpFile')
 
@@ -59,7 +60,7 @@ def AddTask(newTask):
 	
 	if projectRegex: pName = projectRegex.group(1)
 	else: pName = 'None'
-	print 'Project Name from Task ----> '+pName
+	print('Project Name from Task ----> '+pName)
 
 	newTask = re.sub(projectPattern, '', newTask)
 
@@ -134,7 +135,7 @@ def RescheduleTask(dueDt, freq):
 			baseTime = timedelta(weeks=+1)
 			newDt = dueDt + baseTime*int(wFreq.group(1))
 	except ValueError:
-		print 'Alert: wrong frequency format.'
+		print('Alert: wrong frequency format.')
 		newDt = 'Error in Frequency Provided'
 	
 	return newDt
@@ -191,14 +192,14 @@ if __name__ == "__main__":
 
 			newTask = newTask+'@due('+newDueDate.isoformat()+')\n'
 			
-			print 'Old Task > '+task
-			print 'New Task > '+newTask
+			print('Old Task > '+task)
+			print('New Task > '+newTask)
 			
 			AddTask(newTask)
 			
 	
 		else:
-			print 'Task done before Due Date. Adding to the top of the list.'
+			print('Task done before Due Date. Adding to the top of the list.')
 			pendingTaskList.insert(0, task)
 
 	WriteToTaskpaper(pendingTaskList, tpFile)

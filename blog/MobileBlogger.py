@@ -4,6 +4,7 @@
 
 # https://gist.github.com/b00giZm/cc704ba2a96e4a319e9e#file-mobileblogger-py
 
+from __future__ import print_function
 import appex
 import console
 import keychain
@@ -124,7 +125,7 @@ class MobileBlogger:
 		
 def main():
 	if not appex.is_running_extension():
-		print 'Running in Pythonista app, using test data...\n'
+		print('Running in Pythonista app, using test data...\n')
 		text = '''
 		'''
 	else:
@@ -185,7 +186,7 @@ def main():
 		mb.create_new_post(results['title'], text, metas)
 		console.hud_alert('New post created!')
 	else:
-		print 'No input text found.'
+		print('No input text found.')
 		
 if __name__ == '__main__':
 	main()

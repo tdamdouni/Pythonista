@@ -2,6 +2,7 @@
 
 # https://www.macstories.net/reviews/pythonista-2-0-brings-action-extension-ipad-pro-support-code-editor-improvements-and-more/
 
+from __future__ import print_function
 import httplib, urllib, base64, clipboard, json, requests, datetime, appex, photos, console, dialogs
 
 timestamp = datetime.datetime.now()
@@ -28,7 +29,7 @@ if appex.is_running_extension() is True:
 else:
     image = photos.pick_image(original=True, raw_data=True)
 
-print 'Uploading to Kraken...'
+print('Uploading to Kraken...')
 console.show_activity()
 
 request = requests.post(
@@ -43,7 +44,7 @@ if (response['success']):
     console.hud_alert('Lossless image uploaded to Kraken.', 'success')
     final = response['kraked_url']
 else:
-    print 'Fail. Error message: %s ' % response['error']
+    print('Fail. Error message: %s ' % response['error'])
 
 urlOcr = '/vision/v1/ocr'
 
@@ -63,7 +64,7 @@ body = {
     "Url": final,
 }
 
-print 'Performing OCR...'
+print('Performing OCR...')
 
 body = json.dumps(body)
 
@@ -73,7 +74,7 @@ response = conn.getresponse()
 back = response.read()
 conn.close()
 
-print 'OCR successfully performed.'
+print('OCR successfully performed.')
 data = json.loads(back)
 
 s = ''
@@ -83,5 +84,5 @@ for item in data["regions"]:
         for word in line["words"]:
             s += ' ' + word["text"]
 
-print s
+print(s)
 dialogs.share_text(s)

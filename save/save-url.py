@@ -2,6 +2,7 @@
 
 # https://github.com/khilnani/pythonista-scripts/blob/master/extensions/save-url.py
 
+from __future__ import print_function
 import clipboard, datetime, console, appex
 import json, re, os, sys, shutil, urllib2
 

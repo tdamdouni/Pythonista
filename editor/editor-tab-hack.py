@@ -2,6 +2,7 @@
 
 # https://forum.omz-software.com/topic/2590/add-editor-buttons-changes-not-reflected/8
 
+from __future__ import print_function
 from objc_util import *
 
 UIApplication = ObjCClass('UIApplication')
@@ -20,13 +21,13 @@ def main():
 	#Add the item
 	rightItems=list(tabVC.navigationItem().rightBarButtonItems())
 	
-	print tabVC.navigationItem().rightBarButtonItems()
+	print(tabVC.navigationItem().rightBarButtonItems())
 	
 	rightItems.insert(-1,overviewItem)
 	rightItems=ns(rightItems)
 	rightItems.init()
 	tabVC.navigationItem().set_rightBarButtonItems_(rightItems)
-	print tabVC.navigationItem().rightBarButtonItems()
+	print(tabVC.navigationItem().rightBarButtonItems())
 	
 	#tabVC.persistentLeftBarButtonItems = [overviewItem]
 	tabVC.reloadBarButtonItemsForSelectedTab()

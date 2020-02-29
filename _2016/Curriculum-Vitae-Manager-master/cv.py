@@ -4,6 +4,7 @@ CV Generator.
 Johann du Toit - South-Africa
 https://github.com/Johanndutoit
 """
+from __future__ import print_function
 
 import io, os, sys, urllib, time
 from xml.dom.minidom import parse, parseString
@@ -16,13 +17,13 @@ from PySide.QtWebKit import *
 
 # Read in all the information
 
-print "CV Generator - The easy way to build and update a cv"
-print "v0.0.1 - Johann du Toit (South-Africa , Roar!!!!)"
-print "====================================================="
+print("CV Generator - The easy way to build and update a cv")
+print("v0.0.1 - Johann du Toit (South-Africa , Roar!!!!)")
+print("=====================================================")
 
 if len(sys.argv) <= 2:
 	# Oops no data file exit now!
-	print "Specify a Data XML file and a Output filename!"
+	print("Specify a Data XML file and a Output filename!")
 	sys.exit(0)
 
 # Read the Data XML File
@@ -414,14 +415,14 @@ template_page = template_page.replace('{opensource_block}', opensource_block_str
 # If the filename that the user gave us contains .html then we just save it as html else we save it as pdf
 if ".html" in sys.argv[2] or ".htm" in sys.argv[2]:
 
-	print "Generating CV in HTML format"
+	print("Generating CV in HTML format")
 
 	# Write it out to the .HTML FILE
 	write_file_handler = open(os.path.abspath(sys.argv[2]), 'w')
 	write_file_handler.write(template_page)
 	write_file_handler.close()
 
-	print "Generated CV at " + os.path.abspath(sys.argv[2])
+	print("Generated CV at " + os.path.abspath(sys.argv[2]))
 elif ".doc" in sys.argv[2] or ".docx" in sys.argv[2]:
 	# TODO generate the CV in word format
 	pass
@@ -432,7 +433,7 @@ else:
 		# Check if the output file has .pdf in the path if not we add it.
 		pdf_filename = pdf_filename + ".pdf"
 
-	print "Generating CV in PDF format"
+	print("Generating CV in PDF format")
 
 	app = QApplication(sys.argv)
 
@@ -453,7 +454,7 @@ else:
 
 	def convertIt():
 		web.print_(printer)
-		print "Generated CV at " + os.path.abspath(pdf_filename)
+		print("Generated CV at " + os.path.abspath(pdf_filename))
 		sys.exit(0)
 
 	QObject.connect(web, SIGNAL("loadFinished(bool)"), convertIt)

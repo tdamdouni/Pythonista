@@ -2,6 +2,7 @@
 
 # https://github.com/kevinjs/algoprep/blob/master/python/calc/calcpi.py
 
+from __future__ import print_function
 from math import hypot
 from random import random
 from functools import wraps
@@ -17,7 +18,7 @@ def timeit(func):
         st = time.time()
         result = func(*args, **kwargs)
         ed = time.time()
-        print '%s cost: %s sec' %(func.__name__ ,ed-st)
+        print('%s cost: %s sec' %(func.__name__ ,ed-st))
         return result
     return wrapper
 
@@ -53,13 +54,13 @@ def run_eventlet(tries, nbF):
     pass
 
 if __name__=='__main__':
-    print run_single(4000, 3000)
+    print(run_single(4000, 3000))
     #print 'run multi thread, 1'
     #print run_multi_thread(4000, 3000, 1)
     #print 'run multi thread, 2'
     #print run_multi_thread(4000, 3000, 2)
-    print 'run multi processing, 1'
-    print run_multi_processing(4000, 3000, 1)
-    print 'run multi processing, 4'
-    print run_multi_processing(4000, 3000, 4)
+    print('run multi processing, 1')
+    print(run_multi_processing(4000, 3000, 1))
+    print('run multi processing, 4')
+    print(run_multi_processing(4000, 3000, 4))
 

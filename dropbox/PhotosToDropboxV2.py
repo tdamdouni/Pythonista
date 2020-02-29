@@ -46,6 +46,7 @@ Many thanks to @cclauss for excellent help and advice with
 tightening the code and improving the program flow of the
 script.
 '''
+from __future__ import print_function
 import console
 import location
 import photos
@@ -267,7 +268,7 @@ def main(assets, keep_meta, geo_tag, dest_dir, size):
 	drop_client = get_client()
 	
 	for asset in assets:
-		print '\nProcessing photo...'
+		print('\nProcessing photo...')
 		# Get date & time photo was taken
 		the_year, the_date, the_time = get_date_time(asset.creation_date)
 		
@@ -295,10 +296,10 @@ def main(assets, keep_meta, geo_tag, dest_dir, size):
 		
 		fmt = '\nOriginal Name: {}\nNew Name: {}'
 		
-		print fmt.format(old_filename, new_filename)
+		print(fmt.format(old_filename, new_filename))
 		
 		fmt = '\nOriginal Size: {}x{}\nNew Size: {}x{}'
-		print fmt.format(w, h, new_w, new_h)
+		print(fmt.format(w, h, new_w, new_h))
 		
 		addToMsg = 'with' if keep_meta else 'without'
 		
@@ -307,7 +308,7 @@ def main(assets, keep_meta, geo_tag, dest_dir, size):
 		else:
 			msg = '\nCreating copy of original photo {} the metadata from original.'
 			
-		print msg.format(addToMsg)
+		print(msg.format(addToMsg))
 		
 		# Fetch asset's image data & return it as a io.BytesIO object and then as a byte string
 		img = asset.get_image_data(original = False).getvalue()
@@ -337,14 +338,14 @@ def main(assets, keep_meta, geo_tag, dest_dir, size):
 			img = img.resize((new_w, new_h),Image.ANTIALIAS)
 			oriented = 'unknown'
 			
-		print '\nThe orientation for photo is {}.'.format(oriented)
+		print('\nThe orientation for photo is {}.'.format(oriented))
 		
 		if geo_tag:
 			# Get geo-tagging info
 			the_location = get_location(asset.location)
 			
 			if the_location:
-				print '\nGeo-tagging photo...'
+				print('\nGeo-tagging photo...')
 				
 				the_time = the_time.replace('.',':')
 				the_location = '{} @ {} in {}'.format(the_date, the_time, the_location)
@@ -372,10 +373,10 @@ def main(assets, keep_meta, geo_tag, dest_dir, size):
 				# Rotate photo back to original position
 				img = img.rotate(-degrees)
 			else:
-				print '\nNo gps metadata for photo.'
+				print('\nNo gps metadata for photo.')
 				no_gps.append(new_filename)
 		else:
-			print '\nPhoto will not be geo_tagged. Flag is set to false.'
+			print('\nPhoto will not be geo_tagged. Flag is set to false.')
 			
 		# Save new image
 		img.save('without_meta.jpg')
@@ -394,7 +395,7 @@ def main(assets, keep_meta, geo_tag, dest_dir, size):
 			# Use resized photo that has not had metadata added back into it
 			jpg_file = 'without_meta.jpg'
 			
-		print '\nUploading photo to Dropbox...'
+		print('\nUploading photo to Dropbox...')
 		'''
 		Upload resized photo with or without original metadata to
 		Dropbox...use 'with' statement to open file so file
@@ -406,22 +407,22 @@ def main(assets, keep_meta, geo_tag, dest_dir, size):
 			# Give Dropbox server time to process...pause time is user defined.
 			time.sleep(upload_pause)
 		response = jpg_file = the_location = img = the_date = the_time = the_year = new_filename = old_filename = ''
-		print '\nUpload successful.'
+		print('\nUpload successful.')
 		
 	finish = time.clock()
-	print '{} photos processed in {}'.format(count, timer(start, finish, count, upload_pause))
+	print('{} photos processed in {}'.format(count, timer(start, finish, count, upload_pause)))
 	
 	if no_exif:
-		print '\nPhotos with no DateTimeOriginal tag in their metadata and will need categorizing manually:'
-		print '\n'.join(no_exif)
+		print('\nPhotos with no DateTimeOriginal tag in their metadata and will need categorizing manually:')
+		print('\n'.join(no_exif))
 		
 	if no_resize:
-		print '\nPhotos that did not get resized because either you chose not to resize, or they were smaller than the minumum size of 1600x1200:'
-		print '\n'.join(no_resize)
+		print('\nPhotos that did not get resized because either you chose not to resize, or they were smaller than the minumum size of 1600x1200:')
+		print('\n'.join(no_resize))
 		
 	if no_gps:
-		print '\nPhotos that did not get geo-tagged because there was no gps info in the photo\'s metadata:'
-		print '\n'.join(no_gps)
+		print('\nPhotos that did not get geo-tagged because there was no gps info in the photo\'s metadata:')
+		print('\n'.join(no_gps))
 		
 	# Re-enable idle timer
 	console.set_idle_timer_disabled(False)

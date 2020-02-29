@@ -1,3 +1,4 @@
+from __future__ import print_function
 # Put notebooks/files into a zipped backpack/zip archive with this [schoolbag script](https://github.com/TutorialDoctor/Scripts-for-Kids/blob/master/Python/schoolbag.py).
 
 class Notebook:
@@ -17,7 +18,7 @@ class Notebook:
 	
 	def Read(self):
 		with open(self.file_name,'r') as infile:
-			print infile.read()
+			print(infile.read())
 	
 	def Erase(self):
 		with open(self.file_name,'w') as outfile:
@@ -49,7 +50,7 @@ class Backpack:
 	def Read(self):
 		with ZipFile(self.file_name,'r') as inzip:
 			for item in Backpack.items:
-				print inzip.open(item,'r').read()
+				print(inzip.open(item,'r').read())
 
 
 # IMPLEMENTATION

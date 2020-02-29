@@ -55,6 +55,7 @@
 	*** UPDATE ***
 	I replaced all the iter calls 
 '''
+from __future__ import print_function
 from collections import OrderedDict
 import sqlite3
 import console
@@ -243,8 +244,8 @@ class SqlLitePragmas (object):
 				
 			console.write_link(k, _web_help_link.format(link))
 			if v:
-				print '  -({0})'.format(pragma_messages[v])
-			print '\n'
+				print('  -({0})'.format(pragma_messages[v]))
+			print('\n')
 
 if __name__ == '__main__':
 	sqllite_pragmas = SqlLitePragmas('pragma_test_db.db')
@@ -255,21 +256,21 @@ if __name__ == '__main__':
 	
 
 	if obj[1]: # then we have a error object
-		print obj.message()
-		print 'program can not continue...'
+		print(obj.message())
+		print('program can not continue...')
 		sys.exit()
 	
-	print '{pad} Orderdict PRAGMA settings {pad}'.format(pad = '#' * 5)
-	print obj[0]
-	print '\n' * 2
+	print('{pad} Orderdict PRAGMA settings {pad}'.format(pad = '#' * 5))
+	print(obj[0])
+	print('\n' * 2)
 	
-	print	 '{pad} __str__ Version {pad}'.format(pad = '#' * 5)	
-	print sqllite_pragmas
-	print '\n' * 2
+	print('{pad} __str__ Version {pad}'.format(pad = '#' * 5))	
+	print(sqllite_pragmas)
+	print('\n' * 2)
 	
-	print	 '{pad} PRAGMA HELP LINKS {pad}'.format(pad = '#' * 5)	
-	print '\n'
-	print sqllite_pragmas.print_pragma_help_links()
+	print('{pad} PRAGMA HELP LINKS {pad}'.format(pad = '#' * 5))	
+	print('\n')
+	print(sqllite_pragmas.print_pragma_help_links())
 
 print('''
 {pad} Orderdict PRAGMA settings {pad}

@@ -1,3 +1,4 @@
+from __future__ import print_function
 # https://forum.omz-software.com/topic/3251/how-to-detect-retina-display
 
 # isretina.py

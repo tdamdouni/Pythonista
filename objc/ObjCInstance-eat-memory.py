@@ -2,6 +2,7 @@
 
 # https://forum.omz-software.com/topic/3674/objcinstance-eat-memory/3
 
+from __future__ import print_function
 from objc_util import *
 import ctypes,time,os,struct,array,console
 
@@ -161,5 +162,5 @@ while 1:
 	ui_cnt += 1
 	mem_used,mem_free = Get_mem()
 	if (ui_cnt % 10) == 0:
-		print 'Memory used:','{:,} K'.format(mem_used/1024),dWhen
+		print('Memory used:','{:,} K'.format(mem_used/1024),dWhen)
 

@@ -2,6 +2,7 @@
 
 # https://gist.github.com/The-Penultimate-Defenestrator/653e36a0b00a3eb79e7f
 
+from __future__ import print_function
 from images2gif import writeGif
 from PIL import Image, ImageDraw
 import console
@@ -82,9 +83,9 @@ for x in range(0, W/2, W/64):
 	alpha = x / float(W/2)
 	images.append(Image.blend(a, b, alpha))
 	console.clear()
-	print str(alpha*100)+'%'
+	print(str(alpha*100)+'%')
 
 console.clear()
-print 'writing...'
+print('writing...')
 
 writeGif('sierpinski.gif', images, 2.0/len(images))

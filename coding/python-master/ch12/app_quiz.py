@@ -1,3 +1,4 @@
+from __future__ import print_function
 #Let python know we will use the csv module in our program.
 import csv
 
@@ -36,4 +37,4 @@ with open('TSE_sample_data.csv') as my_csv_file:
         
 #Loop through the sorted list of keys and print out corresponding values. 
 for key in a_list:                                      
-    print key, date_and_word[key]                       
+    print(key, date_and_word[key])                       

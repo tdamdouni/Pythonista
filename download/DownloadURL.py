@@ -4,11 +4,12 @@
 
 # Download File Extension
 
+from __future__ import print_function
 import urllib2, appex, time, zipfile, os
 a=time.time()
 if appex.is_running_extension():
 	url = appex.get_url()
-	print url
+	print(url)
 	e=0
 else:
 	import clipboard, editor
@@ -24,10 +25,10 @@ output = open(home+name, 'w')
 output.write(file)
 output.close()
 
-print 'Downloaded '+name+' to /Documents/'+name+' in '+str(time.time()-a)+' seconds'
+print('Downloaded '+name+' to /Documents/'+name+' in '+str(time.time()-a)+' seconds')
 
 if zipfile.is_zipfile(home+name):
-	print 'Extracting zip...'
+	print('Extracting zip...')
 	zipfile.ZipFile(home+name).extractall(home)
 	os.remove(home+name)
 if e:

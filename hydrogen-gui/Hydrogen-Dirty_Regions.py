@@ -1,3 +1,4 @@
+from __future__ import print_function
 #
 # Hydrogen experiment to use "dirty region rendering" and improve rendering large GUIs
 #
@@ -212,7 +213,7 @@ class HComponent (object):
 				try:
 					value = LAF[key]
 				except KeyError:
-					print self.__class__.__name__ + " cannot find value for laf[" + key + "]"
+					print(self.__class__.__name__ + " cannot find value for laf[" + key + "]")
 					pass
 			return value
 			
@@ -352,20 +353,20 @@ class HComponent (object):
 				self.last_drawn_bounds = NOT_DRAWN
 				self.is_dirty = False
 		elif self.needs_redraw:
-			print self.__class__.__name__ + " needs_redraw, frame: " + str(self.get_scene().frame_no)
+			print(self.__class__.__name__ + " needs_redraw, frame: " + str(self.get_scene().frame_no))
 			self.h_draw(x_offset + self.bounds.x, y_offset + self.bounds.y, dirty_regions)
 			self.last_drawn_bounds = self.bounds
 			self.needs_redraw = False
 			self.is_dirty = False
 			dirty_regions.append(self.bounds)
 		elif self.in_dirty_regions(dirty_regions):
-			print self.__class__.__name__ + " in_dirty_regions, frame: " + str(self.get_scene().frame_no)
+			print(self.__class__.__name__ + " in_dirty_regions, frame: " + str(self.get_scene().frame_no))
 			self.h_draw(x_offset + self.bounds.x, y_offset + self.bounds.y, dirty_regions)
 			self.last_drawn_bounds = self.bounds
 			self.needs_redraw = False
 			self.is_dirty = False
 		elif self.intersects_dirty_regions(dirty_regions):
-			print self.__class__.__name__ + " intersects_dirty_regions, frame: " + str(self.get_scene().frame_no)
+			print(self.__class__.__name__ + " intersects_dirty_regions, frame: " + str(self.get_scene().frame_no))
 			self.h_draw(x_offset + self.bounds.x, y_offset + self.bounds.y, dirty_regions)
 			self.last_drawn_bounds = self.bounds
 			self.needs_redraw = False
@@ -616,7 +617,7 @@ class HScene (Scene, HContainer):
 		dirty_regions = []
 		self.prefill_dirty_regions(dirty_regions)
 		if len(dirty_regions) > 0:
-			print dirty_regions
+			print(dirty_regions)
 		self.redraw_check(0, 0, dirty_regions)
 		self.redraw_components_check(0, 0, dirty_regions)
 		self.frame_no += 1

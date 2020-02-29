@@ -1,6 +1,7 @@
 #coding: utf-8
 # http://nsah.de/python-pythonista-und-sqlite-teil-1.htm
 
+from __future__ import print_function
 import sqlite3 # das Modul wird natürlich benötigt
 import time
 conn = sqlite3.connect('NilsDatabase.sqlite') # Öffnet (und erstellt ggf.) die Datenbank
@@ -42,7 +43,7 @@ cur.execute(query)
 rows = cur.fetchall()
 
 for row in rows:
-  print row
+  print(row)
 
 GetDataDateEnd = datetime.datetime.now()
 GetDataDate = GetDataDateEnd - datetime.timedelta(month=1)

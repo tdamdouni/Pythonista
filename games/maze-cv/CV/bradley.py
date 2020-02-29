@@ -1,4 +1,5 @@
 '''Bradley adaptive thresholding. Credit goes to http://stackoverflow.com/a/33092928/4414003, where user rayryeng wrote an implementation much more efficient than mine'''
+from __future__ import print_function
 import numpy as np
 from PIL import Image
 import time
@@ -76,8 +77,8 @@ def bradley_threshold(image, s=None, t=None):
 
 if __name__ == '__main__':
 	p=Image.open('../Test Images/test.jpg').convert('L')
-	print p.size
+	print(p.size)
 	
 	a=time.time()
 	bradley_threshold(p).show()
-	print time.time()-a
+	print(time.time()-a)

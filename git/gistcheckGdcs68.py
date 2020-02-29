@@ -1,3 +1,4 @@
+from __future__ import print_function
 # https://forum.omz-software.com/topic/795/sharing-code-on-github/29
 
 # https://gist.github.com/gdcs68/9031843
@@ -82,7 +83,7 @@ def auth(username, password):
 	result = urllib2.urlopen(request)
 	rdata = result.read()
 	result.close()
-	print rdata
+	print(rdata)
 	return json.loads(rdata)
 
 #get auth data

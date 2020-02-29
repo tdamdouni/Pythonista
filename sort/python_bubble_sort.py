@@ -1,3 +1,4 @@
+from __future__ import print_function
 ### Example of a bubble sort in Python where you are given
 ### a list of unordered numbers and need to order them
 
@@ -10,6 +11,6 @@ def bubbleSort(nums): # Bubble Sort Algorithm
             if nums[j] < nums[i]:
                 nums[j], nums[i] = nums[i], nums[j]
 
-    print nums
+    print(nums)
 
 bubbleSort(ls)

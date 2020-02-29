@@ -1,3 +1,4 @@
+from __future__ import print_function
 # https://forum.omz-software.com/topic/2314/share-code-uialertcontroller
 
 # coding: utf-8
@@ -9,7 +10,7 @@ UIAlertController = ObjCClass('UIAlertController')
 UIAlertAction     = ObjCClass('UIAlertAction')
 
 def ok_pressed(sender):
-    print 'OK pressed'
+    print('OK pressed')
 
 app = UIApplication.sharedApplication()
 win = app.keyWindow()

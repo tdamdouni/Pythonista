@@ -1,3 +1,4 @@
+from __future__ import print_function
 # <author>Pieter Muller</author>
 # <date>2012-11-14</date>
 
@@ -12,10 +13,10 @@ def Print(msg):
 
 	if (outputFilename != None):
 		outputFile = open(outputFilename,'a')
-		print >> outputFile, msg
+		print(msg, file=outputFile)
 		outputFile.close()
 	else:
-		print msg
+		print(msg)
 		
 		
 def Describe(dbFile):
@@ -75,9 +76,9 @@ if __name__ == "__main__":
 		outputFilename = sys.argv[2]
 		Describe(dbFile)
 	else:
-		print "\n\tUsage:"
-		print "\n\t\tDBDescribe.py {dbFile}"
-		print "\t\t\tPrints summary of {dbFile} to standard output."
-		print "\n\t\tDBDescribe.py {dbFile} {outputFile}"
-		print "\t\t\tAppends summary of {dbFile} to {outputFile}."
+		print("\n\tUsage:")
+		print("\n\t\tDBDescribe.py {dbFile}")
+		print("\t\t\tPrints summary of {dbFile} to standard output.")
+		print("\n\t\tDBDescribe.py {dbFile} {outputFile}")
+		print("\t\t\tAppends summary of {dbFile} to {outputFile}.")
 

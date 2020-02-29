@@ -8,6 +8,7 @@
 # Delete or re-sort Hyperlinks before they are saved.
 # You need the reportlab module!
 
+from __future__ import print_function
 from bs4 import BeautifulSoup
 import urllib2, dialogs
 from reportlab.lib.pagesizes import A4, letter
@@ -22,7 +23,7 @@ if items != None:
 	imagelink = items.get('imagelink')
 	qmlink = items.get('qmlink')
 	if url == 'http://' or url == '' or filename == '':
-		print 'Please type in a valid website/filename!'
+		print('Please type in a valid website/filename!')
 	else:
 		urlcontent = urllib2.urlopen(url).read()
 		start = url.find('://') + 3
@@ -68,4 +69,4 @@ if items != None:
 		else:
 			pdf = SimpleDocTemplate(filename, pagesize=letter)
 		pdf.build(items)
-		print 'PDF is created.'
+		print('PDF is created.')

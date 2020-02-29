@@ -4,6 +4,7 @@
 
 # https://forum.omz-software.com/topic/2744/pythonista-hung-can-t-stop-program-stop-x-button-was-disabled/7
 
+from __future__ import print_function
 import threading
 import time
 import Queue
@@ -16,7 +17,7 @@ class WorkerCounterThread(threading.Thread):
 	
 	def __init__(self, stopnum, outputQueue, delay_val):
 		threading.Thread.__init__(self)
-		print"\nThread delay = %1.2f\n" % delay_val
+		print("\nThread delay = %1.2f\n" % delay_val)
 		self.count = 1
 		self.finished = False
 		self.stopnum = stopnum
@@ -65,7 +66,7 @@ def main():
 		if accum:
 			accum_len = len(accum)
 			for count in accum:
-				print"Count=%2d, len(accum) = %d" % (count, accum_len)
+				print("Count=%2d, len(accum) = %d" % (count, accum_len))
 				count_stats[accum_len] += 1
 				
 			accum_loops += 1
@@ -77,10 +78,10 @@ def main():
 		time.sleep(random.random())
 		loops += 1
 		
-	print"\nDONE: mainloops= {:,},accum_loops=%d\n".format(loops) % accum_loops
+	print("\nDONE: mainloops= {:,},accum_loops=%d\n".format(loops) % accum_loops)
 	
 	for val, count in count_stats.iteritems():
-		print"Val = %2d, count = %2d" %(val, count)
+		print("Val = %2d, count = %2d" %(val, count))
 		
 	
 if __name__ == '__main__':

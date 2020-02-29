@@ -1,3 +1,4 @@
+from __future__ import print_function
 # https://omz-forums.appspot.com/editorial/post/5842883206709248
 # displaying image or matplotlib plot in a imageview ui element
 
@@ -29,10 +30,10 @@ def get_num(s):
 	
 def getWxt520Data():
 	cwd = os.getcwd()
-	print cwd
+	print(cwd)
 	
 	local_files = os.listdir(cwd)  # using 'list' as a variable name is dangerous... 'time' also.
-	print local_files
+	print(local_files)
 	
 	# list comprehension, only file ending with '.wxt', case insensitive!
 	files = [f for f in local_files if f.upper().endswith('.WXT')]
@@ -69,8 +70,8 @@ def getWxt520Data():
 			dict_parameter2index[q[0]]=i
 			dict_index2parameter[i]=q[0]
 			
-	print dict_parameter2index
-	print dict_index2parameter
+	print(dict_parameter2index)
+	print(dict_index2parameter)
 	
 # create decimal time
 	dtime=[]

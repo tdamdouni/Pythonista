@@ -1,5 +1,6 @@
 # coding: utf-8
 
+from __future__ import print_function
 import ui
 from objc_util import *
 import dialogs
@@ -35,11 +36,11 @@ def setText(info,point=0):
 	if info == "typed":
 		tvobj.setTypingAttributes_(tv.attributedText)
 		tv.attributedText.addAttributes_range_({NSFontAttributeName:UIFont.fontWithName_size_("Helvetica-Bold",15)},NSRange(tv.text[-1],1))
-		print tv.attributedText
+		print(tv.attributedText)
 		tvobj.setAttributedText_(tv.attributedText)
 	elif info == "selected":
 		tvobj.setAttributedText_(tv.attributedText)
-		print "=====\n"+str(tv.attributedText)+"\n====="
+		print("=====\n"+str(tv.attributedText)+"\n=====")
 def bold(sender):
 	global TYPING_WITH
 	dBold = {
@@ -52,7 +53,7 @@ def bold(sender):
 		#print "hi"
 		tv.attributedText.addAttributes_range_(dBold,NSRange(tv.selected_range[0],tv.selected_range[1]-tv.selected_range[0]))
 		
-		print tv.attributedText
+		print(tv.attributedText)
 		
 		setText("selected",(tv.selected_range[0]))
 	elif SELECTING == False:

@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+from __future__ import print_function
 import feedparser, webbrowser, urllib, console, sys, datetime, time
 console.clear()
 selected = "no"
@@ -19,7 +20,7 @@ for post in feedparser.parse(feedURL).entries:
 		# add to outp
 		outp = outp + "|" + (datetime.datetime.strftime(postDate, '%H:%M')) + "|[" + post.title.replace("|","–") + "](" + post.link + ")|\n"
 # User confirmation
-print outp
+print(outp)
 if "preselect" in sys.argv:
 	selected = "yes"
 elif not raw_input("-- Press enter to import"):

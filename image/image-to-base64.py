@@ -1,3 +1,4 @@
+from __future__ import print_function
 # https://gist.github.com/GuyCarver/4132799
 
 # https://forum.omz-software.com/topic/39/create-pythonista-webclips-directly-from-pythonista/2
@@ -42,10 +43,10 @@ def main():
 	#show the image.
 	img.show()
 	#print some info.
-	print str(img.format)
-	print str(img.mode)
-	print str(img.size)
-	print str(img.info)
+	print(str(img.format))
+	print(str(img.mode))
+	print(str(img.size))
+	print(str(img.info))
 	
 if __name__ == '__main__':
 	main()

@@ -4,6 +4,7 @@
 
 # A thread synchronization, such as threading.Event, threading.Semaphore, works nicely here. wait_modal requires you to present then close the view.
 
+from __future__ import print_function
 import ui
 import threading
 class Scraper (object):
@@ -21,12 +22,12 @@ class Scraper (object):
 
 # Example:
 def parse_response(response):
-    print 'Webview finished loading - ' + response
+    print('Webview finished loading - ' + response)
 
 def main():
     s = Scraper(parse_response, 'https://www.google.com', 'document.title;')
     # Wait until scraper finished loading
     s.ready_event.wait()
-    print 'Main thread finished executing'
+    print('Main thread finished executing')
 if __name__ == '__main__':
     main()

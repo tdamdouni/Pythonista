@@ -2,6 +2,7 @@
 
 # https://github.com/pysmath/pythonista_utilities/blob/master/save.py
 
+from __future__ import print_function
 import appex, console
 import ui
 import os.path
@@ -60,7 +61,7 @@ def save(folder):
         sFp = appex.get_file_path()
         if sFp:
             console.hud_alert('Saving...')
-            print 'Destination folder: ', os.path.join(folder, os.path.basename(sFp))
+            print('Destination folder: ', os.path.join(folder, os.path.basename(sFp)))
             shutil.copy(sFp, folder)
             console.hud_alert('Saved')
 

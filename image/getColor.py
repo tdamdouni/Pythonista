@@ -1,3 +1,4 @@
+from __future__ import print_function
 # https://gist.github.com/cclauss/8169809
 # Creates a dict of 752 Pythonista scene.Colors from the tkinter color palette. This allow you to get colors like: 'light goldenrod yellow', 'light steel blue', 'SlateGray4', 'etc. I would recommend using this code to find the colors that work for your app and then hardcoding them into you app. Loading all 752 colors every time your app runs will not make you popular with your users.
 

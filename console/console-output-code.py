@@ -2,6 +2,7 @@
 
 # https://forum.omz-software.com/topic/3211/console-output-code/10
 
+from __future__ import print_function
 import ui
 from objc_util import *
 import console
@@ -12,12 +13,12 @@ NSFileManager = ObjCClass('NSFileManager')
 
 UIDevice = ObjCClass('UIDevice')
 
-print 'Enter directory'
+print('Enter directory')
 
 path = raw_input()
 
 files = NSFileManager.defaultManager().contentsOfDirectoryAtPath_error_(path,None)
-print files
+print(files)
 
 
 @ui.in_background

@@ -6,6 +6,7 @@
 
 # Inmate scraping script
 
+from __future__ import print_function
 import requests
 from bs4 import BeautifulSoup
 import time
@@ -125,10 +126,10 @@ for inmate_link in inmates_links[:10]:
 	
 # We now have details (in our dictionary) for each inmate. Let's print those out.
 for inmate in inmates:
-	print '{0}, {1}'.format(inmate['name'], inmate['age'])
-	print '{0} {1} from {2}'.format(inmate['race'], inmate['sex'], inmate['city'])
-	print 'Booked at {0}'.format(inmate['booked_at'])
-	print ''
+	print('{0}, {1}'.format(inmate['name'], inmate['age']))
+	print('{0} {1} from {2}'.format(inmate['race'], inmate['sex'], inmate['city']))
+	print('Booked at {0}'.format(inmate['booked_at']))
+	print('')
 	
 	
 # We might want to do more than just print out our numbers though. Maybe
@@ -144,7 +145,7 @@ for inmate in inmates:
 	else:
 		inmate_cities[inmate['city']] = 1
 		
-print inmate_cities
+print(inmate_cities)
 
 
 # Or, each inmate's race
@@ -156,5 +157,5 @@ for inmate in inmates:
 	else:
 		inmate_races[inmate['race']] = 1
 		
-print inmate_races
+print(inmate_races)
 

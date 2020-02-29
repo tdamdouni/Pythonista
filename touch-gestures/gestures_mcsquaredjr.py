@@ -7,6 +7,7 @@
 # 8/3/13 created
 # Copyright (c) by McSquaredJr.
 
+from __future__ import print_function
 from scene import *
 from random import random
 from colorsys import hsv_to_rgb
@@ -57,7 +58,7 @@ class Utils(object):
 			xt = xo - 0.707*R
 			yt = yo - 0.707*R
 		else: 
-			print '***Error, incorrect position %s' % (pos)
+			print('***Error, incorrect position %s' % (pos))
 			xt = None
 			yt = None
 		return xt, yt

@@ -3,6 +3,7 @@
     PDF to HTML converter.
 
 """
+from __future__ import print_function
 
 import os
 import sys
@@ -110,12 +111,12 @@ def create_index_html(target, slides, prefix):
 
     out = open(target, "wt")
 
-    print >> out, "<!doctype html>"
+    print("<!doctype html>", file=out)
     for i in xrange(0, len(slides)):
         alt = slides[i]  # ALT text for this slide
         params = dict(src=u"slide%d.jpg" % (i+1), prefix=prefix, alt=alt)
         line = SLIDE_TEMPLATE.format(**params)
-        print >> out, line.encode("utf-8")
+        print(line.encode("utf-8"), file=out)
 
     out.close()
 

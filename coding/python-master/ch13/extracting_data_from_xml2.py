@@ -1,3 +1,4 @@
+from __future__ import print_function
 import urllib
 import xml.etree.ElementTree as ET
 
@@ -21,13 +22,13 @@ tree = ET.fromstring(data)
 #that represents the comment structures in the XML tree.
 results = tree.findall('comments/comment')
 
-print len(results)
+print(len(results))
 
 num = 0 
 for item in results:
     num = num + int(item.find('count').text)
 
-print num
+print(num)
 
 
     

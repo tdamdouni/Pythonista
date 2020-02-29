@@ -2,6 +2,7 @@
 
 # https://forum.omz-software.com/topic/3091/print-leaves-console-blank
 
+from __future__ import print_function
 import webbrowser
 import httplib
 import sys
@@ -30,7 +31,7 @@ class textfromweb:
 		return self.text
 		
 t = textfromweb()
-print t.get_weather_text()
+print(t.get_weather_text())
 
 # -------------------
 
@@ -57,5 +58,5 @@ class textfromweb:
 		return self.text
 		
 t = textfromweb()
-print t.get_weather_text()
+print(t.get_weather_text())
 

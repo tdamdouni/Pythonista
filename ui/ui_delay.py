@@ -1,3 +1,4 @@
+from __future__ import print_function
 # https://forum.omz-software.com/topic/2359/console-output-from-ui
 
 # coding: utf-8
@@ -12,10 +13,10 @@ ui_file = '[{"selected" : false,"frame" : "{{0, 0}, {240, 240}}","class" : "View
 #    print 'c'
 
 def button(sender):
-   print 'b'
+   print('b')
    def other():
         time.sleep(5) # call to some time consuming task
-        print 'c'
+        print('c')
    ui.delay(other,0.01) #easy way to launch a new thread
 
 def download():
@@ -26,8 +27,8 @@ print('b')
 
 open('Test_abcd.pyui', 'w').write(ui_file)
 
-print 'a'
+print('a')
 v = ui.load_view('Test_abcd')
 v.present('sheet')
 v.wait_modal()
-print 'd'
+print('d')

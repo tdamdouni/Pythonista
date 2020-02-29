@@ -4,6 +4,7 @@
 
 # https://forum.omz-software.com/topic/2493/ui-control-subclassing-really-good-idea/9
 
+from __future__ import print_function
 import ui 
 '''
 dict of  dicts
@@ -44,9 +45,9 @@ class ControlExt(ui.View):
 		
 		
 		if kwargs.get('parent', False):
-			print 'we have a parent'
+			print('we have a parent')
 			if kwargs.get('add', False):
-				print 'we will add ourself to parent'
+				print('we will add ourself to parent')
 				kwargs.get('parent').add_subview(self)
 	
 		#self.ignore_attr_list = object.get_attr_ignore_list()
@@ -62,7 +63,7 @@ class ControlExt(ui.View):
 		 'border_width, corner_radius, background_color']:
 			if hasattr(self,'obj'):
 				if name in dir(self.obj):
-					print name, value
+					print(name, value)
 					object.__setattr__(self.obj,name,value)
 				
 		object.__setattr__(self,name,value)
@@ -90,7 +91,7 @@ class ControlExt(ui.View):
 					setattr(obj, k , self.get_named_ui_image(v))
 				else:
 					setattr(obj, k, v)
-				print '**object kwargs ', k,v
+				print('**object kwargs ', k,v)
 		
 	def get_named_ui_image(self, image_name):
 		return ui.Image.named(image_name)
@@ -107,7 +108,7 @@ class ControlExt(ui.View):
 					setattr(obj, k , self.get_named_ui_image(v))
 				else:
 					setattr(obj, k, v)
-				print '**creation ', k,v
+				print('**creation ', k,v)
 				
 	def get_attr_ignore_list(self):
 		return  _attr_ignore_attrs.get(self.obj.__class__.__name__, [])
@@ -160,7 +161,7 @@ class uiButtonExt(_uiButtonExt ):
 	
 	
 def btn_action(sender):
-	print 'btn hit'
+	print('btn hit')
 	
 if __name__ == '__main__':
 	f = (0,0, 500, 500)

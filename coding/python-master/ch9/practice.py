@@ -1,3 +1,4 @@
+from __future__ import print_function
 #How to create a dictionary?
 
 eng2esp = dict()
@@ -97,4 +98,4 @@ for line in fhand:
         #    counts[word] = 1
         #else:
         #    counts[word] += 1
-print counts
+print(counts)

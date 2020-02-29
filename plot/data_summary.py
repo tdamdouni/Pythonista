@@ -3,6 +3,7 @@
 
 # https://gist.github.com/beer2011/e0aac99bfe48ad31ae3f
 
+from __future__ import print_function
 import numpy as np
 import matplotlib.mlab as mlab
 import matplotlib.pyplot as plt
@@ -12,17 +13,17 @@ import math
 
 # 簡易データ分析
 def summary(np_arr):
-	print '----- summary -----'
-	print '標本= ', np_arr
-	print '標本数= ', len(np_arr)
-	print '最小値= ', np.min(np_arr)
-	print '最大値= ', np.max(np_arr)
-	print '中央値= ', np.median(np_arr)
-	print '平均= ', np.mean(np_arr)
-	print '分散= ', np.var(np_arr)
-	print '標準偏差= ', np.std(np_arr)
-	print '不偏分散= ', fuhen_var(np_arr)
-	print '標本標準誤差= ', hyoujyun_gosa(np_arr)
+	print('----- summary -----')
+	print('標本= ', np_arr)
+	print('標本数= ', len(np_arr))
+	print('最小値= ', np.min(np_arr))
+	print('最大値= ', np.max(np_arr))
+	print('中央値= ', np.median(np_arr))
+	print('平均= ', np.mean(np_arr))
+	print('分散= ', np.var(np_arr))
+	print('標準偏差= ', np.std(np_arr))
+	print('不偏分散= ', fuhen_var(np_arr))
+	print('標本標準誤差= ', hyoujyun_gosa(np_arr))
 	
 # 不偏分散
 def fuhen_var(np_arr):
@@ -68,10 +69,10 @@ def main():
 	expected = np.array(EXPECTED)
 	# 
 	while True:
-		print 's)ummary, p)lot, h)istgram, c)hi_test, q)uit = ?'
+		print('s)ummary, p)lot, h)istgram, c)hi_test, q)uit = ?')
 		inp = raw_input()
 		if inp == 'q':
-			print '***終了しました***'
+			print('***終了しました***')
 			break
 		elif inp == 's':
 			summary(np_arr)

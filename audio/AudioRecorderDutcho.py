@@ -1,3 +1,4 @@
+from __future__ import print_function
 # https://gist.github.com/Dutcho/030e8cc7ecbcfd0a1e50
 
 # Retrieved from https://gist.githubusercontent.com/omz/9882a00abf59c6009fa4/raw/139afad596c6d46f2f104b16120eefbb36e9960c/Audio%2520Recorder.py on Sat 26-Dec-2015 07:22:53
@@ -21,15 +22,15 @@ def main():
     started_recording = recorder.record()
 
     if started_recording:
-        print 'Recording started, press the "stop script" button to end recording...'
+        print('Recording started, press the "stop script" button to end recording...')
     try:
         while True:
             pass
     except KeyboardInterrupt:
-        print 'Stopping...'
+        print('Stopping...')
         recorder.stop()
         recorder.release()
-        print 'Stopped recording.'
+        print('Stopped recording.')
         import console
         console.quicklook(os.path.abspath('Recording.m4a'))
 

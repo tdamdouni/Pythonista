@@ -1,3 +1,4 @@
+from __future__ import print_function
 # https://gist.github.com/TutorialDoctor/4f6fbda9224ef2767cef
 
 # Fuzzy Logic experiment (WIP)
@@ -29,7 +30,7 @@ def GetFuzzyValues(List,Label):
 	for i in range(List[0],List[-1]+1):
 		#print the item and the membership of the item in the list.
 		# Print a lanel for the lis also
-		print str(i) + ' is ' + str((float(i)-List[0]) / (List[-1]-List[0])) + ' ' + Label
+		print(str(i) + ' is ' + str((float(i)-List[0]) / (List[-1]-List[0])) + ' ' + Label)
 
 def Membership(x,List):
 	"Returns the membership of a value in a list."
@@ -45,41 +46,41 @@ def Is(x,List):
 		#And if it is smaller than the last item in the list...
 		if x<= List[-1]:
 			#print the membership of the item in the list...
-			print Membership(x,List)
+			print(Membership(x,List))
 			#And return True
 			return True
 	#No else statement is needed since the return statement will exit the function.
 	#Print the membership and return False if the above condition is false.
-	print Membership(x,List)
+	print(Membership(x,List))
 	return False 
 
 def Get(List,x,i=0):
 	steps=0
 	while x<=List[1]:
-		print (x,Membership(x,List))
+		print((x,Membership(x,List)))
 		x=x+i
-		print 'steps: {}'.format(steps)
+		print('steps: {}'.format(steps))
 		steps=steps+1
 
 def document(f):
 	#Print the name of a function and its document string.
-	print f.__name__ +': '+ f.__doc__+'\n'
+	print(f.__name__ +': '+ f.__doc__+'\n')
 #------------------------------------------------------------------------------
 
 
 #USAGE
 #------------------------------------------------------------------------------
-print Is(7,cold)
-print Is(92,hot)
-print Is(joes_funniness,funny)
-print Is(joes_distance,close)
-print Is(joes_distance,cold)
-print 
-print Is(joes_funniness,hot)
-print 
+print(Is(7,cold))
+print(Is(92,hot))
+print(Is(joes_funniness,funny))
+print(Is(joes_distance,close))
+print(Is(joes_distance,cold))
+print() 
+print(Is(joes_funniness,hot))
+print() 
 Get(close,sam,.1)
 print(Is(Georgia,hot))
-print
+print()
 #How to interpret this membership?
 #------------------------------------------------------------------------------
 

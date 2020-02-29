@@ -1,3 +1,4 @@
+from __future__ import print_function
 # TERBILANG
 # Menyebut angka dalam bahasa Indonesia
 # by: @beezing
@@ -108,5 +109,5 @@ v = rand_digit(12)
 s = '{:,}'.format(v).replace(',','.')
 bilang = terbilang(v)
 
-print s+' = '+bilang
+print(s+' = '+bilang)
 ngomong(bilang)

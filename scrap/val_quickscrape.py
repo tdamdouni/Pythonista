@@ -1,3 +1,4 @@
+from __future__ import print_function
 # https://gist.github.com/paultopia/02ca124a111a70faf174
 
 # This is a very basic scraper-spider for those html books where there's a table of contents page that links to a 
@@ -99,7 +100,7 @@ filename = 'scrape' + str(strftime("%Y%m%d%H%M%S", gmtime())) + '.html'
 with open(filename, 'w') as outfile:
 	outfile.write('<br><br>'.join(texts))
 
-print 'Scraping complete! Output saved as: ' + filename
+print('Scraping complete! Output saved as: ' + filename)
 
 
 # The MIT License (MIT)

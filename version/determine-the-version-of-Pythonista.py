@@ -1,6 +1,7 @@
 # coding: utf-8
 # determine the version of Pythonista
 # https://github.com/Phuket2/Pythonista/blob/master/ideas/pythonistia_version
+from __future__ import print_function
 try:
 	__import__('imp').find_module('dialogs')
 	__PISTA_VER__ = 1.6
@@ -27,7 +28,7 @@ def PythonistaVersion2():
 		
 		
 		
-print timeit.Timer('PythonistaVersion',setup="from __main__ import PythonistaVersion").timeit()
+print(timeit.Timer('PythonistaVersion',setup="from __main__ import PythonistaVersion").timeit())
 
-print timeit.Timer('PythonistaVersion2',setup="from __main__ import PythonistaVersion2").timeit()
+print(timeit.Timer('PythonistaVersion2',setup="from __main__ import PythonistaVersion2").timeit())
 

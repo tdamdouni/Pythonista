@@ -1,3 +1,4 @@
+from __future__ import print_function
 #Change your socket program so that it counts the number of characters
 #it has received and stops displaying any text after it has shown 3000 characters.
 
@@ -26,7 +27,7 @@ while True:
     count += len(data)
     if (len(data) < 1) or count >= 3000:
         break
-    print data
+    print(data)
 
 mysock.close()
-print count
+print(count)

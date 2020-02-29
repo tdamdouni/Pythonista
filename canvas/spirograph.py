@@ -1,3 +1,4 @@
+from __future__ import print_function
 #Spirograph.py
 
 # https://github.com/The-Penultimate-Defenestrator/Python/blob/master/Spirograph.py
@@ -110,7 +111,7 @@ def createSpiral(armOne, armTwo, color):
 			inarow += 1
 			
 		if inarow > 5:
-			print "Pattern is detected to be repeating itself"
+			print("Pattern is detected to be repeating itself")
 			run = 0
 			
 			
@@ -133,13 +134,13 @@ def createSpiral(armOne, armTwo, color):
 			canvas.delete(line)
 		lines = []
 		time.sleep(0.005)
-	print "Done!"
+	print("Done!")
 	clearbutton.config(text="Clear Canvas")
 	
 def getColor():
 	global thecolor
 	thecolor = tkColorChooser.askcolor("black")[1]
-	print thecolor
+	print(thecolor)
 	
 def graph():
 	len1 = scale3.get()

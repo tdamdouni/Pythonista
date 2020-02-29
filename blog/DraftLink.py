@@ -5,6 +5,7 @@
 # from a this bookmarklet:
 # javascript:(function()%7Bif(document.location.href.indexOf('http')===0)document.location.href='pythonista://DraftLink?action=run&argv='+document.location.href;%7D)();
 
+from __future__ import print_function
 import clipboard
 import sys
 import re
@@ -38,7 +39,7 @@ def makefile(slug, url, title):
 	
 # Upload draft to Dropbox
 def upload(slug, dropbox_draft_path):
-	print '\nUploading ' + slug +'.md'
+	print('\nUploading ' + slug +'.md')
 	f = open(slug + '.md')
 	db = dropboxlogin.get_client()
 	response = db.put_file(dropbox_draft_path + slug + '.md', f)
@@ -49,7 +50,7 @@ if __name__ == '__main__':
 	# Path to drafts folder
 	dropbox_draft_path = '/Blog/blog/drafts/'
 	
-	print sys.argv[1]
+	print(sys.argv[1])
 	url = sys.argv[1]
 	title = sys.argv[2]
 	title = console.input_alert('Edit Title', '', title)

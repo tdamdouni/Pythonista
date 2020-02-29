@@ -48,6 +48,7 @@ metadata of image files. Many thanks to
 Ben Leslie for maintaining the pexif
 module at github.
 '''
+from __future__ import print_function
 import console
 import location
 import photos
@@ -272,7 +273,7 @@ def main():
   metadata.
   '''
   for count,photo in enumerate(choose):
-    print '\nProcessing photo...'
+    print('\nProcessing photo...')
     # Raw data string and Metadata
     img, meta = photo
     #print meta
@@ -301,10 +302,10 @@ def main():
 
     fmt = '\nOriginal Name: {}\nNew Name: {}'
 
-    print fmt.format(old_filename, new_filename)
+    print(fmt.format(old_filename, new_filename))
 
     fmt = '\nOriginal Size: {}x{}\nNew Size: {}x{}'
-    print fmt.format(w, h, new_w, new_h)
+    print(fmt.format(w, h, new_w, new_h))
 
     addToMsg = 'with' if keepMeta else 'without'
 
@@ -313,7 +314,7 @@ def main():
     else:
       msg = '\nCreating copy of original photo {} the metadata from original.'
 
-    print msg.format(addToMsg)
+    print(msg.format(addToMsg))
 
     # Write string image of original photo to Pythonista script dir
     with open('with_meta.jpg', 'wb') as out_file:
@@ -327,7 +328,7 @@ def main():
       theLocation = GetLocation(meta)
 
       if theLocation:
-        print '\nGeo-tagging photo...'
+        print('\nGeo-tagging photo...')
 
         # Find out if photo is oriented for landscape or portrait
         orientation = meta.get('Orientation')  # ccc: add a default?
@@ -341,7 +342,7 @@ def main():
         '''
         degrees, oriented = GetDegreesToRotate(orientation)
 
-        print '\nThe orientation for photo is {}.'.format(oriented)
+        print('\nThe orientation for photo is {}.'.format(oriented))
 
         theTime = theTime.replace('.',':')
         theLocation = '{} @ {} in {}'.format(theDate, theTime, theLocation)
@@ -366,10 +367,10 @@ def main():
         # Rotate back to original position
         img = img.rotate(-degrees)
       else:
-        print '\nNo gps metadata for photo.'
+        print('\nNo gps metadata for photo.')
         no_gps.append(new_filename)
     else:
-      print '\nPhoto will not be geotagged. Flag is set to false.'
+      print('\nPhoto will not be geotagged. Flag is set to false.')
 
     meta = ''
     resized = img.resize((new_w, new_h),Image.ANTIALIAS)
@@ -392,7 +393,7 @@ def main():
       # Use resized photo that has not had metadata added back into it
       jpgFile = 'without_meta.jpg'
 
-    print '\nUploading photo to Dropbox...'
+    print('\nUploading photo to Dropbox...')
 
     '''
     Upload resized photo with or without
@@ -406,22 +407,22 @@ def main():
     # Give Dropbox server time to process
       time.sleep(5)
     response = jpgFile = theLocation = img = theDate = theTime = theYear = new_filename = old_filename = ''
-    print '\nUpload successful.'
+    print('\nUpload successful.')
 
   finish = time.clock()
-  print '{} photos processed in {}'.format(count + 1, Timer(start, finish, count + 1))
+  print('{} photos processed in {}'.format(count + 1, Timer(start, finish, count + 1)))
 
   if no_exif:
-    print '\nPhotos with no DateTimeOriginal tag in their metadata and will need categorizing manually:'
-    print '\n'.join(no_exif)
+    print('\nPhotos with no DateTimeOriginal tag in their metadata and will need categorizing manually:')
+    print('\n'.join(no_exif))
 
   if no_resize:
-    print '\nPhotos that did not get resized because either you chose not to resize, or they were smaller than the minumum size of 1600x1200:'
-    print '\n'.join(no_resize)
+    print('\nPhotos that did not get resized because either you chose not to resize, or they were smaller than the minumum size of 1600x1200:')
+    print('\n'.join(no_resize))
 
   if no_gps:
-    print '\nPhotos that did not get geo-tagged because there was no gps info in the photo\'s metadata:'
-    print '\n'.join(no_gps)
+    print('\nPhotos that did not get geo-tagged because there was no gps info in the photo\'s metadata:')
+    print('\n'.join(no_gps))
 
 if __name__ == '__main__':
   main()

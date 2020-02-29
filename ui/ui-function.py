@@ -1,3 +1,4 @@
+from __future__ import print_function
 # https://forum.omz-software.com/topic/3575/need-help-about-ui-function/4
 
 #!python2
@@ -9,7 +10,7 @@ MPicker = ObjCClass('MPMediaPickerController')
 
 def mediaPicker_didPickMediaItems_(_self, _cmd, _mp, _collection):
 	picker = ObjCInstance(_mp)
-	print '!!!', picker, ObjCInstance(_collection)
+	print('!!!', picker, ObjCInstance(_collection))
 	picker.dismissViewControllerAnimated_completion_(True, None)
 	
 def mediaPickerDidCancel_(_self, _cmd, _mp):
@@ -87,7 +88,7 @@ if __name__ == '__main__':
 import ui
 
 def mediaPicker_didPickMediaItems_(_self,_cmd,mediaPicker,mediaItemCollection):
-	print '!!!',ObjCInstance(mediaPicker),ObjCInstance(mediaItemCollection)
+	print('!!!',ObjCInstance(mediaPicker),ObjCInstance(mediaItemCollection))
 	
 mediaPickerDelegate = create_objc_class('mediaPickerDelegate',methods=[mediaPicker_didPickMediaItems_],protocols=['mediaPickerDelegate'])
 mpDelegate = mediaPickerDelegate.alloc().init()
@@ -109,7 +110,7 @@ MPicker = ObjCClass('MPMediaPickerController')
 
 def mediaPicker_didPickMediaItems_(_self, _cmd, _mp, _collection):
 	picker = ObjCInstance(_mp)
-	print '!!!', picker, ObjCInstance(_collection)
+	print('!!!', picker, ObjCInstance(_collection))
 	picker.dismissViewControllerAnimated_completion_(True, None)
 	
 def mediaPickerDidCancel_(_self, _cmd, _mp):

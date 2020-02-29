@@ -1,3 +1,4 @@
+from __future__ import print_function
 # https://forum.omz-software.com/topic/2052/gif-art-in-python/13
 
 import numpy as np
@@ -181,10 +182,10 @@ images = []
 for x in range(100):
 	images.append(make_frame(x/100.0).resize((512,512), Image.ANTIALIAS))
 	console.clear()
-	print str(x+1)+'%'
+	print(str(x+1)+'%')
 	
 console.clear()
-print 'Writing gif...'
+print('Writing gif...')
 writeGif("pentagon.gif", images, duration=0.01)
 
 # --------------------
@@ -313,7 +314,7 @@ images = []
 for x in range(0,360,5):
 	images.append(c.make_frame(x))
 	console.clear()
-	print str((x/360.0)*100.0)[:5]+'%'
+	print(str((x/360.0)*100.0)[:5]+'%')
 	
 writeGif('cube.gif', images, 0.01)
 
@@ -423,11 +424,11 @@ for x in numbers:
 	alpha = x / float(W/2)
 	images.append(Image.blend(a, b, alpha))
 	console.clear()
-	print str(alpha*100)+'%'
+	print(str(alpha*100)+'%')
 	
 	
 console.clear()
-print 'writing...'
+print('writing...')
 
 writeGif('sierpinski.gif', images, 2.0/len(images))
 # --------------------

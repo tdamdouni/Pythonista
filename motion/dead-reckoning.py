@@ -26,6 +26,7 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE."""
+from __future__ import print_function
 
 def navigate():
 	import _motion as motion
@@ -37,14 +38,14 @@ def navigate():
 	m.stop()
 	m.start()
 	import time
-	print "\nStarting motion update, please wait 10 seconds for the values to stabilize. During this time, please avoid touching the phone"
+	print("\nStarting motion update, please wait 10 seconds for the values to stabilize. During this time, please avoid touching the phone")
 	"""First we start updating, we allow a 5 second time out because there is a significant amount of drift initially present"""
 	time.sleep(10)
-	print "\nStarting calibration in 10 seconds. Please keep the device UTTERLY still in an position that you expect it to be most commonly in during the measurements later."
+	print("\nStarting calibration in 10 seconds. Please keep the device UTTERLY still in an position that you expect it to be most commonly in during the measurements later.")
 	time.sleep(6)
-	print "\nCalibration starting in 5 seconds."
+	print("\nCalibration starting in 5 seconds.")
 	time.sleep(5)
-	print "\nCalibration starting..."
+	print("\nCalibration starting...")
 	caliacc = zeros(3)
 	caliangle = zeros(3)
 	cali=1
@@ -53,7 +54,7 @@ def navigate():
 		caliangle = caliangle + m.rotation_rate
 	zeroingacc= divide(caliacc, 300)
 	zeroingang=divide(caliangle, 300)
-	print "\nCalibration ended, you may start to move in 5 seconds."
+	print("\nCalibration ended, you may start to move in 5 seconds.")
 	time.sleep(5)
 	zeroingacc0=zeroingacc[0]
 	zeroingacc1=zeroingacc[1]
@@ -89,7 +90,7 @@ def navigate():
 		#speed = map(lambda x, y: time*add(x, y), speed, map(sub, list(m.user_acceleration), zeroingacc))
 		#angle = map(add, angle, list(m.rotation_rate))
 		#movement = map(lambda x,y: time*add(x,y), movement, map(lambda l, o: l*o, map(cos, angle), speed))
-		print movement0, movement1, movement2
+		print(movement0, movement1, movement2)
 		clear()
 navigate()
 

@@ -1,3 +1,4 @@
+from __future__ import print_function
 # https://gist.github.com/Cethric/83a4b2ccf25798d5e074
 
 # coding: utf-8
@@ -200,7 +201,7 @@ class CameraView(ui.View):
         self.captureInput = AVCaptureDeviceInput.deviceInputWithDevice_error_(self.inputDevice, None)
 
         if not self.captureInput:
-            print 'Failed to create device'
+            print('Failed to create device')
             exit()
     
         self.captureOutput = AVCaptureVideoDataOutput.alloc().init()
@@ -213,13 +214,13 @@ class CameraView(ui.View):
         if self.captureSession.canAddOutput_(self.captureOutput):
             self.captureSession.addOutput_(self.captureOutput)
         
-        print 'setup'
+        print('setup')
         
         self.captureVideoPreviewLayer = AVCaptureVideoPreviewLayer.layerWithSession_(self.captureSession)
         
         queue_test = dispatch_queue_create('imageDispatch', None)
         
-        print 'callback'
+        print('callback')
         self.captureOutput.setMinFrameDuration_(CMTimeMake(1, 2), argtypes=[CMTime], restype=None)
         callback = delegate_call.alloc().init()
         self.captureOutput.setSampleBufferDelegate_queue_(callback, queue_test)

@@ -1,3 +1,4 @@
+from __future__ import print_function
 # @viticci
 # Taken from Viticci :: https://github.com/viticci/pythonista-scripts
 # Takes two iPhone 5 screenshots, places them side-by-side in a single image set to the clipboard.
@@ -22,23 +23,23 @@ _1 = im1.resize((366,650),Image.ANTIALIAS)
 _2 = im2.resize((366,650),Image.ANTIALIAS)
 background = Image.new('RGBA', (746,650), (255, 255, 255, 255))
 
-print "Which image goes on the left? (in Photos.app order)"
+print("Which image goes on the left? (in Photos.app order)")
 
-print "[1] The first image"
+print("[1] The first image")
 
-print "[2] The second image"
+print("[2] The second image")
 
 formatType = raw_input("Select an image: ")
 
 if formatType == "x":
 
-    print "Exited"
+    print("Exited")
 
 else:
 
     #userInput = raw_input("Input String: ")
 
-    print "\n\n"
+    print("\n\n")
 
 if formatType == "1":
 

@@ -1,3 +1,4 @@
+from __future__ import print_function
 # https://gist.github.com/paultopia/460acfda07f9ca7314e5
 
 # https://forum.omz-software.com/topic/2502/quick-hackish-html-book-documentation-scraper-for-offline-reading
@@ -50,4 +51,4 @@ filename = 'scrape' + str(strftime("%Y%m%d%H%M%S", gmtime())) + '.html'
 with open(filename, 'w') as outfile:
 	outfile.write('<br><br>'.join(texts))
 
-print 'scraping complete!'
+print('scraping complete!')

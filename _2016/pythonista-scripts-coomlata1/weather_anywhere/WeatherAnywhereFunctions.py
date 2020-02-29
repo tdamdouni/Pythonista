@@ -5,6 +5,7 @@ Author: @coomlata1
 
 This script serves only as a placeholder for the functions that are needed to run the 'WeatherAnywhereScene' script. 
 '''
+from __future__ import print_function
 import console
 import dialogs
 import csv
@@ -121,7 +122,7 @@ def pick_your_weather():
       update_city_list('remove', item)
       console.hud_alert('Done')
     else:
-      print 'Something wtong, more than 1 removed item'
+      print('Something wtong, more than 1 removed item')
 
   # 'From A City You Can Add To List' button was tapped
   def btn_type_tapped(sender):

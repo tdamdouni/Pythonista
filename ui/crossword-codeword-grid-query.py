@@ -3,6 +3,7 @@
 
 # https://forum.omz-software.com/topic/1303/crossword-codeword-grid-query/33
 
+from __future__ import print_function
 import ui
 
 # test of view interchanging
@@ -13,7 +14,7 @@ def button1_tapped(sender):
 	
 	
 def button2_tapped(sender):
-	print 'button2 tapped'
+	print('button2 tapped')
 	
 class FirstClass(ui.View):
 
@@ -21,7 +22,7 @@ class FirstClass(ui.View):
 		self.present()
 		self.background_color = 'black'
 		button1 = ui.Button(frame = (1, 1, self.width, self.height))
-		print 'parent_view started at ', self.width
+		print('parent_view started at ', self.width)
 		button1.title = 'First Class'
 		self.add_subview(button1)
 		button1.action = button1_tapped
@@ -30,7 +31,7 @@ class FirstClass(ui.View):
 class SecondClass (ui.View):
 
 	def __init__(self):
-		print 'parent_view now = ', parent_view.width
+		print('parent_view now = ', parent_view.width)
 		self.background_color = 'white'
 		button2 =ui.Button(frame = (1, 1, parent_view.width, parent_view.height))
 		button2.title = 'Second Class'
@@ -54,14 +55,14 @@ def button1_tapped(sender):
 	root_view.add_subview(SecondClass(root_view.bounds))
 	
 def button2_tapped(sender):
-	print 'button2 tapped'
+	print('button2 tapped')
 	
 class FirstClass(ui.View):
 	def __init__(self, in_frame):
 		self.frame = in_frame
 		self.background_color = 'black'
 		button1 = ui.Button(frame = (1, 1, self.width, self.height))
-		print 'FirstClass frame is ', self.frame
+		print('FirstClass frame is ', self.frame)
 		button1.title = 'First Class'
 		self.add_subview(button1)
 		button1.action = button1_tapped
@@ -69,7 +70,7 @@ class FirstClass(ui.View):
 class SecondClass(ui.View):
 	def __init__(self, in_frame):
 		self.frame = in_frame
-		print 'SecondClass frame is ', self.frame
+		print('SecondClass frame is ', self.frame)
 		self.background_color = 'white'
 		button2 =ui.Button(frame = (1, 1, self.width, self.height))
 		button2.title = 'Second Class'
@@ -108,7 +109,7 @@ import ui, console
 
 def button_tapped(sender):
 	sender.superview.send_to_back()
-	print sender.name
+	print(sender.name)
 	
 class FirstClass(ui.View):
 	def __init__(self):
@@ -146,7 +147,7 @@ import ui
 
 def button_tapped(sender):
 	sender.superview.send_to_back()
-	print sender.name
+	print(sender.name)
 	
 def make_button(in_title='Untitled'):
 	button = ui.Button(title=in_title)
@@ -176,9 +177,9 @@ class SecondClass(ui.View):
 		
 parent_view = ui.View()
 parent_view.hidden = True
-print(parent_view.bounds, parent_view.frame)
+print((parent_view.bounds, parent_view.frame))
 parent_view.present()
-print(parent_view.bounds, parent_view.frame)
+print((parent_view.bounds, parent_view.frame))
 grids = [FirstClass(parent_view.bounds),
          SecondClass(parent_view.bounds)]
 for grid in grids:

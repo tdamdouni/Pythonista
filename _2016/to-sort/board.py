@@ -18,6 +18,7 @@
 #########################################################################
 
 """The chessboard itself."""
+from __future__ import print_function
 
 from Phantom.constants import *
 from Phantom.core.chessobj import PhantomObj
@@ -239,10 +240,10 @@ class Board (PhantomObj):
         if in_pythonista:
             import console
             console.set_font('DejaVuSansMono', 18)
-            print self._pprnt()
+            print(self._pprnt())
             console.set_font()
         else:
-            print self._pprnt()
+            print(self._pprnt())
     
     def __str__(self):
         return self.fen_str()

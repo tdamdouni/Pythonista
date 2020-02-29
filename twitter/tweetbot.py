@@ -1,3 +1,4 @@
+from __future__ import print_function
 # https://gist.github.com/djbouche/5079739
 
 import urllib
@@ -12,5 +13,5 @@ def tweet(txt,cb=CALLBACK_URL_BASE):
 	}
 	surl = url + urllib.urlencode(data)
 	webbrowser.open(surl)
-	print "Tweet Complete!"
+	print("Tweet Complete!")
 

@@ -3,6 +3,7 @@
 # http://www.macstories.net/reviews/fantastical-for-iphone-review/
 # Modified to work better with international characters
 
+from __future__ import print_function
 import webbrowser
 import clipboard
 import urllib
@@ -25,7 +26,7 @@ if loc == 1:
 	
 elif loc == 2:
 	event = newtask.decode('utf-8') + ' ' + when
-	print type(event)
+	print(type(event))
 	encoded = urllib.quote(event.encode('utf-8'), safe='')
 	
 text = fant + encoded

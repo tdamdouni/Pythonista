@@ -1,3 +1,4 @@
+from __future__ import print_function
 # https://gist.github.com/paultopia/e61d63cc58cecc36e3b1
 
 # Easy way to add CSS or whatever to header of a bunch of HTML files at once.
@@ -32,5 +33,5 @@ for dirpath, dirnames, filenames in os.walk(rootDir):
 	for fname in filenames:
 		if peek(os.path.join(dirpath, fname)):
 			addcss(os.path.join(dirpath, fname))
-			print 'Added to: ' + fname
+			print('Added to: ' + fname)
 

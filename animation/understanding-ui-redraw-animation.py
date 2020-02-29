@@ -2,6 +2,7 @@
 
 # https://forum.omz-software.com/topic/2570/understanding-ui-redraw-animation
 
+from __future__ import print_function
 import ui
 
 def colorIt(lbl):
@@ -9,7 +10,7 @@ def colorIt(lbl):
 	
 def buttonClick(sender):
 	for item in llst:
-		print item
+		print(item)
 		ui.delay(colorIt(item),1.0)
 		
 v = ui.load_view()
@@ -31,7 +32,7 @@ def colorIt(lbl):
 	
 def buttonClick(sender):
 	for i, item in enumerate(llst):
-		print item
+		print(item)
 		ui.delay(partial(colorIt, item), 1.0 * (i+1))
 		
 v = ui.load_view()
