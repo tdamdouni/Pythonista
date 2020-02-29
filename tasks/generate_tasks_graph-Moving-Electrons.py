@@ -2,6 +2,7 @@
 
 # https://gist.github.com/Moving-Electrons/eb55d919d5f56dc37c7a
 
+from __future__ import print_function
 import sys
 import re
 import datetime as dt
@@ -63,17 +64,17 @@ if __name__ == "__main__":
 		contents = infile.readlines()
 		
 	dates = Due_Dates_Dict(contents)
-	print "Dates List Created"
+	print("Dates List Created")
 	
 	today_date = dt.date.today()
 	today_str = today_date.strftime("%Y-%m-%d")
 	
 	later_date = dt.date.today() + dt.timedelta(days=NUMBER_OF_DAYS)
 	later_str = later_date.strftime("%Y-%m-%d")
-	print "Initial Date: "+today_str+"\nEnd Date: "+later_str
+	print("Initial Date: "+today_str+"\nEnd Date: "+later_str)
 	
 	# Defining dataframe index as a Datetime object
-	print 'Dates Parsed:', dates.keys()
+	print('Dates Parsed:', dates.keys())
 	
 	df_index = pd.to_datetime(dates.keys(), format='%Y-%m-%d')
 	
@@ -106,8 +107,8 @@ if __name__ == "__main__":
 	# Pandas plotting
 	line_plot = reduced_df_allDays.plot(legend=False, title='Tasks Distribution - Next '+str(NUMBER_OF_DAYS)+' Days',
 	y=['tasks'], kind='line')
-	print "Generating Graph.."
+	print("Generating Graph..")
 	fig = line_plot.get_figure()
 	fig.savefig(OUTPUT)
-	print "Done."
+	print("Done.")
 

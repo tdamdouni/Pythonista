@@ -7,21 +7,22 @@
 # Get pyOSC here: https://trac.v2.nl/wiki/pyOSC
 # The GitHub-hosted version of pyOSC is for Python 3 which isn't supported by Pythonista at the moment
 
+from __future__ import print_function
 from OSC import OSCServer
 
 server = OSCServer(("192.168.43.120", 8000))
 server.timeout = 0
 
-print "OSC Sever started. Press Ctrl-C to stop."
+print("OSC Sever started. Press Ctrl-C to stop.")
 
 
 def handler(addr, tags, data, client_address):
 	s = "Message '%s' from %s: " % (addr, client_address) + str(data)
-	print s
+	print(s)
 	
 	
 def quit_handler(addr, tags, data, client_address):
-	print "OSC Server quit."
+	print("OSC Server quit.")
 	server.close()
 	
 server.addMsgHandler('/msg/notes', handler)

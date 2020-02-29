@@ -5,6 +5,7 @@ Basic client for Pythonista Script Index (https://github.com/ywangd/Pythonista-S
 
 See also: https://github.com/ywangd/psiclient
 """
+from __future__ import print_function
 import platform
 import sys
 import os
@@ -94,7 +95,7 @@ def wget(url, output_file=None):
 	try:
 		#console.show_activity()
 		u = urllib2.urlopen(url)
-		print 'Opening: %s' % url
+		print('Opening: %s' % url)
 		
 		meta = u.info()
 		try:
@@ -102,11 +103,11 @@ def wget(url, output_file=None):
 		except IndexError:
 			file_size = 0
 			
-		print "Save as: %s " % output_file,
+		print("Save as: %s " % output_file, end=' ')
 		if file_size:
-			print "(%s bytes)" % file_size
+			print("(%s bytes)" % file_size)
 		else:
-			print
+			print()
 			
 		with open(output_file, 'wb') as f:
 			file_size_dl = 0
@@ -122,7 +123,7 @@ def wget(url, output_file=None):
 				else:
 					status = "%10d" % file_size_dl
 					
-				print status
+				print(status)
 				
 	except:
 		raise WgetException('not valid url')
@@ -158,7 +159,7 @@ def unzip(zfile, exdir=None):
 		altpath = os.path.join(os.path.dirname(zfile), altpath)
 		location = exdir or altpath
 		if (os.path.exists(location)) and not (os.path.isdir(location)):
-			print "%s: destination is not a directory" % location
+			print("%s: destination is not a directory" % location)
 			sys.exit(1)
 		elif not os.path.exists(location):
 			os.makedirs(location)
@@ -229,8 +230,8 @@ def dict_update(d, u):
 	
 def get_release_for_version(releases, ver_num=None):
 	if ver_num is not None:
-		print repr(ver_num)
-		print repr(releases)
+		print(repr(ver_num))
+		print(repr(releases))
 		for release in releases:
 			if ver_num == release['version']:
 				return release

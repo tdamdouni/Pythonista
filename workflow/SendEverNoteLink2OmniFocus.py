@@ -1,3 +1,4 @@
+from __future__ import print_function
 import clipboard
 import re
 import webbrowser
@@ -34,14 +35,14 @@ webURL = clipboard.get()
 
 if webURL != "":
 	shardID = get_shardID(webURL)
-	print 'shardID = ', shardID
+	print('shardID = ', shardID)
 	userID = get_userID(webURL)
-	print 'userID = ', userID
+	print('userID = ', userID)
 	noteID = get_noteID(webURL)
-	print 'noteID = ', noteID
+	print('noteID = ', noteID)
 	appifiedURL = "evernote:///view/" + userID + "/" + shardID + "/" + noteID + "/" + noteID + "/"
-	print appifiedURL
+	print(appifiedURL)
 	clipboard.set(appifiedURL)
-	print "Evernote URL copied to clipboard."
-	print 'Copying link to new OmniFocus action...'
+	print("Evernote URL copied to clipboard.")
+	print('Copying link to new OmniFocus action...')
 	webbrowser.open(ofURL+appifiedURL)

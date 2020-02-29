@@ -2,6 +2,7 @@
 
 # https://forum.omz-software.com/topic/3584/attributeerror-in-pil-_getexif-when-using-pick_asset-get_image-on-a-screenshot
 
+from __future__ import print_function
 import console
 import photos
 from PIL import Image

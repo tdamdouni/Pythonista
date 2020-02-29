@@ -1,3 +1,4 @@
+from __future__ import print_function
 # @parse @xmlrpc
 # http://www.leancrew.com/all-this/2013/01/local-archive-of-wordpress-posts/
 # https://gist.github.com/danielpunkass/9c55e99af283ec0e24ec
@@ -8,8 +9,8 @@ import xmlrpclib
 postLimit = 1000
 
 if (len(sys.argv) < 4):
-	print "Usage: %s <blogAPIURL> <username> <password>" % sys.argv[0]
-	print "E.g.: %s http://example.com/xmlrpc.php daniel 1234" % sys.argv[0]
+	print("Usage: %s <blogAPIURL> <username> <password>" % sys.argv[0])
+	print("E.g.: %s http://example.com/xmlrpc.php daniel 1234" % sys.argv[0])
 	sys.exit(0)
 
 blogServer = xmlrpclib.Server(sys.argv[1])
@@ -19,4 +20,4 @@ allPosts = blogServer.wp.getPosts(1, sys.argv[2], sys.argv[3], {"offset" : 0, "n
 
 allLinks = [x['link'] for x in allPosts]
 
-print "\n".join(allLinks)
+print("\n".join(allLinks))

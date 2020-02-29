@@ -1,3 +1,4 @@
+from __future__ import print_function
 # https://gist.github.com/dlo/4644960
 
 import clipboard
@@ -69,4 +70,4 @@ if response.status_code == 201:
         webbrowser.open("drafts://x-callback-url/create?text={}".format(response.json['html_url']))
 else:
     console.alert("Couldn't create Gist.")
-    print response.content
+    print(response.content)

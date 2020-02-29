@@ -1,3 +1,4 @@
+from __future__ import print_function
 # http://www.macdrifter.com/2014/02/the-taskpaper-rd-notebook.html
 
 # https://gist.github.com/pslobo/f89cb16d4ad384c9fc9f
@@ -68,13 +69,13 @@ for proj in projects:
         if tp[0].startswith("/"):
             project = re.compile("(^[\\w/].*:*(\\n\\w.*)*)", re.M) # Find Project Name and Project Comments
             tasks = re.compile("^[^/][\\t\\w]*-??\\s??(?!.*@done).+\\n*", re.M) # Finds every line not containing @done
-            print project.match(tempstr).group() # Prints the Project name and comment
-            print "".join(tasks.findall(tempstr)) # Findall creates a list, so we print it with a join
+            print(project.match(tempstr).group()) # Prints the Project name and comment
+            print("".join(tasks.findall(tempstr))) # Findall creates a list, so we print it with a join
             
         else:
             project = re.compile("(^[\\w/].*:*(\\n\\w.*)*)", re.M)
             ttasks = re.compile("(?!.*@done)(\\t-\\s.*(\\n\\t{2,}-\\s.+)*(\\n\\t+\\w.+(\\n\\t{2,}-\\s.+)*)*)", re.M) # Main match. Will eliminate tasks with @done
             tasks = re.compile("[\\t]+-??\\s??(?!.*@done).+\\n*", re.M) # Second match, will eliminate sub(sub)tasks with @done
             if ttasks.search(tempstr) is not None:
-                print project.match(tempstr).group()
-                print "".join(tasks.findall(ttasks.search(tempstr).group()))
+                print(project.match(tempstr).group())
+                print("".join(tasks.findall(ttasks.search(tempstr).group())))

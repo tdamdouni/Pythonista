@@ -8,6 +8,7 @@
 # For ToC creation you have to provide Markdown headers h2 (##) to h4 (####)
 # USE AT YOUR OWN RISK – no support provided
 
+from __future__ import print_function
 import appex
 import console
 import clipboard
@@ -15,14 +16,14 @@ import xmltodict
 
 def main():
 	if not appex.is_running_extension():
-		print 'This script is intended to be run from the sharing extension.'
+		print('This script is intended to be run from the sharing extension.')
 		return
 		
 	# Input from extension/share sheet
 	txt = appex.get_text()
 	
 	if not txt:
-		print 'No text input found.'
+		print('No text input found.')
 		return
 	else:
 		txt = createToC(txt)

@@ -3,6 +3,7 @@
 
 # https://forum.omz-software.com/topic/2724/spacing-of-buttonitem-s/6
 
+from __future__ import print_function
 import ui
 from objc_util import *
 
@@ -65,7 +66,7 @@ class ButtonItemCondenser (object):
 		
 def handle_action(sender):
 	#print "handle_action: sender.name=%s" % sender.name
-	print str(sender)
+	print(str(sender))
 	
 #def handle_action():
 #  print "handle_action"

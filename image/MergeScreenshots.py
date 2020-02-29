@@ -1,3 +1,4 @@
+from __future__ import print_function
 # Universal screenshot merger for Pythonista.
 # Takes any number of screenshots,
 # downscales if Retina,

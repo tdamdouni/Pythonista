@@ -12,6 +12,7 @@
 
 #CLASSES
 #------------------------------------------------------------------------------
+from __future__ import print_function
 class Human(object):
 	#class variable. accesed by all instances. only one copy.
 	#if an object changes it, change is seen by all instances.
@@ -26,7 +27,7 @@ class Human(object):
 		self.age=age
 		self.stage=stages[0]
 		Human.members.append(self.name)
-		print "%s has entered the world"%(self.name)
+		print("%s has entered the world"%(self.name))
 		
 		if self.age<=2:
 			self.stage=stages[1]
@@ -43,18 +44,18 @@ class Human(object):
 		return (str(self.name))
 	
 	def get_info(self):
-		print 'Name: %s Age: %d'%(self.name,self.age)
+		print('Name: %s Age: %d'%(self.name,self.age))
 	
 	#'@classmethod' is called a decorator.
 	#Same as: how_many=classmethod(how_many)
 	@classmethod
 	def how_many(cls):
-		print 'There are now %s humans in this world.' %(cls.population)
+		print('There are now %s humans in this world.' %(cls.population))
 	
 	def die(self):
 		Human.population-=1
 		Human.members.remove(self.name)
-		print '%s has died. The population is now %s.\n %s' %(self.name,Human.population,Human.members)
+		print('%s has died. The population is now %s.\n %s' %(self.name,Human.population,Human.members))
 #------------------------------------------------------------------------------
 
 
@@ -94,35 +95,35 @@ class Boy(Male):
 #INSTANTIATION
 #-------------------------------------------------------------------------------
 human=Human()
-print human.name
-print human.age
+print(human.name)
+print(human.age)
 
-print
+print()
 
 sarah=Woman('Sarah',35)
-print sarah.name
-print sarah.SYMBOL
-print sarah.age
-print sarah.stage
+print(sarah.name)
+print(sarah.SYMBOL)
+print(sarah.age)
+print(sarah.stage)
 
-print
+print()
 
 joey=Man('Joey',17)
-print joey.name
-print joey.SYMBOL
-print joey.age
-print joey.stage
+print(joey.name)
+print(joey.SYMBOL)
+print(joey.age)
+print(joey.stage)
 
 billy = Boy('Bill',1)
-print billy.stage + " is billy's stage"
+print(billy.stage + " is billy's stage")
 
 jill = Girl('Jill',5)
-print jill.stage + " is jill's stage"
+print(jill.stage + " is jill's stage")
 joey.get_info()
 
-print Human.how_many()
+print(Human.how_many())
 billy.die()
-print Human.how_many()
+print(Human.how_many())
 #------------------------------------------------------------------------------
 
 
@@ -146,16 +147,16 @@ def exists(x):
 		return False
 	return True
 #------------------------------------------------------------------------------
-print
+print()
 
-print is_male(sarah)
-print is_male(joey)
-print is_female(sarah)
+print(is_male(sarah))
+print(is_male(joey))
+print(is_female(sarah))
 
 if is_female(sarah):
-	print sarah.name + ' is old enough.'
+	print(sarah.name + ' is old enough.')
 
-print exists('Sarah'),'existance'
+print(exists('Sarah'),'existance')
 #------------------------------------------------------------------------------
 
 

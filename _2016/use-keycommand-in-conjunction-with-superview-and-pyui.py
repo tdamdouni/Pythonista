@@ -1,3 +1,4 @@
+from __future__ import print_function
 # https://forum.omz-software.com/topic/3734/use-keycommand-in-conjunction-with-superview-and-pyui
 
 from objc_util import *
@@ -24,7 +25,7 @@ def keyCommandAction_(_self, _cmd, sender):
 	flags = key_cmd.modifierFlags()
 	modifier_str = ' + '.join(modifiers[m] for m in modifiers.keys() if (m & flags))
 	key_input = key_cmd.input()
-	print 'Input: "%s" Modifiers: %s' % (key_input, modifier_str)
+	print('Input: "%s" Modifiers: %s' % (key_input, modifier_str))
 	if str(key_input) == 'A':
 		A(sender)
 	elif str(key_input) == 'S':

@@ -1,3 +1,4 @@
+from __future__ import print_function
 # takes post from markdown, converts to html, fixes links to open in new window
 
 import clipboard
@@ -10,5 +11,5 @@ md = markdown.Markdown()
 myString = md.convert(s)
 output = re.sub(r'(?<!<a target="_blank") href="(?!http://(www\.)?n8henrie\.com)', ' target="_blank" href="', myString)
 
-print output
+print(output)
 clipboard.set(output)

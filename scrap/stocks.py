@@ -1,3 +1,4 @@
+from __future__ import print_function
 import urllib2
 import re
 
@@ -10,6 +11,6 @@ while i < len(symbols):
 
     regex = '<span id="yfs_l84_%s">(.+?)</span>' % symbols[i].lower()
     price = re.findall(regex, html_text)
-    print "The price of %s stock is %s" % (symbols[i], price)
+    print("The price of %s stock is %s" % (symbols[i], price))
     i += 1
 

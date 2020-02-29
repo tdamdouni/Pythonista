@@ -4,6 +4,7 @@
 
 # https://forum.omz-software.com/topic/2734/contacts-module-access-profile-picture/4
 
+from __future__ import print_function
 from objc_util import *
 from ctypes import string_at
 import contacts
@@ -31,7 +32,7 @@ def main():
     fetch_keys = ['imageDataAvailable', 'imageData']
     people = store.unifiedContactsMatchingPredicate_keysToFetch_error_(pred, fetch_keys, None)
     if not people:
-        print 'No person found with the name "%s"' % (CONTACT_NAME,)
+        print('No person found with the name "%s"' % (CONTACT_NAME,))
         return
     p = people[0]
     has_image = p.imageDataAvailable()

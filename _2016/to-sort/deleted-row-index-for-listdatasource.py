@@ -2,6 +2,7 @@
 
 # https://forum.omz-software.com/topic/3269/deleted-row-index-for-listdatasource/3
 
+from __future__ import print_function
 import ui
 
 class MyTableViewDataSource (object):
@@ -28,7 +29,7 @@ class MyTableViewDataSource (object):
 		return True
 		
 	def tableview_delete(self, tableview, section, row):
-		print 'Delete row ' + str(row)
+		print('Delete row ' + str(row))
 		del tableview.data_source.items[row]
 		tableview.reload()
 		

@@ -16,6 +16,7 @@
 </dict>
 </plist>
 '''
+from __future__ import print_function
 
 import os, plistlib, editor, ForumCodeBlock
 
@@ -82,7 +83,7 @@ if __name__ == "__main__":
 		s.settings_file = 'http://omz-forums.appspot.com/pythonista/post/5832111260958720'
 		s.open_settings()
 		for key in s.settings_dict:
-			print key + '\n\t' + s.settings_dict[key]
+			print(key + '\n\t' + s.settings_dict[key])
 		s.close_settings()
 # --------------------
 

@@ -1,3 +1,4 @@
+from __future__ import print_function
 # https://gist.github.com/mlgill/8311046
 
 import dropbox, os, webbrowser
@@ -35,8 +36,8 @@ def first_access(sess, TOKEN_FILENAME, TOKEN_DIRECTORY):
 	url = sess.build_authorize_url(request_token)
 	
 	# make the user sign in and authorize this token
-	print "url:", url
-	print "Please visit this website and press the 'Allow' button, then hit 'Enter' here."
+	print("url:", url)
+	print("Please visit this website and press the 'Allow' button, then hit 'Enter' here.")
 	webbrowser.open(url)
 	raw_input()
 	

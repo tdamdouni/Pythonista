@@ -5,6 +5,7 @@
 # https://forum.omz-software.com/topic/3698/how-to-save-user-input-from-text-field-and-use-throughout-script-with-ui/3
 
 """ Random Math View """
+from __future__ import print_function
 
 
 import ui
@@ -200,7 +201,7 @@ def the_views(s_t):
 		
 	except:
 	
-		print "failed to load"
+		print("failed to load")
 		
 		
 def main():

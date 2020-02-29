@@ -1,3 +1,4 @@
+from __future__ import print_function
 #
 #  merge(list1,list2): merges two sorted lists into one sorted list
 #
@@ -55,6 +56,6 @@ def mergeSort(list):
 
 
 L = [8,1,7,6,2,4,5,3]
-print L
+print(L)
 sorted = mergeSort(L)
-print sorted
+print(sorted)

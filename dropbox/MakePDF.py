@@ -1,3 +1,4 @@
+from __future__ import print_function
 # Original script by Federico Viticci:
 # http://omz-software.com/pythonista/forums/discussion/comment/165#Comment_165
 
@@ -43,7 +44,7 @@ insta = 'http://instapaper.com/text?u='
 
 URL = insta + url
 
-print 'Generating HTML file...'
+print('Generating HTML file...')
 
 getText = urllib2.Request(URL)
 openText = urllib2.urlopen(getText)
@@ -51,9 +52,9 @@ content = (openText.read().decode('utf-8'))
 
 final = content.encode('utf-8')
 
-print 'Uploading HTML file to Dropbox...'
+print('Uploading HTML file to Dropbox...')
 
 
 response = dropbox_client.put_file('/' + name + '.html', final)
 
-print 'Your HTML file has been uploaded'
+print('Your HTML file has been uploaded')

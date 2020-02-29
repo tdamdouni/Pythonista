@@ -14,6 +14,7 @@ Todo
 Support windows by pyqt
 More stable
 '''
+from __future__ import print_function
 
 from BaseHTTPServer import HTTPServer, BaseHTTPRequestHandler
 from SocketServer import ThreadingMixIn
@@ -327,7 +328,7 @@ class Transfer3(ui.View):
 			print('Text mode')
 			text = self.file_list_dict['send_text']
 			clipboard.set(text)
-			print text
+			print(text)
 			threading.Thread(target=console.hud_alert, args=('Copied to clipboard',) ).start()
 			
 		else:
@@ -403,7 +404,7 @@ class Transfer3(ui.View):
 		print('Connected. Getting ip.')
 		data = s.recv(1024)
 		ip, port = json.loads(data)
-		print(ip, port)
+		print((ip, port))
 		print(self.scan_result[ip])
 		self.receiver_ip = ip
 		self.receiver_port = port
@@ -511,7 +512,7 @@ class Transfer3(ui.View):
 		
 			
 		server = ThreadedHTTPServer(('', port), Handler)
-		print 'Starting server'
+		print('Starting server')
 		server.socket = ssl.wrap_socket (server.socket, certfile=_self.cert_path, server_side=True)
 		server.serve_forever()
 

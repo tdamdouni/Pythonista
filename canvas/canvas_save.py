@@ -2,6 +2,7 @@
 
 # https://gist.github.com/jsbain/389a67c5aacb097b87fd
 
+from __future__ import print_function
 from objc_util import *
 import canvas
 import os
@@ -12,7 +13,7 @@ def save_canvas_to_png(filename):
 		data=ObjCInstance(c.UIImagePNGRepresentation(image))
 		data.writeToFile_atomically_(os.path.abspath(filename),True)
 	else:
-		print 'canvas was empty'
+		print('canvas was empty')
 if __name__=='__main__':
 	#Draw a red circle filling the entire canvas
 	import canvas

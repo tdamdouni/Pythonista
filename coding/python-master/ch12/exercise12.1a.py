@@ -1,3 +1,4 @@
+from __future__ import print_function
 #Change the socket program socket1.py to prompt the user for the URL so it can read any web page. 
 #You can use split(/) to break the URL into
 #its component parts so you can extract the host name for the socket connect call.
@@ -22,7 +23,7 @@ try:
     
 #If an exception occurs Python will execute the following sequence of statements.    
 except:
-    print "Please enter a properly formatted & existing URL."
+    print("Please enter a properly formatted & existing URL.")
 
 count = 0
 while True:
@@ -30,10 +31,10 @@ while True:
     count += len(data)
     if (len(data) < 1) or count >= 3000:
         break
-    print data
+    print(data)
 
 mysock.close()
-print count
+print(count)
     
 
 

@@ -1,3 +1,4 @@
+from __future__ import print_function
 #Exercise 9.4 Add code to the exercise 9.3 program 
 #to figure out who has the most messages in the file.
 #After all the data has been read and the dictionary has been created, look through
@@ -9,11 +10,11 @@ email_senders = dict()
 
 for line in fhand:
     if line.startswith('From '):
-        print line.split()[1]
+        print(line.split()[1])
         emails = line.split()[1]
         email_senders[emails] = email_senders.get(emails,0) + 1
         
-print email_senders
+print(email_senders)
 
 #largest_value = None
 #largest_key = None

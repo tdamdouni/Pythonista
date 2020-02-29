@@ -3,6 +3,7 @@
 
 # https://gist.github.com/jsbain/80cdc7dd82da23cbe16c9befef91d707
 
+from __future__ import print_function
 import ui,requests, json, time, console, urllib
 
 # create debuggin delegate code. not necessary, but helpful for debugging
@@ -34,7 +35,7 @@ console.log("logging activated");
 class debugDelegate (object):
     def webview_should_start_load(self,webview, url, nav_type):
         if url.startswith('ios-log'):
-            print urllib.unquote(url)
+            print(urllib.unquote(url))
         print('should start:{}'.format(url))
         return True
         

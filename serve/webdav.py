@@ -31,6 +31,7 @@
 # Released under the Artistic License
 #
 
+from __future__ import print_function
 from BaseHTTPServer import HTTPServer, BaseHTTPRequestHandler
 from SocketServer import ThreadingMixIn
 from StringIO import StringIO
@@ -736,7 +737,7 @@ class DAVServer(ThreadingMixIn, HTTPServer):
     def finish_request(self,request,client_address):
         try:
             HTTPServer.finish_request(self, request, client_address)
-        except socket.error, e:
+        except socket.error as e:
             pass
 
 if __name__ == '__main__':
@@ -746,7 +747,7 @@ if __name__ == '__main__':
     import socket
     myname = socket.getfqdn(socket.gethostname())
     myaddr = socket.gethostbyname(myname)
-    print 'WebDav Server run at '+myaddr+':'+str(srvport)+'...'
+    print('WebDav Server run at '+myaddr+':'+str(srvport)+'...')
     server_address = ('', srvport)
     # WebDav Auth User/Password file 
     # if not this file ,the auth function disable.

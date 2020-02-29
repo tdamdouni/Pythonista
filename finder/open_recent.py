@@ -3,6 +3,7 @@
 # https://gist.github.com/mcsquaredjr/5148002
 
 '''Editor action to open recent files from the list'''
+from __future__ import print_function
 
 __date__ = '10-March-2013'
 __author__ = 'mcsquaredjr'
@@ -20,11 +21,11 @@ def get_input(mmax=NUM_RECENT):
 	try:
 		action = int(action)
 		if action < 1 or action > mmax:
-			print '*** Cannot exceed {0:d}'.format(mmax)
+			print('*** Cannot exceed {0:d}'.format(mmax))
 			action = get_input()
 	except ValueError:
 		# Cannot convert to int
-		print '*** Should be an integer between 1 and {0:d}'.format(mmax)
+		print('*** Should be an integer between 1 and {0:d}'.format(mmax))
 		action = get_input()
 	return action
 
@@ -41,15 +42,15 @@ if __name__ == '__main__':
 	                key=os.path.getmtime, 
 	                reverse=True)[:NUM_RECENT]
 	
-	print '\n'*3
+	print('\n'*3)
 	for i, fl in enumerate(recent):
-		print '{:>15}\t{:<}'.format(i+1, fl)
+		print('{:>15}\t{:<}'.format(i+1, fl))
 	
-	print recent
+	print(recent)
 	num = get_input()
 	# Open in editor
 	editor.open_file(recent[num-1])
-	print '=== Swipe right to switch to the editor.'
+	print('=== Swipe right to switch to the editor.')
 	
 	
 	

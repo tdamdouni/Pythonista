@@ -1,3 +1,4 @@
+from __future__ import print_function
 # Contributed by OMZ here: https://gist.github.com/omz/3823483
 # File Transfer for Pythonista
 # ============================
@@ -125,10 +126,10 @@ if __name__ == '__main__':
 	from BaseHTTPServer import HTTPServer
 	server = HTTPServer(('', 8080), TransferRequestHandler)
 	URL = 'http://%s.local:8080' % gethostname()
-	print 'Open this page in your browser:'
+	print('Open this page in your browser:')
 	console.set_font('Helvetica-Bold', 30)
-	print URL
+	print(URL)
 	console.set_font()
-	print 'Tap the stop button when you\'re done.'
+	print('Tap the stop button when you\'re done.')
 	server.serve_forever()
 

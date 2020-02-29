@@ -1,3 +1,4 @@
+from __future__ import print_function
 # http://pastebin.com/aubPNCp7#
 # coding: utf-8
 import twitter
@@ -39,7 +40,7 @@ def getAllTweetsFrom(user):
 	userObj = twitter.request(acc,url)
 	userObj = jsonToDict.decode(userObj[1])[0]
 	tweetAmount = userObj['statuses_count']
-	print 'Potential number of tweets: ',tweetAmount
+	print('Potential number of tweets: ',tweetAmount)
 	savedTweets = []
 	lastID = getTweetsFrom(user,1)[0]['id_str']
 	oldLastID = ''
@@ -51,11 +52,11 @@ def getAllTweetsFrom(user):
 		for tweet in range(len(t)):
 			t[tweet] = t[tweet]['text']
 		savedTweets.extend(t)
-		print 'Retrieved ' + str(len(savedTweets)) + ' Tweets'
+		print('Retrieved ' + str(len(savedTweets)) + ' Tweets')
 		
 	chars = 0
 	for tweet in savedTweets:
 		chars += len(tweet)
-	print 'All tweets from',user, '(', len(savedTweets),') together contain', chars, 'characters.'
+	print('All tweets from',user, '(', len(savedTweets),') together contain', chars, 'characters.')
 
 getAllTweetsFrom('tdamdouni')

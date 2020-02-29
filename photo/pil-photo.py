@@ -1,3 +1,4 @@
+from __future__ import print_function
 # http://www.macdrifter.com/2012/11/the-power-of-pythonista-12.html
 
 import Image, ImageOps, ImageFilter
@@ -27,27 +28,27 @@ remoteFilePath =  remotePath + datePath
 
 def customSize(img):
 	w, h = img.size
-	print 'w: ' + str(w)
-	print 'h: '+ str(h)
+	print('w: ' + str(w))
+	print('h: '+ str(h))
 	if w > 600:
 		wsize = 600/float(w)
-		print 'wsize: '+str(wsize)
+		print('wsize: '+str(wsize))
 		hsize = int(float(h)*float(wsize))
-		print 'hsize: ' + str(hsize)
+		print('hsize: ' + str(hsize))
 		
 		img = img.resize((600, hsize), Image.ANTIALIAS)
 	return img
 	
 image = customSize(image)
-print image.size
+print(image.size)
 image.show()
 
 buffer = BytesIO()
 image.save(buffer, 'PNG')
 buffer.seek(0)
 
-print remoteFilePath
-print fileName
+print(remoteFilePath)
+print(fileName)
 
 fileURL = urllib.quote(fileName)
 

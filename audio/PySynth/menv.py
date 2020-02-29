@@ -4,6 +4,7 @@
 Python Command Line Musical Interpreter for PySynth.
 Pranav Ravichandran (me@onloop.net)
 """
+from __future__ import print_function
 
 import play_wav
 import pysynth, pysynth_b, pysynth_s
@@ -48,7 +49,7 @@ class mEnv:
 		elif self.instrument == 's':
 			self.synthSounds(pysynth_s, self.outFile)
 		else:
-			print invalidOption
+			print(invalidOption)
 			mEnv()
 
 	def parse(self, cliInput):
@@ -59,7 +60,7 @@ class mEnv:
 			sys.exit()
 		# 'help' command.
 		if cliInput == 'help':
-			print '\n' + helpContent + '\n' + usageHelp + '\n'
+			print('\n' + helpContent + '\n' + usageHelp + '\n')
 			mEnv()
 
 		# List with whitespace as delimiter.
@@ -75,26 +76,26 @@ class mEnv:
 					try:
 						self.bpmVal = int(comp[1])
 					except IndexError:
-						print warningStr
+						print(warningStr)
 						mEnv()
 				elif comp[0] == 'repeat':
 					try:
 						self.repeatVal = int(comp[1])
 					except IndexError:
-						print warningStr
+						print(warningStr)
 						mEnv()
 				elif comp[0] == 'sound':
 					try:
 						self.instrument = str(comp[1])
 					except IndexError:
-						print warningStr
+						print(warningStr)
 						mEnv()
 				elif comp[0] == 'save':
 					try:
 						self.outFile = str(comp[1]) + '.wav'
 						self.trashFile = False
 					except IndexError:
-						print warningStr
+						print(warningStr)
 						mEnv()
 
 				continue
@@ -106,7 +107,7 @@ class mEnv:
 					try:
 						self.synthParam.append((comp[i:], int(comp[:i])))
 					except ValueError:
-						print invalidCmd
+						print(invalidCmd)
 						mEnv()
 
 					break
@@ -147,14 +148,14 @@ class mEnv:
 			else:
 				renderSound.make_wav(self.synthParam, fn = outFile, silent = True)
 		except KeyError:
-			print warningStr
+			print(warningStr)
 			mEnv()
 
 
 
 if __name__ == "__main__":
 	# Print introductory help content.
-	print helpContent
+	print(helpContent)
 
 	# Interpreter loop.
 	while True:
@@ -165,5 +166,5 @@ if __name__ == "__main__":
 			a.trashFile = False
 			if a.outFile == '':
 				a.outFile = 'temp.wav'
-			print 'Could not play file. Saved to ' + a.outFile
+			print('Could not play file. Saved to ' + a.outFile)
 		a.removeFile(a.outFile)

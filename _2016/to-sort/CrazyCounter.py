@@ -2,12 +2,13 @@
 
 # https://forum.omz-software.com/topic/1465/help-typeerror-expected-callable-function/7
 
+from __future__ import print_function
 import ui,time
 import sys
 
 rec = sys.getrecursionlimit()
 
-print rec
+print(rec)
 
 
 

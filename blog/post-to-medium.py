@@ -2,6 +2,7 @@
 
 # https://medium.com/@jmoreno78/workflow-de-editorial-para-publicar-en-medium-8202a829aa45#.1ye2t8sqk
 
+from __future__ import print_function
 import urllib2
 import json
 
@@ -21,8 +22,8 @@ try:
 	response = urllib2.urlopen(request)
 except urllib2.HTTPError as e:
 	if e.code == 401:
-		print "The integration token is invalid"
-		print e.reason
+		print("The integration token is invalid")
+		print(e.reason)
 else:
 	responseJson =  json.loads(response.read())
 	authorId = responseJson["data"]["id"]
@@ -46,20 +47,20 @@ else:
 		response = urllib2.urlopen(request)
 	except urllib2.HTTPError as e:
 		if e.code == 400:
-			print "Incorrect fields. Bad request"
-			print e.reason
+			print("Incorrect fields. Bad request")
+			print(e.reason)
 		elif e.code == 401:
-			print "The integration token is invalid"
-			print e.reason
+			print("The integration token is invalid")
+			print(e.reason)
 		elif e.code == 403:
-			print "User without permission to publish."
-			print e.reason
+			print("User without permission to publish.")
+			print(e.reason)
 		elif e.code == 404:
-			print "User unknown"
-			print e.reason
+			print("User unknown")
+			print(e.reason)
 		else:
-			print "Ups! something is wrong with the world today..."
-			print e.reason
+			print("Ups! something is wrong with the world today...")
+			print(e.reason)
 	else:
-		print response.read()
+		print(response.read())
 

@@ -1,3 +1,4 @@
+from __future__ import print_function
 # Simple URL shortener using is.gd
 #
 # Save this script as 'ShortURL' in Pythonista and add the
@@ -19,7 +20,7 @@ if long_url is not None and re.match('http(s)?://.*', long_url):
 		import webbrowser
 		webbrowser.open('safari-' + long_url)
 	else:
-		print 'Error:', short_url
+		print('Error:', short_url)
 else:
-	print 'Invalid/missing URL argument.'
+	print('Invalid/missing URL argument.')
 

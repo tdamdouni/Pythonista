@@ -2,6 +2,7 @@
 
 # https://forum.omz-software.com/topic/3176/use-a-pyui-file-in-another-pyui-file/7
 
+from __future__ import print_function
 import ui
 import os
 
@@ -28,7 +29,7 @@ class PYUILoaderStr(ui.View):
 			bindings={'selfwrapper':selfwrapper, 'self':self})
 			
 def xx():
-	print 'hi'
+	print('hi')
 	return True
 	
 class PYUILoader(ui.View):
@@ -41,7 +42,7 @@ class PYUILoader(ui.View):
 	Thanks @JonB
 	'''
 	def __init__(self, f_name = None):
-		print 'in PYUILoader init'
+		print('in PYUILoader init')
 		
 		# black magic here, for me at least...
 		class selfwrapper(ui.View):
@@ -65,11 +66,11 @@ class MyClass(PYUILoader):
 		PYUILoader.__init__(self, f_name)
 		self.width = 500
 		self.height = 500
-		print 'in Myclass'
+		print('in Myclass')
 		self['menu'].bg_color = 'red'
 		
 	def xx(self):
-		print 'hello from my class'
+		print('hello from my class')
 		return True
 		
 		

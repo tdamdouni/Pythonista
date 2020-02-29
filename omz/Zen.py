@@ -1,3 +1,4 @@
+from __future__ import print_function
 # Zen
 # 
 # Prints the Zen of Python with a color gradient.
@@ -25,7 +26,7 @@ lines = text.split('\n')
 #Print the title (first line):
 console.set_font('Futura', 22)
 console.set_color(0.2, 0.2, 0.2)
-print lines[0]
+print(lines[0])
 
 #Print the other lines in varying colors:
 hue = 0.45
@@ -33,7 +34,7 @@ for line in lines[1:]:
 	r, g, b = hsv_to_rgb(hue, 1.0, 0.8)
 	console.set_color(r, g, b)
 	console.set_font('Futura', 16)
-	print line
+	print(line)
 	hue += 0.02
 
 #Reset output to default font and color:

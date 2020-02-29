@@ -8,6 +8,7 @@
 # TODO: Support setting the group identifier with an argument when launching the script via URL scheme (LCP...) - subject, body etc. could also be passed as arguments.
 
 # Change this:
+from __future__ import print_function
 group_note = 'Group1'
 
 
@@ -27,4 +28,4 @@ for person in people:
 dispatch_url = 'x-dispatch:///compose?to=%s' % (','.join(addresses))
 opened = webbrowser.open(dispatch_url)
 if not opened:
-	print 'Could not open URL:', dispatch_url
+	print('Could not open URL:', dispatch_url)

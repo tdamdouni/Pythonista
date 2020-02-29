@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+from __future__ import print_function
 __author__ = "Claus Haslauer (mail@planetwater.org)"
 __version__ = "Revision: 0.1 $"
 __date__ = "Date: 2014/01/05 $"
@@ -43,8 +44,8 @@ def first_access(sess):
     url = sess.build_authorize_url(request_token)
     
     # Make the user sign in and authorize this token
-    print "url:", url
-    print "Please visit this website and press the 'Allow' button, then hit 'Enter' here."
+    print("url:", url)
+    print("Please visit this website and press the 'Allow' button, then hit 'Enter' here.")
     webbrowser.open(url)
     raw_input()
     # This will fail if the user didn't visit the above URL and hit 'Allow'
@@ -69,13 +70,13 @@ def main():
     console.clear()
     
     delta_day = int(sys.argv[1])
-    print 'delta_day: ', delta_day
+    print('delta_day: ', delta_day)
     
     # dropbox initialization
     sess = dropbox.session.DropboxSession(APP_KEY, APP_SECRET, ACCESS_TYPE)
     configure_token(sess)
     client = dropbox.client.DropboxClient(sess)
-    print "linked account: %s" % client.account_info()['display_name']
+    print("linked account: %s" % client.account_info()['display_name'])
     
     # get today's date (for pdf file name)
     today = datetime.datetime.utcnow()
@@ -86,22 +87,22 @@ def main():
     drb_path = '/Apps/Pythonista/'
     exists = client.search(drb_path, filename)
     if len(exists) > 0:
-        print 'file already exists on dropbox!'
+        print('file already exists on dropbox!')
         raise Exception
     
     ## stick url together
     url = base_url + today_string + '.pdf'
-    print url
+    print(url)
     r = requests.get(url, auth=(usr_name, pw))
     
     ## if something is wrong with download status
     if r.status_code != 200:
-        print 'ERROR!'
-        print 'likely, you chose a wrong date!'
+        print('ERROR!')
+        print('likely, you chose a wrong date!')
         raise Exception
     
-    print '\n'
-    print r
+    print('\n')
+    print(r)
     
     ## saving pdf file locally
     # not sure which value is good. 32 seems like it worked
@@ -109,12 +110,12 @@ def main():
     with open(filename, 'wb') as fd:
         for chunk in r.iter_content(chunk_size):
             fd.write(chunk)
-    print 'file saved in pythonista'
+    print('file saved in pythonista')
     
     # save file to dropbox
     f = open(filename)
     response = client.put_file(drb_path + filename, f)
-    print "uploaded to dropbox \n:", response
+    print("uploaded to dropbox \n:", response)
     
     # get dropbox url which is then used to open pdf in goodreader
     share_url = client.media('/Apps/Pythonista/' + filename)
@@ -125,9 +126,9 @@ def main():
     
     # delete local file in pythonista
     os.remove(filename)
-    print '\n file removed from pythonista'
+    print('\n file removed from pythonista')
     
-    print "Done!"
+    print("Done!")
     
     
 if __name__ == '__main__':

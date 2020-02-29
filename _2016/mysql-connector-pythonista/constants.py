@@ -65,7 +65,7 @@ class _constants(object):
         res = ()
         try:
             res = ["%s : %s" % (k,v[1]) for k,v in cls.desc.items()]
-        except StandardError, e:
+        except StandardError as e:
             res = ('No information found in constant class.%s' % e)
         
         return res

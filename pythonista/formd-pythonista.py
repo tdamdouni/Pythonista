@@ -3,6 +3,7 @@
 formd by Seth Brown, 02-24-12
 modified for iOS use (Pythonista) by Brett Terpstra, 10-17-12
 """
+from __future__ import print_function
 from sys import stdin, stdout
 import clipboard
 import re
@@ -88,7 +89,7 @@ if __name__ == '__main__':
 	description = 'formd: A (for)matting (M)ark(d)own tool.'
 	md = clipboard.get()
 	if md == '':
-		print 'No text in clipboard'
+		print('No text in clipboard')
 	else:
 		text = ForMd(md)
 		new_clip = text.ref_md()

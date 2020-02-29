@@ -1,3 +1,4 @@
+from __future__ import print_function
 import webbrowser, os, pprint
 # Include the Dropbox SDK libraries
 #from dropbox import client, rest, session
@@ -31,8 +32,8 @@ def first_access():
 	url = sess.build_authorize_url(request_token)
 	
 	# Make the user sign in and authorize this token
-	print "url:", url
-	print "Please visit this website and press the 'Allow' button, then hit 'Enter' here."
+	print("url:", url)
+	print("Please visit this website and press the 'Allow' button, then hit 'Enter' here.")
 	webbrowser.open(url)
 	raw_input()
 	# This will fail if the user didn't visit the above URL and hit 'Allow'
@@ -48,7 +49,7 @@ def main():
 	configure_token(sess)
 	client = dropbox.client.DropboxClient(sess)
 
-	print "linked account: %s" % client.account_info()['display_name']
+	print("linked account: %s" % client.account_info()['display_name'])
 	#pp.pprint (client.account_info())
 
 	folder_metadata = client.metadata('/')
@@ -57,7 +58,7 @@ def main():
 
 	for file in folder_metadata['contents']:
 		if not os.path.exists(file['path']):
-			print "Downloading file %s" % file['path']
+			print("Downloading file %s" % file['path'])
 			try:
 				out = open(file['path'][1:], 'w')
 				file_content = client.get_file(file['path']).read()
@@ -72,18 +73,18 @@ def main():
 			found = client.search('/', file)
 			if found:
 				if not (choice == 'A' or choice == 'a'):
-					print "File %s already on dropbox. Overwrite [Yes(y)|No(n)|All(a)|No to All}(na)] (Default No)" % file
+					print("File %s already on dropbox. Overwrite [Yes(y)|No(n)|All(a)|No to All}(na)] (Default No)" % file)
 					choice = raw_input()
 					if choice == 'na':
 						break
 				if choice == 'y' or choice == 'Y' or choice == 'A' or choice == 'a':
-					print "Overwriting file %s" % file
+					print("Overwriting file %s" % file)
 				##pp.pprint(client.search('/', file))
 			else:
 				#pp.pprint(client.metadata(file))
-				print "Trying to upload %s" % file
+				print("Trying to upload %s" % file)
 				client.put_file(file, open(file, 'r'), True)
-				print "File %s uploaded to Dropbox" % file
+				print("File %s uploaded to Dropbox" % file)
 
 
 if __name__ == "__main__":

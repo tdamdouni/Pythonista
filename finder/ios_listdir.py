@@ -1,3 +1,4 @@
+from __future__ import print_function
 #		iOS listdir (Python)
 			
 #			I wrote this little Pythonista script to discover the iOS file structure, using a few Unix commands.
@@ -19,14 +20,14 @@ def main():
 	root = os.listdir('/')
 
 	for i in root:
-		print '/' + i
+		print('/' + i)
 		
 	currentpath = ''
 	newpath = '/'
 	
 	while True:	
 		newcmd = raw_input('\niPhone:' + newpath + ' $ ')
-		print ''
+		print('')
 	
 		if newcmd[0:2] == 'cd':
 			newpath = newcmd[3:]
@@ -39,19 +40,20 @@ def main():
 			newpath = '/'
 			
 			for i in root:
-				print '/' + i
+				print('/' + i)
 			
 		else: 
 			try: 	
 				path = os.listdir(currentpath + '/' + newpath)
 	
 				for p in path:
-					print currentpath + '/' + newpath + '/' + p
+					print(currentpath + '/' + newpath + '/' + p)
 				
 				currentpath = currentpath + '/' + newpath
 					
-			except OSError as (errno, strerror):
-				print "{1} - (OSError {0})".format(errno, strerror)
+			except OSError as xxx_todo_changeme:
+				(errno, strerror) = xxx_todo_changeme.args
+				print("{1} - (OSError {0})".format(errno, strerror))
 		
 if __name__ == '__main__':
 	main()

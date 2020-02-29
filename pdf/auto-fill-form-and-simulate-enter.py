@@ -2,6 +2,7 @@
 
 # https://forum.omz-software.com/topic/3004/auto-fill-form-and-simulate-enter/6
 
+from __future__ import print_function
 import requests
 import re
 
@@ -36,7 +37,7 @@ def convert_url(url):
     with open('converted.pdf', 'wb') as fd:
         for chunk in r.iter_content(chunk_size = 1024):
             fd.write(chunk)
-    print 'done'
+    print('done')
 
 convert_url('http://www.lacuisinedebernard.com/2016/03/galettes-de-son-davoine-aux-carottes.html')
 

@@ -6,6 +6,7 @@
 # Hashsums are kept in a sqlite database (fileHashes.db)
 # Script uses pandoc for markdown to pdf transformation
 
+from __future__ import print_function
 import os, sqlite3, modsqlite
 
 directory = "/path/to/markdown/files"
@@ -57,12 +58,12 @@ for dirname, dirnames, filenames in os.walk(directory):
         if((".md" in filename) or (".markdown" in filename)) and (".pdf" not in filename):
             file = os.path.join(dirname, filename)
             sha = shasum(file)
-            print file
+            print(file)
             if put(c, conn, "hashes", file, sha):
-                print "Updating..."
+                print("Updating...")
                 cmd = "pandoc {} -f markdown --template {} --toc -s -o {}.pdf".format(file, template, file)
                 os.popen(cmd)
             else:
-                print "Skipping..."
+                print("Skipping...")
 
 conn.close

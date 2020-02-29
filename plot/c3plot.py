@@ -3,6 +3,7 @@
 """
 Plot circle in 3D
 """
+from __future__ import print_function
 
 __author__ = 'jiayiliu'
 
@@ -79,8 +80,8 @@ def draw_circle_direction(ax, x0, phi, length=1):
 def test1(ax):
     rr = draw_circle(ax, [1,3,1], [0,1.,1.], 1)
     p = draw_circle_direction(ax,[1,3,1],[0,1.,1.])
-    print np.sum((p[0]-rr)**2,axis=1)
-    print np.sum((p[1]-rr)**2,axis=1)
+    print(np.sum((p[0]-rr)**2,axis=1))
+    print(np.sum((p[1]-rr)**2,axis=1))
 
 
 def test2(ax):

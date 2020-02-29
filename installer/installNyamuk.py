@@ -6,6 +6,7 @@
 #print('got it...')
 #sys.exit()
 
+from __future__ import print_function
 import os, shutil, urllib, zipfile
 
 moduleName = 'nyamuk'
@@ -28,10 +29,10 @@ shutil.move(masterDir + '/test/pass-sub.py', './' + moduleName + 'Pass-sub.py')
 shutil.move(masterDir + '/test/pubnya.py', './' + moduleName + 'Pubnya.py')
 shutil.move(masterDir + '/test/subnya.py', './' + moduleName + 'Subnya.py')
 
-print 'Cleaning up...'
+print('Cleaning up...')
 shutil.rmtree(masterDir)
 os.remove(zipFileName)
-print 'Done.'
+print('Done.')
 
 # use dir() to view functions, variables, modules, etc.
 import nyamuk, nyamuk.base_nyamuk, nyamuk.nyamuk_const, nyamuk.mqtt_pkt

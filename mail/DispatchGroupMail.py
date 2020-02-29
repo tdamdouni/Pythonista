@@ -1,3 +1,4 @@
+from __future__ import print_function
 # https://gist.github.com/omz/48e80b0223d1eaf37025
 # coding: utf-8
 
@@ -26,4 +27,4 @@ for person in people:
 dispatch_url = 'x-dispatch:///compose?to=%s' % (','.join(addresses))
 opened = webbrowser.open(dispatch_url)
 if not opened:
-	print 'Could not open URL:', dispatch_url
+	print('Could not open URL:', dispatch_url)

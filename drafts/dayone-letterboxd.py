@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+from __future__ import print_function
 import feedparser, webbrowser, urllib, console, sys
 selected = "no"
 notes = ""
@@ -10,7 +11,7 @@ console.clear()
 feedURL="http://letterboxd.com/YOURUSERNAME/rss" # Insert your letterboxd username
 # Cycle through RSS items
 for post in feedparser.parse(feedURL).entries:
-	print post.title
+	print(post.title)
 	# Continue with selected item
 	if "preselect" in sys.argv:
 		selected = "yes"

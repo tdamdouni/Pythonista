@@ -2,6 +2,7 @@
 
 # https://gist.github.com/lukaskollmer/52a20e8d6447b1fe6033f95386405c27
 
+from __future__ import print_function
 import contacts
 import ui
 from datetime import datetime
@@ -11,7 +12,7 @@ import console
 console.clear()
 
 if not contacts.is_authorized():
-	print 'You need to allow acces to contacts to use this application'
+	print('You need to allow acces to contacts to use this application')
 
 	
 
@@ -129,17 +130,17 @@ def load_upcoming_birthdays(pretty_output=True, leading_zeros=False):
 	
 	console.clear()
 	
-	print 'Next Birthdays from your Address Book'
-	print '='*longest_row
+	print('Next Birthdays from your Address Book')
+	print('='*longest_row)
 	
 	
 	for output in all_output:
-		print output
+		print(output)
 	
 	#print '='*longest_row
 	
-	print
-	print '{0} of {1} contacts have no birthday set'.format(number_of_contacts_without_birthday, len(all_contacts))
+	print()
+	print('{0} of {1} contacts have no birthday set'.format(number_of_contacts_without_birthday, len(all_contacts)))
 
 
 load_upcoming_birthdays()

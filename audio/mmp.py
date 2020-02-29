@@ -1,5 +1,6 @@
 # coding: utf-8
 
+from __future__ import print_function
 import webbrowser
 from objc_util import *
 
@@ -16,7 +17,7 @@ def main():
         player.prepareToPlay()
         player.play()
     except Exception as e:
-        print str(e)
+        print(str(e))
     
 
 if __name__ == '__main__':

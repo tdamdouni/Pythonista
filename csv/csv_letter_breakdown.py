@@ -11,6 +11,7 @@ Based on original script by Andrew Pendleton for analyzing
 U.S. Census data: https://gist.github.com/apendleton/2638865
 
 """
+from __future__ import print_function
 
 from csv import DictReader
 from collections import defaultdict
@@ -37,5 +38,5 @@ total = sum(data.values())
 out = {letter: (count / total) * 100 for letter, count in data.iteritems()}
 
 for l in sorted(out, key=out.get, reverse=True):
-	print l + ' - ', "{0:.2f}".format(out[l]) + '%'
+	print(l + ' - ', "{0:.2f}".format(out[l]) + '%')
 

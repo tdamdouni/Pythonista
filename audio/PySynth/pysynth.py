@@ -28,6 +28,7 @@
 # 2.66 = -4 = dotted quarter
 # 5.33 = -8 = dotted eighth
 """
+from __future__ import print_function
 
 # Example 1: The C major scale
 song1 = [
@@ -92,14 +93,14 @@ keys_s = ('a', 'a#', 'b', 'c', 'c#', 'd', 'd#', 'e', 'f', 'f#', 'g', 'g#')
 keys_f = ('a', 'bb', 'b', 'c', 'db', 'd', 'eb', 'e', 'f', 'gb', 'g', 'ab')
 
 if __name__ == '__main__':
-    print "Piano key frequencies (for equal temperament):"
-    print "Key number\tScientific name\tFrequency (Hz)"
+    print("Piano key frequencies (for equal temperament):")
+    print("Key number\tScientific name\tFrequency (Hz)")
 for k in range(88):
     freq = 27.5 * 2.**(k/12.)
     oct = (k+9) // 12
     note = '%s%u' % (keys_s[k%12], oct)
     if __name__ == '__main__':
-        print "%10u\t%15s\t%14.2f" % (k+1, note.upper(), freq)
+        print("%10u\t%15s\t%14.2f" % (k+1, note.upper(), freq))
     pitchhz[note] = freq
     note = '%s%u' % (keys_f[k%12], oct)
     pitchhz[note] = freq
@@ -193,13 +194,13 @@ def make_wav(song,bpm=120,transpose=0,pause=.05,boost=1.1,repeat=0,fn="out.wav",
 	##########################################################################
 
 	if silent == False:
-		print "Writing to file", fn
+		print("Writing to file", fn)
 	curpos = 0
 	ex_pos = 0.
 	for rp in range(repeat+1):
 		for nn, x in enumerate(song):
 		    if not nn % 4 and silent == False:
-		        print "[%u/%u]\t" % (nn+1,len(song))
+		        print("[%u/%u]\t" % (nn+1,len(song)))
 		    if x[0]!='r':
 		        if x[0][-1] == '*':
 		            vol = boost
@@ -227,7 +228,7 @@ def make_wav(song,bpm=120,transpose=0,pause=.05,boost=1.1,repeat=0,fn="out.wav",
 
 	f.writeframes('')
 	f.close()
-	print
+	print()
 
 def mix_files(a, b, c, chann = 2, phase = -1.):
 	f1 = wave.open(a,'r')
@@ -239,11 +240,11 @@ def mix_files(a, b, c, chann = 2, phase = -1.):
 	f3.setcomptype('NONE','Not Compressed')
 	frames = min(f1.getnframes(), f2.getnframes())
 
-	print "Mixing files, total length %.2f s..." % (frames / 44100.)
+	print("Mixing files, total length %.2f s..." % (frames / 44100.))
 	d1 = f1.readframes(frames)
 	d2 = f2.readframes(frames)
 	for n in range(frames):
-		if not n%(5*44100): print n // 44100, 's'
+		if not n%(5*44100): print(n // 44100, 's')
 		if chann < 2:
 			d3 = struct.pack('h',
 				.5 * (struct.unpack('h', d1[2*n:2*n+2])[0] +
@@ -263,9 +264,9 @@ def mix_files(a, b, c, chann = 2, phase = -1.):
 ##########################################################################
 
 if __name__ == '__main__':
-	print
-	print "Creating Demo Songs... (this might take about a minute)"
-	print
+	print()
+	print("Creating Demo Songs... (this might take about a minute)")
+	print()
 
 	# SONG 1
 	make_wav(song1, fn = "pysynth_scale.wav")

@@ -4,6 +4,7 @@
 # http://pastebin.com/ucWjRRfd
 
 # draw a heart using equation
+from __future__ import print_function
 import canvas, sys, random
 from console import clear
 from datetime import datetime
@@ -45,7 +46,7 @@ def draw_heart(outline = False):
 		canvas.fill_path()
 		
 clear()
-print 'Calculating... d =',detail
+print('Calculating... d =',detail)
 start = datetime.now()
 canvas.set_size(w,h)
 canvas.draw_rect(0,0, w,h)

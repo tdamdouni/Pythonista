@@ -1,9 +1,10 @@
+from __future__ import print_function
 # http://stackoverflow.com/questions/36856011/convert-csv-to-a-html-table-format-and-store-in-a-html-file
 
 import sys
 import csv
 if len(sys.argv) < 3:
-	print "Usage: csvToTable.py csv_file html_file"
+	print("Usage: csvToTable.py csv_file html_file")
 	exit(1)
 	
 # Open the CSV file for reading
@@ -46,6 +47,6 @@ for row in reader: # Read a single row from the CSV file
 	htmlfile.write('</table>')
 	
 # print results to shell
-	print "Created " + str(rownum) + " row table."
+	print("Created " + str(rownum) + " row table.")
 	exit(0)
 

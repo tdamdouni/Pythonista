@@ -2,6 +2,7 @@
 
 # http://unapologetic.io/posts/2014/01/28/javascript-bookmarklet-builder-on-ios/
 
+from __future__ import print_function
 import sys
 import re
 import clipboard

@@ -2,6 +2,7 @@
 
 # https://gist.github.com/bmw1821/bc2ccf257d60804be010
 
+from __future__ import print_function
 from objc_util import *
 from UIKit import *
 from Foundation import *
@@ -478,7 +479,7 @@ def tableView_numberOfRowsInSection_(_self, _cmd, _tableView, _section):
 	return 0
 	
 def tableView_titleForHeaderInSection_(_self, _cmd, _tableView, _section):
-	print _section
+	print(_section)
 	return NSString.alloc().initWithString_('a')
 	#return ['', 'Info', 'Description'][_section]
 	

@@ -2,6 +2,7 @@
 
 # https://forum.omz-software.com/topic/2513/getting-the-parent-of-a-dynamically-method-as-a-function/52
 
+from __future__ import print_function
 import ui
 
 def test_func(msg):
@@ -12,7 +13,7 @@ def test_func(msg):
 	but i cant figure it out.
 	MAYBE, its even easier than that... well that would be great
 	'''
-	print msg
+	print(msg)
 	
 	
 btn = ui.Button()
@@ -44,7 +45,7 @@ import ui
 from extend import Extender
 
 def MyMother(sender):
-	print 'I love my Mums cooking'
+	print('I love my Mums cooking')
 	
 class DefaultStyle(Extender):
 	border_width = .5
@@ -86,7 +87,7 @@ def copy_obj(obj , **kwargs):
 	
 	for k in intrested_attrs:
 		if hasattr(new_obj, k):
-			print k, getattr(obj, k)
+			print(k, getattr(obj, k))
 			setattr(new_obj, k, getattr(obj, k))
 			
 	# overwite new attrs in the new object ,passed in **kwargs
@@ -123,7 +124,7 @@ def copy_obj(obj , **kwargs):
 	
 	for k in intrested_attrs:
 		if hasattr(new_obj, k):
-			print k, type(getattr(obj, k))
+			print(k, type(getattr(obj, k)))
 			attr = getattr(obj, k)
 			'''
 			This is an important test. if we try to copy a string attr
@@ -146,6 +147,6 @@ def test_copy_obj():
 	
 	for obj in ui_can_copy:
 		o = obj()
-		print type(o)
+		print(type(o))
 		x = copy_obj(o)
 

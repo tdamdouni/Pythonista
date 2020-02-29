@@ -63,6 +63,7 @@ Usefull links
   * http://www.w3.org/Graphics/GIF/spec-gif89a.txt
 
 """
+from __future__ import print_function
 # todo: This module should be part of imageio (or at least based on)
 
 import os, time

@@ -52,6 +52,7 @@ time series. Some excellent introductions to the SSA method include:
     Singular Spectrum Analysis: A New Tool in Time Series Analysis
     (e.g. via google ebook).
 """
+from __future__ import print_function
 
 import os, sys, time, Tkinter as Tk, tkFileDialog, math
 try:
@@ -66,8 +67,8 @@ try:
     from ssa_root import *
 except ImportError as exc:
     sys.stderr.write("Error: {}. Closing in 5 sec...\n".format(exc))
-    print "Note: These tools require Python 2.6.5 - 2.7.5 (e.g. 2.6.5 comes with ArcGIS 10.0),"
-    print "      AND several free science-related Python libraries. See which one your missing above."
+    print("Note: These tools require Python 2.6.5 - 2.7.5 (e.g. 2.6.5 comes with ArcGIS 10.0),")
+    print("      AND several free science-related Python libraries. See which one your missing above.")
     time.sleep(5);  sys.exit()
 
 def TSplot((x, y), xl='Time (assumed uniform)', yl='y', logy=False, symb='b-', ts='TS plot', plot='pl.show()'):
@@ -146,10 +147,10 @@ def ESplot(data, ts='', specfit = '', spts=[], ll=False):
                 if len(rejs) < data.M:
                     return [rejs, selvfs(rejs,vf,fEf)]
                 else:
-                    print "\nOops! You didn't select any points. The first 20 are selected for you."
+                    print("\nOops! You didn't select any points. The first 20 are selected for you.")
                     return [zip(vf[20:],fEf[20:]), zip(vf[:20],fEf[:20])]
             else:
-                print "\nOops! You didn't select any points. The first 20 are selected for you."
+                print("\nOops! You didn't select any points. The first 20 are selected for you.")
                 return [zip(vf[20:],fEf[20:]), zip(vf[:20],fEf[:20])]
         else:
             def red(X, v, fE):  return v - X[0]/(X[1]+(2.*pi*X[2]*fE)**2)
@@ -167,23 +168,23 @@ def ESplot(data, ts='', specfit = '', spts=[], ll=False):
                 yfit=[fit[0][0]*(i**fit[0][1]) for i in xvar]
                 pl.fill_between(xvar, dot(nu/plower,yfit), dot(nu/pupper,yfit), alpha=0.2, facecolor='magenta')
                 pl.plot(xvar,yfit,'m--')
-                print ' v_fit = {0}*f^{1})'.format(*(fit[0][0], fit[0][1]))
+                print(' v_fit = {0}*f^{1})'.format(*(fit[0][0], fit[0][1])))
             else:
                 # fit red noise relationship
                 fit=leastsq(red,[1.0E-1,1.0E1,1.0E1],args=(array(vs),array(fs)))
                 yfit=[fit[0][0]/(fit[0][1]+(2.*pi*fit[0][2]*i)**2) for i in xvar]
                 pl.fill_between(xvar, dot(nu/plower,yfit), dot(nu/pupper,yfit), alpha=0.2, facecolor='red')
                 pl.plot(xvar,yfit,'r--')
-                print u'\nv_fit = {0}/({1}+[2{2}*{3}*f]^2)'.format(*(fit[0][0], fit[0][1], u'\u03C0', fit[0][2]))
+                print(u'\nv_fit = {0}/({1}+[2{2}*{3}*f]^2)'.format(*(fit[0][0], fit[0][1], u'\u03C0', fit[0][2])))
                 if fit[0][0] == 1:
-                    print 'Note that a constraint was forced.'
-                    print 'You may want to try a power law relationship.'
+                    print('Note that a constraint was forced.')
+                    print('You may want to try a power law relationship.')
             vl,fl = zip(*spts[1])
             pl.plot(fl,vl,'bo', mfc='none')
             selpts = selvfns(spts[1],vf,fEf)
-            print 'Selected points: {0}\nExplain {1}% of the total variance.'.format(', '.join(str(i) for i in selpts), round(sum(vl)*100.,2))
+            print('Selected points: {0}\nExplain {1}% of the total variance.'.format(', '.join(str(i) for i in selpts), round(sum(vl)*100.,2)))
             if len(selpts) > 20:
-                print 'Warning: More than 20 were selected. Only plotting first 20. You can plot the rest in the next routine.'
+                print('Warning: More than 20 were selected. Only plotting first 20. You can plot the rest in the next routine.')
                 EOFplot(data, EOFsel=selpts[:20])
             else:   EOFplot(data, EOFsel=selpts)
             pl.show()
@@ -268,11 +269,11 @@ class ssa_data(object):
         self.X = data
         self.N = len(self.X)
         self.t = range(self.N)
-        print 'SSA analysis for {0}:\n time-series length = {1}'.format(self.filename, self.N)
+        print('SSA analysis for {0}:\n time-series length = {1}'.format(self.filename, self.N))
         self.mean = mean(self.X)
-        print ' Mean = {}'.format(self.mean)
+        print(' Mean = {}'.format(self.mean))
         self.variance = std(self.X)**2
-        print ' Variance = {}'.format(self.variance)
+        print(' Variance = {}'.format(self.variance))
         self.Y = self.X - self.mean
         TSplot((self.t,self.X), yl='Original Units',ts='TS plot of '+self.filename)
         #return (N,t,xm,xv)
@@ -304,7 +305,7 @@ class LBParams(object):
         def run_command():
             rid = L.get(Tk.ACTIVE)
             eval(self.but_command.format(rid))
-            print '\n{0}: {1} {2} successful.'.format(self.title, self.but_lbl, rid)
+            print('\n{0}: {1} {2} successful.'.format(self.title, self.but_lbl, rid))
         b2 = Tk.Button(F2, text=self.but_lbl, command=run_command)
         b2.pack(side=Tk.LEFT)
         F2.pack(side=Tk.TOP)
@@ -316,15 +317,15 @@ def FileSelect(req = 'Please select a file:'):
         root = Tk.Tk(); root.withdraw(); fname = tkFileDialog.askopenfilename(title=req); root.destroy()
         return [fname]+list(os.path.split(fname))
     except:
-        print "Error in file selection:", sys.exc_info()[1]; time.sleep(5);  sys.exit()
+        print("Error in file selection:", sys.exc_info()[1]); time.sleep(5);  sys.exit()
 
 for line in __doc__.split('#')[:-1]:
-    if line:    print line.strip('\n')
+    if line:    print(line.strip('\n'))
 # SELECT the time series
 fname = FileSelect('Please select a time series txt-file:')
 data = ssa_data(fname[2], fname[0])
 try:    data.describe(array([float(line.strip()) for line in open(data.fpath, 'r')]))
-except: print "Error:", sys.exc_info()[1]; time.sleep(5);  sys.exit()
+except: print("Error:", sys.exc_info()[1]); time.sleep(5);  sys.exit()
 
 # Offer to resample or average the original time series and print directions
 ra = raw_input('Want to resample or average the time series (r/a/[n assumed])?')
@@ -337,14 +338,14 @@ elif ra == 'a':
 yorn = raw_input('Do you want SSA instructions? (y/[n assumed])')
 if yorn:
     for line in __doc__.split('#')[-2:]:
-        if line:    print line.strip('\n')
+        if line:    print(line.strip('\n'))
 
 #------------------------ Begining main SSA method--------------------------
 #  Input the 'embedding dimension' or lag, M
 M = raw_input('Enter the EMBEDDING DIMENSION, M\n\n+ e.g. Enter 240 for 20-yrs of monthly data.\n+ Default/blank M = 0.33 * ts-length.\n+ M must be < 0.5 * ts-length.\n')
 if not M:   data.M = int(0.33*data.N)
 else:       data.M = int(M)
-print ' M = {} observations.'.format(data.M)
+print(' M = {} observations.'.format(data.M))
 
 #------------------Beginning of basic SSA------------------------
 #  Originally written by Eric Breitenberger. Version date 5/22/95
@@ -356,14 +357,14 @@ data.R = rc(data.A, data.E)
 # Normalize the eigenvalues (% variance)
 v = data.V/sum(data.V)
 M2 = data.M - len(nonzero(v<0.)[0])
-if M2 != data.M: print ' Note: %i negative eigenvalue(s).' % (data.M-M2)
+if M2 != data.M: print(' Note: %i negative eigenvalue(s).' % (data.M-M2))
 yorn = raw_input('Want to plot the eigenvalues by variance-rank? (y/[n assumed])')
 if yorn == 'y':
     en = raw_input('How many ranked eigenvalues do you want to plot?')
     try: en = int(en)
     except: en = int(data.M/0.33)
     TSplot((range(en), v[:en]), 'Ordered, k=1:{}'.format(en), yl='Normalized Eigenvalue',logy=True, symb='x', ts='Ranked Eigenvalue Plot of '+data.filename)
-    print '\nPlotting the ranked eigenvalues. (Close to continue)'
+    print('\nPlotting the ranked eigenvalues. (Close to continue)')
 
 # Display the eigenspectra versus frequency
 #
@@ -376,18 +377,18 @@ if yorn == 'y':
 data.vp = v[:M2]
 data.fEp = fE[:M2]
 
-print '\nPlotting the raw log-linear eigenspectrum. (Close to continue)'
+print('\nPlotting the raw log-linear eigenspectrum. (Close to continue)')
 ESplot(data, ts=data.filename)
 yorn = raw_input("Want to select EOFs from the eigenspectrum plot? ([y assumed]/n)")
 if not yorn:    yorn = 'y'
 while yorn == 'y':
-    print '\n### Starting EOF selection and exploration ###'
+    print('\n### Starting EOF selection and exploration ###')
     specfit = raw_input('Fit EOFs with a POWER-LAW or RED-NOISE filter? (p/[r, assumed])')
     speclabel = 'red' if specfit == 'r' else 'power-law'
     if not specfit: specfit = 'r'
-    print ' Click 2 points in the next plot to draw a line to select EOFs (i.e. above your line).'
-    print ' Close this initial plot to view the eigenspectrum with your selected EOFs circled and'
-    print '       shaded 95% confidence intervals for the fitted {} noise floor.'.format(speclabel)
+    print(' Click 2 points in the next plot to draw a line to select EOFs (i.e. above your line).')
+    print(' Close this initial plot to view the eigenspectrum with your selected EOFs circled and')
+    print('       shaded 95% confidence intervals for the fitted {} noise floor.'.format(speclabel))
     spts = ESplot(data, ts=data.filename+" Draw a selection line below, then", specfit=specfit)
     data.sel_EOFs = ESplot(data, ts=data.filename+" with selected EOFs", specfit=specfit, spts=spts)
     yorn = raw_input(' Want to vew the LOG-LOG version of this plot, or apply a DIFFERENT filter (y/[n assumed]/d)?')
@@ -399,7 +400,7 @@ while yorn == 'y':
 yorn = raw_input('Want to plot EOF-pages? (y/[n assumed])')
 if yorn == 'y':
     idlist = range(data.M)
-    print '\n Opening a ListBox selection window. Plot as many EOF pages as you\n  wish, and then close the plots and ListBox to continue.'
+    print('\n Opening a ListBox selection window. Plot as many EOF pages as you\n  wish, and then close the plots and ListBox to continue.')
     EOF_listbox = LBParams('EOF-Pages', 'Select 1st EOF,\nclick Plot 20.',
          "EOFplot(data, EOFpages=True, sid=int({0}))", "Plot next 20 EOFs beginning with", idlist)
     EOF_listbox.open_lb()
@@ -419,10 +420,10 @@ while yorn == 'y':
                 raise Warning("You didn't specify 2 ranks properly. Moving on...")
                 yorn = 'n'
             else:
-                print '\nEOF pair, {0}, explain {1}% of the total variance.'.format(v_num, round(sum(data.vp[k] for k in v_num)*100.,2))
+                print('\nEOF pair, {0}, explain {1}% of the total variance.'.format(v_num, round(sum(data.vp[k] for k in v_num)*100.,2)))
                 PairedPlot(data.E[:][:,v_num[0]],data.E[:][:,v_num[1]], ts='{0} and {1}'.format(*v_num))
         else:
-            print '\nEOF pair, {0}, explain {1}% of the total variance.'.format(v_num, round(sum(data.vp[k] for k in v_num)*100.,2))
+            print('\nEOF pair, {0}, explain {1}% of the total variance.'.format(v_num, round(sum(data.vp[k] for k in v_num)*100.,2)))
             PairedPlot(data.E[:][:,v_num[0]],data.E[:][:,v_num[1]], ts='{0} and {1}'.format(*v_num))
     yorn = raw_input('Want to plot another pair (y/n)?')
 
@@ -445,8 +446,8 @@ while yorn == 'y' or yorn == 'r':
         yorn2 = raw_input('Plot original and reconstruction SEPARATELY or TOGETHER (s/[t assumed])?')
         data.rx = [i+scaled_mean for i in sum(data.R[:][:,r_sel], axis=1)]
         data.x_resid = [data.X[i]-data.rx[i] for i in range(data.N)]
-    if nr == data.M: print '\nPlotted reconstruction for all {} EOFS.'.format(data.M)
-    else:   print '\nThe plotted reconstruction for EOFS: {0}\nExplain {1}% of the total variance.'.format(', '.join(str(i) for i in r_sel), round(sum(data.vp[k] for k in r_sel)*100.,2))
+    if nr == data.M: print('\nPlotted reconstruction for all {} EOFS.'.format(data.M))
+    else:   print('\nThe plotted reconstruction for EOFS: {0}\nExplain {1}% of the total variance.'.format(', '.join(str(i) for i in r_sel), round(sum(data.vp[k] for k in r_sel)*100.,2)))
     if yorn2 == 's':
         ReconPlot(data, subp='s')
     else:
@@ -455,10 +456,10 @@ while yorn == 'y' or yorn == 'r':
 
 yorn = raw_input('Would you like to save any SSA data to disk (y/n)?')
 if yorn == 'y':
-    print '\n Your working directory is: {}.\n Select a variable from the next ListBox window, then close it when finished.'.format(fname[1])
+    print('\n Your working directory is: {}.\n Select a variable from the next ListBox window, then close it when finished.'.format(fname[1]))
     var_nms = [i for i in data.__dict__.keys() if i[:1] != '_']
     vname_lb = LBParams('SSA Variables', 'Select variable,\nclick Save.',
          "savetxt(data.fpath.replace('.txt','_{0}.txt'), data.{0}, delimiter=',', newline='\\n')",
          "Save to csv:", var_nms)
     vname_lb.open_lb()
-print '\nClosing ssa.py.'
+print('\nClosing ssa.py.')

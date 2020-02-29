@@ -4,6 +4,7 @@
 
 # https://forum.omz-software.com/topic/2393/beta-boids-with-a-crash
 
+from __future__ import print_function
 from scene import *
 import random
 import math
@@ -167,11 +168,11 @@ class MyScene (Scene):
 			with open(self.crash_file_name()) as f:
 				times = pickle.load(f)
 		except IOError as e:
-			print e
+			print(e)
 			times = []
 		self.crash_times = times
-		print self.crash_times
-		print
+		print(self.crash_times)
+		print()
 		self.start_time = time.time()
 		self.crash_times.append(0.0)
 

@@ -1,3 +1,4 @@
+from __future__ import print_function
 from scene import *
 
 # Wraps input text to a width size	
@@ -112,8 +113,8 @@ class Scene (Scene):
 		self.currentEvent += 1
 		self.char = 0
 		
-		print self.currentEvent
-		print len(self.events)
+		print(self.currentEvent)
+		print(len(self.events))
 		self.lex(self.events[self.currentEvent])
 	
 	def lex(self, line):
@@ -153,7 +154,7 @@ class Scene (Scene):
 					state = 1
 					tok = ""
 					
-		print self.actor.name + " will " + self.action + ": (" + self.details + ")"
+		print(self.actor.name + " will " + self.action + ": (" + self.details + ")")
 		
 		self.parse()
 		

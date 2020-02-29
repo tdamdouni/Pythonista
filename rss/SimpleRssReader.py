@@ -9,6 +9,7 @@
 
 # https://gist.github.com/beer2011/fcc4aaeec2a0f489b8fa
 
+from __future__ import print_function
 import ui
 import sqlite3
 import console
@@ -89,7 +90,7 @@ class FeedListController(object):
 		#print row
 		# delete sql data
 		del_feed = (self.feeds[row]['title'], )
-		print 'delete', del_feed
+		print('delete', del_feed)
 		#
 		conn = sqlite3.connect('feeds.db')
 		#conn.execute('DELETE FROM feeds WHERE url = (?)', [del_feed])

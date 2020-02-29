@@ -1,4 +1,5 @@
 # coding: utf-8
+from __future__ import print_function
 import sys; sys.path.append('../boto-module')
 import boto.ec2
 import time
@@ -19,15 +20,15 @@ if secret == None:
   secret = console.password_alert("Enter secret key")
   keychain.set_password("aws",key,secret)
 
-print "Connecting"
+print("Connecting")
 ec2_conn = boto.connect_ec2(aws_access_key_id=key,aws_secret_access_key=secret)
 
-print "Stopping instance"
+print("Stopping instance")
 ec2_conn.stop_instances(instance_ids=[instance_id])
 
 msg = "Shutdown in progress"
 clipboard.set(msg)
-print msg
+print(msg)
 
 if return_url != None:
   webbrowser.open(return_url)

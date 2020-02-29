@@ -2,6 +2,7 @@
 
 # https://forum.omz-software.com/topic/2928/ui-animate-wider-usage/4
 
+from __future__ import print_function
 import ui
 
 class CircleProgress(ui.View):
@@ -90,7 +91,7 @@ class CircleProgress(ui.View):
 				setattr(self, k, v)
 				
 	def animate(self, sender = None):
-		print 'in animate...'
+		print('in animate...')
 		def animation():
 			self.alpha = 0 # fade out
 			self.value = self.alpha

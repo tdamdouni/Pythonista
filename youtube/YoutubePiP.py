@@ -1,3 +1,4 @@
+from __future__ import print_function
 # https://forum.omz-software.com/topic/2260/ios-9-s-picture-in-picture-with-youtube-powered-by-pythonista
 
 # https://gist.github.com/The-Penultimate-Defenestrator/38f7f1f3b07c77a9c537
@@ -26,7 +27,7 @@ for l in soup.select('a'):
 if not appex.is_running_extension():
 	webbrowser.open('safari-'+links[0].get('href'))
 else:
-	print links[0].get('href')
+	print(links[0].get('href'))
 
 # links = [link for link in soup.select('a') if 'googlevideo.com' in link.get('href', None)]
 # replaces...

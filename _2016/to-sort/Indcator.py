@@ -4,6 +4,7 @@
 
 # https://forum.omz-software.com/topic/2919/making-arcs-and-filling-them-with-in-ui-path/11
 
+from __future__ import print_function
 import ui
 import time
 from math import pi, sin, cos, radians
@@ -243,7 +244,7 @@ class TestClass(ui.View):
 		self.indicator.increments = incs
 		for i in xrange(0,10):
 			v = incs * float(i)
-			print v
+			print(v)
 			self.indicator.increment(v)
 			time.sleep(.1) 
 			if not self.on_screen:

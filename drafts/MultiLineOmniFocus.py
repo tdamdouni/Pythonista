@@ -1,3 +1,4 @@
+from __future__ import print_function
 # @Drafts
 # https://github.com/n8henrie/n8pythonista/blob/master/MultiLineOmniFocus.py
 # IMPORTANT: You need to enter your email login in the main() function.
@@ -28,7 +29,7 @@ def main():
 	gmail_pwd = keychain.get_password('multilineomnifocus',gmail_user)
 
 	console.clear()
-	print 'Starting SMTP Server'
+	print('Starting SMTP Server')
 	
 	smtpserver = smtplib.SMTP("smtp.gmail.com", 587)
 	smtpserver.ehlo()
@@ -45,11 +46,11 @@ def main():
 
 		composed = outer.as_string()
 		
-		print 'Sending Task ' + str(tasks.index(task) + 1)
+		print('Sending Task ' + str(tasks.index(task) + 1))
 		smtpserver.sendmail(gmail_user, to, composed)
 
 	smtpserver.close()
-	print 'Done'
+	print('Done')
 	console.clear()
 
         # Added to kind of support callbacks while maintaining

@@ -1,5 +1,6 @@
 #!/usr/bin/python
 
+from __future__ import print_function
 import re
 import urllib2
 
@@ -78,7 +79,7 @@ class wemo:
 			result = urllib2.urlopen(request, timeout=3)
 			return self._extract(result.read(), data)
 		except Exception as e:
-			print str(e)
+			print(str(e))
 			return None
 
 	def _extract(self, response, name):
@@ -89,7 +90,7 @@ class wemo:
 		return response
 
 def output(message):
-	print message
+	print(message)
 
 switch = wemo(ip)
 

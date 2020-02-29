@@ -1,4 +1,5 @@
 # coding: utf-8
+from __future__ import print_function
 import re
 import sys
 import console
@@ -100,7 +101,7 @@ def append_to_note(guid, new_content, main_new_content, add_if_already_exists):
 	try:
 		_get_note_store().updateNote(note)
 	except:
-		print sys.exc_info()
+		print(sys.exc_info())
 
 	#Return updated note (object) to the function
 	return note

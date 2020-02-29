@@ -1,5 +1,6 @@
 #!python2
 
+from __future__ import print_function
 import os
 import sys
 import pickle
@@ -33,21 +34,21 @@ class dropbox_state:
 				if meta != None:
 					path = meta['path'][1:] # caps sensitive
 					if meta['is_dir']:
-						print '\n\tMaking Directory:',path
+						print('\n\tMaking Directory:',path)
 						self.makedir_local(path)
 					elif path not in self.remote_files:
-						print '\n\tNot in local'
+						print('\n\tNot in local')
 						self.download(client, path)
 					elif meta['rev'] != self.remote_files[path]['rev']:
-						print '\n\tOutdated revision'
+						print('\n\tOutdated revision')
 						self.download(client, path)
 				# remove file or directory
 				else: 
 					if os.path.isdir(path):
-						print '\n\tRemoving Directory:', path
+						print('\n\tRemoving Directory:', path)
 						os.removedirs(path)
 					elif os.path.isfile(path):
-						print '\n\tRemoving File:', path
+						print('\n\tRemoving File:', path)
 						os.remove(path)
 						
 						del self.local_files[path]
@@ -57,7 +58,7 @@ class dropbox_state:
 
 	# makes dirs if necessary, downloads, and adds to local state data
 	def download(self, client, path):
-		print '\tDownloading:', path
+		print('\tDownloading:', path)
 		# TODO: what if there is a folder there...?
 		head, tail = os.path.split(path)
 		# omit files in Inbox _ next line and indent added by sidewinder42
@@ -77,7 +78,7 @@ class dropbox_state:
 			self.remote_files[path] = meta
 	
 	def upload(self, client, path):
-		print '\tUploading:', path
+		print('\tUploading:', path)
 		local = open(path,'r')
 		meta = client.put_file(os.path.join('/',path), local, True)
 		local.close()
@@ -89,12 +90,12 @@ class dropbox_state:
 		self.execute_delta(client, ignore_path=meta['path'])
 	
 	def delete(self, client, path):
-		print '\tFile deleted locally. Deleting on Dropbox:',path
+		print('\tFile deleted locally. Deleting on Dropbox:',path)
 		try:
 			client.file_delete(path)
 		except:
 			# file was probably already deleted
-			print '\tFile already removed from Dropbox'
+			print('\tFile already removed from Dropbox')
 			
 		del self.local_files[path]
 		del self.remote_files[path]
@@ -152,30 +153,30 @@ def savestate(state):
 if __name__ == '__main__':
 	console.show_activity()
 	
-	print """
+	print("""
 ****************************************
 *     Dropbox Files Synchronization    *
-****************************************"""
+****************************************""")
 
 	client = dropboxlogin.get_client()
-	print '\nLoading local state'
+	print('\nLoading local state')
 	# lets see if we can unpickle
 	try:
 		state = loadstate()
 	except:
-		print '\nCannot find state file. ***Making new local state***'
+		print('\nCannot find state file. ***Making new local state***')
 		# Aaaah, we have nothing, probably first run
 		state = dropbox_state()
 		
-		print '\nDownloading everything from Dropbox'
+		print('\nDownloading everything from Dropbox')
 		# no way to check what we have locally is newer, gratuitous dl
 		state.download_all(client)
 
-	print '\nUpdating state from Dropbox'
+	print('\nUpdating state from Dropbox')
 	state.execute_delta(client)
 		
 	
-	print '\nChecking for new or updated local files'
+	print('\nChecking for new or updated local files')
 	# back to business, lets see if there is anything new or changed localy
 	filelist = []
 	for root, dirnames, filenames in os.walk('.'):
@@ -186,13 +187,13 @@ if __name__ == '__main__':
 	for file in filelist:
 		state.check_state(client,file)
 		
-	print '\nChecking for deleted local files'
+	print('\nChecking for deleted local files')
 	old_list = state.local_files.keys()
 	for file in old_list:
 		if file not in filelist:
 			state.delete(client, file)
 	
-	print '\nSaving local state'
+	print('\nSaving local state')
 	savestate(state)
 	
-	print '\nSync complete'
+	print('\nSync complete')

@@ -1,3 +1,4 @@
+from __future__ import print_function
 # https://gist.github.com/allanon2/6239859
 
 import urllib2, urlparse, sys, webbrowser, clipboard, console
@@ -29,7 +30,7 @@ def main():
         except Exception:
             v_id = None
     if not v_id:
-        print repr(link)
+        print(repr(link))
         return
     config = urllib2.urlopen('http://www.youtube.com/get_video_info?&video_id=%s&el=detailpage&ps=default&eurl=&gl=US&hl=en' % v_id).read()
     config = urlparse.parse_qs(config)

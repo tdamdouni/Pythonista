@@ -1,3 +1,4 @@
+from __future__ import print_function
 # https://github.com/ThomasBoynton/Fibonnaci-Fun/blob/master/Golden%20Ratio.py
 
 import matplotlib.pyplot as plt
@@ -18,7 +19,7 @@ def fib(n):
             fib_list.insert(i,num)
             i += 1
         else:
-            print "Error"
+            print("Error")
     return fib_list
 
 def Phi(fib):
@@ -40,10 +41,10 @@ def Phi(fib):
 Input = input("How many terms in the sequence do you want to generate?: ")
 
 fib_sequence = fib(Input)
-print fib_sequence
+print(fib_sequence)
 
 phi_sequence = Phi(fib_sequence)
-print phi_sequence
+print(phi_sequence)
 
 #Plot Graphs
 plt.figure(1)

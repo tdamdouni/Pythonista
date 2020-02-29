@@ -11,19 +11,20 @@ Pd/Max buffers can be mapped to Python arrays.
 Currently, there are three implementations:
 Numeric, numarray and numpy (for all of them see http://numeric.scipy.org)
 """
+from __future__ import print_function
 
 import sys
 
 try:
     import pyext
 except:
-    print "ERROR: This script must be loaded by the PD/Max py/pyext external"
+    print("ERROR: This script must be loaded by the PD/Max py/pyext external")
 
 try:
     # numpy is assumed here... numeric and numarray are considered deprecated
     import numpy as N
 except:
-    print "Failed importing numpy module:",sys.exc_value
+    print("Failed importing numpy module:",sys.exc_value)
 
 def mul(*args):
     # create buffer objects

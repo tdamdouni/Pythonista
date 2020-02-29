@@ -8,6 +8,7 @@
 # - scan all photos with Photos Objc Framework
 # - get their album name and update dictionary as "name->index,album"
  
+from __future__ import print_function
 import ui
 import photos
 import console
@@ -41,6 +42,6 @@ def main():
 			fn_index[fn] = (ip,album)
 			
 	# print filename -> album,index
-	print fn_index
+	print(fn_index)
 
 main()	

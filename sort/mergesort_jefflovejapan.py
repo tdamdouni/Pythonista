@@ -1,3 +1,4 @@
+from __future__ import print_function
 # https://gist.github.com/jefflovejapan/7493179
 
 # Interactive Python http://interactivepython.org/courselib/static/pythonds/SortSearch/sorting.html
@@ -34,5 +35,5 @@ def mergejoin(left, right):
 	
 import random
 input = random.sample(range(100), 11)
-print mergesort(input), len(input)
+print(mergesort(input), len(input))
 

@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 #coding: utf-8
 
+from __future__ import print_function
 import socket
 import threading
 import console
@@ -388,7 +389,7 @@ class Color_Text_View(ui.View):
 			self.setAttribs()
 		except :
 			print('{}のテキスト処理に失敗'.format(text))
-			print traceback.format_exc()
+			print(traceback.format_exc())
 		finally:
 			self.limit.release()
 		

@@ -1,6 +1,7 @@
 # Copyright (c) 2016 Jesse Millar
 
 """Accept a name as a parameter, calculate its word score, and report whether the score is prime."""
+from __future__ import print_function
 
 import sys
 
@@ -22,12 +23,12 @@ def main():
 					
 		for i in range(0, len(primes)):
 			if primes[i] == score:
-				print str(score) + " and prime"
+				print(str(score) + " and prime")
 				return
 				
-		print str(score) + " and NOT prime"
+		print(str(score) + " and NOT prime")
 	else:
-		print "If your name contains spaces, please wrap it in quotes."
+		print("If your name contains spaces, please wrap it in quotes.")
 		return
 		
 main()  # Run the program

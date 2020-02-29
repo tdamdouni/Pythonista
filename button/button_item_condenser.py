@@ -5,6 +5,7 @@
 
 # This file is part of https://github.com/marcus67/rechtschreibung
 
+from __future__ import print_function
 import ui
 from objc_util import *
 
@@ -51,7 +52,7 @@ class ButtonItemCondenser (object):
 		return self.condensed_list
 		
 def handle_action(sender):
-	print str(sender)
+	print(str(sender))
 	
 def test():
 

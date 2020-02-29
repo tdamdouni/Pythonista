@@ -2,6 +2,7 @@
 
 # https://gist.github.com/bmw1821/bc2ccf257d60804be010
 
+from __future__ import print_function
 import os
 import PydiaKit
 
@@ -359,7 +360,7 @@ def update_package(package_identifier, overwrite_files = False):
 	except PackageInstallMissingDependencyException as e:
 		raise e
 	except Exception as e:
-		print e
+		print(e)
 		return None
 		
 def get_packages_for_search_text(search_text):

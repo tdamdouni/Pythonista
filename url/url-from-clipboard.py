@@ -1,3 +1,4 @@
+from __future__ import print_function
 # Source https://gist.github.com/Blether/7665238
 
 import clipboard

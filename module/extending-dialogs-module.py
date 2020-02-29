@@ -4,6 +4,7 @@
 
 # Extension of dialogs.form_dialog() that supports simple data validation
 
+from __future__ import print_function
 import dialogs
 import collections
 import ui
@@ -41,7 +42,7 @@ class MyTextFieldDelegate (object):
 	def textfield_should_change(self, textfield, range, replacement):
 		if replacement == ' ':
 			return False
-		print textfield, range, replacement
+		print(textfield, range, replacement)
 		return True
 	def textfield_did_change(self, textfield):
 		pass
@@ -85,7 +86,7 @@ def form_dialog(title='', fields=None, sections=None, done_button_title='Done', 
 		cell = c.cells[0][i]                    # ui.TableViewCell of row i
 		tf = cell.content_view.subviews[0]  # ui.TextField of value in row
 		c.values[tf.name] = tf.text         # set return values
-		print('c.values=',c.values)
+		print(('c.values=',c.values))
 		
 	return c.values
 	
@@ -111,7 +112,7 @@ def validate_form(values):
 def main():
 	fields = [{'type': 'text', 'key': 'title', 'title': 'Title (Mr/Mrs/Ms)'}, {'type': 'text', 'key': 'name', 'title': 'Name'}, {'type': 'switch', 'key': 'terms', 'title': 'Accept Terms'}]
 	r = form_dialog('Test', fields, validator=validate_form)
-	print r
+	print(r)
 	
 if __name__ == '__main__':
 	main()

@@ -2,6 +2,7 @@
 
 # https://forum.omz-software.com/topic/2375/problem-with-list-comprehension
 
+from __future__ import print_function
 from collections import OrderedDict
 import sqlite3
 from random import randint
@@ -63,7 +64,7 @@ if __name__ == '__main__':
     # same. makes sense. Simple stuff but easy for us newbies to slip
     # up on these small things.
     mydb_def = dict(db_def)
-    print id(mydb_def), id(db_def)
+    print(id(mydb_def), id(db_def))
 
     db_name = mydb_def['db_name']
     db_table = 'table_c'
@@ -76,14 +77,14 @@ if __name__ == '__main__':
         for i in range(1, recs_to_add):
             rnd_resid = randint(1, 500000)
             r = new_record(resid = rnd_resid, key = fake.city(), data = fake.first_name(), bad_keyword = 'bad info')
-            print r.values()[0]
+            print(r.values()[0])
             conn.execute(_insert_sql.format(db_table), r.values())
 
         conn.commit()
         conn.row_factory = dict_factory
         cur = conn.execute('SELECT * FROM {0}'.format(db_table))
         for d in cur:
-            print d
+            print(d)
             
 
 __def_flds = OrderedDict((('id','INTEGER PRIMARY KEY'),

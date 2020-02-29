@@ -16,6 +16,7 @@ for you to write your translation.  It's still rough around the edges (and delet
 others can build on it.
 
 stophlong at gmail.com 2014 Feb 02 """
+from __future__ import print_function
 
 import urllib2
 import sound
@@ -57,10 +58,10 @@ def SayIt(folderPath,toSay,language='en'):
  opener.addheaders = [('User-agent', 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0)')]
  next_step=''
  phrase_out = list()
- print 'q = quit. a = all without pause. or write translation. return = next.'
+ print('q = quit. a = all without pause. or write translation. return = next.')
  for i,phrase in enumerate(toSay):
   #print i,len(phrase), phrase
-  print phrase
+  print(phrase)
 
   tts_string = urllib2.quote(urllib2.unquote(phrase.encode('utf-8')))
   response = opener.open(google_translate_url+'?q='+tts_string+'&tl=' + language)
@@ -105,7 +106,7 @@ if __name__ == '__main__':
  text = clipboard.get()
  toSay = parseText(text)
  phrase_out = SayIt(folderPath,toSay,language)
- print toSay
- print phrase_out
+ print(toSay)
+ print(phrase_out)
 '''El mundo. Geografía.  La historia de Canción de Hielo y Fuego tiene lugar principalmente en el continente de Poniente.  Es aproximadamente equivalente en extensión a Sudamérica, aunque el autor quiso recrear una especie de Inglaterra medieval.  Sin embargo, hay una gran extensión de tierra al norte sin cartografiar, debido a las temperaturas extremadamente bajas y los habitantes hostiles conocidos como salvajes.   Las tierras del norte de Poniente están menos habitadas que las del sur a pesar de su extensión aproximadamente igual.   Las cinco ciudades principales de Poniente son, en orden de tamaño: Desembarco del Rey, Antigua, Lannisport, Puerto Gaviota, y Puerto Blanco.'''
 

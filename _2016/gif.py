@@ -1,3 +1,4 @@
+from __future__ import print_function
 # https://gist.github.com/xyfeng/559e56401dee3eccfa23
 
 # https://forum.omz-software.com/topic/3942/video-or-gif-from-still-images/2
@@ -133,8 +134,8 @@ if __name__ == "__main__":
     import sys
 
     if len(sys.argv) < 3:
-        print "GIFMAKER -- create GIF animations"
-        print "Usage: gifmaker infile outfile"
+        print("GIFMAKER -- create GIF animations")
+        print("Usage: gifmaker infile outfile")
         sys.exit(1)
 
     compress(sys.argv[1], sys.argv[2])

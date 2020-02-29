@@ -1,8 +1,9 @@
+from __future__ import print_function
 import ui
 
 def fieldEdited(sender):
     t=sender.text   # note change
-    print t
+    print(t)
 
 view = ui.View()
 view.background_color = 'white'

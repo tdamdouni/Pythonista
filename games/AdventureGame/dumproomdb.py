@@ -1,3 +1,4 @@
+from __future__ import print_function
 import sys
 import sqlite3
 import os
@@ -8,7 +9,7 @@ def main(dbname):
 	Just a little sanity check to verify the database has 
 	Everything expected.
 	'''	
-	print 'start db dump'
+	print('start db dump')
 	con = sqlite3.connect(dbname)
 	
 	
@@ -20,9 +21,9 @@ def main(dbname):
 		rows = cur.fetchall()
 		
 		for row in rows:
-			print row
+			print(row)
 	
-	print 'end db dump'
+	print('end db dump')
 
 
 if __name__ == "__main__":

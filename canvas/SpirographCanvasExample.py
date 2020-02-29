@@ -1,3 +1,4 @@
+from __future__ import print_function
 #Spirograph.py
 from math import *
 import canvas
@@ -60,7 +61,7 @@ def createSpiral(arm1, arm2, color):
 			inarow += 1
 
 		if inarow >= 5:
-			print "Pattern is detected to be repeating itself"
+			print("Pattern is detected to be repeating itself")
 			run = 0
 
 

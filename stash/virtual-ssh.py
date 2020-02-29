@@ -1,6 +1,7 @@
 # Copyright (c) 2016 Jesse Millar
 
 """Find the IP address of a VirtualBox virtual machine and ssh into it. Add or update /etc/hosts entries upon user interaction."""
+from __future__ import print_function
 
 import os
 import subprocess
@@ -76,14 +77,14 @@ def main():  # Define as a function to adhere to style guidelines
 	try:
 		sys.argv[1]
 	except IndexError:
-		print "Missing name of virtual machine"
+		print("Missing name of virtual machine")
 		return
 		
 	try:
 		sys.argv[2]  # Check if the user is supplying the virtual machine's name correctly
 	except IndexError:  # If the name is correct, run the program
 		if not check_exists(sys.argv[1]):
-			print "The specified virtual machine does not appear to exist."
+			print("The specified virtual machine does not appear to exist.")
 			return
 			
 		if not check_up(sys.argv[1]):
@@ -91,7 +92,7 @@ def main():  # Define as a function to adhere to style guidelines
 			
 			if len(headless_input) == 0 or headless_input == "Y" or headless_input == "y":  # If the user responds in the affirmative
 				subprocess.Popen(["VBoxManage", "startvm", sys.argv[1], "--type", "headless"], stdout=subprocess.PIPE)
-				print "Please wait for the machine to boot before trying to connect again."
+				print("Please wait for the machine to boot before trying to connect again.")
 				return
 			else:
 				return
@@ -117,7 +118,7 @@ def main():  # Define as a function to adhere to style guidelines
 				
 		os.system("ssh " + address)
 	else:
-		print "If your virtual machine's name contains spaces, please wrap it in quotes."
+		print("If your virtual machine's name contains spaces, please wrap it in quotes.")
 		return
 		
 main()  # Run the function so the module is useful in a CLI

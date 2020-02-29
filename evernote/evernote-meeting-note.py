@@ -24,6 +24,7 @@
 
 
 #Constants
+from __future__ import print_function
 ntbkName = "Work"
 auth_token = "INSERT YOUR EVERNOTE TOKEN HERE"
 
@@ -45,23 +46,23 @@ from datetime import date
 dt = date.today()
 todayDt = dt.isoformat()
 
-print "Connecting to Evernote...\n"
+print("Connecting to Evernote...\n")
 
 client = EvernoteClient(token=auth_token, sandbox=False)
 note_store = client.get_note_store()
 
 # List all of the notebooks in the user's account
 notebooks = note_store.listNotebooks()
-print "Found ", len(notebooks), " notebooks:"
+print("Found ", len(notebooks), " notebooks:")
 
 for notebook in notebooks:
-	print "  * ", notebook.name
+	print("  * ", notebook.name)
 	if notebook.name == ntbkName:
-		print "<Target Notebook Found>"
+		print("<Target Notebook Found>")
 		# gets the notebook GUID to assign it to the new Note
 		ntbkGuid = notebook.guid
 		
-print "Creating a new note in notebook "+ntbkName
+print("Creating a new note in notebook "+ntbkName)
 
 
 # To create a new note, simply create a new Note object and fill in
@@ -105,5 +106,5 @@ note.content += '</en-note>'
 
 created_note = note_store.createNote(note)
 
-print "Successfully created a new note with GUID: ", created_note.guid
+print("Successfully created a new note with GUID: ", created_note.guid)
 

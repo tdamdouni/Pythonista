@@ -1,5 +1,6 @@
 # coding: utf-8
 
+from __future__ import print_function
 import datetime, os, ui, shutil, console, sys, clipboard, requests, zipfile, zlib, tarfile, photos, editor
 
 def get_dir(path = os.path.expanduser('~')):
@@ -89,7 +90,7 @@ class MyImageView(ui.View):
 			else:
 				self.ratio = y_ratio
 		else:
-			print 'This should never happen. :('
+			print('This should never happen. :(')
 			
 class FileManager(ui.View):
 	pos = -1

@@ -1,3 +1,4 @@
+from __future__ import print_function
 # https://forum.omz-software.com/topic/4214/urllib-request-python-2-vs-3/9
 
 #!python2
@@ -57,7 +58,7 @@ class GoogleQuote(Quote):
 		url_string = "http://www.google.com/finance/historical?q={0}".format(self.symbol)
 		url_string += "&startdate={0}&enddate={1}&output=csv".format(
 		start.strftime('%b %d, %Y'),end.strftime('%b %d, %Y'))
-		print url_string
+		print(url_string)
 		csv = urllib.urlopen(url_string).readlines()
 		csv.reverse()
 		for bar in xrange(0,len(csv)-1):
@@ -306,7 +307,7 @@ class GoogleQuote(Quote):
 			
 #if __name__ == '__main__':
 q = GoogleQuote('vti','2017-09-08','2017-09-12')
-print q
+print(q)
 
 # --------------------
 

@@ -1,5 +1,6 @@
 # coding: utf-8
 
+from __future__ import print_function
 import ui
 import os
 import console
@@ -113,6 +114,6 @@ def getFile(setter=None,base_dir='.'):
     return fv.src.sel[0]
 if __name__=='__main__':
    def setter(s):
-      print 'setter recieved' + s
+      print('setter recieved' + s)
    f=getFile(setter=setter)
-   print 'getFile returned',f
+   print('getFile returned',f)

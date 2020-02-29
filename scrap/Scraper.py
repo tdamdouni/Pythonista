@@ -8,6 +8,7 @@
 
 # The problem I have at the moment with my current implementation (below) is that I want the main thread to wait until the page has finished rendering and then return the HTML of that page back to the main thread. At the moment the main thread finishes executing before the page has finished loading.
 
+from __future__ import print_function
 import ui
 
 class Scraper (object):
@@ -23,12 +24,12 @@ class Scraper (object):
 
 # Example:
 def parse_response(response):
-    print 'Webview finished loading - ' + response
+    print('Webview finished loading - ' + response)
 
 def main():
     s = Scraper(parse_response, 'https://www.google.com', 'document.title;')
     # How can I wait for the Web View to finish loading here and return the HTML of the webpage before proceeding on the main thread?
-    print 'Main thread finished executing'
+    print('Main thread finished executing')
 if __name__ == '__main__':
     main()
 

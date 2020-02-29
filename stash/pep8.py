@@ -63,6 +63,7 @@ W warnings
 900 syntax error
 """
 from __future__ import with_statement
+from __future__ import print_function
 
 import os
 import sys
@@ -1536,7 +1537,7 @@ class Checker(object):
         self.tokens = []
 
     def check_ast(self):
-        print 'check ast'
+        print('check ast')
         """Build the file's AST and run all AST checks."""
         try:
             tree = compile(''.join(self.lines), '', 'exec', PyCF_ONLY_AST)

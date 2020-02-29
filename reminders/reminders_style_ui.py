@@ -2,6 +2,7 @@
 
 # https://gist.github.com/Phuket2/ecb60f488de9da299c7b
 
+from __future__ import print_function
 import ui
 from collections import namedtuple
 import string
@@ -179,14 +180,14 @@ class UiRemindersStyle (ui.View):
 		self.detail.bounds = r.inset(10,10, 44, 0)
 
 	def set_master_data(self, items):
-		print self.master.table
+		print(self.master.table)
 		tbl = self.master.table
 		tbl.data_source = ui.ListDataSource(items = get_recs(40))
 		tbl.data_source.action = self.hit_master
 
 	def hit_master(self, sender):
-		print 'inside hit callback master'
-		print sender.name
+		print('inside hit callback master')
+		print(sender.name)
 
 
 if __name__ == '__main__':

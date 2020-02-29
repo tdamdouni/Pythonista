@@ -1,3 +1,4 @@
+from __future__ import print_function
 # https://forum.omz-software.com/topic/2310/share-code-tabbar
 
 # coding: utf-8
@@ -83,7 +84,7 @@ tab_bar_item_1 = UITabBarItem.alloc().initWithTabBarSystemItem_tag_(0,0).autorel
 tab_bar_item_2 = UITabBarItem.alloc().initWithTabBarSystemItem_tag_(1,1).autorelease()
 
 def tab_bar_item_changed(sender):
-    print sender.selected_item.description()
+    print(sender.selected_item.description())
 
 root = ui.View(frame=(0,0,500,500))
 tab_bar = TabBar(frame=(0,451,500,49))

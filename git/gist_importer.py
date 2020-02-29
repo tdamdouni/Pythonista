@@ -24,6 +24,7 @@
 
 # Find yourself a nice Python gist and hit the bookmarklet. Boom.
 
+from __future__ import print_function
 import keychain
 import requests
 import editor
@@ -35,7 +36,7 @@ GITHUB_TOKEN  = keychain.get_password('github', GITHUB_USER)
 FOLDER_PREFIX = '~/Documents/inbox' # Usage: 'Path/to/folder/'
 
 if len(sys.argv) < 2:
-	print 'No Gist URL provided'
+	print('No Gist URL provided')
 	sys.exit(1)
 	
 pattern = re.compile('https://gist.github.com/[a-zA-Z0-9_]+/([a-f0-9]+)')
@@ -43,14 +44,14 @@ match = pattern.search(sys.argv[1])
 try:
 	gist_id = match.group(1)
 except IndexError:
-	print "Could not parse Gist ID from URL '%s'" % sys.argv[1]
+	print("Could not parse Gist ID from URL '%s'" % sys.argv[1])
 	sys.exit(1)
 	
 gist_url = 'https://api.github.com/gists/' + gist_id
 
 r = requests.get(gist_url, auth=(GITHUB_USER, GITHUB_TOKEN))
 if r.status_code is not 200:
-	print "Something's wrong! API returned status %d" % r.status_code
+	print("Something's wrong! API returned status %d" % r.status_code)
 	sys.exit(1)
 	
 files = r.json['files']
@@ -62,7 +63,7 @@ for key in files.keys():
 	if files[key]['language'] == 'Python':
 		# Create file
 		editor.make_new_file(FOLDER_PREFIX + name, files[key]['content'])
-		print "Imported script '%s'" % name
+		print("Imported script '%s'" % name)
 		
 editor.reload_files()
 

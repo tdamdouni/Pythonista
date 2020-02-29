@@ -1,3 +1,4 @@
+from __future__ import print_function
 # https://forum.omz-software.com/topic/3185/problems-with-script
 
 import appex
@@ -18,7 +19,7 @@ def main():
 			webbrowser.open('editorial://x-callback-url/open/path-to-file.txt?root=dropbox&command=PasteLink&x-success=pythonista3://')
 			
 		else:
-			print 'No input URL found.'
+			print('No input URL found.')
 			
 if __name__ == '__main__':
 	main()

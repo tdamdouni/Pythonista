@@ -2,6 +2,7 @@
 
 # https://forum.omz-software.com/topic/2735/using-continue-with-yield/4
 
+from __future__ import print_function
 def allfiles(self):
         for path, subdirs, files in os.walk(self.root_dir):
             for filename in files:
@@ -42,14 +43,14 @@ exts = 'py|md|txt'
 root_dir = os.path.expanduser('~/Documents')
 
 for file_path in allfiles(root_dir, skip_dirs, exts):
-    print file_path
+    print(file_path)
 
 #====================
 
 if condition:
-    print item
+    print(item)
 
 
 if some_skip_condition:
     continue
-print item
+print(item)

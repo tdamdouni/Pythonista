@@ -2,6 +2,7 @@
 
 # https://forum.omz-software.com/topic/2582/get-web-source-code
 
+from __future__ import print_function
 import requests
 from bs4 import BeautifulSoup
 
@@ -26,7 +27,7 @@ example_page = '<html><body><iframe src="http://www.google.com"></iframe><body>'
 
 soup = BeautifulSoup(example_page)
 
-print get_iframe_src_html(soup)
+print(get_iframe_src_html(soup))
 
 
 #example usage:

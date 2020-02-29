@@ -1,3 +1,4 @@
+from __future__ import print_function
 # https://gist.github.com/mlgill/8310779
 
 import sys, os, re
@@ -46,11 +47,11 @@ dummystr = 'xxxxxx'
 #                                                                #
 ##################################################################
 
-print """
+print("""
 ****************************************
 *          Gist Auto Updater           *
 ****************************************
-"""
+""")
 
 # get the list of files--may need to change the walk directory if this file is moved
 filelist = list()
@@ -85,7 +86,7 @@ for fil in filelist:
 	if '#GISTINFO' in fl:
 		gistid = re.search(r"""id:(?P<gistid>\w+)""",fl).group('gistid')
 		if gistid not in gistidlist:
-			print 'Gist id %s for file %s not found in your gists.' % (gistid,fil)
+			print('Gist id %s for file %s not found in your gists.' % (gistid,fil))
 		else:
 			# get the gist instance
 			gist = [y for (x,y) in zip(gistidlist,gistlist) if x==gistid][0]
@@ -123,9 +124,9 @@ for fil in gistattrdict.keys():
 	gistname = gistattr['name']
 	success = gistup.edit(files={gistname:{'content':filstr}})
 	if success:
-		print 'Gist %s was succcessfully updated.' % gistname
+		print('Gist %s was succcessfully updated.' % gistname)
 	else:
-		print 'Gist %s was not updated.' % gistname
+		print('Gist %s was not updated.' % gistname)
 		
-print '\nGist update is complete.\n'
+print('\nGist update is complete.\n')
 

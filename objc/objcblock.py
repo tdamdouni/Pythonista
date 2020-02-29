@@ -5,6 +5,7 @@
 ''' block factory
 ObjCBlock(py_callback,restype, argtypes[])
 '''
+from __future__ import print_function
 
 from ctypes import *
 from objc_util import *
@@ -35,7 +36,7 @@ def ObjCBlock(invoke,restype,argtypes):
       return byref(Block())
 if __name__=='__main__':
    def invoke_py(self, obj, idx, stop):
-      print self, idx  , obj
+      print(self, idx  , obj)
    blk=ObjCBlock(invoke_py,None,[c_void_p,c_uint, POINTER(c_bool)])
       
    A=ns(['a',1,3])

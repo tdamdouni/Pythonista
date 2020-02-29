@@ -1,6 +1,7 @@
 '''
 Everrista: create Evernote notes with Readability and Pythonista.
 '''
+from __future__ import print_function
 
 __author__ = 'Serge Boyko aka mcsquaredjr'
 __version__ = '0.2.1'
@@ -186,7 +187,7 @@ class Evernote_Poster(object):
 		'''Post a note to Evernote'''
 		ver = self.check_version()
 		if ver < 0:
-			print '*** VERSION ERROR: Update client to the latest version.'
+			print('*** VERSION ERROR: Update client to the latest version.')
 		else:
 			note = self._make_note(title, note, url)
 			created_note = self.note_store.createNote(note)	
@@ -266,11 +267,11 @@ if __name__ == '__main__':
 		ep = Evernote_Poster(EN_TOKEN)
 		guid = ep.post_note(title, enml, url)
 		if guid is not None:
-			print '=== Success. Posted note with GUID: ', guid
+			print('=== Success. Posted note with GUID: ', guid)
 		else:
-			print '*** ERROR: Cannot post to Evernote.'
+			print('*** ERROR: Cannot post to Evernote.')
 	else:
-		print '*** ERROR: Nothing to post.'
+		print('*** ERROR: Nothing to post.')
 	
 	
 	

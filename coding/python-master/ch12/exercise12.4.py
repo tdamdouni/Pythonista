@@ -1,3 +1,4 @@
+from __future__ import print_function
 #Use urllib to replicate the previous exercise of (1) retrieving the
 #document from a URL, (2) displaying up to 3000 characters, and (3) counting the
 #overall number of characters in the document. Dont worry about the headers for
@@ -14,8 +15,8 @@ count = 0
 for character in line:
     count = count + len(character)
     if count == 100: break
-    print line
+    print(line)
     #print count
 
-print count
+print(count)
 #print line

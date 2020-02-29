@@ -1,3 +1,4 @@
+from __future__ import print_function
 # https://github.com/humberry/scene-tutorial/blob/master/intermediate001-1.py
 
 # https://forum.omz-software.com/topic/2523/load-image-problem

@@ -1,3 +1,4 @@
+from __future__ import print_function
 # https://gist.github.com/djbouche/5019580
 
 # Will prompt a URL to grab gist files, it will pre-populate with current clipboard contents.
@@ -17,7 +18,7 @@ def codeget(url):
 	for x,v in f['files'].iteritems():
 		with open(v['filename'],'w') as ip:
 			ip.write(v['content'])
-			print 'Wrote %d chars to %s' % (len(v['content']),v['filename'])
+			print('Wrote %d chars to %s' % (len(v['content']),v['filename']))
 
 if __name__ == '__main__':
 	a = console.input_alert('URL','Enter URL',clipboard.get())

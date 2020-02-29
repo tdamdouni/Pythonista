@@ -9,6 +9,7 @@ experiment with blocks.
     NSLog(@"The object at index %d is %@",idx,obj);
 }];
 '''
+from __future__ import print_function
 from ctypes import *
 from objc_util import *
 import pdb
@@ -59,9 +60,9 @@ class EnumerationBlock(Structure):
 
 
 def invoke_py(self, obj, ind, stop):
-   print 'The item at index',ind,'is', ObjCInstance(obj)
+   print('The item at index',ind,'is', ObjCInstance(obj))
    if ObjCInstance(obj).intValue()==-1:
-      print 'stopping here'
+      print('stopping here')
       stop[0]=True
       
 blk=EnumerationBlock(invoke_py)

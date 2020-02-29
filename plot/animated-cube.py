@@ -24,6 +24,7 @@
 ##
 #####################################################################
  
+from __future__ import print_function
 from pylab import *
 import numpy as np
  
@@ -112,7 +113,7 @@ Nind=250
 ## to name the images and to calculate the rotation matrix. You could
 ## use this index to make some physics stuff...
 for ind in range(Nind):
-    print ind
+    print(ind)
     ## This is crucial, clears the figure for the new plot.
     ax.clear()
  

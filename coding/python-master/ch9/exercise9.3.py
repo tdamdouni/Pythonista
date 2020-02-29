@@ -1,3 +1,4 @@
+from __future__ import print_function
 #Write a program to read through a mail log, build a histogram using
 #a dictionary to count how many messages have come from each email address,
 #and print the dictionary.
@@ -11,4 +12,4 @@ for line in fhand:
         emails = line.split()[1]
         email_senders[emails] = email_senders.get(emails,0) + 1
         
-print email_senders
+print(email_senders)

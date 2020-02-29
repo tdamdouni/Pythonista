@@ -2,6 +2,7 @@
 
 # https://forum.omz-software.com/topic/1116/forumcodeblock
 
+from __future__ import print_function
 import urllib2, bs4
 
 class ForumCodeBlock(object):
@@ -30,8 +31,8 @@ if __name__ == "__main__":
 	fcb = ForumCodeBlock()
 	fcb.forum_url = 'http://omz-forums.appspot.com/pythonista/post/5885488242098176'
 	fcb.block_type = 'python'
-	print fcb.text()
+	print(fcb.text())
 	fcb.block_type = 'plist'
-	print fcb.text()
+	print(fcb.text())
 # --------------------
 

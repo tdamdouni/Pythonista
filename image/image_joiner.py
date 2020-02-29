@@ -1,3 +1,4 @@
+from __future__ import print_function
 import sys, Image, math
 
 # Join two images together, either horizontally or vertically, 
@@ -72,23 +73,23 @@ else:
 	im2 = photos.pick_image()
 
 # Determine stacking type and order
-print 'Are images to be stacked [v]ertically or [h]orizontally?'
+print('Are images to be stacked [v]ertically or [h]orizontally?')
 stacktype = raw_input('Enter selection [v|h]:').strip().lower()
 
 if stacktype == 'h':
-	print 'Does the first image go on the [l]eft or on the [r]ight?'
+	print('Does the first image go on the [l]eft or on the [r]ight?')
 	ordertype = raw_input('Enter selection [l|r]:').strip().lower()
 else:
-	print 'Does the first image go on the [t]op or on the [b]ottom?'
+	print('Does the first image go on the [t]op or on the [b]ottom?')
 	ordertype = raw_input('Enter selection [t|b]:').strip().lower()
 
 # Determine border and padding
-print 'Set padding between images in pixels.'
+print('Set padding between images in pixels.')
 padding_str = raw_input('Enter value or leave blank for 0:').strip()
 if len(padding_str) > 0:
 	padding = abs(int(padding_str))
 
-print 'Set border around combined image in pixels.'
+print('Set border around combined image in pixels.')
 border_str = raw_input('Enter value or leave blank for 0:').strip()
 if len(border_str) > 0:
 	border = abs(int(border_str))
@@ -98,7 +99,7 @@ if len(border_str) > 0:
 colordict = {'w':(255,255,255), 'b':(0,0,0)}
 bkgcolor_str = 'w'
 if (padding > 0) or (border > 0):
-	print 'Choose background color of [w]hite or [b]lack.'
+	print('Choose background color of [w]hite or [b]lack.')
 	bkgcolor_str = raw_input('Enter selection [w|b]:').strip().lower()
 	if bkgcolor_str not in colordict.keys():
 		bkgcolor_str = 'w'
@@ -106,7 +107,7 @@ bkgcolor = colordict[bkgcolor_str]
 
 # Set transparency
 if (padding >0) or (border>0):
-	print 'Set transparency percentage.'
+	print('Set transparency percentage.')
 	transparency_str = raw_input('Enter percentage from 0 (opaque) to 100 (transparent):').strip()
 	transparency = int(float(255)*(100-float(transparency_str)))
 	

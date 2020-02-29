@@ -2,6 +2,7 @@
 
 # https://forum.omz-software.com/topic/2380/returning-execution-to-main-thread-with-ui-webview/4
 
+from __future__ import print_function
 import ui
 import threading
 
@@ -21,7 +22,7 @@ class Scraper (object):
 
 def main():
     r = Scraper('https://www.google.com', 'document.title;').response
-    print 'Response: ' + r
+    print('Response: ' + r)
 
 if __name__ == '__main__':
     main()

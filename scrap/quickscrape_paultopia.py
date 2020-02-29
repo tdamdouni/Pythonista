@@ -21,6 +21,7 @@
 # computers.
 
 
+from __future__ import print_function
 from bs4 import BeautifulSoup as BS
 import urllib
 
@@ -58,7 +59,7 @@ filename = 'scrape' + str(strftime("%Y%m%d%H%M%S", gmtime())) + '.html'
 with open(filename, 'w') as outfile:
 	outfile.write('<br><br>'.join(texts))
 	
-print 'scraping complete!'
+print('scraping complete!')
 
 # The MIT License (MIT)
 # Copyright (c) 2015 Paul Gowder <http://paul-gowder.com>

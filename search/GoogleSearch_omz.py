@@ -9,6 +9,7 @@
 # Inspired by Brett Terpstra's SearchLink:
 # http://brettterpstra.com/searchlink-automated-markdown-linking-improved/
 
+from __future__ import print_function
 import clipboard
 
 def google(terms):
@@ -27,8 +28,8 @@ def google(terms):
 if __name__ == '__main__':
 	terms = raw_input('Enter search terms:')
 	title, url = google(terms)
-	print 'First Google Result:'
-	print 'Title:', title
-	print 'URL:', url
+	print('First Google Result:')
+	print('Title:', title)
+	print('URL:', url)
 	clipboard.set('[' + title + ']' + '(' + url + ')')
 

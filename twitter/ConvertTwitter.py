@@ -1,3 +1,4 @@
+from __future__ import print_function
 # @viticci
 # Converts twitter.com URLs (either with http or https, mobile.twitter.com or regular format) to "single status" links for Tweetbot.
 
@@ -13,6 +14,6 @@ mytext = mytext.replace('http://mobile.twitter.com/', 'tweetbot://')
 mytext = mytext.replace('https://mobile.twitter.com/', 'tweetbot://')
 
 console.clear()
-print mytext
+print(mytext)
 
 webbrowser.open(mytext)

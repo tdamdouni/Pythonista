@@ -1,3 +1,4 @@
+from __future__ import print_function
 #Exercise 10.1 Revise a previous program as follows: 
 #Read and parse the From lines and pull out the addresses from the line. 
 #Count the number of messages from each person using a dictionary.
@@ -28,7 +29,7 @@ lst.sort(reverse=True)
 
 
 for key, val in lst: 
-    print key, val
+    print(key, val)
     
 
 

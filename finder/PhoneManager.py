@@ -1,5 +1,6 @@
 # coding: utf-8
 
+from __future__ import print_function
 import datetime, os, ui, shutil, console, sys, clipboard, requests, zipfile, zlib, tarfile, photos, editor, time, struct, Image
 
 def get_dir(path = os.path.expanduser('~')):
@@ -131,7 +132,7 @@ class MyImageView(ui.View):
             else:
                 self.ratio = y_ratio
         else:
-            print 'This should never happen. :('
+            print('This should never happen. :(')
 
 class PhoneManager(object):
     pos = -1
@@ -331,7 +332,7 @@ class PhoneManager(object):
                   else: # file exist
                     self.remove_view_po()
                     self.btn_Help(None,message='File: ' + filename + ' already exists in the destination directory.',name='Error')
-        except Exception, e: # move error
+        except Exception as e: # move error
             self.remove_view_po()
             self.btn_Help(None,message=str(e),name='Error')
 
@@ -405,7 +406,7 @@ class PhoneManager(object):
                 self.make_lst()
                 self.view['tableview1'].reload_data()
                 self.remove_view_po()
-            except Exception, e:
+            except Exception as e:
                 self.remove_view_po()
                 self.btn_Help(None,message=str(e),name='Error')
         else:

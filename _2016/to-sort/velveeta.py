@@ -1,3 +1,4 @@
+from __future__ import print_function
 # Makes Velveeta Cheesy Skillets
 # Ready in about 20 minutes
 
@@ -30,7 +31,7 @@ def brown(mt):
 
 # Brown the meat
 skillet.append(brown(meat))
-print skillet
+print(skillet)
 #--------------------------------------------------
 
 
@@ -63,7 +64,7 @@ def add(w,p,s):
 	global skillet_heat
 	
 	# Inform the user
-	print ('reduced heat to',skillet_heat)
+	print(('reduced heat to',skillet_heat))
 
 	return boil(stir(w,p,s))
 
@@ -115,11 +116,11 @@ skillet.append(stir(cheese))
 # SERVE
 #--------------------------------------------------
 def serve(m):
-	print  'Your meal is ...' + str(m) + ' ENJOY!'
+	print('Your meal is ...' + str(m) + ' ENJOY!')
 
 meal = skillet
 
-print # just printing a new line
+print() # just printing a new line
 
 # Serve the meal
 serve(meal)
@@ -129,7 +130,7 @@ serve(meal)
 # CUSTOMIZE IT!
 # Top with chopped fresh tomatoes and shredded lettuce before serving...
 
-print
+print()
 
 # Nutrition Facts
 nutri_facts={
@@ -157,7 +158,7 @@ seasoning_ingredients = []
 ingredients = [cheese_sauce_ingredients,seasoning_ingredients]
 
 for fact in nutri_facts:
-	print fact,str(nutri_facts[fact])
+	print(fact,str(nutri_facts[fact]))
 	
 #kraftfoods.com
 #1-800-847-1997

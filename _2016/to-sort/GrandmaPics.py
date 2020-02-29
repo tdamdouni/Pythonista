@@ -3,11 +3,12 @@
 # https://gist.github.com/wcaleb/5542308
 
 # Clear console
+from __future__ import print_function
 import console
 console.clear()
 
-print "Tap a photo to fetch a new one!"
-print "Finding cute grandkid photos ..."
+print("Tap a photo to fetch a new one!")
+print("Finding cute grandkid photos ...")
 
 from scene import *
 import urllib2
@@ -74,4 +75,4 @@ class MyScene (Scene):
 
 run(MyScene())
 
-print '\n\nTouch play to run again!'
+print('\n\nTouch play to run again!')

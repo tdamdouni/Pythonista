@@ -9,6 +9,7 @@
 # Zipped Application:    gitsynchista
 # Application Home Page: https://github.com/marcus67/gitsynchista
 
+from __future__ import print_function
 import zipfile
 import base64
 import StringIO
@@ -21,20 +22,20 @@ def main():
 
   try:  
 
-    print "Decoding base64 encoded ZIP archive into string..."
+    print("Decoding base64 encoded ZIP archive into string...")
     binary_zip_string = base64.b64decode(zip_string, '_&')
     binary_zip_input = StringIO.StringIO(binary_zip_string)
   
-    print "Opening string as ZIP file..."
+    print("Opening string as ZIP file...")
     zip_file = zipfile.ZipFile(binary_zip_input, "r")
   
     zip_file.printdir()
     
-    print "Extracting ..."
+    print("Extracting ...")
     
     zip_file.extractall()
     
-    print "All files successfully extracted into local directory."
+    print("All files successfully extracted into local directory.")
   
   except Exception as e:
     

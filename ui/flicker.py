@@ -1,3 +1,4 @@
+from __future__ import print_function
 # https://forum.omz-software.com/topic/2343/why-does-this-flicker
 
 # coding: utf-8
@@ -9,7 +10,7 @@ class DragDrop(ui.View):
         cx, cy = touch.location
         ox, oy = touch.prev_location
         tx, ty = ox-cx, oy-cy
-        print tx, ty
+        print(tx, ty)
         self.x -= tx
         self.y -= ty
         

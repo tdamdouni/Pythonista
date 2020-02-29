@@ -2,6 +2,7 @@
 
 # https://github.com/jsbain/RoomAreaFinder
 
+from __future__ import print_function
 import ui
 class RoomAreaView(ui.View):
 	def __init__(self,file):
@@ -16,7 +17,7 @@ class RoomAreaView(ui.View):
 		self.rv=rv
 	def will_close(self):
 		x,y=zip(*self.rv.pts)
-		print polygonArea(x,y,float(self.rv.scale.text))
+		print(polygonArea(x,y,float(self.rv.scale.text)))
 class RoomAreaOverlay(ui.View):
 	def __init__(self,*args,**kwargs):
 		ui.View.__init__(self,*args,**kwargs)

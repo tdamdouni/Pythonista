@@ -1,3 +1,4 @@
+from __future__ import print_function
 # @ui update for version 1.6
 # https://github.com/jsbain/uicomponents/blob/master/uidialog.py
 import ui
@@ -5,7 +6,7 @@ import os
 def default_cancel(sender):
     pass
 def default_ok(sender):
-    print sender.superview.as_dict()
+    print(sender.superview.as_dict())
     sender.superview.do_close()
 class UIDialog(ui.View):
     def __init__(self,
@@ -140,10 +141,10 @@ if __name__=='__main__':
     r=ui.View(bg_color='white')
     r.present()
     def ok(somedict):
-        print somedict
-        print 'ok'
+        print(somedict)
+        print('ok')
     def cancel(somedict):
-        print 'cancel'
+        print('cancel')
     d=UIDialog(root=r,title='enter some \ninfo jihbihbiybiybiybiybiybiyb0b iuh iyb uybb  iyb uy  uyuy ',items=dict.fromkeys(['username','pass']),ok_action=ok,cancel_action=cancel)
     d['scrollview']['pass'].delegate=secure_text_delegate()
  

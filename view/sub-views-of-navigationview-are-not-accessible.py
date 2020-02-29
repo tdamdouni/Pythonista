@@ -2,8 +2,9 @@
 
 # https://forum.omz-software.com/topic/2371/sub-views-of-navigationview-are-not-accessible
 
+from __future__ import print_function
 with open('file.pyui','r') as f:
-	print f.read()
+	print(f.read())
 	
 #==============================
 

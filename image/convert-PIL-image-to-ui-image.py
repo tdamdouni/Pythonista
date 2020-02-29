@@ -2,6 +2,7 @@
 
 # https://forum.omz-software.com/topic/1935/how-can-i-convert-a-pil-image-to-a-ui-image/20
 
+from __future__ import print_function
 import ui
 import io
 from PIL import ImageOps, ImageDraw

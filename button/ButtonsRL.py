@@ -3,6 +3,7 @@
 
 # https://forum.omz-software.com/topic/2473/suggestion-ui-left_button_items-and-right-not-be-none-either-a-empty-tuple-or-list-or-a-property-access/2
 
+from __future__ import print_function
 import ui
 
 v = ui.View(frame = (0,0,500,500))
@@ -13,5 +14,5 @@ v.right_button_items = [btn_r0]
 
 btns = [ (btn, btn.enabled) for btn in v.left_button_items + 
             v.right_button_items if isinstance(btn , ui.ButtonItem)]
-print btns
+print(btns)
 v.present('sheet')

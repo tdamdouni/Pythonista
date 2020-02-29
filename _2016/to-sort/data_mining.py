@@ -1,3 +1,4 @@
+from __future__ import print_function
 from urllib2 import urlopen
 import csv
 import json
@@ -14,7 +15,7 @@ url_json = "http://wikilit.referata.com/" + \
 			"format%3D-20json"
 
 # 'response' is a hash/dictionary
-print 'Retrieving ', url_json
+print('Retrieving ', url_json)
 #response = json.load(urlopen(url_json))
 #pprint.pprint(response.keys())
 
@@ -28,7 +29,7 @@ url = "http://wikilit.referata.com/" + \
 		"format%3D-20csv/limit%3D-20100/offset%3D0"
 
 # Get and read the web page
-print '\nRetrieving ', url
+print('\nRetrieving ', url)
 #doc = urlopen(url).read()			# Object from urlopen has read method
 
 # 'web' is a file-like handle
@@ -40,7 +41,7 @@ lines = csv.reader(web, delimiter=',', quotechar='"')
 header = []
 papers = []
 # Iterate over 'lines'
-print '\nProcessing csv.reader'
+print('\nProcessing csv.reader')
 for row in lines:
 	# csv module lacks unicode support
 	line = [unicode(cell, 'utf-8') for cell in row]
@@ -54,7 +55,7 @@ for row in lines:
 #nltk.word_tokenize(papers[0]['Abstract'])
 
 # convert each word to lowercase
-print '\nConverting all words to lowercase'
+print('\nConverting all words to lowercase')
 #map(lambda word: word.lower(), papers[0]['Abstract'])
 
 # now for all papers
@@ -63,5 +64,5 @@ for paper in papers:
 	paper['words'] = words 
 
 # save papers to a JSON file
-print '\nSaving papers to papers.json.'
+print('\nSaving papers to papers.json.')
 json.dump(papers,open('papers.json','w'))

@@ -2,6 +2,7 @@
 
 # https://forum.omz-software.com/topic/2049/possible-to-subclass-uiview-and-redefine-keycommands-property
 
+from __future__ import print_function
 from objc_util import *
 from random import random
 import ui
@@ -72,7 +73,7 @@ def keyCommandAction_(_self, _cmd, _sender):
 	flags = key_cmd.modifierFlags()
 	modifier_str = ' + '.join(modifiers[m] for m in modifiers.keys() if (m & flags))
 	key_input = key_cmd.input()
-	print 'Input: "%s" Modifiers: %s' % (key_input, modifier_str)
+	print('Input: "%s" Modifiers: %s' % (key_input, modifier_str))
 	if str(key_input) == 'R':
 		r, g, b = random(), random(), random()
 	else:

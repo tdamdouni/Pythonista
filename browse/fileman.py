@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+from __future__ import print_function
 import os, sys, editor, shutil
 from glob import glob
 from scene import *
@@ -31,7 +32,7 @@ class Events():
 	def remove_listener(self, listener):
 		self.listeners.remove(listener)
 	def pass_event(self, event):
-		print event.msg_type
+		print(event.msg_type)
 		for listener in self.listeners:
 			listener(event)
 		del event
@@ -1073,7 +1074,7 @@ class MyScene (Scene):
 			e.obj.txtbf.got_focus = True
 			self.klayer.direct_input = e.obj.txtbf.txtbf.input_char
 		elif e.msg_type == 'fs_open':
-			print e.obj
+			print(e.obj)
 			if type(e.obj) == None or e.obj == 'main_list':
 				for item in self.fs.dirs:
 					if item[0] == e.msg or e.msg == '..':

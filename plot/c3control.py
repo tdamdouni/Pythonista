@@ -3,6 +3,7 @@
 """
 Controller for circle drawer
 """
+from __future__ import print_function
 
 __author__ = 'jiayiliu'
 
@@ -25,7 +26,7 @@ class C3control():
 
     def rotate(self, event):
         if event.key == "left":
-            print event.key
+            print(event.key)
             self.azim += 1
         elif event.key == "right":
             self.azim -= 1

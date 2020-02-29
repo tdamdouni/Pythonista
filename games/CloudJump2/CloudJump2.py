@@ -1,3 +1,4 @@
+from __future__ import print_function
 import cStringIO, console, Image, ImageDraw, math, numpy, os, os.path
 import pickle, random, requests, sound, threading, time, zipfile
 from scene import *
@@ -460,7 +461,7 @@ class SelectACharacterView(ui.View):
     def character_tapped(cls, sender):
         print('The user wants to be: ' + sender.name)
         game_character == sender.name
-        print game_character
+        print(game_character)
 
     @classmethod
     def make_button(cls, x, y, image_name = 'Boy'):

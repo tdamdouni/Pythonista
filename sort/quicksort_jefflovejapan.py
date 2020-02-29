@@ -1,3 +1,4 @@
+from __future__ import print_function
 # https://gist.github.com/jefflovejapan/7493176
 
 # leftmark
@@ -52,7 +53,7 @@ def quicksort(input, left=0, right=0):
 def main():
     input = random.sample(range(100), 50)
     quicksort(input)
-    print input
+    print(input)
 
 if __name__ == '__main__':
     main()

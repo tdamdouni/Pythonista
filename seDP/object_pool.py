@@ -1,3 +1,4 @@
+from __future__ import print_function
 # https://forum.omz-software.com/topic/2307/copy-deepcopy-or-copy-copy-with-classes-using-ui-view
 
 # https://gist.github.com/pazdera/1124839
@@ -68,10 +69,10 @@ class ObjectPool:
 
     def getResource(self):
         if len(self.__resources) > 0:
-            print "Using existing resource."
+            print("Using existing resource.")
             return self.__resources.pop(0)
         else:
-            print "Creating new resource."
+            print("Creating new resource.")
             return Resource()
 
     def returnResource(self, resource):
@@ -88,8 +89,8 @@ def main():
     one.setValue(10)
     two.setValue(20)
 
-    print "%s = %d" % (one, one.getValue())
-    print "%s = %d" % (two, two.getValue())
+    print("%s = %d" % (one, one.getValue()))
+    print("%s = %d" % (two, two.getValue()))
 
     pool.returnResource(one)
     pool.returnResource(two)
@@ -100,8 +101,8 @@ def main():
     # These resources will be reused
     one = pool.getResource()
     two = pool.getResource()
-    print "%s = %d" % (one, one.getValue())
-    print "%s = %d" % (two, two.getValue())
+    print("%s = %d" % (one, one.getValue()))
+    print("%s = %d" % (two, two.getValue()))
 
 
 if __name__ == "__main__":

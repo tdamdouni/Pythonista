@@ -2,6 +2,7 @@
 
 # https://forum.omz-software.com/topic/2929/objc_utils-and-eventkit/5
 
+from __future__ import print_function
 from objc_util import *
 
 store = ObjCClass('EKEventStore').alloc().init()
@@ -37,5 +38,5 @@ access_granted.wait()
 # ...
 predicate = store.predicateForEventsWithStartDate_endDate_calendars_(oneDayAgo, oneYearFromNow, None)
 events = store.eventsMatchingPredicate_(predicate)
-print events
+print(events)
 # --------------------

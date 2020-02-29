@@ -32,6 +32,7 @@
 #
 
 # coding: utf-8
+from __future__ import print_function
 import ui
 pyuistr='''
 [  {
@@ -87,7 +88,7 @@ pyuistr2='''
 
 class MyView(ui.View):
 	def hi(self):
-		print 'hi'
+		print('hi')
 		
 class MyViewWrapper(ui.View):
 	def __new__(self):
@@ -99,26 +100,26 @@ def check_load(v):
 	else:
 		return False
 v = ui.load_view_str(pyuistr)
-print 'loadviewstr loaded pyui :', check_load(v)
+print('loadviewstr loaded pyui :', check_load(v))
 
 v2= MyView()
-print 'MyView() loaded pyui:', check_load(v2)
+print('MyView() loaded pyui:', check_load(v2))
 
 v3=MyViewWrapper()  #i.e use this in editor
-print 'MyViewWrapper() loaded pyui:', check_load(v3)
+print('MyViewWrapper() loaded pyui:', check_load(v3))
 #v.present('sheet')
 
 v4=ui.load_view_str(pyuistr2)
-print 'Custom View subview inside pyui using MyView() loaded pyui', check_load(v4['view1'])
+print('Custom View subview inside pyui using MyView() loaded pyui', check_load(v4['view1']))
 
 v5=ui.load_view_str(pyuistr2.replace('MyView','MyViewWrapper'))
-print 'Custom View subview inside pyui using MyViewWrapper() loaded pyui', check_load(v5['view1'])
+print('Custom View subview inside pyui using MyViewWrapper() loaded pyui', check_load(v5['view1']))
 
 #
 
 class MyView(ui.View):
 	def __init__(self):
-		print 'initted'
+		print('initted')
 	def __new__(self):
 		v= ui.load_view_str(pyuistr)
 		return v
@@ -186,7 +187,7 @@ class MyView(ui.View):
 		self.background_color = 'purple'
 		
 	def test(self):
-		print 'in test'
+		print('in test')
 		
 		
 #v=MyView(pyui_file = 'Countries')

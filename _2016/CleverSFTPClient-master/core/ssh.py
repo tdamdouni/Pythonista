@@ -22,6 +22,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 """
+from __future__ import print_function
 
 import sys
 import os
@@ -48,7 +49,7 @@ import paramiko
 if StrictVersion(paramiko.__version__) < StrictVersion('1.15'):
 	# Install paramiko 1.16.0 to fix a bug with version < 1.15
 	_stash('pip install paramiko==1.16.0')
-	print 'Please restart Pythonista for changes to take full effect'
+	print('Please restart Pythonista for changes to take full effect')
 	sys.exit(0)
 	
 	
@@ -104,8 +105,8 @@ class StashSSH(object):
 		
 	def single_exec(self, command):
 		sin, sout, serr = self.client.exec_command(command)
-		print sout.read()
-		print serr.read()
+		print(sout.read())
+		print(serr.read())
 		self.client.close()
 		
 	def interactive(self):
@@ -118,7 +119,7 @@ class StashSSH(object):
 		t1.join()
 		self.chan.close()
 		self.client.close()
-		print '\nconnection closed\n'
+		print('\nconnection closed\n')
 		
 		
 CTRL_KEY_FLAG = (1 << 18)

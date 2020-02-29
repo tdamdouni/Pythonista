@@ -1,4 +1,5 @@
-print """
+from __future__ import print_function
+print("""
      _______________                                                     
     |,----------.  |\   
     ||           |=| |        YouTube                                           
@@ -7,7 +8,7 @@ print """
     |`-----------' |/ /~/
      ~~~~~~~~~~~~~~~ / /
                      ~~                                                                                                                                                                                                                                                                                                           
-"""
+""")
 
 import urllib2, urlparse, sys, webbrowser
 import platform
@@ -45,7 +46,7 @@ def main():
         except Exception:
             v_id = None
     if not v_id:
-        print repr(sys.argv)
+        print(repr(sys.argv))
         return
     config = urllib2.urlopen('http://www.youtube.com/get_video_info?&video_id=%s&el=detailpage&ps=default&eurl=&gl=US&hl=en' % v_id).read()
     config = urlparse.parse_qs(config)

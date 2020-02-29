@@ -38,6 +38,7 @@
 
 # (c) 2015, Paul Gowder <http://paul-gowder.com>, licensed under the MIT license (see end of file)
 
+from __future__ import print_function
 from bs4 import BeautifulSoup as BS
 import urllib
 
@@ -105,7 +106,7 @@ filename = 'scrape' + str(strftime("%Y%m%d%H%M%S", gmtime())) + '.html'
 with open(filename, 'w') as outfile:
 	outfile.write('<br><br>'.join(texts))
 	
-print 'Scraping complete! Output saved as: ' + filename
+print('Scraping complete! Output saved as: ' + filename)
 
 
 # The MIT License (MIT)

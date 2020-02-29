@@ -1,3 +1,4 @@
+from __future__ import print_function
 #
 # Example file for parsing and processing JSON
 #
@@ -11,28 +12,28 @@ def printResults(data):
 
 	# now we can access the contents of the JSON like any other Python object
 	if 'title' in theJSON['metadata']:
-		print theJSON['metadata']['title']
+		print(theJSON['metadata']['title'])
 
 	# output the number of events, plus the magnitude and each event name
 	count = theJSON['metadata']['count']
-	print str(count) + ' events recorded.' + '\n'
+	print(str(count) + ' events recorded.' + '\n')
 
 	# for each event, print the place where it occurred
 	for i in theJSON['features']:
-		print i['properties']['place']
-	print
+		print(i['properties']['place'])
+	print()
 	
 	# print the events that only have a magnitude greater than 5
 	for i in theJSON['features']:
 		if i['properties']['mag'] >= 5.0:
-			print "%2.1f" % i['properties']['mag'], i['properties']['place']
+			print("%2.1f" % i['properties']['mag'], i['properties']['place'])
 
 	# print only the events where at least 1 person reported feeling something
-	print "\nEvents that were felt:"
+	print("\nEvents that were felt:")
 	for i in theJSON['features']:
 		feltReports = i['properties']['felt']
 		if (feltReports != None) & (feltReports > 0):
-			print "%2.1f" % i['properties']['mag'], i['properties']['place'], ' reported.'
+			print("%2.1f" % i['properties']['mag'], i['properties']['place'], ' reported.')
 
 def main():
 	# define a variable to hold the source URL
@@ -46,7 +47,7 @@ def main():
 		data = webUrl.read()
 		printResults(data)
 	else:
-		print "Received an error from server, cannot retrieve results " + str(webUrl.getcode())
+		print("Received an error from server, cannot retrieve results " + str(webUrl.getcode()))
 
 
 if __name__ == '__main__':

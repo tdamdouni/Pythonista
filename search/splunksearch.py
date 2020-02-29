@@ -1,3 +1,4 @@
+from __future__ import print_function
 # https://gist.github.com/benbramley/777c0837106de67beb35
 import urllib2
 import urllib
@@ -21,7 +22,7 @@ search = console.input_alert("enter search")
 class SplunkSearch():
 
     def __init__(self):
-    	print 'initialised'
+    	print('initialised')
 
 
     def encodeUserData(self, user, password):
@@ -34,7 +35,7 @@ class SplunkSearch():
         sessionxml = res.read()
         sessionkey = minidom.parseString(sessionxml).getElementsByTagName('sessionKey')[0].childNodes[0].nodeValue
 
-        print "got session key: %s"  % sessionkey
+        print("got session key: %s"  % sessionkey)
 
         if not searchquery.startswith('search'):
             searchquery = 'search ' + searchquery
@@ -47,7 +48,7 @@ class SplunkSearch():
         searchxml = res.read()
         sid = minidom.parseString(searchxml).getElementsByTagName('sid')[0].childNodes[0].nodeValue
 
-        print "got sid:  %s" % sid
+        print("got sid:  %s" % sid)
 
         searchservicesstatus = '/services/search/jobs/%s/' % sid
         req = urllib2.Request(url + searchservicesstatus)
@@ -62,7 +63,7 @@ class SplunkSearch():
             if (isdonestatus == '1'):
                 isnotdone = False
 
-        print "got search status:  %s" % isdonestatus
+        print("got search status:  %s" % isdonestatus)
 
         searchserviceresults = '/services/search/jobs/%s/results?output_mode=csv&count=0' % sid
         req = urllib2.Request(url + searchserviceresults)
@@ -73,7 +74,7 @@ class SplunkSearch():
         
         table = prettytable.from_csv(results)
         
-        print table
+        print(table)
 
 s = SplunkSearch()
 s.executesearch(search)

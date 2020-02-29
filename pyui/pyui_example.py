@@ -4,6 +4,7 @@
 
 # https://forum.omz-software.com/topic/3176/use-a-pyui-file-in-another-pyui-file/5
 
+from __future__ import print_function
 import ui
 #unpack pyuis
 pyuistr='''
@@ -64,7 +65,7 @@ open('otherview.pyui','w').write(pyuistr2)
 # create custom class
 class MyView(ui.View):
 	def hi(self):
-		print 'hi'
+		print('hi')
 	def __init__(self):
 		# **** the important bits ****
 		#. create a wrapper that fools load_view into using current instance rather than create a new instance
@@ -83,11 +84,11 @@ def check_load(v):
 		
 #check all 3 ways a view could be created
 v = ui.load_view('MyView')
-print 'load_view MyView loaded okay :', check_load(v)
+print('load_view MyView loaded okay :', check_load(v))
 
 v2= MyView()
-print 'MyView() loaded okay:', check_load(v2)
+print('MyView() loaded okay:', check_load(v2))
 
 v4=ui.load_view('otherview')
-print 'Custom View subview of a different pyui loaded okay', check_load(v4['view1'])
+print('Custom View subview of a different pyui loaded okay', check_load(v4['view1']))
 

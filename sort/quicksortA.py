@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 
+from __future__ import print_function
 from common import debug
 
 def swap(lst, a, b):
@@ -94,4 +95,4 @@ if __name__ == '__main__':
         data = list(lines)
 
     for func in [first_element, last_element, median_of_three]:
-        print quicksort([int(line) for line in data], choose_pivot=func)[0]
+        print(quicksort([int(line) for line in data], choose_pivot=func)[0])

@@ -31,6 +31,7 @@
     Gui_Helper.py comes from the script 'File Picker.py' by
     @omz at 'https://gist.github.com/e3433ebba20c92b63111'
 ''' 
+from __future__ import print_function
 import json, pprint, clipboard, os
 
 # file_picker code
@@ -471,7 +472,7 @@ def main():
   clipboard.set('')
   clipboard.set(attribs)
   
-  print attribs
+  print(attribs)
   console.hud_alert('Attributes Successfully Copied to Clipboard', 'success', 2)
 if __name__ == '__main__':
   main()

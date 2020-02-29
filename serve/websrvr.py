@@ -1,3 +1,4 @@
+from __future__ import print_function
 import SimpleHTTPServer
 import SocketServer
 import webbrowser
@@ -11,6 +12,6 @@ Handler = SimpleHTTPServer.SimpleHTTPRequestHandler
 
 httpd = SocketServer.TCPServer(("", port), Handler)
 
-print "Serving on IP address: ", ip_addr
-print "Serving on port: ", port
+print("Serving on IP address: ", ip_addr)
+print("Serving on port: ", port)
 httpd.serve_forever()

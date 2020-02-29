@@ -3,6 +3,7 @@
 
 # https://forum.omz-software.com/topic/2544/wish-list-for-next-release/82
 
+from __future__ import print_function
 import ui
 
 class SomeCustomClass(ui.View):
@@ -27,5 +28,5 @@ class SomeCustomClass(ui.View):
 if __name__ == '__main__':
 	scc = SomeCustomClass(bg_color = 'white')
 	scc.show(modal = True , style = 'sheet', factor = .5)
-	print 'fell through...'
+	print('fell through...')
 

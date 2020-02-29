@@ -2,10 +2,11 @@
 
 # https://forum.omz-software.com/topic/2778/ui-view-present-popover-can-t-work-out-popover_location
 
+from __future__ import print_function
 import ui
 
 def btn_action(sender):
-	print sender
+	print(sender)
 	f = (0,0,400, 800)
 	pt = tuple(sender.center)
 	

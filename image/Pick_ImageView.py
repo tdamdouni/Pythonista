@@ -1,3 +1,4 @@
+from __future__ import print_function
 # https://forum.omz-software.com/topic/2335/display-image-from-photos-pick_image/8
 
 # coding: utf-8
@@ -27,4 +28,4 @@ if mapimage:
     scene = MyScene(mapimage)
     run(scene, frame_interval=1)
 else:
-    print 'Canceled or invalid image.'
+    print('Canceled or invalid image.')

@@ -2,6 +2,7 @@
 
 # https://gist.github.com/Dutcho/d6dca2ac48ef96801417
 
+from __future__ import print_function
 from objc_util import *
 from UIKit import *
 from Foundation import *
@@ -60,7 +61,7 @@ def screenRecorderButtonPressed(_self, _cmd):
 				rootVC.presentViewController_animated_completion_(previewViewController, True, None)
 			if _error:
 				error = ObjCInstance(_error)
-				print error
+				print(error)
 			
 		recordingStoppedHandlerBlock = ObjCBlock(recordingStoppedHandler, None, [c_void_p, c_void_p, c_void_p])
 		retain_global(recordingStoppedHandlerBlock)
@@ -91,7 +92,7 @@ def screenRecorderButtonPressed(_self, _cmd):
 			def recordingStartedHandler(_self, _cmd, _error):
 				if _error:
 					error = ObjCInstance(_error)
-					print error.localizedDescription()
+					print(error.localizedDescription())
 				elif RPScreenRecorder.sharedRecorder().isRecording():
 					screenRecorderItem.image = ns(ui.Image.named('iob:ios7_videocam_32'))
 					ShowTouches.set_show_touches(showTouches)

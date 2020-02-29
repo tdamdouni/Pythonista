@@ -2,6 +2,7 @@
 
 # http://www.leancrew.com/all-this/2012/04/one-more-text-tables-bundle-improvement/
 
+from __future__ import print_function
 import sys
 
 def just(string, type, n):
@@ -96,5 +97,5 @@ def normtable(text):
 	
 # Read the input, process, and print.
 unformatted = sys.stdin.read()
-print normtable(unformatted)
+print(normtable(unformatted))
 

@@ -19,6 +19,7 @@ since data can only be read after calling stop, and in fact, maybe quite some ti
       
 
 '''
+from __future__ import print_function
 from ctypes import c_void_p, c_char_p, c_double, c_float, c_int, cdll, util, c_bool
 import os
 import time
@@ -179,7 +180,7 @@ if 1:
             iy=int(i/Np*len(y))
             n.position=(i/Np*W,y[iy]*H+H/2)
       def did_stop(self):
-         print 'stopping'
+         print('stopping')
          #raise Error()
          self['n'][0].remove_all_actions()
          [rec.stop() for rec in r]
@@ -197,7 +198,7 @@ if 1:
    
    def cleanup():
       # required b/c beta always clears globals
-      print 'cleaning up'
+      print('cleaning up')
       del globals()['r']
       del globals()['sc']
       del globals()['v']

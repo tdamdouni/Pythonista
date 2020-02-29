@@ -5,6 +5,7 @@
 
 #-----Import libaries-----#
 
+from __future__ import print_function
 from random import choice
 
 #-----Variables------#
@@ -39,7 +40,7 @@ print("\n")                                  #Create a new line before the next 
 #------Initialisation------#
 
 def main():
-	print 'i am in the main function'
+	print('i am in the main function')
 
 	#look this up on the net to see why you do this way
 	if __name__ == '__main__':

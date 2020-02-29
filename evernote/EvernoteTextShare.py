@@ -1,3 +1,4 @@
+from __future__ import print_function
 # Uploads a text note to Evernote and shares it. Supports Markdown conversion to HTML.
 # Link is printed to open in Chrome and stored in system clipboard
 # Text is entered via input alert or third-party launcher
@@ -30,7 +31,7 @@ if numArgs < 3:
 	title = console.input_alert('Note Title', 'Enter the title of your note')
 	body = console.input_alert('Note Text', 'Enter the text of your note')
 else:
-	print "Text received from another app, processing..."
+	print("Text received from another app, processing...")
 	title = sys.argv[1]
 	body = sys.argv[2]
 
@@ -41,7 +42,7 @@ console.show_activity()
 from markdown2 import markdown
 text = markdown(body, extras=['footnotes', 'header-ids'])
 
-print "Generating note..."
+print("Generating note...")
  
 import evernote.edam.userstore.constants as UserStoreConstants
 import evernote.edam.type.ttypes as Types
@@ -68,7 +69,7 @@ note.content += text
 note.content += '</en-note>'
 note.content = note.content.encode('utf-8') # assign the result to change original string
 	
-print "Uploading clip to Evernote..."
+print("Uploading clip to Evernote...")
 created_note = note_store.createNote(note)
 noteGuid = created_note.guid
 
@@ -77,7 +78,7 @@ user = userStore.getUser(auth_token).shardId
 shareKey = note_store.shareNote(auth_token, noteGuid)
 console.hide_activity()
 
-print "Note URL set to clipboard. The note has been shared with the following URL:\n\n", 
+print("Note URL set to clipboard. The note has been shared with the following URL:\n\n", end=' ') 
 # Last, create two separate URLs for the browser you want to use
 # and the link you want to share in the clipboard
 final = "%s/shard/%s/sh/%s/%s" % \

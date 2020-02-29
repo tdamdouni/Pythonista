@@ -3,6 +3,7 @@
 
 # https://forum.omz-software.com/topic/3059/title-of-date_dialog-is-not-displayed/3
 
+from __future__ import print_function
 import ui
 import datetime
 
@@ -39,5 +40,5 @@ if __name__ == '__main__':
 	cdp = CustomDatePicker(frame = f , bg_color = 'orange', date = d, name ='Please select a date')
 	cdp.present('sheet')
 	cdp.wait_modal()
-	print cdp.dp.date
+	print(cdp.dp.date)
 

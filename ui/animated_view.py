@@ -1,3 +1,4 @@
+from __future__ import print_function
 # Jan 2, 2016, 10:12 AM
 # Tutorial Doctor
 
@@ -10,7 +11,7 @@
 # Additionaly, some toolbar options should be added to the main view.
 
 import ui,sound
-print ui
+print(ui)
 # Action Functions
 #--------------------------------------------------------------------	
 def move_left(sender):
@@ -93,9 +94,9 @@ window.present('fullscreen',title_bar_color='#635D51')
 # Testing
 #--------------------------------------------------------------------	
 for item in l:
-	print item.title
+	print(item.title)
 for item in r:
-	print item.title
+	print(item.title)
 #--------------------------------------------------------------------	
 
 

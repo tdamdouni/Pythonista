@@ -2,6 +2,7 @@
 
 # https://forum.omz-software.com/topic/2902/circle-view-for-ui/4
 
+from __future__ import print_function
 import ui
 import webbrowser
 #these are fillers for phhton 3 changes
@@ -16,7 +17,7 @@ try:
 	print(urllib2)
 except ImportError:
 	import urllib3 as urllib2
-	print(urllib3,' as urllib2')
+	print((urllib3,' as urllib2'))
 from PIL import Image, ImageOps, ImageDraw
 import io
 import Image

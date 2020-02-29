@@ -1,3 +1,4 @@
+from __future__ import print_function
 # http://cdn.makezine.com/make/33/soundboard.py
 
 import pygame.mixer
@@ -20,7 +21,7 @@ soundChannelA = pygame.mixer.Channel(1)
 soundChannelB = pygame.mixer.Channel(2)
 soundChannelC = pygame.mixer.Channel(3)
 
-print "Sampler Ready."
+print("Sampler Ready.")
 
 while True:
    try:

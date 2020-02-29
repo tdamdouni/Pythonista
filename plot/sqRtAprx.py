@@ -6,6 +6,7 @@
 #       Square Root Approximation
 #       Pythonista Version
 
+from __future__ import print_function
 import math
 #import matplotlib.pyplot as plt
 
@@ -33,9 +34,9 @@ err = 0
 itr = 0
 
 #   blah blah
-print "Note: Computer memory is system dependent, floats are limited in accuracy. So unless you are running something seriously badass dont ask for a tolerance value larger than 6 or so."
+print("Note: Computer memory is system dependent, floats are limited in accuracy. So unless you are running something seriously badass dont ask for a tolerance value larger than 6 or so.")
 
-print "Note: Should you need to have a degree of accuracy larger (but the still retain the same computer) try the bigfloat lib, (watch out, its kind of icky)."
+print("Note: Should you need to have a degree of accuracy larger (but the still retain the same computer) try the bigfloat lib, (watch out, its kind of icky).")
 
 #   function finds square root of n (user input) to the requested degree of accuracy.
 def findRoot(n, tolerance):
@@ -69,8 +70,8 @@ root = findRoot(n, tolerance)   #   The Root!
 err = math.fabs(root - sqRt)    #   The Error!
 
 #   Blah Blah
-print "The approximated root of " + str(n) + " is " + str(root)
-print "The error in Approximation is: " + str(err)
+print("The approximated root of " + str(n) + " is " + str(root))
+print("The error in Approximation is: " + str(err))
 
 #   create scatter plot
 #plt.subplot(236)

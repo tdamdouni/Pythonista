@@ -2,6 +2,7 @@
 
 # https://gist.github.com/Phuket2/4ca94bb3d76e80cee6a3
 
+from __future__ import print_function
 import ui
 
 from pygments import highlight
@@ -75,5 +76,5 @@ if __name__ == '__main__':
 	cd.present('sheet', animated = False)
 	
 	# left this in just so easy to see the different style names
-	print cd.get_style_names()
+	print(cd.get_style_names())
 

@@ -5,6 +5,7 @@
 # Fetches the 1024px version of an OS X app icon. The result is displayed in Pythonista's console, you can tap and hold to save or copy it.
 # If you find any bug, you can find me @silouane20 on Twitter.
 
+from __future__ import print_function
 from PIL import Image
 from StringIO import StringIO
 import re
@@ -28,7 +29,7 @@ def main():
 		image = Image.open(StringIO(file.content))
 		image.show()
 	else:
-		print "Failed to get iTunes url"
+		print("Failed to get iTunes url")
 		
 		
 if __name__ == "__main__":

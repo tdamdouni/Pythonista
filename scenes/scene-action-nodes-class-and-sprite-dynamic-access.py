@@ -1,3 +1,4 @@
+from __future__ import print_function
 # https://forum.omz-software.com/topic/3165/scene-action-nodes-class-and-sprite-dynamic-access
 
 # Sample code issue : how to access dynamically to a sprite Bbox in a Node playing an action
@@ -26,12 +27,12 @@ class MyScene (Scene):
 		
 	def update(self):
 		# Direct access using Scene : Not working, returns original Bbox, not updated
-		print self.MyObject.MySprite.bbox
-		print self.MyObject.bbox
+		print(self.MyObject.MySprite.bbox)
+		print(self.MyObject.bbox)
 		
 		#Same result using a Method in the Class
-		print self.MyObject.SpriteBbox(Scene)
-		print self.MyObject.bbox
+		print(self.MyObject.SpriteBbox(Scene))
+		print(self.MyObject.bbox)
 		pass
 		
 if __name__ == '__main__':

@@ -4,6 +4,7 @@
 
 # https://forum.omz-software.com/topic/2477/is-my-device-jailbroken
 
+from __future__ import print_function
 import os
 jailbroken=True
 try:
@@ -12,5 +13,5 @@ try:
 except OSError:
 	jailbroken=False
 	
-print 'Is my device jailbroken: '+ str(jailbroken)
+print('Is my device jailbroken: '+ str(jailbroken))
 

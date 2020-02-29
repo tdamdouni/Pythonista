@@ -3,6 +3,7 @@
 # https://gist.github.com/roger-/4192561
 
 from __future__ import division
+from __future__ import print_function
 import numbers
 import operator
 import math
@@ -151,13 +152,13 @@ from math import *
 def main():
 	x = arange(20)
 	
-	print x[(x >= 5) & (x <= 15)]
+	print(x[(x >= 5) & (x <= 15)])
 	
 	x[x > 5] += 4
-	print x[[6,7,11]]
+	print(x[[6,7,11]])
 	
-	print sin(linspace(0, 2*pi, 5))
-	print linspace(0, 7, 5, retstep=True)
+	print(sin(linspace(0, 2*pi, 5)))
+	print(linspace(0, 7, 5, retstep=True))
 	
 	
 if __name__ == '__main__':

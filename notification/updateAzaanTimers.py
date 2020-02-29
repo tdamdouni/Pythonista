@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 
+from __future__ import print_function
 import datetime
 from praytimes import PrayTimes
 
@@ -16,11 +17,11 @@ now = datetime.datetime.now()
 PT = PrayTimes('ISNA') 
 times = PT.getTimes((now.year,now.month,now.day), (lat, long), 0,1) 
 
-print times['fajr']
-print times['dhuhr']
-print times['asr']
-print times['maghrib']
-print times['isha']
+print(times['fajr'])
+print(times['dhuhr'])
+print(times['asr'])
+print(times['maghrib'])
+print(times['isha'])
 
 
 #Update Crontab with Prayer Times
@@ -42,7 +43,7 @@ def addAzaanTime (strPrayerName, strPrayerTime, objCronTab, strCommand):
 	job.minute.on(int(min))
 	job.hour.on(int(hour))
 
-	print job
+	print(job)
 
 	return
 
@@ -54,7 +55,7 @@ strPlayAzaanMP3Command = 'omxplayer -o local /home/pi/Downloads/Abdul-Basit.mp3 
 
 jobs = system_cron.find_command(strPlayAzaanMP3Command)
 
-print jobs
+print(jobs)
 
 for j in jobs:
 	system_cron.remove(j) 

@@ -1,5 +1,6 @@
 #!/usr/bin/python
 
+from __future__ import print_function
 import json
 import urllib
 import time
@@ -194,6 +195,6 @@ lon = float(form.getvalue('lon'))
 # Generate the HTML.
 html = wuHTML(lat, lon, wukey)
 
-print '''Content-Type: text/html
+print('''Content-Type: text/html
 
-%s''' % html
+%s''' % html)

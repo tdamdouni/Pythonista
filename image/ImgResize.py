@@ -1,3 +1,4 @@
+from __future__ import print_function
 import Image, ImageOps, ImageFilter
 import photos
 import console
@@ -14,13 +15,13 @@ fileName = fileName+'_'+today.strftime("%Y-%m-%d-%H%M%S") +'.png'
 
 def customSize(img):
     w, h = img.size
-    print 'w: ' + str(w)
-    print 'h: '+ str(h)
+    print('w: ' + str(w))
+    print('h: '+ str(h))
     if w > 600:
         wsize = 600/float(w)
-        print 'wsize: '+str(wsize)
+        print('wsize: '+str(wsize))
         hsize = int(float(h)*float(wsize))
-        print 'hsize: ' + str(hsize)
+        print('hsize: ' + str(hsize))
         
         img = img.resize((600, hsize), Image.ANTIALIAS)
         return img
@@ -32,7 +33,7 @@ image = customSize(img)
 saveit = photos.save_image(image)
  
 if saveit is True:
-    print 'Resized image has been saved'
+    print('Resized image has been saved')
 elif saveit is False:
-    print "Uh oh, not saved"
+    print("Uh oh, not saved")
 

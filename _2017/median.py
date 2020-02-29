@@ -2,6 +2,7 @@
 
 # https://forum.omz-software.com/topic/4112/running-a-program-on-pythonista-and-sublime-text
 
+from __future__ import print_function
 def bigger(a,b):
 	if a > b:
 		return a
@@ -20,5 +21,5 @@ def median(a,b,c):
 	else:
 		return bigger (a,b)
 		
-print median (1,3,2)
+print(median (1,3,2))
 

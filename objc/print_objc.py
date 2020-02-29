@@ -2,6 +2,7 @@
 
 # https://github.com/jsbain/objc_hacks/blob/master/print_objc.py
 
+from __future__ import print_function
 from objc_util import *
 import ctypes
 
@@ -88,17 +89,17 @@ import console
 def print_methods(clsname,print_private=False):
    cls=ObjCClass(clsname)
    console.set_color(1,0,0)
-   print clsname
-   print 'Class Methods______'
+   print(clsname)
+   print('Class Methods______')
    console.set_color(0,0,0)
    m=get_class_methods(cls)
-   print '\n'.join([(k[1]+' ' +k[0]+'( '+', '.join(k[2])+' )') for k in m if not k[0].startswith('_')])
+   print('\n'.join([(k[1]+' ' +k[0]+'( '+', '.join(k[2])+' )') for k in m if not k[0].startswith('_')]))
    if print_private:
-         print '\n'.join([(k[1]+' ' +k[0]+'( '+', '.join(k[2])+' )') for k in m if k[0].startswith('_')])
+         print('\n'.join([(k[1]+' ' +k[0]+'( '+', '.join(k[2])+' )') for k in m if k[0].startswith('_')]))
    console.set_color(1,0,0)
-   print '_______Instance Methods______'
+   print('_______Instance Methods______')
    console.set_color(0,0,0)
    m=get_methods(cls)
-   print '\n'.join([(k[1]+'\t' +k[0]+'( '+', '.join(k[2])+' )') for k in m if not k[0].startswith('_')])
+   print('\n'.join([(k[1]+'\t' +k[0]+'( '+', '.join(k[2])+' )') for k in m if not k[0].startswith('_')]))
    if print_private:
-         print '\n'.join([(k[1]+'\t' +k[0]+'( '+', '.join(k[2])+' )') for k in m if k[0].startswith('_')])
+         print('\n'.join([(k[1]+'\t' +k[0]+'( '+', '.join(k[2])+' )') for k in m if k[0].startswith('_')]))

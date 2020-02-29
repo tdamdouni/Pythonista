@@ -1,3 +1,4 @@
+from __future__ import print_function
 # get_links.py
 
 # https://pythonadventures.wordpress.com/2011/03/10/extract-all-links-from-a-web-page/
@@ -23,12 +24,12 @@ def process(url):
 	soup = BeautifulSoup(text)
 	for tag in soup.findAll('a', href=True):
 		tag['href'] = urlparse.urljoin(url, tag['href'])
-		print tag['href']
+		print(tag['href'])
 # process(url)
 
 def main():
 	clipText = clipboard.get()
-	print clipText
+	print(clipText)
 	process(clipText)
 # main()
 

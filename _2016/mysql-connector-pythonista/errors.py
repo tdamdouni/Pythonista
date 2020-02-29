@@ -145,7 +145,7 @@ def get_exception(packet):
         else:
             (packet, sqlstate) = utils.read_bytes(packet[1:], 5)
             errmsg = packet
-    except Exception, err:
+    except Exception as err:
         return InterfaceError("Failed getting Error information (%r)" % err)
     else:
         return get_mysql_exception(errno, errmsg, sqlstate)
@@ -162,7 +162,7 @@ class Error(StandardError):
             if values is not None:
                 try:
                     errmsg = errmsg % values
-                except TypeError, err:
+                except TypeError as err:
                     errmsg = errmsg + " (Warning: %s)" % err
             self.msg = errmsg
         elif not self.msg:

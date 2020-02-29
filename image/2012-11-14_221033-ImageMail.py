@@ -1,3 +1,4 @@
+from __future__ import print_function
 # http://www.macstories.net/links/quickly-email-a-picture-on-ios-using-pythonista/
 # http://6d1f0d2e5a9f9c27cec8-28b934f7b0292a7dfd0ff5946ebc82f1.r53.cf1.rackcdn.com/2012-11-14_221033-ImageMail.py
 # Example for sending an email with an attached image using smtplib
@@ -38,7 +39,7 @@ def main():
 	#Load a sample image, modify as needed:
 	image = clipboard.get_image()
 	
-	print 'Connecting...'
+	print('Connecting...')
 	smtpserver = smtplib.SMTP("smtp.gmail.com", 587)
 	console.show_activity()
 	smtpserver.ehlo()
@@ -46,7 +47,7 @@ def main():
 	smtpserver.ehlo
 	smtpserver.login(gmail_user, gmail_pwd)
 	
-	print 'Preparing message...'
+	print('Preparing message...')
 	outer = MIMEMultipart()
 	outer['Subject'] = subject
 	outer['To'] = to
@@ -56,12 +57,12 @@ def main():
 	outer.attach(attachment)
 	composed = outer.as_string()
 	
-	print 'Sending...'
+	print('Sending...')
 	smtpserver.sendmail(gmail_user, to, composed)
 	smtpserver.close()
 	console.hide_activity()
 	sound.play_effect('Bleep')
-	print 'Done.'
+	print('Done.')
 
 if __name__ == '__main__':
 	main()

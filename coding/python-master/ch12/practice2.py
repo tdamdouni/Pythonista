@@ -1,3 +1,4 @@
+from __future__ import print_function
 import socket 
 import time 
 
@@ -12,15 +13,15 @@ while True:
     if ( len(data) < 1 ) : break
     #time.sleep(0.25)
     count = count + len(data)
-    print len(data), count
+    print(len(data), count)
     picture = picture + data
     
 mysock.close()
 
 #look for the end of the header (2CRLF)
 pos = picture.find("\r\n\r\n");
-print 'Header length', pos
-print picture[:pos]
+print('Header length', pos)
+print(picture[:pos])
 
 #Skip past the header and save the picture data
 picture = picture[pos+4:]

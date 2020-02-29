@@ -1,3 +1,4 @@
+from __future__ import print_function
 # https://gist.github.com/derickfay/8891099
 # Python script to sort text by the dates in @due(YYYY-MM-DD) tags. Made for use with TaskPaper files.
 # !/usr/bin/env python
@@ -23,4 +24,4 @@ for i in sorted(theList):
 		j = j+i[1]+"\n"
 
 j = j[:-1]
-print j
+print(j)

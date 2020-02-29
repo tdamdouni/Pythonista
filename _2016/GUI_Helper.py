@@ -5,6 +5,7 @@
 
 # https://forum.omz-software.com/topic/3855/i-made-gui-helper
 
+from __future__ import print_function
 import json
 import ui
 import os
@@ -23,7 +24,7 @@ class GUI_Helper(object):
 			class_title = console.input_alert('Class Title','',name)
 			view_title = attrs.get('name', 'Untitled')
 			self.view_title = 'Untitled' if view_title == '' else view_title
-			print 'title:'+self.view_title
+			print('title:'+self.view_title)
 			relpath = os.path.relpath(pyui_path, to_abs_path())
 			
 
@@ -173,11 +174,11 @@ remove_title_bar(v)'''
 				
 		
 		if classname == 'Label':
-			print 'label'
+			print('label')
 
 			
 		elif classname == 'TextField':
-			print 'TextField'
+			print('TextField')
 			self.init_text += '''
 		self.{title} = self.{_title}
 		self.{title}.delegate = self.{title}_Delegate
@@ -196,11 +197,11 @@ remove_title_bar(v)'''
 			'''.format(title=title)
 			
 		elif classname == 'TextView':
-			print 'TextView'
+			print('TextView')
 
 			
 		elif classname == 'Button':
-			print 'Button'
+			print('Button')
 			self.init_text += '''
 		self.{title} = self.{_title}
 		self.{title}.action = self.{title}_action
@@ -212,7 +213,7 @@ remove_title_bar(v)'''
 			'''.format(title=title)
 			
 		elif classname == 'Slider':
-			print 'Slider'
+			print('Slider')
 			self.init_text += '''
 		self.{title} = self.{_title}
 		self.{title}.continuous = False
@@ -225,8 +226,8 @@ remove_title_bar(v)'''
 			'''.format(title=title)
 			
 		elif classname == 'Switch':
-			print 'Switch'
-			print title
+			print('Switch')
+			print(title)
 			self.init_text += '''
 		self.{title} = self.{_title}
 		self.{title}.action = self.{title}_action
@@ -238,7 +239,7 @@ remove_title_bar(v)'''
 			'''.format(title=title)
 
 		elif classname == 'SegmentedControl':
-			print 'SegmentedControl'
+			print('SegmentedControl')
 			self.init_text += '''
 		self.{title} = self.{_title}
 		self.{title}.action = self.{title}_action
@@ -250,12 +251,12 @@ remove_title_bar(v)'''
 			'''.format(title=title)
 
 		elif classname == 'WebView':
-			print 'WebView'
+			print('WebView')
 			'''v.scales_page_to_fit = attrs.get('scales_to_fit')'''
 			
 			
 		elif classname == 'TableView':
-			print 'TableView'
+			print('TableView')
 			
 			self.init_text += '''
 		self.{title} = self.{_title}
@@ -302,13 +303,13 @@ remove_title_bar(v)'''
 
 			
 		elif classname == 'DatePicker':
-			print 'DatePicker'
+			print('DatePicker')
 
 		elif classname == 'ScrollView':
-			print 'ScrollView'
+			print('ScrollView')
 
 		elif classname == 'ImageView':
-			print 'ImageView'
+			print('ImageView')
 			'''image_name = attrs.get('image_name')
 			if image_name:
 				v.image = Image.named(image_name)'''
@@ -323,7 +324,7 @@ remove_title_bar(v)'''
 						setattr(v, key, value)
 				elif custom_attributes:
 					sys.stderr.write('Warning: Custom attributes of view "%s" are not a dict\n' % (v.name,))
-			except Exception, e:
+			except Exception as e:
 				sys.stderr.write('Warning: Could not load custom attributes of view "%s": %s\n' % (v.name, e))
 			finally:
 				del f_locals['this']

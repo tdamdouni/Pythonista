@@ -3,11 +3,12 @@
 
 # https://forum.omz-software.com/topic/2513/getting-the-parent-of-a-dynamically-method-as-a-function/46
 
+from __future__ import print_function
 import ui
 from extend import Extender
 
 def MyMother(sender):
-	print 'I love my Mums cooking'
+	print('I love my Mums cooking')
 	
 class DefaultStyle(Extender):
 	border_width = .5

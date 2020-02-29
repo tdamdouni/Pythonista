@@ -1,3 +1,4 @@
+from __future__ import print_function
 # https://forum.omz-software.com/topic/3175/how-to-trigger-an-action-when-a-textfield-is-edited
 
 import ui
@@ -12,7 +13,7 @@ textfield.delegate = MyTextFieldDelegate()
 # --------------------
 
 def myfun(sender):
-	print sender.text
+	print(sender.text)
 	
 v=ui.load_view(your_pyui_name)
 

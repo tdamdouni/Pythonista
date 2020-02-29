@@ -5,6 +5,7 @@
 
 # https://gist.github.com/marcus67/9804a9f1c727b76f2364
 
+from __future__ import print_function
 import ui
 from objc_util import *
 
@@ -67,7 +68,7 @@ class ButtonItemCondenser (object):
 		
 def handle_action(sender):
 	#print "handle_action: sender.name=%s" % sender.name
-	print str(sender)
+	print(str(sender))
 	
 #def handle_action():
 #  print "handle_action"

@@ -2,19 +2,20 @@
 
 # https://gist.github.com/TutorialDoctor/dda76e58fc43d7375856
 
+from __future__ import print_function
 intro = '''Remove tripple quotes around the sections to run the code therein\n'''
 __version__ = "0.2"
 __py_version__ = "2.7x"
-print "Version: "+__version__+'\nPython: '+__py_version__+'\n'
-print intro
+print("Version: "+__version__+'\nPython: '+__py_version__+'\n')
+print(intro)
 
 def title1(name=''):
-	print '\n' + name.upper() + ':'
-	print '-'*65
+	print('\n' + name.upper() + ':')
+	print('-'*65)
 	
 def title2(name=''):
-	print '\n' + name.capitalize()
-	print '-'*65
+	print('\n' + name.capitalize())
+	print('-'*65)
 	
 def newline():
 	print('')
@@ -76,7 +77,7 @@ Comming soon
 #----------------------------------------------------------------------
 
 
-print "\n*** Beginner code follows this line: ***\n"
+print("\n*** Beginner code follows this line: ***\n")
 # *** BEGINNER ***
 # PRINTING
 title1('printing')
@@ -1024,14 +1025,14 @@ print(content.read())
 #----------------------------------------------------------------------
 
 
-print "\n*** Advanced code follows this line: ***\n"
+print("\n*** Advanced code follows this line: ***\n")
 # *** ADVANCED ***
 #----------------------------------------------------------------------
 None
 #----------------------------------------------------------------------
 
 
-print "\n*** Popular Modules code follows this line: ***\n"
+print("\n*** Popular Modules code follows this line: ***\n")
 # *** POPULAR MODULES ***
 #----------------------------------------------------------------------
 # Date and Time
@@ -1289,7 +1290,7 @@ import tokenize
 #----------------------------------------------------------------------
 
 
-print "\n*** Example code follows this line: ***\n"
+print("\n*** Example code follows this line: ***\n")
 # *** EXAMPLES ***
 #----------------------------------------------------------------------
 None

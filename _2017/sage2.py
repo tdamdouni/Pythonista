@@ -7,6 +7,7 @@ A small client illustrating how to interact with the Sage Cell Server, version 2
 
 Requires the websocket-client package: http://pypi.python.org/pypi/websocket-client
 """
+from __future__ import print_function
 
 import websocket
 import json
@@ -31,7 +32,7 @@ class SageCell(object):
         # RESPONSE: {"id": "ce20fada-f757-45e5-92fa-05e952dd9c87", "ws_url": "ws://localhost:8888/"}
         # construct the websocket channel url from that
         self.kernel_url = '{ws_url}kernel/{id}/'.format(**response)
-        print self.kernel_url
+        print(self.kernel_url)
         websocket.setdefaulttimeout(timeout)
         self._ws = websocket.create_connection(
             self.kernel_url + 'channels',
@@ -66,7 +67,7 @@ class SageCell(object):
                     msg['content']['execution_state'] == 'idle'):
                         got_idle_status = True
             else:
-                print('#####\n',msg)
+                print(('#####\n',msg))
         file_data={}
         try:
             files=self.shell_messages[0]['content']['payload'][0].get('new_files',[])
@@ -160,4 +161,4 @@ def process_data(data):
 #### use of regex to parse fullstring
 data = a.execute_request(string_for_SageMathCell)
 processed=process_data(data)
-print x
+print(x)

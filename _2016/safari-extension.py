@@ -2,6 +2,7 @@
 
 # https://forum.omz-software.com/topic/3820/how-to-open-a-tab-in-safari-when-already-in-safari
 
+from __future__ import print_function
 import clipboard
 import webbrowser
 
@@ -11,7 +12,7 @@ def is_url(image_url):
 	try:
 		return image_url.startswith('http://')
 	except:
-		print 'Invalid URL.'
+		print('Invalid URL.')
 		return False
 		
 		
@@ -21,7 +22,7 @@ def create_url(image_url):
 	try:
 		search_url += image_url
 	except:
-		print 'Could not create URL from clipboard.'
+		print('Could not create URL from clipboard.')
 	return search_url
 	
 	
@@ -30,7 +31,7 @@ def main():
 	if is_url(image_url):
 		search_url = create_url(image_url)
 		webbrowser.open('safari-' + search_url)
-		print 'Done.'
+		print('Done.')
 		
 if __name__ == '__main__':
 	main()

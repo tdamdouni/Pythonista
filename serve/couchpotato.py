@@ -1,3 +1,4 @@
+from __future__ import print_function
 import requests
 import console
 import sys
@@ -43,7 +44,7 @@ class CouchPotato():
 	def do_api_call(self, url, params):
 		api_call = requests.request('GET', url, params=params)
 		if api_call.status_code > 300 or api_call.status_code < 200:
-			print "API call failed, status code: {status_code}".format(status_code=api_call.status_code)
+			print("API call failed, status code: {status_code}".format(status_code=api_call.status_code))
 		return api_call
 
 	def search(self, query):
@@ -130,7 +131,7 @@ def add_movie(name, imdb_id):
 		confirm_url = lcp.generate_confirm_message("Movie added!")
 		webbrowser.open(confirm_url)
 	else:
-		print add_result
+		print(add_result)
 		raise Exception("Failed to add movie!")
 
 

@@ -1,3 +1,4 @@
+from __future__ import print_function
 # Interested in how organisms are related? Then explore and expand upon this [Ecology](https://github.com/TutorialDoctor/Scripts-for-Kids/blob/master/Python/ecology.py) script.
 
 # Based on:
@@ -27,6 +28,6 @@ u = Organism('food')
 A = Species('pyhla')
 A.add_organism(u)
 
-print A.organisms
-print A.population
+print(A.organisms)
+print(A.population)
 

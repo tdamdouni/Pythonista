@@ -5,6 +5,7 @@ ical - Access iOS system calendar from Pythonista
 author: Lukas Kollmer <lukas@kollmer.me>
 note: Work in progress. not finished
 '''
+from __future__ import print_function
 
 __all__ = ['Event', 'has_access', 'save_event', 'delete_event', 'get_events', 'get_calendars', 'get_calendar']
 
@@ -127,7 +128,7 @@ def save_event(event):
 	error_ref = c_void_p(None)
 	success = event_store.saveEvent_span_error_(objc_event, 0, ctypes.byref(error_ref))
 	if error_ref and debug:
-		print('error', ObjCInstance(error_ref))
+		print(('error', ObjCInstance(error_ref)))
 	return success
 
 
@@ -229,8 +230,8 @@ if __name__ == '__main__':
 	
 	
 	
-	print('has access:', has_access())
-	print('event store:', _get_event_store())
+	print(('has access:', has_access()))
+	print(('event store:', _get_event_store()))
 	#get_calendars()
 	#get_events(1, 'Personal')
 	test_calendar = get_calendar('Pythonista Test')
@@ -251,6 +252,6 @@ if __name__ == '__main__':
 	test_event.end_date = datetime.datetime(2016, 06, 02, 20, 15, 00)
 	
 	save_event_success = save_event(test_event)
-	print('saved event', save_event_success)
+	print(('saved event', save_event_success))
 	
 	

@@ -1,3 +1,4 @@
+from __future__ import print_function
 #By Luke Taylor
 class Node:
 	def __init__(self, name='Node'):
@@ -85,6 +86,6 @@ if __name__ == '__main__':
 	graph.add_connection(nodes[5], nodes[7], 1.5)
 	
 	path = Dijkstra(graph,nodes[0],nodes[8])
-	print [str(x) for x in path], 'is the shortest path, with a distance of',
-	print path[0].neighbors[path[1]]+path[1].neighbors[path[2]]
+	print([str(x) for x in path], 'is the shortest path, with a distance of', end=' ')
+	print(path[0].neighbors[path[1]]+path[1].neighbors[path[2]])
 	

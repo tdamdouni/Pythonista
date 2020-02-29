@@ -2,6 +2,7 @@
 
 # https://forum.omz-software.com/topic/2958/need-help-with-objc_util
 
+from __future__ import print_function
 from objc_util import *
 import ui
 import time
@@ -22,10 +23,10 @@ class Myclass (ui.View):
 start = time.clock()
 v = Myclass()
 v.present('sheet')
-print time.clock()-start
+print(time.clock()-start)
 
 start = time.clock()
 v2 = ui.View()
 v2.background_color('blue')
 v2.present('sheet')
-print time.clock()-start
+print(time.clock()-start)

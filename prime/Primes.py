@@ -1,3 +1,4 @@
+from __future__ import print_function
 # Demo of how to generate a list of prime numbers and cache them
 # in a data file for fast access (using the marshal module).
 
@@ -32,8 +33,8 @@ def load_primes(n):
 			
 def main():
 	primes = load_primes(104729) #Happens to be the 10,000th prime number
-	print primes
-	print len(primes), 'prime numbers loaded.'
+	print(primes)
+	print(len(primes), 'prime numbers loaded.')
 	
 if __name__ == '__main__':
 	main()

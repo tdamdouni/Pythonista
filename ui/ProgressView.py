@@ -1,3 +1,4 @@
+from __future__ import print_function
 # https://forum.omz-software.com/topic/2254/share-code-progressview
 # https://gist.github.com/blmacbeth/60bacd65c89e5290f452
 
@@ -120,8 +121,8 @@ def main():
 	for i in range(101):
 		progress_view.progress = i/100.
 	
-	print 'Track Color:',    progress_view.track_tint_color
-	print 'Progress Color:', progress_view.progress_tint_color
+	print('Track Color:',    progress_view.track_tint_color)
+	print('Progress Color:', progress_view.progress_tint_color)
 	
 	## commented out because I don't like the image I used and changing
 	## the style didn't seem to do anything
@@ -131,8 +132,8 @@ def main():
 	for i in range(101):
 		progress_view.progress = i/100.
 	
-	print 'Progress Image:', progress_view.progress_image
-	print 'Animated:',       progress_view.animated
+	print('Progress Image:', progress_view.progress_image)
+	print('Animated:',       progress_view.animated)
 	
 	
 if __name__ == '__main__':

@@ -1,3 +1,4 @@
+from __future__ import print_function
 #Write a program to read through the mbox-short.txt and 
 #figure out the distribution by hour of the day for each of the messages. 
 #You can pull the hour out from the 'From ' line by finding the time and 
@@ -27,5 +28,5 @@ for key, val in my_dictionary.items():
 lst.sort()
 
 for key, val in lst: 
-    print key, val
+    print(key, val)
 

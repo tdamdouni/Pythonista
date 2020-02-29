@@ -2,6 +2,7 @@
 
 # https://forum.omz-software.com/topic/2845/request-for-an-app/11
 
+from __future__ import print_function
 from PIL import Image
 import photos
 
@@ -21,6 +22,6 @@ image_height   unknown_dimension
 and with this, cross-multiply"""
 
 if dimension: # We're solving for the height
-    print im.size[1]*dimension_value / float(im.size[0])
+    print(im.size[1]*dimension_value / float(im.size[0]))
 else:
-    print im.size[0]*dimension_value / float(im.size[1])
+    print(im.size[0]*dimension_value / float(im.size[1]))

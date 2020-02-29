@@ -1,3 +1,4 @@
+from __future__ import print_function
 import ui
 class InputAlert(ui.View):
     '''a ui that is added to the root view of a class, as a subview.
@@ -20,7 +21,7 @@ class InputAlert(ui.View):
         #then 
         
         from threading import Timer
-        print threading.enumerate()
+        print(threading.enumerate())
         from thread import interrupt_main
         self.e.clear()
         for s in self.subviews:

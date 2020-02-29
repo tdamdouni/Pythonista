@@ -38,6 +38,7 @@ Issues: Increasing text size results in missing
 text for portions of last 2 days of extended
 forecast.
 '''
+from __future__ import print_function
 import datetime
 from math import exp
 import os

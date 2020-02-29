@@ -8,6 +8,7 @@
 
 # Script for downloading a URL to Dropbox
 
+from __future__ import print_function
 import sys
 import urllib2
 import urllib
@@ -35,7 +36,7 @@ def transfer_file(a_url):
     configure_token(sess)
     client = dropbox.client.DropboxClient(sess)
     
-    print "Attempting to download %s" % a_url
+    print("Attempting to download %s" % a_url)
     
     file_name = a_url.split('/')[-1]
     file_name = urllib.unquote(file_name).decode('utf8') 
@@ -50,7 +51,7 @@ def transfer_file(a_url):
     f = open(download_file, 'wb')
     meta = u.info()
     file_size = int(meta.getheaders("Content-Length")[0])
-    print "Downloading: %s Bytes: %s" % (file_name, file_size)
+    print("Downloading: %s Bytes: %s" % (file_name, file_size))
     
     file_size_dl = 0
     block_sz = 8192
@@ -63,24 +64,24 @@ def transfer_file(a_url):
         f.write(buffer)
         status = r"%10d  [%3.2f%%]" % (file_size_dl, file_size_dl * 100. / file_size)
         status = status + chr(8)*(len(status)+1)
-        print status,
+        print(status, end=' ')
         
     f.close()
     
-    print "Uploading to dropbox"
+    print("Uploading to dropbox")
     upload(download_file, client)
     
     # Delete the local file
     os.remove(download_file)
     
-    print "DONE !"
+    print("DONE !")
 
 def upload(file, client):
-    print "Trying to upload %s" % file
+    print("Trying to upload %s" % file)
 
     response = client.put_file(file, open(file, 'r'), True)
     
-    print "File %s uploaded to Dropbox" % file
+    print("File %s uploaded to Dropbox" % file)
     
  
 def configure_token(dropbox_session):
@@ -98,8 +99,8 @@ def setup_new_auth_token(sess):
     url = sess.build_authorize_url(request_token)
     
     # Make the user sign in and authorize this token
-    print "url:", url
-    print "Please visit this website and press the 'Allow' button, then hit 'Enter' here."
+    print("url:", url)
+    print("Please visit this website and press the 'Allow' button, then hit 'Enter' here.")
     webbrowser.open(url)
     raw_input()
     # This will fail if the user didn't visit the above URL and hit 'Allow'
@@ -121,7 +122,7 @@ def main():
         the_url = clipboard.get()
 
     if not the_url:
-        print repr(sys.argv)
+        print(repr(sys.argv))
         return
 
     console.clear()

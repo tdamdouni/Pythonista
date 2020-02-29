@@ -123,7 +123,7 @@ class MySQLConnection(object):
 
         try:
             handshake = self._protocol.parse_handshake(packet)
-        except Exception, err:
+        except Exception as err:
             raise errors.InterfaceError('Failed parsing handshake; %s' % err)
 
         regex_ver = re.compile("^(\d{1,2})\.(\d{1,2})\.(\d{1,3})(.*)")
@@ -783,7 +783,7 @@ class MySQLConnection(object):
             try:
                 self.disconnect()
                 self.connect()
-            except Exception, err:
+            except Exception as err:
                 if counter == attempts:
                     raise errors.InterfaceError("Can not reconnect to MySQL "
                                                 "after %d attempt(s): %s" % (

@@ -2,6 +2,7 @@
 
 # https://forum.omz-software.com/topic/2918/picencode
 
+from __future__ import print_function
 from PIL import Image
 import sys
 
@@ -44,7 +45,7 @@ def encode(filename,plain_text,X=16): # returns true or false depending on if it
 	bioMessage.save(filename)
 	
 def decode(filename):
-	print "Decoding"
+	print("Decoding")
 	image = Image.open(filename)
 	r,g,b = image.getpixel((0,0))
 	r = r*256 + b

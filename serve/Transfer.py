@@ -12,6 +12,7 @@ Adding shortcuts makes it easy to use.
 See image files in https://github.com/nekotaroneko/Transfer
 
 '''
+from __future__ import print_function
 
 import os,sys
 import zipfile
@@ -398,7 +399,7 @@ class Transfer(object):
 			
 		try:
 			while True:
-				if show_text: print 'Detecting Server.....'
+				if show_text: print('Detecting Server.....')
 				result = port_scan.scan()
 				if result:
 					IP = result
@@ -411,7 +412,7 @@ class Transfer(object):
 		d = datetime.datetime.today().strftime("%Y-%m-%d %H-%M-%S")
 		to_extract_path = to_abs_path(main_dir,d)
 		
-		print 'Detected!!\nServer IP is ' + IP
+		print('Detected!!\nServer IP is ' + IP)
 		target_url = 'http://{}:{}/{}'.format(IP, port, os.path.relpath(self.send_path, to_abs_path()).replace("\\", "/")) #for windows
 		downloader(target_url, self.receive_path)
 		if os.path.exists(self.receive_path):
@@ -451,13 +452,13 @@ class Transfer(object):
 						if os.path.isdir(transfer_path):
 							if not os.path.isdir(original_path):
 								os.makedirs(original_path)
-								print 'dir {} was creadted'.format(os.path.relpath(original_path, to_abs_path()))
+								print('dir {} was creadted'.format(os.path.relpath(original_path, to_abs_path())))
 								
 								
 						else:
 							if not os.path.isfile(original_path):
 								shutil.move(transfer_path, original_path)
-								print 'moved {} to {}'.format(os.path.relpath(transfer_path, to_abs_path()), os.path.relpath(original_path, to_abs_path()))
+								print('moved {} to {}'.format(os.path.relpath(transfer_path, to_abs_path()), os.path.relpath(original_path, to_abs_path())))
 								total_file_list.append(original_path)
 								
 					if not len(replace_list) == 0 and console.alert("Transfer","Following files will be replaced.\n{}".format('\n'.join([os.path.relpath(x, to_abs_path()) for x,y in replace_list])),"No","OK",hide_cancel_button=True) == 2:
@@ -465,7 +466,7 @@ class Transfer(object):
 							os.remove(original_path)
 							print('{} was removed'.format(os.path.relpath(original_path, to_abs_path())))
 							shutil.move(transfer_path, original_path)
-							print 'moved {} to {}'.format(os.path.relpath(transfer_path, to_abs_path()), os.path.relpath(original_path, to_abs_path()))
+							print('moved {} to {}'.format(os.path.relpath(transfer_path, to_abs_path()), os.path.relpath(original_path, to_abs_path())))
 							total_file_list.append(original_path)
 							
 					removeEmptyFolders(to_extract_path, True)
@@ -693,7 +694,7 @@ class Port_Scan(object):
 def downloader(url, file_path, progress=True, style=1):
 	_file_path = os.path.basename(file_path)
 	with open(file_path, "wb") as f:
-		print "Downloading %s" % _file_path
+		print("Downloading %s" % _file_path)
 		response = requests.get(url, stream=True)
 		total_length = response.headers.get('content-length')
 		
@@ -787,7 +788,7 @@ def start_up():
 		while True:
 			transfer.receive(wait_interval, False)
 	console.hide_output()
-	print 'Ready to receive.....'
+	print('Ready to receive.....')
 	threading.Thread(target=_start_up, name='Transfer_Startup').start()
 	
 	
@@ -827,7 +828,7 @@ if __name__ == '__main__':
 			
 		elif len(args) > 1:
 			files = args[1:]
-			print files
+			print(files)
 			transfer.send(files)
 			
 		else:
@@ -836,7 +837,7 @@ if __name__ == '__main__':
 				if len(path) == 0:
 					path = appex.get_attachments()
 				#print appex.get_file_path()
-				print path
+				print(path)
 				if not len(path) == 0:
 					if len(path) == 1 and not os.path.isfile(path[0]):
 						share_text = path[0]
@@ -858,7 +859,7 @@ if __name__ == '__main__':
 			
 		if len(args) > 1:
 			files = args[1:]
-			print files
+			print(files)
 			transfer.send(files)
 			
 		else:

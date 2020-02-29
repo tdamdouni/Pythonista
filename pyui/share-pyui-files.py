@@ -2,7 +2,8 @@
 
 # Captured from: _https://forum.omz-software.com/topic/2506/possible-to-share-pyui-files_
 
-print open('Test.pyui').read()
+from __future__ import print_function
+print(open('Test.pyui').read())
 
 ###==============================
 

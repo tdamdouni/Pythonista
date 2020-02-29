@@ -1,3 +1,4 @@
+from __future__ import print_function
 # https://gist.github.com/michaeluhl/4043334
 
 import base64
@@ -34,8 +35,8 @@ def edit(gist, files, token, message=None):
         rdata = result.read()
         result.close()
         return rdata
-    except Exception, e:
-        print e
+    except Exception as e:
+        print(e)
     return None
     
 def get_gist_id(fname):
@@ -69,8 +70,8 @@ def load(gist, fname):
 		rdata = result.read()
 		result.close()
 		return rdata
-	except Exception, e:
-		print e
+	except Exception as e:
+		print(e)
 	return None
 
 def pull():
@@ -88,7 +89,7 @@ def commit():
 		if token is None:
 			u, p = console.login_alert('GitHub Login')
 			r = json.loads(auth(u, p))
-			print r
+			print(r)
 			token = r['token']
 			keychain.set_password('gistcheck','gistcheck',token)
 		fname = os.path.basename(editor.get_path())

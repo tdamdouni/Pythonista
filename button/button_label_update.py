@@ -3,6 +3,7 @@
 
 # https://forum.omz-software.com/topic/2847/2-easy-questions/8
 
+from __future__ import print_function
 import ui
 
 def btn_action(sender):
@@ -13,7 +14,7 @@ def btn_action(sender):
 	lb = sender.connected_label # dynamically created attribute
 	int_val = int(lb.text)
 	the_value = int_val
-	print the_value
+	print(the_value)
 	lb.text = str(the_value + sender.increment_value)
 	
 	

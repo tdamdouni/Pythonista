@@ -2,6 +2,7 @@
 
 # https://forum.omz-software.com/topic/2016/unlimited-backgrounding/10
 
+from __future__ import print_function
 import sound
 import os
 import urllib
@@ -56,7 +57,7 @@ player.setActionAtItemEnd_(2)
 player.play()
 
 while True:
-    print 'Still running', datetime.now()
+    print('Still running', datetime.now())
     sleep(1)
 
 # --------------------
@@ -82,11 +83,11 @@ player.play()
 
 # do background stuff...
 current = clipboard.get()
-print current
+print(current)
 while True:
     if current != clipboard.get():
             current = clipboard.get()
-            print current
+            print(current)
     #EDIT: this seems to help
     time.sleep(1)
 

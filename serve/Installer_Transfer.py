@@ -1,3 +1,4 @@
+from __future__ import print_function
 import os,sys
 import requests
 
@@ -27,7 +28,7 @@ def to_abs_path(*value):
 def downloader(url, file_path, progress=True, style=1):
 	_file_path = os.path.basename(file_path)
 	with open(file_path, "wb") as f:
-		print "Downloading %s" % _file_path
+		print("Downloading %s" % _file_path)
 		response = requests.get(url, stream=True)
 		total_length = response.headers.get('content-length')
 		

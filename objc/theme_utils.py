@@ -3,6 +3,7 @@
 # https://github.com/The-Penultimate-Defenestrator/Pythonista-theme-utils/tree/master
 
 '''Utilities for working with the current theme'''
+from __future__ import print_function
 
 
 from objc_util import *
@@ -163,9 +164,9 @@ def style_ui(view,respect_changes=False):
 
 def test():
 	from PIL import Image
-	print 'Theme:',get_theme_name() # Name of theme
-	print "It's a {} theme".format("light" if theme_is_light() else "dark") # Light or dark
-	print 'Dominant colors',get_color_scheme(),"with a tint color of",get_tint() # Dominant colors
+	print('Theme:',get_theme_name()) # Name of theme
+	print("It's a {} theme".format("light" if theme_is_light() else "dark")) # Light or dark
+	print('Dominant colors',get_color_scheme(),"with a tint color of",get_tint()) # Dominant colors
 	#Images for each major color in the theme
 	images=[]
 	for c in get_color_scheme():

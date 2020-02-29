@@ -2,6 +2,7 @@
 
 # https://forum.omz-software.com/topic/3035/pick_image-index-of-picked-image
 
+from __future__ import print_function
 import photos
 
 def get_index(filename):
@@ -14,5 +15,5 @@ def get_index(filename):
 img = photos.pick_image(show_albums=True, include_metadata=True, original=True, raw_data=False, multi=False)
 filename = img[1].get('filename')
 i = get_index(filename)
-print filename + ' = ' + str(i)
+print(filename + ' = ' + str(i))
 

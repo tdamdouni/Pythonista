@@ -31,6 +31,7 @@
 #---To Do: Designed on iPhone. Will need (w,h) ui and font 
     tweaking for iPads, as I don't have one to test.
 '''
+from __future__ import print_function
 import dialogs
 import requests
 import sys
@@ -314,7 +315,7 @@ class MyView(ui.View):
       # Get rid of old MarkdownView, as a new one will be needed for new query...if no mv loaded yet then catch and accept error
       self.remove_subview(self.mv)
     except AttributeError:
-      print
+      print()
       
     # Get ready to query for information about the title selected. 
     the_pick = sender.items[row]

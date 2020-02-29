@@ -1,3 +1,4 @@
+from __future__ import print_function
 # https://github.com/g33k44/Quran-Downloader/blob/master/quran.py
 
 # https://g33k44.wordpress.com/2015/01/30/quran-downloader/
@@ -17,11 +18,11 @@ br.addheaders = [('User-agent',' Mozilla/5.0 (Windows NT 6.1; WOW64; rv:27.0) Ge
                  ('Accept-Charset', 'ISO-8859-1,utf-8;q=0.7,*;q=0.3')]
 for i in range(1,115) :
 	try :
-		print "[*] Downloading Sora Number %03d"%i
+		print("[*] Downloading Sora Number %03d"%i)
 		br.retrieve("http://server7.mp3quran.net/shur/%03d.mp3"%i , "%03d.mp3"%i)
-		print "[+] Done"
+		print("[+] Done")
 	except :
-		print "[-] %i not downloaded"%i
+		print("[-] %i not downloaded"%i)
 		a.write(str(i)+"\n")
 a.close()
 

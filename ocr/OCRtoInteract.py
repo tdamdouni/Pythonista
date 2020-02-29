@@ -4,6 +4,7 @@
 
 # Requires Pythonista for iOS and Interact for iOS. Sends image and returns OCR'd text. Opens text in Interact unless used from action extension, then adds to clipboard.
 
+from __future__ import print_function
 import requests
 import photos
 from PIL import Image, ImageEnhance
@@ -64,14 +65,14 @@ headers = {
 
 image.show()
 console.show_activity()
-print 'Starting request to Project Oxford...'
+print('Starting request to Project Oxford...')
 
 r = requests.post(url, data=data, headers=headers, params=params)
 
 console.hide_activity()
 
 if r.status_code == 200:
-	print 'Request to Project Oxford was successful, building string...'
+	print('Request to Project Oxford was successful, building string...')
 	
 	def words(w):
 		return w["text"]

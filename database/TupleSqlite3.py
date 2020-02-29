@@ -1,6 +1,7 @@
 # coding: utf-8
 # https://forum.omz-software.com/topic/2375/problem-with-list-comprehension
 
+from __future__ import print_function
 from collections import namedtuple
 import sqlite3
 from random import randint
@@ -49,7 +50,7 @@ if __name__ == '__main__':
     db.commit()
     cur = db.execute('SELECT * FROM {0}'.format(db_table))
     for row in cur:
-        print repr(row)
+        print(repr(row))
     db.close()
     
     

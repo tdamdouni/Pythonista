@@ -10,6 +10,7 @@
 #inverse sin etc. deg <-> rad
 #4 12 2012 prgramming preparations
 #UNDO partly done
+from __future__ import print_function
 from scene import *
 from random import random
 from string import ascii_lowercase
@@ -118,7 +119,7 @@ class MyButton (Scene):
 					pgrm_data[pdata_length] = s
 					self.digit_found += 1	
 				except:
-					print '***ERROR INPUT OF INT TOO LONG'
+					print('***ERROR INPUT OF INT TOO LONG')
 					pdata_length += 1
 					self.digit_found = -1
 			#print '		digit found ',tmp
@@ -280,11 +281,11 @@ class MyButton (Scene):
 					self.root_layer.sublayers[el].image = img
 					
 ##### real begin of touch_begin **********************************			
-		print 'dbg touch black?',i,t_button
+		print('dbg touch black?',i,t_button)
 		#print self.root_layer.sublayers[i].frame
 		#t_button == -1 => no button touched!!
 		if t_button == 56: #UNDO
-			print '**********                               undo called'
+			print('**********                               undo called')
 			do_UNDO()
 			return
 		if clear_info_shown and t_button in [51, 52, 53, 54, 55]:
@@ -476,9 +477,9 @@ class MyButton (Scene):
 			elif but == 0: #OFF
 				#from sys import exit
 				#exit(0)
-				print 'saved commands'
+				print('saved commands')
 				for el in pgrm_data.values():
-					print el
+					print(el)
 				error = 'tap x to real exit'
 				#self.change_mesg(self.adjust_txt('tap x to real exit', width=50),col=Color(1,1,0))
 			if not error and pgrm_mode == 0:
@@ -548,7 +549,7 @@ class MyButton (Scene):
 				self.adjust_display(memories[37])		
 		elif t_button in self.digit_places:
 			#print 'digit place',t_button
-			print '>',memories[37],'<'
+			print('>',memories[37],'<')
 			if memories[37].strip() == '0':
 				memories[37] = ''
 			if self.action == -1:
@@ -740,7 +741,7 @@ class MyButton (Scene):
 				error = '*** TAN(H) ERROR WITH '
 
 		elif t_button == 3: #R/S
-			print pgrm_data
+			print(pgrm_data)
 			ueerror = 'R/S not yet'
 		if error:
 			tmp = error + '"' + memories[37] + '"'
@@ -849,7 +850,7 @@ class MyButton (Scene):
 def clear_memories():
 	for ii in range(41):
 		memories[ii] = '0'
-	print '*** INFO: memories set to "0"'
+	print('*** INFO: memories set to "0"')
 		
 run(MyButton())
 

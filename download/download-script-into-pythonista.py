@@ -1,3 +1,4 @@
+from __future__ import print_function
 # https://forum.omz-software.com/topic/1966/download-script-into-pythonista/25
 
 # python2
@@ -5,7 +6,7 @@
 import urllib2
 
 url = 'https://raw.githubusercontent.com/humberry/PhoneManager/master/PhoneManager.py'
-print urllib2.urlopen(url).read()
+print(urllib2.urlopen(url).read())
 
 # --------------------
 

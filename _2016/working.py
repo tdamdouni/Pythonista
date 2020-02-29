@@ -3,6 +3,7 @@
 
 # https://forum.omz-software.com/topic/2845/request-for-an-app/65
 
+from __future__ import print_function
 import ui
 import photos
 
@@ -35,7 +36,7 @@ class RoomAreaView(ui.View):
 	def will_close(self):
 		'''upon close, dump out the current area.  do this by first getting the set of points.  The zip notation lets us convert from a tuple of the form ((x0,y0),(x1,y1),...) to x=(x0,x1,...) and y=(y0,y1,...)'''
 		x, y = zip(*self.rv.pts)
-		print polygonArea(x, y, float(self.rv.scale.value)), self.rv.scale.value / 10
+		print(polygonArea(x, y, float(self.rv.scale.value)), self.rv.scale.value / 10)
 		
 		
 class RoomAreaOverlay(ui.View):

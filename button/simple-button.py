@@ -7,6 +7,7 @@
 
 # In your script, button_tapped is not yet defined when load_view is called, so the action can't be bound.
 
+from __future__ import print_function
 import ui
 import console
 
@@ -15,5 +16,5 @@ v.present('sheet')
 
 # As a function:
 def button_tapped(sender):
-	print 'button tapped'
+	print('button tapped')
 

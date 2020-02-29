@@ -1,9 +1,10 @@
+from __future__ import print_function
 # https://forum.omz-software.com/topic/1972/beta-fun-with-mapkit-and-objc_util/7
 
 import os
 p = os.path.abspath(os.path.join(os.__file__, '../../clearglobals.py'))
 with open(p) as f:
-	print f.read()
+	print(f.read())
 # --------------------
 
 # ...

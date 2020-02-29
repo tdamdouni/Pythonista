@@ -1,3 +1,4 @@
+from __future__ import print_function
 import urllib
 import clipboard
 import bs4
@@ -14,4 +15,4 @@ console.hide_activity()
 
 console.clear()
 
-print pageTitle
+print(pageTitle)

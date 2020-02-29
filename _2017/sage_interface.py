@@ -7,6 +7,7 @@ A small client illustrating how to interact with the Sage Cell Server, version 2
 
 Requires the websocket-client package: http://pypi.python.org/pypi/websocket-client
 """
+from __future__ import print_function
 
 import websocket
 import json
@@ -66,7 +67,7 @@ class SageCell(object):
                     msg['content']['execution_state'] == 'idle'):
                         got_idle_status = True
             else:
-                print('#####\n',msg)
+                print(('#####\n',msg))
         file_data={}
         try:
             files=self.shell_messages[0]['content']['payload'][0].get('new_files',[])
@@ -155,5 +156,5 @@ if __name__ == "__main__":
     	editor.annotate_line(get_error_line(errors),errors['evalue'],style='error')
     	console.hide_output()
     else:
-    	print txt
+    	print(txt)
 

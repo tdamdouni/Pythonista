@@ -1,3 +1,4 @@
+from __future__ import print_function
 # This script is to get source code examples and quick answers to questions
 # from stack overflow. The user enters a keyword and the top three resuts are returned.
 # I use on Pythonista for iphone
@@ -18,7 +19,7 @@ class MyOpener(urllib.FancyURLopener):
 def state(ack):
 
     aa = ack[0]
-    print "\n ******ANSWER ONE*************\n"
+    print("\n ******ANSWER ONE*************\n")
     print(ack[0] + "\n")
     myopener = MyOpener()
     #page = urllib.urlopen(url)
@@ -29,10 +30,10 @@ def state(ack):
     a = ""
     soup = BeautifulSoup(text)
     for tag in soup.findAll(attrs={'class' : 'answercell'}):
-        print ''.join(tag.findAll(text=True))
+        print(''.join(tag.findAll(text=True)))
         
     aa2 = ack[1]
-    print "\n ******ANSWER TWO*************\n"
+    print("\n ******ANSWER TWO*************\n")
     print(ack[1] + "\n")
         
     page2 = myopener.open(aa2)
@@ -42,11 +43,11 @@ def state(ack):
     a = ""
     soup = BeautifulSoup(text)
     for tag in soup.findAll(attrs={'class' : 'answercell'}):
-        print ''.join(tag.findAll(text=True))
+        print(''.join(tag.findAll(text=True)))
         
         
     aa3 = ack[2]
-    print "\n ******ANSWER THREE*************\n"
+    print("\n ******ANSWER THREE*************\n")
     print(ack[2] + "\n")
         
     page3 = myopener.open(aa3)
@@ -56,7 +57,7 @@ def state(ack):
     a = ""
     soup = BeautifulSoup(text)
     for tag in soup.findAll(attrs={'class' : 'answercell'}):
-        print ''.join(tag.findAll(text=True))
+        print(''.join(tag.findAll(text=True)))
         
    # print(a)
 
@@ -84,7 +85,7 @@ def process(url):
     pp = str(app)
     
    # print ack
-    print "Samples returned:" + " " + pp + "\n"
+    print("Samples returned:" + " " + pp + "\n")
     state(ack)
     return ack
     
@@ -97,10 +98,10 @@ def main():
     user = raw_input('go:')
     url = "http://stackoverflow.com/search?q=" + user;
     
-    print url
-    print '\n'
-    print "You are searching stackoverflow for" + " " + user
-    print "\n"
+    print(url)
+    print('\n')
+    print("You are searching stackoverflow for" + " " + user)
+    print("\n")
     process(url)
 # main()
 

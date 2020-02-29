@@ -1,3 +1,4 @@
+from __future__ import print_function
 # https://gist.github.com/lukf/9785293
 
 # -*- coding: utf-8 -*-
@@ -22,7 +23,7 @@ for post in feedparser.parse(urllib2.urlopen(feedURL).read().replace('dc:subject
 		
 dayone_entry=outp+dayone_footer
 # User confirmation
-print dayone_entry
+print(dayone_entry)
 if "preselect" in sys.argv:
 	selected = "yes"
 elif not raw_input("-- Press enter to import"):

@@ -2,6 +2,7 @@
 
 # https://gist.github.com/tlinnet/31b35136e206ea2b4829a13799c89316
 
+from __future__ import print_function
 from urlparse import urlparse
 from urllib import urlencode
 from ctypes import c_void_p
@@ -82,7 +83,7 @@ headers = None
 auth = (APIKEY, "x")
 
 data = Requests().get(url=url, auth=auth, headers=headers, params=params)
-print data
-print type(data)
-print "Done"
+print(data)
+print(type(data))
+print("Done")
 

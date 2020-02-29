@@ -1,3 +1,4 @@
+from __future__ import print_function
 # https://forum.omz-software.com/topic/2462/dialogs-module-extending-it/2 
 
 # Extension of dialogs.form_dialog() that supports simple data validation
@@ -76,7 +77,7 @@ def validate_form(values):
 def main():
 	fields = [{'type': 'text', 'key': 'title', 'title': 'Title (Mr/Mrs/Ms)'}, {'type': 'text', 'key': 'name', 'title': 'Name'}, {'type': 'switch', 'key': 'terms', 'title': 'Accept Terms'}]
 	r = form_dialog('Test', fields, validator=validate_form)
-	print r
+	print(r)
 	
 if __name__ == '__main__':
 	main()

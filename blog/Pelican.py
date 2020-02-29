@@ -1,3 +1,4 @@
+from __future__ import print_function
 import console
 import sys
 import webbrowser
@@ -9,7 +10,7 @@ console.clear()
 #The Drafts action passes two variables to Pythonista - [[title]] 
 #Use sys.argv[x] to call these variables. Remember, the script *name* takes sys.argv[0].
 
-print "Formatting the article.\n"
+print("Formatting the article.\n")
 	
 articleTitle = sys.argv[1]
 articleBody = sys.argv[2]

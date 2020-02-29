@@ -7,6 +7,7 @@ dict of  dicts
  key == x.__class.__name__
  value = dict of the defaults for the object
 '''
+from __future__ import print_function
 _std_defaults = \
     {
         'Button' : {
@@ -21,8 +22,8 @@ _std_defaults = \
 
 class ControlExt(ui.View):
     def __init__(self , ui_object, *args, **kwargs):
-        print 'in here, ControlExt init'
-        print kwargs
+        print('in here, ControlExt init')
+        print(kwargs)
         self.obj = ui_object()
         
         self.std_object_creation(self.obj)  
@@ -47,7 +48,7 @@ class ControlExt(ui.View):
                     
     # dont use the obj init to set the args, kwargs
     def set_obj_args(obj, *args, **kwargs):
-        print 'set_obj_args args etc', kwargs
+        print('set_obj_args args etc', kwargs)
         for k,v in kwargs.iteritems():
             if hasattr(obj, k):
                 if k == 'image':
@@ -64,13 +65,13 @@ class ControlExt(ui.View):
         obj_defaults = _std_defaults.get(class_str, False)
         if not obj_defaults: return
         
-        print 'in here, std_object_creation', obj_defaults
+        print('in here, std_object_creation', obj_defaults)
         for k,v in obj_defaults.iteritems():
             if hasattr(obj, k):
                 if k == 'image':
                     setattr(obj, k , self.get_named_ui_image(v))
                 else:
-                    print 'std_object_creation', k, v
+                    print('std_object_creation', k, v)
                     setattr(obj, k, v)
 
 # we need to create one per ui. class type  

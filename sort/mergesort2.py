@@ -1,3 +1,4 @@
+from __future__ import print_function
 
 def mergeSort(A):
     if len(A)>1:
@@ -51,6 +52,6 @@ def merge(x1,x2):
             
 
 a=[6,5,4,3,2,1]
-print 'before sorting',a             
+print('before sorting',a)             
 x=mergeSort(a)
-print 'after sorting',x
+print('after sorting',x)

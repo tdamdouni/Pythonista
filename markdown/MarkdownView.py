@@ -2,6 +2,7 @@
 
 # https://github.com/mikaelho/pythonista-markdownview
 
+from __future__ import print_function
 import ui
 from markdown2 import markdown
 from urllib import quote, unquote
@@ -665,7 +666,7 @@ class MarkdownView(ui.View):
 		# Debug message from web page, print to console
 		elif url.startswith(self.debug_prefix):
 			debug_text = unquote(url.replace(self.debug_prefix, ''))
-			print debug_text
+			print(debug_text)
 			return False
 		# Loaded by the web view at start, allow
 		elif url.startswith('about:blank'):

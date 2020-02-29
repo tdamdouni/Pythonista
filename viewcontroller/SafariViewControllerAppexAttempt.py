@@ -1,3 +1,4 @@
+from __future__ import print_function
 # https://forum.omz-software.com/topic/2271/beta-suggestion-safariviewcontroller/3
 
 # coding: utf-8
@@ -22,11 +23,11 @@ def open_in_safari_vc(url):
 	
 def main():
 	if not appex.is_running_extension():
-		print 'This script is intended to be run from the sharing extension.'
+		print('This script is intended to be run from the sharing extension.')
 		return
 	url = appex.get_url()
 	if not url:
-		print 'No input url'
+		print('No input url')
 		return
 	open_in_safari_vc(url)
 	

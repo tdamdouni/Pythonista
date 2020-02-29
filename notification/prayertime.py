@@ -23,6 +23,7 @@
 
 
 
+from __future__ import print_function
 __author__ = "Ahmed Youssef"
 __all__ = ['Season', 'Calendar', 'Prayertime', 'Mazhab', \
         'as_pytime', 'as_pydatetime']
@@ -270,22 +271,22 @@ class Prayertime(object):
         
     def report(self):
         """Simple report of all prayertimes."""
-        print self.fajr_time()
-        print self.shrouk_time()
-        print self.zuhr_time()
-        print self.asr_time()
-        print self.maghrib_time()
-        print self.isha_time()
+        print(self.fajr_time())
+        print(self.shrouk_time())
+        print(self.zuhr_time())
+        print(self.asr_time())
+        print(self.maghrib_time())
+        print(self.isha_time())
     
     def report_full(self):
         """Simple report of all prayertimes."""
         
-        print as_pydatetime(self.date, as_pytime(self.fajr_time())).strftime("%I:%M:%S %p")
-        print as_pydatetime(self.date, as_pytime(self.shrouk_time())).strftime("%I:%M:%S %p")
-        print as_pydatetime(self.date, as_pytime(self.zuhr_time())).strftime("%I:%M:%S %p")
-        print as_pydatetime(self.date, as_pytime(self.asr_time())).strftime("%I:%M:%S %p")
-        print as_pydatetime(self.date, as_pytime(self.maghrib_time())).strftime("%I:%M:%S %p")
-        print as_pydatetime(self.date, as_pytime(self.isha_time())).strftime("%I:%M:%S %p")
+        print(as_pydatetime(self.date, as_pytime(self.fajr_time())).strftime("%I:%M:%S %p"))
+        print(as_pydatetime(self.date, as_pytime(self.shrouk_time())).strftime("%I:%M:%S %p"))
+        print(as_pydatetime(self.date, as_pytime(self.zuhr_time())).strftime("%I:%M:%S %p"))
+        print(as_pydatetime(self.date, as_pytime(self.asr_time())).strftime("%I:%M:%S %p"))
+        print(as_pydatetime(self.date, as_pytime(self.maghrib_time())).strftime("%I:%M:%S %p"))
+        print(as_pydatetime(self.date, as_pytime(self.isha_time())).strftime("%I:%M:%S %p"))
 
 if __name__=="__main__":
     

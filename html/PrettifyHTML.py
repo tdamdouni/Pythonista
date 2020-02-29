@@ -1,3 +1,4 @@
+from __future__ import print_function
 # http://www.jackenhack.com/scripting-programming-iphone-ipad-python-pythonista-review/
 
 # coding: utf-8
@@ -21,7 +22,7 @@ import urllib
 from bs4 import BeautifulSoup
 
 numArgs = len(sys.argv)  
-print numArgs  
+print(numArgs)  
 if numArgs != 2:  
 	console.alert('This script needs an URL as an argument.')  
 else:  

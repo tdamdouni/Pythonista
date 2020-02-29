@@ -1,3 +1,4 @@
+from __future__ import print_function
 # https://github.com/geekcomputers/Pythonista/blob/master/backup_to_dropbox.py
 
 # http://www.thegeekblog.co.uk/the-geek-blog/2016/7/27/backup-pythonista-script-to-dropbox
@@ -20,7 +21,7 @@ dropbox_client = get_client()
 
 for file in os.listdir('.'):
 	if file.endswith(".py"):
-		print file
+		print(file)
 		f=open(file,'r')
 		dropbox_client.put_file('My_Backups/Pythonista/'+file,f,overwrite=True)
 		f.close()

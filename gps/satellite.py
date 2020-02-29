@@ -5,6 +5,7 @@
 
 # 48.1843641777,11.5729847479
 
+from __future__ import print_function
 import urllib2
 import json
 import time
@@ -26,7 +27,7 @@ def get_satellite_image(location=None,date=None):
 	req=json.loads(urllib2.urlopen(req_url).read())
 
 	image_url=req["url"]
-	print "Image at "+image_url
+	print("Image at "+image_url)
 	image = urllib2.urlopen(image_url)
 	b=BytesIO(image.read())
 	return b

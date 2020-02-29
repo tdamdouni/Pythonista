@@ -12,6 +12,7 @@
 # First One is the get document text element
 # Second one is to run the python code:
 
+from __future__ import print_function
 import re
 import editor
 import dialogs
@@ -42,7 +43,7 @@ for line in action_in.split('\n'):
 			'Ok')
 			rem.save()
 		except KeyboardInterrupt:
-			print "User Cancled Input"
+			print("User Cancled Input")
 			
 			
 action_out = action_in

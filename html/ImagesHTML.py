@@ -1,3 +1,4 @@
+from __future__ import print_function
 # @viticci
 # Uses direct link to image in clipboard to generate HTML code suitable for a center-aligned image with Title and Alt attributes.
 # Uses direct link to image in clipboard to generate HTML code suitable for MacStories
@@ -14,5 +15,5 @@ title = console.input_alert("Image Title", "Type title below")
 
 final = "<img src=" + '"' + image + '"' + " " + "alt=" + '"' + alts + '"' + " " + "title=" + '"' + title + '"' + " " + "class=\"aligncenter\" />"
 
-print final
+print(final)
 clipboard.set(final)

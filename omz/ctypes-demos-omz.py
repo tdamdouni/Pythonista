@@ -4,6 +4,7 @@
 
 # Some experimental `ctypes` demos for Pythonista on iOS
 
+from __future__ import print_function
 from ctypes import c_void_p, c_char_p, c_double, c_float, cdll, util
 import os
 
@@ -48,9 +49,9 @@ def print_ipod_title():
     if item:
         artist = msg(item, c_void_p, 'valueForProperty:', [c_void_p], nsstr('artist'))
         title = msg(item, c_void_p, 'valueForProperty:', [c_void_p], nsstr('title'))
-        print 'Now Playing: %s -- %s' % (obj_to_str(artist), obj_to_str (title))
+        print('Now Playing: %s -- %s' % (obj_to_str(artist), obj_to_str (title)))
     else:
-        print 'iPod not playing'
+        print('iPod not playing')
 
 def set_screen_brightness(value):
     UIScreen = cls('UIScreen')
@@ -67,29 +68,29 @@ def download_and_save_video():
     # Download a short sample file from Apple:
     # http://support.apple.com/en-us/HT201549
     if not os.path.exists('sample_mpeg4.mp4'):
-        print 'Downloading test video...'
+        print('Downloading test video...')
         import urllib, zipfile
         urllib.urlretrieve('http://a1408.g.akamai.net/5/1408/1388/2005110405/1a1a1ad948be278cff2d96046ad90768d848b41947aa1986/sample_mpeg4.mp4.zip', 'temp.zip')
         zipfile.ZipFile('temp.zip').extractall()
         os.remove('temp.zip')
-    print 'Saving video...'
+    print('Saving video...')
     save_video('sample_mpeg4.mp4')
-    print 'Done'
+    print('Done')
 
 if __name__ == '__main__':
     from time import sleep
-    print 'Printing currently playing music (iPod/Music app only)...'
+    print('Printing currently playing music (iPod/Music app only)...')
     print_ipod_title()
     sleep(1)
-    print 'Downloading a video, and saving it to the camera roll...'
+    print('Downloading a video, and saving it to the camera roll...')
     download_and_save_video()
-    print 'Making screen very bright...'
+    print('Making screen very bright...')
     sleep(1)
     set_screen_brightness(1.0)
-    print '...very dark...'
+    print('...very dark...')
     sleep(1)
     set_screen_brightness(0.0)
-    print '...and something in-between.'
+    print('...and something in-between.')
     sleep(1)
     set_screen_brightness(0.5)
 

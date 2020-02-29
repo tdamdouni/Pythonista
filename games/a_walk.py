@@ -2,6 +2,7 @@
 
 # https://gist.github.com/anonymous/70b4a6bb0d2a818cb2ce
 
+from __future__ import print_function
 from scene import *
 from PIL import Image
 import urllib, os
@@ -500,7 +501,7 @@ def getframes(image):
 
 class MyScene (Scene):
 	def should_rotate(self,orientation):
-		print orientation
+		print(orientation)
 		return False
 	def setup(self):
 		img=loadImage('Images','soldier2.png',

@@ -3,6 +3,7 @@ Created on May 25, 2013
 
 @author: Giacomo
 '''
+from __future__ import print_function
 
 
 from structure.basic.Stack import StackArrayList as Stack
@@ -79,57 +80,57 @@ def testRecursiveQuickSort(L):
     a = L
     b = L
     
-    print "\n"
+    print("\n")
     
-    print "# Deterministic #"
+    print("# Deterministic #")
     recursiveQuickSort(a, True)
-    print a
+    print(a)
     
-    print "\n\n"
+    print("\n\n")
     
-    print "# Randomic #"
+    print("# Randomic #")
     recursiveQuickSort(b, False)
-    print b
+    print(b)
     
 def testIterativeQuickSort(L):
     a = L
     b = L
     
-    print "\n"
+    print("\n")
     
-    print "# Deterministic #"
+    print("# Deterministic #")
     iterativeQuickSort(a, True)
-    print a
+    print(a)
     
-    print "\n"
+    print("\n")
     
-    print "# Randomic #"
+    print("# Randomic #")
     iterativeQuickSort(b, False)
-    print b
+    print(b)
     
 
 if __name__ == "__main__":
     
-    print "\n\n"
+    print("\n\n")
     
-    print "# L #"   
+    print("# L #")   
     L = [3,2,1,7,6,5,4,10,9,8]
-    print L
+    print(L)
     
-    print "\n\n"    
+    print("\n\n")    
     
-    print "### RecursiveQuickSort ###"
+    print("### RecursiveQuickSort ###")
     testRecursiveQuickSort(L)
     
-    print "\n\n"
+    print("\n\n")
     
-    print "# L #"   
+    print("# L #")   
     L = [3,2,1,7,6,5,4,10,9,8]
-    print L
+    print(L)
     
-    print "\n\n"    
+    print("\n\n")    
     
-    print "### IterativeQuickSort ###"
+    print("### IterativeQuickSort ###")
     testIterativeQuickSort(L)
     
-    print "\n\n"
+    print("\n\n")

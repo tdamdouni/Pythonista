@@ -6,6 +6,7 @@ This script builds a dictionary of simple plucked note wave files.
 written by Steven Pollack (c) September 27, 2014
 
 """
+from __future__ import print_function
 
 
 #Frequency table
@@ -102,7 +103,7 @@ numSamples = int(sampleRate * duration)
 
 t=linspace(0,duration*sampleRate,numSamples)
 envelope = Envelope(numSamples)(t)
-print len(envelope)
+print(len(envelope))
 
 for octave in range(8):
 	for note in range(12):
@@ -133,7 +134,7 @@ for octave in range(8):
 		f.setparams((numChan, dataSize, sampleRate, numSamples, "NONE", "Uncompressed"))
 		f.writeframes(data.tostring())
 		f.close()
-		print "wrote {}".format(fname)
+		print("wrote {}".format(fname))
 		
 		
 

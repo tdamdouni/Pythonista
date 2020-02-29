@@ -1,3 +1,4 @@
+from __future__ import print_function
 #The program will prompt for a location, contact a web service and retrieve JSON for the web service 
 #and parse that data, and retrieve the first place_id from the JSON. 
 #A place ID is a textual identifier that uniquely identifies a place as within Google Maps.
@@ -31,16 +32,16 @@ address = raw_input('Enter location: ')
 
 url = serviceurl + urllib.urlencode({'sensor':'false', 'address': address})
 
-print 'Retrieving', url
+print('Retrieving', url)
 
 uh = urllib.urlopen(url)
 
 data = uh.read()
 
-print 'Retrieved',len(data),'characters'
+print('Retrieved',len(data),'characters')
 
 js = json.loads(data)
 
 place_id = js['results'][0]['place_id']
 
-print place_id
+print(place_id)

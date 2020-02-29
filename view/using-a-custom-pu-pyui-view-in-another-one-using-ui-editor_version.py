@@ -4,6 +4,7 @@
 
 # https://forum.omz-software.com/topic/2154/using-a-custom-pu-pyui-view-in-another-one-using-ui-editor/18
 
+from __future__ import print_function
 f_str = [
   {
     "selected" : False,
@@ -93,7 +94,7 @@ class PanelHelp (object):
 	def __init__(self):
 		# if set, we expect that self.dismiss_callback
 		# will be set by the caller
-		print 'in here'
+		print('in here')
 		self.will_dismiss = False
 		self.panel_result = None
 		self.dismiss_callback = None

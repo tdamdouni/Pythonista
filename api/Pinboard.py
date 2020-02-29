@@ -1,3 +1,4 @@
+from __future__ import print_function
 import console
 console.show_activity()
 import urllib
@@ -49,13 +50,13 @@ r = requests.get(pinboard_url, auth=(USER, PASSWORD))
 console.clear()
 
 if r.status_code != 200:
-	print 'Could not post:', r.text
+	print('Could not post:', r.text)
 	
 elif r.status_code == 200:
 	tags = tags.split(' ')
 	tags = ','.join(tags)
 	sound.play_effect('Powerup_2')
-	print 'Link saved successfully'
-	print text
-	print "tags: " + tags
+	print('Link saved successfully')
+	print(text)
+	print("tags: " + tags)
 

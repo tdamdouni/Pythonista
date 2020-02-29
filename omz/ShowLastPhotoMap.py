@@ -1,3 +1,4 @@
+from __future__ import print_function
 # https://gist.github.com/omz/8838751
 
 # Shows the location of the last photo in the canera roll in the Maps app.
@@ -14,4 +15,4 @@ if gps:
 	maps_url = 'safari-http://maps.apple.com/?ll=%f,%f' % (latitude, longitude)
 	webbrowser.open(maps_url)
 else:
-	print 'Last photo has no location metadata.'
+	print('Last photo has no location metadata.')

@@ -1,3 +1,4 @@
+from __future__ import print_function
 from bs4 import BeautifulSoup
 import urllib2
  
@@ -10,5 +11,5 @@ soup = BeautifulSoup(homepage)
  
 images = soup.find_all('img')
 for image in images:
-    print image['src']
-    print
+    print(image['src'])
+    print()

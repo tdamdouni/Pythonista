@@ -1,3 +1,4 @@
+from __future__ import print_function
 #
 # Southend-on-Sea high tide display project by @AverageManVsPi
 # Blog of this project at http://www.averagemanvsraspberrypi.com/2015/12/raspberry-pi-high-tide-tracker.html
@@ -56,32 +57,32 @@ try:
         while True:
             if time.time() >= timelastchecked: #If the current time is greater than or equal to the 'timelastchecked' string
                 
-                print "-------- UPDATING TIDE TIME --------"
+                print("-------- UPDATING TIDE TIME --------")
                 someurl= 'https://www.tidetimes.org.uk/southend-on-sea-tide-times' # Set the URL for the Pi to look in to
                 req = Request(someurl) # Request the URL
 				
                 try:
                     response = urlopen(req) # Open the URL
-                    print "Trying URL..."
+                    print("Trying URL...")
                     
                 except URLError as e: # This section is for error handling if WiFi is down etc
                 
                     if hasattr(e, 'reason'): # One reason (unsure what!)
-                        print 'We failed to reach a server.'
-                        print 'Reason: ', e.reason
+                        print('We failed to reach a server.')
+                        print('Reason: ', e.reason)
                         
                         errsquare() # Show a square on the display to indicate an issue
                         time.sleep(900) # Wait 15 minutes before trying again so as not to over do the url requests
                         
                     elif hasattr(e, 'code'): # Another reason (unsure what!)
-                        print 'The server couldn\'t fulfill the request.'
-                        print 'Error code: ', e.code
+                        print('The server couldn\'t fulfill the request.')
+                        print('Error code: ', e.code)
                         
                         errsquare() # Show a square on the display to indicate an issue
                         time.sleep(900) # Wait 15 minutes before trying again so as not to over do the url requests
                         
                 else:
-                    print "URL open success!"
+                    print("URL open success!")
                     nexthightide = response.readlines() #read the lines of the URL (web page source) and turn that into 'nexthightide'
                     time.sleep(1) # Wait a second
                     
@@ -89,13 +90,13 @@ try:
                     
                         if 'nxhi' in line: # If the Pi finds 'nxhi' in the line...
                             line = line[0:37] # Chop 37 characters from the back of the line
-                            print "Starting line string is: ", line
+                            print("Starting line string is: ", line)
                             nhtpt1 = line[31:-4] # Take that line and cut away 31 characters from the front and 4 from the rear
                             nhtpt2 = line[34:-1] # Take that line and cut away 34 characters from the front and 1 from the rear
                             nexthightide = nhtpt1 + nhtpt2 # add those two cut strings together to make a 4-digit string
-                            print "First segment of time: ",nhtpt1
-                            print "Second segment of time: ",nhtpt2
-                            print "Time string: ", nexthightide
+                            print("First segment of time: ",nhtpt1)
+                            print("Second segment of time: ",nhtpt2)
+                            print("Time string: ", nexthightide)
                             timelastchecked = time.time()+3600 # wait 1 hour until next url check
 
             else:
@@ -126,15 +127,15 @@ try:
 
 except KeyboardInterrupt: # USE THIS OPTION FOR DEBUGGING
 
-    print "EXIT SCRIPT"
+    print("EXIT SCRIPT")
     time.sleep(0.5)
     
     # Clean up GPIOs
-    print "PERFORMING GPIO CLEANUP"
+    print("PERFORMING GPIO CLEANUP")
     time.sleep(0.5)
     GPIO.cleanup() # Clean up the gpio pins ready for the next project.
     
     # Exit program
-    print "--- EXIT NOW ---"
+    print("--- EXIT NOW ---")
     time.sleep(0.5)
     quit()

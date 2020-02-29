@@ -1,6 +1,7 @@
 # coding: utf-8
 # vim: tabstop=4 expandtab shiftwidth=4 softtabstop=4
 
+from __future__ import print_function
 import ui
 import socket
 import time
@@ -104,8 +105,8 @@ class TorrentMgr(object):
 		return self.proxy.load_raw_start(torrent_raw)
 
 	def load_url(self, url):
-		print url
-		print self.proxy.load_start(url)
+		print(url)
+		print(self.proxy.load_start(url))
 
 	def erase(self, id):
 		self.proxy.d.erase(id)

@@ -1,3 +1,4 @@
+from __future__ import print_function
 # @ui
 # https://gist.github.com/jsbain/1cf350e92bb5f59706ca
 # example of custom touch dispatch module
@@ -22,13 +23,13 @@ class TouchDispatcher(ui.View):
     def touch_began(self,touch):
         # ideally would check hits, and dispatch if needed
         # for multitouch, need to keep internal data base of active touches, since this gets called for each touch....
-        print 'began', self.name, touch.touch_id
+        print('began', self.name, touch.touch_id)
         self.lasttouch=touch
         
     def touch_moved(self,touch):
         # ideally would check hits, and dispatch if needed, such as to scrollview
         # note for multitouch we need something complex here.
-        print 'moved',self.name, touch.touch_id
+        print('moved',self.name, touch.touch_id)
         self.lasttouch=touch
         
     def touch_ended(self,touch):
@@ -37,20 +38,20 @@ class TouchDispatcher(ui.View):
         # this method would need to clean out touches, but still keep info on the active gesture.  when there are no active touches left, then kill the gesture
         # for now.... just look under the touch, and call something appropriate.
         # need to handle each ui type!
-        print self.name, 'touch ended'
+        print(self.name, 'touch ended')
         for s in self.subviews:
             #probably need to check whether another view is on top...
             if TouchDispatcher.hit(s,ui.convert_point(touch.location,self,s)):
                 if isinstance(s,ui.TextField):
-                    print '..textfield begin editing'
+                    print('..textfield begin editing')
                     s.begin_editing()
                     #think about setting cursor.... HARD! but possible i think?
                 elif isinstance(s, ui.Button):
-                    print '..button launch'
+                    print('..button launch')
                     s.action(s)
                 elif isinstance(s, TouchDispatcher):
                     # adjust touch location to subviews coordinates, then dispatch
-                    print '..touch end: dispatch: ', s.name
+                    print('..touch end: dispatch: ', s.name)
                     t=Touch(touch)
                     t.location=ui.convert_point(touch.location,self,s)
                     s.touch_ended(t)
@@ -73,7 +74,7 @@ if __name__=='__main__':
     t=ui.TextField(frame=(110,10,300,50),bg_color='white')
     v.add_subview(t)
     def myaction(sender):
-        print sender.name,' pressed'
+        print(sender.name,' pressed')
     b.action=myaction
     v.add_subview(b)
     

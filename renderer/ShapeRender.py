@@ -1,4 +1,5 @@
 # coding: utf-8
+from __future__ import print_function
 from struct import unpack
 import math, Image, ImageDraw, ui, scene, sys, sqlite3
 from timeit import default_timer as timer
@@ -37,7 +38,7 @@ class ShapeRender(object):
 			self.ydelta = abs(ymin) - abs(ymax)
 		else:
 			self.ydelta = abs(ymax) - abs(ymin)
-		print str(self.xdelta) + ' / ' + str(self.ydelta)
+		print(str(self.xdelta) + ' / ' + str(self.ydelta))
 		self.imagebuffer = None
 		self.drawbuffer = None
 		self.linewidth = config[6]
@@ -46,16 +47,16 @@ class ShapeRender(object):
 		self.color = None
 		
 		self.pixel = self.scr_width / self.xdelta
-		print 'pixel = ' + str(self.pixel)
+		print('pixel = ' + str(self.pixel))
 		img_height = self.scr_width / (self.xdelta / self.ydelta)
 		self.imagebuffer = Image.new('RGBA', (int(self.scr_width),int(img_height)), self.bgcolor)
 		self.drawbuffer = ImageDraw.Draw(self.imagebuffer)
 		if xmin != -180.0:
 			self.xoffset = xmin * -1
-		print 'xoffset = ' + str(self.xoffset)
+		print('xoffset = ' + str(self.xoffset))
 		if ymin != -90.0:
 			self.yoffset = ymax
-		print 'yoffset = ' + str(self.yoffset)
+		print('yoffset = ' + str(self.yoffset))
 		for i in range(9, len(config), 2):
 			self.color = config[i]
 			self.read_data(config[i+1])
@@ -68,24 +69,24 @@ class ShapeRender(object):
 		cursor = self.sqlcur.execute("SELECT ID_Shape FROM Shapes WHERE Name = ?", (shapefile,))
 		id_shape = cursor.fetchone()
 		if len(id_shape) > 0:
-			print 'Shape ID = ' + str(id_shape[0])
+			print('Shape ID = ' + str(id_shape[0]))
 		else:
-			print 'No id_shape'
+			print('No id_shape')
 			return
 			
 		cursor = self.sqlcur.execute("SELECT ID_Poly FROM Polys WHERE ID_Shape = ?",id_shape)
 		id_poly = cursor.fetchall()
 		min_id_poly = min(id_poly)[0]
 		max_id_poly = max(id_poly)[0]
-		print 'Poly IDs = ' + str(min_id_poly) + ' - ' + str(max_id_poly)
+		print('Poly IDs = ' + str(min_id_poly) + ' - ' + str(max_id_poly))
 		
 		cursor = self.sqlcur.execute("SELECT ShapeType FROM Polys WHERE ID_Shape = ?",id_shape)
 		shape_type = cursor.fetchone()[0]
-		print 'ShapeType = ' + str(shape_type)
+		print('ShapeType = ' + str(shape_type))
 		
 		cursor = self.sqlcur.execute("SELECT ID_Poly, ID_Point, X, Y FROM Points WHERE ID_Poly >= ? AND ID_Poly <= ? ORDER BY ID_Poly, ID_Point", (min_id_poly, max_id_poly))
 		points = cursor.fetchall()
-		print 'length points: ' + str(len(points))
+		print('length points: ' + str(len(points)))
 		
 		id_poly = min_id_poly
 		drawpoints = []
@@ -103,7 +104,7 @@ class ShapeRender(object):
 				elif self.shape_type_def[shape_type] == 'Polygon':
 					self.drawbuffer.polygon(drawpoints, fill=self.color)
 				else:
-					print 'ShapeType ' + str(shape_type) + ' is not supported.'
+					print('ShapeType ' + str(shape_type) + ' is not supported.')
 					break
 				id_poly += 1
 				drawpoints = []
@@ -123,9 +124,9 @@ class ShapeRender(object):
 		cursor = self.sqlcur.execute("SELECT Name FROM Shapes")
 		shapes = cursor.fetchall()
 		if len(shapes) > 0:
-			print shapes
+			print(shapes)
 		else:
-			print 'No shapes'
+			print('No shapes')
 			
 if __name__ == '__main__':
 	config1 = []

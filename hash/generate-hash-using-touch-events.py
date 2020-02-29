@@ -1,3 +1,4 @@
+from __future__ import print_function
 # https://forum.omz-software.com/topic/3186/entropy-builder-finger-dragging-ui/2 
 
 import ui
@@ -28,7 +29,7 @@ class TouchHash(ui.View):
 			self.name = str(self.count) + '% complete'
 			self.textview.text = self.store + '\n\nHash: ' + self.hash #show the text in the textview
 		elif self.count == 100:
-			print self.hash
+			print(self.hash)
 			clipboard.set(self.hash)
 			self.close() #close the view
 			

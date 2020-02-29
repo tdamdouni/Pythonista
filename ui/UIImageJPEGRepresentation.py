@@ -1,3 +1,4 @@
+from __future__ import print_function
 # https://forum.omz-software.com/topic/2327/uiimagejpegrepresentation
 
 # coding: utf-8
@@ -6,7 +7,7 @@ import Image
 import ui
 
 def captureNow(sender):
-    print "Capture Screen"
+    print("Capture Screen")
     layer = v.layer()
     UIGraphicsBeginImageContext(layer.bounds().size)
     layer.renderInContext_(UIGraphicsGetCurrentContext())
@@ -22,7 +23,7 @@ def captureNow(sender):
     iview = UIImageView.alloc().initWithImage_(image)
     iview.setFrame_(ObjCInstance(vt).bounds())
     
-    print iview
+    print(iview)
     
     ObjCInstance(vt).addSubview_(iview)
     vt.present('sheet')
