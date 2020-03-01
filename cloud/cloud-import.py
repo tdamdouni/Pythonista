@@ -2,6 +2,8 @@
 
 # https://forum.omz-software.com/topic/2775/cloud-import/19
 
+import os
+
 DOCS_DIR = os.path.expanduser('~/Documents/')
 SITE_DIR = os.path.join(DOCS_DIR, 'site-packages/')
 
