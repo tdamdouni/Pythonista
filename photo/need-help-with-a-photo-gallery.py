@@ -41,7 +41,7 @@ class MyPictureView(ui.View):
 	def layout(self):
 		pass
 		
-	def touch_began(self, touch): der
+	def touch_began(self, touch):
 		pass
 		
 class MiniPhotoView(ui.View):
