@@ -50,7 +50,7 @@ def Import(sTarget):
 		return None  # do we really want to fail silently here?
 		
 	# Pickled dictionary of modules. Pairs each module name with the number of commits at the time of last update.
-	d = read_dict_from_pickle(CLOUD_PKL):
+	d = read_dict_from_pickle(CLOUD_PKL)
 	s = html2text.html2text(requests.get(urlZ).text) # Load the text of the GitHub repo linked
 	
 	# The number of commits that have been made (occurs just before "commits" in the text of the page)
