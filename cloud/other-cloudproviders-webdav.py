@@ -2,7 +2,7 @@
 
 # https://forum.omz-software.com/topic/2917/other-cloudproviders-webdav
 
-import requests, socket, random, string, shutil
+import requests, os, socket, random, string, shutil, urllib
 from BaseHTTPServer import HTTPServer, BaseHTTPRequestHandler
 DAVurl = None
 DAVport = None
