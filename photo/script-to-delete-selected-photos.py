@@ -51,7 +51,6 @@ def select_photos():
 		fn = todel[1].get('filename')
 		ia = fn_index[fn] # file name -> index
 		a = assets.objectAtIndex_(ia)
-		var filename: String?
 		
 		resources = PHAssetResource.assetResourcesForAsset(a)
 		filename = resources[0].originalFilename
@@ -63,7 +62,8 @@ def select_photos():
 		# standard delete will ask a confirmation by specifying the number of photos to be deleted but by showing only one
 		req = PHAssetChangeRequest.deleteAssets_(a_del)
 		
-	def perform_changes():      lib.performChangesAndWait_error_(change_block, None)
+	def perform_changes():
+		lib.performChangesAndWait_error_(change_block, None)
 	
 	t = threading.Thread(target=perform_changes)
 	t.start()
@@ -125,7 +125,6 @@ def select_photos():
 		fn = todel[1].get('filename')
 		ia = fn_index[fn] # file name -> index
 		a = assets.objectAtIndex_(ia)
-		var filename: String?
 		
 		resources = PHAssetResource.assetResourcesForAsset(a)
 		filename = resources[0].originalFilename
@@ -137,7 +136,8 @@ def select_photos():
 		# standard delete will ask a confirmation by specifying the number of photos to be deleted but by showing only one
 		req = PHAssetChangeRequest.deleteAssets_(a_del)
 		
-	def perform_changes():      lib.performChangesAndWait_error_(change_block, None)
+	def perform_changes():
+		lib.performChangesAndWait_error_(change_block, None)
 	
 	t = threading.Thread(target=perform_changes)
 	t.start()
