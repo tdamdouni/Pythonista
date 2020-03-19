@@ -163,7 +163,7 @@ class File(io.BytesIO):
 			string = f.read()
 			if key == '' : return string
 			encoded_chars = []
-			for i in xrange(len(string)):
+			for i in range(len(string)):
 				key_c = key[i % len(key)]
 				encoded_c = chr(ord(string[i]) + ord(key_c) % 256)
 				encoded_chars.append(encoded_c)
@@ -175,7 +175,7 @@ class File(io.BytesIO):
 			if key == '' : return string
 			decoded_chars = []
 			string = base64.urlsafe_b64decode(string)
-			for i in xrange(len(string)):
+			for i in range(len(string)):
 				key_c = key[i % len(key)]
 				encoded_c = chr(abs(ord(string[i]) - ord(key_c) % 256))
 				decoded_chars.append(encoded_c)
