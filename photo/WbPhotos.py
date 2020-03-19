@@ -4,6 +4,7 @@
 
 # https://forum.omz-software.com/topic/3144/list-of-photo-albums-with-properties
 
+from functools import reduce
 from objc_util import ObjCClass, ObjCInstance
 from sys import maxint
 

@@ -22,7 +22,7 @@ class MyPictureView(ui.View):
 		else:
 			console.hud_alert('Please wait while 100 photos are loading...')
 			self.imgcount = 100
-		for i in xrange(self.imgcount):
+		for i in range(self.imgcount):
 			img = ui.Image.from_data(photos.get_image(i,raw_data=True))
 			w, h = img.size
 			rat = h / w
@@ -46,8 +46,8 @@ class MyPictureView(ui.View):
 			endrow = self.imgcount / 10 + 1
 		else:
 			endrow = 10
-		for row in xrange(endrow):
-			for column in xrange(10):
+		for row in range(endrow):
+			for column in range(10):
 				if i == self.imgcount:
 					break
 				x = column * self.iwidth
