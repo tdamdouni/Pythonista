@@ -17,7 +17,7 @@ youtubedl_dir = 'youtube_dl'
 youtubedl_location = './site-packages/'
 backup_location = './backup/youtube_dl/'
 youtubedl_downloadurl = 'https://github.com/rg3/youtube-dl/archive/master.zip'
-youtubedl_unarchive_location = './youtube-dl-master/'
+youtubedl_unarchive_location = './youtube-dl-main/'
 files_to_change = [('utils.py','import ctypes','#import ctypes'),
                    ('utils.py','import pipes','#import pipes'),
                    ('YoutubeDL.py','self._err_file.isatty() and ',''),

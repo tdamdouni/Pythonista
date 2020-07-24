@@ -413,7 +413,7 @@ class RefreshOption(_constants):
         'HOSTS': (1 << 3, 'Flush host cache'),
         'STATUS': (1 << 4, 'Flush status variables'),
         'THREADS': (1 << 5, 'Flush thread cache'),
-        'SLAVE': (1 << 6, 'Reset master info and restart slave thread'),
+        'SLAVE': (1 << 6, 'Reset main info and restart subordinate thread'),
     }
 
 

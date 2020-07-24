@@ -50,7 +50,7 @@ import bs4, urllib2, plistlib, shutil, zipfile, os, importlib, inspect
 def Import(sTarget):
 	for code in bs4.BeautifulSoup(urllib2.urlopen('http://forum.omz-software.com/topic/2775/cloud-import').read()).find_all('code'):
 		s = code.getText()
-		if s[:5] == '<?xml': urlZ = plistlib.readPlistFromString(s)[sTarget] + '/archive/master.zip'
+		if s[:5] == '<?xml': urlZ = plistlib.readPlistFromString(s)[sTarget] + '/archive/main.zip'
 	sZ = os.path.expanduser('~/Documents/'+  urlZ.split('/')[-1])
 	shutil.copyfileobj(urllib2.urlopen(urlZ), open(sZ, 'wb'), length=512*1024)
 	with open(sZ, 'rb') as f:

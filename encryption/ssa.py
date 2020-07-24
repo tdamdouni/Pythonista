@@ -287,9 +287,9 @@ class LBParams(object):
         self.but_lbl = but_lbl
         self.lbl_list = lbl_list
     def open_lb(self):
-        master = Tk.Tk()
-        master.title(self.title)
-        F1 = Tk.Frame(master)
+        main = Tk.Tk()
+        main.title(self.title)
+        F1 = Tk.Frame(main)
         lab = Tk.Label(F1)
         lab.config(text=self.txt_instruct)
         lab.pack()
@@ -301,7 +301,7 @@ class LBParams(object):
         L['yscrollcommand'] = s.set
         for id in self.lbl_list:  L.insert(Tk.END, id)
         F1.pack(side=Tk.TOP)
-        F2 = Tk.Frame(master)
+        F2 = Tk.Frame(main)
         def run_command():
             rid = L.get(Tk.ACTIVE)
             eval(self.but_command.format(rid))

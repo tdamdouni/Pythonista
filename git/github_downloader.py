@@ -71,7 +71,7 @@ def git_download(url):
 	if m:
 		g = m.groupdict()
 		if not g['branch']:
-			g['branch'] = 'master'
+			g['branch'] = 'main'
 			
 		u = '/'.join((base,g['user'],g['repo'],archive, g['branch']))
 		#print u

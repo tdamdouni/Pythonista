@@ -9,7 +9,7 @@ Vision:
 
 Credits:
 
-- cloud.Import: idea and first version by @guerito, future versions on @webmaster4o's GitHub
+- cloud.Import: idea and first version by @guerito, future versions on @webmain4o's GitHub
 
 '''
 
@@ -74,7 +74,7 @@ def Import(sTarget):
 		
 	if iNow > iOld or nonexistant:
 		console.hud_alert('updating ' + sTarget + ' ...')
-		urlZ += '/archive/master.zip' # URL for downloading a zip of the repo
+		urlZ += '/archive/main.zip' # URL for downloading a zip of the repo
 		# Download zipfile and extract
 		content = requests.get(urlZ, stream=True).content
 		# Load into a StringIO file-like object to avoid having to save locally

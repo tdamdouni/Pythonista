@@ -27,7 +27,7 @@ class TouchHash(ui.View):
 		#do what is necessary to generate your hash, when complete (100%) do self.complete=True
 		#use the hashlib module???? (included and has documentation on pythonista)
 		#I've never used this. If you want it like that website, my guess is that they string together coordinate information
-		#from the touches and then generate a hash from that. @Webmaster4o may be able to decipher what they are doing. He's pro with JS.
+		#from the touches and then generate a hash from that. @Webmain4o may be able to decipher what they are doing. He's pro with JS.
 		
 		self.hash = '' #update it
 		self.textview.text = self.hash #show the text in the textview
@@ -73,7 +73,7 @@ class TouchHash(ui.View):
         #do what is necessary to generate your hash, when complete (100%) do self.complete=True
         #use the hashlib module???? (included and has documentation on pythonista)
         #I've never used this. If you want it like that website, my guess is that they string together coordinate information 
-        #from the touches and then generate a hash from that. @Webmaster4o may be able to decipher what they are doing. He's pro with JS.
+        #from the touches and then generate a hash from that. @Webmain4o may be able to decipher what they are doing. He's pro with JS.
 
         self.hash = '' #update it
         self.textview.text = self.hash #show the text in the textview

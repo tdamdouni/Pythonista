@@ -83,15 +83,15 @@ class MyScene (Scene):
 		check_label.color = 'black'
 		check_label.scale = 2
 		
-		self.master = random.randrange(30,100)
-		self.num1 = random.randrange(1,self.master-10)
-		self.answer = self.master - self.num1
+		self.main = random.randrange(30,100)
+		self.num1 = random.randrange(1,self.main-10)
+		self.answer = self.main - self.num1
 		self.guess = 0
 		
-		self.master_label = LabelNode(str(self.master),parent=self)
-		self.master_label.position = circle1.position
-		self.master_label.color = 'black'
-		self.master_label.scale = 2
+		self.main_label = LabelNode(str(self.main),parent=self)
+		self.main_label.position = circle1.position
+		self.main_label.color = 'black'
+		self.main_label.scale = 2
 		
 		self.num1_label = LabelNode(str(self.num1),parent=self)
 		self.num1_label.position = circle2.position
@@ -109,12 +109,12 @@ class MyScene (Scene):
 		self.correct_messages = ['well done','excellent','your the best','fandabidozee','boom ting','bang on','bet you do this in your sleep']
 		
 	def reset(self):
-		self.master = random.randrange(30,100)
-		self.num1 = random.randrange(1,self.master-10)
-		self.answer = self.master - self.num1
+		self.main = random.randrange(30,100)
+		self.num1 = random.randrange(1,self.main-10)
+		self.answer = self.main - self.num1
 		self.guess = 0
 		
-		self.master_label.text = str(self.master)
+		self.main_label.text = str(self.main)
 		self.num1_label.text = str(self.num1)
 		self.guess_label.text = str(self.guess)
 		

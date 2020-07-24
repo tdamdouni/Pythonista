@@ -23,7 +23,7 @@ def pil2ui(pil_image):
 	return ui.Image.from_data(buffer.getvalue())
 	
 def main():
-	pilimg = ui.Image.named('ShapeRender-master/image.png')
+	pilimg = ui.Image.named('ShapeRender-main/image.png')
 	img = ui2pil(pilimg)
 	sketch(img).show()
 	img1 = pil2ui(img)

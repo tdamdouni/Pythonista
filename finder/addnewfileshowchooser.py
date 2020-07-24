@@ -24,7 +24,7 @@ def show_file_chooser_panel(newTab=False):
 	time.sleep(0.1)
 	@on_main_thread
 	def showChooser():
-		vc.showMasterWithAnimationDuration_(0.3)
+		vc.showMainWithAnimationDuration_(0.3)
 	showChooser()
 	
 def add_new_file():

@@ -7,7 +7,7 @@ import ui
 from collections import namedtuple
 import string
 
-MasterRec = namedtuple('MasterRec', 'title,image,accessory_type')
+MainRec = namedtuple('MainRec', 'title,image,accessory_type')
 
 _interface_bg = 'navy'
 _interface_text_color = 'black'
@@ -17,7 +17,7 @@ _interface_text_color = 'black'
 def get_recs(nb_recs)   :
 	lst = []
 	for i in range(nb_recs):
-		x = MasterRec(title = str(i), image = None, accessory_type = 'disclosure_indicator')
+		x = MainRec(title = str(i), image = None, accessory_type = 'disclosure_indicator')
 		lst.append(x._asdict())
 	return lst
 
@@ -43,7 +43,7 @@ class DetailView(ui.View):
 
 
 
-class MasterView(ui.View):
+class MainView(ui.View):
 	def __init__(self, parent, width_percent = .33):
 		self.parent = parent
 
@@ -70,7 +70,7 @@ class MasterView(ui.View):
 		#self.table.data_source.accessory_action =
 		#self.table.data_source.action = self.parent.hit
 
-		#master.add_subview(search)
+		#main.add_subview(search)
 		self.add_subview(self.table)
 		self.add_subview(self.search)
 
@@ -135,16 +135,16 @@ class SearchView(ui.View):
 
 
 class UiRemindersStyle (ui.View):
-	def __init__(self , master_width = .33, **kwargs):
+	def __init__(self , main_width = .33, **kwargs):
 		ui.View.__init__(self, **kwargs)
 
-		self.master_percent = master_width
+		self.main_percent = main_width
 
-		self.master = None
+		self.main = None
 		self.detail = None
 		self.search = None
 		self.table = None
-		self.master_width = 0
+		self.main_width = 0
 
 		#create the views
 		self.create_views()
@@ -152,15 +152,15 @@ class UiRemindersStyle (ui.View):
 	def create_views(self):
 		# create the views, dont worry about sizes yet.. do it in layout
 
-		# create master view
-		master = MasterView(self, self.master_percent)
-		self.master = master
+		# create main view
+		main = MainView(self, self.main_percent)
+		self.main = main
 
 		# create search view
-		self.search = SearchView(self.master)
+		self.search = SearchView(self.main)
 		#self.add_subview(self.search)
 
-		self.add_subview(master)
+		self.add_subview(main)
 
 		self.detail = DetailView(self)
 		self.add_subview(self.detail)
@@ -168,30 +168,30 @@ class UiRemindersStyle (ui.View):
 
 
 	def layout(self):
-		# master view
+		# main view
 		r = ui.Rect(*self.bounds)
-		r.width = r.width * self.master_percent
-		self.master.frame = r
+		r.width = r.width * self.main_percent
+		self.main.frame = r
 
 		r = ui.Rect(*self.bounds)
-		r.width -= self.master.width
-		r.x  = self.master.width
+		r.width -= self.main.width
+		r.x  = self.main.width
 
 		self.detail.bounds = r.inset(10,10, 44, 0)
 
-	def set_master_data(self, items):
-		print(self.master.table)
-		tbl = self.master.table
+	def set_main_data(self, items):
+		print(self.main.table)
+		tbl = self.main.table
 		tbl.data_source = ui.ListDataSource(items = get_recs(40))
-		tbl.data_source.action = self.hit_master
+		tbl.data_source.action = self.hit_main
 
-	def hit_master(self, sender):
-		print('inside hit callback master')
+	def hit_main(self, sender):
+		print('inside hit callback main')
 		print(sender.name)
 
 
 if __name__ == '__main__':
 	f = ui.Rect(0,0,768, 768)
-	rem  = UiRemindersStyle(frame = f, master_width =.5, name = 'Reminders')
-	rem.set_master_data(range(40))
+	rem  = UiRemindersStyle(frame = f, main_width =.5, name = 'Reminders')
+	rem.set_main_data(range(40))
 	rem.present('sheet')

@@ -96,7 +96,7 @@ def getPyGithub():
 	for file in pyGithubFiles:
 		print 'Downloading', file
 		localFile = open(os.path.join(githubDir, file), 'w')
-		resource = urllib2.urlopen('https://raw.github.com/' + githubUser + '/PyGithub/master/github/' + file)
+		resource = urllib2.urlopen('https://raw.github.com/' + githubUser + '/PyGithub/main/github/' + file)
 		localFile.write(resource.read())
 		localFile.close()
 		resource.close()
@@ -127,7 +127,7 @@ def getGithubista():
 	for file in files:
 		print 'Downloading', file
 		localFile = open(os.path.join(githubDir, file), 'w')
-		resource = urllib2.urlopen('https://raw.github.com/' + githubUser + '/githubista/master/' + file)
+		resource = urllib2.urlopen('https://raw.github.com/' + githubUser + '/githubista/main/' + file)
 		localFile.write(resource.read())
 		localFile.close()
 		resource.close()

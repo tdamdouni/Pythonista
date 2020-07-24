@@ -36,7 +36,7 @@ class Shape2Sqlite(object):
 		#ID_Shape = For each shape(file/table)
 		#ID_Poly = For each poly(line/gon or for many points like cities)
 		#ID_Point = For each point per poly
-		cursor = self.sqlcur.execute("SELECT COUNT(*) FROM sqlite_master WHERE type='table' AND name='Shapes'")
+		cursor = self.sqlcur.execute("SELECT COUNT(*) FROM sqlite_main WHERE type='table' AND name='Shapes'")
 		if cursor.fetchone()[0] == 0:
 			self.sqlcur.execute("CREATE TABLE 'Shapes' ('ID_Shape' INTEGER, 'Name' TEXT)")
 			#print 'Table Shapes is created'
@@ -47,7 +47,7 @@ class Shape2Sqlite(object):
 			if self.shapes_count == None:
 				self.shapes_count = 0
 				
-		cursor = self.sqlcur.execute("SELECT COUNT(*) FROM sqlite_master WHERE type='table' AND name='Polys'")
+		cursor = self.sqlcur.execute("SELECT COUNT(*) FROM sqlite_main WHERE type='table' AND name='Polys'")
 		if cursor.fetchone()[0] == 0:
 			self.sqlcur.execute("CREATE TABLE 'Polys' ('ID_Shape' INTEGER, 'ID_Poly' INTEGER, 'ShapeType' INTEGER, 'Xmin' REAL, 'Ymin' REAL, 'Xmax' REAL, 'Ymax' REAL, 'NumParts' INTEGER, 'NumPoints' INTEGER, 'Name' TEXT)")
 			self.sqlcon.commit()
@@ -59,7 +59,7 @@ class Shape2Sqlite(object):
 			if self.polys_count == None:
 				self.polys_count = 0
 				
-		cursor = self.sqlcur.execute("SELECT COUNT(*) FROM sqlite_master WHERE type='table' AND name='Points'")
+		cursor = self.sqlcur.execute("SELECT COUNT(*) FROM sqlite_main WHERE type='table' AND name='Points'")
 		if cursor.fetchone()[0] == 0:
 			self.sqlcur.execute("CREATE TABLE 'Points' ('ID_Poly' INTEGER,'ID_Point' INTEGER,'X' REAL,'Y' REAL, 'Name' TEXT)")
 			#print 'Table Points is created'

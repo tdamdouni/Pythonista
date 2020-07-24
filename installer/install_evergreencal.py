@@ -130,10 +130,10 @@ try:
 	t.extractall()
 	t.close()
 	
-	shutil.move('parsedatetime-master/parsedatetime/__init__.py', 'parsedatetime')
-	shutil.move('parsedatetime-master/parsedatetime/parsedatetime.py', 'parsedatetime')
-	shutil.move('parsedatetime-master/parsedatetime/pdt_locales.py', 'parsedatetime')
-	shutil.rmtree('parsedatetime-master')
+	shutil.move('parsedatetime-main/parsedatetime/__init__.py', 'parsedatetime')
+	shutil.move('parsedatetime-main/parsedatetime/parsedatetime.py', 'parsedatetime')
+	shutil.move('parsedatetime-main/parsedatetime/pdt_locales.py', 'parsedatetime')
+	shutil.rmtree('parsedatetime-main')
 	print('parsedatetime installed.')
 except:
 	pass

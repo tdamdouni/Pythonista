@@ -37,11 +37,11 @@ def handleCommandS(_cmd,_sel):
 	time.sleep(0.1)
 	@on_main_thread
 	def showChooser():
-		vc.showMasterWithAnimationDuration_(0.3)
+		vc.showMainWithAnimationDuration_(0.3)
 	@on_main_thread
 	def hideChooser():
-		vc.hideMasterWithAnimationDuration_(0.3)
-	if vc.masterVisible():
+		vc.hideMainWithAnimationDuration_(0.3)
+	if vc.mainVisible():
 		hideChooser()
 	else:
 		showChooser()

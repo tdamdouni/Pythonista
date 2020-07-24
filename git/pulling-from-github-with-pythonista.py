@@ -18,7 +18,7 @@ class Delegate (object):
 		self.selected_item = tableview.data_source.items[row]
 		tableview.superview.close()
 		
-repolink     = "https://github.com/{}/{}/archive/master.zip"
+repolink     = "https://github.com/{}/{}/archive/main.zip"
 gistslink    = "https://api.github.com/users/{}/gists"
 browselink   = "https://api.github.com/users/{}/repos"
 releaselink  = "https://api.github.com/repos/{}/{}/releases"

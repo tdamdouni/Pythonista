@@ -12,7 +12,7 @@ import requests
 import json
 import base64
 
-SITE_BRANCH = 'master' # either master or gh-pages
+SITE_BRANCH = 'main' # either main or gh-pages
 COMMITTER = {'name': 'Joe Bloggs', 'email': 'email@example.com'}
 
 #keychain.delete_password('GitHub', 'username')    # Uncomment these lines
