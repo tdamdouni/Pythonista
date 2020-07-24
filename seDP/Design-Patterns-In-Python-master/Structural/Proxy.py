@@ -11,7 +11,7 @@
 # a different address space. This is what the "stub" code in RPC and CORBA 
 # provides.
 
-# A protective proxy controls access to a sensitive master object. The 
+# A protective proxy controls access to a sensitive main object. The 
 # "surrogate" object checks that the caller has the access permissions required
 # prior to forwarding the request.
 

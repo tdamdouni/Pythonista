@@ -31,7 +31,7 @@ def Describe(dbFile):
     totalCells = 0
     
     # Get List of Tables:      
-    tableListQuery = "SELECT name FROM sqlite_master WHERE type='table' ORDER BY Name"
+    tableListQuery = "SELECT name FROM sqlite_main WHERE type='table' ORDER BY Name"
     cursor.execute(tableListQuery)
     tables = map(lambda t: t[0], cursor.fetchall())
     

@@ -21,7 +21,7 @@ class Map(object):
 		self.w = self.tilew * self.numx
 		self.h = self.tileh * self.numy
 		
-		# The important lists. The master map, the shortest path, and tiles which need to be reset.
+		# The important lists. The main map, the shortest path, and tiles which need to be reset.
 		self.map = []
 		self.shortestpath = []
 		self.tilestoreset = []

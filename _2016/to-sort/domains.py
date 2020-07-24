@@ -9,7 +9,7 @@ import requests
 GH_BASE = "https://raw.githubusercontent.com/"
 TLD_URL = os.path.join(
     GH_BASE,
-    "publicsuffix/list/master/public_suffix_list.dat"
+    "publicsuffix/list/main/public_suffix_list.dat"
 )
 
 

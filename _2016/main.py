@@ -20,7 +20,7 @@
 # https://github.com/tlinnet/hotspotsystem/tree/master/api/pythonista         #
 #                                                                             #
 #  Inspired by: https://github.com/khilnani/pythonista-scripts/blob/          #
-#  master/thirdparty/UI/ui-tutorial/Three-Column-Sortable-TableView.py        #
+#  main/thirdparty/UI/ui-tutorial/Three-Column-Sortable-TableView.py        #
 #                                                                             #
 #                                                                             #
 # This program is free software; you can redistribute it and/or modify        #

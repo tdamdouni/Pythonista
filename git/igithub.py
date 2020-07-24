@@ -82,7 +82,7 @@ gui = ui.load_view('igithub')
 def getrepo(sender):
 	usr = sender.superview["usr"].text
 	rep = sender.superview["rep"].text
-	url = 'https://codeload.github.com/{}/{}/zip/master'.format(usr, rep)
+	url = 'https://codeload.github.com/{}/{}/zip/main'.format(usr, rep)
 	filename, headers = urllib.urlretrieve(url)
 	with zipfile.ZipFile(filename) as zip_file:
 		zip_file.extractall()

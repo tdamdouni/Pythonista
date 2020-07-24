@@ -58,12 +58,12 @@ class MyView(gui):
 			from Tkinter import Frame
 			from Tkinter import Label
 			from Tkinter import NW
-			self.master = Tk()
-			self.root = Canvas(self.master, width=kwargs['frame'][2], \
+			self.main = Tk()
+			self.root = Canvas(self.main, width=kwargs['frame'][2], \
 			height=kwargs['frame'][3])
 			self.root.pack()
 			self.frame = kwargs['frame']
-			contour = Frame(self.master, height=30, width=60)
+			contour = Frame(self.main, height=30, width=60)
 			contour.pack_propagate(0) # don't shrink
 			label = Label(contour, text='NEXT', fg='white', bg='#585858', \
 			height=30, width=60)

@@ -9,5 +9,5 @@ with open(os.path.expanduser('~/Documents/pyimgur.zip'),'w') as z:
 z=zipfile.ZipFile(os.path.expanduser('~/Documents/pyimgur.zip'))
 z.extractall()
 os.remove(os.path.expanduser('~/Documents/pyimgur.zip'))
-shutil.copytree(os.path.expanduser('~/Documents/PyImgur-master/pyimgur'), os.path.expanduser('~/Documents/site-packages/pyimgur'))
-shutil.rmtree(os.path.expanduser('~/Documents/PyImgur-master'))
+shutil.copytree(os.path.expanduser('~/Documents/PyImgur-main/pyimgur'), os.path.expanduser('~/Documents/site-packages/pyimgur'))
+shutil.rmtree(os.path.expanduser('~/Documents/PyImgur-main'))

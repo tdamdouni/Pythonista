@@ -14,13 +14,13 @@ import zipfile
 import random
 
 print "Getting URL..."
-url_format = 'https://www.github.com/{user}/{repo}/archive/master.zip'
+url_format = 'https://www.github.com/{user}/{repo}/archive/main.zip'
 user = raw_input('Please enter the name of the user > ')
 repo = raw_input('Please enter the name of the repo > ')
 
 print "Preparing..."
 url = url_format.format(user=user, repo=repo)
-downloadname = str(random.randint(0x000000, 0xFFFFFF)) + "_master.zip"
+downloadname = str(random.randint(0x000000, 0xFFFFFF)) + "_main.zip"
 
 print "Downloading..."
 urllib.urlretrieve(url, downloadname)

@@ -16,7 +16,7 @@ import zipfile
 print('=' * 31)
 module_name = 'Phantom'
 print('Preparing to install {}...'.format(module_name))
-master_name = module_name + 'Chess-master'
+main_name = module_name + 'Chess-main'
 zip_filename = module_name + '.zip'
 url = 'https://github.com/671620616/PhantomChess/archive/master.zip'
 
@@ -34,7 +34,7 @@ for p in sys.path:
         except OSError:
             pass
         try:
-            shutil.copytree(os.path.join(master_name, module_name), copy_to)
+            shutil.copytree(os.path.join(main_name, module_name), copy_to)
             print('Successfully copied {} to: {}'.format(module_name, copy_to))
         # a homebrew installed Python on Mac OS X has a read-only /Library/Python/2.7/site-packages
         except OSError as e:
@@ -46,8 +46,8 @@ try:
     shutil.rmtree(module_name)
 except OSError:
     pass
-shutil.copytree(os.path.join(master_name, module_name), module_name)
-shutil.rmtree(master_name)
+shutil.copytree(os.path.join(main_name, module_name), module_name)
+shutil.rmtree(main_name)
 os.remove(zip_filename)
 
 

@@ -11,7 +11,7 @@ import os, shutil, urllib, zipfile
 
 moduleName = 'nyamuk'
 zipFileName = moduleName + '.zip'
-masterDir = moduleName + '-master'
+mainDir = moduleName + '-main'
 url = 'http://nodeload.github.com/iwanbk/nyamuk/zip/master'
  
 print('Downloading ' + zipFileName + '...')
@@ -24,13 +24,13 @@ with zipfile.ZipFile(zipFileName) as myZip:
 print('Moving files to ' + moduleName + '...')
 if os.path.isdir(moduleName):
 	shutil.rmtree(moduleName)
-shutil.move(masterDir + '/' + moduleName, './' + moduleName)
-shutil.move(masterDir + '/test/pass-sub.py', './' + moduleName + 'Pass-sub.py')
-shutil.move(masterDir + '/test/pubnya.py', './' + moduleName + 'Pubnya.py')
-shutil.move(masterDir + '/test/subnya.py', './' + moduleName + 'Subnya.py')
+shutil.move(mainDir + '/' + moduleName, './' + moduleName)
+shutil.move(mainDir + '/test/pass-sub.py', './' + moduleName + 'Pass-sub.py')
+shutil.move(mainDir + '/test/pubnya.py', './' + moduleName + 'Pubnya.py')
+shutil.move(mainDir + '/test/subnya.py', './' + moduleName + 'Subnya.py')
 
 print('Cleaning up...')
-shutil.rmtree(masterDir)
+shutil.rmtree(mainDir)
 os.remove(zipFileName)
 print('Done.')
 

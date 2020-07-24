@@ -115,7 +115,7 @@ tags:       ${tags}
         self._gh.git_data.references.update(ref, dict(
             sha=commit.sha))
 
-    def undo_last_post(self, branch='master'):
+    def undo_last_post(self, branch='main'):
         if self._latest_commit is None:
             return
 
@@ -178,7 +178,7 @@ John thanking Makerbase.
 
         metas = {
             'tags': results['tags'],
-            'branch': 'master',
+            'branch': 'main',
             'author': results['author'],
             'layout': results['layout'],
             'filename': results['filename']

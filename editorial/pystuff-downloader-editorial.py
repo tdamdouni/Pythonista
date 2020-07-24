@@ -54,7 +54,7 @@ os.remove(fname+'.tar.gz')
 
 
 url = 'https://github.com/html5lib/html5lib-python/archive/master.zip'
-fname='html5lib-python-master'
+fname='html5lib-python-main'
 sname='html5lib'
 dname='Scripts/html5lib'
 print('Downloading '+dname+'...')
@@ -73,7 +73,7 @@ shutil.rmtree(fname)
 os.remove(fname+'.zip')
 
 url='https://github.com/chrisglass/xhtml2pdf/archive/master.zip'
-fname='xhtml2pdf-master'
+fname='xhtml2pdf-main'
 sname='xhtml2pdf'
 dname='Scripts/xhtml2pdf'
 print('Downloading '+dname+'...')

@@ -37,4 +37,4 @@ _stash(_cmd_git_add_file.format('Test.py'))
 # commit 
 _stash(_cmd_git_commit.format())
 # push the commits to the remote
-_stash(_cmd_git_push.format(branch = 'master', remote_url = _remote,  username = 'xxx'))
+_stash(_cmd_git_push.format(branch = 'main', remote_url = _remote,  username = 'xxx'))

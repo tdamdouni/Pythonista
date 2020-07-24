@@ -12,8 +12,8 @@ Vision:
 
 Credits:
 
-- cloud.Import: idea and first version by @guerito, future versions on @webmaster4o's GitHub
-- cloud.File: idea and first version by @guerito, future versions on @webmaster4o's GitHub
+- cloud.Import: idea and first version by @guerito, future versions on @webmain4o's GitHub
+- cloud.File: idea and first version by @guerito, future versions on @webmain4o's GitHub
 
 '''
 
@@ -151,7 +151,7 @@ class File(io.BytesIO):
 				
 				
 	class __CloudProvider(object):
-		"""default implementation using Gist can be subclassed for: GitHub, @webmaster4o server, Googledrive, Dropbox, Box, OneDrive, WebDav, etc """
+		"""default implementation using Gist can be subclassed for: GitHub, @webmain4o server, Googledrive, Dropbox, Box, OneDrive, WebDav, etc """
 		def putFileToURL(self, f):
 			return json.loads(urllib.urlopen('https://api.github.com/gists', json.dumps({ "description": "-", "public": False, "files": { '-': { "content": f.read()} } })).read())['files']['-']['raw_url']
 			

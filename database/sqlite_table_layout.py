@@ -12,7 +12,7 @@ def sqlite_table_layout(sqlite_connection):
         cursor.execute("SELECT * FROM {}".format(table_name))
         return len(cursor.fetchall()), ', '.join(x[0] for x in cursor.description)
     cursor = sqlite_connection.cursor()
-    cursor.execute("SELECT name FROM sqlite_master WHERE type='table'")
+    cursor.execute("SELECT name FROM sqlite_main WHERE type='table'")
     table_dict = {x[0] : row_count_and_column_names(x[0]) for x in cursor.fetchall()}
     fmt = 'Table "{}" contains {} records with columns:\n      {}'
     return '\n'.join(fmt.format(x, *table_dict[x]) for x in sorted(table_dict))

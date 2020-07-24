@@ -3,14 +3,14 @@
 import ui
 
 class SplitView (ui.View):
-	def __init__(self, master_width=300, child_min=300, mv=ui.View()):
+	def __init__(self, main_width=300, child_min=300, mv=ui.View()):
 		'''
-		:master_width: the width of the master view
+		:main_width: the width of the main view
 		:child_min: the minimum size of the child before going to a nav view
 		'''
 		self.width = 800
 		self.height = 800
-		self.master_width = master_width
+		self.main_width = main_width
 		self.mv = mv
 		self.child = ui.View()
 		self.mv.name = 'mv'
@@ -21,7 +21,7 @@ class SplitView (ui.View):
 		self.mv.y=0
 		self.mv.flex = 'H'
 		self.mv.height = self.height
-		self.mv.width = self.master_width
+		self.mv.width = self.main_width
 		self.mv.height = self.height
 		self.mv.background_color = 'blue'
 		self.child.flex='WHL'

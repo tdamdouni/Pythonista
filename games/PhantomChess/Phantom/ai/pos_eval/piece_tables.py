@@ -22,7 +22,7 @@ from __future__ import (absolute_import, division, print_function, unicode_liter
 This file is import clean.
 
 The idea behind the lists in this file is to represent a chessboard.  Each list with in a list is 8 pieces long
-and each 'master' list is 8 lists long.  This means there are 64 elements total in each list.  Those elements
+and each 'main' list is 8 lists long.  This means there are 64 elements total in each list.  Those elements
 are the ratings of the squares for the piece type (that the list is named for).  For example, a white pawn at
 the coordinate (3, 3) will recieve a bonus of 20 points.
 """

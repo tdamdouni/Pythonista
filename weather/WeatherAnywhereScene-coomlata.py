@@ -34,7 +34,7 @@ v1.7: 01/25/2016-Added code to make this script
 backward compatible with Pythonista 1.5. Thanks
 to @cclauss for function to determine Pythonista
 version available at 'https://github.com/cclauss
-/Ten-lines-or-less/blob/master/pythonista_version.py'
+/Ten-lines-or-less/blob/main/pythonista_version.py'
 
 v1.8: 02/15/2016-Front End Menu is now presented
 from the ui inside the scene rather than in the
