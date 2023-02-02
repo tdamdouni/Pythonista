@@ -137,10 +137,10 @@ class PrayTimes():
 	def __init__(self, method = "MWL") :
 
 		# set methods defaults
-		for method, config in self.methods.items():
+		for _, config in self.methods.items():
 			for name, value in self.defaultParams.items():
-				if not name in config['params'] or config['params'][name] is None:
-					config['params'][name] = value
+				if not name in config['params'] or config[name]['params'] is None:
+					config[name]['params'] = value
 
 		# initialize settings
 		self.calcMethod = method if method in self.methods else 'MWL'
@@ -164,7 +164,7 @@ class PrayTimes():
 		self.settings.update(params)
 
 	def tune(self, timeOffsets):
-		self.offsets.update(timeOffsets)
+		self.offset.update(timeOffsets)
 
 	def getMethod(self):
 		return self.calcMethod
